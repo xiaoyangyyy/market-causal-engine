@@ -1,0 +1,93 @@
+{
+  "case_id": "cpi_2022_06_hot",
+  "documents": [
+    {
+      "doc": "cpi_release.txt",
+      "status": "ok",
+      "atoms": 2
+    },
+    {
+      "doc": "news.jsonl",
+      "status": "ok",
+      "atoms": 5
+    }
+  ],
+  "atom_count": 7,
+  "atom_id_prefix": "CPI22JUN",
+  "atoms_path": "E:\\ca\\data\\market\\case_studies\\cpi_2022_06_hot\\atoms.jsonl",
+  "lookahead": {
+    "as_of": 90,
+    "policy": {
+      "strict": true,
+      "forbid_post_hoc_sources": true,
+      "forbidden_source_classes": [
+        "calibration_label",
+        "future_analyst",
+        "next_day_only",
+        "post_mortem"
+      ]
+    },
+    "passed": true,
+    "accepted_count": 7,
+    "rejected_count": 0,
+    "validations": [
+      {
+        "atom_id": "CPI22JUN_000",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 0,
+        "simulation_time": 0
+      },
+      {
+        "atom_id": "CPI22JUN_001",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 0,
+        "simulation_time": 0
+      },
+      {
+        "atom_id": "CPI22JUN_002",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 5,
+        "simulation_time": 5
+      },
+      {
+        "atom_id": "CPI22JUN_003",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 12,
+        "simulation_time": 12
+      },
+      {
+        "atom_id": "CPI22JUN_004",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 25,
+        "simulation_time": 25
+      },
+      {
+        "atom_id": "CPI22JUN_005",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 40,
+        "simulation_time": 40
+      },
+      {
+        "atom_id": "CPI22JUN_006",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 55,
+        "simulation_time": 55
+      }
+    ],
+    "rejected": []
+  }
+}

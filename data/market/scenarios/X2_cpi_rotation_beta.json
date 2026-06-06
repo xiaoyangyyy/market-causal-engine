@@ -1,0 +1,31 @@
+{
+  "scenario_id": "X2_cpi_rotation_beta",
+  "description": "MVP3: Hot CPI -> yields -> growth/value rotation -> high-beta stock impact",
+  "trigger": {
+    "kind": "cpi_surprise",
+    "time": 0,
+    "severity": 0.8,
+    "payload": { "hot_print": 0.85 }
+  },
+  "triggers": [
+    {
+      "kind": "nfp_surprise",
+      "time": 2,
+      "severity": 0.55,
+      "payload": {}
+    },
+    {
+      "kind": "growth_value_rotation",
+      "time": 3,
+      "severity": 0.7,
+      "payload": { "direction": 0.75 }
+    }
+  ],
+  "initial_state": {
+    "macro_risk_appetite": 0.5,
+    "stock_beta_exposure": 0.85,
+    "growth_value_tilt": 0.1,
+    "sector_risk": 0.3,
+    "bond_yield_pressure": 0.2
+  }
+}

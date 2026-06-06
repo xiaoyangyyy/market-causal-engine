@@ -1,0 +1,10 @@
+{
+  "case_id": "snap_2022q3_earnings",
+  "ticker": "SNAP",
+  "event_date": "2022-10-20",
+  "filing_date": "2022-10-20",
+  "accession_number": "0001564590-22-034752",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1564408/000156459022034752/snap-8k_20221020.htm",
+  "output_path": "E:\\ca\\data\\market\\case_studies\\snap_2022q3_earnings\\sources\\sec_8k.txt",
+  "text_length": 4132
+}

@@ -1,0 +1,17 @@
+{
+  "company_clarification": {
+    "version": "v0.1",
+    "resources": [{"name": "corporate_comm_channel", "amount": 1}],
+    "pre": [
+      {"variable": "attention_intensity", "op": ">=", "value": 0.1}
+    ]
+  },
+  "analyst_downgrade": {
+    "version": "v0.1",
+    "resources": [{"name": "analyst_coverage_channel", "amount": 1}]
+  },
+  "liquidity_support": {
+    "version": "v0.1",
+    "resources": [{"name": "market_maker_capacity", "amount": 15}]
+  }
+}

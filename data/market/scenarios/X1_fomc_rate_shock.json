@@ -1,0 +1,26 @@
+{
+  "scenario_id": "X1_fomc_rate_shock",
+  "description": "MVP3: FOMC hawkish surprise -> bond yields -> sector spillover -> beta transmission",
+  "trigger": {
+    "kind": "fomc_statement",
+    "time": 0,
+    "severity": 0.85,
+    "payload": { "hawkish": 0.8 }
+  },
+  "triggers": [
+    {
+      "kind": "sector_etf_movement",
+      "time": 4,
+      "severity": 0.65,
+      "payload": { "direction": 1.0 }
+    }
+  ],
+  "initial_state": {
+    "macro_risk_appetite": 0.55,
+    "fundamental_expectation": 0.58,
+    "sector_risk": 0.25,
+    "valuation_pressure": 0.2,
+    "stock_beta_exposure": 0.72,
+    "bond_yield_pressure": 0.15
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "case_id": "gme_2021_01_squeeze",
+  "atom_id_prefix": "GME21JAN",
+  "origin": {"timestamp_et": "2021-01-27T09:30:00-05:00", "label": "market_open"},
+  "documents": [
+    {"doc_id": "timeline", "path": "squeeze_timeline.txt", "source_type": "news", "published_offset_min": 0},
+    {"doc_id": "news", "path": "news.jsonl", "source_type": "news"}
+  ]
+}

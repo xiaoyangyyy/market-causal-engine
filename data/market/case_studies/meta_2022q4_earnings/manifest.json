@@ -1,0 +1,24 @@
+{
+  "case_id": "meta_2022q4_earnings",
+  "ticker": "META",
+  "event_date": "2022-02-02",
+  "event_type": "earnings",
+  "domain": "earnings",
+  "description": "Meta Q4 2021: first DAU decline, weak Q1 guidance, stock -26% after hours",
+  "time_axis": {
+    "origin": "earnings_release",
+    "origin_timestamp_et": "2022-02-02T16:05:00-05:00",
+    "unit": "minutes"
+  },
+  "scenario_path": "scenario.json",
+  "atoms_path": "atoms.jsonl",
+  "default_until": 120,
+  "lookahead_policy": {"strict": true, "forbid_post_hoc_sources": true},
+  "observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -26,
+    "two_day_return_pct": -26,
+    "calibration_reference_drawdown": 0.70,
+    "dominant_narrative": "DAU decline + weak Q1 guidance + ad targeting headwinds"
+  }
+}

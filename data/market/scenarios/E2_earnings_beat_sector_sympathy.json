@@ -1,0 +1,43 @@
+{
+  "scenario_id": "E2_earnings_beat_sector_sympathy",
+  "description": "MVP1: Earnings beat + analyst upgrade + sector ETF sympathy rally",
+  "trigger": {
+    "kind": "earnings_release",
+    "time": 0,
+    "severity": 0.75,
+    "payload": {
+      "beat_severity": 0.8,
+      "miss_severity": 0.0
+    }
+  },
+  "triggers": [
+    {
+      "kind": "earnings_call_transcript",
+      "time": 1,
+      "severity": 0.7,
+      "payload": { "tone": 0.65 }
+    },
+    {
+      "kind": "analyst_rating_change",
+      "time": 3,
+      "severity": 0.65,
+      "payload": { "direction": 1.0 }
+    },
+    {
+      "kind": "intraday_volume_spike",
+      "time": 5,
+      "severity": 0.6,
+      "payload": { "direction": -0.9 }
+    }
+  ],
+  "initial_state": {
+    "fundamental_expectation": 0.52,
+    "liquidity_depth": 0.55,
+    "investor_sentiment": 0.48,
+    "sector_risk": 0.3
+  },
+  "resources": {
+    "market_maker_capacity": 100,
+    "analyst_coverage_channel": 10
+  }
+}

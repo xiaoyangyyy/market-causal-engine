@@ -1,96 +1,65 @@
-# World Cup Causal Engine
+# Market Event Causal Engine
 
-Trace-First Runtime Causal Engine for World Cup Media-Opinion and Crowd-Risk Simulation.
+Trace-first **market event causal forensics** — compiles SEC filings, news, and market signals into auditable impact pathways. **Not a buy/sell predictor.**
+
+Three product lines:
+
+| Line | Scenarios | Focus |
+|------|-----------|-------|
+| **Earnings** | E1, E2 | 财报冲击路径 · 基本面/情绪/流动性贡献 · 9 历史 case |
+| **Short Report** | S1, S2 | 做空报告 · 信任/流动性 · squeeze & fraud cases |
+| **Macro** | X1, X2 | FOMC/CPI → sector → stock 传导 |
 
 ## Quick start
 
 ```bash
 pip install -r requirements.txt
 
-# Single scenario
-python -m worldcup_causal_engine.main \
-  --scenario data/scenarios/S1_controversial_call_high_density.json \
-  --world W0 --until 120 --explain
+python -m market_causal_engine.main --list-domains
+python -m market_causal_engine.main --scenario-id E1 --world W0 --explain
 
-# Text feed mode
-python -m worldcup_causal_engine.main \
-  --scenario data/scenarios/S1_controversial_call_high_density.json \
-  --feed data/atoms/sample_match_feed.jsonl \
-  --world W0 --until 120 \
-  --ledger-output results/ledger.json
+# Historical case study (look-ahead safe)
+python -m market_causal_engine.main --list-case-studies
+python -m market_causal_engine.main --case-study nflx_2022q1_earnings --as-of 120 --explain
 
-# Calibrated priors (Qatar 2022 post-hoc)
-python -m worldcup_causal_engine.main \
-  --scenario data/scenarios/S3_heat_crowd_comm_delay.json \
-  --priors-profile calibrated --scenario-specific-priors --explain
+# Extract atoms from SEC/news sources
+python -m market_causal_engine.main --extract-all
+python -m market_causal_engine.main --fetch-edgar nflx_2022q1_earnings
+python -m market_causal_engine.main --fetch-macro fomc_2022_75bp
+```
 
-# LLM proposes intervention; kernel verifies (mock or API)
-python -m worldcup_causal_engine.main \
-  --scenario data/scenarios/S3_heat_crowd_comm_delay.json --llm-propose-demo
+## Case library (9)
 
-# MDG Mermaid export
-python scripts/export_mdg.py
+NFLX, SNAP, META, SHOP · Hindenburg/NKLA, GME squeeze, Luckin fraud · FOMC 75bp, CPI hot print
 
-# New scenarios S4–S6
-python -m worldcup_causal_engine.main \
-  --scenario data/scenarios/S4_misleading_viral_clip.json --world W6 --explain
+See [docs/case-study-methodology.md](docs/case-study-methodology.md) and [docs/00-market-causal-engine.md](docs/00-market-causal-engine.md).
 
-# Reproduce all experiments (Phase 4)
-powershell -File scripts/reproduce_all.ps1
+## Tests
 
-# Real-world calibration pipeline
-python scripts/fetch_and_calibrate.py --scenarios S1,S2,S3 --budget 80
+```bash
+python -m pytest tests/ -q   # 143 tests
 ```
 
 ## Project structure
 
 ```
-worldcup_causal_engine/   # Kernel, mechanisms, evidence, compiler, reverse
-data/                     # Scenarios, priors, interventions, feed, rules
-docs/                     # Design docs + experiment report
-results/                  # Experiment artifacts
-paper/                    # Figures and tables for publication
-tests/                    # pytest suite
+market_causal_engine/     # Kernel, mechanisms, extraction, case studies
+data/market/              # Scenarios, case studies, compiler rules, calibration
+worldcup_causal_engine/   # Legacy World Cup crowd-risk engine (same repo)
+docs/
+tests/
 ```
 
-## Experiments
+---
+
+## Legacy: World Cup Causal Engine
+
+The original **World Cup crowd-risk** runtime remains in `worldcup_causal_engine/` for media-opinion and stadium safety simulation (S1–S6, Qatar 2022 calibration).
 
 ```bash
-python -m worldcup_causal_engine.experiments --experiment pressure_test
-python -m worldcup_causal_engine.experiments --experiment ablation
-python -m worldcup_causal_engine.experiments --experiment sensitivity
-# LLM baseline（智算 OpenAI 兼容 API）
-python -m worldcup_causal_engine.experiments.llm_baseline \
-  --all-scenarios --worlds W0,W1 --runs 3 --use-api \
-  --model qwen3.5 --base-url https://ai.azya.top/v1 \
-  --output results/experiment_3_zhisuan
-
-# 生成论文图表（含合并雷达图）
-python scripts/plot_results.py --all
+python -m worldcup_causal_engine.main \
+  --scenario data/scenarios/S1_controversial_call_high_density.json \
+  --world W0 --until 120 --explain
 ```
 
-## Tests
-
-```bash
-python -m pytest tests/ -v
-```
-
-## Scenarios
-
-| ID | Description |
-|----|-------------|
-| S1 | Controversial call + high density |
-| S2 | Team eliminated + transit delay |
-| S3 | Heat + crowd + comm channel exhausted |
-| S4 | Misleading viral clip spread |
-| S5 | Post-match transit delay |
-| S6 | Heat + fan zone overflow |
-
-Worlds: W0 (baseline) … W6 (`platform_rumor_throttle`).
-
-## Documentation
-
-- [完整方案](docs/00-完整方案.md)
-- [Phase 7–8 架构](docs/phase-07-08-架构.md)
-- [校准数据来源](docs/calibration-data-sources.md)
-- [实验报告](docs/experiment-report.md)
+See [docs/00-完整方案.md](docs/00-完整方案.md) and [docs/experiment-report.md](docs/experiment-report.md).

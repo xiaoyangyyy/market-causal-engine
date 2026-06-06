@@ -1,0 +1,9 @@
+{
+  "case_id": "hindenburg_nikola_2020",
+  "atom_id_prefix": "NKLA20",
+  "origin": {"timestamp_et": "2020-09-10T07:00:00-04:00", "label": "short_report_release"},
+  "documents": [
+    {"doc_id": "report", "path": "short_report.txt", "source_type": "short_report", "published_offset_min": 0},
+    {"doc_id": "news", "path": "news.jsonl", "source_type": "news"}
+  ]
+}

@@ -1,0 +1,3 @@
+{"atom_id": "X1_A1", "text": "FOMC statement more hawkish than expected; dot plot shifted higher", "source": "macro", "time": 0, "tags": ["fomc", "macro"], "metadata": {"severity": 0.85, "hawkish": 0.8}}
+{"atom_id": "X1_A2", "text": "10-year Treasury yield jumps 12bp after Fed decision", "source": "bonds", "time": 1, "tags": ["bonds", "yields"], "metadata": {"severity": 0.75}}
+{"atom_id": "X1_A3", "text": "Growth-to-value rotation visible in sector ETF flows", "source": "etf_flow", "time": 3, "tags": ["sector", "etf"], "metadata": {"severity": 0.65}}

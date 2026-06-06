@@ -1,0 +1,11 @@
+{
+  "world_id": "W6",
+  "description": "Counterfactual: no options gamma amplification",
+  "interventions": [
+    {
+      "kind": "suppress_option_gamma",
+      "time": 0,
+      "payload": {}
+    }
+  ]
+}

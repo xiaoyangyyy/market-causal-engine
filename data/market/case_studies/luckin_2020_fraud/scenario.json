@@ -1,0 +1,19 @@
+{
+  "scenario_id": "case_luckin_2020_fraud",
+  "description": "Luckin Coffee Muddy Waters report — feed-only replay",
+  "initial_state": {
+    "fundamental_expectation": 0.62,
+    "investor_sentiment": 0.58,
+    "liquidity_depth": 0.5,
+    "trust_level": 0.6,
+    "attention_intensity": 0.35,
+    "regulatory_risk": 0.15,
+    "short_interest_pressure": 0.25
+  },
+  "resources": {
+    "market_maker_capacity": 85,
+    "borrow_availability": 70,
+    "analyst_coverage_channel": 10,
+    "corporate_comm_channel": 5
+  }
+}

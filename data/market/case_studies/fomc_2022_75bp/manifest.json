@@ -1,0 +1,23 @@
+{
+  "case_id": "fomc_2022_75bp",
+  "ticker": "SPY",
+  "event_date": "2022-09-21",
+  "event_type": "macro",
+  "domain": "macro",
+  "description": "FOMC Sep 2022: 75bp hike, hawkish dots, yields jump, growth stocks sell off",
+  "time_axis": {
+    "origin": "fomc_statement",
+    "origin_timestamp_et": "2022-09-21T14:00:00-04:00",
+    "unit": "minutes"
+  },
+  "scenario_path": "scenario.json",
+  "atoms_path": "atoms.jsonl",
+  "default_until": 90,
+  "lookahead_policy": {"strict": true, "forbid_post_hoc_sources": true},
+  "observed_outcomes": {
+    "direction": "down",
+    "session_return_pct": -1.7,
+    "calibration_reference_drawdown": 0.55,
+    "dominant_narrative": "hawkish 75bp hike + yield spike + growth-to-value rotation"
+  }
+}

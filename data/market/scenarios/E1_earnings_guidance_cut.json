@@ -1,0 +1,49 @@
+{
+  "scenario_id": "E1_earnings_guidance_cut",
+  "description": "MVP1: Earnings miss + guidance cut + analyst downgrade + intraday vol/sector sympathy",
+  "trigger": {
+    "kind": "earnings_release",
+    "time": 0,
+    "severity": 0.8,
+    "payload": {
+      "miss_severity": 0.55,
+      "guidance_severity": 0.85
+    }
+  },
+  "triggers": [
+    {
+      "kind": "earnings_call_transcript",
+      "time": 1,
+      "severity": 0.75,
+      "payload": { "tone": -0.6 }
+    },
+    {
+      "kind": "intraday_volatility_spike",
+      "time": 6,
+      "severity": 0.7,
+      "payload": {}
+    },
+    {
+      "kind": "sector_etf_movement",
+      "time": 7,
+      "severity": 0.55,
+      "payload": { "direction": 1.0 }
+    }
+  ],
+  "initial_state": {
+    "fundamental_expectation": 0.6,
+    "liquidity_depth": 0.45,
+    "option_gamma_exposure": 0.35,
+    "position_crowding": 0.4,
+    "investor_sentiment": 0.52
+  },
+  "resources": {
+    "market_maker_capacity": 80,
+    "options_dealer_hedging_capacity": 40,
+    "analyst_coverage_channel": 8,
+    "corporate_comm_channel": 3
+  },
+  "context": {
+    "attention_intensity": 0.35
+  }
+}

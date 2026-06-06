@@ -1,0 +1,29 @@
+{
+  "scenario_id": "M1_earnings_guidance_cut",
+  "description": "Earnings miss with FY guidance cut — analyst downgrade and liquidity-amplified drawdown",
+  "trigger": {
+    "kind": "earnings_release",
+    "time": 0,
+    "severity": 0.8,
+    "payload": {
+      "miss_severity": 0.55,
+      "guidance_severity": 0.85
+    }
+  },
+  "initial_state": {
+    "fundamental_expectation": 0.6,
+    "liquidity_depth": 0.45,
+    "option_gamma_exposure": 0.35,
+    "position_crowding": 0.4,
+    "investor_sentiment": 0.52
+  },
+  "resources": {
+    "market_maker_capacity": 80,
+    "options_dealer_hedging_capacity": 40,
+    "analyst_coverage_channel": 8,
+    "corporate_comm_channel": 3
+  },
+  "context": {
+    "attention_intensity": 0.35
+  }
+}

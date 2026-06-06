@@ -1,0 +1,144 @@
+{
+  "case_id": "nflx_2022q1_earnings",
+  "documents": [
+    {
+      "doc": "sec_8k.txt",
+      "status": "ok",
+      "atoms": 4
+    },
+    {
+      "doc": "earnings_call.txt",
+      "status": "ok",
+      "atoms": 4
+    },
+    {
+      "doc": "news.jsonl",
+      "status": "ok",
+      "atoms": 4
+    },
+    {
+      "doc": "manual_atoms.jsonl",
+      "status": "ok",
+      "atoms": 2
+    }
+  ],
+  "atom_count": 10,
+  "atom_id_prefix": "NFLX22Q1",
+  "atoms_path": "E:\\ca\\data\\market\\case_studies\\nflx_2022q1_earnings\\atoms.jsonl",
+  "lookahead": {
+    "as_of": 120,
+    "policy": {
+      "strict": true,
+      "forbid_post_hoc_sources": true,
+      "forbidden_source_classes": [
+        "post_mortem",
+        "next_day_only",
+        "calibration_label",
+        "future_analyst"
+      ]
+    },
+    "passed": false,
+    "accepted_count": 8,
+    "rejected_count": 2,
+    "validations": [
+      {
+        "atom_id": "NFLX22Q1_000",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 0,
+        "simulation_time": 0
+      },
+      {
+        "atom_id": "NFLX22Q1_002",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 0,
+        "simulation_time": 0
+      },
+      {
+        "atom_id": "NFLX22Q1_008",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 15,
+        "simulation_time": 15
+      },
+      {
+        "atom_id": "NFLX22Q1_009",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 20,
+        "simulation_time": 20
+      },
+      {
+        "atom_id": "NFLX22Q1_004",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 55,
+        "simulation_time": 55
+      },
+      {
+        "atom_id": "NFLX22Q1_007",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 55,
+        "simulation_time": 55
+      },
+      {
+        "atom_id": "NFLX22Q1_010",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 90,
+        "simulation_time": 90
+      },
+      {
+        "atom_id": "NFLX22Q1_011",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 95,
+        "simulation_time": 95
+      },
+      {
+        "atom_id": "NFLX22Q1_TRAP_NEXTDAY",
+        "accepted": false,
+        "reason_code": "lookahead_published_at",
+        "detail": "published_at=960 exceeds as_of=120",
+        "published_at": 960,
+        "simulation_time": 960
+      },
+      {
+        "atom_id": "NFLX22Q1_TRAP_ANALYST",
+        "accepted": false,
+        "reason_code": "lookahead_published_at",
+        "detail": "published_at=2880 exceeds as_of=120",
+        "published_at": 2880,
+        "simulation_time": 120
+      }
+    ],
+    "rejected": [
+      {
+        "atom_id": "NFLX22Q1_TRAP_NEXTDAY",
+        "accepted": false,
+        "reason_code": "lookahead_published_at",
+        "detail": "published_at=960 exceeds as_of=120",
+        "published_at": 960,
+        "simulation_time": 960
+      },
+      {
+        "atom_id": "NFLX22Q1_TRAP_ANALYST",
+        "accepted": false,
+        "reason_code": "lookahead_published_at",
+        "detail": "published_at=2880 exceeds as_of=120",
+        "published_at": 2880,
+        "simulation_time": 120
+      }
+    ]
+  }
+}

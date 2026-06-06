@@ -1,0 +1,6 @@
+{"atom_id": "E1_A1", "text": "Company misses Q4 EPS estimates", "source": "earnings_release", "time": 0, "tags": ["earnings"], "metadata": {"severity": 0.7}}
+{"atom_id": "E1_A2", "text": "CFO says demand weakened in Europe during earnings call", "source": "transcript", "time": 1, "tags": ["transcript", "earnings_call"], "metadata": {"severity": 0.75, "tone": -0.6}}
+{"atom_id": "E1_A3", "text": "Company lowers FY2026 revenue guidance", "source": "earnings_call", "time": 2, "tags": ["earnings", "guidance"], "metadata": {"severity": 0.85}}
+{"atom_id": "E1_A4", "text": "Analyst downgrades stock from Buy to Neutral after guidance cut", "source": "analyst_note", "time": 4, "tags": ["analyst", "rating"], "metadata": {"severity": 0.75}}
+{"atom_id": "E1_A5", "text": "Put option volume spikes 3x pre-market; volatility spike in first hour", "source": "options_flow", "time": 5, "tags": ["options", "intraday"], "metadata": {"severity": 0.7}}
+{"atom_id": "E1_A6", "text": "Sector ETF XLF shows peer sympathy selloff", "source": "market_data", "time": 6, "tags": ["sector", "etf"], "metadata": {"severity": 0.55}}

@@ -1,0 +1,15 @@
+{
+  "case_id": "cpi_2022_06_hot",
+  "atom_id_prefix": "CPI22JUN",
+  "origin": {"timestamp_et": "2022-07-13T08:30:00-04:00", "label": "cpi_release"},
+  "macro_fetch": {
+    "source": "bls_cpi",
+    "release_date": "2022-07-13",
+    "period": "2022-06",
+    "output": "cpi_release.txt"
+  },
+  "documents": [
+    {"doc_id": "cpi", "path": "cpi_release.txt", "source_type": "macro", "published_offset_min": 0},
+    {"doc_id": "news", "path": "news.jsonl", "source_type": "news"}
+  ]
+}

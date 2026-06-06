@@ -1,0 +1,93 @@
+{
+  "case_id": "hindenburg_nikola_2020",
+  "documents": [
+    {
+      "doc": "short_report.txt",
+      "status": "ok",
+      "atoms": 1
+    },
+    {
+      "doc": "news.jsonl",
+      "status": "ok",
+      "atoms": 6
+    }
+  ],
+  "atom_count": 7,
+  "atom_id_prefix": "NKLA20",
+  "atoms_path": "E:\\ca\\data\\market\\case_studies\\hindenburg_nikola_2020\\atoms.jsonl",
+  "lookahead": {
+    "as_of": 150,
+    "policy": {
+      "strict": true,
+      "forbid_post_hoc_sources": true,
+      "forbidden_source_classes": [
+        "calibration_label",
+        "future_analyst",
+        "next_day_only",
+        "post_mortem"
+      ]
+    },
+    "passed": true,
+    "accepted_count": 7,
+    "rejected_count": 0,
+    "validations": [
+      {
+        "atom_id": "NKLA20_000",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 0,
+        "simulation_time": 0
+      },
+      {
+        "atom_id": "NKLA20_001",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 5,
+        "simulation_time": 5
+      },
+      {
+        "atom_id": "NKLA20_002",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 30,
+        "simulation_time": 30
+      },
+      {
+        "atom_id": "NKLA20_003",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 45,
+        "simulation_time": 45
+      },
+      {
+        "atom_id": "NKLA20_004",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 60,
+        "simulation_time": 60
+      },
+      {
+        "atom_id": "NKLA20_005",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 90,
+        "simulation_time": 90
+      },
+      {
+        "atom_id": "NKLA20_006",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 120,
+        "simulation_time": 120
+      }
+    ],
+    "rejected": []
+  }
+}

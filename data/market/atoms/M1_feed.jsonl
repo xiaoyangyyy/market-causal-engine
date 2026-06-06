@@ -1,0 +1,3 @@
+{"atom_id": "A1", "text": "Company lowers FY2026 revenue guidance citing weak Europe demand", "source": "earnings_call", "time": 2, "tags": ["earnings", "guidance"], "metadata": {"severity": 0.85}}
+{"atom_id": "A2", "text": "Analyst downgrades stock from Buy to Neutral after guidance cut", "source": "analyst_note", "time": 4, "tags": ["analyst", "rating"], "metadata": {"severity": 0.75}}
+{"atom_id": "A3", "text": "Put option volume spikes 3x pre-market vs 20-day average", "source": "options_flow", "time": 1, "tags": ["options"], "metadata": {"severity": 0.7}}

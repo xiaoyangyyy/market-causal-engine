@@ -1,0 +1,11 @@
+{
+  "world_id": "W2",
+  "description": "Counterfactual: no social/retail amplification",
+  "interventions": [
+    {
+      "kind": "suppress_social_amplification",
+      "time": 0,
+      "payload": {}
+    }
+  ]
+}

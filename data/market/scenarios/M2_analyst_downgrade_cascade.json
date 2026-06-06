@@ -1,0 +1,20 @@
+{
+  "scenario_id": "M2_analyst_downgrade_cascade",
+  "description": "Standalone analyst downgrade triggering institutional rebalance",
+  "trigger": {
+    "kind": "analyst_downgrade",
+    "time": 0,
+    "severity": 0.75,
+    "payload": {}
+  },
+  "initial_state": {
+    "fundamental_expectation": 0.5,
+    "liquidity_depth": 0.5,
+    "investor_sentiment": 0.48,
+    "position_crowding": 0.55
+  },
+  "resources": {
+    "market_maker_capacity": 90,
+    "analyst_coverage_channel": 10
+  }
+}

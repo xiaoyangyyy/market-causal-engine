@@ -1,0 +1,21 @@
+{
+  "scenario_id": "case_cpi_2022_06_hot",
+  "description": "June 2022 CPI hot print — macro transmission replay",
+  "initial_state": {
+    "fundamental_expectation": 0.52,
+    "investor_sentiment": 0.48,
+    "liquidity_depth": 0.55,
+    "macro_risk_appetite": 0.45,
+    "bond_yield_pressure": 0.35,
+    "growth_value_tilt": 0.4,
+    "stock_beta_exposure": 0.72,
+    "sector_risk": 0.45,
+    "volatility_state": 0.38
+  },
+  "resources": {
+    "market_maker_capacity": 100,
+    "options_dealer_hedging_capacity": 50,
+    "analyst_coverage_channel": 10,
+    "corporate_comm_channel": 5
+  }
+}

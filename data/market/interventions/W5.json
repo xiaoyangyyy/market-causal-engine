@@ -1,0 +1,11 @@
+{
+  "world_id": "W5",
+  "description": "Counterfactual: no macro risk shock",
+  "interventions": [
+    {
+      "kind": "suppress_macro_shock",
+      "time": 0,
+      "payload": {}
+    }
+  ]
+}

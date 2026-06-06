@@ -1,0 +1,11 @@
+{
+  "world_id": "W7",
+  "description": "Counterfactual: no sector spillover",
+  "interventions": [
+    {
+      "kind": "suppress_sector_spillover",
+      "time": 0,
+      "payload": {}
+    }
+  ]
+}

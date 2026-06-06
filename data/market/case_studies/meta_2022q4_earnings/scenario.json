@@ -1,0 +1,19 @@
+{
+  "scenario_id": "case_meta_2022q4_earnings",
+  "description": "META Q4 2021 earnings — feed-only replay",
+  "initial_state": {
+    "fundamental_expectation": 0.65,
+    "investor_sentiment": 0.6,
+    "liquidity_depth": 0.55,
+    "attention_intensity": 0.45,
+    "option_gamma_exposure": 0.35,
+    "position_crowding": 0.5,
+    "sector_risk": 0.3
+  },
+  "resources": {
+    "market_maker_capacity": 95,
+    "options_dealer_hedging_capacity": 50,
+    "analyst_coverage_channel": 12,
+    "corporate_comm_channel": 5
+  }
+}

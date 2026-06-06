@@ -1,0 +1,98 @@
+{
+  "case_id": "shop_2022q2_earnings",
+  "documents": [
+    {
+      "doc": "sec_8k.txt",
+      "status": "ok",
+      "atoms": 2
+    },
+    {
+      "doc": "earnings_call.txt",
+      "status": "ok",
+      "atoms": 3
+    },
+    {
+      "doc": "news.jsonl",
+      "status": "ok",
+      "atoms": 4
+    }
+  ],
+  "atom_count": 7,
+  "atom_id_prefix": "SHOP22Q2",
+  "atoms_path": "E:\\ca\\data\\market\\case_studies\\shop_2022q2_earnings\\atoms.jsonl",
+  "lookahead": {
+    "as_of": 120,
+    "policy": {
+      "strict": true,
+      "forbid_post_hoc_sources": true,
+      "forbidden_source_classes": [
+        "calibration_label",
+        "future_analyst",
+        "next_day_only",
+        "post_mortem"
+      ]
+    },
+    "passed": true,
+    "accepted_count": 7,
+    "rejected_count": 0,
+    "validations": [
+      {
+        "atom_id": "SHOP22Q2_000",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 0,
+        "simulation_time": 0
+      },
+      {
+        "atom_id": "SHOP22Q2_005",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 8,
+        "simulation_time": 8
+      },
+      {
+        "atom_id": "SHOP22Q2_006",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 15,
+        "simulation_time": 15
+      },
+      {
+        "atom_id": "SHOP22Q2_002",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 50,
+        "simulation_time": 50
+      },
+      {
+        "atom_id": "SHOP22Q2_004",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 50,
+        "simulation_time": 50
+      },
+      {
+        "atom_id": "SHOP22Q2_007",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 70,
+        "simulation_time": 70
+      },
+      {
+        "atom_id": "SHOP22Q2_008",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 85,
+        "simulation_time": 85
+      }
+    ],
+    "rejected": []
+  }
+}

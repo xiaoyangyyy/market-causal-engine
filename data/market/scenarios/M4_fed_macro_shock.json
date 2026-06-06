@@ -1,0 +1,16 @@
+{
+  "scenario_id": "M4_fed_macro_shock",
+  "description": "Fed rate surprise with sector spillover",
+  "trigger": {
+    "kind": "macro_rate_shock",
+    "time": 0,
+    "severity": 0.8,
+    "payload": {}
+  },
+  "initial_state": {
+    "macro_risk_appetite": 0.55,
+    "fundamental_expectation": 0.58,
+    "sector_risk": 0.25,
+    "valuation_pressure": 0.2
+  }
+}

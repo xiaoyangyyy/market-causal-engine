@@ -1,0 +1,14 @@
+{
+  "world_id": "W3",
+  "description": "Netflix management clarification on Q2 subscriber outlook after guidance cut (earnings call window)",
+  "interventions": [
+    {
+      "kind": "company_clarification",
+      "time": 62,
+      "payload": {
+        "topic": "guidance_cut",
+        "credibility": 0.68
+      }
+    }
+  ]
+}

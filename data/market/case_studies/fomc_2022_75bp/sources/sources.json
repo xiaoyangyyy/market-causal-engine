@@ -1,0 +1,14 @@
+{
+  "case_id": "fomc_2022_75bp",
+  "atom_id_prefix": "FOMC22SEP",
+  "origin": {"timestamp_et": "2022-09-21T14:00:00-04:00", "label": "fomc_statement"},
+  "macro_fetch": {
+    "source": "fomc",
+    "event_date": "2022-09-21",
+    "output": "fomc_statement.txt"
+  },
+  "documents": [
+    {"doc_id": "statement", "path": "fomc_statement.txt", "source_type": "macro", "published_offset_min": 0},
+    {"doc_id": "news", "path": "news.jsonl", "source_type": "news"}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "scenario_id": "M3_meme_attention_liquidity",
+  "description": "Short report → viral attention → retail crowding → liquidity dry-up",
+  "trigger": {
+    "kind": "short_seller_report",
+    "time": 0,
+    "severity": 0.8,
+    "payload": {}
+  },
+  "initial_state": {
+    "liquidity_depth": 0.38,
+    "position_crowding": 0.25,
+    "short_interest_pressure": 0.3,
+    "attention_intensity": 0.2
+  },
+  "resources": {
+    "market_maker_capacity": 60
+  }
+}

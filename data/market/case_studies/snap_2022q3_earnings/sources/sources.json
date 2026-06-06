@@ -1,0 +1,16 @@
+{
+  "case_id": "snap_2022q3_earnings",
+  "atom_id_prefix": "SNAP22Q3",
+  "origin": {"timestamp_et": "2022-10-20T16:05:00-04:00", "label": "earnings_release"},
+  "edgar": {
+    "ticker": "SNAP",
+    "event_date": "2022-10-20",
+    "window_days": 2,
+    "output": "sec_8k_edgar.txt"
+  },
+  "documents": [
+    {"doc_id": "8k", "path": "sec_8k.txt", "source_type": "sec_8k", "published_offset_min": 0},
+    {"doc_id": "call", "path": "earnings_call.txt", "source_type": "transcript", "published_offset_min": 45},
+    {"doc_id": "news", "path": "news.jsonl", "source_type": "news"}
+  ]
+}

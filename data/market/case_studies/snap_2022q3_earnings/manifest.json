@@ -1,0 +1,26 @@
+{
+  "case_id": "snap_2022q3_earnings",
+  "ticker": "SNAP",
+  "event_date": "2022-10-20",
+  "event_type": "earnings",
+  "domain": "earnings",
+  "description": "Snap Q3 2022: digital ad slowdown warning, revenue miss, stock -27% after hours",
+  "time_axis": {
+    "origin": "earnings_release",
+    "origin_timestamp_et": "2022-10-20T16:05:00-04:00",
+    "unit": "minutes"
+  },
+  "scenario_path": "scenario.json",
+  "atoms_path": "atoms.jsonl",
+  "default_until": 100,
+  "lookahead_policy": {
+    "strict": true,
+    "forbid_post_hoc_sources": true
+  },
+  "observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -27,
+    "calibration_reference_drawdown": 0.68,
+    "dominant_narrative": "ad revenue miss + macro ad budget cuts"
+  }
+}

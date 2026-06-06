@@ -1,0 +1,6 @@
+{"published_offset_min": 5, "headline": "Nikola shares plunge after Hindenburg short seller report alleges fraud and misleading claims", "source": "reuters", "source_type": "news"}
+{"published_offset_min": 30, "headline": "Company denies Hindenburg allegations in press release but offers limited technical rebuttal", "source": "company_pr", "source_type": "press_release"}
+{"published_offset_min": 45, "headline": "Breaking headline widely shared across financial media on Nikola controversy", "source": "bloomberg", "source_type": "news"}
+{"published_offset_min": 60, "headline": "SEC opens inquiry into Nikola following short report allegations", "source": "regulatory_wire", "source_type": "news"}
+{"published_offset_min": 90, "headline": "Heavy volume spike as retail discussion trending on Stocktwits", "source": "social_analytics", "source_type": "social"}
+{"published_offset_min": 120, "headline": "Put option volume spikes with elevated volatility in Nikola", "source": "options_flow", "source_type": "market_data"}

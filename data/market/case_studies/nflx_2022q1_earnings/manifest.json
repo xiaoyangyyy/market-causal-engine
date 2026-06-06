@@ -1,0 +1,30 @@
+{
+  "case_id": "nflx_2022q1_earnings",
+  "ticker": "NFLX",
+  "event_date": "2022-04-19",
+  "event_type": "earnings",
+  "domain": "earnings",
+  "description": "Netflix Q1 2022: first subscriber loss in a decade, weak Q2 guidance, ~25% AH decline",
+  "time_axis": {
+    "origin": "earnings_release",
+    "origin_timestamp_et": "2022-04-19T16:01:00-04:00",
+    "unit": "minutes",
+    "notes": "t=0 is Netflix Q1 2022 shareholder letter / 8-K release (after hours)"
+  },
+  "scenario_path": "scenario.json",
+  "atoms_path": "atoms.jsonl",
+  "default_until": 120,
+  "lookahead_policy": {
+    "strict": true,
+    "forbid_post_hoc_sources": true,
+    "forbidden_source_classes": ["post_mortem", "next_day_only", "calibration_label", "future_analyst"]
+  },
+  "observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -25,
+    "two_day_return_pct": -37,
+    "calibration_reference_drawdown": 0.72,
+    "dominant_narrative": "subscriber miss + weak Q2 guidance + password sharing overhang",
+    "sources_note": "Public market data and SEC filings; labels for qualitative comparison only"
+  }
+}

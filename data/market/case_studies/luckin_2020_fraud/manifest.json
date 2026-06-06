@@ -1,0 +1,23 @@
+{
+  "case_id": "luckin_2020_fraud",
+  "ticker": "LK",
+  "event_date": "2020-01-31",
+  "event_type": "short_report",
+  "domain": "short_report",
+  "description": "Luckin Coffee: Muddy Waters fraud report, fabricated sales, stock -75% over weeks",
+  "time_axis": {
+    "origin": "short_report_release",
+    "origin_timestamp_et": "2020-01-31T08:00:00-05:00",
+    "unit": "minutes"
+  },
+  "scenario_path": "scenario.json",
+  "atoms_path": "atoms.jsonl",
+  "default_until": 120,
+  "lookahead_policy": {"strict": true, "forbid_post_hoc_sources": true},
+  "observed_outcomes": {
+    "direction": "down",
+    "session_return_pct": -31,
+    "calibration_reference_drawdown": 0.58,
+    "dominant_narrative": "Muddy Waters fraud allegations + trust collapse + SEC/regulatory overhang"
+  }
+}

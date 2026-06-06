@@ -1,0 +1,60 @@
+{
+  "reference_drawdown_at_full": 0.72,
+  "default_max_drawdown_pct": 35,
+  "anchors": [
+    {
+      "case_id": "nflx_2022q1_earnings",
+      "drawdown_risk": 0.72,
+      "after_hours_return_pct": -25,
+      "note": "Post-dampening W0 full-path replay target"
+    },
+    {
+      "case_id": "snap_2022q3_earnings",
+      "drawdown_risk": 0.68,
+      "after_hours_return_pct": -27,
+      "note": "Ad-revenue miss path"
+    },
+    {
+      "case_id": "meta_2022q4_earnings",
+      "drawdown_risk": 0.70,
+      "after_hours_return_pct": -26,
+      "note": "DAU decline + guidance cut"
+    },
+    {
+      "case_id": "hindenburg_nikola_2020",
+      "drawdown_risk": 0.65,
+      "after_hours_return_pct": -14,
+      "note": "Short report intraday"
+    },
+    {
+      "case_id": "fomc_2022_75bp",
+      "drawdown_risk": 0.55,
+      "after_hours_return_pct": -1.7,
+      "note": "Macro session move proxy"
+    },
+    {
+      "case_id": "shop_2022q2_earnings",
+      "drawdown_risk": 0.62,
+      "after_hours_return_pct": -14,
+      "note": "E-commerce slowdown + guidance cut"
+    },
+    {
+      "case_id": "cpi_2022_06_hot",
+      "drawdown_risk": 0.48,
+      "session_return_pct": -1.5,
+      "note": "Hot CPI macro session move"
+    },
+    {
+      "case_id": "gme_2021_01_squeeze",
+      "drawdown_risk": 0.45,
+      "session_return_pct": 44,
+      "note": "Short squeeze up move uses signed directional pressure mapping"
+    },
+    {
+      "case_id": "luckin_2020_fraud",
+      "drawdown_risk": 0.58,
+      "session_return_pct": -31,
+      "note": "Muddy Waters fraud report day-one move"
+    }
+  ]
+}

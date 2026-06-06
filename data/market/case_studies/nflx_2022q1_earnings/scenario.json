@@ -1,0 +1,20 @@
+{
+  "scenario_id": "case_nflx_2022q1_earnings",
+  "description": "NFLX Q1 2022 earnings day — feed-only replay, no synthetic triggers",
+  "initial_state": {
+    "fundamental_expectation": 0.62,
+    "investor_sentiment": 0.58,
+    "liquidity_depth": 0.55,
+    "attention_intensity": 0.4,
+    "option_gamma_exposure": 0.3,
+    "position_crowding": 0.45,
+    "sector_risk": 0.25,
+    "volatility_state": 0.28
+  },
+  "resources": {
+    "market_maker_capacity": 90,
+    "options_dealer_hedging_capacity": 45,
+    "analyst_coverage_channel": 10,
+    "corporate_comm_channel": 4
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "world_id": "W3",
+  "description": "Company timely clarification after guidance cut",
+  "interventions": [
+    {
+      "kind": "company_clarification",
+      "time": 4,
+      "payload": {
+        "topic": "guidance_cut",
+        "credibility": 0.72
+      }
+    }
+  ]
+}

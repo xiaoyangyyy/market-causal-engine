@@ -1,0 +1,23 @@
+{
+  "case_id": "shop_2022q2_earnings",
+  "ticker": "SHOP",
+  "event_date": "2022-07-26",
+  "event_type": "earnings",
+  "domain": "earnings",
+  "description": "Shopify Q2 2022: revenue miss, guidance cut on e-commerce slowdown, stock -14% after hours",
+  "time_axis": {
+    "origin": "earnings_release",
+    "origin_timestamp_et": "2022-07-26T07:00:00-04:00",
+    "unit": "minutes"
+  },
+  "scenario_path": "scenario.json",
+  "atoms_path": "atoms.jsonl",
+  "default_until": 120,
+  "lookahead_policy": {"strict": true, "forbid_post_hoc_sources": true},
+  "observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -14,
+    "calibration_reference_drawdown": 0.62,
+    "dominant_narrative": "e-commerce slowdown + merchant growth deceleration + guidance cut"
+  }
+}

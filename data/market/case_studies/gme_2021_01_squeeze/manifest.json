@@ -1,0 +1,23 @@
+{
+  "case_id": "gme_2021_01_squeeze",
+  "ticker": "GME",
+  "event_date": "2021-01-27",
+  "event_type": "short_squeeze",
+  "domain": "short_report",
+  "description": "GME Jan 2021: Reddit/WallStreetBets short squeeze, Melvin forced cover, stock +44% session",
+  "time_axis": {
+    "origin": "social_attention_spike",
+    "origin_timestamp_et": "2021-01-27T09:30:00-05:00",
+    "unit": "minutes"
+  },
+  "scenario_path": "scenario.json",
+  "atoms_path": "atoms.jsonl",
+  "default_until": 390,
+  "lookahead_policy": {"strict": true, "forbid_post_hoc_sources": true},
+  "observed_outcomes": {
+    "direction": "up",
+    "session_return_pct": 44,
+    "calibration_reference_pressure": 0.46,
+    "dominant_narrative": "retail coordination + high short interest + forced short covering"
+  }
+}

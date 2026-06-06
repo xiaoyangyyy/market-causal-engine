@@ -1,0 +1,5 @@
+{"published_offset_min": 15, "headline": "GameStop shares surge 44% as Reddit traders trigger short squeeze", "source": "market_watch", "source_type": "market_data", "tags": ["intraday", "volume"], "metadata": {"direction": -1.0}}
+{"published_offset_min": 45, "headline": "WallStreetBets trending as retail discussion goes viral on Reddit", "source": "social_tracker", "source_type": "social", "tags": ["social", "reddit"]}
+{"published_offset_min": 90, "headline": "Melvin Capital covering shorts after GameStop spike, sources say", "source": "hedge_fund_wire", "source_type": "news", "tags": ["short", "research"]}
+{"published_offset_min": 120, "headline": "Put/call ratio inverts as gamma squeeze forces dealer hedging", "source": "options_analytics", "source_type": "market_data", "tags": ["options", "intraday"]}
+{"published_offset_min": 180, "headline": "SEC monitoring social media coordination around GameStop trading", "source": "regulatory_wire", "source_type": "news", "tags": ["regulatory", "sec"]}

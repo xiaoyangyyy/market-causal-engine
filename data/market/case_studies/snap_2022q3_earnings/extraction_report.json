@@ -1,0 +1,106 @@
+{
+  "case_id": "snap_2022q3_earnings",
+  "documents": [
+    {
+      "doc": "sec_8k.txt",
+      "status": "ok",
+      "atoms": 2
+    },
+    {
+      "doc": "earnings_call.txt",
+      "status": "ok",
+      "atoms": 2
+    },
+    {
+      "doc": "news.jsonl",
+      "status": "ok",
+      "atoms": 4
+    }
+  ],
+  "atom_count": 8,
+  "atom_id_prefix": "SNAP22Q3",
+  "atoms_path": "E:\\ca\\data\\market\\case_studies\\snap_2022q3_earnings\\atoms.jsonl",
+  "lookahead": {
+    "as_of": 100,
+    "policy": {
+      "strict": true,
+      "forbid_post_hoc_sources": true,
+      "forbidden_source_classes": [
+        "calibration_label",
+        "future_analyst",
+        "next_day_only",
+        "post_mortem"
+      ]
+    },
+    "passed": true,
+    "accepted_count": 8,
+    "rejected_count": 0,
+    "validations": [
+      {
+        "atom_id": "SNAP22Q3_000",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 0,
+        "simulation_time": 0
+      },
+      {
+        "atom_id": "SNAP22Q3_001",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 0,
+        "simulation_time": 0
+      },
+      {
+        "atom_id": "SNAP22Q3_004",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 12,
+        "simulation_time": 12
+      },
+      {
+        "atom_id": "SNAP22Q3_005",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 18,
+        "simulation_time": 18
+      },
+      {
+        "atom_id": "SNAP22Q3_002",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 45,
+        "simulation_time": 45
+      },
+      {
+        "atom_id": "SNAP22Q3_003",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 45,
+        "simulation_time": 45
+      },
+      {
+        "atom_id": "SNAP22Q3_006",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 75,
+        "simulation_time": 75
+      },
+      {
+        "atom_id": "SNAP22Q3_007",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 80,
+        "simulation_time": 80
+      }
+    ],
+    "rejected": []
+  }
+}

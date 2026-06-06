@@ -1,0 +1,4 @@
+{"atom_id": "S1_A1", "text": "Short seller publishes report alleging accounting concerns", "source": "short_report", "time": 0, "tags": ["short", "research"], "metadata": {"severity": 0.9}}
+{"atom_id": "S1_A2", "text": "Breaking headline widely shared across financial news", "source": "news", "time": 1, "tags": ["news"], "metadata": {"severity": 0.8}}
+{"atom_id": "S1_A3", "text": "Reddit and Stocktwits discussion trending on ticker", "source": "social", "time": 2, "tags": ["social", "reddit"], "metadata": {"severity": 0.75}}
+{"atom_id": "S1_A4", "text": "Volume spike 4x average in first 30 minutes", "source": "market_data", "time": 3, "tags": ["intraday", "volume"], "metadata": {"severity": 0.7}}

@@ -1,0 +1,137 @@
+{
+  "rules": [
+    {
+      "rule_id": "R_ad_revenue_miss",
+      "match_tags": ["ad_revenue", "earnings"],
+      "match_keywords": ["ad revenue miss", "digital ad market", "advertisers cutting", "ad headwinds"],
+      "event_kind": "ad_revenue_miss",
+      "default_severity": 0.82
+    },
+    {
+      "rule_id": "R_earnings_release",
+      "match_tags": ["earnings"],
+      "match_keywords": ["reports q", "eps", "earnings release", "beats estimates", "misses estimates", "revenue miss", "subscriber loss", "earnings miss", "missing wall street", "dau", "daily active users"],
+      "event_kind": "earnings_release",
+      "default_severity": 0.75
+    },
+    {
+      "rule_id": "R_earnings_call",
+      "match_tags": ["transcript", "earnings_call"],
+      "match_keywords": ["cfo says", "ceo says", "management says", "management stated", "management noted", "demand weakened", "outlook cautious"],
+      "event_kind": "earnings_call_transcript",
+      "default_severity": 0.7
+    },
+    {
+      "rule_id": "R_guidance_cut",
+      "match_tags": ["earnings", "guidance"],
+      "match_keywords": ["lowers", "guidance", "cut", "revenue outlook", "decline", "below analyst", "slow materially"],
+      "event_kind": "guidance_cut",
+      "default_severity": 0.8
+    },
+    {
+      "rule_id": "R_analyst_downgrade",
+      "match_tags": ["analyst", "rating"],
+      "match_keywords": ["downgrade", "cut to neutral", "cut to sell", "overweight to neutral"],
+      "event_kind": "analyst_downgrade",
+      "default_severity": 0.75
+    },
+    {
+      "rule_id": "R_analyst_upgrade",
+      "match_tags": ["analyst", "rating"],
+      "match_keywords": ["upgrade", "raised to buy", "raised to overweight"],
+      "event_kind": "analyst_upgrade",
+      "default_severity": 0.7
+    },
+    {
+      "rule_id": "R_put_spike",
+      "match_tags": ["options", "intraday"],
+      "match_keywords": ["put volume", "put/call", "options surge", "volatility spike"],
+      "event_kind": "intraday_volatility_spike",
+      "default_severity": 0.7
+    },
+    {
+      "rule_id": "R_volume_spike",
+      "match_tags": ["intraday", "volume"],
+      "match_keywords": ["volume spike", "heavy volume", "3x average volume", "shares down", "shares up", "shares plunge", "shares surge", "after hours"],
+      "event_kind": "intraday_volume_spike",
+      "default_severity": 0.65
+    },
+    {
+      "rule_id": "R_sector_etf",
+      "match_tags": ["sector", "etf"],
+      "match_keywords": ["sector etf", "xlk", "xlf", "peer selloff", "sector sympathy"],
+      "event_kind": "sector_etf_movement",
+      "default_severity": 0.6
+    },
+    {
+      "rule_id": "R_short_report",
+      "match_tags": ["short", "research"],
+      "match_keywords": ["short report", "fraud", "accounting concerns", "short seller"],
+      "event_kind": "short_seller_report",
+      "default_severity": 0.85
+    },
+    {
+      "rule_id": "R_company_response",
+      "match_tags": ["response", "company"],
+      "match_keywords": ["company denies", "ceo response", "rebuttal", "issued statement"],
+      "event_kind": "company_response",
+      "default_severity": 0.6
+    },
+    {
+      "rule_id": "R_news_amp",
+      "match_tags": ["news"],
+      "match_keywords": ["headline", "breaking", "widely shared", "front page"],
+      "event_kind": "news_amplification",
+      "default_severity": 0.7
+    },
+    {
+      "rule_id": "R_short_squeeze",
+      "match_tags": ["social", "reddit", "short"],
+      "match_keywords": ["short squeeze", "gamma squeeze", "covering shorts", "melvin", "forced cover"],
+      "event_kind": "short_cover_risk",
+      "default_severity": 0.85
+    },
+    {
+      "rule_id": "R_social",
+      "match_tags": ["social", "reddit"],
+      "match_keywords": ["reddit", "stocktwits", "trending", "meme stock", "wallstreetbets", "wsb"],
+      "event_kind": "social_discussion_spike",
+      "default_severity": 0.75
+    },
+    {
+      "rule_id": "R_regulatory",
+      "match_tags": ["regulatory", "sec"],
+      "match_keywords": ["sec probe", "investigation", "regulatory inquiry", "doj"],
+      "event_kind": "regulatory_probe",
+      "default_severity": 0.75
+    },
+    {
+      "rule_id": "R_fomc",
+      "match_tags": ["fomc", "macro"],
+      "match_keywords": ["fomc", "fed statement", "rate decision", "dot plot"],
+      "event_kind": "fomc_statement",
+      "default_severity": 0.8
+    },
+    {
+      "rule_id": "R_cpi",
+      "match_tags": ["cpi", "macro"],
+      "match_keywords": ["cpi", "inflation print", "hot cpi", "core cpi"],
+      "event_kind": "cpi_surprise",
+      "default_severity": 0.78
+    },
+    {
+      "rule_id": "R_nfp",
+      "match_tags": ["nfp", "macro"],
+      "match_keywords": ["nonfarm payrolls", "jobs report", "nfp"],
+      "event_kind": "nfp_surprise",
+      "default_severity": 0.65
+    },
+    {
+      "rule_id": "R_bond_yield",
+      "match_tags": ["bonds", "yields"],
+      "match_keywords": ["10-year yield", "treasury yield", "yields surge", "yields jump"],
+      "event_kind": "bond_yield_reaction",
+      "default_severity": 0.7
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "case_id": "gme_2021_01_squeeze",
+  "documents": [
+    {
+      "doc": "squeeze_timeline.txt",
+      "status": "ok",
+      "atoms": 3
+    },
+    {
+      "doc": "news.jsonl",
+      "status": "ok",
+      "atoms": 5
+    }
+  ],
+  "atom_count": 7,
+  "atom_id_prefix": "GME21JAN",
+  "atoms_path": "E:\\ca\\data\\market\\case_studies\\gme_2021_01_squeeze\\atoms.jsonl",
+  "lookahead": {
+    "as_of": 390,
+    "policy": {
+      "strict": true,
+      "forbid_post_hoc_sources": true,
+      "forbidden_source_classes": [
+        "calibration_label",
+        "future_analyst",
+        "next_day_only",
+        "post_mortem"
+      ]
+    },
+    "passed": true,
+    "accepted_count": 7,
+    "rejected_count": 0,
+    "validations": [
+      {
+        "atom_id": "GME21JAN_000",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 0,
+        "simulation_time": 0
+      },
+      {
+        "atom_id": "GME21JAN_001",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 0,
+        "simulation_time": 0
+      },
+      {
+        "atom_id": "GME21JAN_003",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 15,
+        "simulation_time": 15
+      },
+      {
+        "atom_id": "GME21JAN_004",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 45,
+        "simulation_time": 45
+      },
+      {
+        "atom_id": "GME21JAN_005",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 90,
+        "simulation_time": 90
+      },
+      {
+        "atom_id": "GME21JAN_006",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 120,
+        "simulation_time": 120
+      },
+      {
+        "atom_id": "GME21JAN_007",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "",
+        "published_at": 180,
+        "simulation_time": 180
+      }
+    ],
+    "rejected": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "scenario_id": "case_gme_2021_01_squeeze",
+  "description": "GME Jan 2021 squeeze — feed-only replay",
+  "initial_state": {
+    "fundamental_expectation": 0.35,
+    "investor_sentiment": 0.55,
+    "liquidity_depth": 0.45,
+    "attention_intensity": 0.3,
+    "short_interest_pressure": 0.78,
+    "position_crowding": 0.4,
+    "option_gamma_exposure": 0.55,
+    "volatility_state": 0.45
+  },
+  "resources": {
+    "market_maker_capacity": 70,
+    "borrow_availability": 25,
+    "options_dealer_hedging_capacity": 40,
+    "analyst_coverage_channel": 8,
+    "corporate_comm_channel": 4
+  }
+}

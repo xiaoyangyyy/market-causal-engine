@@ -1,0 +1,16 @@
+{
+  "world_id": "W4",
+  "description": "Higher market liquidity support pre-open",
+  "interventions": [
+    {
+      "kind": "boost_liquidity_resource",
+      "time": 0,
+      "payload": { "boost": 0.25 }
+    },
+    {
+      "kind": "liquidity_support",
+      "time": 5,
+      "payload": {}
+    }
+  ]
+}

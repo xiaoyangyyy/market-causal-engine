@@ -1,0 +1,5 @@
+{"published_offset_min": 2, "headline": "Fed raises interest rates by 75 basis points in hawkish FOMC decision", "source": "fed_wire", "source_type": "macro"}
+{"published_offset_min": 15, "headline": "10-year Treasury yield jumps 10bp after Fed statement", "source": "bond_desk", "source_type": "market_data"}
+{"published_offset_min": 25, "headline": "Growth-to-value rotation visible as tech sector ETF declines", "source": "etf_analytics", "source_type": "market_data", "tags": ["sector", "etf"]}
+{"published_offset_min": 35, "headline": "High-beta stocks sell off as macro risk appetite falls", "source": "equity_strategy", "source_type": "news"}
+{"published_offset_min": 50, "headline": "S&P 500 falls sharply following surprise restrictive Fed guidance", "source": "market_wrap", "source_type": "market_data"}

@@ -1,0 +1,24 @@
+{
+  "case_id": "hindenburg_nikola_2020",
+  "ticker": "NKLA",
+  "event_date": "2020-09-10",
+  "event_type": "short_report",
+  "domain": "short_report",
+  "description": "Hindenburg short report on Nikola: fraud allegations, stock crash, SEC inquiry",
+  "time_axis": {
+    "origin": "short_report_release",
+    "origin_timestamp_et": "2020-09-10T07:00:00-04:00",
+    "unit": "minutes"
+  },
+  "scenario_path": "scenario.json",
+  "atoms_path": "atoms.jsonl",
+  "default_until": 150,
+  "lookahead_policy": {"strict": true, "forbid_post_hoc_sources": true},
+  "observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -11,
+    "intraday_return_pct": -14,
+    "calibration_reference_drawdown": 0.65,
+    "dominant_narrative": "short seller fraud allegations + weak company response + regulatory overhang"
+  }
+}

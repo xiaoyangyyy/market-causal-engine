@@ -1,0 +1,11 @@
+{
+  "world_id": "W1",
+  "description": "Counterfactual: suppress analyst downgrade path",
+  "interventions": [
+    {
+      "kind": "suppress_analyst_downgrade",
+      "time": 0,
+      "payload": {}
+    }
+  ]
+}

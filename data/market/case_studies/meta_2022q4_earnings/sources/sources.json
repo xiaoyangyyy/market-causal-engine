@@ -1,0 +1,19 @@
+{
+  "case_id": "meta_2022q4_earnings",
+  "atom_id_prefix": "META22Q4",
+  "origin": {
+    "timestamp_et": "2022-02-02T16:05:00-05:00",
+    "label": "earnings_release"
+  },
+  "edgar": {
+    "ticker": "META",
+    "event_date": "2022-02-02",
+    "window_days": 2,
+    "output": "sec_8k_edgar.txt"
+  },
+  "documents": [
+    {"doc_id": "8k", "path": "sec_8k.txt", "source_type": "sec_8k", "published_offset_min": 0},
+    {"doc_id": "call", "path": "earnings_call.txt", "source_type": "transcript", "published_offset_min": 50},
+    {"doc_id": "news", "path": "news.jsonl", "source_type": "news"}
+  ]
+}

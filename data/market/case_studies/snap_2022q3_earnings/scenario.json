@@ -1,0 +1,16 @@
+{
+  "scenario_id": "case_snap_2022q3_earnings",
+  "description": "SNAP Q3 2022 earnings — feed-only replay",
+  "initial_state": {
+    "fundamental_expectation": 0.5,
+    "investor_sentiment": 0.48,
+    "liquidity_depth": 0.5,
+    "attention_intensity": 0.35,
+    "sector_risk": 0.35,
+    "macro_risk_appetite": 0.42
+  },
+  "resources": {
+    "market_maker_capacity": 75,
+    "analyst_coverage_channel": 8
+  }
+}

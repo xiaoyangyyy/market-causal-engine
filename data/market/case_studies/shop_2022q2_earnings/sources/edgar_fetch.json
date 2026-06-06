@@ -1,0 +1,12 @@
+{
+  "case_id": "shop_2022q2_earnings",
+  "ticker": "SHOP",
+  "event_date": "2022-07-26",
+  "filing_date": "2022-07-26",
+  "accession_number": "0001594806-22-000001",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1594806/000159480622000001/shop-8k.htm",
+  "output_path": "E:\\ca\\data\\market\\case_studies\\shop_2022q2_earnings\\sources\\sec_8k_edgar.txt",
+  "summary_path": "E:\\ca\\data\\market\\case_studies\\shop_2022q2_earnings\\sources\\sec_8k_edgar_summary.txt",
+  "summary_length": 52,
+  "text_length": 52
+}

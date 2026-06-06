@@ -1,0 +1,19 @@
+{
+  "scenario_id": "case_shop_2022q2_earnings",
+  "description": "SHOP Q2 2022 earnings — feed-only replay",
+  "initial_state": {
+    "fundamental_expectation": 0.62,
+    "investor_sentiment": 0.58,
+    "liquidity_depth": 0.58,
+    "attention_intensity": 0.4,
+    "option_gamma_exposure": 0.3,
+    "position_crowding": 0.48,
+    "sector_risk": 0.35
+  },
+  "resources": {
+    "market_maker_capacity": 95,
+    "options_dealer_hedging_capacity": 48,
+    "analyst_coverage_channel": 11,
+    "corporate_comm_channel": 5
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "earnings_release": {
+    "emit_miss_delay": 1
+  },
+  "earnings_miss": {
+    "fundamental_delta": -0.12,
+    "valuation_delta": 0.15,
+    "directional_delta": 0.08,
+    "emit_guidance_delay": 1
+  },
+  "guidance_cut": {
+    "fundamental_delta": -0.22,
+    "valuation_delta": 0.28,
+    "directional_delta": 0.18,
+    "drawdown_delta": 0.12,
+    "emit_downgrade_delay": 1
+  },
+  "analyst_downgrade": {
+    "sentiment_delta": -0.18,
+    "attention_delta": 0.12,
+    "directional_delta": 0.1,
+    "emit_rebalance_delay": 1
+  },
+  "institutional_rebalance": {
+    "liquidity_delta": -0.15,
+    "stress_delta": 0.14,
+    "directional_delta": 0.12,
+    "drawdown_delta": 0.1,
+    "emit_gamma_delay": 1
+  },
+  "company_clarification": {
+    "sentiment_lift": 0.12,
+    "valuation_relief": 0.1,
+    "directional_relief": 0.08
+  },
+  "liquidity_support": {
+    "depth_boost": 0.25,
+    "stress_relief": 0.15
+  },
+  "viral_negative_news": {
+    "emit_retail_delay": 1
+  },
+  "retail_attention_spike": {
+    "emit_liquidity_delay": 1
+  },
+  "liquidity_dry_up": {
+    "emit_impact_delay": 1
+  },
+  "large_sell_order": {
+    "impact_amplifier": 1.4
+  },
+  "macro_rate_shock": {
+    "emit_sector_delay": 2
+  },
+  "short_seller_report": {
+    "emit_viral_delay": 1
+  }
+}
