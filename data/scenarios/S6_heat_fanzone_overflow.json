@@ -1,0 +1,44 @@
+{
+  "scenario_id": "S6_heat_fanzone_overflow",
+  "triggers": [
+    {
+      "kind": "heat_stress_check",
+      "time": 35,
+      "severity": 1.0,
+      "payload": {}
+    },
+    {
+      "kind": "match_end",
+      "time": 90,
+      "severity": 1.0,
+      "payload": {}
+    }
+  ],
+  "initial_state": {
+    "match_tension": 0.35,
+    "heat_stress": 0.92,
+    "crowd_density": 0.88,
+    "fan_zone_pressure": 0.82,
+    "transit_pressure": 0.5,
+    "police_trust": 0.42
+  },
+  "resources": {
+    "media_attention_budget": 100,
+    "official_comm_channel": 5,
+    "fact_check_capacity": 20,
+    "police_units": 100,
+    "deescalation_teams": 20,
+    "medical_units": 25,
+    "transport_capacity": 1000,
+    "fan_zone_capacity": 800
+  },
+  "context": {
+    "heat_stress": 0.92,
+    "crowd_density": 0.88,
+    "fan_zone_pressure": 0.82
+  },
+  "resources_override": {
+    "fan_zone_capacity": 50,
+    "medical_units": 25
+  }
+}

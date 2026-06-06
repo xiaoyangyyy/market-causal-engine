@@ -1,0 +1,185 @@
+{
+  "controversial_call": {
+    "unfairness_delta": 0.35,
+    "tension_delta": 0.25,
+    "emit_viral_clip_delay": 3
+  },
+  "viral_clip_published": {
+    "platform_velocity_delta": 0.3,
+    "emit_blame_frame_delay": 5
+  },
+  "media_blame_frame": {
+    "outrage_delta": 0.3,
+    "blame_delta": 0.2,
+    "emit_rumor_delay": 8
+  },
+  "rumor_amplified": {
+    "rumor_delta": 0.999498,
+    "misinfo_delta": 0.2,
+    "rumor_spike_threshold": 0.6,
+    "emit_mood_shift_delay": 5
+  },
+  "offline_mood_shift": {
+    "verbal_risk_delta": 0.101963,
+    "emit_contact_delay": 10
+  },
+  "opposing_fans_contact": {
+    "colocation_threshold_crowd": 0.920547,
+    "emit_conflict_delay": 24.106167
+  },
+  "verbal_conflict": {
+    "verbal_risk_delta": 0.131046,
+    "scuffle_risk_delta": 0.021642
+  },
+  "official_clarification": {
+    "rumor_reduction": 0.25,
+    "credibility_multiplier": 0.7
+  },
+  "team_eliminated": {
+    "humiliation_delta": 0.5,
+    "tension_delta": 0.2,
+    "emit_gather_delay": 2
+  },
+  "match_end": {
+    "emit_gather_delay": 1,
+    "emit_transit_delay": 3
+  },
+  "fans_gather": {
+    "density_delta": 0.225744,
+    "pressure_delta": 0.130931,
+    "high_density_threshold": 0.6,
+    "emit_bar_pressure_delay": 5,
+    "emit_contact_delay": 8
+  },
+  "bar_district_pressure": {
+    "density_threshold": 0.55,
+    "scuffle_delta": 0.12,
+    "emit_contact_delay": 6
+  },
+  "transit_delay": {
+    "pressure_threshold": 0.5,
+    "pressure_delta": 0.25,
+    "emit_density_spike_delay": 3
+  },
+  "crowd_density_spike": {
+    "density_delta": 0.2,
+    "emit_overflow_delay": 4
+  },
+  "queue_overflow": {
+    "pressure_threshold": 0.65,
+    "emit_push_delay": 3
+  },
+  "crowd_push": {
+    "panic_delta": 0.127273,
+    "emit_signal_delay": 2
+  },
+  "panic_signal": {
+    "panic_delta": 0.118847,
+    "riot_delta": 0.1
+  },
+  "heat_stress_check": {
+    "threshold": 0.7
+  },
+  "police_trust_check": {
+    "low_threshold": 0.45
+  },
+  "team_captain_message": {
+    "outrage_reduction": 0.2,
+    "verbal_reduction": 0.15
+  },
+  "transit_reroute": {
+    "capacity_cost": 200,
+    "pressure_reduction": 0.3
+  },
+  "deploy_deescalation": {
+    "teams_required": 3,
+    "capacity_boost": 0.25,
+    "verbal_reduction": 0.2,
+    "scuffle_reduction": 0.1
+  },
+  "platform_rumor_throttle": {
+    "fact_check_cost": 3,
+    "rumor_reduction": 0.3,
+    "misinfo_reduction": 0.25
+  },
+  "_calibration_meta": {
+    "version": "v0.2_calibrated",
+    "base": "mechanisms_v0.1.json",
+    "source_reports": [
+      "E:\\ca\\results\\calibration\\S1_controversial_call_high_density_calibration_report.json",
+      "E:\\ca\\results\\calibration\\S2_team_eliminated_transit_delay_calibration_report.json",
+      "E:\\ca\\results\\calibration\\S3_heat_crowd_comm_delay_calibration_report.json"
+    ],
+    "merge_strategy": "weighted_mean_by_inverse_loss",
+    "merged_overrides": {
+      "rumor_amplified": {
+        "rumor_delta": 0.999498
+      },
+      "offline_mood_shift": {
+        "verbal_risk_delta": 0.101963
+      },
+      "opposing_fans_contact": {
+        "emit_conflict_delay": 24.106167,
+        "colocation_threshold_crowd": 0.920547
+      },
+      "verbal_conflict": {
+        "verbal_risk_delta": 0.131046,
+        "scuffle_risk_delta": 0.021642
+      },
+      "fans_gather": {
+        "density_delta": 0.225744,
+        "pressure_delta": 0.130931
+      },
+      "crowd_push": {
+        "panic_delta": 0.127273
+      },
+      "panic_signal": {
+        "panic_delta": 0.118847
+      }
+    },
+    "by_scenario_overrides": {
+      "S1_controversial_call_high_density": {
+        "rumor_amplified": {
+          "rumor_delta": 0.9994977278889086
+        },
+        "offline_mood_shift": {
+          "verbal_risk_delta": 0.10196303435879471
+        },
+        "opposing_fans_contact": {
+          "emit_conflict_delay": 24.286913917549278,
+          "colocation_threshold_crowd": 0.920546793203251
+        },
+        "verbal_conflict": {
+          "verbal_risk_delta": 0.13033044547385972,
+          "scuffle_risk_delta": 0.021641777742273983
+        }
+      },
+      "S2_team_eliminated_transit_delay": {
+        "fans_gather": {
+          "density_delta": 0.22574437556463683,
+          "pressure_delta": 0.17474982940417694
+        },
+        "opposing_fans_contact": {
+          "emit_conflict_delay": 5.997683630234599
+        },
+        "verbal_conflict": {
+          "verbal_risk_delta": 0.12317006659767503
+        }
+      },
+      "S3_heat_crowd_comm_delay": {
+        "crowd_push": {
+          "panic_delta": 0.12727282365213818
+        },
+        "panic_signal": {
+          "panic_delta": 0.11884655016989383
+        },
+        "fans_gather": {
+          "pressure_delta": 0.07192982607013183
+        },
+        "verbal_conflict": {
+          "verbal_risk_delta": 0.238233812510927
+        }
+      }
+    }
+  }
+}

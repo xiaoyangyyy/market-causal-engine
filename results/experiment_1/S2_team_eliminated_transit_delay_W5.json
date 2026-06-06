@@ -1,0 +1,440 @@
+{
+  "scenario_id": "S2_team_eliminated_transit_delay",
+  "world_id": "W5",
+  "final_state": {
+    "match_tension": 0.68,
+    "rivalry_intensity": 0.6,
+    "perceived_unfairness": 0.0,
+    "humiliation_level": 0.65,
+    "media_attention": 0.0,
+    "outrage_frame": 0.0,
+    "blame_frame": 0.0,
+    "rumor_volume": 0.0,
+    "misinfo_confidence": 0.0,
+    "platform_velocity": 0.0,
+    "crowd_density": 0.925,
+    "fan_zone_pressure": 0.285,
+    "transit_pressure": 0.875,
+    "heat_stress": 0.0,
+    "police_visibility": 0.0,
+    "police_trust": 0.5,
+    "deescalation_capacity": 0.75,
+    "verbal_conflict_risk": 0.72,
+    "scuffle_risk": 0.378,
+    "riot_risk": 0.0,
+    "panic_risk": 0.0
+  },
+  "final_risk": {
+    "verbal_conflict": 0.72,
+    "scuffle": 0.378,
+    "riot": 0.0,
+    "panic": 0.0
+  },
+  "dominant_path": [
+    "deploy_deescalation",
+    "team_eliminated",
+    "fans_gather",
+    "transit_delay",
+    "bar_district_pressure",
+    "crowd_density_spike",
+    "opposing_fans_contact",
+    "verbal_conflict"
+  ],
+  "active_flags": [
+    "CROWD_DENSITY_HIGH",
+    "DEESCALATION_ACTIVE",
+    "OPPOSING_FANS_COLOCATED",
+    "TEAM_ELIMINATED",
+    "TRANSIT_DELAY_ACTIVE"
+  ],
+  "resource_bottlenecks": [],
+  "remaining_resources": {
+    "media_attention_budget": 100,
+    "official_comm_channel": 5,
+    "fact_check_capacity": 20,
+    "police_units": 100,
+    "deescalation_teams": 17.0,
+    "medical_units": 30,
+    "transport_capacity": 1000,
+    "fan_zone_capacity": 800
+  },
+  "kernel_config": {
+    "ablation_id": "full",
+    "use_flags": true,
+    "use_resources": true,
+    "use_priority": true,
+    "use_trace": true,
+    "use_interventions": true,
+    "use_evidence_ledger": true
+  },
+  "trace": [
+    {
+      "event_id": "E3",
+      "kind": "deploy_deescalation",
+      "time": 78,
+      "action": "acquire",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {
+        "deescalation_teams": -3.0
+      },
+      "cause": [
+        "intervention"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E3",
+      "kind": "deploy_deescalation",
+      "time": 78,
+      "action": "commit",
+      "patch": {
+        "deescalation_capacity": 0.25,
+        "verbal_conflict_risk": 0.0,
+        "scuffle_risk": 0.0
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "intervention"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E3",
+      "kind": "deploy_deescalation",
+      "time": 78,
+      "action": "set_flag",
+      "patch": {},
+      "flags_delta": {
+        "DEESCALATION_ACTIVE": "set"
+      },
+      "resource_delta": {},
+      "cause": [
+        "intervention"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E3",
+      "kind": "deploy_deescalation",
+      "time": 78,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "intervention"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E1",
+      "kind": "team_eliminated",
+      "time": 88,
+      "action": "commit",
+      "patch": {
+        "humiliation_level": 0.45,
+        "match_tension": 0.18000000000000005
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "scenario_trigger:team_eliminated"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E1",
+      "kind": "team_eliminated",
+      "time": 88,
+      "action": "set_flag",
+      "patch": {},
+      "flags_delta": {
+        "TEAM_ELIMINATED": "set"
+      },
+      "resource_delta": {},
+      "cause": [
+        "scenario_trigger:team_eliminated"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E1",
+      "kind": "team_eliminated",
+      "time": 88,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "scenario_trigger:team_eliminated"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E4",
+      "kind": "fans_gather",
+      "time": 90,
+      "action": "commit",
+      "patch": {
+        "crowd_density": 0.135,
+        "fan_zone_pressure": 0.108
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E1"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E4",
+      "kind": "fans_gather",
+      "time": 90,
+      "action": "set_flag",
+      "patch": {},
+      "flags_delta": {
+        "CROWD_DENSITY_HIGH": "set"
+      },
+      "resource_delta": {},
+      "cause": [
+        "event:E1"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E4",
+      "kind": "fans_gather",
+      "time": 90,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E1"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E2",
+      "kind": "transit_delay",
+      "time": 95,
+      "action": "commit",
+      "patch": {
+        "transit_pressure": 0.17500000000000004
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "scenario_trigger:transit_delay"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E2",
+      "kind": "transit_delay",
+      "time": 95,
+      "action": "set_flag",
+      "patch": {},
+      "flags_delta": {
+        "TRANSIT_DELAY_ACTIVE": "set"
+      },
+      "resource_delta": {},
+      "cause": [
+        "scenario_trigger:transit_delay"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E2",
+      "kind": "transit_delay",
+      "time": 95,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "scenario_trigger:transit_delay"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E5",
+      "kind": "bar_district_pressure",
+      "time": 95,
+      "action": "commit",
+      "patch": {
+        "scuffle_risk": 0.108,
+        "fan_zone_pressure": 0.072
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E4"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E5",
+      "kind": "bar_district_pressure",
+      "time": 95,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E4"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E7",
+      "kind": "crowd_density_spike",
+      "time": 98,
+      "action": "commit",
+      "patch": {
+        "crowd_density": 0.14,
+        "fan_zone_pressure": 0.10499999999999998
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E2"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E7",
+      "kind": "crowd_density_spike",
+      "time": 98,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E2"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E6",
+      "kind": "opposing_fans_contact",
+      "time": 98,
+      "action": "set_flag",
+      "patch": {},
+      "flags_delta": {
+        "OPPOSING_FANS_COLOCATED": "set"
+      },
+      "resource_delta": {},
+      "cause": [
+        "event:E4"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E6",
+      "kind": "opposing_fans_contact",
+      "time": 98,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E4"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E8",
+      "kind": "opposing_fans_contact",
+      "time": 101,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E5"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E9",
+      "kind": "queue_overflow",
+      "time": 102,
+      "action": "blocked",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E7"
+      ],
+      "blocked_reason": "condition_not_met:fan_zone_pressure_below_threshold"
+    },
+    {
+      "event_id": "E10",
+      "kind": "verbal_conflict",
+      "time": 103,
+      "action": "commit",
+      "patch": {
+        "verbal_conflict_risk": 0.36000000000000004,
+        "scuffle_risk": 0.135
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E6"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E10",
+      "kind": "verbal_conflict",
+      "time": 103,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E6"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E11",
+      "kind": "verbal_conflict",
+      "time": 106,
+      "action": "commit",
+      "patch": {
+        "verbal_conflict_risk": 0.36000000000000004,
+        "scuffle_risk": 0.135
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E8"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E11",
+      "kind": "verbal_conflict",
+      "time": 106,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E8"
+      ],
+      "blocked_reason": null
+    }
+  ],
+  "dominant_risk_path": [
+    "team_eliminated",
+    "fans_gather",
+    "opposing_fans_contact",
+    "verbal_conflict"
+  ],
+  "evidence_links": []
+}

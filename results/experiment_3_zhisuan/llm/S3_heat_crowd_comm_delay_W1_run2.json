@@ -1,0 +1,43 @@
+{
+  "final_risk": {
+    "verbal_conflict": 0.68,
+    "scuffle": 0.24,
+    "riot": 0.05,
+    "panic": 0.02
+  },
+  "dominant_path": [
+    "controversial_call",
+    "media_blame_frame",
+    "rumor_amplified",
+    "offline_mood_shift",
+    "opposing_fans_contact",
+    "verbal_conflict"
+  ],
+  "active_flags": [
+    "CONTROVERSIAL_CALL_VISIBLE",
+    "MEDIA_OUTRAGE_FRAME_ACTIVE",
+    "RUMOR_SPIKE",
+    "OPPOSING_FANS_COLOCATED",
+    "CROWD_DENSITY_HIGH",
+    "HEAT_STRESS_HIGH",
+    "POLICE_TRUST_LOW"
+  ],
+  "resource_bottlenecks": [
+    {
+      "resource": "official_comm_channel",
+      "failures": 1
+    }
+  ],
+  "best_cut_points": [
+    {
+      "intervention": "official_clarification",
+      "before": "rumor_amplified"
+    }
+  ],
+  "reasoning": "The chain begins with a controversial_call at minute 55, which triggers media_blame_frame due to high heat stress and low police trust. This leads to rumor_amplified as the official_comm_channel is overloaded (capacity 5 vs demand), causing a failure to disseminate facts quickly. Consequently, rumor_amplified triggers offline_mood_shift, which escalates to opposing_fans_contact given the high crowd density (0.8) exceeding the colocation threshold. This contact results in verbal_conflict. The event 'panic_signal' did NOT happen because the crowd density, while high, did not reach the critical threshold for mass panic, and the presence of deescalation teams (20 units) prevented the situation from spiraling into a full panic despite the verbal conflict. In the intervention world W1, the official_clarification at minute 87 reduces rumor_delta by 0.25, slightly lowering the final_risk for scuffle and riot compared to a baseline without intervention, but the delay in clarification (after rumor_amplified) limits its effectiveness.",
+  "source": "api",
+  "api_base": "https://ai.azya.top/v1",
+  "model": "qwen3.5",
+  "world_id": "W1",
+  "scenario_id": "S3_heat_crowd_comm_delay"
+}

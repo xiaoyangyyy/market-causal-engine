@@ -1,0 +1,114 @@
+{
+  "scenarios": [
+    "S1_controversial_call_high_density",
+    "S3_heat_crowd_comm_delay"
+  ],
+  "dimensions": [
+    "traceability",
+    "consistency",
+    "not_happen_explanation",
+    "intervention_diff",
+    "bottleneck_localization"
+  ],
+  "kernel": {
+    "traceability": 1.0,
+    "consistency": 1.0,
+    "not_happen_explanation": 1.0,
+    "intervention_diff": 0.5,
+    "bottleneck_localization": 1.0
+  },
+  "llm": {
+    "traceability": 1.0,
+    "consistency": 0.9762,
+    "not_happen_explanation": 1.0,
+    "intervention_diff": 1.0,
+    "bottleneck_localization": 0.25
+  },
+  "per_scenario": [
+    {
+      "kernel": {
+        "traceability": 1.0,
+        "consistency": 1.0,
+        "not_happen_explanation": 1.0,
+        "intervention_diff": 1.0,
+        "bottleneck_localization": 1.0
+      },
+      "llm": {
+        "traceability": 1.0,
+        "consistency": 0.9523809523809523,
+        "not_happen_explanation": 1.0,
+        "intervention_diff": 1.0,
+        "bottleneck_localization": 0.0
+      },
+      "llm_w0": {
+        "traceability": 1.0,
+        "consistency": 0.9047619047619048,
+        "not_happen_explanation": 1.0,
+        "intervention_diff": 1.0,
+        "bottleneck_localization": 0.0
+      },
+      "llm_w1": {
+        "traceability": 1.0,
+        "consistency": 1.0,
+        "not_happen_explanation": 1.0,
+        "intervention_diff": 1.0,
+        "bottleneck_localization": 0.0
+      },
+      "dimensions": [
+        "traceability",
+        "consistency",
+        "not_happen_explanation",
+        "intervention_diff",
+        "bottleneck_localization"
+      ],
+      "scenario_id": "S1_controversial_call_high_density",
+      "llm_source": "api",
+      "llm_model": "qwen3.5",
+      "api_base": "https://ai.azya.top/v1"
+    },
+    {
+      "kernel": {
+        "traceability": 1.0,
+        "consistency": 1.0,
+        "not_happen_explanation": 1.0,
+        "intervention_diff": 0.0,
+        "bottleneck_localization": 1.0
+      },
+      "llm": {
+        "traceability": 1.0,
+        "consistency": 1.0,
+        "not_happen_explanation": 1.0,
+        "intervention_diff": 1.0,
+        "bottleneck_localization": 0.5
+      },
+      "llm_w0": {
+        "traceability": 1.0,
+        "consistency": 1.0,
+        "not_happen_explanation": 1.0,
+        "intervention_diff": 1.0,
+        "bottleneck_localization": 0.5
+      },
+      "llm_w1": {
+        "traceability": 1.0,
+        "consistency": 1.0,
+        "not_happen_explanation": 1.0,
+        "intervention_diff": 1.0,
+        "bottleneck_localization": 0.5
+      },
+      "dimensions": [
+        "traceability",
+        "consistency",
+        "not_happen_explanation",
+        "intervention_diff",
+        "bottleneck_localization"
+      ],
+      "scenario_id": "S3_heat_crowd_comm_delay",
+      "llm_source": "api",
+      "llm_model": "qwen3.5",
+      "api_base": "https://ai.azya.top/v1"
+    }
+  ],
+  "llm_source": "api",
+  "llm_model": "qwen3.5",
+  "api_base": "https://ai.azya.top/v1"
+}

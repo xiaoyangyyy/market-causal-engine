@@ -1,0 +1,25 @@
+{
+  "final_risk": {
+    "verbal_conflict": 0.59,
+    "scuffle": 0.24,
+    "riot": 0.05,
+    "panic": 0.05
+  },
+  "dominant_path": [
+    "controversial_call",
+    "media_blame_frame",
+    "rumor_amplified",
+    "opposing_fans_contact",
+    "verbal_conflict"
+  ],
+  "active_flags": [
+    "MEDIA_OUTRAGE_FRAME_ACTIVE"
+  ],
+  "resource_bottlenecks": [],
+  "best_cut_points": [],
+  "reasoning": "Trigger controversial_call elevates outrage; social amplification leads to offline contact. Intervention W0 may reduce rumor spread.",
+  "source": "mock_llm",
+  "run_id": 2,
+  "world_id": "W0",
+  "scenario_id": "S3_heat_crowd_comm_delay"
+}

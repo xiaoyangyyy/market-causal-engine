@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-06-05T09:24:47.359628+00:00",
+  "random_seed_sensitivity": 42,
+  "artifacts": {
+    "data/priors/mechanisms_v0.1.json": "82da86fb8367ea97",
+    "data/compiler_rules/v0.1.json": "a787084a20309b08",
+    "data/scenarios/S1_controversial_call_high_density.json": "5e116b10d5e0a4f2",
+    "data/scenarios/S2_team_eliminated_transit_delay.json": "604535c4ba26ba9c",
+    "data/scenarios/S3_heat_crowd_comm_delay.json": "bf32444f5cc365af",
+    "results/experiment_1/summary.json": "6c605f7a8fc57355",
+    "results/experiment_2/ablation_summary.json": "d28cbcf922762bea",
+    "results/experiment_3/explainability_scores.json": "e8e79f7452a4b7fa",
+    "results/experiment_sensitivity/sensitivity_summary.json": "2ba28c35c380d215"
+  }
+}

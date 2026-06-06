@@ -1,0 +1,12 @@
+{
+  "world_id": "W5",
+  "description": "Deploy deescalation teams at t=78",
+  "interventions": [
+    {
+      "kind": "deploy_deescalation",
+      "time": 78,
+      "priority": 0,
+      "payload": {}
+    }
+  ]
+}

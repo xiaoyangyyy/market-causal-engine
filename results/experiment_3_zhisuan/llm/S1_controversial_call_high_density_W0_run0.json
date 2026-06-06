@@ -1,0 +1,37 @@
+{
+  "final_risk": {
+    "verbal_conflict": 0.68,
+    "scuffle": 0.21,
+    "riot": 0.05,
+    "panic": 0.0
+  },
+  "dominant_path": [
+    "controversial_call",
+    "media_blame_frame",
+    "rumor_amplified",
+    "offline_mood_shift",
+    "opposing_fans_contact",
+    "verbal_conflict"
+  ],
+  "active_flags": [
+    "CONTROVERSIAL_CALL_VISIBLE",
+    "MEDIA_OUTRAGE_FRAME_ACTIVE",
+    "RUMOR_SPIKE",
+    "OPPOSING_FANS_COLOCATED",
+    "CROWD_DENSITY_HIGH",
+    "POLICE_TRUST_LOW"
+  ],
+  "resource_bottlenecks": [],
+  "best_cut_points": [
+    {
+      "intervention": "official_clarification",
+      "before": "rumor_amplified"
+    }
+  ],
+  "reasoning": "The chain begins with a high-severity controversial_call (severity 0.8) which triggers media_blame_frame due to high media_attention (0.6). This leads to rumor_amplified as the rumor_delta (0.8) exceeds the threshold (0.6), activating the RUMOR_SPIKE flag. The high crowd_density (0.75) and low police_trust (0.45) facilitate offline_mood_shift and subsequent opposing_fans_contact. Verbal_conflict emerges as the dominant risk. The event 'panic_signal' did NOT happen because the dominant path remained focused on verbal aggression driven by rivalry and rumors rather than sudden fear or stampede triggers, and the crowd density, while high, did not cross the specific threshold for panic without a sudden external shock like a fire or structural failure. Since this is W0 (no interventions), the official_comm_channel (capacity 5) was not overwhelmed enough to be a bottleneck, but the lack of intervention allowed the rumor to propagate unchecked.",
+  "source": "api",
+  "api_base": "https://ai.azya.top/v1",
+  "model": "qwen3.5",
+  "world_id": "W0",
+  "scenario_id": "S1_controversial_call_high_density"
+}

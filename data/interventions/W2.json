@@ -1,0 +1,14 @@
+{
+  "world_id": "W2",
+  "description": "Team captain cooling message at t=72",
+  "interventions": [
+    {
+      "kind": "team_captain_message",
+      "time": 72,
+      "priority": 0,
+      "payload": {
+        "credibility": 0.65
+      }
+    }
+  ]
+}

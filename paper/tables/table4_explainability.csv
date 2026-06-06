@@ -1,0 +1,6 @@
+dimension,kernel,llm
+traceability,1.0,1.0
+consistency,1.0,1.0
+not_happen_explanation,1.0,0.0
+intervention_diff,0.0,0.5
+bottleneck_localization,1.0,0.0

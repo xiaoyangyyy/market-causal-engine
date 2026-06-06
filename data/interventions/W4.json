@@ -1,0 +1,12 @@
+{
+  "world_id": "W4",
+  "description": "Transit reroute at t=96",
+  "interventions": [
+    {
+      "kind": "transit_reroute",
+      "time": 96,
+      "priority": 0,
+      "payload": {}
+    }
+  ]
+}

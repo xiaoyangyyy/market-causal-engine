@@ -1,0 +1,1575 @@
+{
+  "scenario_id": "S6_heat_fanzone_overflow",
+  "world_id": "llm_propose_demo",
+  "final_state": {
+    "match_tension": 0.35,
+    "rivalry_intensity": 0.0,
+    "perceived_unfairness": 0.0,
+    "humiliation_level": 0.0,
+    "media_attention": 0.0,
+    "outrage_frame": 0.0,
+    "blame_frame": 0.0,
+    "rumor_volume": 0.0,
+    "misinfo_confidence": 0.0,
+    "platform_velocity": 0.0,
+    "crowd_density": 0.95,
+    "fan_zone_pressure": 1.0,
+    "transit_pressure": 0.2,
+    "heat_stress": 0.92,
+    "police_visibility": 0.0,
+    "police_trust": 0.42,
+    "deescalation_capacity": 0.5,
+    "verbal_conflict_risk": 0.4,
+    "scuffle_risk": 0.27,
+    "riot_risk": 0.0,
+    "panic_risk": 0.0
+  },
+  "final_risk": {
+    "verbal_conflict": 0.4,
+    "scuffle": 0.27,
+    "riot": 0.0,
+    "panic": 0.0
+  },
+  "dominant_path": [
+    "heat_stress_check",
+    "transit_reroute",
+    "match_end",
+    "fans_gather",
+    "bar_district_pressure",
+    "opposing_fans_contact",
+    "verbal_conflict"
+  ],
+  "active_flags": [
+    "CROWD_DENSITY_HIGH",
+    "HEAT_STRESS_HIGH",
+    "OPPOSING_FANS_COLOCATED"
+  ],
+  "resource_bottlenecks": [],
+  "remaining_resources": {
+    "media_attention_budget": 100,
+    "official_comm_channel": 5,
+    "fact_check_capacity": 20,
+    "police_units": 100,
+    "deescalation_teams": 20,
+    "medical_units": 25,
+    "transport_capacity": 800.0,
+    "fan_zone_capacity": 50
+  },
+  "kernel_config": {
+    "ablation_id": "full",
+    "use_flags": true,
+    "use_resources": true,
+    "use_priority": true,
+    "use_trace": true,
+    "use_interventions": true,
+    "use_evidence_ledger": true,
+    "use_contracts": true,
+    "use_causal_ledger": true
+  },
+  "trace": [
+    {
+      "event_id": "E1",
+      "kind": "heat_stress_check",
+      "time": 35,
+      "action": "verification",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "scenario_trigger:heat_stress_check"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": {
+        "proposal_id": "E1",
+        "kind": "heat_stress_check",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "contract_satisfied",
+        "missing_flags": [],
+        "missing_resources": {},
+        "failed_pre": []
+      },
+      "proposer": null,
+      "ledger_entry_id": "8fb260b7e07b49e9"
+    },
+    {
+      "event_id": "E1",
+      "kind": "heat_stress_check",
+      "time": 35,
+      "action": "set_flag",
+      "patch": {},
+      "flags_delta": {
+        "HEAT_STRESS_HIGH": "set"
+      },
+      "resource_delta": {},
+      "cause": [
+        "scenario_trigger:heat_stress_check"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": null,
+      "proposer": null,
+      "ledger_entry_id": "893b026ab82484d8"
+    },
+    {
+      "event_id": "E1",
+      "kind": "heat_stress_check",
+      "time": 35,
+      "action": "commit",
+      "patch": {
+        "fan_zone_pressure": 0.09999999999999998
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "scenario_trigger:heat_stress_check"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": null,
+      "proposer": null,
+      "ledger_entry_id": "a55b94555d6cc1f2"
+    },
+    {
+      "event_id": "E1",
+      "kind": "heat_stress_check",
+      "time": 35,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "scenario_trigger:heat_stress_check"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": null,
+      "proposer": null,
+      "ledger_entry_id": "2e8ea148f5924a2f"
+    },
+    {
+      "event_id": "P-llm-api-1",
+      "kind": "transit_reroute",
+      "time": 35,
+      "action": "proposal",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "proposer:llm-api"
+      ],
+      "blocked_reason": null,
+      "proposal_id": "P-llm-api-1",
+      "verification": null,
+      "proposer": "llm-api",
+      "ledger_entry_id": "08e1bcd0e1e0b774"
+    },
+    {
+      "event_id": "P-llm-api-1",
+      "kind": "transit_reroute",
+      "time": 35,
+      "action": "verification",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "proposer:llm-api"
+      ],
+      "blocked_reason": null,
+      "proposal_id": "P-llm-api-1",
+      "verification": {
+        "proposal_id": "P-llm-api-1",
+        "kind": "transit_reroute",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "contract_satisfied",
+        "missing_flags": [],
+        "missing_resources": {},
+        "failed_pre": []
+      },
+      "proposer": "llm-api",
+      "ledger_entry_id": "f76eeee5f72a45c9"
+    },
+    {
+      "event_id": "E3",
+      "kind": "transit_reroute",
+      "time": 35,
+      "action": "verification",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "proposal:P-llm-api-1",
+        "proposer:llm-api"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": {
+        "proposal_id": "E3",
+        "kind": "transit_reroute",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "contract_satisfied",
+        "missing_flags": [],
+        "missing_resources": {},
+        "failed_pre": []
+      },
+      "proposer": null,
+      "ledger_entry_id": "36ed0cf874cbf0db"
+    },
+    {
+      "event_id": "E3",
+      "kind": "transit_reroute",
+      "time": 35,
+      "action": "acquire",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {
+        "transport_capacity": -200.0
+      },
+      "cause": [
+        "proposal:P-llm-api-1",
+        "proposer:llm-api"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": null,
+      "proposer": null,
+      "ledger_entry_id": "bb8248d963470638"
+    },
+    {
+      "event_id": "E3",
+      "kind": "transit_reroute",
+      "time": 35,
+      "action": "commit",
+      "patch": {
+        "transit_pressure": -0.3,
+        "crowd_density": -0.07999999999999996
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "proposal:P-llm-api-1",
+        "proposer:llm-api"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": null,
+      "proposer": null,
+      "ledger_entry_id": "5b033480d70f4e64"
+    },
+    {
+      "event_id": "E3",
+      "kind": "transit_reroute",
+      "time": 35,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "proposal:P-llm-api-1",
+        "proposer:llm-api"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": null,
+      "proposer": null,
+      "ledger_entry_id": "e060b08945f0f882"
+    },
+    {
+      "event_id": "E2",
+      "kind": "match_end",
+      "time": 90,
+      "action": "verification",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "scenario_trigger:match_end"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": {
+        "proposal_id": "E2",
+        "kind": "match_end",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "contract_satisfied",
+        "missing_flags": [],
+        "missing_resources": {},
+        "failed_pre": []
+      },
+      "proposer": null,
+      "ledger_entry_id": "1f63b223750e1189"
+    },
+    {
+      "event_id": "E2",
+      "kind": "match_end",
+      "time": 90,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "scenario_trigger:match_end"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": null,
+      "proposer": null,
+      "ledger_entry_id": "ecb277c991f0719d"
+    },
+    {
+      "event_id": "E4",
+      "kind": "fans_gather",
+      "time": 91,
+      "action": "verification",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E2"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": {
+        "proposal_id": "E4",
+        "kind": "fans_gather",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "contract_satisfied",
+        "missing_flags": [],
+        "missing_resources": {},
+        "failed_pre": []
+      },
+      "proposer": null,
+      "ledger_entry_id": "eb04c7d0dea9369a"
+    },
+    {
+      "event_id": "E4",
+      "kind": "fans_gather",
+      "time": 91,
+      "action": "commit",
+      "patch": {
+        "crowd_density": 0.15000000000000002,
+        "fan_zone_pressure": 0.08000000000000007
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E2"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": null,
+      "proposer": null,
+      "ledger_entry_id": "6f71786bdf87c22b"
+    },
+    {
+      "event_id": "E4",
+      "kind": "fans_gather",
+      "time": 91,
+      "action": "set_flag",
+      "patch": {},
+      "flags_delta": {
+        "CROWD_DENSITY_HIGH": "set"
+      },
+      "resource_delta": {},
+      "cause": [
+        "event:E2"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": null,
+      "proposer": null,
+      "ledger_entry_id": "59f037106a8d978e"
+    },
+    {
+      "event_id": "E4",
+      "kind": "fans_gather",
+      "time": 91,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E2"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": null,
+      "proposer": null,
+      "ledger_entry_id": "1e425caeccbd206b"
+    },
+    {
+      "event_id": "E5",
+      "kind": "bar_district_pressure",
+      "time": 96,
+      "action": "verification",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E4"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": {
+        "proposal_id": "E5",
+        "kind": "bar_district_pressure",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "contract_satisfied",
+        "missing_flags": [],
+        "missing_resources": {},
+        "failed_pre": []
+      },
+      "proposer": null,
+      "ledger_entry_id": "5b5a6fe8b2ae8872"
+    },
+    {
+      "event_id": "E5",
+      "kind": "bar_district_pressure",
+      "time": 96,
+      "action": "commit",
+      "patch": {
+        "scuffle_risk": 0.12,
+        "fan_zone_pressure": 0.0
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E4"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": null,
+      "proposer": null,
+      "ledger_entry_id": "0eb01a9c7988c822"
+    },
+    {
+      "event_id": "E5",
+      "kind": "bar_district_pressure",
+      "time": 96,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E4"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": null,
+      "proposer": null,
+      "ledger_entry_id": "1c3ac57f1c79b5cf"
+    },
+    {
+      "event_id": "E6",
+      "kind": "opposing_fans_contact",
+      "time": 102,
+      "action": "verification",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E5"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": {
+        "proposal_id": "E6",
+        "kind": "opposing_fans_contact",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "contract_satisfied",
+        "missing_flags": [],
+        "missing_resources": {},
+        "failed_pre": []
+      },
+      "proposer": null,
+      "ledger_entry_id": "6d3552f281d039f9"
+    },
+    {
+      "event_id": "E6",
+      "kind": "opposing_fans_contact",
+      "time": 102,
+      "action": "set_flag",
+      "patch": {},
+      "flags_delta": {
+        "OPPOSING_FANS_COLOCATED": "set"
+      },
+      "resource_delta": {},
+      "cause": [
+        "event:E5"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": null,
+      "proposer": null,
+      "ledger_entry_id": "023a405f8da2321e"
+    },
+    {
+      "event_id": "E6",
+      "kind": "opposing_fans_contact",
+      "time": 102,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E5"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": null,
+      "proposer": null,
+      "ledger_entry_id": "27c2e57546eeca83"
+    },
+    {
+      "event_id": "E7",
+      "kind": "verbal_conflict",
+      "time": 107,
+      "action": "verification",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E6"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": {
+        "proposal_id": "E7",
+        "kind": "verbal_conflict",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "contract_satisfied",
+        "missing_flags": [],
+        "missing_resources": {},
+        "failed_pre": []
+      },
+      "proposer": null,
+      "ledger_entry_id": "b8ec562b585b8e23"
+    },
+    {
+      "event_id": "E7",
+      "kind": "verbal_conflict",
+      "time": 107,
+      "action": "commit",
+      "patch": {
+        "verbal_conflict_risk": 0.4,
+        "scuffle_risk": 0.15000000000000002
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E6"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": null,
+      "proposer": null,
+      "ledger_entry_id": "9442381434a75d39"
+    },
+    {
+      "event_id": "E7",
+      "kind": "verbal_conflict",
+      "time": 107,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E6"
+      ],
+      "blocked_reason": null,
+      "proposal_id": null,
+      "verification": null,
+      "proposer": null,
+      "ledger_entry_id": "1a5ce75a441d4ffd"
+    }
+  ],
+  "causal_ledger": {
+    "ledger_id": "main",
+    "entries": [
+      {
+        "entry_id": "8fb260b7e07b49e9",
+        "seq": 1,
+        "event_id": "E1",
+        "kind": "heat_stress_check",
+        "time": 35,
+        "action": "verification",
+        "cause": [
+          "scenario_trigger:heat_stress_check"
+        ],
+        "verification": {
+          "proposal_id": "E1",
+          "kind": "heat_stress_check",
+          "accepted": true,
+          "reason_code": "accepted",
+          "detail": "contract_satisfied",
+          "missing_flags": [],
+          "missing_resources": {},
+          "failed_pre": []
+        }
+      },
+      {
+        "entry_id": "893b026ab82484d8",
+        "seq": 2,
+        "event_id": "E1",
+        "kind": "heat_stress_check",
+        "time": 35,
+        "action": "set_flag",
+        "cause": [
+          "scenario_trigger:heat_stress_check"
+        ],
+        "flags_delta": {
+          "HEAT_STRESS_HIGH": "set"
+        }
+      },
+      {
+        "entry_id": "a55b94555d6cc1f2",
+        "seq": 3,
+        "event_id": "E1",
+        "kind": "heat_stress_check",
+        "time": 35,
+        "action": "commit",
+        "cause": [
+          "scenario_trigger:heat_stress_check"
+        ],
+        "patch": {
+          "fan_zone_pressure": 0.09999999999999998
+        }
+      },
+      {
+        "entry_id": "2e8ea148f5924a2f",
+        "seq": 4,
+        "event_id": "E1",
+        "kind": "heat_stress_check",
+        "time": 35,
+        "action": "executed",
+        "cause": [
+          "scenario_trigger:heat_stress_check"
+        ]
+      },
+      {
+        "entry_id": "08e1bcd0e1e0b774",
+        "seq": 5,
+        "event_id": "P-llm-api-1",
+        "kind": "transit_reroute",
+        "time": 35,
+        "action": "proposal",
+        "cause": [
+          "proposer:llm-api"
+        ],
+        "proposal_id": "P-llm-api-1",
+        "proposer": "llm-api"
+      },
+      {
+        "entry_id": "f76eeee5f72a45c9",
+        "seq": 6,
+        "event_id": "P-llm-api-1",
+        "kind": "transit_reroute",
+        "time": 35,
+        "action": "verification",
+        "cause": [
+          "proposer:llm-api"
+        ],
+        "proposal_id": "P-llm-api-1",
+        "verification": {
+          "proposal_id": "P-llm-api-1",
+          "kind": "transit_reroute",
+          "accepted": true,
+          "reason_code": "accepted",
+          "detail": "contract_satisfied",
+          "missing_flags": [],
+          "missing_resources": {},
+          "failed_pre": []
+        },
+        "proposer": "llm-api"
+      },
+      {
+        "entry_id": "36ed0cf874cbf0db",
+        "seq": 7,
+        "event_id": "E3",
+        "kind": "transit_reroute",
+        "time": 35,
+        "action": "verification",
+        "cause": [
+          "proposal:P-llm-api-1",
+          "proposer:llm-api"
+        ],
+        "verification": {
+          "proposal_id": "E3",
+          "kind": "transit_reroute",
+          "accepted": true,
+          "reason_code": "accepted",
+          "detail": "contract_satisfied",
+          "missing_flags": [],
+          "missing_resources": {},
+          "failed_pre": []
+        }
+      },
+      {
+        "entry_id": "bb8248d963470638",
+        "seq": 8,
+        "event_id": "E3",
+        "kind": "transit_reroute",
+        "time": 35,
+        "action": "acquire",
+        "cause": [
+          "proposal:P-llm-api-1",
+          "proposer:llm-api"
+        ],
+        "resource_delta": {
+          "transport_capacity": -200.0
+        }
+      },
+      {
+        "entry_id": "5b033480d70f4e64",
+        "seq": 9,
+        "event_id": "E3",
+        "kind": "transit_reroute",
+        "time": 35,
+        "action": "commit",
+        "cause": [
+          "proposal:P-llm-api-1",
+          "proposer:llm-api"
+        ],
+        "patch": {
+          "transit_pressure": -0.3,
+          "crowd_density": -0.07999999999999996
+        }
+      },
+      {
+        "entry_id": "e060b08945f0f882",
+        "seq": 10,
+        "event_id": "E3",
+        "kind": "transit_reroute",
+        "time": 35,
+        "action": "executed",
+        "cause": [
+          "proposal:P-llm-api-1",
+          "proposer:llm-api"
+        ]
+      },
+      {
+        "entry_id": "1f63b223750e1189",
+        "seq": 11,
+        "event_id": "E2",
+        "kind": "match_end",
+        "time": 90,
+        "action": "verification",
+        "cause": [
+          "scenario_trigger:match_end"
+        ],
+        "verification": {
+          "proposal_id": "E2",
+          "kind": "match_end",
+          "accepted": true,
+          "reason_code": "accepted",
+          "detail": "contract_satisfied",
+          "missing_flags": [],
+          "missing_resources": {},
+          "failed_pre": []
+        }
+      },
+      {
+        "entry_id": "ecb277c991f0719d",
+        "seq": 12,
+        "event_id": "E2",
+        "kind": "match_end",
+        "time": 90,
+        "action": "executed",
+        "cause": [
+          "scenario_trigger:match_end"
+        ]
+      },
+      {
+        "entry_id": "eb04c7d0dea9369a",
+        "seq": 13,
+        "event_id": "E4",
+        "kind": "fans_gather",
+        "time": 91,
+        "action": "verification",
+        "cause": [
+          "event:E2"
+        ],
+        "verification": {
+          "proposal_id": "E4",
+          "kind": "fans_gather",
+          "accepted": true,
+          "reason_code": "accepted",
+          "detail": "contract_satisfied",
+          "missing_flags": [],
+          "missing_resources": {},
+          "failed_pre": []
+        }
+      },
+      {
+        "entry_id": "6f71786bdf87c22b",
+        "seq": 14,
+        "event_id": "E4",
+        "kind": "fans_gather",
+        "time": 91,
+        "action": "commit",
+        "cause": [
+          "event:E2"
+        ],
+        "patch": {
+          "crowd_density": 0.15000000000000002,
+          "fan_zone_pressure": 0.08000000000000007
+        }
+      },
+      {
+        "entry_id": "59f037106a8d978e",
+        "seq": 15,
+        "event_id": "E4",
+        "kind": "fans_gather",
+        "time": 91,
+        "action": "set_flag",
+        "cause": [
+          "event:E2"
+        ],
+        "flags_delta": {
+          "CROWD_DENSITY_HIGH": "set"
+        }
+      },
+      {
+        "entry_id": "1e425caeccbd206b",
+        "seq": 16,
+        "event_id": "E4",
+        "kind": "fans_gather",
+        "time": 91,
+        "action": "executed",
+        "cause": [
+          "event:E2"
+        ]
+      },
+      {
+        "entry_id": "5b5a6fe8b2ae8872",
+        "seq": 17,
+        "event_id": "E5",
+        "kind": "bar_district_pressure",
+        "time": 96,
+        "action": "verification",
+        "cause": [
+          "event:E4"
+        ],
+        "verification": {
+          "proposal_id": "E5",
+          "kind": "bar_district_pressure",
+          "accepted": true,
+          "reason_code": "accepted",
+          "detail": "contract_satisfied",
+          "missing_flags": [],
+          "missing_resources": {},
+          "failed_pre": []
+        }
+      },
+      {
+        "entry_id": "0eb01a9c7988c822",
+        "seq": 18,
+        "event_id": "E5",
+        "kind": "bar_district_pressure",
+        "time": 96,
+        "action": "commit",
+        "cause": [
+          "event:E4"
+        ],
+        "patch": {
+          "scuffle_risk": 0.12,
+          "fan_zone_pressure": 0.0
+        }
+      },
+      {
+        "entry_id": "1c3ac57f1c79b5cf",
+        "seq": 19,
+        "event_id": "E5",
+        "kind": "bar_district_pressure",
+        "time": 96,
+        "action": "executed",
+        "cause": [
+          "event:E4"
+        ]
+      },
+      {
+        "entry_id": "6d3552f281d039f9",
+        "seq": 20,
+        "event_id": "E6",
+        "kind": "opposing_fans_contact",
+        "time": 102,
+        "action": "verification",
+        "cause": [
+          "event:E5"
+        ],
+        "verification": {
+          "proposal_id": "E6",
+          "kind": "opposing_fans_contact",
+          "accepted": true,
+          "reason_code": "accepted",
+          "detail": "contract_satisfied",
+          "missing_flags": [],
+          "missing_resources": {},
+          "failed_pre": []
+        }
+      },
+      {
+        "entry_id": "023a405f8da2321e",
+        "seq": 21,
+        "event_id": "E6",
+        "kind": "opposing_fans_contact",
+        "time": 102,
+        "action": "set_flag",
+        "cause": [
+          "event:E5"
+        ],
+        "flags_delta": {
+          "OPPOSING_FANS_COLOCATED": "set"
+        }
+      },
+      {
+        "entry_id": "27c2e57546eeca83",
+        "seq": 22,
+        "event_id": "E6",
+        "kind": "opposing_fans_contact",
+        "time": 102,
+        "action": "executed",
+        "cause": [
+          "event:E5"
+        ]
+      },
+      {
+        "entry_id": "b8ec562b585b8e23",
+        "seq": 23,
+        "event_id": "E7",
+        "kind": "verbal_conflict",
+        "time": 107,
+        "action": "verification",
+        "cause": [
+          "event:E6"
+        ],
+        "verification": {
+          "proposal_id": "E7",
+          "kind": "verbal_conflict",
+          "accepted": true,
+          "reason_code": "accepted",
+          "detail": "contract_satisfied",
+          "missing_flags": [],
+          "missing_resources": {},
+          "failed_pre": []
+        }
+      },
+      {
+        "entry_id": "9442381434a75d39",
+        "seq": 24,
+        "event_id": "E7",
+        "kind": "verbal_conflict",
+        "time": 107,
+        "action": "commit",
+        "cause": [
+          "event:E6"
+        ],
+        "patch": {
+          "verbal_conflict_risk": 0.4,
+          "scuffle_risk": 0.15000000000000002
+        }
+      },
+      {
+        "entry_id": "1a5ce75a441d4ffd",
+        "seq": 25,
+        "event_id": "E7",
+        "kind": "verbal_conflict",
+        "time": 107,
+        "action": "executed",
+        "cause": [
+          "event:E6"
+        ]
+      }
+    ],
+    "snapshots": {
+      "E1": {
+        "snapshot_id": "SNAP1",
+        "event_id": "E1",
+        "kind": "heat_stress_check",
+        "time": 35,
+        "state": {
+          "match_tension": 0.35,
+          "rivalry_intensity": 0.0,
+          "perceived_unfairness": 0.0,
+          "humiliation_level": 0.0,
+          "media_attention": 0.0,
+          "outrage_frame": 0.0,
+          "blame_frame": 0.0,
+          "rumor_volume": 0.0,
+          "misinfo_confidence": 0.0,
+          "platform_velocity": 0.0,
+          "crowd_density": 0.88,
+          "fan_zone_pressure": 0.9199999999999999,
+          "transit_pressure": 0.5,
+          "heat_stress": 0.92,
+          "police_visibility": 0.0,
+          "police_trust": 0.42,
+          "deescalation_capacity": 0.5,
+          "verbal_conflict_risk": 0.0,
+          "scuffle_risk": 0.0,
+          "riot_risk": 0.0,
+          "panic_risk": 0.0
+        },
+        "flags": [
+          "HEAT_STRESS_HIGH"
+        ],
+        "resources": {
+          "media_attention_budget": 100,
+          "official_comm_channel": 5,
+          "fact_check_capacity": 20,
+          "police_units": 100,
+          "deescalation_teams": 20,
+          "medical_units": 25,
+          "transport_capacity": 1000,
+          "fan_zone_capacity": 50
+        },
+        "executed_kinds": [
+          "heat_stress_check"
+        ],
+        "pending_events": [
+          {
+            "id": "E2",
+            "kind": "match_end",
+            "time": 90,
+            "priority": 1,
+            "seq": 2,
+            "payload": {
+              "severity": 1.0
+            },
+            "cause": [
+              "scenario_trigger:match_end"
+            ]
+          }
+        ]
+      },
+      "E3": {
+        "snapshot_id": "SNAP2",
+        "event_id": "E3",
+        "kind": "transit_reroute",
+        "time": 35,
+        "state": {
+          "match_tension": 0.35,
+          "rivalry_intensity": 0.0,
+          "perceived_unfairness": 0.0,
+          "humiliation_level": 0.0,
+          "media_attention": 0.0,
+          "outrage_frame": 0.0,
+          "blame_frame": 0.0,
+          "rumor_volume": 0.0,
+          "misinfo_confidence": 0.0,
+          "platform_velocity": 0.0,
+          "crowd_density": 0.8,
+          "fan_zone_pressure": 0.9199999999999999,
+          "transit_pressure": 0.2,
+          "heat_stress": 0.92,
+          "police_visibility": 0.0,
+          "police_trust": 0.42,
+          "deescalation_capacity": 0.5,
+          "verbal_conflict_risk": 0.0,
+          "scuffle_risk": 0.0,
+          "riot_risk": 0.0,
+          "panic_risk": 0.0
+        },
+        "flags": [
+          "HEAT_STRESS_HIGH"
+        ],
+        "resources": {
+          "media_attention_budget": 100,
+          "official_comm_channel": 5,
+          "fact_check_capacity": 20,
+          "police_units": 100,
+          "deescalation_teams": 20,
+          "medical_units": 25,
+          "transport_capacity": 800.0,
+          "fan_zone_capacity": 50
+        },
+        "executed_kinds": [
+          "heat_stress_check",
+          "transit_reroute"
+        ],
+        "pending_events": [
+          {
+            "id": "E2",
+            "kind": "match_end",
+            "time": 90,
+            "priority": 1,
+            "seq": 2,
+            "payload": {
+              "severity": 1.0
+            },
+            "cause": [
+              "scenario_trigger:match_end"
+            ]
+          }
+        ]
+      },
+      "E2": {
+        "snapshot_id": "SNAP3",
+        "event_id": "E2",
+        "kind": "match_end",
+        "time": 90,
+        "state": {
+          "match_tension": 0.35,
+          "rivalry_intensity": 0.0,
+          "perceived_unfairness": 0.0,
+          "humiliation_level": 0.0,
+          "media_attention": 0.0,
+          "outrage_frame": 0.0,
+          "blame_frame": 0.0,
+          "rumor_volume": 0.0,
+          "misinfo_confidence": 0.0,
+          "platform_velocity": 0.0,
+          "crowd_density": 0.8,
+          "fan_zone_pressure": 0.9199999999999999,
+          "transit_pressure": 0.2,
+          "heat_stress": 0.92,
+          "police_visibility": 0.0,
+          "police_trust": 0.42,
+          "deescalation_capacity": 0.5,
+          "verbal_conflict_risk": 0.0,
+          "scuffle_risk": 0.0,
+          "riot_risk": 0.0,
+          "panic_risk": 0.0
+        },
+        "flags": [
+          "HEAT_STRESS_HIGH"
+        ],
+        "resources": {
+          "media_attention_budget": 100,
+          "official_comm_channel": 5,
+          "fact_check_capacity": 20,
+          "police_units": 100,
+          "deescalation_teams": 20,
+          "medical_units": 25,
+          "transport_capacity": 800.0,
+          "fan_zone_capacity": 50
+        },
+        "executed_kinds": [
+          "heat_stress_check",
+          "transit_reroute",
+          "match_end"
+        ],
+        "pending_events": [
+          {
+            "id": "E4",
+            "kind": "fans_gather",
+            "time": 91,
+            "priority": 3,
+            "seq": 4,
+            "payload": {
+              "severity": 1.0,
+              "source": "match_end"
+            },
+            "cause": [
+              "event:E2"
+            ]
+          }
+        ]
+      },
+      "E4": {
+        "snapshot_id": "SNAP4",
+        "event_id": "E4",
+        "kind": "fans_gather",
+        "time": 91,
+        "state": {
+          "match_tension": 0.35,
+          "rivalry_intensity": 0.0,
+          "perceived_unfairness": 0.0,
+          "humiliation_level": 0.0,
+          "media_attention": 0.0,
+          "outrage_frame": 0.0,
+          "blame_frame": 0.0,
+          "rumor_volume": 0.0,
+          "misinfo_confidence": 0.0,
+          "platform_velocity": 0.0,
+          "crowd_density": 0.9500000000000001,
+          "fan_zone_pressure": 1.0,
+          "transit_pressure": 0.2,
+          "heat_stress": 0.92,
+          "police_visibility": 0.0,
+          "police_trust": 0.42,
+          "deescalation_capacity": 0.5,
+          "verbal_conflict_risk": 0.0,
+          "scuffle_risk": 0.0,
+          "riot_risk": 0.0,
+          "panic_risk": 0.0
+        },
+        "flags": [
+          "CROWD_DENSITY_HIGH",
+          "HEAT_STRESS_HIGH"
+        ],
+        "resources": {
+          "media_attention_budget": 100,
+          "official_comm_channel": 5,
+          "fact_check_capacity": 20,
+          "police_units": 100,
+          "deescalation_teams": 20,
+          "medical_units": 25,
+          "transport_capacity": 800.0,
+          "fan_zone_capacity": 50
+        },
+        "executed_kinds": [
+          "heat_stress_check",
+          "transit_reroute",
+          "match_end",
+          "fans_gather"
+        ],
+        "pending_events": [
+          {
+            "id": "E5",
+            "kind": "bar_district_pressure",
+            "time": 96,
+            "priority": 3,
+            "seq": 5,
+            "payload": {
+              "severity": 1.0
+            },
+            "cause": [
+              "event:E4"
+            ]
+          }
+        ]
+      },
+      "E5": {
+        "snapshot_id": "SNAP5",
+        "event_id": "E5",
+        "kind": "bar_district_pressure",
+        "time": 96,
+        "state": {
+          "match_tension": 0.35,
+          "rivalry_intensity": 0.0,
+          "perceived_unfairness": 0.0,
+          "humiliation_level": 0.0,
+          "media_attention": 0.0,
+          "outrage_frame": 0.0,
+          "blame_frame": 0.0,
+          "rumor_volume": 0.0,
+          "misinfo_confidence": 0.0,
+          "platform_velocity": 0.0,
+          "crowd_density": 0.9500000000000001,
+          "fan_zone_pressure": 1.0,
+          "transit_pressure": 0.2,
+          "heat_stress": 0.92,
+          "police_visibility": 0.0,
+          "police_trust": 0.42,
+          "deescalation_capacity": 0.5,
+          "verbal_conflict_risk": 0.0,
+          "scuffle_risk": 0.12,
+          "riot_risk": 0.0,
+          "panic_risk": 0.0
+        },
+        "flags": [
+          "CROWD_DENSITY_HIGH",
+          "HEAT_STRESS_HIGH"
+        ],
+        "resources": {
+          "media_attention_budget": 100,
+          "official_comm_channel": 5,
+          "fact_check_capacity": 20,
+          "police_units": 100,
+          "deescalation_teams": 20,
+          "medical_units": 25,
+          "transport_capacity": 800.0,
+          "fan_zone_capacity": 50
+        },
+        "executed_kinds": [
+          "heat_stress_check",
+          "transit_reroute",
+          "match_end",
+          "fans_gather",
+          "bar_district_pressure"
+        ],
+        "pending_events": [
+          {
+            "id": "E6",
+            "kind": "opposing_fans_contact",
+            "time": 102,
+            "priority": 3,
+            "seq": 6,
+            "payload": {
+              "severity": 1.0
+            },
+            "cause": [
+              "event:E5"
+            ]
+          }
+        ]
+      },
+      "E6": {
+        "snapshot_id": "SNAP6",
+        "event_id": "E6",
+        "kind": "opposing_fans_contact",
+        "time": 102,
+        "state": {
+          "match_tension": 0.35,
+          "rivalry_intensity": 0.0,
+          "perceived_unfairness": 0.0,
+          "humiliation_level": 0.0,
+          "media_attention": 0.0,
+          "outrage_frame": 0.0,
+          "blame_frame": 0.0,
+          "rumor_volume": 0.0,
+          "misinfo_confidence": 0.0,
+          "platform_velocity": 0.0,
+          "crowd_density": 0.9500000000000001,
+          "fan_zone_pressure": 1.0,
+          "transit_pressure": 0.2,
+          "heat_stress": 0.92,
+          "police_visibility": 0.0,
+          "police_trust": 0.42,
+          "deescalation_capacity": 0.5,
+          "verbal_conflict_risk": 0.0,
+          "scuffle_risk": 0.12,
+          "riot_risk": 0.0,
+          "panic_risk": 0.0
+        },
+        "flags": [
+          "CROWD_DENSITY_HIGH",
+          "HEAT_STRESS_HIGH",
+          "OPPOSING_FANS_COLOCATED"
+        ],
+        "resources": {
+          "media_attention_budget": 100,
+          "official_comm_channel": 5,
+          "fact_check_capacity": 20,
+          "police_units": 100,
+          "deescalation_teams": 20,
+          "medical_units": 25,
+          "transport_capacity": 800.0,
+          "fan_zone_capacity": 50
+        },
+        "executed_kinds": [
+          "heat_stress_check",
+          "transit_reroute",
+          "match_end",
+          "fans_gather",
+          "bar_district_pressure",
+          "opposing_fans_contact"
+        ],
+        "pending_events": [
+          {
+            "id": "E7",
+            "kind": "verbal_conflict",
+            "time": 107,
+            "priority": 1,
+            "seq": 7,
+            "payload": {
+              "severity": 1.0
+            },
+            "cause": [
+              "event:E6"
+            ]
+          }
+        ]
+      },
+      "E7": {
+        "snapshot_id": "SNAP7",
+        "event_id": "E7",
+        "kind": "verbal_conflict",
+        "time": 107,
+        "state": {
+          "match_tension": 0.35,
+          "rivalry_intensity": 0.0,
+          "perceived_unfairness": 0.0,
+          "humiliation_level": 0.0,
+          "media_attention": 0.0,
+          "outrage_frame": 0.0,
+          "blame_frame": 0.0,
+          "rumor_volume": 0.0,
+          "misinfo_confidence": 0.0,
+          "platform_velocity": 0.0,
+          "crowd_density": 0.9500000000000001,
+          "fan_zone_pressure": 1.0,
+          "transit_pressure": 0.2,
+          "heat_stress": 0.92,
+          "police_visibility": 0.0,
+          "police_trust": 0.42,
+          "deescalation_capacity": 0.5,
+          "verbal_conflict_risk": 0.4,
+          "scuffle_risk": 0.27,
+          "riot_risk": 0.0,
+          "panic_risk": 0.0
+        },
+        "flags": [
+          "CROWD_DENSITY_HIGH",
+          "HEAT_STRESS_HIGH",
+          "OPPOSING_FANS_COLOCATED"
+        ],
+        "resources": {
+          "media_attention_budget": 100,
+          "official_comm_channel": 5,
+          "fact_check_capacity": 20,
+          "police_units": 100,
+          "deescalation_teams": 20,
+          "medical_units": 25,
+          "transport_capacity": 800.0,
+          "fan_zone_capacity": 50
+        },
+        "executed_kinds": [
+          "heat_stress_check",
+          "transit_reroute",
+          "match_end",
+          "fans_gather",
+          "bar_district_pressure",
+          "opposing_fans_contact",
+          "verbal_conflict"
+        ],
+        "pending_events": []
+      }
+    },
+    "executed_path": [
+      "heat_stress_check",
+      "transit_reroute",
+      "match_end",
+      "fans_gather",
+      "bar_district_pressure",
+      "opposing_fans_contact",
+      "verbal_conflict"
+    ]
+  },
+  "llm_proposal": {
+    "id": "P-llm-api-1",
+    "kind": "transit_reroute",
+    "time": 35,
+    "payload": {
+      "target_zone": "fan_zone_overflow",
+      "action": "divert_to_secondary_stations",
+      "capacity_increase": 200
+    },
+    "proposer": "llm-api",
+    "confidence": 0.95,
+    "evidence_refs": [],
+    "priority": 0
+  },
+  "proposal_verification": {
+    "proposal_id": "P-llm-api-1",
+    "kind": "transit_reroute",
+    "accepted": true,
+    "reason_code": "accepted",
+    "detail": "contract_satisfied",
+    "missing_flags": [],
+    "missing_resources": {},
+    "failed_pre": []
+  },
+  "llm_raw": {
+    "kind": "transit_reroute",
+    "time": 35,
+    "priority": 0,
+    "payload": {
+      "target_zone": "fan_zone_overflow",
+      "action": "divert_to_secondary_stations",
+      "capacity_increase": 200
+    },
+    "confidence": 0.95,
+    "reasoning": "Transit reroute is the highest-impact intervention to break the panic chain caused by heat stress and crowd density before the match ends.",
+    "source": "api",
+    "attempts_count": 1
+  },
+  "proposal_attempts": [
+    {
+      "attempt": 1,
+      "llm_raw": {
+        "kind": "transit_reroute",
+        "time": 35,
+        "priority": 0,
+        "payload": {
+          "target_zone": "fan_zone_overflow",
+          "action": "divert_to_secondary_stations",
+          "capacity_increase": 200
+        },
+        "confidence": 0.95,
+        "reasoning": "Transit reroute is the highest-impact intervention to break the panic chain caused by heat stress and crowd density before the match ends.",
+        "source": "api"
+      },
+      "llm_proposal": {
+        "id": "P-llm-api-1",
+        "kind": "transit_reroute",
+        "time": 35,
+        "payload": {
+          "target_zone": "fan_zone_overflow",
+          "action": "divert_to_secondary_stations",
+          "capacity_increase": 200
+        },
+        "proposer": "llm-api",
+        "confidence": 0.95,
+        "evidence_refs": [],
+        "priority": 0
+      },
+      "proposal_verification": {
+        "proposal_id": "P-llm-api-1",
+        "kind": "transit_reroute",
+        "accepted": true,
+        "reason_code": "accepted",
+        "detail": "contract_satisfied",
+        "missing_flags": [],
+        "missing_resources": {},
+        "failed_pre": []
+      },
+      "projected_final_risk": {
+        "verbal_conflict": 0.4,
+        "scuffle": 0.27,
+        "riot": 0.0,
+        "panic": 0.0
+      }
+    }
+  ],
+  "intervention_context": {
+    "checkpoint_minute": 35,
+    "recommended_interventions": [
+      "transit_reroute",
+      "separate_fan_flows",
+      "deploy_deescalation"
+    ],
+    "best_cut_points": [
+      {
+        "intervention": "transit_reroute",
+        "before": "transit_reroute",
+        "world_id": "W4",
+        "risk_reduction": 1.0,
+        "fork_point": "transit_delay"
+      },
+      {
+        "intervention": "separate_fan_flows",
+        "before": "separate_fan_flows",
+        "world_id": "W3",
+        "risk_reduction": 0.4,
+        "fork_point": "heat_stress_check"
+      },
+      {
+        "intervention": "deploy_deescalation",
+        "before": "deploy_deescalation",
+        "world_id": "W5",
+        "risk_reduction": 0.0,
+        "fork_point": "heat_stress_check"
+      }
+    ],
+    "scenario_hints": [
+      "Heat/transit pressure high: transit_reroute often cuts panic before crowd_push.",
+      "Engine best cut: transit_reroute before transit_reroute (risk_reduction=1.0)."
+    ]
+  },
+  "intervention_effect": {
+    "baseline_final_risk": {
+      "panic": 1.0,
+      "riot": 0.2,
+      "scuffle": 0.27,
+      "verbal_conflict": 0.4
+    },
+    "actual_final_risk": {
+      "verbal_conflict": 0.4,
+      "scuffle": 0.27,
+      "riot": 0.0,
+      "panic": 0.0
+    },
+    "accepted": true,
+    "improved": true
+  }
+}

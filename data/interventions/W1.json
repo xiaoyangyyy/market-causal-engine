@@ -1,0 +1,15 @@
+{
+  "world_id": "W1",
+  "description": "Official rapid clarification at t=75",
+  "interventions": [
+    {
+      "kind": "official_clarification",
+      "time": 87,
+      "priority": 0,
+      "payload": {
+        "topic": "controversial_call",
+        "credibility": 0.7
+      }
+    }
+  ]
+}

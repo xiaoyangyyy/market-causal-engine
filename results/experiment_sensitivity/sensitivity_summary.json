@@ -1,0 +1,2114 @@
+{
+  "experiment": "sensitivity",
+  "scenario": "S1",
+  "world_id": "W0",
+  "runs": 100,
+  "unique_path_signatures": 1,
+  "path_stable": true,
+  "verbal_conflict_range": [
+    0.0,
+    0.0
+  ],
+  "results": [
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.3
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.3
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.3
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.3
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.3
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.4,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.4,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.4,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.4,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.4,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.3,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.3,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.3,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.3,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.3,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.5,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.3
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.5,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.3
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.5,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.3
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.5,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.3
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.5,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.3
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.3
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.3
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.3
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.3
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.3
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.3,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.3,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.3,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.3,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.3,
+        "official_clarification.rumor_reduction": 0.4
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.3,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.1,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.2,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.6,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.2,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.1
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.3,
+        "rumor_amplified.rumor_delta": 0.4,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.4,
+        "rumor_amplified.rumor_delta": 0.4,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.5,
+        "rumor_amplified.rumor_delta": 0.4,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.6,
+        "rumor_amplified.rumor_delta": 0.4,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    },
+    {
+      "params": {
+        "police_trust": 0.7,
+        "rumor_amplified.rumor_delta": 0.4,
+        "media_blame_frame.outrage_delta": 0.4,
+        "official_clarification.rumor_reduction": 0.2
+      },
+      "final_risk": {
+        "verbal_conflict": 0.0,
+        "scuffle": 0.0,
+        "riot": 0.0,
+        "panic": 0.0
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified"
+      ],
+      "path_signature": "controversial_call→viral_clip_published→media_blame_frame→rumor_amplified"
+    }
+  ]
+}

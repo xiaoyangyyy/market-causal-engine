@@ -1,0 +1,45 @@
+{
+  "rumor_amplified": {
+    "version": "v0.2",
+    "waits": ["MEDIA_OUTRAGE_FRAME_ACTIVE"],
+    "resources": [{"name": "media_attention_budget", "amount": 2}],
+    "emits": ["offline_mood_shift"]
+  },
+  "offline_mood_shift": {
+    "version": "v0.2",
+    "waits": ["RUMOR_SPIKE"],
+    "emits": ["opposing_fans_contact"]
+  },
+  "official_clarification": {
+    "version": "v0.2",
+    "resources": [{"name": "official_comm_channel", "amount": 1}],
+    "pre": [
+      {"variable": "rumor_volume", "op": ">", "value": 0.0}
+    ]
+  },
+  "viral_clip_published": {
+    "version": "v0.2",
+    "waits": ["CONTROVERSIAL_CALL_VISIBLE"],
+    "resources": [{"name": "media_attention_budget", "amount": 1}]
+  },
+  "media_blame_frame": {
+    "version": "v0.2",
+    "waits": ["CONTROVERSIAL_CALL_VISIBLE"],
+    "emits": ["rumor_amplified"]
+  },
+  "verbal_conflict": {
+    "version": "v0.2",
+    "waits": ["OPPOSING_FANS_COLOCATED"]
+  },
+  "separate_fan_flows": {
+    "version": "v0.2",
+    "resources": [{"name": "police_units", "amount": 5}]
+  },
+  "platform_rumor_throttle": {
+    "version": "v0.2",
+    "resources": [{"name": "fact_check_capacity", "amount": 3}],
+    "pre": [
+      {"variable": "rumor_volume", "op": ">", "value": 0.0}
+    ]
+  }
+}

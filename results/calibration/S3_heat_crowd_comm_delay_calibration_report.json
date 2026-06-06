@@ -1,0 +1,165 @@
+{
+  "generated_at": "2026-06-05T08:14:34.418920+00:00",
+  "scenario_id": "S3_heat_crowd_comm_delay",
+  "observations_path": "E:\\ca\\data\\observations\\real_qatar2022_S3_w0.jsonl",
+  "calibration": {
+    "best_loss": 0.138862408,
+    "tried": 80,
+    "best_priors_override": {
+      "crowd_push": {
+        "panic_delta": 0.12727282365213818
+      },
+      "panic_signal": {
+        "panic_delta": 0.11884655016989383
+      },
+      "fans_gather": {
+        "pressure_delta": 0.07192982607013183
+      },
+      "verbal_conflict": {
+        "verbal_risk_delta": 0.238233812510927
+      }
+    },
+    "best_breakdown": {
+      "total": 0.138862408,
+      "items": [
+        {
+          "key": "panic",
+          "pred": 0.4922,
+          "obs": 0.48,
+          "weight": 2.0,
+          "squared_error": 0.00014884000000000108,
+          "weighted_error": 0.00029768000000000215
+        },
+        {
+          "key": "verbal_conflict",
+          "pred": 0.2382,
+          "obs": 0.12,
+          "weight": 1.2,
+          "squared_error": 0.01397124,
+          "weighted_error": 0.016765488
+        },
+        {
+          "key": "scuffle",
+          "pred": 0.27,
+          "obs": 0.08,
+          "weight": 1.0,
+          "squared_error": 0.0361,
+          "weighted_error": 0.0361
+        },
+        {
+          "key": "riot",
+          "pred": 0.2,
+          "obs": 0.05,
+          "weight": 0.8,
+          "squared_error": 0.022500000000000006,
+          "weighted_error": 0.018000000000000006
+        },
+        {
+          "key": "riot",
+          "pred": 0.2,
+          "obs": 0.02,
+          "weight": 1.5,
+          "squared_error": 0.032400000000000005,
+          "weighted_error": 0.048600000000000004
+        },
+        {
+          "key": "verbal_conflict",
+          "pred": 0.2382,
+          "obs": 0.1,
+          "weight": 1.0,
+          "squared_error": 0.019099239999999996,
+          "weighted_error": 0.019099239999999996
+        }
+      ]
+    },
+    "baseline_loss": 0.8275800000000002,
+    "calibrated_loss": 0.138862408,
+    "improvement": 0.6887175920000002,
+    "calibrated_run": {
+      "final_risk": {
+        "verbal_conflict": 0.2382,
+        "scuffle": 0.27,
+        "riot": 0.2,
+        "panic": 0.4922
+      },
+      "dominant_path": [
+        "controversial_call",
+        "viral_clip_published",
+        "media_blame_frame",
+        "rumor_amplified",
+        "match_end",
+        "fans_gather",
+        "transit_delay",
+        "crowd_density_spike",
+        "bar_district_pressure",
+        "queue_overflow",
+        "opposing_fans_contact",
+        "crowd_push",
+        "panic_signal",
+        "verbal_conflict"
+      ],
+      "final_state": {
+        "rumor_volume": 0.48,
+        "outrage_frame": 0.18,
+        "verbal_conflict_risk": 0.2382,
+        "panic_risk": 0.4922
+      }
+    },
+    "scenario_proxy": "S3",
+    "real_world_mapping": "S3_heat_crowd_comm_delay"
+  },
+  "baseline": {
+    "final_risk": {
+      "verbal_conflict": 0.4,
+      "scuffle": 0.27,
+      "riot": 0.2,
+      "panic": 1.0
+    },
+    "dominant_path": [
+      "controversial_call",
+      "viral_clip_published",
+      "media_blame_frame",
+      "rumor_amplified",
+      "match_end",
+      "fans_gather",
+      "transit_delay",
+      "crowd_density_spike",
+      "bar_district_pressure",
+      "queue_overflow",
+      "opposing_fans_contact",
+      "crowd_push",
+      "panic_signal",
+      "verbal_conflict"
+    ]
+  },
+  "calibrated_run": {
+    "final_risk": {
+      "verbal_conflict": 0.2382,
+      "scuffle": 0.27,
+      "riot": 0.2,
+      "panic": 0.4922
+    },
+    "dominant_path": [
+      "controversial_call",
+      "viral_clip_published",
+      "media_blame_frame",
+      "rumor_amplified",
+      "match_end",
+      "fans_gather",
+      "transit_delay",
+      "crowd_density_spike",
+      "bar_district_pressure",
+      "queue_overflow",
+      "opposing_fans_contact",
+      "crowd_push",
+      "panic_signal",
+      "verbal_conflict"
+    ],
+    "final_state": {
+      "rumor_volume": 0.48,
+      "outrage_frame": 0.18,
+      "verbal_conflict_risk": 0.2382,
+      "panic_risk": 0.4922
+    }
+  }
+}

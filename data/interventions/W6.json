@@ -1,0 +1,15 @@
+{
+  "world_id": "W6",
+  "description": "Platform / fact-check throttle on rumor amplification",
+  "interventions": [
+    {
+      "kind": "platform_rumor_throttle",
+      "time": 80,
+      "priority": 0,
+      "payload": {
+        "strength": 0.75,
+        "target": "misleading_clip"
+      }
+    }
+  ]
+}

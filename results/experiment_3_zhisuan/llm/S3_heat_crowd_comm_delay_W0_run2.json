@@ -1,0 +1,42 @@
+{
+  "final_risk": {
+    "verbal_conflict": 0.68,
+    "scuffle": 0.22,
+    "riot": 0.05,
+    "panic": 0.0
+  },
+  "dominant_path": [
+    "controversial_call",
+    "media_blame_frame",
+    "rumor_amplified",
+    "offline_mood_shift",
+    "opposing_fans_contact",
+    "verbal_conflict"
+  ],
+  "active_flags": [
+    "CONTROVERSIAL_CALL_VISIBLE",
+    "MEDIA_OUTRAGE_FRAME_ACTIVE",
+    "RUMOR_SPIKE",
+    "OPPOSING_FANS_COLOCATED",
+    "CROWD_DENSITY_HIGH",
+    "HEAT_STRESS_HIGH"
+  ],
+  "resource_bottlenecks": [
+    {
+      "resource": "official_comm_channel",
+      "failures": 1
+    }
+  ],
+  "best_cut_points": [
+    {
+      "intervention": "official_clarification",
+      "before": "rumor_amplified"
+    }
+  ],
+  "reasoning": "The chain begins with a controversial_call at minute 55, triggering media_blame_frame due to high heat stress and low police trust. This leads to rumor_amplified as the official_comm_channel fails (capacity 5 is insufficient for the crowd size), preventing timely correction. The rumor spike causes an offline_mood_shift, and with high crowd density, opposing_fans_contact occurs, escalating to verbal_conflict. The event 'panic_signal' did NOT happen because the crowd density, while high, did not exceed the specific threshold for mass panic, and the heat stress, though significant, did not trigger a medical collapse that would cause stampede behavior. In W0, the lack of intervention allows the rumor to persist, maintaining high risk.",
+  "source": "api",
+  "api_base": "https://ai.azya.top/v1",
+  "model": "qwen3.5",
+  "world_id": "W0",
+  "scenario_id": "S3_heat_crowd_comm_delay"
+}

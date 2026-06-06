@@ -1,0 +1,49 @@
+flowchart LR
+    %% S5 W0
+    bar_district_pressure["bar district pressure"]
+    controversial_call["controversial call"]
+    crowd_density_spike["crowd density spike\nwaits:TRANSIT_DELAY_ACTIVE"]
+    crowd_push["crowd push"]
+    deploy_deescalation["deploy deescalation"]
+    fans_gather["fans gather"]
+    heat_stress_check["heat stress check"]
+    match_end["match end"]
+    media_blame_frame["media blame frame\nwaits:CONTROVERSIAL_CALL_VISIBLE"]
+    official_clarification["official clarification"]
+    offline_mood_shift["offline mood shift\nwaits:RUMOR_SPIKE"]
+    opposing_fans_contact["opposing fans contact"]
+    panic_signal["panic signal"]
+    platform_rumor_throttle["platform rumor throttle"]
+    police_trust_check["police trust check"]
+    queue_overflow["queue overflow\nwaits:CROWD_DENSITY_HIGH"]
+    rumor_amplified["rumor amplified\nwaits:MEDIA_OUTRAGE_FRAME_ACTIVE"]
+    separate_fan_flows["separate fan flows"]
+    team_captain_message["team captain message"]
+    team_eliminated["team eliminated"]
+    transit_delay["transit delay"]
+    transit_reroute["transit reroute"]
+    verbal_conflict["verbal conflict\nwaits:OPPOSING_FANS_COLOCATED"]
+    viral_clip_published["viral clip published\nwaits:CONTROVERSIAL_CALL_VISIBLE"]
+    bar_district_pressure -->|spec_emits| opposing_fans_contact
+    bar_district_pressure -->|trace_successor| queue_overflow
+    controversial_call -->|spec_emits| viral_clip_published
+    crowd_density_spike -->|trace_successor| bar_district_pressure
+    crowd_density_spike -->|spec_emits| queue_overflow
+    crowd_push -->|mixed| panic_signal
+    fans_gather -->|spec_emits| bar_district_pressure
+    fans_gather -->|flag_wait| queue_overflow
+    fans_gather -->|mixed| transit_delay
+    match_end -->|mixed| fans_gather
+    match_end -->|spec_emits| transit_delay
+    media_blame_frame -->|mixed| rumor_amplified
+    offline_mood_shift -->|mixed| opposing_fans_contact
+    opposing_fans_contact -->|trace_successor| crowd_push
+    opposing_fans_contact -->|mixed| verbal_conflict
+    panic_signal -->|trace_successor| verbal_conflict
+    queue_overflow -->|spec_emits| crowd_push
+    queue_overflow -->|trace_successor| opposing_fans_contact
+    rumor_amplified -->|mixed| offline_mood_shift
+    team_eliminated -->|spec_emits| bar_district_pressure
+    team_eliminated -->|spec_emits| fans_gather
+    transit_delay -->|mixed| crowd_density_spike
+    viral_clip_published -->|spec_emits| media_blame_frame

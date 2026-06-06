@@ -1,0 +1,43 @@
+{
+  "final_risk": {
+    "verbal_conflict": 0.68,
+    "scuffle": 0.22,
+    "riot": 0.05,
+    "panic": 0.0
+  },
+  "dominant_path": [
+    "controversial_call",
+    "media_blame_frame",
+    "rumor_amplified",
+    "offline_mood_shift",
+    "opposing_fans_contact",
+    "verbal_conflict"
+  ],
+  "active_flags": [
+    "CONTROVERSIAL_CALL_VISIBLE",
+    "MEDIA_OUTRAGE_FRAME_ACTIVE",
+    "RUMOR_SPIKE",
+    "OPPOSING_FANS_COLOCATED",
+    "CROWD_DENSITY_HIGH",
+    "HEAT_STRESS_HIGH",
+    "POLICE_TRUST_LOW"
+  ],
+  "resource_bottlenecks": [
+    {
+      "resource": "official_comm_channel",
+      "failures": 1
+    }
+  ],
+  "best_cut_points": [
+    {
+      "intervention": "official_clarification",
+      "before": "rumor_amplified"
+    }
+  ],
+  "reasoning": "The chain begins with a controversial_call at minute 55, triggering media blame framing due to high heat stress and low police trust. This leads to rumor_amplified as the official_comm_channel is overloaded (capacity 5 vs demand), failing to counter misinformation. Consequently, offline_mood_shift occurs, followed by opposing_fans_contact in the high-density zone. The intervention (official_clarification) at minute 87 arrives too late to prevent the rumor spike, as the rumor_amplified event had already triggered the mood shift. The event 'panic_signal' did NOT happen because the crowd density, while high, did not exceed the critical threshold for mass panic, and the verbal conflict remained localized without escalating to a full riot. The dominant path in W1 differs from a hypothetical W0 (no intervention) only in the final risk values, which are slightly lower due to the partial credibility of the late clarification, but the causal sequence remains intact.",
+  "source": "api",
+  "api_base": "https://ai.azya.top/v1",
+  "model": "qwen3.5",
+  "world_id": "W1",
+  "scenario_id": "S3_heat_crowd_comm_delay"
+}

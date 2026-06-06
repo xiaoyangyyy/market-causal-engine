@@ -1,0 +1,4 @@
+id,description,trigger
+S1,Controversial call + high density,controversial_call@70
+S2,Team eliminated + transit delay,team_eliminated@88
+S3,Heat + crowd + comm delay,match_end@90

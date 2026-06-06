@@ -1,0 +1,958 @@
+{
+  "scenario_id": "S1_controversial_call_high_density",
+  "world_id": "W1",
+  "final_state": {
+    "match_tension": 0.6,
+    "rivalry_intensity": 0.7,
+    "perceived_unfairness": 0.28,
+    "humiliation_level": 0.0,
+    "media_attention": 0.78,
+    "outrage_frame": 0.77,
+    "blame_frame": 0.56,
+    "rumor_volume": 1.0,
+    "misinfo_confidence": 0.56,
+    "platform_velocity": 0.82,
+    "crowd_density": 0.75,
+    "fan_zone_pressure": 0.0,
+    "transit_pressure": 0.4,
+    "heat_stress": 0.3,
+    "police_visibility": 0.0,
+    "police_trust": 0.45,
+    "deescalation_capacity": 0.5,
+    "verbal_conflict_risk": 1.0,
+    "scuffle_risk": 0.525,
+    "riot_risk": 0.0,
+    "panic_risk": 0.0
+  },
+  "final_risk": {
+    "verbal_conflict": 1.0,
+    "scuffle": 0.525,
+    "riot": 0.0,
+    "panic": 0.0
+  },
+  "dominant_path": [
+    "controversial_call",
+    "viral_clip_published",
+    "media_blame_frame",
+    "viral_clip_published",
+    "media_blame_frame",
+    "rumor_amplified",
+    "official_clarification",
+    "rumor_amplified",
+    "offline_mood_shift",
+    "rumor_amplified",
+    "offline_mood_shift",
+    "opposing_fans_contact",
+    "verbal_conflict",
+    "opposing_fans_contact",
+    "verbal_conflict"
+  ],
+  "active_flags": [
+    "CONTROVERSIAL_CALL_VISIBLE",
+    "MATCH_HIGH_TENSION",
+    "MEDIA_OUTRAGE_FRAME_ACTIVE",
+    "OPPOSING_FANS_COLOCATED",
+    "RUMOR_SPIKE"
+  ],
+  "resource_bottlenecks": [],
+  "remaining_resources": {
+    "media_attention_budget": 92,
+    "official_comm_channel": 4,
+    "fact_check_capacity": 20,
+    "police_units": 100,
+    "deescalation_teams": 20,
+    "medical_units": 30,
+    "transport_capacity": 1000,
+    "fan_zone_capacity": 800
+  },
+  "kernel_config": {
+    "ablation_id": "full",
+    "use_flags": true,
+    "use_resources": true,
+    "use_priority": true,
+    "use_trace": true,
+    "use_interventions": true,
+    "use_evidence_ledger": true
+  },
+  "trace": [
+    {
+      "event_id": "E1",
+      "kind": "controversial_call",
+      "time": 70,
+      "action": "commit",
+      "patch": {
+        "perceived_unfairness": 0.27999999999999997,
+        "match_tension": 0.20000000000000007
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "scenario_trigger:controversial_call"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E1",
+      "kind": "controversial_call",
+      "time": 70,
+      "action": "set_flag",
+      "patch": {},
+      "flags_delta": {
+        "CONTROVERSIAL_CALL_VISIBLE": "set"
+      },
+      "resource_delta": {},
+      "cause": [
+        "scenario_trigger:controversial_call"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E1",
+      "kind": "controversial_call",
+      "time": 70,
+      "action": "set_flag",
+      "patch": {},
+      "flags_delta": {
+        "MATCH_HIGH_TENSION": "set"
+      },
+      "resource_delta": {},
+      "cause": [
+        "scenario_trigger:controversial_call"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E1",
+      "kind": "controversial_call",
+      "time": 70,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "scenario_trigger:controversial_call"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E3",
+      "kind": "viral_clip_published",
+      "time": 73,
+      "action": "acquire",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {
+        "media_attention_budget": -1
+      },
+      "cause": [
+        "event:E1"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E3",
+      "kind": "viral_clip_published",
+      "time": 73,
+      "action": "commit",
+      "patch": {
+        "platform_velocity": 0.24,
+        "media_attention": 0.07999999999999996
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E1"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E3",
+      "kind": "viral_clip_published",
+      "time": 73,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E1"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E5",
+      "kind": "media_blame_frame",
+      "time": 78,
+      "action": "commit",
+      "patch": {
+        "outrage_frame": 0.24,
+        "blame_frame": 0.16000000000000003
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E3"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E5",
+      "kind": "media_blame_frame",
+      "time": 78,
+      "action": "set_flag",
+      "patch": {},
+      "flags_delta": {
+        "MEDIA_OUTRAGE_FRAME_ACTIVE": "set"
+      },
+      "resource_delta": {},
+      "cause": [
+        "event:E3"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E5",
+      "kind": "media_blame_frame",
+      "time": 78,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E3"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E4",
+      "kind": "media_blame_frame",
+      "time": 80,
+      "action": "commit",
+      "patch": {
+        "outrage_frame": 0.30000000000000004,
+        "blame_frame": 0.2
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "claim_cluster:C1"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E4",
+      "kind": "media_blame_frame",
+      "time": 80,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "claim_cluster:C1"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E6",
+      "kind": "viral_clip_published",
+      "time": 80,
+      "action": "acquire",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {
+        "media_attention_budget": -1
+      },
+      "cause": [
+        "claim_cluster:C2"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E6",
+      "kind": "viral_clip_published",
+      "time": 80,
+      "action": "commit",
+      "patch": {
+        "platform_velocity": 0.30000000000000004,
+        "media_attention": 0.09999999999999998
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "claim_cluster:C2"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E6",
+      "kind": "viral_clip_published",
+      "time": 80,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "claim_cluster:C2"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E9",
+      "kind": "media_blame_frame",
+      "time": 85,
+      "action": "commit",
+      "patch": {
+        "outrage_frame": 0.30000000000000004,
+        "blame_frame": 0.2
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E6"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E9",
+      "kind": "media_blame_frame",
+      "time": 85,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E6"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E7",
+      "kind": "rumor_amplified",
+      "time": 86,
+      "action": "acquire",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {
+        "media_attention_budget": -2
+      },
+      "cause": [
+        "event:E5"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E7",
+      "kind": "rumor_amplified",
+      "time": 86,
+      "action": "commit",
+      "patch": {
+        "rumor_volume": 0.6400000000000001,
+        "misinfo_confidence": 0.16000000000000003,
+        "platform_velocity": 0.08000000000000007
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E5"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E7",
+      "kind": "rumor_amplified",
+      "time": 86,
+      "action": "set_flag",
+      "patch": {},
+      "flags_delta": {
+        "RUMOR_SPIKE": "set"
+      },
+      "resource_delta": {},
+      "cause": [
+        "event:E5"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E7",
+      "kind": "rumor_amplified",
+      "time": 86,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E5"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E2",
+      "kind": "official_clarification",
+      "time": 87,
+      "action": "acquire",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {
+        "official_comm_channel": -1
+      },
+      "cause": [
+        "intervention"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E2",
+      "kind": "official_clarification",
+      "time": 87,
+      "action": "commit",
+      "patch": {
+        "rumor_volume": -0.12249999999999994,
+        "outrage_frame": -0.06999999999999995
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "intervention"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E2",
+      "kind": "official_clarification",
+      "time": 87,
+      "action": "clear_flag",
+      "patch": {},
+      "flags_delta": {
+        "RUMOR_SPIKE": "clear"
+      },
+      "resource_delta": {},
+      "cause": [
+        "intervention"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E2",
+      "kind": "official_clarification",
+      "time": 87,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "intervention"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E8",
+      "kind": "rumor_amplified",
+      "time": 88,
+      "action": "acquire",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {
+        "media_attention_budget": -2
+      },
+      "cause": [
+        "event:E4"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E8",
+      "kind": "rumor_amplified",
+      "time": 88,
+      "action": "commit",
+      "patch": {
+        "rumor_volume": 0.4824999999999998,
+        "misinfo_confidence": 0.2,
+        "platform_velocity": 0.09999999999999998
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E4"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E8",
+      "kind": "rumor_amplified",
+      "time": 88,
+      "action": "set_flag",
+      "patch": {},
+      "flags_delta": {
+        "RUMOR_SPIKE": "set"
+      },
+      "resource_delta": {},
+      "cause": [
+        "event:E4"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E8",
+      "kind": "rumor_amplified",
+      "time": 88,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E4"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E11",
+      "kind": "offline_mood_shift",
+      "time": 91,
+      "action": "commit",
+      "patch": {
+        "verbal_conflict_risk": 0.2
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E7"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E11",
+      "kind": "offline_mood_shift",
+      "time": 91,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E7"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E10",
+      "kind": "rumor_amplified",
+      "time": 93,
+      "action": "acquire",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {
+        "media_attention_budget": -2
+      },
+      "cause": [
+        "event:E9"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E10",
+      "kind": "rumor_amplified",
+      "time": 93,
+      "action": "commit",
+      "patch": {
+        "rumor_volume": 0.0,
+        "misinfo_confidence": 0.2,
+        "platform_velocity": 0.09999999999999998
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E9"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E10",
+      "kind": "rumor_amplified",
+      "time": 93,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E9"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E12",
+      "kind": "offline_mood_shift",
+      "time": 93,
+      "action": "commit",
+      "patch": {
+        "verbal_conflict_risk": 0.25
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E8"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E12",
+      "kind": "offline_mood_shift",
+      "time": 93,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E8"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E14",
+      "kind": "offline_mood_shift",
+      "time": 98,
+      "action": "commit",
+      "patch": {
+        "verbal_conflict_risk": 0.24999999999999994
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E10"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E14",
+      "kind": "offline_mood_shift",
+      "time": 98,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E10"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E16",
+      "kind": "opposing_fans_contact",
+      "time": 100,
+      "action": "set_flag",
+      "patch": {},
+      "flags_delta": {
+        "OPPOSING_FANS_COLOCATED": "set"
+      },
+      "resource_delta": {},
+      "cause": [
+        "claim_cluster:C4"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E16",
+      "kind": "opposing_fans_contact",
+      "time": 100,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "claim_cluster:C4"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E13",
+      "kind": "opposing_fans_contact",
+      "time": 101,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E11"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E15",
+      "kind": "opposing_fans_contact",
+      "time": 103,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E12"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E18",
+      "kind": "verbal_conflict",
+      "time": 105,
+      "action": "commit",
+      "patch": {
+        "verbal_conflict_risk": 0.28,
+        "scuffle_risk": 0.105
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E16"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E18",
+      "kind": "verbal_conflict",
+      "time": 105,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E16"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E19",
+      "kind": "verbal_conflict",
+      "time": 106,
+      "action": "commit",
+      "patch": {
+        "verbal_conflict_risk": 0.020000000000000018,
+        "scuffle_risk": 0.11999999999999998
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E13"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E19",
+      "kind": "verbal_conflict",
+      "time": 106,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E13"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E20",
+      "kind": "verbal_conflict",
+      "time": 108,
+      "action": "commit",
+      "patch": {
+        "verbal_conflict_risk": 0.0,
+        "scuffle_risk": 0.15000000000000002
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E15"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E20",
+      "kind": "verbal_conflict",
+      "time": 108,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E15"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E17",
+      "kind": "opposing_fans_contact",
+      "time": 108,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E14"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E21",
+      "kind": "verbal_conflict",
+      "time": 113,
+      "action": "commit",
+      "patch": {
+        "verbal_conflict_risk": 0.0,
+        "scuffle_risk": 0.15000000000000002
+      },
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E17"
+      ],
+      "blocked_reason": null
+    },
+    {
+      "event_id": "E21",
+      "kind": "verbal_conflict",
+      "time": 113,
+      "action": "executed",
+      "patch": {},
+      "flags_delta": {},
+      "resource_delta": {},
+      "cause": [
+        "event:E17"
+      ],
+      "blocked_reason": null
+    }
+  ],
+  "dominant_risk_path": [
+    "opposing_fans_contact",
+    "verbal_conflict"
+  ],
+  "evidence_links": [
+    {
+      "event_id": "E4",
+      "event_kind": "media_blame_frame",
+      "time": 80,
+      "cluster_id": "C1"
+    },
+    {
+      "event_id": "E6",
+      "event_kind": "viral_clip_published",
+      "time": 80,
+      "cluster_id": "C2"
+    },
+    {
+      "event_id": "E16",
+      "event_kind": "opposing_fans_contact",
+      "time": 100,
+      "cluster_id": "C4"
+    }
+  ],
+  "evidence_ledger": {
+    "ledger_id": "default",
+    "match_id": "M12",
+    "total_atoms": 295,
+    "total_clusters": 4,
+    "compiled_clusters": 3,
+    "top_clusters": [
+      {
+        "cluster_id": "C1",
+        "key": "blame_referee|Team_A_fans|referee|M12|t70_80",
+        "claim_type": "blame_referee",
+        "target": "referee",
+        "actor_group": "Team_A_fans",
+        "time_bucket": "t70_80",
+        "support_count": 220,
+        "unique_sources": 45,
+        "velocity": 1.0,
+        "emotion_intensity": 0.9,
+        "confidence": 0.84,
+        "contestation": 1.0,
+        "compiled_to": "media_blame_frame"
+      },
+      {
+        "cluster_id": "C2",
+        "key": "rumor_clip_shared|social_users|referee|M12|t70_80",
+        "claim_type": "rumor_clip_shared",
+        "target": "referee",
+        "actor_group": "social_users",
+        "time_bucket": "t70_80",
+        "support_count": 55,
+        "unique_sources": 35,
+        "velocity": 1.0,
+        "emotion_intensity": 1.0,
+        "confidence": 0.7,
+        "contestation": 0.0,
+        "compiled_to": "viral_clip_published"
+      },
+      {
+        "cluster_id": "C4",
+        "key": "fan_conflict_report|local_residents|fan_zone|M12|t90_100",
+        "claim_type": "fan_conflict_report",
+        "target": "fan_zone",
+        "actor_group": "local_residents",
+        "time_bucket": "t90_100",
+        "support_count": 12,
+        "unique_sources": 8,
+        "velocity": 1.0,
+        "emotion_intensity": 0.7,
+        "confidence": 0.8,
+        "contestation": 0.0,
+        "compiled_to": "opposing_fans_contact"
+      },
+      {
+        "cluster_id": "C3",
+        "key": "defend_referee|Team_B_fans|referee|M12|t70_80",
+        "claim_type": "defend_referee",
+        "target": "referee",
+        "actor_group": "Team_B_fans",
+        "time_bucket": "t70_80",
+        "support_count": 8,
+        "unique_sources": 8,
+        "velocity": 0.8,
+        "emotion_intensity": 0.3,
+        "confidence": 0.65,
+        "contestation": 1.0,
+        "compiled_to": null
+      }
+    ]
+  },
+  "compiled_events": [
+    {
+      "kind": "media_blame_frame",
+      "time": 80,
+      "priority": 2,
+      "payload": {
+        "target": "referee",
+        "intensity": 1.0,
+        "confidence": 0.7636,
+        "dominant_claim": "blame_referee",
+        "severity": 1.0
+      },
+      "cause": [
+        "claim_cluster:C1"
+      ],
+      "cluster_id": "C1"
+    },
+    {
+      "kind": "viral_clip_published",
+      "time": 80,
+      "priority": 2,
+      "payload": {
+        "intensity": 1.0,
+        "confidence": 0.7,
+        "severity": 1.0
+      },
+      "cause": [
+        "claim_cluster:C2"
+      ],
+      "cluster_id": "C2"
+    },
+    {
+      "kind": "opposing_fans_contact",
+      "time": 100,
+      "priority": 1,
+      "payload": {
+        "intensity": 0.7,
+        "confidence": 0.8,
+        "severity": 0.7
+      },
+      "cause": [
+        "claim_cluster:C4"
+      ],
+      "cluster_id": "C4"
+    }
+  ]
+}

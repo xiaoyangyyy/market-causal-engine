@@ -1,0 +1,13 @@
+{
+  "scenarios": {
+    "S1": {
+      "baseline_loss": 0.4458,
+      "calibrated_loss": 0.0010293599999999985,
+      "improvement": 0.44477064,
+      "report": {
+        "json": "E:\\ca\\results\\calibration\\S1_controversial_call_high_density_calibration_report.json",
+        "markdown": "E:\\ca\\results\\calibration\\S1_controversial_call_high_density_calibration_report.md"
+      }
+    }
+  }
+}

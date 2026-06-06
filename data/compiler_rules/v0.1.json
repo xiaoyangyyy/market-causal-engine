@@ -1,0 +1,79 @@
+{
+  "blame_referee": {
+    "emit_kind": "media_blame_frame",
+    "thresholds": {
+      "support_count": 50,
+      "unique_sources": 20,
+      "velocity": 0.4,
+      "confidence": 0.6
+    },
+    "payload_mapping": {
+      "target": "referee",
+      "intensity": "velocity",
+      "confidence": "confidence",
+      "dominant_claim": "blame_referee"
+    },
+    "priority": 2,
+    "max_contestation": 0.8
+  },
+  "blame_player": {
+    "emit_kind": "media_blame_frame",
+    "thresholds": {
+      "support_count": 40,
+      "unique_sources": 15,
+      "velocity": 0.35,
+      "confidence": 0.55
+    },
+    "payload_mapping": {
+      "target": "player",
+      "intensity": "velocity",
+      "confidence": "confidence",
+      "dominant_claim": "blame_player"
+    },
+    "priority": 2
+  },
+  "rumor_clip_shared": {
+    "emit_kind": "viral_clip_published",
+    "thresholds": {
+      "support_count": 30,
+      "velocity": 0.5
+    },
+    "payload_mapping": {
+      "intensity": "velocity",
+      "confidence": "confidence"
+    },
+    "priority": 2
+  },
+  "fan_conflict_report": {
+    "emit_kind": "opposing_fans_contact",
+    "thresholds": {
+      "support_count": 10,
+      "emotion_intensity": 0.7
+    },
+    "payload_mapping": {
+      "intensity": "emotion_intensity",
+      "confidence": "confidence"
+    },
+    "priority": 1
+  },
+  "transit_complaint": {
+    "emit_kind": "transit_delay",
+    "thresholds": {
+      "support_count": 15,
+      "velocity": 0.3
+    },
+    "payload_mapping": {
+      "intensity": "velocity"
+    },
+    "priority": 2
+  },
+  "official_statement": {
+    "compile": false
+  },
+  "defend_referee": {
+    "compile": false
+  },
+  "defend_player": {
+    "compile": false
+  }
+}

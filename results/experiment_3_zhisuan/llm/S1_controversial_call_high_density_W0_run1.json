@@ -1,0 +1,38 @@
+{
+  "final_risk": {
+    "verbal_conflict": 0.68,
+    "scuffle": 0.22,
+    "riot": 0.05,
+    "panic": 0.0
+  },
+  "dominant_path": [
+    "controversial_call",
+    "viral_clip_published",
+    "media_blame_frame",
+    "rumor_amplified",
+    "offline_mood_shift",
+    "opposing_fans_contact",
+    "verbal_conflict"
+  ],
+  "active_flags": [
+    "CONTROVERSIAL_CALL_VISIBLE",
+    "MEDIA_OUTRAGE_FRAME_ACTIVE",
+    "RUMOR_SPIKE",
+    "OPPOSING_FANS_COLOCATED",
+    "CROWD_DENSITY_HIGH",
+    "POLICE_TRUST_LOW"
+  ],
+  "resource_bottlenecks": [],
+  "best_cut_points": [
+    {
+      "intervention": "official_clarification",
+      "before": "rumor_amplified"
+    }
+  ],
+  "reasoning": "The causal chain begins with a high-severity controversial_call at minute 70, triggering immediate tension. This leads to a viral_clip_published, which rapidly evolves into a media_blame_frame due to high media_attention. The blame frame amplifies rumors (rumor_amplified) because the official_comm_channel resource (value 5) is insufficient to counter the rumor_delta of 0.8, failing to meet the rumor_spike_threshold of 0.6. This causes an offline_mood_shift, leading to opposing_fans_contact given the high crowd_density (0.75 > 0.5 threshold). The contact escalates to verbal_conflict. The event 'panic_signal' did NOT happen because the crowd_density, while high, did not exceed the critical threshold for mass panic, and the police_units (100) were sufficient to contain the initial scuffle risk, preventing a full-scale riot or panic cascade.",
+  "source": "api",
+  "api_base": "https://ai.azya.top/v1",
+  "model": "qwen3.5",
+  "world_id": "W0",
+  "scenario_id": "S1_controversial_call_high_density"
+}

@@ -1,0 +1,42 @@
+{
+  "final_risk": {
+    "verbal_conflict": 0.68,
+    "scuffle": 0.22,
+    "riot": 0.05,
+    "panic": 0.0
+  },
+  "dominant_path": [
+    "controversial_call",
+    "media_blame_frame",
+    "rumor_amplified",
+    "offline_mood_shift",
+    "opposing_fans_contact",
+    "verbal_conflict"
+  ],
+  "active_flags": [
+    "CONTROVERSIAL_CALL_VISIBLE",
+    "MEDIA_OUTRAGE_FRAME_ACTIVE",
+    "RUMOR_SPIKE",
+    "OPPOSING_FANS_COLOCATED",
+    "CROWD_DENSITY_HIGH",
+    "HEAT_STRESS_HIGH"
+  ],
+  "resource_bottlenecks": [
+    {
+      "resource": "official_comm_channel",
+      "failures": 1
+    }
+  ],
+  "best_cut_points": [
+    {
+      "intervention": "official_clarification",
+      "before": "rumor_amplified"
+    }
+  ],
+  "reasoning": "Step 1: The controversial_call occurs at t=55, triggering high tension. Step 2: Due to high media attention, a media_blame_frame is generated, amplifying outrage. Step 3: The rumor_amplified event follows, crossing the spike threshold because the official_comm_channel has low capacity (5) and fails to counter the narrative, creating a resource bottleneck. Step 4: Heat stress (0.85) and crowd density (0.8) exacerbate the offline_mood_shift. Step 5: Opposing fans come into contact due to high density. Step 6: Verbal_conflict erupts. The event 'panic_signal' did NOT happen because the crowd density, while high, did not reach the critical threshold required to trigger a stampede, and the heat stress, while significant, did not cause mass medical incapacitation that would force a panic evacuation. In W0, no interventions occur, so the risk remains elevated compared to a hypothetical W1 where official_clarification would have reduced the rumor_delta.",
+  "source": "api",
+  "api_base": "https://ai.azya.top/v1",
+  "model": "qwen3.5",
+  "world_id": "W0",
+  "scenario_id": "S3_heat_crowd_comm_delay"
+}

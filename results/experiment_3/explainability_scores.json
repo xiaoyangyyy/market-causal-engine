@@ -1,0 +1,39 @@
+{
+  "kernel": {
+    "traceability": 1.0,
+    "consistency": 1.0,
+    "not_happen_explanation": 1.0,
+    "intervention_diff": 0.0,
+    "bottleneck_localization": 1.0
+  },
+  "llm": {
+    "traceability": 1.0,
+    "consistency": 1.0,
+    "not_happen_explanation": 0.0,
+    "intervention_diff": 0.5,
+    "bottleneck_localization": 0.0
+  },
+  "llm_w0": {
+    "traceability": 1.0,
+    "consistency": 1.0,
+    "not_happen_explanation": 0.0,
+    "intervention_diff": 0.0,
+    "bottleneck_localization": 0.0
+  },
+  "llm_w1": {
+    "traceability": 1.0,
+    "consistency": 1.0,
+    "not_happen_explanation": 0.0,
+    "intervention_diff": 1.0,
+    "bottleneck_localization": 0.0
+  },
+  "dimensions": [
+    "traceability",
+    "consistency",
+    "not_happen_explanation",
+    "intervention_diff",
+    "bottleneck_localization"
+  ],
+  "scenario_id": "S3_heat_crowd_comm_delay",
+  "llm_source": "mock"
+}

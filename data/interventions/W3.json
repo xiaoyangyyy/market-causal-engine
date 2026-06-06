@@ -1,0 +1,12 @@
+{
+  "world_id": "W3",
+  "description": "Separate fan flows at t=80",
+  "interventions": [
+    {
+      "kind": "separate_fan_flows",
+      "time": 80,
+      "priority": 0,
+      "payload": {}
+    }
+  ]
+}

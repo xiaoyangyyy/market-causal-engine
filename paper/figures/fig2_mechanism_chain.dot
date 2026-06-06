@@ -1,0 +1,10 @@
+digraph chain_a {
+  rankdir=TB;
+  node [shape=box, style=rounded];
+  controversial_call -> viral_clip_published -> media_blame_frame -> rumor_amplified;
+  rumor_amplified -> offline_mood_shift -> opposing_fans_contact -> verbal_conflict;
+  controversial_call [label="controversial_call\nsets: CONTROVERSIAL_CALL_VISIBLE"];
+  viral_clip_published [label="viral_clip_published\nwaits: CONTROVERSIAL_CALL_VISIBLE\nresources: media_attention_budget"];
+  media_blame_frame [label="media_blame_frame\nsets: MEDIA_OUTRAGE_FRAME_ACTIVE"];
+  rumor_amplified [label="rumor_amplified\nwaits: MEDIA_OUTRAGE_FRAME_ACTIVE"];
+}

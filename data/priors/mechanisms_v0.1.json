@@ -1,0 +1,105 @@
+{
+  "controversial_call": {
+    "unfairness_delta": 0.35,
+    "tension_delta": 0.25,
+    "emit_viral_clip_delay": 3
+  },
+  "viral_clip_published": {
+    "platform_velocity_delta": 0.3,
+    "emit_blame_frame_delay": 5
+  },
+  "media_blame_frame": {
+    "outrage_delta": 0.3,
+    "blame_delta": 0.2,
+    "emit_rumor_delay": 8
+  },
+  "rumor_amplified": {
+    "rumor_delta": 0.8,
+    "misinfo_delta": 0.2,
+    "rumor_spike_threshold": 0.6,
+    "emit_mood_shift_delay": 5
+  },
+  "offline_mood_shift": {
+    "verbal_risk_delta": 0.25,
+    "emit_contact_delay": 10
+  },
+  "opposing_fans_contact": {
+    "colocation_threshold_crowd": 0.5,
+    "emit_conflict_delay": 5
+  },
+  "verbal_conflict": {
+    "verbal_risk_delta": 0.4,
+    "scuffle_risk_delta": 0.15
+  },
+  "official_clarification": {
+    "rumor_reduction": 0.25,
+    "credibility_multiplier": 0.7
+  },
+  "team_eliminated": {
+    "humiliation_delta": 0.5,
+    "tension_delta": 0.2,
+    "emit_gather_delay": 2
+  },
+  "match_end": {
+    "emit_gather_delay": 1,
+    "emit_transit_delay": 3
+  },
+  "fans_gather": {
+    "density_delta": 0.15,
+    "pressure_delta": 0.12,
+    "high_density_threshold": 0.6,
+    "emit_bar_pressure_delay": 5,
+    "emit_contact_delay": 8
+  },
+  "bar_district_pressure": {
+    "density_threshold": 0.55,
+    "scuffle_delta": 0.12,
+    "emit_contact_delay": 6
+  },
+  "transit_delay": {
+    "pressure_threshold": 0.5,
+    "pressure_delta": 0.25,
+    "emit_density_spike_delay": 3
+  },
+  "crowd_density_spike": {
+    "density_delta": 0.2,
+    "emit_overflow_delay": 4
+  },
+  "queue_overflow": {
+    "pressure_threshold": 0.65,
+    "emit_push_delay": 3
+  },
+  "crowd_push": {
+    "panic_delta": 0.25,
+    "emit_signal_delay": 2
+  },
+  "panic_signal": {
+    "panic_delta": 0.35,
+    "riot_delta": 0.1
+  },
+  "heat_stress_check": {
+    "threshold": 0.7
+  },
+  "police_trust_check": {
+    "low_threshold": 0.45
+  },
+  "team_captain_message": {
+    "outrage_reduction": 0.2,
+    "verbal_reduction": 0.15
+  },
+  "transit_reroute": {
+    "capacity_cost": 200,
+    "pressure_reduction": 0.3
+  },
+  "deploy_deescalation": {
+    "teams_required": 3,
+    "capacity_boost": 0.25,
+    "verbal_reduction": 0.2,
+    "scuffle_reduction": 0.1
+  },
+  "platform_rumor_throttle": {
+    "fact_check_cost": 3,
+    "rumor_reduction": 0.3,
+    "misinfo_reduction": 0.25
+  }
+}

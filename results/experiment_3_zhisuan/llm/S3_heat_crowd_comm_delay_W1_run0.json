@@ -1,0 +1,43 @@
+{
+  "final_risk": {
+    "verbal_conflict": 0.68,
+    "scuffle": 0.22,
+    "riot": 0.05,
+    "panic": 0.0
+  },
+  "dominant_path": [
+    "controversial_call",
+    "media_blame_frame",
+    "rumor_amplified",
+    "offline_mood_shift",
+    "opposing_fans_contact",
+    "verbal_conflict"
+  ],
+  "active_flags": [
+    "CONTROVERSIAL_CALL_VISIBLE",
+    "MEDIA_OUTRAGE_FRAME_ACTIVE",
+    "RUMOR_SPIKE",
+    "OPPOSING_FANS_COLOCATED",
+    "CROWD_DENSITY_HIGH",
+    "HEAT_STRESS_HIGH",
+    "POLICE_TRUST_LOW"
+  ],
+  "resource_bottlenecks": [
+    {
+      "resource": "official_comm_channel",
+      "failures": 1
+    }
+  ],
+  "best_cut_points": [
+    {
+      "intervention": "official_clarification",
+      "before": "rumor_amplified"
+    }
+  ],
+  "reasoning": "Step 1: The controversial_call at t=55 triggers media attention. Step 2: Due to low police trust and high heat stress, the media_blame_frame forms rapidly. Step 3: The rumor_amplified event occurs because the official_comm_channel resource is critically low (5 units), causing a failure in timely response, allowing rumors to spike. Step 4: The offline_mood_shift follows, leading to opposing_fans_contact in the high-density zone. Step 5: Verbal_conflict erupts. Event that did NOT happen: panic_signal. This did not occur because the crowd density, while high, did not exceed the specific threshold for mass panic, and the heat stress, though high, was mitigated by the presence of medical units preventing a stampede trigger. In W1, the official_clarification at t=87 reduces rumor_delta by 0.25, but because it occurs after the rumor_amplified event has already triggered the mood shift, the final_risk for verbal_conflict remains elevated compared to a hypothetical earlier intervention, though slightly lower than a baseline with no intervention.",
+  "source": "api",
+  "api_base": "https://ai.azya.top/v1",
+  "model": "qwen3.5",
+  "world_id": "W1",
+  "scenario_id": "S3_heat_crowd_comm_delay"
+}

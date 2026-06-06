@@ -1,0 +1,6 @@
+# World Cup Causal Engine — runtime
+# Python 3.10+
+
+# Dev / Phase 4 plotting (optional but recommended)
+matplotlib>=3.7
+pytest>=7.0

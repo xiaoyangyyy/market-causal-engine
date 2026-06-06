@@ -1,0 +1,81 @@
+{
+  "scenario_id": "S3_heat_crowd_comm_delay",
+  "world_id": "W1",
+  "final_state": {
+    "match_tension": 0.6,
+    "rivalry_intensity": 0.0,
+    "perceived_unfairness": 0.21,
+    "humiliation_level": 0.0,
+    "media_attention": 0.61,
+    "outrage_frame": 0.18,
+    "blame_frame": 0.12,
+    "rumor_volume": 0.48,
+    "misinfo_confidence": 0.12,
+    "platform_velocity": 0.24,
+    "crowd_density": 1.0,
+    "fan_zone_pressure": 1.0,
+    "transit_pressure": 1.0,
+    "heat_stress": 0.85,
+    "police_visibility": 0.0,
+    "police_trust": 0.4,
+    "deescalation_capacity": 0.5,
+    "verbal_conflict_risk": 0.4,
+    "scuffle_risk": 0.27,
+    "riot_risk": 0.2,
+    "panic_risk": 1.0
+  },
+  "final_risk": {
+    "verbal_conflict": 0.4,
+    "scuffle": 0.27,
+    "riot": 0.2,
+    "panic": 1.0
+  },
+  "dominant_path": [
+    "controversial_call",
+    "viral_clip_published",
+    "media_blame_frame",
+    "rumor_amplified",
+    "match_end",
+    "fans_gather",
+    "transit_delay",
+    "crowd_density_spike",
+    "bar_district_pressure",
+    "queue_overflow",
+    "opposing_fans_contact",
+    "crowd_push",
+    "panic_signal",
+    "verbal_conflict"
+  ],
+  "active_flags": [
+    "CONTROVERSIAL_CALL_VISIBLE",
+    "CROWD_DENSITY_HIGH",
+    "HEAT_STRESS_HIGH",
+    "MATCH_HIGH_TENSION",
+    "MEDIA_OUTRAGE_FRAME_ACTIVE",
+    "OPPOSING_FANS_COLOCATED",
+    "TRANSIT_DELAY_ACTIVE"
+  ],
+  "resource_bottlenecks": [],
+  "remaining_resources": {
+    "media_attention_budget": 97,
+    "official_comm_channel": 0,
+    "fact_check_capacity": 20,
+    "police_units": 100,
+    "deescalation_teams": 20,
+    "medical_units": 30,
+    "transport_capacity": 1000,
+    "fan_zone_capacity": 800
+  },
+  "kernel_config": {
+    "ablation_id": "A4",
+    "use_flags": true,
+    "use_resources": true,
+    "use_priority": true,
+    "use_trace": false,
+    "use_interventions": true,
+    "use_evidence_ledger": true
+  },
+  "trace": [],
+  "dominant_risk_path": [],
+  "evidence_links": []
+}
