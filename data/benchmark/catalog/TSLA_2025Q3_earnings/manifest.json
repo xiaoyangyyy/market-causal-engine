@@ -1,0 +1,31 @@
+{
+  "event_id": "TSLA_2025Q3_earnings",
+  "ticker": "TSLA",
+  "event_date": "2025-07-24",
+  "fiscal_period": "2025Q3",
+  "atom_count": 11,
+  "text_length": 42152,
+  "summary_length": 12000,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\TSLA_2025Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\TSLA_2025Q3_earnings\\sec_8k.txt",
+  "filing_date": "2025-10-22",
+  "accession_number": "0001628280-25-045861",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045861/tsla-20251022.htm",
+  "form": "8-K",
+  "search_date_from": "2025-10-01",
+  "search_date_to": "2025-11-30",
+  "aligned_filing_date": "2025-10-22",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.82,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

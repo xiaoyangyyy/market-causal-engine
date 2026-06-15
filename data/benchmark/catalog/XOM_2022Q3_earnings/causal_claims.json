@@ -1,0 +1,45 @@
+{
+  "event_id": "XOM_2022Q3_earnings",
+  "ticker": "XOM",
+  "event_date": "2022-07-12",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:10:31+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.171,
+      "polarity": -1.0,
+      "evidence_span": "xom-20220729 FALSE 0000034088 0000034088 2022-07-29 2022-07-29 0000034088 us-gaap:CommonStockMember 2022-07-29 2022-07-29 0000034088 xom:ZeroPointOneFourTwoPercentNotesDue2024Membe",
+      "source_id": "XOM2022Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "XOM2022Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.988,
+      "span_score": 0.979,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "XOM2022Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

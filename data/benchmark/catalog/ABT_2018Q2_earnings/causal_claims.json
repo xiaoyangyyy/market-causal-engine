@@ -1,0 +1,70 @@
+{
+  "event_id": "ABT_2018Q2_earnings",
+  "ticker": "ABT",
+  "event_date": "2018-04-17",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:31:02+00:00",
+  "accepted": [
+    {
+      "cause": "14.0 percent growth at the midpoint",
+      "effect": "Projected full-year adjusted diluted EPS from continuing operations remains $2.80 to $2.90",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Projected full-year adjusted diluted EPS from continuing operations remains $2.80 to $2.90, reflecting 14.0 percent growth at the midpoint",
+      "source_id": "ABT2018Q2_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "ABT2018Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.827,
+      "span_score": 1.0,
+      "severity_align": 0.308,
+      "mechanism_hint": 1.0,
+      "claim_id": "ABT2018Q2_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.043,
+      "polarity": -1.0,
+      "evidence_span": "EPS from continuing operations of $",
+      "source_id": "ABT2018Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "ABT2018Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "ABT2018Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

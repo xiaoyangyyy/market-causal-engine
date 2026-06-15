@@ -1,0 +1,70 @@
+{
+  "event_id": "SNPS_2020Q3_earnings",
+  "ticker": "SNPS",
+  "event_date": "2020-07-17",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:23:31+00:00",
+  "accepted": [
+    {
+      "cause": "EPS $ 1.10",
+      "effect": "Stock price decline",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "EPS $ 1.10 $ 1.21",
+      "source_id": "SNPS2020Q3_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SNPS2020Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.799,
+      "span_score": 0.981,
+      "severity_align": 0.238,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNPS2020Q3_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.171,
+      "polarity": -1.0,
+      "evidence_span": "650-584-6454 simone@synopsys.com Synopsys Posts Financial Results for Third Quarter Fiscal Year 2020 Q3 2020 Financial Highlights • Revenue: $964.1 million • GAAP earnings per shar",
+      "source_id": "SNPS2020Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "SNPS2020Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.998,
+      "span_score": 0.996,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNPS2020Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

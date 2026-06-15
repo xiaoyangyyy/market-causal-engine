@@ -1,0 +1,31 @@
+{
+  "event_id": "AVGO_2021Q1_earnings",
+  "ticker": "AVGO",
+  "event_date": "2021-01-07",
+  "fiscal_period": "2021Q1",
+  "atom_count": 1,
+  "text_length": 11738,
+  "summary_length": 8348,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\AVGO_2021Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\AVGO_2021Q1_earnings\\sec_8k.txt",
+  "filing_date": "2021-04-05",
+  "accession_number": "0001730168-21-000071",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016821000071/avgo-20210405.htm",
+  "form": "8-K",
+  "search_date_from": "2021-04-01",
+  "search_date_to": "2021-05-31",
+  "aligned_filing_date": "2021-04-05",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 2.63,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 0,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

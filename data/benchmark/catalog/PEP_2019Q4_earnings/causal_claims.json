@@ -1,0 +1,71 @@
+{
+  "event_id": "PEP_2019Q4_earnings",
+  "ticker": "PEP",
+  "event_date": "2019-10-07",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:20:36+00:00",
+  "accepted": [
+    {
+      "cause": "Core EPS guidance implies 3% decrease",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "This assumption and the guidance above implies 2019 core earnings per share of $5.50, a 3 percent decrease compared to 2018 core earnings per share of $5.66.",
+      "source_id": "PEP2019Q4_005",
+      "published_at": 0,
+      "atom_id": "PEP2019Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.88,
+      "span_score": 1.0,
+      "severity_align": 0.519,
+      "mechanism_hint": 1.0,
+      "claim_id": "PEP2019Q4_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Full-year organic revenue growth target met or exceeded",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "The Company now expects to meet or exceed its full-year organic revenue growth target of 4 percent.",
+      "source_id": "PEP2019Q4_003",
+      "published_at": 0,
+      "atom_id": "PEP2019Q4_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.846,
+      "span_score": 1.0,
+      "severity_align": 0.383,
+      "mechanism_hint": 1.0,
+      "claim_id": "PEP2019Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,115 @@
+{
+  "event_id": "UPS_2021Q1_earnings",
+  "ticker": "UPS",
+  "event_date": "2021-01-21",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:41:09+00:00",
+  "accepted": [
+    {
+      "cause": "Adjusted EPS up 26.1%",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Adjusted Diluted EPS of $2.66, Up 26.1%",
+      "source_id": "UPS2021Q1_002",
+      "published_at": 0,
+      "atom_id": "UPS2021Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.763,
+      "span_score": 0.878,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "UPS2021Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Adjusted net income up 26.4%",
+      "effect": "Improved profitability expectations",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "adjusted net income was $2.3 billion or 26.4% above the same period last year.",
+      "source_id": "UPS2021Q1_004",
+      "published_at": 0,
+      "atom_id": "UPS2021Q1_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.83,
+      "span_score": 1.0,
+      "severity_align": 0.32,
+      "mechanism_hint": 1.0,
+      "claim_id": "UPS2021Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "CEO states performance exceeded expectations",
+      "effect": "Management confidence boosts investor trust",
+      "mechanism": "sentiment",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "Our financial performance in the fourth quarter exceeded our expectations",
+      "source_id": "UPS2021Q1_006",
+      "published_at": 0,
+      "atom_id": "UPS2021Q1_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.819,
+      "span_score": 0.912,
+      "severity_align": 0.468,
+      "mechanism_hint": 1.0,
+      "claim_id": "UPS2021Q1_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Consolidated Revenue increased 21.0%",
+      "effect": "Strong top-line growth driving bullish sentiment",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Consolidated Revenue Increased 21.0% to $24.9B",
+      "source_id": "UPS2021Q1_000",
+      "published_at": 0,
+      "atom_id": "UPS2021Q1_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

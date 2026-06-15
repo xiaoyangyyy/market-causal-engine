@@ -1,0 +1,34 @@
+{
+  "event_id": "HON_2024Q4_earnings",
+  "ticker": "HON",
+  "event_date": "2024-10-10",
+  "fiscal_period": "2024Q4",
+  "atom_count": 1,
+  "text_length": 51462,
+  "summary_length": 274,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\HON_2024Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\HON_2024Q4_earnings\\sec_8k.txt",
+  "filing_date": "2024-10-24",
+  "accession_number": "0000773840-24-000097",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/773840/000077384024000097/hon-20241024.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000773840",
+  "window_days": 45,
+  "search_date_from": "2025-01-01",
+  "search_date_to": "2025-02-28",
+  "aligned_filing_date": "2024-10-24",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -5.1,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

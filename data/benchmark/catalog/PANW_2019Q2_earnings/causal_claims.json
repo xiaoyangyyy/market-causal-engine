@@ -1,0 +1,109 @@
+{
+  "event_id": "PANW_2019Q2_earnings",
+  "ticker": "PANW",
+  "event_date": "2019-04-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:55:32+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.054,
+      "polarity": -1.0,
+      "evidence_span": "Total revenue for the fiscal third quarter 2019 grew",
+      "source_id": "PANW2019Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "PANW2019Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "PANW2019Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "PANW2019Q2_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "PANW2019Q2_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "PANW2019Q2_007",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "PANW2019Q2_007",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "revenue recognition standard (ASC 606)",
+      "effect": "revenue recognition changes",
+      "mechanism": "regulatory",
+      "severity": 0.5,
+      "polarity": 0.0,
+      "evidence_span": "revenue recognition standard (ASC 606)",
+      "source_id": "PANW2019Q2_009",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "PANW2019Q2_009",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "mechanism_not_allowed_for_domain:regulatory:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 3,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

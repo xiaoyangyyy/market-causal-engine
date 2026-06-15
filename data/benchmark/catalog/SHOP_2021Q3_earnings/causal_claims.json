@@ -1,0 +1,141 @@
+{
+  "event_id": "SHOP_2021Q3_earnings",
+  "ticker": "SHOP",
+  "event_date": "2021-07-13",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:51:28+00:00",
+  "accepted": [
+    {
+      "cause": "improve the retention of",
+      "effect": "revenue base",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "revenue base, improve the retention of",
+      "source_id": "SHOP2021Q3_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SHOP2021Q3_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.811,
+      "span_score": 1.0,
+      "severity_align": 0.245,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP2021Q3_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "revenue making up an increasing component of",
+      "effect": "revenue making up an increasing component of",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "revenue making up an increasing component of",
+      "source_id": "SHOP2021Q3_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SHOP2021Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.887,
+      "span_score": 1.0,
+      "severity_align": 0.549,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP2021Q3_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "total revenue was $2,108.1 million",
+      "effect": "increase",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "total revenue was $2,108.1 million, an increase of",
+      "source_id": "SHOP2021Q3_007",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SHOP2021Q3_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.813,
+      "span_score": 1.0,
+      "severity_align": 0.253,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP2021Q3_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.109,
+      "polarity": -1.0,
+      "evidence_span": "• the extent of the impact of the novel coronavirus (\"COVID-19\") on our business, financial performance, revenues, and results of operations",
+      "source_id": "SHOP2021Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "SHOP2021Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP2021Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "revenues accounted for 31.1% of",
+      "source_id": "SHOP2021Q3_008",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SHOP2021Q3_008",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

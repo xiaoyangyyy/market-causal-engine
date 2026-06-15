@@ -1,0 +1,71 @@
+{
+  "event_id": "WFC_2022Q2_earnings",
+  "ticker": "WFC",
+  "event_date": "2022-04-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:06:59+00:00",
+  "accepted": [
+    {
+      "cause": "Operating losses",
+      "effect": "profitability concern",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Operating losses 673 512 540 303 213 31 216 Prof",
+      "source_id": "WFC2022Q2_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "WFC2022Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.813,
+      "span_score": 1.0,
+      "severity_align": 0.251,
+      "mechanism_hint": 1.0,
+      "claim_id": "WFC2022Q2_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.06,
+      "polarity": -1.0,
+      "evidence_span": "Total revenue 17,592 20,856 18,532 (3,264) (940) Net charge-of",
+      "source_id": "WFC2022Q2_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "WFC2022Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "WFC2022Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,31 @@
+{
+  "event_id": "QCOM_2022Q2_earnings",
+  "ticker": "QCOM",
+  "event_date": "2022-04-21",
+  "fiscal_period": "2022Q2",
+  "atom_count": 1,
+  "text_length": 29959,
+  "summary_length": 1968,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\QCOM_2022Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\QCOM_2022Q2_earnings\\sec_8k.txt",
+  "filing_date": "2022-07-27",
+  "accession_number": "0001728949-22-000039",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/804328/000172894922000039/qcom-20220727.htm",
+  "form": "8-K",
+  "search_date_from": "2022-07-01",
+  "search_date_to": "2022-08-31",
+  "aligned_filing_date": "2022-07-27",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 2.3,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

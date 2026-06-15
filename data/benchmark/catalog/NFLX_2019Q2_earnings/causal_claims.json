@@ -1,0 +1,114 @@
+{
+  "event_id": "NFLX_2019Q2_earnings",
+  "ticker": "NFLX",
+  "event_date": "2019-04-23",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:16:20+00:00",
+  "accepted": [
+    {
+      "cause": "Results exceeded beginning-of-quarter expectations",
+      "effect": "Earnings beat",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "exceeded our beginning-of-quarter expect",
+      "source_id": "NFLX2019Q2_004",
+      "published_at": 0,
+      "atom_id": "NFLX2019Q2_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.786,
+      "span_score": 1.0,
+      "severity_align": 0.146,
+      "mechanism_hint": 1.0,
+      "claim_id": "NFLX2019Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Paid memberships increased 26% year over year",
+      "effect": "Positive subscriber growth momentum",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "paid memberships increased 26% year over year",
+      "source_id": "NFLX2019Q2_001",
+      "published_at": 0,
+      "atom_id": "NFLX2019Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.807,
+      "span_score": 0.984,
+      "severity_align": 0.263,
+      "mechanism_hint": 1.0,
+      "claim_id": "NFLX2019Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Projected total paid net adds of 5.0m (-8% year over year)",
+      "effect": "Declining subscriber growth rate",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "project total paid net adds of 5.0m (-8% year over year",
+      "source_id": "NFLX2019Q2_005",
+      "published_at": 0,
+      "atom_id": "NFLX2019Q2_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.864,
+      "span_score": 1.0,
+      "severity_align": 0.456,
+      "mechanism_hint": 1.0,
+      "claim_id": "NFLX2019Q2_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Revenue growth of 22% compared to 40% in Q1'18",
+      "effect": "Slowing revenue growth rate",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -0.6,
+      "evidence_span": "Year over year total revenue growth of 22% compares against 40% in Q1'18",
+      "source_id": "NFLX2019Q2_002",
+      "published_at": 0,
+      "atom_id": "NFLX2019Q2_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

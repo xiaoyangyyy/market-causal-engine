@@ -1,0 +1,31 @@
+{
+  "event_id": "DOCU_2023Q4_earnings",
+  "ticker": "DOCU",
+  "event_date": "2023-10-12",
+  "fiscal_period": "2023Q4",
+  "atom_count": 4,
+  "text_length": 19540,
+  "summary_length": 9890,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\DOCU_2023Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\DOCU_2023Q4_earnings\\sec_8k.txt",
+  "filing_date": "2024-02-06",
+  "accession_number": "0001261333-24-000015",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1261333/000126133324000015/docu-20240206.htm",
+  "form": "8-K",
+  "search_date_from": "2024-01-01",
+  "search_date_to": "2024-02-29",
+  "aligned_filing_date": "2024-02-06",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -1.95,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

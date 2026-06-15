@@ -1,0 +1,45 @@
+{
+  "event_id": "JNJ_2017Q3_earnings",
+  "ticker": "JNJ",
+  "event_date": "2017-07-17",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:21:01+00:00",
+  "accepted": [
+    {
+      "cause": "positive fundamental signal",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.171,
+      "polarity": -1.0,
+      "evidence_span": "EX-99.15 2 a8k2017q2exhibit9915.htm EXHIBIT 99.15 Exhibit Exhibit 99.15 ` Johnson & Johnson Reports 2017 Second-Quarter Results: 2017 Second-Quarter Sales of $18.8 Billion Increase",
+      "source_id": "JNJ2017Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "JNJ2017Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.988,
+      "span_score": 0.979,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "JNJ2017Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

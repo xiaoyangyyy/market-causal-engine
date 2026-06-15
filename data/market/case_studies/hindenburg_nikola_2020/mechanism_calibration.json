@@ -1,0 +1,52 @@
+{
+  "case_id": "hindenburg_nikola_2020",
+  "domain": "short_report",
+  "outcome_effect": -0.149307,
+  "outcome_method": "synthetic_control",
+  "predicted_effect": -0.00327,
+  "predicted_direction": "neutral",
+  "actual_direction": "down",
+  "direction_match": false,
+  "confidence": 0.304,
+  "mechanism_weights": {
+    "fundamental": 0.0,
+    "sentiment": 0.2839,
+    "liquidity": 0.2484,
+    "macro": 0.0,
+    "regulatory": 0.1148,
+    "trust": 0.3529
+  },
+  "dominant_mechanism": "trust",
+  "posterior_weights": {
+    "fundamental": 0.0277,
+    "sentiment": 0.2279,
+    "liquidity": 0.1826,
+    "macro": 0.0277,
+    "regulatory": 0.1406,
+    "trust": 0.3936
+  },
+  "prior_weights": {
+    "fundamental": 0.0455,
+    "sentiment": 0.2273,
+    "liquidity": 0.1818,
+    "macro": 0.0455,
+    "regulatory": 0.1818,
+    "trust": 0.3182
+  },
+  "posterior_confidence": 0.643,
+  "feature_vector": {
+    "claim_count": 7.0,
+    "m_fundamental": 0.0,
+    "m_liquidity": 0.2629,
+    "m_macro": 0.0,
+    "m_regulatory": 0.1282,
+    "m_sentiment": 0.237,
+    "m_trust": 0.3718,
+    "max_severity": 0.9,
+    "mean_confidence": 0.65,
+    "trace_total": 1.0
+  },
+  "claim_count": 7,
+  "model_version": "v0.7-ridge",
+  "computed_at": "2026-06-09T03:17:00+00:00"
+}

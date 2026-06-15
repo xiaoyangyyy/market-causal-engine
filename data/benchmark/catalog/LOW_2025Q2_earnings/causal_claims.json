@@ -1,0 +1,70 @@
+{
+  "event_id": "LOW_2025Q2_earnings",
+  "ticker": "LOW",
+  "event_date": "2025-04-11",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:27:55+00:00",
+  "accepted": [
+    {
+      "cause": "diluted EPS of $2.92",
+      "effect": "diluted EPS of $3.06",
+      "mechanism": "fundamental",
+      "severity": 0.45,
+      "polarity": -1.0,
+      "evidence_span": "diluted earnings per share (EPS) of $2.92 for the quarter ended May 2, 2025, compared to diluted EPS of $3.06 in the first quarter of 2024",
+      "source_id": "LOW2025Q2_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "LOW2025Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.918,
+      "span_score": 0.989,
+      "severity_align": 0.696,
+      "mechanism_hint": 1.0,
+      "claim_id": "LOW2025Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.092,
+      "polarity": -1.0,
+      "evidence_span": "Diluted EPS of $2.92 — — Affirms Full Year 2025 Outlook — MOORESVILLE, N.C., May 21, 2025 – Lowe’s Companies, Inc.",
+      "source_id": "LOW2025Q2_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "LOW2025Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "LOW2025Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

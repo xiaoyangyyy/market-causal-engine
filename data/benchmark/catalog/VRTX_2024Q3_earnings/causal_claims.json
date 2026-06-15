@@ -1,0 +1,90 @@
+{
+  "event_id": "VRTX_2024Q3_earnings",
+  "ticker": "VRTX",
+  "event_date": "2024-07-24",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:12:07+00:00",
+  "accepted": [
+    {
+      "cause": "global launch of CASGEVY",
+      "effect": "commercial execution in CF",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "global launch of CASGEVY",
+      "source_id": "VRTX2024Q3_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "VRTX2024Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.77,
+      "span_score": 0.867,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "VRTX2024Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.171,
+      "polarity": -1.0,
+      "evidence_span": "VERTEX PHARMACEUTICALS INCORPORATED (Registrant) Date: August 1, 2024 /s/ Jonathan Biller Jonathan Biller Executive Vice President, Chief Legal Officer PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000��\u0001Y\u0007AMb�\u0000\u0000\u0000�\u0000\u0000\u0000\u0010\u0000",
+      "source_id": "VRTX2024Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "VRTX2024Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.988,
+      "span_score": 0.979,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "VRTX2024Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Vertex's continued growth",
+      "effect": "positive market expectations",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "expectations for Vertex's continued growth",
+      "source_id": "VRTX2024Q3_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "VRTX2024Q3_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

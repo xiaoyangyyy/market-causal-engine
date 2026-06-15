@@ -1,0 +1,71 @@
+{
+  "event_id": "DHR_2022Q2_earnings",
+  "ticker": "DHR",
+  "event_date": "2022-04-11",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T13:20:47+00:00",
+  "accepted": [
+    {
+      "cause": "12.0% year-over-year revenue increase",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Revenues increased 12.0% year-over-year to $7.7 billion",
+      "source_id": "DHR2022Q2_002",
+      "published_at": 0,
+      "atom_id": "DHR2022Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.774,
+      "span_score": 0.924,
+      "severity_align": 0.264,
+      "mechanism_hint": 1.0,
+      "claim_id": "DHR2022Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "12.0% non-GAAP core revenue growth",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "12.0% non-GAAP core revenue growth",
+      "source_id": "DHR2022Q2_002",
+      "published_at": 0,
+      "atom_id": "DHR2022Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.771,
+      "span_score": 0.896,
+      "severity_align": 0.314,
+      "mechanism_hint": 1.0,
+      "claim_id": "DHR2022Q2_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

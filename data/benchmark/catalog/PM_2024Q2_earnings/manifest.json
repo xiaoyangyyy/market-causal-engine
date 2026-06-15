@@ -1,0 +1,34 @@
+{
+  "event_id": "PM_2024Q2_earnings",
+  "ticker": "PM",
+  "event_date": "2024-04-19",
+  "fiscal_period": "2024Q2",
+  "atom_count": 13,
+  "text_length": 51469,
+  "summary_length": 12000,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\PM_2024Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\PM_2024Q2_earnings\\sec_8k.txt",
+  "filing_date": "2024-04-23",
+  "accession_number": "0001413329-24-000083",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1413329/000141332924000083/pm-20240423.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001413329",
+  "window_days": 45,
+  "search_date_from": "2024-07-01",
+  "search_date_to": "2024-08-31",
+  "aligned_filing_date": "2024-04-23",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 3.83,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

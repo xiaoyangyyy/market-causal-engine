@@ -1,0 +1,115 @@
+{
+  "event_id": "MRK_2021Q2_earnings",
+  "ticker": "MRK",
+  "event_date": "2021-04-21",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:46:52+00:00",
+  "accepted": [
+    {
+      "cause": "Revenue",
+      "effect": "Merck's share of profit",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "Revenue represents Merck's share of prof",
+      "source_id": "MRK2021Q2_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MRK2021Q2_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.887,
+      "span_score": 1.0,
+      "severity_align": 0.546,
+      "mechanism_hint": 1.0,
+      "claim_id": "MRK2021Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "net loss",
+      "effect": "fourth quarter performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "net loss in the fourth quarter of",
+      "source_id": "MRK2021Q2_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MRK2021Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.81,
+      "span_score": 1.0,
+      "severity_align": 0.242,
+      "mechanism_hint": 1.0,
+      "claim_id": "MRK2021Q2_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.057,
+      "polarity": -1.0,
+      "evidence_span": "Revenues (8) (13 ) 188 -107 58 39 51 (72 ) 149 -149 Sum of",
+      "source_id": "MRK2021Q2_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "MRK2021Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "MRK2021Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Revenue represents Merck's share of prof",
+      "effect": "Revenue represents Merck's share of prof",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": 0.0,
+      "evidence_span": "Revenue represents Merck's share of prof",
+      "source_id": "MRK2021Q2_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MRK2021Q2_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

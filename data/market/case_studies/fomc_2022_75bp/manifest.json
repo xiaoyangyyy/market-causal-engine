@@ -13,11 +13,56 @@
   "scenario_path": "scenario.json",
   "atoms_path": "atoms.jsonl",
   "default_until": 90,
-  "lookahead_policy": {"strict": true, "forbid_post_hoc_sources": true},
+  "lookahead_policy": {
+    "strict": true,
+    "forbid_post_hoc_sources": true
+  },
   "observed_outcomes": {
     "direction": "down",
     "session_return_pct": -1.7,
     "calibration_reference_drawdown": 0.55,
     "dominant_narrative": "hawkish 75bp hike + yield spike + growth-to-value rotation"
+  },
+  "outcome_causal": {
+    "method": "synthetic_control",
+    "effect": -0.000791,
+    "observed_return": -0.025697,
+    "counterfactual_return": -0.024906,
+    "placebo_rank": 0.5,
+    "artifact": "data\\market\\case_studies\\fomc_2022_75bp\\outcome_causal.json"
+  },
+  "causal_claims": {
+    "claim_count": 5,
+    "rejected_count": 1,
+    "top_claim": {
+      "cause": "monetary policy shock",
+      "effect": "risk appetite compression",
+      "mechanism": "macro",
+      "severity": 0.82,
+      "evidence_span": "Federal Reserve Board - Federal Reserve issues FOMC statement",
+      "source_id": "FOMC22SEP_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "FOMC22SEP_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "FOMC_2022_75_C000"
+    },
+    "artifact": "causal_claims.json"
+  },
+  "mechanism_calibration": {
+    "predicted_effect": -0.034334,
+    "outcome_effect": -0.000791,
+    "dominant_mechanism": "macro",
+    "direction_match": false,
+    "confidence": 0.352,
+    "artifact": "mechanism_calibration.json"
   }
 }

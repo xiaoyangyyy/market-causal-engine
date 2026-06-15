@@ -1,0 +1,70 @@
+{
+  "event_id": "LOW_2023Q1_earnings",
+  "ticker": "LOW",
+  "event_date": "2023-01-19",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:21:23+00:00",
+  "accepted": [
+    {
+      "cause": "lumber deflation",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "expected lumber deflation and lower",
+      "source_id": "LOW2023Q1_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "LOW2023Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.98,
+      "span_score": 1.0,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "LOW2023Q1_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "earnings disclosure",
+      "effect": "fundamental repricing",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "REPORTS FIRST QUARTER 2023 SALES AND EARNINGS",
+      "source_id": "LOW2023Q1_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "LOW2023Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "LOW2023Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

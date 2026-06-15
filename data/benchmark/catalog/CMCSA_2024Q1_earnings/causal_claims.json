@@ -1,0 +1,16 @@
+{
+  "event_id": "CMCSA_2024Q1_earnings",
+  "ticker": "CMCSA",
+  "event_date": "2024-01-12",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:50:34+00:00",
+  "accepted": [],
+  "rejected": [],
+  "claim_count": 0,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback_empty"
+}

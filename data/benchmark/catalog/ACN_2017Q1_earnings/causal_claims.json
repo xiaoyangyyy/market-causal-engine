@@ -1,0 +1,91 @@
+{
+  "event_id": "ACN_2017Q1_earnings",
+  "ticker": "ACN",
+  "event_date": "2017-01-19",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T07:23:11+00:00",
+  "accepted": [
+    {
+      "cause": "Operating margin expansion of 40 basis points",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "operating margin of 15.6%, an expansion of 40 basis points",
+      "source_id": "ACN2017Q1_000",
+      "published_at": 0,
+      "atom_id": "ACN2017Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.795,
+      "span_score": 0.891,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "claim_id": "ACN2017Q1_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "EPS increase of 23% to $1.58",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "EPS are $1.58, a 23% increase, including $0.18 positive impact from a lower tax rate",
+      "source_id": "ACN2017Q1_000",
+      "published_at": 0,
+      "atom_id": "ACN2017Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.781,
+      "span_score": 0.91,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "ACN2017Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Higher revenue and operating results driving EPS",
+      "effect": "Positive stock price reaction",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 0.8,
+      "evidence_span": "The $0.30 increase in EPS reflects: an $0.11 increase from higher revenue and operating results",
+      "source_id": "ACN2017Q1_014",
+      "published_at": 0,
+      "atom_id": "ACN2017Q1_014",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,34 @@
+{
+  "event_id": "PYPL_2021Q4_earnings",
+  "ticker": "PYPL",
+  "event_date": "2021-10-18",
+  "fiscal_period": "2021Q4",
+  "atom_count": 10,
+  "text_length": 46223,
+  "summary_length": 11998,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\PYPL_2021Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\PYPL_2021Q4_earnings\\sec_8k.txt",
+  "filing_date": "2021-11-08",
+  "accession_number": "0001633917-21-000167",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1633917/000163391721000167/pypl-20211108.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001633917",
+  "window_days": 45,
+  "search_date_from": "2022-01-01",
+  "search_date_to": "2022-02-28",
+  "aligned_filing_date": "2021-11-08",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.61,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

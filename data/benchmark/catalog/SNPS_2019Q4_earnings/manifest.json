@@ -1,0 +1,29 @@
+{
+  "event_id": "SNPS_2019Q4_earnings",
+  "ticker": "SNPS",
+  "event_date": "2019-10-10",
+  "fiscal_period": "2019Q4",
+  "atom_count": 0,
+  "text_length": 11252,
+  "summary_length": 2652,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\SNPS_2019Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\SNPS_2019Q4_earnings\\sec_8k.txt",
+  "filing_date": "2019-08-29",
+  "accession_number": "0001193125-19-234087",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/883241/000119312519234087/d755849d8k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000883241",
+  "window_days": 45,
+  "search_date_from": "2020-01-01",
+  "search_date_to": "2020-02-29",
+  "aligned_filing_date": "2019-08-29",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 3.33,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "version": "v0.9-earnings-interaction",
+  "models": {
+    "catalog_earnings": {
+      "version": "v0.7-ridge",
+      "feature_names": [
+        "m_fundamental",
+        "m_sentiment",
+        "m_liquidity",
+        "m_macro",
+        "m_regulatory",
+        "m_trust",
+        "max_severity",
+        "mean_confidence",
+        "trace_total",
+        "x_fund_sent",
+        "x_fund_liq",
+        "x_sent_liq",
+        "x_fund_sev",
+        "x_sent_trace",
+        "x_fund_macro"
+      ],
+      "coefficients": [
+        -0.001938,
+        -0.003597,
+        -0.000903,
+        0.00463,
+        0.00439,
+        0.0,
+        0.0,
+        0.007469,
+        0.000689,
+        -0.003299,
+        0.000332,
+        0.001559,
+        0.001088,
+        -0.00305,
+        0.006355,
+        0.002468
+      ],
+      "training_rmse": 0.02552,
+      "n_samples": 951
+    }
+  }
+}

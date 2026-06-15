@@ -1,0 +1,34 @@
+{
+  "event_id": "ACN_2025Q2_earnings",
+  "ticker": "ACN",
+  "event_date": "2025-04-17",
+  "fiscal_period": "2025Q2",
+  "atom_count": 1,
+  "text_length": 40652,
+  "summary_length": 3858,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\ACN_2025Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\ACN_2025Q2_earnings\\sec_8k.txt",
+  "filing_date": "2025-03-20",
+  "accession_number": "0001467373-25-000099",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737325000099/acn-20250320.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001467373",
+  "window_days": 45,
+  "search_date_from": "2025-07-01",
+  "search_date_to": "2025-08-31",
+  "aligned_filing_date": "2025-03-20",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -7.26,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 0,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

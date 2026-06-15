@@ -13,11 +13,56 @@
   "scenario_path": "scenario.json",
   "atoms_path": "atoms.jsonl",
   "default_until": 90,
-  "lookahead_policy": {"strict": true, "forbid_post_hoc_sources": true},
+  "lookahead_policy": {
+    "strict": true,
+    "forbid_post_hoc_sources": true
+  },
   "observed_outcomes": {
     "direction": "down",
     "session_return_pct": -1.5,
     "calibration_reference_drawdown": 0.48,
     "dominant_narrative": "hot CPI surprise + bond yield spike + growth-to-value rotation"
+  },
+  "outcome_causal": {
+    "method": "synthetic_control",
+    "effect": -0.000501,
+    "observed_return": -0.007667,
+    "counterfactual_return": -0.007167,
+    "placebo_rank": 0.25,
+    "artifact": "data\\market\\case_studies\\cpi_2022_06_hot\\outcome_causal.json"
+  },
+  "causal_claims": {
+    "claim_count": 5,
+    "rejected_count": 1,
+    "top_claim": {
+      "cause": "CPI surprise",
+      "effect": "inflation path repricing",
+      "mechanism": "macro",
+      "severity": 0.8,
+      "evidence_span": "CPI rose 0.7 percent in June, above",
+      "source_id": "CPI22JUN_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "CPI22JUN_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "CPI_2022_06__C000"
+    },
+    "artifact": "causal_claims.json"
+  },
+  "mechanism_calibration": {
+    "predicted_effect": -0.06066,
+    "outcome_effect": -0.000501,
+    "dominant_mechanism": "macro",
+    "direction_match": false,
+    "confidence": 0.359,
+    "artifact": "mechanism_calibration.json"
   }
 }

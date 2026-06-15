@@ -1,0 +1,31 @@
+{
+  "event_id": "NVDA_2018Q4_earnings",
+  "ticker": "NVDA",
+  "event_date": "2018-10-15",
+  "fiscal_period": "2018Q4",
+  "atom_count": 6,
+  "text_length": 22877,
+  "summary_length": 1055,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\NVDA_2018Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\NVDA_2018Q4_earnings\\sec_8k.txt",
+  "filing_date": "2019-01-28",
+  "accession_number": "0001045810-19-000004",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581019000004/form8-kq4fy19update.htm",
+  "form": "8-K",
+  "search_date_from": "2019-01-01",
+  "search_date_to": "2019-02-28",
+  "aligned_filing_date": "2019-01-28",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -13.82,
+    "magnitude_bucket": "large"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

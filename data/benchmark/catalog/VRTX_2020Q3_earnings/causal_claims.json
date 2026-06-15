@@ -1,0 +1,70 @@
+{
+  "event_id": "VRTX_2020Q3_earnings",
+  "ticker": "VRTX",
+  "event_date": "2020-07-07",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:29:28+00:00",
+  "accepted": [
+    {
+      "cause": "Revised upward full-year 2020 financial guidance",
+      "effect": "Increased investor confidence in future revenue growth",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "revised upward its full-year 2020 financial guidance for total cystic fi",
+      "source_id": "VRTX2020Q3_003",
+      "published_at": 0,
+      "atom_id": "VRTX2020Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.763,
+      "span_score": 0.901,
+      "severity_align": 0.271,
+      "mechanism_hint": 1.0,
+      "claim_id": "VRTX2020Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Cystic fibrosis revenue expectations raised to $5.7-$5.9 billion",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "now expects 2020 CF revenues of $5.7 to $5.9 billion",
+      "source_id": "VRTX2020Q3_003",
+      "published_at": 0,
+      "atom_id": "VRTX2020Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.768,
+      "span_score": 0.887,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "VRTX2020Q3_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

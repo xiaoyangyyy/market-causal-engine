@@ -1,0 +1,52 @@
+{
+  "case_id": "snap_2022q3_earnings",
+  "domain": "earnings",
+  "outcome_effect": -0.274796,
+  "outcome_method": "synthetic_control",
+  "predicted_effect": 0.009245,
+  "predicted_direction": "up",
+  "actual_direction": "down",
+  "direction_match": false,
+  "confidence": 0.304,
+  "mechanism_weights": {
+    "fundamental": 0.5765,
+    "sentiment": 0.1664,
+    "liquidity": 0.225,
+    "macro": 0.0321,
+    "regulatory": 0.0,
+    "trust": 0.0
+  },
+  "dominant_mechanism": "fundamental",
+  "posterior_weights": {
+    "fundamental": 0.6036,
+    "sentiment": 0.155,
+    "liquidity": 0.1464,
+    "macro": 0.0491,
+    "regulatory": 0.023,
+    "trust": 0.023
+  },
+  "prior_weights": {
+    "fundamental": 0.4091,
+    "sentiment": 0.2273,
+    "liquidity": 0.1818,
+    "macro": 0.0909,
+    "regulatory": 0.0455,
+    "trust": 0.0455
+  },
+  "posterior_confidence": 0.739,
+  "feature_vector": {
+    "claim_count": 7.0,
+    "m_fundamental": 0.553,
+    "m_liquidity": 0.2593,
+    "m_macro": 0.0364,
+    "m_regulatory": 0.0,
+    "m_sentiment": 0.1513,
+    "m_trust": 0.0,
+    "max_severity": 0.9,
+    "mean_confidence": 0.6487,
+    "trace_total": 1.0
+  },
+  "claim_count": 7,
+  "model_version": "v0.7-ridge",
+  "computed_at": "2026-06-09T03:17:00+00:00"
+}

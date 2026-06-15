@@ -1,0 +1,34 @@
+{
+  "event_id": "SBUX_2021Q1_earnings",
+  "ticker": "SBUX",
+  "event_date": "2021-01-19",
+  "fiscal_period": "2021Q1",
+  "atom_count": 7,
+  "text_length": 44306,
+  "summary_length": 11999,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\SBUX_2021Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\SBUX_2021Q1_earnings\\sec_8k.txt",
+  "filing_date": "2021-01-26",
+  "accession_number": "0000829224-21-000027",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/829224/000082922421000027/sbux-20210126.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000829224",
+  "window_days": 45,
+  "search_date_from": "2021-04-01",
+  "search_date_to": "2021-05-31",
+  "aligned_filing_date": "2021-01-26",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.2,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

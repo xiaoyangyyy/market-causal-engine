@@ -1,0 +1,31 @@
+{
+  "event_id": "ABT_2019Q2_earnings",
+  "ticker": "ABT",
+  "event_date": "2019-04-12",
+  "fiscal_period": "2019Q2",
+  "atom_count": 22,
+  "text_length": 43111,
+  "summary_length": 11998,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\ABT_2019Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\ABT_2019Q2_earnings\\sec_8k.txt",
+  "filing_date": "2019-07-17",
+  "accession_number": "0001104659-19-040664",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1800/000110465919040664/a19-12883_18k.htm",
+  "form": "8-K",
+  "search_date_from": "2019-07-01",
+  "search_date_to": "2019-08-31",
+  "aligned_filing_date": "2019-07-17",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 3.13,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

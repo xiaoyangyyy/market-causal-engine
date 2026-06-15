@@ -1,0 +1,70 @@
+{
+  "event_id": "VRTX_2023Q4_earnings",
+  "ticker": "VRTX",
+  "event_date": "2023-10-11",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T04:08:33+00:00",
+  "accepted": [
+    {
+      "cause": "Revenue increase in Q3 2023",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "revenue in the third quarter of 2023 increased",
+      "source_id": "VRTX2023Q4_003",
+      "published_at": 0,
+      "atom_id": "VRTX2023Q4_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.838,
+      "span_score": 1.0,
+      "severity_align": 0.35,
+      "mechanism_hint": 1.0,
+      "claim_id": "VRTX2023Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Net income growth to $1,035.3 million",
+      "effect": "Investor confidence boost",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Net income $ 1,035.3 $ 930.5 $ 2,650.8 $",
+      "source_id": "VRTX2023Q4_000",
+      "published_at": 0,
+      "atom_id": "VRTX2023Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.862,
+      "span_score": 1.0,
+      "severity_align": 0.446,
+      "mechanism_hint": 1.0,
+      "claim_id": "VRTX2023Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

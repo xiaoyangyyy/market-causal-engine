@@ -1,0 +1,67 @@
+{
+  "event_id": "BLK_2016Q3_earnings",
+  "ticker": "BLK",
+  "event_date": "2016-07-07",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T11:35:54+00:00",
+  "accepted": [
+    {
+      "cause": "Aladdin revenue grew 13% year-over-year",
+      "effect": "technology segment growth drives estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Finally, Aladdin revenue grew 13% year-over-year.",
+      "source_id": "BLK2016Q3_001",
+      "published_at": 0,
+      "atom_id": "BLK2016Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.813,
+      "span_score": 1.0,
+      "severity_align": 0.252,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "BLK2016Q3_C000"
+    },
+    {
+      "cause": "revenue decreased $45 million from the second quarter of",
+      "effect": "quarterly revenue decline raises margin compression concern",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "revenue decreased $45 million from the second quarter of",
+      "source_id": "BLK2016Q3_004",
+      "published_at": 0,
+      "atom_id": "BLK2016Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.836,
+      "span_score": 1.0,
+      "severity_align": 0.356,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "BLK2016Q3_C001"
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event"
+}

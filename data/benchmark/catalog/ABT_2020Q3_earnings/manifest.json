@@ -1,0 +1,31 @@
+{
+  "event_id": "ABT_2020Q3_earnings",
+  "ticker": "ABT",
+  "event_date": "2020-07-15",
+  "fiscal_period": "2020Q3",
+  "atom_count": 4,
+  "text_length": 43664,
+  "summary_length": 11998,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\ABT_2020Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\ABT_2020Q3_earnings\\sec_8k.txt",
+  "filing_date": "2020-10-21",
+  "accession_number": "0001104659-20-116611",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1800/000110465920116611/tm2033805d1_8k.htm",
+  "form": "8-K",
+  "search_date_from": "2020-10-01",
+  "search_date_to": "2020-11-30",
+  "aligned_filing_date": "2020-10-21",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -2.24,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

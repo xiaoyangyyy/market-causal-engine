@@ -1,0 +1,31 @@
+{
+  "event_id": "BKNG_2022Q1_earnings",
+  "ticker": "BKNG",
+  "event_date": "2022-01-05",
+  "fiscal_period": "2022Q1",
+  "atom_count": 7,
+  "text_length": 33112,
+  "summary_length": 11999,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\BKNG_2022Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\BKNG_2022Q1_earnings\\sec_8k.txt",
+  "filing_date": "2022-05-04",
+  "accession_number": "0001075531-22-000020",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1075531/000107553122000020/bkng-20220504.htm",
+  "form": "8-K",
+  "search_date_from": "2022-04-01",
+  "search_date_to": "2022-05-31",
+  "aligned_filing_date": "2022-05-04",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.12,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 5,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

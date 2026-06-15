@@ -1,0 +1,69 @@
+{
+  "event_id": "TSLA_2017Q1_earnings",
+  "ticker": "TSLA",
+  "event_date": "2017-01-09",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T01:34:24+00:00",
+  "accepted": [
+    {
+      "cause": "Negative vehicle service gross margin during service capability ramp-up",
+      "effect": "Overall gross margin decline and reduced profitability",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Service and other gross margin was affected by negative vehicle service gross margin in the quarter, as we ramp up our service capability ahead of the launch of Model 3.",
+      "source_id": "TSLA2017Q1_011",
+      "published_at": 0,
+      "atom_id": "TSLA2017Q1_011",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.845,
+      "span_score": 1.0,
+      "severity_align": 0.378,
+      "mechanism_hint": 1.0,
+      "claim_id": "TSLA2017Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Significant year-over-year gross margin contraction",
+      "effect": "Deterioration in core automotive profitability metrics",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "gross margin - GAAP 22.6 % 29.4 % 19.7 % -680 bp 290",
+      "source_id": "TSLA2017Q1_007",
+      "published_at": 0,
+      "atom_id": "TSLA2017Q1_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.801,
+      "span_score": 1.0,
+      "severity_align": 0.204,
+      "mechanism_hint": 1.0,
+      "claim_id": "TSLA2017Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

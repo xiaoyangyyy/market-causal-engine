@@ -1,0 +1,31 @@
+{
+  "event_id": "LOW_2022Q1_earnings",
+  "ticker": "LOW",
+  "event_date": "2022-01-20",
+  "fiscal_period": "2022Q1",
+  "atom_count": 2,
+  "text_length": 17044,
+  "summary_length": 5998,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\LOW_2022Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\LOW_2022Q1_earnings\\sec_8k.txt",
+  "filing_date": "2022-05-18",
+  "accession_number": "0000060667-22-000075",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/60667/000006066722000075/low-20220518.htm",
+  "form": "8-K",
+  "search_date_from": "2022-04-01",
+  "search_date_to": "2022-05-31",
+  "aligned_filing_date": "2022-05-18",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -5.26,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

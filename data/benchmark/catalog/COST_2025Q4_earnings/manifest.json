@@ -1,0 +1,31 @@
+{
+  "event_id": "COST_2025Q4_earnings",
+  "ticker": "COST",
+  "event_date": "2025-10-16",
+  "fiscal_period": "2025Q4",
+  "atom_count": 1,
+  "text_length": 8175,
+  "summary_length": 3242,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\COST_2025Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\COST_2025Q4_earnings\\sec_8k.txt",
+  "filing_date": "2026-01-21",
+  "accession_number": "0000909832-26-000016",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/909832/000090983226000016/cost-20260115.htm",
+  "form": "8-K",
+  "search_date_from": "2026-01-01",
+  "search_date_to": "2026-02-28",
+  "aligned_filing_date": "2026-01-21",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.93,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

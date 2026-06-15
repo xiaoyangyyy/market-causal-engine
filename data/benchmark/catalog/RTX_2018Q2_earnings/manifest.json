@@ -1,0 +1,34 @@
+{
+  "event_id": "RTX_2018Q2_earnings",
+  "ticker": "RTX",
+  "event_date": "2018-04-24",
+  "fiscal_period": "2018Q2",
+  "atom_count": 15,
+  "text_length": 32994,
+  "summary_length": 11993,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\RTX_2018Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\RTX_2018Q2_earnings\\sec_8k.txt",
+  "filing_date": "2018-04-24",
+  "accession_number": "0000101829-18-000007",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/101829/000010182918000007/a2018-03x318xker.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000101829",
+  "window_days": 45,
+  "search_date_from": "2018-07-01",
+  "search_date_to": "2018-08-31",
+  "aligned_filing_date": "2018-04-24",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -1.1,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

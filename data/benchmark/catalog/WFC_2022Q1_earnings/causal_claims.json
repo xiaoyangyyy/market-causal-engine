@@ -1,0 +1,71 @@
+{
+  "event_id": "WFC_2022Q1_earnings",
+  "ticker": "WFC",
+  "event_date": "2022-01-10",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:00:51+00:00",
+  "accepted": [
+    {
+      "cause": "net income $ 5,750",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "net income $ 5,750 5,122 6,040 4,636 3,091 12 86 $",
+      "source_id": "WFC2022Q1_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "WFC2022Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.813,
+      "span_score": 1.0,
+      "severity_align": 0.253,
+      "mechanism_hint": 1.0,
+      "claim_id": "WFC2022Q1_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.059,
+      "polarity": -1.0,
+      "evidence_span": "Total revenue 20,856 18,834 18,489 2,022 2,367 Net charge-of",
+      "source_id": "WFC2022Q1_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "WFC2022Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "WFC2022Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

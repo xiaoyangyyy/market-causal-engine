@@ -1,0 +1,31 @@
+{
+  "event_id": "UBER_2024Q3_earnings",
+  "ticker": "UBER",
+  "event_date": "2024-07-18",
+  "fiscal_period": "2024Q3",
+  "atom_count": 6,
+  "text_length": 56885,
+  "summary_length": 11999,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\UBER_2024Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\UBER_2024Q3_earnings\\sec_8k.txt",
+  "filing_date": "2024-10-31",
+  "accession_number": "0001543151-24-000033",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315124000033/uber-20241031.htm",
+  "form": "8-K",
+  "search_date_from": "2024-10-01",
+  "search_date_to": "2024-11-30",
+  "aligned_filing_date": "2024-10-31",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -9.29,
+    "magnitude_bucket": "large"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

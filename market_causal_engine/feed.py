@@ -41,8 +41,10 @@ class FeedRunner:
         skip_evidence_ledger: bool = False,
         lookahead_policy: LookAheadPolicy | None = None,
         as_of: int | None = None,
+        domain: str = "earnings",
     ):
         self.kernel = kernel
+        self.domain = domain
         self.ticker = ticker
         self.skip_evidence_ledger = skip_evidence_ledger
         self.lookahead_policy = lookahead_policy or LookAheadPolicy()
@@ -78,7 +80,7 @@ class FeedRunner:
                 self._rejected_lookahead.append(vr.to_dict())
                 return False
 
-        compiled = self.compiler.compile_atom(atom)
+        compiled = self.compiler.compile_atom(atom, domain=self.domain)
         if compiled is None:
             return False
 

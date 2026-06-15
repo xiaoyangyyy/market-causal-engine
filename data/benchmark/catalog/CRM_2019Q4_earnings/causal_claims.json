@@ -1,0 +1,58 @@
+{
+  "event_id": "CRM_2019Q4_earnings",
+  "ticker": "CRM",
+  "event_date": "2019-10-07",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T09:48:16+00:00",
+  "accepted": [],
+  "rejected": [
+    {
+      "cause": "investor presentation for use in the Company's November 20, 2019 Analyst Day event",
+      "effect": "information regarding the Company's financial performance, revenue guidance, market opportunity, competitive position and economic model",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": 0.0,
+      "evidence_span": "(the \"Company\") posted to its website an investor presentation for use in the Company's November 20, 2019 Analyst Day event, including information regarding the Company's financial performance, revenue guidance, market opportunity, competitive position and economic model.",
+      "source_id": "CRM2019Q4_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "CRM2019Q4_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "CRM2019Q4_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "CRM2019Q4_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 0,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback_empty"
+}

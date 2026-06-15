@@ -1,0 +1,45 @@
+{
+  "event_id": "MA_2019Q3_earnings",
+  "ticker": "MA",
+  "event_date": "2019-07-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:01:28+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.136,
+      "polarity": -1.0,
+      "evidence_span": "Item 2.02 Results of Operations and Financial Condition On July 30, 2019 , Mastercard Incorporated issued an earnings release announcing financial results for its second quarter 20",
+      "source_id": "MA2019Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "MA2019Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "MA2019Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

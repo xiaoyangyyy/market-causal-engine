@@ -1,0 +1,34 @@
+{
+  "event_id": "AXP_2020Q3_earnings",
+  "ticker": "AXP",
+  "event_date": "2020-07-15",
+  "fiscal_period": "2020Q3",
+  "atom_count": 10,
+  "text_length": 68309,
+  "summary_length": 11992,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\AXP_2020Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\AXP_2020Q3_earnings\\sec_8k.txt",
+  "filing_date": "2020-07-24",
+  "accession_number": "0000004962-20-000076",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/4962/000000496220000076/axp-20200724.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000004962",
+  "window_days": 45,
+  "search_date_from": "2020-10-01",
+  "search_date_to": "2020-11-30",
+  "aligned_filing_date": "2020-07-24",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -1.39,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

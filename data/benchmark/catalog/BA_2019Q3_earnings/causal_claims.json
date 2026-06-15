@@ -1,0 +1,83 @@
+{
+  "event_id": "BA_2019Q3_earnings",
+  "ticker": "BA",
+  "event_date": "2019-07-22",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T13:01:52+00:00",
+  "accepted": [
+    {
+      "cause": "737 MAX charges and increased costs",
+      "effect": "GAAP loss and negative earnings per share",
+      "mechanism": "fundamental",
+      "severity": 0.95,
+      "polarity": 1.0,
+      "evidence_span": "Recorded charge and increased costs related to the 737 MAX",
+      "source_id": "BA2019Q3_000",
+      "published_at": 0,
+      "atom_id": "BA2019Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.745,
+      "span_score": 0.891,
+      "severity_align": 0.221,
+      "mechanism_hint": 1.0,
+      "claim_id": "BA2019Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Commercial Airplanes revenue decline",
+      "effect": "Significant drop in operating earnings",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -0.85,
+      "evidence_span": "Revenues $4,722 13,952 (66)% (Loss)/Earnings from Operations ($4,946 ) $1,785",
+      "source_id": "BA2019Q3_003",
+      "published_at": 0,
+      "atom_id": "BA2019Q3_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    },
+    {
+      "cause": "Defense segment operating margin expansion",
+      "effect": "Increased earnings from operations",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": 0.4,
+      "evidence_span": "Operating Margin 14.7 % 6.2 % 8.5 Pts Earnings from Operations $975 $376 159%",
+      "source_id": "BA2019Q3_004",
+      "published_at": 0,
+      "atom_id": "BA2019Q3_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

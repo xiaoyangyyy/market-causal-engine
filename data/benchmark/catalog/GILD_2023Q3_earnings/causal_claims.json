@@ -1,0 +1,89 @@
+{
+  "event_id": "GILD_2023Q3_earnings",
+  "ticker": "GILD",
+  "event_date": "2023-07-21",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T12:37:51+00:00",
+  "accepted": [
+    {
+      "cause": "Product sales growth excluding Veklury",
+      "effect": "Positive revenue surprise excluding pandemic drug",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "Product Sales Excluding Veklury Increased 11% Year-Over-Year to $6.3 billion",
+      "source_id": "GILD2023Q3_000",
+      "published_at": 0,
+      "atom_id": "GILD2023Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.802,
+      "span_score": 0.904,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "claim_id": "GILD2023Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Biktarvy sales growth",
+      "effect": "Increased investor confidence in core HIV franchise",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Biktarvy Sales Increased 17% Year-Over-Year to $3.0 billion",
+      "source_id": "GILD2023Q3_000",
+      "published_at": 0,
+      "atom_id": "GILD2023Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.771,
+      "span_score": 0.892,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "GILD2023Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Regulatory updates for six therapies",
+      "effect": "Enhanced pipeline valuation and future growth prospects",
+      "mechanism": "regulatory",
+      "severity": 0.65,
+      "polarity": 0.5,
+      "evidence_span": "We received positive regulatory updates for six of our therapies and presented a large body of data on our pipeline",
+      "source_id": "GILD2023Q3_001",
+      "published_at": 0,
+      "atom_id": "GILD2023Q3_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "mechanism_not_allowed_for_domain:regulatory:earnings"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

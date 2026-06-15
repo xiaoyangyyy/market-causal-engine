@@ -1,0 +1,31 @@
+{
+  "event_id": "IBM_2018Q4_earnings",
+  "ticker": "IBM",
+  "event_date": "2018-10-17",
+  "fiscal_period": "2018Q4",
+  "atom_count": 28,
+  "text_length": 63665,
+  "summary_length": 11972,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\IBM_2018Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\IBM_2018Q4_earnings\\sec_8k.txt",
+  "filing_date": "2019-01-22",
+  "accession_number": "0001104659-19-002755",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/51143/000110465919002755/a19-2327_18k.htm",
+  "form": "8-K",
+  "search_date_from": "2019-01-01",
+  "search_date_to": "2019-02-28",
+  "aligned_filing_date": "2019-01-22",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -1.05,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

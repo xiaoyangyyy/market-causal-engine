@@ -1,0 +1,24 @@
+{
+  "weights": {
+    "R_ad_revenue_miss": 0.72,
+    "R_earnings_release": 0.72,
+    "R_earnings_call": 0.72,
+    "R_guidance_cut": 0.72,
+    "R_analyst_downgrade": 0.65,
+    "R_analyst_upgrade": 0.65,
+    "R_put_spike": 0.6,
+    "R_volume_spike": 0.6,
+    "R_sector_etf": 0.72,
+    "R_short_report": 0.65,
+    "R_company_response": 0.72,
+    "R_news_amp": 0.65,
+    "R_short_squeeze": 0.6,
+    "R_social": 0.65,
+    "R_regulatory": 0.62,
+    "R_fomc": 0.58,
+    "R_cpi": 0.58,
+    "R_nfp": 0.58,
+    "R_bond_yield": 0.58
+  },
+  "computed_at": "2026-06-09T10:23:53+00:00"
+}

@@ -1,0 +1,31 @@
+{
+  "event_id": "CAT_2020Q1_earnings",
+  "ticker": "CAT",
+  "event_date": "2020-01-24",
+  "fiscal_period": "2020Q1",
+  "atom_count": 5,
+  "text_length": 62345,
+  "summary_length": 12000,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\CAT_2020Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\CAT_2020Q1_earnings\\sec_8k.txt",
+  "filing_date": "2020-04-28",
+  "accession_number": "0000018230-20-000147",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/18230/000001823020000147/cat8-k1q2020earningsre.htm",
+  "form": "8-K",
+  "search_date_from": "2020-04-01",
+  "search_date_to": "2020-05-31",
+  "aligned_filing_date": "2020-04-28",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": 0.23,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

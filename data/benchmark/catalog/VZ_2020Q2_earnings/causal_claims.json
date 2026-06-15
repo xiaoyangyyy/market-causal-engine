@@ -1,0 +1,44 @@
+{
+  "event_id": "VZ_2020Q2_earnings",
+  "ticker": "VZ",
+  "event_date": "2020-04-07",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:14:45+00:00",
+  "accepted": [
+    {
+      "cause": "revenue growth",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.129,
+      "polarity": 1.0,
+      "evidence_span": "Forecast Adjusted EPS and Adjusted EPS Growth",
+      "source_id": "VZ2020Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "VZ2020Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.98,
+      "span_score": 1.0,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "VZ2020Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

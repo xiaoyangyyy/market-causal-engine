@@ -1,0 +1,34 @@
+{
+  "event_id": "WMT_2019Q2_earnings",
+  "ticker": "WMT",
+  "event_date": "2019-04-05",
+  "fiscal_period": "2019Q2",
+  "atom_count": 25,
+  "text_length": 63622,
+  "summary_length": 11993,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\WMT_2019Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\WMT_2019Q2_earnings\\sec_8k.txt",
+  "filing_date": "2019-05-16",
+  "accession_number": "0000104169-19-000021",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416919000021/form8-kx4302019.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000104169",
+  "window_days": 45,
+  "search_date_from": "2019-07-01",
+  "search_date_to": "2019-08-31",
+  "aligned_filing_date": "2019-05-16",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.43,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

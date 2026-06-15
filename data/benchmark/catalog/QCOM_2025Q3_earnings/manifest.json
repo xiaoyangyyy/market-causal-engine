@@ -1,0 +1,34 @@
+{
+  "event_id": "QCOM_2025Q3_earnings",
+  "ticker": "QCOM",
+  "event_date": "2025-07-17",
+  "fiscal_period": "2025Q3",
+  "atom_count": 8,
+  "text_length": 29082,
+  "summary_length": 12000,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\QCOM_2025Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\QCOM_2025Q3_earnings\\sec_8k.txt",
+  "filing_date": "2025-07-30",
+  "accession_number": "0000804328-25-000044",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/804328/000080432825000044/qcom-20250730.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000804328",
+  "window_days": 45,
+  "search_date_from": "2025-10-01",
+  "search_date_to": "2025-11-30",
+  "aligned_filing_date": "2025-07-30",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -1.86,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

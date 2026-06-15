@@ -1,0 +1,89 @@
+{
+  "event_id": "ABNB_2021Q3_earnings",
+  "ticker": "ABNB",
+  "event_date": "2021-07-08",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T11:34:13+00:00",
+  "accepted": [
+    {
+      "cause": "Q3 2021 revenue reached record high of $2.2 billion",
+      "effect": "Stronger investor confidence in revenue growth trajectory",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "In Q3 2021, revenue was $2.2 billion, our strongest ever, representing a year-over-year increase of 67%",
+      "source_id": "ABNB2021Q3_007",
+      "published_at": 0,
+      "atom_id": "ABNB2021Q3_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.806,
+      "span_score": 0.979,
+      "severity_align": 0.271,
+      "mechanism_hint": 1.0,
+      "claim_id": "ABNB2021Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Net income driven by substantially higher revenue",
+      "effect": "Improved profitability expectations leading to bullish sentiment",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Net income was primarily driven by substantially higher revenue in Q3 2021",
+      "source_id": "ABNB2021Q3_011",
+      "published_at": 0,
+      "atom_id": "ABNB2021Q3_011",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.83,
+      "span_score": 1.0,
+      "severity_align": 0.318,
+      "mechanism_hint": 1.0,
+      "claim_id": "ABNB2021Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Revenue increased 67% year-over-year driven by recovery in bookings",
+      "effect": "Positive market reaction to operational recovery and demand surge",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 0.85,
+      "evidence_span": "The increase in revenue was driven by the recovery in Nights and a higher ADR compared to higher ADR compared to higher ADR higher ADR higher ADR",
+      "source_id": "ABNB2021Q3_008",
+      "published_at": 0,
+      "atom_id": "ABNB2021Q3_008",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

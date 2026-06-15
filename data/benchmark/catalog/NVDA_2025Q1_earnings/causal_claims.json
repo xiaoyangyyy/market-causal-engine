@@ -1,0 +1,44 @@
+{
+  "event_id": "NVDA_2025Q1_earnings",
+  "ticker": "NVDA",
+  "event_date": "2025-01-06",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T13:37:34+00:00",
+  "accepted": [
+    {
+      "cause": "H20 product charges",
+      "effect": "reduced first quarter earnings",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "First quarter results are expected to include up to approximately $5.5 billion of charges associated with H20 products for inventory, purchase commitments, and related reserves.",
+      "source_id": "NVDA2025Q1_002",
+      "published_at": 0,
+      "atom_id": "NVDA2025Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.968,
+      "span_score": 1.0,
+      "severity_align": 0.87,
+      "mechanism_hint": 1.0,
+      "claim_id": "NVDA2025Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

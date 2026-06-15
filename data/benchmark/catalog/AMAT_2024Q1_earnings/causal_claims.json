@@ -1,0 +1,69 @@
+{
+  "event_id": "AMAT_2024Q1_earnings",
+  "ticker": "AMAT",
+  "event_date": "2024-01-12",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T13:32:09+00:00",
+  "accepted": [
+    {
+      "cause": "Change in useful lives of property, plant and equipment",
+      "effect": "Increase in GAAP and non-GAAP EPS by $0.03",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": 1.0,
+      "evidence_span": "The recently disclosed change in useful lives of certain property, plant and equipment increased GAAP and non-GAAP EPS by $0.03.",
+      "source_id": "AMAT2024Q1_004",
+      "published_at": 0,
+      "atom_id": "AMAT2024Q1_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.875,
+      "span_score": 1.0,
+      "severity_align": 0.501,
+      "mechanism_hint": 1.0,
+      "claim_id": "AMAT2024Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Gross margin expansion",
+      "effect": "Improved profitability metrics",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "Gross margin 47.8 % 46.7 % 1.1",
+      "source_id": "AMAT2024Q1_005",
+      "published_at": 0,
+      "atom_id": "AMAT2024Q1_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.835,
+      "span_score": 1.0,
+      "severity_align": 0.34,
+      "mechanism_hint": 1.0,
+      "claim_id": "AMAT2024Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

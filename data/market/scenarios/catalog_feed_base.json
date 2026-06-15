@@ -1,0 +1,20 @@
+{
+  "scenario_id": "catalog_feed_base",
+  "description": "Earnings catalog feed-only replay — neutral priors, no synthetic triggers",
+  "initial_state": {
+    "fundamental_expectation": 0.55,
+    "investor_sentiment": 0.52,
+    "liquidity_depth": 0.5,
+    "attention_intensity": 0.35,
+    "option_gamma_exposure": 0.3,
+    "position_crowding": 0.4,
+    "sector_risk": 0.25,
+    "volatility_state": 0.28
+  },
+  "resources": {
+    "market_maker_capacity": 85,
+    "options_dealer_hedging_capacity": 42,
+    "analyst_coverage_channel": 9,
+    "corporate_comm_channel": 4
+  }
+}

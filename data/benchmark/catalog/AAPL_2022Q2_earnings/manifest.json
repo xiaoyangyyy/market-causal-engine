@@ -1,0 +1,34 @@
+{
+  "event_id": "AAPL_2022Q2_earnings",
+  "ticker": "AAPL",
+  "event_date": "2022-04-05",
+  "fiscal_period": "2022Q2",
+  "atom_count": 3,
+  "text_length": 24267,
+  "summary_length": 11996,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\AAPL_2022Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\AAPL_2022Q2_earnings\\sec_8k.txt",
+  "filing_date": "2022-04-28",
+  "accession_number": "0000320193-22-000058",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019322000058/aapl-20220428.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000320193",
+  "window_days": 45,
+  "search_date_from": "2022-07-01",
+  "search_date_to": "2022-08-31",
+  "aligned_filing_date": "2022-04-28",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 4.52,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

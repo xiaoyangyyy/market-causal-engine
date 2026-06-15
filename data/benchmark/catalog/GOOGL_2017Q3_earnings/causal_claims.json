@@ -1,0 +1,44 @@
+{
+  "event_id": "GOOGL_2017Q3_earnings",
+  "ticker": "GOOGL",
+  "event_date": "2017-07-10",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T12:45:44+00:00",
+  "accepted": [
+    {
+      "cause": "Revenue growth of 21% year-over-year",
+      "effect": "Strong underlying momentum and growth",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "With revenues of $26 billion, up 21% versus the second quarter of 2016 and 23% on a constant currency basis, we're delivering strong growth with great underlying momentum",
+      "source_id": "GOOGL2017Q3_001",
+      "published_at": 0,
+      "atom_id": "GOOGL2017Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.815,
+      "span_score": 0.973,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "GOOGL2017Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

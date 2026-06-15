@@ -1,0 +1,159 @@
+{
+  "case_id": "gme_2021_01_squeeze",
+  "domain": "short_report",
+  "as_of": 390,
+  "use_llm": false,
+  "computed_at": "2026-06-09T03:07:55+00:00",
+  "accepted": [
+    {
+      "cause": "retail coordination",
+      "effect": "short-covering pressure",
+      "mechanism": "sentiment",
+      "severity": 0.72,
+      "evidence_span": "Reddit forum WallStreetBets sees viral discussion spike",
+      "source_id": "GME21JAN_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GME21JAN_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GME_2021_01__C000"
+    },
+    {
+      "cause": "retail coordination",
+      "effect": "short-covering pressure",
+      "mechanism": "sentiment",
+      "severity": 0.88,
+      "evidence_span": "Traders cite high short interest exceeding 100 percent of float as setup for a potential short squeeze.",
+      "source_id": "GME21JAN_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GME21JAN_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GME_2021_01__C001"
+    },
+    {
+      "cause": "price move",
+      "effect": "momentum feedback",
+      "mechanism": "trust",
+      "severity": 0.88,
+      "evidence_span": "shares surge 44%",
+      "source_id": "GME21JAN_003",
+      "published_at": 15,
+      "proposer": "heuristic",
+      "atom_id": "GME21JAN_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GME_2021_01__C002"
+    },
+    {
+      "cause": "retail coordination",
+      "effect": "short-covering pressure",
+      "mechanism": "sentiment",
+      "severity": 0.72,
+      "evidence_span": "trending as retail discussion goes viral",
+      "source_id": "GME21JAN_004",
+      "published_at": 45,
+      "proposer": "heuristic",
+      "atom_id": "GME21JAN_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GME_2021_01__C003"
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "downside pressure",
+      "mechanism": "trust",
+      "severity": 0.88,
+      "evidence_span": "Melvin Capital cover",
+      "source_id": "GME21JAN_005",
+      "published_at": 90,
+      "proposer": "heuristic",
+      "atom_id": "GME21JAN_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GME_2021_01__C004"
+    },
+    {
+      "cause": "options/liquidity stress",
+      "effect": "forced de-risking",
+      "mechanism": "liquidity",
+      "severity": 0.88,
+      "evidence_span": "gamma squeeze forces dealer hedging.",
+      "source_id": "GME21JAN_006",
+      "published_at": 120,
+      "proposer": "heuristic",
+      "atom_id": "GME21JAN_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GME_2021_01__C005"
+    },
+    {
+      "cause": "regulatory scrutiny",
+      "effect": "regulatory overhang",
+      "mechanism": "regulatory",
+      "severity": 0.65,
+      "evidence_span": "SEC monitoring social media coordination around GameStop trading",
+      "source_id": "GME21JAN_007",
+      "published_at": 180,
+      "proposer": "heuristic",
+      "atom_id": "GME21JAN_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GME_2021_01__C006"
+    }
+  ],
+  "rejected": [],
+  "claim_count": 7,
+  "rejected_count": 0
+}

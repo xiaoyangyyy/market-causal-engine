@@ -1,0 +1,45 @@
+{
+  "event_id": "GS_2017Q2_earnings",
+  "ticker": "GS",
+  "event_date": "2017-04-20",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T12:44:22+00:00",
+  "accepted": [
+    {
+      "cause": "Investing & Lending net revenues hit four-year high",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Investing & Lending generated net revenues of $666 million from debt securities and loans, its highest quarterly performance in nearly four years.",
+      "source_id": "GS2017Q2_002",
+      "published_at": 0,
+      "atom_id": "GS2017Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.817,
+      "span_score": 1.0,
+      "severity_align": 0.266,
+      "mechanism_hint": 1.0,
+      "claim_id": "GS2017Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

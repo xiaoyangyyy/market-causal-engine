@@ -1,0 +1,71 @@
+{
+  "event_id": "AMD_2024Q2_earnings",
+  "ticker": "AMD",
+  "event_date": "2024-04-17",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:59:08+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.72,
+      "polarity": -1.0,
+      "evidence_span": "Generally Accepted Accounting Principles (“GAAP”) basis, the Company’s earnings press release and presentation contains non-GAAP financial measures, including non-GAAP gross profit",
+      "source_id": "AMD2024Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "AMD2024Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.988,
+      "span_score": 0.979,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "AMD2024Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.72,
+      "polarity": -1.0,
+      "evidence_span": "The Company believes this non-GAAP presentation makes it easier for investors to compare its operating results for current and historical periods and also because the Company belie",
+      "source_id": "AMD2024Q2_002",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "AMD2024Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.988,
+      "span_score": 0.979,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "AMD2024Q2_C002",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

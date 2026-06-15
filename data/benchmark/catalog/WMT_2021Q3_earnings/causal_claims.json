@@ -1,0 +1,70 @@
+{
+  "event_id": "WMT_2021Q3_earnings",
+  "ticker": "WMT",
+  "event_date": "2021-07-23",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:49:33+00:00",
+  "accepted": [
+    {
+      "cause": "EPS guidance increase to high single-digits or low double-digits",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "EPS Increase high single-digits • Increase low double-digits, excluding divestitures 1 $6.20 to $6.35",
+      "source_id": "WMT2021Q3_000",
+      "published_at": 0,
+      "atom_id": "WMT2021Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.787,
+      "span_score": 0.922,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "WMT2021Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Operating income guidance increase",
+      "effect": "Improved profitability expectations",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "operating income Increase high single-digits Increase 11% to 13.5%",
+      "source_id": "WMT2021Q3_000",
+      "published_at": 0,
+      "atom_id": "WMT2021Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.799,
+      "span_score": 0.897,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "claim_id": "WMT2021Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

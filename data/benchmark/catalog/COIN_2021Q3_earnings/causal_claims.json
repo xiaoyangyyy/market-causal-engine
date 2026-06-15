@@ -1,0 +1,45 @@
+{
+  "event_id": "COIN_2021Q3_earnings",
+  "ticker": "COIN",
+  "event_date": "2021-07-15",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:52:01+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.171,
+      "polarity": -1.0,
+      "evidence_span": "(Exact name of registrant as specified in its charter) Delaware 001-40289 46-4707224 (State or other jurisdiction of incorporation) (Commission File Number) (IRS Employer Identific",
+      "source_id": "COIN2021Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "COIN2021Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.988,
+      "span_score": 0.979,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "COIN2021Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

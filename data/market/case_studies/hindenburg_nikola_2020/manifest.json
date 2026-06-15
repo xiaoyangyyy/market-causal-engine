@@ -13,12 +13,57 @@
   "scenario_path": "scenario.json",
   "atoms_path": "atoms.jsonl",
   "default_until": 150,
-  "lookahead_policy": {"strict": true, "forbid_post_hoc_sources": true},
+  "lookahead_policy": {
+    "strict": true,
+    "forbid_post_hoc_sources": true
+  },
   "observed_outcomes": {
     "direction": "down",
     "after_hours_return_pct": -11,
     "intraday_return_pct": -14,
     "calibration_reference_drawdown": 0.65,
     "dominant_narrative": "short seller fraud allegations + weak company response + regulatory overhang"
+  },
+  "outcome_causal": {
+    "method": "synthetic_control",
+    "effect": -0.149307,
+    "observed_return": -0.155299,
+    "counterfactual_return": -0.005991,
+    "placebo_rank": 1.0,
+    "artifact": "data\\market\\case_studies\\hindenburg_nikola_2020\\outcome_causal.json"
+  },
+  "causal_claims": {
+    "claim_count": 7,
+    "rejected_count": 0,
+    "top_claim": {
+      "cause": "fraud allegations",
+      "effect": "trust collapse",
+      "mechanism": "trust",
+      "severity": 0.9,
+      "evidence_span": "Hindenburg Research publishes a short seller report",
+      "source_id": "NKLA20_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "NKLA20_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "HINDENBURG_N_C000"
+    },
+    "artifact": "causal_claims.json"
+  },
+  "mechanism_calibration": {
+    "predicted_effect": -0.00327,
+    "outcome_effect": -0.149307,
+    "dominant_mechanism": "trust",
+    "direction_match": false,
+    "confidence": 0.304,
+    "artifact": "mechanism_calibration.json"
   }
 }

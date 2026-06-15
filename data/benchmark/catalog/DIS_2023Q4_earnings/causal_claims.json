@@ -1,0 +1,64 @@
+{
+  "event_id": "DIS_2023Q4_earnings",
+  "ticker": "DIS",
+  "event_date": "2023-10-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T12:39:30+00:00",
+  "accepted": [
+    {
+      "cause": "Poor performance of The Haunted Mansion compared to prior year",
+      "effect": "Increase in operating loss",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "The performance of The Haunted Mansion in the current quarter compared to Thor: Love and Thunder",
+      "source_id": "DIS2023Q4_004",
+      "published_at": 0,
+      "atom_id": "DIS2023Q4_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.848,
+      "span_score": 0.919,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "claim_id": "DIS2023Q4_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Higher subscription revenue from price increases and subscriber growth",
+      "effect": "Decrease in operating loss",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 0.7,
+      "evidence_span": "Higher subscription revenue attributable to: Increases in retail pricing at Disney+ Core and Hulu",
+      "source_id": "DIS2023Q4_007",
+      "published_at": 0,
+      "atom_id": "DIS2023Q4_007",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

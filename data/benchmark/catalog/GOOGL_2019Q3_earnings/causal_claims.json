@@ -1,0 +1,91 @@
+{
+  "event_id": "GOOGL_2019Q3_earnings",
+  "ticker": "GOOGL",
+  "event_date": "2019-07-19",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:01:55+00:00",
+  "accepted": [
+    {
+      "cause": "net income, and diluted EPS by $474 million",
+      "effect": "diluted EPS by $474 million",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "net income, and diluted EPS by $474 million",
+      "source_id": "GOOGL2019Q3_010",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GOOGL2019Q3_010",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.813,
+      "span_score": 1.0,
+      "severity_align": 0.251,
+      "mechanism_hint": 1.0,
+      "claim_id": "GOOGL2019Q3_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.041,
+      "polarity": -1.0,
+      "evidence_span": "revenues excluding the effect of",
+      "source_id": "GOOGL2019Q3_004",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GOOGL2019Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GOOGL2019Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "revenues, operating income (loss",
+      "source_id": "GOOGL2019Q3_011",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GOOGL2019Q3_011",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

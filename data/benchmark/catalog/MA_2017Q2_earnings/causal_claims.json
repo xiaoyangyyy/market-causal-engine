@@ -1,0 +1,70 @@
+{
+  "event_id": "MA_2017Q2_earnings",
+  "ticker": "MA",
+  "event_date": "2017-04-13",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T02:44:55+00:00",
+  "accepted": [
+    {
+      "cause": "Net revenue growth increased 12%",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Net revenue growth increased 12% both as reported and on a currency-neutral basis",
+      "source_id": "MA2017Q2_002",
+      "published_at": 0,
+      "atom_id": "MA2017Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.78,
+      "span_score": 0.908,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "MA2017Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Net Income increase to $1.081 billion",
+      "effect": "Improved profitability driving stock value",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Net Income $ 1,081 $ 959",
+      "source_id": "MA2017Q2_004",
+      "published_at": 0,
+      "atom_id": "MA2017Q2_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.782,
+      "span_score": 0.944,
+      "severity_align": 0.253,
+      "mechanism_hint": 1.0,
+      "claim_id": "MA2017Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

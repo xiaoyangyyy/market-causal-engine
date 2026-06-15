@@ -1,0 +1,31 @@
+{
+  "event_id": "REGN_2021Q1_earnings",
+  "ticker": "REGN",
+  "event_date": "2021-01-08",
+  "fiscal_period": "2021Q1",
+  "atom_count": 1,
+  "text_length": 43331,
+  "summary_length": 393,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\REGN_2021Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\REGN_2021Q1_earnings\\sec_8k.txt",
+  "filing_date": "2021-05-06",
+  "accession_number": "0001804220-21-000015",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/872589/000180422021000015/regn-20210506.htm",
+  "form": "8-K",
+  "search_date_from": "2021-04-01",
+  "search_date_to": "2021-05-31",
+  "aligned_filing_date": "2021-05-06",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 3.37,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

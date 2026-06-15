@@ -1,0 +1,16 @@
+{
+  "event_id": "BRK.B_2022Q2_earnings",
+  "ticker": "BRK.B",
+  "event_date": "2022-04-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T03:31:16+00:00",
+  "accepted": [],
+  "rejected": [],
+  "claim_count": 0,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback_empty"
+}

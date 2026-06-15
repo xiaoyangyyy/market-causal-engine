@@ -1,0 +1,71 @@
+{
+  "event_id": "SHOP_2023Q4_earnings",
+  "ticker": "SHOP",
+  "event_date": "2023-10-23",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T04:16:39+00:00",
+  "accepted": [
+    {
+      "cause": "Total revenue reached $4.9 billion",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "total revenue was $4.9 billion, an increase of",
+      "source_id": "SHOP2023Q4_004",
+      "published_at": 0,
+      "atom_id": "SHOP2023Q4_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.825,
+      "span_score": 1.0,
+      "severity_align": 0.3,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP2023Q4_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Subscription solutions revenues increased 21% year-over-year",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Subscription solutions revenues increased from $1.1 billion in the nine months ended September 30, 2022 to $1.3 billion in the nine months ended September 30, 2023, representing an increase of 21% .",
+      "source_id": "SHOP2023Q4_006",
+      "published_at": 0,
+      "atom_id": "SHOP2023Q4_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.824,
+      "span_score": 1.0,
+      "severity_align": 0.295,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP2023Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

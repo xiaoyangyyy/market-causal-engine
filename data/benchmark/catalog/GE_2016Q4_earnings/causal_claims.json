@@ -1,0 +1,144 @@
+{
+  "event_id": "GE_2016Q4_earnings",
+  "ticker": "GE",
+  "event_date": "2016-10-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:50:26+00:00",
+  "accepted": [
+    {
+      "cause": "Industrial operating prof",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Industrial operating prof",
+      "source_id": "GE2016Q4_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GE2016Q4_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.81,
+      "span_score": 1.0,
+      "severity_align": 0.241,
+      "mechanism_hint": 1.0,
+      "claim_id": "GE2016Q4_C003",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "earnings miss",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.251,
+      "polarity": -1.0,
+      "evidence_span": "hare amounts) 2016 2015 V% Consolidated earnings (loss) from continuing operations attributable to GE common shareowners (GAAP) $ 2,097 $ 1,965 7% Non-operating pension costs (pre-",
+      "source_id": "GE2016Q4_005",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GE2016Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.968,
+      "span_score": 0.979,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "GE2016Q4_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "strong results",
+      "effect": "estimate upside",
+      "mechanism": "fundamental",
+      "severity": 0.251,
+      "polarity": -1.0,
+      "evidence_span": "except per share amounts) 2016 2015 V% Consolidated earnings (loss) from continuing operations attributable to GE common shareowners (GAAP) $ 2,097 $ 1,965 7% Non-operating pension",
+      "source_id": "GE2016Q4_005",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GE2016Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.968,
+      "span_score": 0.979,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "GE2016Q4_C005",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.042,
+      "polarity": -1.0,
+      "evidence_span": "Revenues and other income Sales of",
+      "source_id": "GE2016Q4_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GE2016Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GE2016Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "GE2016Q4_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GE2016Q4_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

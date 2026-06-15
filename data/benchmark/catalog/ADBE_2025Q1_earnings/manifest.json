@@ -1,0 +1,34 @@
+{
+  "event_id": "ADBE_2025Q1_earnings",
+  "ticker": "ADBE",
+  "event_date": "2025-01-13",
+  "fiscal_period": "2025Q1",
+  "atom_count": 24,
+  "text_length": 40580,
+  "summary_length": 11999,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\ADBE_2025Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\ADBE_2025Q1_earnings\\sec_8k.txt",
+  "filing_date": "2024-12-11",
+  "accession_number": "0000796343-24-000250",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634324000250/adbe-20241211.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000796343",
+  "window_days": 45,
+  "search_date_from": "2025-04-01",
+  "search_date_to": "2025-05-31",
+  "aligned_filing_date": "2024-12-11",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": 0.53,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

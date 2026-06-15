@@ -1,0 +1,29 @@
+{
+  "event_id": "XOM_2016Q3_earnings",
+  "ticker": "XOM",
+  "event_date": "2016-07-06",
+  "fiscal_period": "2016Q3",
+  "atom_count": 0,
+  "text_length": 2432,
+  "summary_length": 2432,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\XOM_2016Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\XOM_2016Q3_earnings\\sec_8k.txt",
+  "filing_date": "2016-07-29",
+  "accession_number": "0000034088-16-000080",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408816000080/r8k072916.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000034088",
+  "window_days": 45,
+  "search_date_from": "2016-10-01",
+  "search_date_to": "2016-11-30",
+  "aligned_filing_date": "2016-07-29",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -1.39,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  }
+}

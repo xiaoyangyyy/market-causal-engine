@@ -1,0 +1,1492 @@
+{
+  "cases": 9,
+  "ok": 9,
+  "errors": [],
+  "total_claims": 57,
+  "results": {
+    "cpi_2022_06_hot": {
+      "case_id": "cpi_2022_06_hot",
+      "domain": "macro",
+      "as_of": 90,
+      "use_llm": false,
+      "computed_at": "2026-06-09T03:07:55+00:00",
+      "accepted": [
+        {
+          "cause": "CPI surprise",
+          "effect": "inflation path repricing",
+          "mechanism": "macro",
+          "severity": 0.8,
+          "evidence_span": "CPI rose 0.7 percent in June, above",
+          "source_id": "CPI22JUN_000",
+          "published_at": 0,
+          "proposer": "heuristic",
+          "atom_id": "CPI22JUN_000",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "CPI_2022_06__C000"
+        },
+        {
+          "cause": "monetary policy shock",
+          "effect": "risk appetite compression",
+          "mechanism": "macro",
+          "severity": 0.82,
+          "evidence_span": "Federal Reserve rate hike",
+          "source_id": "CPI22JUN_001",
+          "published_at": 0,
+          "proposer": "heuristic",
+          "atom_id": "CPI22JUN_001",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "CPI_2022_06__C001"
+        },
+        {
+          "cause": "inflation surprise",
+          "effect": "rate path repricing",
+          "mechanism": "macro",
+          "severity": 0.92,
+          "evidence_span": "CPI surprise: June inflation 9.1% YoY above",
+          "source_id": "CPI22JUN_002",
+          "published_at": 5,
+          "proposer": "heuristic",
+          "atom_id": "CPI22JUN_002",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "CPI_2022_06__C002"
+        },
+        {
+          "cause": "negative fundamental signal",
+          "effect": "downside pressure",
+          "mechanism": "macro",
+          "severity": 0.75,
+          "evidence_span": "Treasury yield jump",
+          "source_id": "CPI22JUN_003",
+          "published_at": 12,
+          "proposer": "heuristic",
+          "atom_id": "CPI22JUN_003",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "CPI_2022_06__C003"
+        },
+        {
+          "cause": "market-relevant disclosure",
+          "effect": "price sensitivity",
+          "mechanism": "macro",
+          "severity": 0.65,
+          "evidence_span": "Growth stocks sell off as yields surge; Nasdaq leads declines",
+          "source_id": "CPI22JUN_004",
+          "published_at": 25,
+          "proposer": "heuristic",
+          "atom_id": "CPI22JUN_004",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "CPI_2022_06__C004"
+        }
+      ],
+      "rejected": [
+        {
+          "cause": "regulatory scrutiny",
+          "effect": "regulatory overhang",
+          "mechanism": "regulatory",
+          "severity": 0.65,
+          "evidence_span": "Sector ETF rotation: value outperforms growth after inflation print",
+          "source_id": "CPI22JUN_005",
+          "published_at": 40,
+          "proposer": "heuristic",
+          "atom_id": "CPI22JUN_005",
+          "validation": {
+            "passed": false,
+            "errors": [
+              "mechanism_not_allowed_for_domain:regulatory:macro"
+            ],
+            "warnings": []
+          }
+        }
+      ],
+      "claim_count": 5,
+      "rejected_count": 1,
+      "artifact": "E:\\ca\\data\\market\\case_studies\\cpi_2022_06_hot\\causal_claims.json"
+    },
+    "fomc_2022_75bp": {
+      "case_id": "fomc_2022_75bp",
+      "domain": "macro",
+      "as_of": 90,
+      "use_llm": false,
+      "computed_at": "2026-06-09T03:07:55+00:00",
+      "accepted": [
+        {
+          "cause": "monetary policy shock",
+          "effect": "risk appetite compression",
+          "mechanism": "macro",
+          "severity": 0.82,
+          "evidence_span": "Federal Reserve Board - Federal Reserve issues FOMC statement",
+          "source_id": "FOMC22SEP_000",
+          "published_at": 0,
+          "proposer": "heuristic",
+          "atom_id": "FOMC22SEP_000",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "FOMC_2022_75_C000"
+        },
+        {
+          "cause": "monetary policy shock",
+          "effect": "risk appetite compression",
+          "mechanism": "macro",
+          "severity": 0.82,
+          "evidence_span": "Fed raises interest rates by 75 basis points in hawkish",
+          "source_id": "FOMC22SEP_003",
+          "published_at": 2,
+          "proposer": "heuristic",
+          "atom_id": "FOMC22SEP_003",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "FOMC_2022_75_C001"
+        },
+        {
+          "cause": "negative fundamental signal",
+          "effect": "downside pressure",
+          "mechanism": "macro",
+          "severity": 0.75,
+          "evidence_span": "Treasury yield jump",
+          "source_id": "FOMC22SEP_004",
+          "published_at": 15,
+          "proposer": "heuristic",
+          "atom_id": "FOMC22SEP_004",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "FOMC_2022_75_C002"
+        },
+        {
+          "cause": "sector transmission",
+          "effect": "cross-asset repricing",
+          "mechanism": "macro",
+          "severity": 0.65,
+          "evidence_span": "High-beta stocks sell off as macro risk appetite falls",
+          "source_id": "FOMC22SEP_006",
+          "published_at": 35,
+          "proposer": "heuristic",
+          "atom_id": "FOMC22SEP_006",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "FOMC_2022_75_C003"
+        },
+        {
+          "cause": "negative fundamental signal",
+          "effect": "downside pressure",
+          "mechanism": "macro",
+          "severity": 0.77,
+          "evidence_span": "S&P 500 falls sharply following surprise restrictive Fed guidance",
+          "source_id": "FOMC22SEP_007",
+          "published_at": 50,
+          "proposer": "heuristic",
+          "atom_id": "FOMC22SEP_007",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "FOMC_2022_75_C004"
+        }
+      ],
+      "rejected": [
+        {
+          "cause": "regulatory scrutiny",
+          "effect": "regulatory overhang",
+          "mechanism": "regulatory",
+          "severity": 0.6,
+          "evidence_span": "sector ETF decline",
+          "source_id": "FOMC22SEP_005",
+          "published_at": 25,
+          "proposer": "heuristic",
+          "atom_id": "FOMC22SEP_005",
+          "validation": {
+            "passed": false,
+            "errors": [
+              "mechanism_not_allowed_for_domain:regulatory:macro"
+            ],
+            "warnings": []
+          }
+        }
+      ],
+      "claim_count": 5,
+      "rejected_count": 1,
+      "artifact": "E:\\ca\\data\\market\\case_studies\\fomc_2022_75bp\\causal_claims.json"
+    },
+    "gme_2021_01_squeeze": {
+      "case_id": "gme_2021_01_squeeze",
+      "domain": "short_report",
+      "as_of": 390,
+      "use_llm": false,
+      "computed_at": "2026-06-09T03:07:55+00:00",
+      "accepted": [
+        {
+          "cause": "retail coordination",
+          "effect": "short-covering pressure",
+          "mechanism": "sentiment",
+          "severity": 0.72,
+          "evidence_span": "Reddit forum WallStreetBets sees viral discussion spike",
+          "source_id": "GME21JAN_000",
+          "published_at": 0,
+          "proposer": "heuristic",
+          "atom_id": "GME21JAN_000",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "GME_2021_01__C000"
+        },
+        {
+          "cause": "retail coordination",
+          "effect": "short-covering pressure",
+          "mechanism": "sentiment",
+          "severity": 0.88,
+          "evidence_span": "Traders cite high short interest exceeding 100 percent of float as setup for a potential short squeeze.",
+          "source_id": "GME21JAN_001",
+          "published_at": 0,
+          "proposer": "heuristic",
+          "atom_id": "GME21JAN_001",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "GME_2021_01__C001"
+        },
+        {
+          "cause": "price move",
+          "effect": "momentum feedback",
+          "mechanism": "trust",
+          "severity": 0.88,
+          "evidence_span": "shares surge 44%",
+          "source_id": "GME21JAN_003",
+          "published_at": 15,
+          "proposer": "heuristic",
+          "atom_id": "GME21JAN_003",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "GME_2021_01__C002"
+        },
+        {
+          "cause": "retail coordination",
+          "effect": "short-covering pressure",
+          "mechanism": "sentiment",
+          "severity": 0.72,
+          "evidence_span": "trending as retail discussion goes viral",
+          "source_id": "GME21JAN_004",
+          "published_at": 45,
+          "proposer": "heuristic",
+          "atom_id": "GME21JAN_004",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "GME_2021_01__C003"
+        },
+        {
+          "cause": "negative fundamental signal",
+          "effect": "downside pressure",
+          "mechanism": "trust",
+          "severity": 0.88,
+          "evidence_span": "Melvin Capital cover",
+          "source_id": "GME21JAN_005",
+          "published_at": 90,
+          "proposer": "heuristic",
+          "atom_id": "GME21JAN_005",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "GME_2021_01__C004"
+        },
+        {
+          "cause": "options/liquidity stress",
+          "effect": "forced de-risking",
+          "mechanism": "liquidity",
+          "severity": 0.88,
+          "evidence_span": "gamma squeeze forces dealer hedging.",
+          "source_id": "GME21JAN_006",
+          "published_at": 120,
+          "proposer": "heuristic",
+          "atom_id": "GME21JAN_006",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "GME_2021_01__C005"
+        },
+        {
+          "cause": "regulatory scrutiny",
+          "effect": "regulatory overhang",
+          "mechanism": "regulatory",
+          "severity": 0.65,
+          "evidence_span": "SEC monitoring social media coordination around GameStop trading",
+          "source_id": "GME21JAN_007",
+          "published_at": 180,
+          "proposer": "heuristic",
+          "atom_id": "GME21JAN_007",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "GME_2021_01__C006"
+        }
+      ],
+      "rejected": [],
+      "claim_count": 7,
+      "rejected_count": 0,
+      "artifact": "E:\\ca\\data\\market\\case_studies\\gme_2021_01_squeeze\\causal_claims.json"
+    },
+    "hindenburg_nikola_2020": {
+      "case_id": "hindenburg_nikola_2020",
+      "domain": "short_report",
+      "as_of": 150,
+      "use_llm": false,
+      "computed_at": "2026-06-09T03:07:55+00:00",
+      "accepted": [
+        {
+          "cause": "fraud allegations",
+          "effect": "trust collapse",
+          "mechanism": "trust",
+          "severity": 0.9,
+          "evidence_span": "Hindenburg Research publishes a short seller report",
+          "source_id": "NKLA20_000",
+          "published_at": 0,
+          "proposer": "heuristic",
+          "atom_id": "NKLA20_000",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "HINDENBURG_N_C000"
+        },
+        {
+          "cause": "fraud allegations",
+          "effect": "trust collapse",
+          "mechanism": "trust",
+          "severity": 0.9,
+          "evidence_span": "Hindenburg short seller report",
+          "source_id": "NKLA20_001",
+          "published_at": 5,
+          "proposer": "heuristic",
+          "atom_id": "NKLA20_001",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "HINDENBURG_N_C001"
+        },
+        {
+          "cause": "fraud allegations",
+          "effect": "trust collapse",
+          "mechanism": "trust",
+          "severity": 0.6,
+          "evidence_span": "Company denies Hindenburg allegations in press release but offers limited technical rebuttal.",
+          "source_id": "NKLA20_002",
+          "published_at": 30,
+          "proposer": "heuristic",
+          "atom_id": "NKLA20_002",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "HINDENBURG_N_C002"
+        },
+        {
+          "cause": "negative fundamental signal",
+          "effect": "downside pressure",
+          "mechanism": "trust",
+          "severity": 0.65,
+          "evidence_span": "Breaking headline widely shared across financial media on Nikola controversy",
+          "source_id": "NKLA20_003",
+          "published_at": 45,
+          "proposer": "heuristic",
+          "atom_id": "NKLA20_003",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "HINDENBURG_N_C003"
+        },
+        {
+          "cause": "regulatory scrutiny",
+          "effect": "regulatory overhang",
+          "mechanism": "regulatory",
+          "severity": 0.78,
+          "evidence_span": "SEC opens inquiry",
+          "source_id": "NKLA20_004",
+          "published_at": 60,
+          "proposer": "heuristic",
+          "atom_id": "NKLA20_004",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "HINDENBURG_N_C004"
+        },
+        {
+          "cause": "retail coordination",
+          "effect": "short-covering pressure",
+          "mechanism": "sentiment",
+          "severity": 0.65,
+          "evidence_span": "Heavy volume spike as retail discussion trending on Stocktwits",
+          "source_id": "NKLA20_005",
+          "published_at": 90,
+          "proposer": "heuristic",
+          "atom_id": "NKLA20_005",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "HINDENBURG_N_C005"
+        },
+        {
+          "cause": "options/liquidity stress",
+          "effect": "forced de-risking",
+          "mechanism": "liquidity",
+          "severity": 0.72,
+          "evidence_span": "Put option volume spikes with elevated",
+          "source_id": "NKLA20_006",
+          "published_at": 120,
+          "proposer": "heuristic",
+          "atom_id": "NKLA20_006",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "HINDENBURG_N_C006"
+        }
+      ],
+      "rejected": [],
+      "claim_count": 7,
+      "rejected_count": 0,
+      "artifact": "E:\\ca\\data\\market\\case_studies\\hindenburg_nikola_2020\\causal_claims.json"
+    },
+    "luckin_2020_fraud": {
+      "case_id": "luckin_2020_fraud",
+      "domain": "short_report",
+      "as_of": 120,
+      "use_llm": false,
+      "computed_at": "2026-06-09T03:07:55+00:00",
+      "accepted": [
+        {
+          "cause": "fraud allegations",
+          "effect": "trust collapse",
+          "mechanism": "trust",
+          "severity": 0.9,
+          "evidence_span": "Muddy Waters Research publishes a short seller report",
+          "source_id": "LK20MW_000",
+          "published_at": 0,
+          "proposer": "heuristic",
+          "atom_id": "LK20MW_000",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "LUCKIN_2020__C000"
+        },
+        {
+          "cause": "price move",
+          "effect": "momentum feedback",
+          "mechanism": "trust",
+          "severity": 0.98,
+          "evidence_span": "shares plunge 31%",
+          "source_id": "LK20MW_001",
+          "published_at": 5,
+          "proposer": "heuristic",
+          "atom_id": "LK20MW_001",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "LUCKIN_2020__C001"
+        },
+        {
+          "cause": "fraud allegations",
+          "effect": "trust collapse",
+          "mechanism": "trust",
+          "severity": 0.9,
+          "evidence_span": "short seller report alleges Luckin fabricat",
+          "source_id": "LK20MW_002",
+          "published_at": 20,
+          "proposer": "heuristic",
+          "atom_id": "LK20MW_002",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "LUCKIN_2020__C002"
+        },
+        {
+          "cause": "fraud allegations",
+          "effect": "trust collapse",
+          "mechanism": "trust",
+          "severity": 0.6,
+          "evidence_span": "Company denies Muddy Waters allegations in brief press release.",
+          "source_id": "LK20MW_003",
+          "published_at": 55,
+          "proposer": "heuristic",
+          "atom_id": "LK20MW_003",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "LUCKIN_2020__C003"
+        },
+        {
+          "cause": "regulatory scrutiny",
+          "effect": "regulatory overhang",
+          "mechanism": "regulatory",
+          "severity": 0.78,
+          "evidence_span": "SEC probe inquiry",
+          "source_id": "LK20MW_004",
+          "published_at": 75,
+          "proposer": "heuristic",
+          "atom_id": "LK20MW_004",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "LUCKIN_2020__C004"
+        },
+        {
+          "cause": "regulatory scrutiny",
+          "effect": "regulatory overhang",
+          "mechanism": "regulatory",
+          "severity": 0.6,
+          "evidence_span": "sector ETF decline",
+          "source_id": "LK20MW_005",
+          "published_at": 90,
+          "proposer": "heuristic",
+          "atom_id": "LK20MW_005",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "LUCKIN_2020__C005"
+        }
+      ],
+      "rejected": [],
+      "claim_count": 6,
+      "rejected_count": 0,
+      "artifact": "E:\\ca\\data\\market\\case_studies\\luckin_2020_fraud\\causal_claims.json"
+    },
+    "meta_2022q4_earnings": {
+      "case_id": "meta_2022q4_earnings",
+      "domain": "earnings",
+      "as_of": 120,
+      "use_llm": false,
+      "computed_at": "2026-06-09T03:07:55+00:00",
+      "accepted": [
+        {
+          "cause": "earnings miss",
+          "effect": "valuation de-rating",
+          "mechanism": "fundamental",
+          "severity": 0.9,
+          "evidence_span": "revenue of $33.67 billion, miss",
+          "source_id": "META22Q4_000",
+          "published_at": 0,
+          "proposer": "heuristic",
+          "atom_id": "META22Q4_000",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "META_2022Q4__C000"
+        },
+        {
+          "cause": "negative fundamental signal",
+          "effect": "downside pressure",
+          "mechanism": "fundamental",
+          "severity": 0.82,
+          "evidence_span": "Daily active users across the Facebook family declin",
+          "source_id": "META22Q4_001",
+          "published_at": 0,
+          "proposer": "heuristic",
+          "atom_id": "META22Q4_001",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "META_2022Q4__C001"
+        },
+        {
+          "cause": "price move",
+          "effect": "momentum feedback",
+          "mechanism": "fundamental",
+          "severity": 0.98,
+          "evidence_span": "shares plunge 26%",
+          "source_id": "META22Q4_006",
+          "published_at": 10,
+          "proposer": "heuristic",
+          "atom_id": "META22Q4_006",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "META_2022Q4__C002"
+        },
+        {
+          "cause": "options/liquidity stress",
+          "effect": "forced de-risking",
+          "mechanism": "liquidity",
+          "severity": 0.72,
+          "evidence_span": "Put option volume spikes as volatility surge",
+          "source_id": "META22Q4_007",
+          "published_at": 18,
+          "proposer": "heuristic",
+          "atom_id": "META22Q4_007",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "META_2022Q4__C003"
+        },
+        {
+          "cause": "management commentary",
+          "effect": "narrative shift",
+          "mechanism": "fundamental",
+          "severity": 0.75,
+          "evidence_span": "Management stated that advertisers in verticals such as e-commerce and consumer goods reduced budgets faster than expected.",
+          "source_id": "META22Q4_003",
+          "published_at": 50,
+          "proposer": "heuristic",
+          "atom_id": "META22Q4_003",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "META_2022Q4__C004"
+        },
+        {
+          "cause": "guidance reduction",
+          "effect": "forward earnings revision",
+          "mechanism": "fundamental",
+          "severity": 0.88,
+          "evidence_span": "expects Q1 revenue to decline",
+          "source_id": "META22Q4_004",
+          "published_at": 50,
+          "proposer": "heuristic",
+          "atom_id": "META22Q4_004",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "META_2022Q4__C005"
+        },
+        {
+          "cause": "analyst downgrade",
+          "effect": "sentiment deterioration",
+          "mechanism": "sentiment",
+          "severity": 0.75,
+          "evidence_span": "downgrades Meta from Overweight to",
+          "source_id": "META22Q4_008",
+          "published_at": 85,
+          "proposer": "heuristic",
+          "atom_id": "META22Q4_008",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "META_2022Q4__C006"
+        }
+      ],
+      "rejected": [
+        {
+          "cause": "regulatory scrutiny",
+          "effect": "regulatory overhang",
+          "mechanism": "regulatory",
+          "severity": 0.6,
+          "evidence_span": "sector ETF decline",
+          "source_id": "META22Q4_009",
+          "published_at": 90,
+          "proposer": "heuristic",
+          "atom_id": "META22Q4_009",
+          "validation": {
+            "passed": false,
+            "errors": [
+              "mechanism_not_allowed_for_domain:regulatory:earnings"
+            ],
+            "warnings": []
+          }
+        },
+        {
+          "cause": "market-relevant disclosure",
+          "effect": "price sensitivity",
+          "mechanism": "fundamental",
+          "severity": 0.65,
+          "evidence_span": "Post-mortem: Meta two-day decline exceeded 30 percent",
+          "source_id": "META22Q4_010",
+          "published_at": 2880,
+          "proposer": "heuristic",
+          "atom_id": "META22Q4_010",
+          "validation": {
+            "passed": false,
+            "errors": [
+              "lookahead_violation"
+            ],
+            "warnings": []
+          }
+        }
+      ],
+      "claim_count": 7,
+      "rejected_count": 2,
+      "artifact": "E:\\ca\\data\\market\\case_studies\\meta_2022q4_earnings\\causal_claims.json"
+    },
+    "nflx_2022q1_earnings": {
+      "case_id": "nflx_2022q1_earnings",
+      "domain": "earnings",
+      "as_of": 120,
+      "use_llm": false,
+      "computed_at": "2026-06-09T03:07:55+00:00",
+      "accepted": [
+        {
+          "cause": "guidance reduction",
+          "effect": "forward earnings revision",
+          "mechanism": "fundamental",
+          "severity": 0.88,
+          "evidence_span": "expectations, reflecting slower",
+          "source_id": "NFLX22Q1_002",
+          "published_at": 0,
+          "proposer": "heuristic",
+          "atom_id": "NFLX22Q1_002",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "NFLX_2022Q1__C001"
+        },
+        {
+          "cause": "price move",
+          "effect": "momentum feedback",
+          "mechanism": "fundamental",
+          "severity": 0.88,
+          "evidence_span": "shares fall 25%",
+          "source_id": "NFLX22Q1_008",
+          "published_at": 15,
+          "proposer": "heuristic",
+          "atom_id": "NFLX22Q1_008",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "NFLX_2022Q1__C002"
+        },
+        {
+          "cause": "options/liquidity stress",
+          "effect": "forced de-risking",
+          "mechanism": "liquidity",
+          "severity": 0.72,
+          "evidence_span": "Put option volume and volatility spike",
+          "source_id": "NFLX22Q1_009",
+          "published_at": 20,
+          "proposer": "heuristic",
+          "atom_id": "NFLX22Q1_009",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "NFLX_2022Q1__C003"
+        },
+        {
+          "cause": "management commentary",
+          "effect": "narrative shift",
+          "mechanism": "fundamental",
+          "severity": 0.75,
+          "evidence_span": "CFO says paid sharing and competition weighed on Q1 results and Q2 guidance implies a loss of 2 million subscribers.",
+          "source_id": "NFLX22Q1_004",
+          "published_at": 55,
+          "proposer": "heuristic",
+          "atom_id": "NFLX22Q1_004",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "NFLX_2022Q1__C004"
+        },
+        {
+          "cause": "guidance reduction",
+          "effect": "forward earnings revision",
+          "mechanism": "fundamental",
+          "severity": 0.88,
+          "evidence_span": "expects Q2 revenue growth to slow",
+          "source_id": "NFLX22Q1_007",
+          "published_at": 55,
+          "proposer": "heuristic",
+          "atom_id": "NFLX22Q1_007",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "NFLX_2022Q1__C005"
+        },
+        {
+          "cause": "analyst downgrade",
+          "effect": "sentiment deterioration",
+          "mechanism": "sentiment",
+          "severity": 0.75,
+          "evidence_span": "downgrades Netflix from Buy to",
+          "source_id": "NFLX22Q1_010",
+          "published_at": 90,
+          "proposer": "heuristic",
+          "atom_id": "NFLX22Q1_010",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "NFLX_2022Q1__C006"
+        },
+        {
+          "cause": "subscriber loss",
+          "effect": "growth narrative break",
+          "mechanism": "fundamental",
+          "severity": 0.85,
+          "evidence_span": "for a gain of approximately 2.5 million subscribers, marking the first subscriber loss in more than a decade.",
+          "source_id": "NFLX22Q1_000",
+          "published_at": 0,
+          "proposer": "heuristic",
+          "atom_id": "NFLX22Q1_000",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 0.976,
+          "span_score": 0.956,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "NFLX_2022Q1__C000"
+        }
+      ],
+      "rejected": [
+        {
+          "cause": "regulatory scrutiny",
+          "effect": "regulatory overhang",
+          "mechanism": "regulatory",
+          "severity": 0.6,
+          "evidence_span": "sector ETF sympathy selloff; peer multiples compress",
+          "source_id": "NFLX22Q1_011",
+          "published_at": 95,
+          "proposer": "heuristic",
+          "atom_id": "NFLX22Q1_011",
+          "validation": {
+            "passed": false,
+            "errors": [
+              "mechanism_not_allowed_for_domain:regulatory:earnings"
+            ],
+            "warnings": []
+          }
+        },
+        {
+          "cause": "negative fundamental signal",
+          "effect": "downside pressure",
+          "mechanism": "fundamental",
+          "severity": 0.8,
+          "evidence_span": "Multiple analysts cut price targets next morning (Apr 20)",
+          "source_id": "NFLX22Q1_TRAP_NEXTDAY",
+          "published_at": 960,
+          "proposer": "heuristic",
+          "atom_id": "NFLX22Q1_TRAP_NEXTDAY",
+          "validation": {
+            "passed": false,
+            "errors": [
+              "lookahead_violation"
+            ],
+            "warnings": []
+          }
+        },
+        {
+          "cause": "negative fundamental signal",
+          "effect": "downside pressure",
+          "mechanism": "fundamental",
+          "severity": 1.0,
+          "evidence_span": "Post-mortem: two-day decline reached 37 percent — calibration label",
+          "source_id": "NFLX22Q1_TRAP_ANALYST",
+          "published_at": 2880,
+          "proposer": "heuristic",
+          "atom_id": "NFLX22Q1_TRAP_ANALYST",
+          "validation": {
+            "passed": false,
+            "errors": [
+              "atom_uses_future_price",
+              "lookahead_violation"
+            ],
+            "warnings": []
+          }
+        }
+      ],
+      "claim_count": 7,
+      "rejected_count": 3,
+      "artifact": "E:\\ca\\data\\market\\case_studies\\nflx_2022q1_earnings\\causal_claims.json"
+    },
+    "shop_2022q2_earnings": {
+      "case_id": "shop_2022q2_earnings",
+      "domain": "earnings",
+      "as_of": 120,
+      "use_llm": false,
+      "computed_at": "2026-06-09T03:07:55+00:00",
+      "accepted": [
+        {
+          "cause": "earnings miss",
+          "effect": "valuation de-rating",
+          "mechanism": "fundamental",
+          "severity": 0.9,
+          "evidence_span": "reports Q2 revenue of $1.29 billion, miss",
+          "source_id": "SHOP22Q2_000",
+          "published_at": 0,
+          "proposer": "heuristic",
+          "atom_id": "SHOP22Q2_000",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "SHOP_2022Q2__C000"
+        },
+        {
+          "cause": "price move",
+          "effect": "momentum feedback",
+          "mechanism": "fundamental",
+          "severity": 0.98,
+          "evidence_span": "shares plunge 14%",
+          "source_id": "SHOP22Q2_005",
+          "published_at": 8,
+          "proposer": "heuristic",
+          "atom_id": "SHOP22Q2_005",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "SHOP_2022Q2__C001"
+        },
+        {
+          "cause": "options activity spike",
+          "effect": "dealer hedging pressure",
+          "mechanism": "fundamental",
+          "severity": 0.72,
+          "evidence_span": "Options volatility surge",
+          "source_id": "SHOP22Q2_006",
+          "published_at": 15,
+          "proposer": "heuristic",
+          "atom_id": "SHOP22Q2_006",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "SHOP_2022Q2__C002"
+        },
+        {
+          "cause": "management commentary",
+          "effect": "narrative shift",
+          "mechanism": "fundamental",
+          "severity": 0.75,
+          "evidence_span": "CEO stated that e-commerce normalized faster than expected and that Shopify must adjust investment pace to the new growth environment.",
+          "source_id": "SHOP22Q2_002",
+          "published_at": 50,
+          "proposer": "heuristic",
+          "atom_id": "SHOP22Q2_002",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "SHOP_2022Q2__C003"
+        },
+        {
+          "cause": "guidance reduction",
+          "effect": "forward earnings revision",
+          "mechanism": "fundamental",
+          "severity": 0.88,
+          "evidence_span": "Management said the company lowers outlook for the remainder of 2022 due to macro uncertainty and softer online spending trends.",
+          "source_id": "SHOP22Q2_004",
+          "published_at": 50,
+          "proposer": "heuristic",
+          "atom_id": "SHOP22Q2_004",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "SHOP_2022Q2__C004"
+        },
+        {
+          "cause": "analyst downgrade",
+          "effect": "sentiment deterioration",
+          "mechanism": "sentiment",
+          "severity": 0.75,
+          "evidence_span": "downgrades Shopify from Buy to",
+          "source_id": "SHOP22Q2_007",
+          "published_at": 70,
+          "proposer": "heuristic",
+          "atom_id": "SHOP22Q2_007",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "SHOP_2022Q2__C005"
+        }
+      ],
+      "rejected": [
+        {
+          "cause": "regulatory scrutiny",
+          "effect": "regulatory overhang",
+          "mechanism": "regulatory",
+          "severity": 0.6,
+          "evidence_span": "sector ETF decline",
+          "source_id": "SHOP22Q2_008",
+          "published_at": 85,
+          "proposer": "heuristic",
+          "atom_id": "SHOP22Q2_008",
+          "validation": {
+            "passed": false,
+            "errors": [
+              "mechanism_not_allowed_for_domain:regulatory:earnings"
+            ],
+            "warnings": []
+          }
+        }
+      ],
+      "claim_count": 6,
+      "rejected_count": 1,
+      "artifact": "E:\\ca\\data\\market\\case_studies\\shop_2022q2_earnings\\causal_claims.json"
+    },
+    "snap_2022q3_earnings": {
+      "case_id": "snap_2022q3_earnings",
+      "domain": "earnings",
+      "as_of": 100,
+      "use_llm": false,
+      "computed_at": "2026-06-09T03:07:55+00:00",
+      "accepted": [
+        {
+          "cause": "earnings miss",
+          "effect": "valuation de-rating",
+          "mechanism": "fundamental",
+          "severity": 0.9,
+          "evidence_span": "reports Q3 revenue of $1.13 billion, miss",
+          "source_id": "SNAP22Q3_000",
+          "published_at": 0,
+          "proposer": "heuristic",
+          "atom_id": "SNAP22Q3_000",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "SNAP_2022Q3__C000"
+        },
+        {
+          "cause": "negative fundamental signal",
+          "effect": "downside pressure",
+          "mechanism": "fundamental",
+          "severity": 0.85,
+          "evidence_span": "digital ad market has worse",
+          "source_id": "SNAP22Q3_001",
+          "published_at": 0,
+          "proposer": "heuristic",
+          "atom_id": "SNAP22Q3_001",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "SNAP_2022Q3__C001"
+        },
+        {
+          "cause": "options/liquidity stress",
+          "effect": "forced de-risking",
+          "mechanism": "liquidity",
+          "severity": 0.72,
+          "evidence_span": "Put option volume spikes as volatility surge",
+          "source_id": "SNAP22Q3_005",
+          "published_at": 18,
+          "proposer": "heuristic",
+          "atom_id": "SNAP22Q3_005",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "SNAP_2022Q3__C003"
+        },
+        {
+          "cause": "negative fundamental signal",
+          "effect": "downside pressure",
+          "mechanism": "fundamental",
+          "severity": 0.9,
+          "evidence_span": "advertisers cutting budgets",
+          "source_id": "SNAP22Q3_002",
+          "published_at": 45,
+          "proposer": "heuristic",
+          "atom_id": "SNAP22Q3_002",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "SNAP_2022Q3__C004"
+        },
+        {
+          "cause": "management commentary",
+          "effect": "narrative shift",
+          "mechanism": "fundamental",
+          "severity": 0.75,
+          "evidence_span": "Management stated competitive pressure from larger platforms also weighed on monetization during the quarter.",
+          "source_id": "SNAP22Q3_003",
+          "published_at": 45,
+          "proposer": "heuristic",
+          "atom_id": "SNAP22Q3_003",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "SNAP_2022Q3__C005"
+        },
+        {
+          "cause": "analyst downgrade",
+          "effect": "sentiment deterioration",
+          "mechanism": "sentiment",
+          "severity": 0.75,
+          "evidence_span": "downgrades Snap to",
+          "source_id": "SNAP22Q3_006",
+          "published_at": 75,
+          "proposer": "heuristic",
+          "atom_id": "SNAP22Q3_006",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 1.0,
+          "span_score": 1.0,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "SNAP_2022Q3__C006"
+        },
+        {
+          "cause": "earnings miss",
+          "effect": "valuation de-rating",
+          "mechanism": "fundamental",
+          "severity": 0.78,
+          "evidence_span": "ares down 27% after hours on ad revenue miss",
+          "source_id": "SNAP22Q3_004",
+          "published_at": 12,
+          "proposer": "heuristic",
+          "atom_id": "SNAP22Q3_004",
+          "validation": {
+            "passed": true,
+            "errors": [],
+            "warnings": []
+          },
+          "confidence": 0.986,
+          "span_score": 0.974,
+          "severity_align": 1.0,
+          "mechanism_hint": 1.0,
+          "claim_id": "SNAP_2022Q3__C002"
+        }
+      ],
+      "rejected": [
+        {
+          "cause": "regulatory scrutiny",
+          "effect": "regulatory overhang",
+          "mechanism": "regulatory",
+          "severity": 0.6,
+          "evidence_span": "sector ETF decline",
+          "source_id": "SNAP22Q3_007",
+          "published_at": 80,
+          "proposer": "heuristic",
+          "atom_id": "SNAP22Q3_007",
+          "validation": {
+            "passed": false,
+            "errors": [
+              "mechanism_not_allowed_for_domain:regulatory:earnings"
+            ],
+            "warnings": []
+          }
+        }
+      ],
+      "claim_count": 7,
+      "rejected_count": 1,
+      "artifact": "E:\\ca\\data\\market\\case_studies\\snap_2022q3_earnings\\causal_claims.json"
+    }
+  },
+  "computed_at": "2026-06-09T03:07:55+00:00"
+}

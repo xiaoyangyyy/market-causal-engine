@@ -1,0 +1,65 @@
+{
+  "event_id": "PANW_2019Q4_earnings",
+  "ticker": "PANW",
+  "event_date": "2019-10-17",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:21:55+00:00",
+  "accepted": [
+    {
+      "cause": "Total revenue grew 22% to $805.8 million",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "In the fourth quarter, total revenue grew 22% to $805.8 million.",
+      "source_id": "PANW2019Q4_000",
+      "published_at": 0,
+      "atom_id": "PANW2019Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.803,
+      "span_score": 1.0,
+      "severity_align": 0.211,
+      "mechanism_hint": 1.0,
+      "claim_id": "PANW2019Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Gross margin maintained at 73.0%",
+      "effect": "Positive market reaction to stable profitability",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": 0.8,
+      "evidence_span": "gross margin was 73.0% and Q4'19",
+      "source_id": "PANW2019Q4_005",
+      "published_at": 0,
+      "atom_id": "PANW2019Q4_005",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

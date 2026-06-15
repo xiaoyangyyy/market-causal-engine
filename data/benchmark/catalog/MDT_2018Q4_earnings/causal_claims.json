@@ -1,0 +1,70 @@
+{
+  "event_id": "MDT_2018Q4_earnings",
+  "ticker": "MDT",
+  "event_date": "2018-10-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:40:40+00:00",
+  "accepted": [
+    {
+      "cause": "Increased 4.4% Organic",
+      "effect": "GAAP Diluted EPS of $0.94",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Increased 4.4% Organic",
+      "source_id": "MDT2018Q4_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MDT2018Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.779,
+      "span_score": 0.938,
+      "severity_align": 0.253,
+      "mechanism_hint": 1.0,
+      "claim_id": "MDT2018Q4_C005",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.048,
+      "polarity": -1.0,
+      "evidence_span": "Diluted EPS of $1.29 ▪ Operating Margin of",
+      "source_id": "MDT2018Q4_002",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "MDT2018Q4_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "MDT2018Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

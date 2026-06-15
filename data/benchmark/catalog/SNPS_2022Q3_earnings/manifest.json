@@ -1,0 +1,34 @@
+{
+  "event_id": "SNPS_2022Q3_earnings",
+  "ticker": "SNPS",
+  "event_date": "2022-07-11",
+  "fiscal_period": "2022Q3",
+  "atom_count": 8,
+  "text_length": 43919,
+  "summary_length": 11998,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\SNPS_2022Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\SNPS_2022Q3_earnings\\sec_8k.txt",
+  "filing_date": "2022-08-17",
+  "accession_number": "0001193125-22-223299",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/883241/000119312522223299/d383454d8k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000883241",
+  "window_days": 45,
+  "search_date_from": "2022-10-01",
+  "search_date_to": "2022-11-30",
+  "aligned_filing_date": "2022-08-17",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -1.21,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

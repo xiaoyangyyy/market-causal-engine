@@ -1,0 +1,89 @@
+{
+  "event_id": "SNAP_2023Q3_earnings",
+  "ticker": "SNAP",
+  "event_date": "2023-07-07",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T04:10:13+00:00",
+  "accepted": [
+    {
+      "cause": "Q2 revenue decline of 4% year-over-year",
+      "effect": "Revenue performance favorable to internal forecast",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Q2 revenue was $1,068 million, down 4% year-over-year, which is favorable to the internal forecast for Q2 that we shared when reporting prior quarter results.",
+      "source_id": "SNAP2023Q3_006",
+      "published_at": 0,
+      "atom_id": "SNAP2023Q3_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.882,
+      "span_score": 1.0,
+      "severity_align": 0.527,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNAP2023Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "North America revenue decline of 13% year-over-year",
+      "effect": "Negative impact from top advertising partners",
+      "mechanism": "fundamental",
+      "severity": 0.65,
+      "polarity": -1.0,
+      "evidence_span": "their spending impact is highly concentrated in North America, where revenue declined 13% year-over-year compared to 7% growth in Europe and 28%",
+      "source_id": "SNAP2023Q3_007",
+      "published_at": 0,
+      "atom_id": "SNAP2023Q3_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.854,
+      "span_score": 0.953,
+      "severity_align": 0.521,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNAP2023Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Gross margin decrease from $665M to $571M",
+      "effect": "Reduced profitability in Q2",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -0.5,
+      "evidence_span": "GROSS MARGIN ($) Q2 '22 665M Q2 '23 571",
+      "source_id": "SNAP2023Q3_005",
+      "published_at": 0,
+      "atom_id": "SNAP2023Q3_005",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

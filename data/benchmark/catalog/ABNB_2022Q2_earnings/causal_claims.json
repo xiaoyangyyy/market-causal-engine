@@ -1,0 +1,70 @@
+{
+  "event_id": "ABNB_2022Q2_earnings",
+  "ticker": "ABNB",
+  "event_date": "2022-04-08",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T13:20:32+00:00",
+  "accepted": [
+    {
+      "cause": "Net loss improvement to $19 million",
+      "effect": "Positive earnings surprise relative to prior periods",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "• Q1 net loss of $19 million significantly improved from both Q1 2019 and Q1 2021.",
+      "source_id": "ABNB2022Q2_005",
+      "published_at": 0,
+      "atom_id": "ABNB2022Q2_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.831,
+      "span_score": 1.0,
+      "severity_align": 0.322,
+      "mechanism_hint": 1.0,
+      "claim_id": "ABNB2022Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Revenue growth of 70% year-over-year",
+      "effect": "profitability concern",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "$1.5B 70% Y/Y 74% Y/Y (ex-FX) 80% Y/3Y Net Loss Net loss was significantly improved from prior years due to strong revenue growth combined with cost management and the absence of certain one-time charges a year ago.",
+      "source_id": "ABNB2022Q2_001",
+      "published_at": 0,
+      "atom_id": "ABNB2022Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.827,
+      "span_score": 1.0,
+      "severity_align": 0.306,
+      "mechanism_hint": 1.0,
+      "claim_id": "ABNB2022Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

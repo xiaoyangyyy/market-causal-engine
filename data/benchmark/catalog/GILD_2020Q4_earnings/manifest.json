@@ -1,0 +1,34 @@
+{
+  "event_id": "GILD_2020Q4_earnings",
+  "ticker": "GILD",
+  "event_date": "2020-10-20",
+  "fiscal_period": "2020Q4",
+  "atom_count": 17,
+  "text_length": 68396,
+  "summary_length": 2553,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\GILD_2020Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\GILD_2020Q4_earnings\\sec_8k.txt",
+  "filing_date": "2020-10-28",
+  "accession_number": "0000882095-20-000023",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/882095/000088209520000023/gild-20201028.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000882095",
+  "window_days": 45,
+  "search_date_from": "2021-01-01",
+  "search_date_to": "2021-02-28",
+  "aligned_filing_date": "2020-10-28",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -2.15,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

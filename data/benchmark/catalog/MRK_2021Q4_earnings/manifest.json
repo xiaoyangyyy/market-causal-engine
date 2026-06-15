@@ -1,0 +1,34 @@
+{
+  "event_id": "MRK_2021Q4_earnings",
+  "ticker": "MRK",
+  "event_date": "2021-10-08",
+  "fiscal_period": "2021Q4",
+  "atom_count": 7,
+  "text_length": 74153,
+  "summary_length": 11989,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\MRK_2021Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\MRK_2021Q4_earnings\\sec_8k.txt",
+  "filing_date": "2021-10-28",
+  "accession_number": "0001104659-21-130675",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/310158/000110465921130675/tm2131077d1_8k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000310158",
+  "window_days": 45,
+  "search_date_from": "2022-01-01",
+  "search_date_to": "2022-02-28",
+  "aligned_filing_date": "2021-10-28",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 6.14,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

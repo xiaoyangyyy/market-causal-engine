@@ -1,0 +1,102 @@
+{
+  "event_id": "TSLA_2025Q2_earnings",
+  "ticker": "TSLA",
+  "event_date": "2025-04-10",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T13:25:43+00:00",
+  "accepted": [
+    {
+      "cause": "decline in vehicle deliveries",
+      "effect": "year-over-year revenue decrease",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "YoY, revenue was impacted by the following items: - decline in vehicle deliveries",
+      "source_id": "TSLA2025Q2_003",
+      "published_at": 0,
+      "atom_id": "TSLA2025Q2_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.953,
+      "span_score": 0.946,
+      "severity_align": 0.93,
+      "mechanism_hint": 1.0,
+      "claim_id": "TSLA2025Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "lower regulatory credit revenue",
+      "effect": "reduction in total revenue and operating income",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -0.6,
+      "evidence_span": "YoY, revenue was impacted by the following items: - lower regulatory credit revenue",
+      "source_id": "TSLA2025Q2_003",
+      "published_at": 0,
+      "atom_id": "TSLA2025Q2_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    },
+    {
+      "cause": "reduced vehicle average selling price",
+      "effect": "pressure on revenue growth",
+      "mechanism": "fundamental",
+      "severity": 0.65,
+      "polarity": -0.5,
+      "evidence_span": "YoY, revenue was impacted by the following items: - reduced vehicle average selling price (ASP)",
+      "source_id": "TSLA2025Q2_003",
+      "published_at": 0,
+      "atom_id": "TSLA2025Q2_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    },
+    {
+      "cause": "increase in operating expenses",
+      "effect": "decline in operating income",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -0.65,
+      "evidence_span": "YoY, operating income was primarily impacted by the following items: - increase in operating expenses",
+      "source_id": "TSLA2025Q2_005",
+      "published_at": 0,
+      "atom_id": "TSLA2025Q2_005",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 3,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

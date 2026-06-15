@@ -1,0 +1,36 @@
+{
+  "event_id": "ACN_2019Q3_earnings",
+  "ticker": "ACN",
+  "event_date": "2019-07-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T09:49:53+00:00",
+  "accepted": [],
+  "rejected": [
+    {
+      "cause": "emerging growth company",
+      "effect": "elected not to use the extended transition period for complying with any new or revised financial accounting standards",
+      "mechanism": "regulatory",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act.",
+      "source_id": "ACN2019Q3_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "ACN2019Q3_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "mechanism_not_allowed_for_domain:regulatory:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 0,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback_empty"
+}

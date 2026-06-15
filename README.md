@@ -2,6 +2,8 @@
 
 Trace-first **market event causal forensics** — compiles SEC filings, news, and market signals into auditable impact pathways. **Not a buy/sell predictor.**
 
+**Product positioning:** Event Intelligence / Causal Research Assistant for analysts (PM, risk, IR, news desks).
+
 Three product lines:
 
 | Line | Scenarios | Focus |
@@ -10,7 +12,51 @@ Three product lines:
 | **Short Report** | S1, S2 | 做空报告 · 信任/流动性 · squeeze & fraud cases |
 | **Macro** | X1, X2 | FOMC/CPI → sector → stock 传导 |
 
-## Quick start
+## Production platform (v0.5 — P1 data layer)
+
+Continuous data product — see [docs/production-roadmap.md](docs/production-roadmap.md).
+
+```bash
+pip install -e ".[dev,platform,api]"
+
+# Apply schema (Postgres when DATABASE_URL set, else local store)
+python -m market_causal_engine.platform.cli migrate
+
+# Daily pipeline (RSS + FRED + EDGAR poll + market bars)
+python -m market_causal_engine.platform.cli run-daily --offline   # skip network
+python -m market_causal_engine.platform.cli run-daily             # live ingest
+
+# Resumable backfill
+python -m market_causal_engine.platform.cli backfill start macro_fred
+python -m market_causal_engine.platform.cli backfill status --list
+
+python -m market_causal_engine.platform.cli health-report
+
+# API service
+uvicorn market_causal_engine.api.app:app --reload --port 8080
+
+# Docker (Postgres + Timescale + API auto-migrate)
+docker compose up -d
+```
+
+Env vars: `DATABASE_URL`, `FRED_API_KEY`, `NEWSAPI_KEY` — see `.env.example`.
+
+## Event benchmark (P2)
+
+3194 earnings + placebo / macro / short-report corpora under `data/benchmark/`.
+
+```bash
+python scripts/run_benchmark.py --list
+python scripts/run_benchmark.py --run --max-events 200 --until 120
+python scripts/run_benchmark.py --run --corpus earnings_sp500_2016_2025 --max-events 200 --sensitivity
+```
+
+Outputs: `results/benchmark/{run_id}.json`, `_report.md`, `_human_review.csv` (analyst rating export).
+
+Metrics: direction accuracy, out-of-time split, placebo false-positive rate, channel ablation (no_news / no_sec / no_price).
+
+
+## Case study CLI (research / regression fixtures)
 
 ```bash
 pip install -r requirements.txt
@@ -37,14 +83,18 @@ See [docs/case-study-methodology.md](docs/case-study-methodology.md) and [docs/0
 ## Tests
 
 ```bash
-python -m pytest tests/ -q   # 143 tests
+python -m pytest tests/ -q   # 170+ tests
 ```
 
 ## Project structure
 
 ```
 market_causal_engine/     # Kernel, mechanisms, extraction, case studies
+  platform/               # PIT storage, ingestion, daily pipeline
+  api/                    # FastAPI service
+  observability/          # Structured logs + Prometheus metrics
 data/market/              # Scenarios, case studies, compiler rules, calibration
+data/platform_store/      # Local PIT snapshots (dev, gitignored)
 worldcup_causal_engine/   # Legacy World Cup crowd-risk engine (same repo)
 docs/
 tests/

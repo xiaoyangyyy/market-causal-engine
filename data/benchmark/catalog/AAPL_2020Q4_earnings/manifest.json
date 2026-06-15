@@ -1,0 +1,31 @@
+{
+  "event_id": "AAPL_2020Q4_earnings",
+  "ticker": "AAPL",
+  "event_date": "2020-10-20",
+  "fiscal_period": "2020Q4",
+  "atom_count": 5,
+  "text_length": 23390,
+  "summary_length": 11994,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\AAPL_2020Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\AAPL_2020Q4_earnings\\sec_8k.txt",
+  "filing_date": "2021-01-27",
+  "accession_number": "0000320193-21-000009",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019321000009/aapl-20210127.htm",
+  "form": "8-K",
+  "search_date_from": "2021-01-01",
+  "search_date_to": "2021-02-28",
+  "aligned_filing_date": "2021-01-27",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.77,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

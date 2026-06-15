@@ -1,0 +1,34 @@
+{
+  "event_id": "SPGI_2022Q2_earnings",
+  "ticker": "SPGI",
+  "event_date": "2022-04-22",
+  "fiscal_period": "2022Q2",
+  "atom_count": 1,
+  "text_length": 56456,
+  "summary_length": 436,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\SPGI_2022Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\SPGI_2022Q2_earnings\\sec_8k.txt",
+  "filing_date": "2022-05-03",
+  "accession_number": "0000064040-22-000109",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/64040/000006404022000109/spgi-20220503.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000064040",
+  "window_days": 45,
+  "search_date_from": "2022-07-01",
+  "search_date_to": "2022-08-31",
+  "aligned_filing_date": "2022-05-03",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -2.09,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

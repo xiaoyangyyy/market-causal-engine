@@ -1,0 +1,86 @@
+{
+  "event_id": "ABNB_2021Q2_earnings",
+  "ticker": "ABNB",
+  "event_date": "2021-04-13",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T11:25:26+00:00",
+  "accepted": [
+    {
+      "cause": "Q1 2021 revenue increased 5% year-over-year",
+      "effect": "Revenue exceeded Q1 2019 levels despite pandemic",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Q1 2021 revenue increased by 5% year-over-year and exceeded Q1 2019 levels",
+      "source_id": "ABNB2021Q2_002",
+      "published_at": 0,
+      "atom_id": "ABNB2021Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.804,
+      "span_score": 0.96,
+      "severity_align": 0.305,
+      "mechanism_hint": 1.0,
+      "claim_id": "ABNB2021Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Revenue higher than Q1 2020 and Q1 2019",
+      "effect": "Resilience against pandemic impacts",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Despite still being in a pandemic, revenue in Q1 2021 was higher than revenue in Q1 2020 and Q1 2019",
+      "source_id": "ABNB2021Q2_003",
+      "published_at": 0,
+      "atom_id": "ABNB2021Q2_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.871,
+      "span_score": 1.0,
+      "severity_align": 0.484,
+      "mechanism_hint": 1.0,
+      "claim_id": "ABNB2021Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Higher Average Daily Rates and fewer cancellations",
+      "effect": "Revenue growth driven by operational strength",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 0.8,
+      "evidence_span": "The increase in revenue was driven by higher ADR during the quarter, as well as fewer cancellations",
+      "source_id": "ABNB2021Q2_000009",
+      "published_at": 0,
+      "validation": {
+        "passed": false,
+        "errors": [
+          "unknown_source_id"
+        ]
+      }
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

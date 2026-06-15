@@ -1,0 +1,34 @@
+{
+  "event_id": "CSCO_2022Q4_earnings",
+  "ticker": "CSCO",
+  "event_date": "2022-10-05",
+  "fiscal_period": "2022Q4",
+  "atom_count": 25,
+  "text_length": 48623,
+  "summary_length": 11998,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\CSCO_2022Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\CSCO_2022Q4_earnings\\sec_8k.txt",
+  "filing_date": "2022-11-16",
+  "accession_number": "0001193125-22-286782",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/858877/000119312522286782/d385857d8k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000858877",
+  "window_days": 45,
+  "search_date_from": "2023-01-01",
+  "search_date_to": "2023-02-28",
+  "aligned_filing_date": "2022-11-16",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -1.14,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

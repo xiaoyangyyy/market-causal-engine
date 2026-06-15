@@ -1,0 +1,70 @@
+{
+  "event_id": "UBER_2019Q3_earnings",
+  "ticker": "UBER",
+  "event_date": "2019-07-10",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T15:00:55+00:00",
+  "accepted": [
+    {
+      "cause": "Adjusted Net Revenue growth acceleration",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Adjusted Net Revenue grew 26% year-over-year in constant currency and excluding our Driver Appreciation Award, which is an acceleration from Q1.",
+      "source_id": "UBER2019Q3_003",
+      "published_at": 0,
+      "atom_id": "UBER2019Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.829,
+      "span_score": 1.0,
+      "severity_align": 0.316,
+      "mechanism_hint": 1.0,
+      "claim_id": "UBER2019Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Revenue increase to $3,166 million",
+      "effect": "Improved top-line performance perception",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Revenue $ 2,768 $ 3,166 14 % Loss",
+      "source_id": "UBER2019Q3_001",
+      "published_at": 0,
+      "atom_id": "UBER2019Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.861,
+      "span_score": 1.0,
+      "severity_align": 0.442,
+      "mechanism_hint": 1.0,
+      "claim_id": "UBER2019Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

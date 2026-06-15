@@ -1,0 +1,69 @@
+{
+  "event_id": "QCOM_2019Q1_earnings",
+  "ticker": "QCOM",
+  "event_date": "2019-01-24",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T14:50:54+00:00",
+  "accepted": [
+    {
+      "cause": "Non-GAAP EPS guidance range",
+      "effect": "Positive earnings outlook for Q2 FY19",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Current Guidance Q2 FY19 Estimates (2)(3) Revenues $5.2B $4.4B - $5.2B Year-over-year change decrease 0% - 16% GAAP diluted earnings (loss) per share (EPS) $0.22 $0.40 - $0.50",
+      "source_id": "QCOM2019Q1_009",
+      "published_at": 0,
+      "atom_id": "QCOM2019Q1_009",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.817,
+      "span_score": 0.975,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "QCOM2019Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Immaterial error in royalty revenue recognition",
+      "effect": "Potential adjustment to reported QTL segment revenues",
+      "mechanism": "fundamental",
+      "severity": 0.4,
+      "polarity": -1.0,
+      "evidence_span": "we identified an immaterial error related to the recognition of certain royalty revenues of our QTL (Qualcomm Technology Licensing) segment in the",
+      "source_id": "QCOM2019Q1_002",
+      "published_at": 0,
+      "atom_id": "QCOM2019Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.917,
+      "span_score": 0.954,
+      "severity_align": 0.771,
+      "mechanism_hint": 1.0,
+      "claim_id": "QCOM2019Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

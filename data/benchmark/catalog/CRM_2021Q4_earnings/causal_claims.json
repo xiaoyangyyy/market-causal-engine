@@ -1,0 +1,45 @@
+{
+  "event_id": "CRM_2021Q4_earnings",
+  "ticker": "CRM",
+  "event_date": "2021-10-07",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T13:16:48+00:00",
+  "accepted": [
+    {
+      "cause": "Financial results exceeded expectations",
+      "effect": "positive revision momentum",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "exceeded our financial expect",
+      "source_id": "CRM2021Q4_001",
+      "published_at": 0,
+      "atom_id": "CRM2021Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.797,
+      "span_score": 1.0,
+      "severity_align": 0.189,
+      "mechanism_hint": 1.0,
+      "claim_id": "CRM2021Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

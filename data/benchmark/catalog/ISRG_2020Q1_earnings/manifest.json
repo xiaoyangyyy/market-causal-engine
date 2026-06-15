@@ -1,0 +1,31 @@
+{
+  "event_id": "ISRG_2020Q1_earnings",
+  "ticker": "ISRG",
+  "event_date": "2020-01-24",
+  "fiscal_period": "2020Q1",
+  "atom_count": 2,
+  "text_length": 24884,
+  "summary_length": 1043,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\ISRG_2020Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\ISRG_2020Q1_earnings\\sec_8k.txt",
+  "filing_date": "2020-04-16",
+  "accession_number": "0001035267-20-000073",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1035267/000103526720000073/isrg-20200416.htm",
+  "form": "8-K",
+  "search_date_from": "2020-04-01",
+  "search_date_to": "2020-05-31",
+  "aligned_filing_date": "2020-04-16",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.11,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "event_id": "SBUX_2025Q3_earnings",
+  "ticker": "SBUX",
+  "event_date": "2025-07-10",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T04:37:31+00:00",
+  "accepted": [
+    {
+      "cause": "Non-recurring investment and discrete tax item",
+      "effect": "Negative impact on Q3 EPS",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "In the quarter, we made a significant non-recurring investment in our Leadership Experience 2025 and also incurred a discrete tax item, which in the aggregate, negatively impacted Q3 EPS by $0.11",
+      "source_id": "SBUX2025Q3_003",
+      "published_at": 0,
+      "atom_id": "SBUX2025Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.893,
+      "span_score": 1.0,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "claim_id": "SBUX2025Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Significant decline in GAAP and Non-GAAP EPS",
+      "effect": "Negative impact on stock price",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "GAAP earnings per share of $0.49 declined 47% over prior year",
+      "source_id": "SBUX2025Q3_002",
+      "published_at": 0,
+      "atom_id": "SBUX2025Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.759,
+      "span_score": 0.894,
+      "severity_align": 0.271,
+      "mechanism_hint": 1.0,
+      "claim_id": "SBUX2025Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "GAAP operating margin contraction",
+      "effect": "Negative impact on stock price",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -0.7,
+      "evidence_span": "GAAP operating margin contracted 680 basis points year-over-year to 9.9%, primarily driven by deleverage, investments in support of \"Back to Starbucks\"",
+      "source_id": "SBUX2025Q3_001",
+      "published_at": 0,
+      "atom_id": "SBUX2025Q3_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

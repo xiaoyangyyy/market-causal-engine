@@ -1,0 +1,29 @@
+{
+  "event_id": "HD_2017Q1_earnings",
+  "ticker": "HD",
+  "event_date": "2017-01-09",
+  "fiscal_period": "2017Q1",
+  "atom_count": 0,
+  "text_length": 2778,
+  "summary_length": 2778,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\HD_2017Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\HD_2017Q1_earnings\\sec_8k.txt",
+  "filing_date": "2017-02-21",
+  "accession_number": "0000354950-17-000002",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/354950/000035495017000002/hd_8kx01292017.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000354950",
+  "window_days": 45,
+  "search_date_from": "2017-04-01",
+  "search_date_to": "2017-05-31",
+  "aligned_filing_date": "2017-02-21",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.41,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  }
+}

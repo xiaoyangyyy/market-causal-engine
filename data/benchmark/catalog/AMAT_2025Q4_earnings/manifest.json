@@ -1,0 +1,31 @@
+{
+  "event_id": "AMAT_2025Q4_earnings",
+  "ticker": "AMAT",
+  "event_date": "2025-10-10",
+  "fiscal_period": "2025Q4",
+  "atom_count": 12,
+  "text_length": 27025,
+  "summary_length": 11996,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\AMAT_2025Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\AMAT_2025Q4_earnings\\sec_8k.txt",
+  "filing_date": "2026-02-12",
+  "accession_number": "0001628280-26-007661",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/6951/000162828026007661/amat-20260212.htm",
+  "form": "8-K",
+  "search_date_from": "2026-01-01",
+  "search_date_to": "2026-02-28",
+  "aligned_filing_date": "2026-02-12",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -3.38,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

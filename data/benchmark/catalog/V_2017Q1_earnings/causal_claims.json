@@ -1,0 +1,90 @@
+{
+  "event_id": "V_2017Q1_earnings",
+  "ticker": "V",
+  "event_date": "2017-01-10",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:11:05+00:00",
+  "accepted": [
+    {
+      "cause": "net income and diluted EPS growth",
+      "effect": "stock price increase",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "net income and diluted EPS growth of",
+      "source_id": "V2017Q1_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "V2017Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.811,
+      "span_score": 1.0,
+      "severity_align": 0.244,
+      "mechanism_hint": 1.0,
+      "claim_id": "V2017Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "revenue growth",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.135,
+      "polarity": 1.0,
+      "evidence_span": "Outlook for Fiscal Year 2017 Annual net revenue growth",
+      "source_id": "V2017Q1_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "V2017Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.98,
+      "span_score": 1.0,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "V2017Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "earnings per share results of $",
+      "source_id": "V2017Q1_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "V2017Q1_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

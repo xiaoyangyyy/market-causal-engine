@@ -1,0 +1,70 @@
+{
+  "event_id": "SNPS_2018Q4_earnings",
+  "ticker": "SNPS",
+  "event_date": "2018-10-15",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:08:19+00:00",
+  "accepted": [
+    {
+      "cause": "Reaffirming annual outlook",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "We delivered excellent financial results and are reaffirming our outlook for the year",
+      "source_id": "SNPS2018Q4_002",
+      "published_at": 0,
+      "atom_id": "SNPS2018Q4_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.866,
+      "span_score": 0.984,
+      "severity_align": 0.501,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNPS2018Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "GAAP EPS of $1.01",
+      "effect": "Earnings performance",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "GAAP earnings per share: $1.01",
+      "source_id": "SNPS2018Q4_000",
+      "published_at": 0,
+      "atom_id": "SNPS2018Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.848,
+      "span_score": 0.874,
+      "severity_align": 0.671,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNPS2018Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

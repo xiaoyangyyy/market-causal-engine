@@ -1,0 +1,70 @@
+{
+  "event_id": "HD_2024Q2_earnings",
+  "ticker": "HD",
+  "event_date": "2024-04-10",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:56:04+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.78,
+      "polarity": -1.0,
+      "evidence_span": "Net earnings for the second quarter of fiscal 2024 were",
+      "source_id": "HD2024Q2_002",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "HD2024Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "HD2024Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Gross margin of approximately 33.5",
+      "effect": "Positive stock performance",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Gross margin of approximately 33.5",
+      "source_id": "HD2024Q2_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "HD2024Q2_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.955,
+      "span_score": 1.0,
+      "severity_align": 0.82,
+      "mechanism_hint": 1.0,
+      "claim_id": "HD2024Q2_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

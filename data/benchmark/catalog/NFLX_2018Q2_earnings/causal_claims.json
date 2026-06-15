@@ -1,0 +1,83 @@
+{
+  "event_id": "NFLX_2018Q2_earnings",
+  "ticker": "NFLX",
+  "event_date": "2018-04-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:00:06+00:00",
+  "accepted": [
+    {
+      "cause": "International revenue and ASP rose 59% and 13% year over year",
+      "effect": "Strong international segment performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Excluding a F/X impact of +$114 million, international revenue and ASP rose 59% and 13% year over year, respectively.",
+      "source_id": "NFLX2018Q2_005",
+      "published_at": 0,
+      "atom_id": "NFLX2018Q2_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.824,
+      "span_score": 1.0,
+      "severity_align": 0.294,
+      "mechanism_hint": 1.0,
+      "claim_id": "NFLX2018Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Diluted EPS of $0.64",
+      "effect": "Earnings beat expectations",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "Diluted EPS of $0.64 vs. ahead of our 6.35m forecast",
+      "source_id": "NFLX2018Q2_001",
+      "published_at": 0,
+      "atom_id": "NFLX2018Q2_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    },
+    {
+      "cause": "International membership growth of 5.46m",
+      "effect": "Subscriber acquisition exceeds forecast",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Outside of the US, membership grew by 5.46m (vs. ahead of our 6.35m forecast)",
+      "source_id": "NFLX2018Q2_003",
+      "published_at": 0,
+      "atom_id": "NFLX2018Q2_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

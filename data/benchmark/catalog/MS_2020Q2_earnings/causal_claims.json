@@ -1,0 +1,90 @@
+{
+  "event_id": "MS_2020Q2_earnings",
+  "ticker": "MS",
+  "event_date": "2020-04-13",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T10:14:42+00:00",
+  "accepted": [
+    {
+      "cause": "Record long-term net flows of $15.4 billion and AUM of $665 billion",
+      "effect": "Revenue growth of 6% in Investment Management",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "Investment Management reported both record long-term net flows of $15.4 billion and AUM of $665 billion driving revenue growth of 6%.",
+      "source_id": "MS2020Q2_003",
+      "published_at": 0,
+      "atom_id": "MS2020Q2_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.992,
+      "span_score": 1.0,
+      "severity_align": 0.97,
+      "mechanism_hint": 1.0,
+      "claim_id": "MS2020Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Institutional Securities net revenues increased 56%",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Institutional Securities net revenues increased 56% reflecting outperformance across the businesses.",
+      "source_id": "MS2020Q2_002",
+      "published_at": 0,
+      "atom_id": "MS2020Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.998,
+      "span_score": 1.0,
+      "severity_align": 0.99,
+      "mechanism_hint": 1.0,
+      "claim_id": "MS2020Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Sales and Trading net revenues up 68% from a year ago",
+      "effect": "Strong performance in cash equities and derivatives driving positive sentiment",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 0.85,
+      "evidence_span": "Sales and Trading net revenues up 68% from a year ago: Equity sales and trading net revenues increased from a year ago reflecting strong performance in cash equities and derivatives across all regions driven by elevated client activity.",
+      "source_id": "MS2020Q2_008",
+      "published_at": 0,
+      "atom_id": "MS2020Q2_008",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

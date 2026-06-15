@@ -1,0 +1,31 @@
+{
+  "event_id": "AMD_2022Q1_earnings",
+  "ticker": "AMD",
+  "event_date": "2022-01-21",
+  "fiscal_period": "2022Q1",
+  "atom_count": 1,
+  "text_length": 46400,
+  "summary_length": 5774,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\AMD_2022Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\AMD_2022Q1_earnings\\sec_8k.txt",
+  "filing_date": "2022-05-03",
+  "accession_number": "0000002488-22-000074",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248822000074/amd-20220429.htm",
+  "form": "8-K",
+  "search_date_from": "2022-04-01",
+  "search_date_to": "2022-05-31",
+  "aligned_filing_date": "2022-05-03",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.44,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

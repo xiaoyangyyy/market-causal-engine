@@ -1,0 +1,34 @@
+{
+  "event_id": "GE_2023Q3_earnings",
+  "ticker": "GE",
+  "event_date": "2023-07-12",
+  "fiscal_period": "2023Q3",
+  "atom_count": 7,
+  "text_length": 42684,
+  "summary_length": 11995,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\GE_2023Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\GE_2023Q3_earnings\\sec_8k.txt",
+  "filing_date": "2023-07-25",
+  "accession_number": "0000040545-23-000196",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/40545/000004054523000196/ge-20230725.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000040545",
+  "window_days": 45,
+  "search_date_from": "2023-10-01",
+  "search_date_to": "2023-11-30",
+  "aligned_filing_date": "2023-07-25",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 6.27,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

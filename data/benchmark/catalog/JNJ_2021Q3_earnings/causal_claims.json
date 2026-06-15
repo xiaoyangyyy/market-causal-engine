@@ -1,0 +1,70 @@
+{
+  "event_id": "JNJ_2021Q3_earnings",
+  "ticker": "JNJ",
+  "event_date": "2021-07-22",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T11:39:38+00:00",
+  "accepted": [
+    {
+      "cause": "EPS of $2.35 increased 72.8%",
+      "effect": "Bullish sentiment on earnings beat",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "EPS of $2.35 increased 72.8% in Second Quarter 2021",
+      "source_id": "JNJ2021Q3_000",
+      "published_at": 0,
+      "atom_id": "JNJ2021Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.755,
+      "span_score": 0.886,
+      "severity_align": 0.271,
+      "mechanism_hint": 1.0,
+      "claim_id": "JNJ2021Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Strong sales growth of 27.1% to $23.3 Billion",
+      "effect": "estimate upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Strong sales growth of 27.1% to $23.3 Billion in Second Quarter 2021",
+      "source_id": "JNJ2021Q3_000",
+      "published_at": 0,
+      "atom_id": "JNJ2021Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.775,
+      "span_score": 0.899,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "JNJ2021Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

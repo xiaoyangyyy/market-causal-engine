@@ -1,0 +1,143 @@
+{
+  "event_id": "ABBV_2016Q4_earnings",
+  "ticker": "ABBV",
+  "event_date": "2016-10-17",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T12:38:18+00:00",
+  "accepted": [
+    {
+      "cause": "2017 diluted EPS guidance range of $5.44",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Diluted EPS Guidance Range of $5.44 to $",
+      "source_id": "ABBV2016Q4_006",
+      "published_at": 0,
+      "atom_id": "ABBV2016Q4_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.812,
+      "span_score": 1.0,
+      "severity_align": 0.246,
+      "mechanism_hint": 1.0,
+      "claim_id": "ABBV2016Q4_C003",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Full-year diluted EPS of $3.63",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "Reports Full-Year Diluted EPS of $3.63 on a GAAP Basis",
+      "source_id": "ABBV2016Q4_000",
+      "published_at": 0,
+      "atom_id": "ABBV2016Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.809,
+      "span_score": 0.907,
+      "severity_align": 0.439,
+      "mechanism_hint": 1.0,
+      "claim_id": "ABBV2016Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Fourth-quarter revenues of $6.796 billion",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Worldwide GAAP net revenues were $6.796 billion in the fourth quarter, up 6.2 percent",
+      "source_id": "ABBV2016Q4_007",
+      "published_at": 0,
+      "atom_id": "ABBV2016Q4_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.85,
+      "span_score": 0.928,
+      "severity_align": 0.557,
+      "mechanism_hint": 1.0,
+      "claim_id": "ABBV2016Q4_C002",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Fourth-quarter diluted EPS of $1.20",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "Diluted EPS of $1.20 Reflects Growth of",
+      "source_id": "ABBV2016Q4_003",
+      "published_at": 0,
+      "atom_id": "ABBV2016Q4_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.837,
+      "span_score": 1.0,
+      "severity_align": 0.346,
+      "mechanism_hint": 1.0,
+      "claim_id": "ABBV2016Q4_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Guidance reflecting continued strong performance and confidence",
+      "effect": "Increased investor trust in business fundamentals",
+      "mechanism": "trust",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "Our guidance for 2017 reflects continued strong performance and confidence in our business fundamentals",
+      "source_id": "ABBV2016Q4_007",
+      "published_at": 0,
+      "atom_id": "ABBV2016Q4_007",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "mechanism_not_allowed_for_domain:trust:earnings"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

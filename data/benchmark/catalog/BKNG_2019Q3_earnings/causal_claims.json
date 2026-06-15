@@ -1,0 +1,71 @@
+{
+  "event_id": "BKNG_2019Q3_earnings",
+  "ticker": "BKNG",
+  "event_date": "2019-07-19",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T09:44:56+00:00",
+  "accepted": [
+    {
+      "cause": "Non-GAAP net income per diluted share increase",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Non-GAAP net income was $23.59 per diluted share, a 14% increase as compared to the prior year.",
+      "source_id": "BKNG2019Q3_005",
+      "published_at": 0,
+      "atom_id": "BKNG2019Q3_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.808,
+      "span_score": 1.0,
+      "severity_align": 0.231,
+      "mechanism_hint": 1.0,
+      "claim_id": "BKNG2019Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "GAAP net income per diluted share increase",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Net income was $22.44 per diluted share, an 11% increase as compared to the prior year.",
+      "source_id": "BKNG2019Q3_002",
+      "published_at": 0,
+      "atom_id": "BKNG2019Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.819,
+      "span_score": 1.0,
+      "severity_align": 0.276,
+      "mechanism_hint": 1.0,
+      "claim_id": "BKNG2019Q3_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

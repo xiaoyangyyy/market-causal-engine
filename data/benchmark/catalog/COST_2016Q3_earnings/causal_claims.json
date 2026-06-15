@@ -1,0 +1,45 @@
+{
+  "event_id": "COST_2016Q3_earnings",
+  "ticker": "COST",
+  "event_date": "2016-07-21",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:47:01+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.171,
+      "polarity": -1.0,
+      "evidence_span": "These risks and uncertainties include, but are not limited to, domestic and international economic conditions, including exchange rates, the effects of competition and regulation,",
+      "source_id": "COST2016Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "COST2016Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.988,
+      "span_score": 0.978,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "COST2016Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

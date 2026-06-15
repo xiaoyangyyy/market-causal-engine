@@ -1,0 +1,34 @@
+{
+  "event_id": "JNJ_2017Q3_earnings",
+  "ticker": "JNJ",
+  "event_date": "2017-07-17",
+  "fiscal_period": "2017Q3",
+  "atom_count": 3,
+  "text_length": 47550,
+  "summary_length": 11994,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\JNJ_2017Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\JNJ_2017Q3_earnings\\sec_8k.txt",
+  "filing_date": "2017-07-18",
+  "accession_number": "0000200406-17-000040",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040617000040/a8kcover2017q2.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000200406",
+  "window_days": 45,
+  "search_date_from": "2017-10-01",
+  "search_date_to": "2017-11-30",
+  "aligned_filing_date": "2017-07-18",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.75,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

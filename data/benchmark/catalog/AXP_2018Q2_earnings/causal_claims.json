@@ -1,0 +1,70 @@
+{
+  "event_id": "AXP_2018Q2_earnings",
+  "ticker": "AXP",
+  "event_date": "2018-04-11",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T14:25:47+00:00",
+  "accepted": [
+    {
+      "cause": "EPS growth of 38 percent",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Diluted earnings per share was $1.86, up 38 percent from $",
+      "source_id": "AXP2018Q2_001",
+      "published_at": 0,
+      "atom_id": "AXP2018Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.802,
+      "span_score": 1.0,
+      "severity_align": 0.207,
+      "mechanism_hint": 1.0,
+      "claim_id": "AXP2018Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "EPS guidance at high end of range",
+      "effect": "Increased investor confidence",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "EPS to be at the high end of the $",
+      "source_id": "AXP2018Q2_005",
+      "published_at": 0,
+      "atom_id": "AXP2018Q2_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.823,
+      "span_score": 1.0,
+      "severity_align": 0.292,
+      "mechanism_hint": 1.0,
+      "claim_id": "AXP2018Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

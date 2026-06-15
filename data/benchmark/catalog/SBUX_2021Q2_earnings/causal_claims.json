@@ -1,0 +1,71 @@
+{
+  "event_id": "SBUX_2021Q2_earnings",
+  "ticker": "SBUX",
+  "event_date": "2021-04-08",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:42:50+00:00",
+  "accepted": [
+    {
+      "cause": "EPS growth to $0.56",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "earnings per share of $0.56, up from $",
+      "source_id": "SBUX2021Q2_001",
+      "published_at": 0,
+      "atom_id": "SBUX2021Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.786,
+      "span_score": 1.0,
+      "severity_align": 0.145,
+      "mechanism_hint": 1.0,
+      "claim_id": "SBUX2021Q2_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Revenue increase to $6.7 billion",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "revenues of $6.7 billion increased",
+      "source_id": "SBUX2021Q2_000",
+      "published_at": 0,
+      "atom_id": "SBUX2021Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.81,
+      "span_score": 1.0,
+      "severity_align": 0.242,
+      "mechanism_hint": 1.0,
+      "claim_id": "SBUX2021Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

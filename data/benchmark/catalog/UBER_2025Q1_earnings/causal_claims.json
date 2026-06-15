@@ -1,0 +1,90 @@
+{
+  "event_id": "UBER_2025Q1_earnings",
+  "ticker": "UBER",
+  "event_date": "2025-01-24",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:25:24+00:00",
+  "accepted": [
+    {
+      "cause": "Provision for (benefit from) income taxes",
+      "effect": "Net income (loss) attributable to non-controlling interests",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Provision for (benefit from) income taxes 133 (6,002) 213 (5,758)",
+      "source_id": "UBER2025Q1_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "UBER2025Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.786,
+      "span_score": 0.896,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "UBER2025Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "positive fundamental signal",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.045,
+      "polarity": 1.0,
+      "evidence_span": "anticipate: • Gross Bookings of growth",
+      "source_id": "UBER2025Q1_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "UBER2025Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "UBER2025Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "revaluations of Uber's equity investments",
+      "effect": "Q4 2023 net income",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Q4 2023 net income includes a $1.0 billion net benefit (pre-tax) from revaluations of Uber's equity investments",
+      "source_id": "UBER2025Q1_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "UBER2025Q1_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

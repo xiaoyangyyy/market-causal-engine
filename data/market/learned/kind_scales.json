@@ -1,0 +1,10 @@
+{
+  "scales": {
+    "*": 1.0,
+    "macro_rate_shock": 0.5125,
+    "viral_negative_news": 1.75,
+    "short_seller_report": 2.125,
+    "earnings_miss": 2.4062
+  },
+  "computed_at": "2026-06-09T10:23:53+00:00"
+}

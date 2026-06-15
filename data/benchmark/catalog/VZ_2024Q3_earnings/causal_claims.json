@@ -1,0 +1,167 @@
+{
+  "event_id": "VZ_2024Q3_earnings",
+  "ticker": "VZ",
+  "event_date": "2024-07-08",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:02:45+00:00",
+  "accepted": [
+    {
+      "cause": "pricing actions implemented in recent quarters, higher premium price plan adoption, and growth from our fixed wireless access (FWA) connections",
+      "effect": "Total Wireless service revenue 2 was $19.8 billion, up 3.5% year over year",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "driven primarily by pricing actions implemented in recent quarters, higher premium price plan adoption, and growth from our fixed wireless access (FWA) connections",
+      "source_id": "VZ2024Q3_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "VZ2024Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.835,
+      "span_score": 0.985,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "VZ2024Q3_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "lower upgrade volumes",
+      "effect": "Wireless equipment revenue was $5.0 billion, down 5.3% year over year",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": 1.0,
+      "evidence_span": "Wireless equipment revenue was $5.0 billion, down 5.3% year over year, predominantly due to lower upgrade volumes",
+      "source_id": "VZ2024Q3_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "VZ2024Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.873,
+      "span_score": 1.0,
+      "severity_align": 0.494,
+      "mechanism_hint": 1.0,
+      "claim_id": "VZ2024Q3_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Service and other revenue was $27.8 billion",
+      "effect": "up 1.8% year over year",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Service and other revenue was $27.8 billion, up 1.8% year over year",
+      "source_id": "VZ2024Q3_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "VZ2024Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.866,
+      "span_score": 1.0,
+      "severity_align": 0.465,
+      "mechanism_hint": 1.0,
+      "claim_id": "VZ2024Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.6,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Total Fios revenue was $3.2 billion, up 0.5% year over year",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.3,
+      "polarity": -1.0,
+      "evidence_span": "Total Fios revenue was $3.2 billion, up 0.5% year over year",
+      "source_id": "VZ2024Q3_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "VZ2024Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.94,
+      "span_score": 1.0,
+      "severity_align": 0.76,
+      "mechanism_hint": 1.0,
+      "claim_id": "VZ2024Q3_C003",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.054,
+      "polarity": -1.0,
+      "evidence_span": "Earnings per share (EPS) was $1.09 compared to EPS of",
+      "source_id": "VZ2024Q3_007",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "VZ2024Q3_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "VZ2024Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "revenue for the second quarter was",
+      "source_id": "VZ2024Q3_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "VZ2024Q3_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 5,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

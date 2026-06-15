@@ -1,0 +1,69 @@
+{
+  "event_id": "CVX_2019Q4_earnings",
+  "ticker": "CVX",
+  "event_date": "2019-10-17",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T13:03:51+00:00",
+  "accepted": [
+    {
+      "cause": "Third quarter net income of $2.6 billion",
+      "effect": "Positive earnings performance",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Chevron Reports Third Quarter Net Income of $2.6 Billion",
+      "source_id": "CVX2019Q4_000",
+      "published_at": 0,
+      "atom_id": "CVX2019Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.774,
+      "span_score": 0.897,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "CVX2019Q4_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Cash flow from operations of $7.8 billion",
+      "effect": "Strong operational cash generation",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Cash flow from operations of $7.8 billion",
+      "source_id": "CVX2019Q4_000",
+      "published_at": 0,
+      "atom_id": "CVX2019Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.791,
+      "span_score": 0.884,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "claim_id": "CVX2019Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

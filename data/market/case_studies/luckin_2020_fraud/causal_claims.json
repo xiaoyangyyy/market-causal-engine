@@ -1,0 +1,138 @@
+{
+  "case_id": "luckin_2020_fraud",
+  "domain": "short_report",
+  "as_of": 120,
+  "use_llm": false,
+  "computed_at": "2026-06-09T03:07:55+00:00",
+  "accepted": [
+    {
+      "cause": "fraud allegations",
+      "effect": "trust collapse",
+      "mechanism": "trust",
+      "severity": 0.9,
+      "evidence_span": "Muddy Waters Research publishes a short seller report",
+      "source_id": "LK20MW_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "LK20MW_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "LUCKIN_2020__C000"
+    },
+    {
+      "cause": "price move",
+      "effect": "momentum feedback",
+      "mechanism": "trust",
+      "severity": 0.98,
+      "evidence_span": "shares plunge 31%",
+      "source_id": "LK20MW_001",
+      "published_at": 5,
+      "proposer": "heuristic",
+      "atom_id": "LK20MW_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "LUCKIN_2020__C001"
+    },
+    {
+      "cause": "fraud allegations",
+      "effect": "trust collapse",
+      "mechanism": "trust",
+      "severity": 0.9,
+      "evidence_span": "short seller report alleges Luckin fabricat",
+      "source_id": "LK20MW_002",
+      "published_at": 20,
+      "proposer": "heuristic",
+      "atom_id": "LK20MW_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "LUCKIN_2020__C002"
+    },
+    {
+      "cause": "fraud allegations",
+      "effect": "trust collapse",
+      "mechanism": "trust",
+      "severity": 0.6,
+      "evidence_span": "Company denies Muddy Waters allegations in brief press release.",
+      "source_id": "LK20MW_003",
+      "published_at": 55,
+      "proposer": "heuristic",
+      "atom_id": "LK20MW_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "LUCKIN_2020__C003"
+    },
+    {
+      "cause": "regulatory scrutiny",
+      "effect": "regulatory overhang",
+      "mechanism": "regulatory",
+      "severity": 0.78,
+      "evidence_span": "SEC probe inquiry",
+      "source_id": "LK20MW_004",
+      "published_at": 75,
+      "proposer": "heuristic",
+      "atom_id": "LK20MW_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "LUCKIN_2020__C004"
+    },
+    {
+      "cause": "regulatory scrutiny",
+      "effect": "regulatory overhang",
+      "mechanism": "regulatory",
+      "severity": 0.6,
+      "evidence_span": "sector ETF decline",
+      "source_id": "LK20MW_005",
+      "published_at": 90,
+      "proposer": "heuristic",
+      "atom_id": "LK20MW_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "LUCKIN_2020__C005"
+    }
+  ],
+  "rejected": [],
+  "claim_count": 6,
+  "rejected_count": 0
+}

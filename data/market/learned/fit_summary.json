@@ -1,0 +1,46 @@
+{
+  "domain_models": [
+    "earnings",
+    "macro",
+    "short_report"
+  ],
+  "earnings_magnitude": "E:\\ca\\data\\market\\learned\\earnings_magnitude.json",
+  "training_samples": 233,
+  "kind_scales": {
+    "*": 1.0,
+    "macro_rate_shock": 0.5125,
+    "viral_negative_news": 1.75,
+    "short_seller_report": 2.125,
+    "earnings_miss": 2.4062
+  },
+  "severity_kinds": 11,
+  "compiler_rules": 19,
+  "domain_posteriors": {
+    "macro": {
+      "fundamental": 0.0252,
+      "sentiment": 0.0387,
+      "liquidity": 0.0629,
+      "macro": 0.5998,
+      "regulatory": 0.0117,
+      "trust": 0.0117
+    },
+    "short_report": {
+      "fundamental": 0.0238,
+      "sentiment": 0.1985,
+      "liquidity": 0.1457,
+      "macro": 0.0238,
+      "regulatory": 0.13,
+      "trust": 0.3533
+    },
+    "earnings": {
+      "fundamental": 0.5794,
+      "sentiment": 0.1414,
+      "liquidity": 0.1303,
+      "macro": 0.0446,
+      "regulatory": 0.0209,
+      "trust": 0.0209
+    }
+  },
+  "priors_export": "E:\\ca\\data\\market\\priors\\mechanisms_v0.2_learned.json",
+  "computed_at": "2026-06-09T10:23:53+00:00"
+}

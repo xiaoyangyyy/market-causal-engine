@@ -1,0 +1,31 @@
+{
+  "event_id": "BKNG_2016Q3_earnings",
+  "ticker": "BKNG",
+  "event_date": "2016-07-21",
+  "fiscal_period": "2016Q3",
+  "atom_count": 15,
+  "text_length": 35206,
+  "summary_length": 10245,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\BKNG_2016Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\BKNG_2016Q3_earnings\\sec_8k.txt",
+  "filing_date": "2016-11-07",
+  "accession_number": "0001075531-16-000116",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1075531/000107553116000116/a8kearnings93016.htm",
+  "form": "8-K",
+  "search_date_from": "2016-10-01",
+  "search_date_to": "2016-11-30",
+  "aligned_filing_date": "2016-11-07",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 3.94,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

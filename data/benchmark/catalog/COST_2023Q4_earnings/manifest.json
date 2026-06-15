@@ -1,0 +1,34 @@
+{
+  "event_id": "COST_2023Q4_earnings",
+  "ticker": "COST",
+  "event_date": "2023-10-24",
+  "fiscal_period": "2023Q4",
+  "atom_count": 4,
+  "text_length": 17209,
+  "summary_length": 9188,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\COST_2023Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\COST_2023Q4_earnings\\sec_8k.txt",
+  "filing_date": "2023-09-26",
+  "accession_number": "0000909832-23-000038",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/909832/000090983223000038/cost-20230926.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000909832",
+  "window_days": 45,
+  "search_date_from": "2024-01-01",
+  "search_date_to": "2024-02-29",
+  "aligned_filing_date": "2023-09-26",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -1.01,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

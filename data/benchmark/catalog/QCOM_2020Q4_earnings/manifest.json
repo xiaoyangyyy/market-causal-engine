@@ -1,0 +1,34 @@
+{
+  "event_id": "QCOM_2020Q4_earnings",
+  "ticker": "QCOM",
+  "event_date": "2020-10-14",
+  "fiscal_period": "2020Q4",
+  "atom_count": 10,
+  "text_length": 40302,
+  "summary_length": 1143,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\QCOM_2020Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\QCOM_2020Q4_earnings\\sec_8k.txt",
+  "filing_date": "2020-11-04",
+  "accession_number": "0001728949-20-000066",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/804328/000172894920000066/qcom-20201104.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000804328",
+  "window_days": 45,
+  "search_date_from": "2021-01-01",
+  "search_date_to": "2021-02-28",
+  "aligned_filing_date": "2020-11-04",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 2.81,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

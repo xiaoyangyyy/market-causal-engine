@@ -1,0 +1,85 @@
+{
+  "event_id": "AXP_2016Q4_earnings",
+  "ticker": "AXP",
+  "event_date": "2016-10-13",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:49:09+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.051,
+      "polarity": -1.0,
+      "evidence_span": "outlook provided in the company’s Q4’15 earnings",
+      "source_id": "AXP2016Q4_004",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "AXP2016Q4_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "AXP2016Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "outlook provided in the company's Q4'15 earnings",
+      "effect": "stock price movement",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": 0.0,
+      "evidence_span": "outlook provided in the company's Q4'15 earnings",
+      "source_id": "AXP2016Q4_017",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "AXP2016Q4_017",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "EPS), a non-GAAP measure, excludes a $",
+      "source_id": "AXP2016Q4_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "AXP2016Q4_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

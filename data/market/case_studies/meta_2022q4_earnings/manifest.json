@@ -13,12 +13,57 @@
   "scenario_path": "scenario.json",
   "atoms_path": "atoms.jsonl",
   "default_until": 120,
-  "lookahead_policy": {"strict": true, "forbid_post_hoc_sources": true},
+  "lookahead_policy": {
+    "strict": true,
+    "forbid_post_hoc_sources": true
+  },
   "observed_outcomes": {
     "direction": "down",
     "after_hours_return_pct": -26,
     "two_day_return_pct": -26,
-    "calibration_reference_drawdown": 0.70,
+    "calibration_reference_drawdown": 0.7,
     "dominant_narrative": "DAU decline + weak Q1 guidance + ad targeting headwinds"
+  },
+  "outcome_causal": {
+    "method": "synthetic_control",
+    "effect": -0.211413,
+    "observed_return": -0.254671,
+    "counterfactual_return": -0.043258,
+    "placebo_rank": 1.0,
+    "artifact": "data\\market\\case_studies\\meta_2022q4_earnings\\outcome_causal.json"
+  },
+  "causal_claims": {
+    "claim_count": 7,
+    "rejected_count": 2,
+    "top_claim": {
+      "cause": "earnings miss",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "evidence_span": "revenue of $33.67 billion, miss",
+      "source_id": "META22Q4_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "META22Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "META_2022Q4__C000"
+    },
+    "artifact": "causal_claims.json"
+  },
+  "mechanism_calibration": {
+    "predicted_effect": 0.00775,
+    "outcome_effect": -0.211413,
+    "dominant_mechanism": "fundamental",
+    "direction_match": false,
+    "confidence": 0.309,
+    "artifact": "mechanism_calibration.json"
   }
 }

@@ -1,0 +1,70 @@
+{
+  "event_id": "SBUX_2020Q1_earnings",
+  "ticker": "SBUX",
+  "event_date": "2020-01-22",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:12:58+00:00",
+  "accepted": [
+    {
+      "cause": "near-term financial implications",
+      "effect": "long-term, optimistic outlook for the growth potential of Starbucks is undiminished",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": 1.0,
+      "evidence_span": "Although there are near-term financial implications, our long-term, optimistic outlook for the growth potential of Starbucks is undiminished.",
+      "source_id": "SBUX2020Q1_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SBUX2020Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.902,
+      "span_score": 1.0,
+      "severity_align": 0.609,
+      "mechanism_hint": 1.0,
+      "claim_id": "SBUX2020Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.055,
+      "polarity": -1.0,
+      "evidence_span": "earnings per share (“EPS”) for Q2 FY20 in the range of",
+      "source_id": "SBUX2020Q1_002",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "SBUX2020Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SBUX2020Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

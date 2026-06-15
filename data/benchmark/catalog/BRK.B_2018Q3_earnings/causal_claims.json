@@ -1,0 +1,37 @@
+{
+  "event_id": "BRK.B_2018Q3_earnings",
+  "ticker": "BRK.B",
+  "event_date": "2018-07-06",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T08:28:53+00:00",
+  "accepted": [],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "net earnings exclusive of",
+      "source_id": "BRK.B2018Q3_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "BRK.B2018Q3_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 0,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback_empty"
+}

@@ -1,0 +1,115 @@
+{
+  "event_id": "AVGO_2025Q1_earnings",
+  "ticker": "AVGO",
+  "event_date": "2025-01-13",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T13:18:13+00:00",
+  "accepted": [
+    {
+      "cause": "Record Q4 revenue driven by AI growth",
+      "effect": "estimate upside",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "revenue was a record $30.1 billion driven by AI revenue of",
+      "source_id": "AVGO2025Q1_004",
+      "published_at": 0,
+      "atom_id": "AVGO2025Q1_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.789,
+      "span_score": 1.0,
+      "severity_align": 0.157,
+      "mechanism_hint": 1.0,
+      "claim_id": "AVGO2025Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Strong Q1 revenue guidance",
+      "effect": "Bullish sentiment on future earnings potential",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "First quarter revenue guidance of approximately $14.6 billion",
+      "source_id": "AVGO2025Q1_008",
+      "published_at": 0,
+      "atom_id": "AVGO2025Q1_008",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.785,
+      "span_score": 0.895,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "AVGO2025Q1_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Quarterly dividend increase",
+      "effect": "Increased investor confidence and stock demand",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "Quarterly common stock dividend increased by 1",
+      "source_id": "AVGO2025Q1_002",
+      "published_at": 0,
+      "atom_id": "AVGO2025Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.803,
+      "span_score": 0.883,
+      "severity_align": 0.471,
+      "mechanism_hint": 1.0,
+      "claim_id": "AVGO2025Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Year-over-year revenue growth of 44%",
+      "effect": "Validation of successful VMware integration",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 0.85,
+      "evidence_span": "Broadcom's fiscal year 2024 revenue grew 44% year-over-year to a record $51.6 billion",
+      "source_id": "AVGO2025Q1_003",
+      "published_at": 0,
+      "atom_id": "AVGO2025Q1_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

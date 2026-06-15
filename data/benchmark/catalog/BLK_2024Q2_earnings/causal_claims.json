@@ -1,0 +1,44 @@
+{
+  "event_id": "BLK_2024Q2_earnings",
+  "ticker": "BLK",
+  "event_date": "2024-04-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:59:45+00:00",
+  "accepted": [
+    {
+      "cause": "retail coordination",
+      "effect": "short-covering pressure",
+      "mechanism": "sentiment",
+      "severity": 0.251,
+      "polarity": 1.0,
+      "evidence_span": "et flows($ in billions) Total BlackRock Retail Long-term Institutional Long-term LTM organic asset growth rate (%)",
+      "source_id": "BLK2024Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "BLK2024Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.942,
+      "span_score": 0.931,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "BLK2024Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

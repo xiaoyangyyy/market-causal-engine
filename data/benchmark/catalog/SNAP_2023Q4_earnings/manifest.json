@@ -1,0 +1,31 @@
+{
+  "event_id": "SNAP_2023Q4_earnings",
+  "ticker": "SNAP",
+  "event_date": "2023-10-13",
+  "fiscal_period": "2023Q4",
+  "atom_count": 1,
+  "text_length": 9080,
+  "summary_length": 889,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\SNAP_2023Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\SNAP_2023Q4_earnings\\sec_8k.txt",
+  "filing_date": "2024-02-06",
+  "accession_number": "0001564408-24-000017",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1564408/000156440824000017/snap-20240206.htm",
+  "form": "8-K",
+  "search_date_from": "2024-01-01",
+  "search_date_to": "2024-02-29",
+  "aligned_filing_date": "2024-02-06",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 4.18,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

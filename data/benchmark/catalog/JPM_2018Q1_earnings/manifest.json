@@ -1,0 +1,34 @@
+{
+  "event_id": "JPM_2018Q1_earnings",
+  "ticker": "JPM",
+  "event_date": "2018-01-19",
+  "fiscal_period": "2018Q1",
+  "atom_count": 39,
+  "text_length": 120034,
+  "summary_length": 3134,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\JPM_2018Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\JPM_2018Q1_earnings\\sec_8k.txt",
+  "filing_date": "2018-01-12",
+  "accession_number": "0000019617-18-000004",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961718000004/a4q17erf8kcover.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000019617",
+  "window_days": 45,
+  "search_date_from": "2018-04-01",
+  "search_date_to": "2018-05-31",
+  "aligned_filing_date": "2018-01-12",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.65,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

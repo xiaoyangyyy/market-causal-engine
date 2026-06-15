@@ -1,0 +1,65 @@
+{
+  "event_id": "PANW_2017Q2_earnings",
+  "ticker": "PANW",
+  "event_date": "2017-04-19",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T02:46:04+00:00",
+  "accepted": [
+    {
+      "cause": "Record revenue of $432 million",
+      "effect": "estimate upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "We reported record revenue of $432 million in our fiscal third quarter",
+      "source_id": "PANW2017Q2_003",
+      "published_at": 0,
+      "atom_id": "PANW2017Q2_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.78,
+      "span_score": 0.914,
+      "severity_align": 0.309,
+      "mechanism_hint": 1.0,
+      "claim_id": "PANW2017Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Addition of second highest number of new customers",
+      "effect": "Increased investor confidence in growth trajectory",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "added the second highest number of new customers in the company's history",
+      "source_id": "PANW2017Q2_003",
+      "published_at": 0,
+      "atom_id": "PANW2017Q2_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

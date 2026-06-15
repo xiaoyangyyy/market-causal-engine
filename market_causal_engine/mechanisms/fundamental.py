@@ -26,12 +26,15 @@ from market_causal_engine.registry import mechanism
 def earnings_call_transcript(k: Kernel, e: Event) -> None:
     severity = float(e.payload.get("severity", 0.7))
     tone = float(e.payload.get("tone", -0.5))
+    fund_delta = k.prior("earnings_call_transcript", "fundamental_delta", 0.08)
+    sent_delta = k.prior("earnings_call_transcript", "sentiment_delta", 0.06)
+    dir_delta = k.prior("earnings_call_transcript", "directional_delta", 0.05)
     k.commit(
         e,
         {
-            "fundamental_expectation": -0.08 * severity * max(0, -tone),
-            "investor_sentiment": 0.06 * tone * severity,
-            "directional_pressure_score": 0.05 * max(0, -tone) * severity,
+            "fundamental_expectation": -fund_delta * severity * max(0, -tone),
+            "investor_sentiment": sent_delta * tone * severity,
+            "directional_pressure_score": dir_delta * max(0, -tone) * severity,
         },
     )
     if tone < -0.3:

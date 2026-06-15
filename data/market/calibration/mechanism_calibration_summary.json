@@ -1,0 +1,587 @@
+{
+  "model": {
+    "version": "v0.7-ridge",
+    "feature_names": [
+      "m_fundamental",
+      "m_sentiment",
+      "m_liquidity",
+      "m_macro",
+      "m_regulatory",
+      "m_trust",
+      "max_severity",
+      "mean_confidence",
+      "trace_total"
+    ],
+    "coefficients": [
+      -0.007112,
+      -0.276369,
+      0.346858,
+      -0.062393,
+      0.078317,
+      -0.006456,
+      -0.06713,
+      0.008112,
+      0.025657,
+      -0.087834
+    ],
+    "training_rmse": 0.118283,
+    "n_samples": 233
+  },
+  "training_samples": 233,
+  "cases": 9,
+  "errors": [],
+  "in_sample_metrics": {
+    "n": 9,
+    "mae": 0.180528,
+    "rmse": 0.218887,
+    "direction_accuracy": 0.2857,
+    "direction_evaluated": 7,
+    "mechanism_match_rate": 0.0
+  },
+  "leave_one_out": {
+    "folds": [
+      {
+        "case_id": "cpi_2022_06_hot",
+        "outcome_effect": -0.000501,
+        "predicted_effect": -0.042655,
+        "predicted_direction": "down",
+        "confidence": 0.394
+      },
+      {
+        "case_id": "fomc_2022_75bp",
+        "outcome_effect": -0.000791,
+        "predicted_effect": -0.042824,
+        "predicted_direction": "down",
+        "confidence": 0.387
+      },
+      {
+        "case_id": "gme_2021_01_squeeze",
+        "outcome_effect": 0.303176,
+        "predicted_effect": -0.105421,
+        "predicted_direction": "down",
+        "confidence": 0.391
+      },
+      {
+        "case_id": "hindenburg_nikola_2020",
+        "outcome_effect": -0.149307,
+        "predicted_effect": -0.007776,
+        "predicted_direction": "down",
+        "confidence": 0.334
+      },
+      {
+        "case_id": "luckin_2020_fraud",
+        "outcome_effect": -0.127872,
+        "predicted_effect": 0.015803,
+        "predicted_direction": "up",
+        "confidence": 0.399
+      },
+      {
+        "case_id": "meta_2022q4_earnings",
+        "outcome_effect": -0.211413,
+        "predicted_effect": -0.048373,
+        "predicted_direction": "down",
+        "confidence": 0.399
+      },
+      {
+        "case_id": "nflx_2022q1_earnings",
+        "outcome_effect": -0.32149,
+        "predicted_effect": -0.05054,
+        "predicted_direction": "down",
+        "confidence": 0.391
+      },
+      {
+        "case_id": "shop_2022q2_earnings",
+        "outcome_effect": -0.05807,
+        "predicted_effect": -0.065016,
+        "predicted_direction": "down",
+        "confidence": 0.399
+      },
+      {
+        "case_id": "snap_2022q3_earnings",
+        "outcome_effect": -0.274796,
+        "predicted_effect": -0.050088,
+        "predicted_direction": "down",
+        "confidence": 0.392
+      }
+    ],
+    "metrics": {
+      "n": 9,
+      "mae": 0.160404,
+      "rmse": 0.200474,
+      "direction_accuracy": 0.7143,
+      "direction_evaluated": 7,
+      "mechanism_match_rate": 0.0
+    }
+  },
+  "calibrated_cases": {
+    "cpi_2022_06_hot": {
+      "case_id": "cpi_2022_06_hot",
+      "domain": "macro",
+      "outcome_effect": -0.000501,
+      "outcome_method": "synthetic_control",
+      "predicted_effect": -0.06066,
+      "predicted_direction": "down",
+      "actual_direction": "neutral",
+      "direction_match": false,
+      "confidence": 0.359,
+      "mechanism_weights": {
+        "fundamental": 0.035,
+        "sentiment": 0.0554,
+        "liquidity": 0.1125,
+        "macro": 0.7971,
+        "regulatory": 0.0,
+        "trust": 0.0
+      },
+      "dominant_mechanism": "macro",
+      "posterior_weights": {
+        "fundamental": 0.0316,
+        "sentiment": 0.0491,
+        "liquidity": 0.0746,
+        "macro": 0.815,
+        "regulatory": 0.0148,
+        "trust": 0.0148
+      },
+      "prior_weights": {
+        "fundamental": 0.0909,
+        "sentiment": 0.1364,
+        "liquidity": 0.1818,
+        "macro": 0.5,
+        "regulatory": 0.0455,
+        "trust": 0.0455
+      },
+      "posterior_confidence": 0.635,
+      "feature_vector": {
+        "claim_count": 5.0,
+        "m_fundamental": 0.03,
+        "m_liquidity": 0.1159,
+        "m_macro": 0.8091,
+        "m_regulatory": 0.0,
+        "m_sentiment": 0.045,
+        "m_trust": 0.0,
+        "max_severity": 0.92,
+        "mean_confidence": 0.65,
+        "trace_total": 1.0
+      },
+      "claim_count": 5,
+      "model_version": "v0.7-ridge",
+      "computed_at": "2026-06-09T03:17:00+00:00"
+    },
+    "fomc_2022_75bp": {
+      "case_id": "fomc_2022_75bp",
+      "domain": "macro",
+      "outcome_effect": -0.000791,
+      "outcome_method": "synthetic_control",
+      "predicted_effect": -0.034334,
+      "predicted_direction": "down",
+      "actual_direction": "neutral",
+      "direction_match": false,
+      "confidence": 0.352,
+      "mechanism_weights": {
+        "fundamental": 0.0413,
+        "sentiment": 0.0554,
+        "liquidity": 0.1582,
+        "macro": 0.7452,
+        "regulatory": 0.0,
+        "trust": 0.0
+      },
+      "dominant_mechanism": "macro",
+      "posterior_weights": {
+        "fundamental": 0.0345,
+        "sentiment": 0.053,
+        "liquidity": 0.0884,
+        "macro": 0.7921,
+        "regulatory": 0.016,
+        "trust": 0.016
+      },
+      "prior_weights": {
+        "fundamental": 0.0909,
+        "sentiment": 0.1364,
+        "liquidity": 0.1818,
+        "macro": 0.5,
+        "regulatory": 0.0455,
+        "trust": 0.0455
+      },
+      "posterior_confidence": 0.617,
+      "feature_vector": {
+        "claim_count": 5.0,
+        "m_fundamental": 0.0354,
+        "m_liquidity": 0.163,
+        "m_macro": 0.7566,
+        "m_regulatory": 0.0,
+        "m_sentiment": 0.045,
+        "m_trust": 0.0,
+        "max_severity": 0.82,
+        "mean_confidence": 0.65,
+        "trace_total": 1.0
+      },
+      "claim_count": 5,
+      "model_version": "v0.7-ridge",
+      "computed_at": "2026-06-09T03:17:00+00:00"
+    },
+    "gme_2021_01_squeeze": {
+      "case_id": "gme_2021_01_squeeze",
+      "domain": "short_report",
+      "outcome_effect": 0.303176,
+      "outcome_method": "synthetic_control",
+      "predicted_effect": -0.08274,
+      "predicted_direction": "down",
+      "actual_direction": "up",
+      "direction_match": false,
+      "confidence": 0.356,
+      "mechanism_weights": {
+        "fundamental": 0.0,
+        "sentiment": 0.505,
+        "liquidity": 0.1758,
+        "macro": 0.0,
+        "regulatory": 0.0959,
+        "trust": 0.2234
+      },
+      "dominant_mechanism": "sentiment",
+      "posterior_weights": {
+        "fundamental": 0.0264,
+        "sentiment": 0.3529,
+        "liquidity": 0.1569,
+        "macro": 0.0264,
+        "regulatory": 0.1321,
+        "trust": 0.3053
+      },
+      "prior_weights": {
+        "fundamental": 0.0455,
+        "sentiment": 0.2273,
+        "liquidity": 0.1818,
+        "macro": 0.0455,
+        "regulatory": 0.1818,
+        "trust": 0.3182
+      },
+      "posterior_confidence": 0.697,
+      "feature_vector": {
+        "claim_count": 7.0,
+        "m_fundamental": 0.0,
+        "m_liquidity": 0.1958,
+        "m_macro": 0.0,
+        "m_regulatory": 0.1127,
+        "m_sentiment": 0.4437,
+        "m_trust": 0.2477,
+        "max_severity": 0.88,
+        "mean_confidence": 0.65,
+        "trace_total": 1.0
+      },
+      "claim_count": 7,
+      "model_version": "v0.7-ridge",
+      "computed_at": "2026-06-09T03:17:00+00:00"
+    },
+    "hindenburg_nikola_2020": {
+      "case_id": "hindenburg_nikola_2020",
+      "domain": "short_report",
+      "outcome_effect": -0.149307,
+      "outcome_method": "synthetic_control",
+      "predicted_effect": -0.00327,
+      "predicted_direction": "neutral",
+      "actual_direction": "down",
+      "direction_match": false,
+      "confidence": 0.304,
+      "mechanism_weights": {
+        "fundamental": 0.0,
+        "sentiment": 0.2839,
+        "liquidity": 0.2484,
+        "macro": 0.0,
+        "regulatory": 0.1148,
+        "trust": 0.3529
+      },
+      "dominant_mechanism": "trust",
+      "posterior_weights": {
+        "fundamental": 0.0277,
+        "sentiment": 0.2279,
+        "liquidity": 0.1826,
+        "macro": 0.0277,
+        "regulatory": 0.1406,
+        "trust": 0.3936
+      },
+      "prior_weights": {
+        "fundamental": 0.0455,
+        "sentiment": 0.2273,
+        "liquidity": 0.1818,
+        "macro": 0.0455,
+        "regulatory": 0.1818,
+        "trust": 0.3182
+      },
+      "posterior_confidence": 0.643,
+      "feature_vector": {
+        "claim_count": 7.0,
+        "m_fundamental": 0.0,
+        "m_liquidity": 0.2629,
+        "m_macro": 0.0,
+        "m_regulatory": 0.1282,
+        "m_sentiment": 0.237,
+        "m_trust": 0.3718,
+        "max_severity": 0.9,
+        "mean_confidence": 0.65,
+        "trace_total": 1.0
+      },
+      "claim_count": 7,
+      "model_version": "v0.7-ridge",
+      "computed_at": "2026-06-09T03:17:00+00:00"
+    },
+    "luckin_2020_fraud": {
+      "case_id": "luckin_2020_fraud",
+      "domain": "short_report",
+      "outcome_effect": -0.127872,
+      "outcome_method": "synthetic_control",
+      "predicted_effect": -0.005475,
+      "predicted_direction": "down",
+      "actual_direction": "down",
+      "direction_match": true,
+      "confidence": 0.309,
+      "mechanism_weights": {
+        "fundamental": 0.0027,
+        "sentiment": 0.2079,
+        "liquidity": 0.1972,
+        "macro": 0.0,
+        "regulatory": 0.1781,
+        "trust": 0.4141
+      },
+      "dominant_mechanism": "trust",
+      "posterior_weights": {
+        "fundamental": 0.0272,
+        "sentiment": 0.1948,
+        "liquidity": 0.1608,
+        "macro": 0.0271,
+        "regulatory": 0.1566,
+        "trust": 0.4333
+      },
+      "prior_weights": {
+        "fundamental": 0.0455,
+        "sentiment": 0.2273,
+        "liquidity": 0.1818,
+        "macro": 0.0455,
+        "regulatory": 0.1818,
+        "trust": 0.3182
+      },
+      "posterior_confidence": 0.627,
+      "feature_vector": {
+        "claim_count": 6.0,
+        "m_fundamental": 0.0023,
+        "m_liquidity": 0.2048,
+        "m_macro": 0.0,
+        "m_regulatory": 0.1952,
+        "m_sentiment": 0.1703,
+        "m_trust": 0.4281,
+        "max_severity": 0.98,
+        "mean_confidence": 0.65,
+        "trace_total": 1.0
+      },
+      "claim_count": 6,
+      "model_version": "v0.7-ridge",
+      "computed_at": "2026-06-09T03:17:00+00:00"
+    },
+    "meta_2022q4_earnings": {
+      "case_id": "meta_2022q4_earnings",
+      "domain": "earnings",
+      "outcome_effect": -0.211413,
+      "outcome_method": "synthetic_control",
+      "predicted_effect": 0.00775,
+      "predicted_direction": "up",
+      "actual_direction": "down",
+      "direction_match": false,
+      "confidence": 0.309,
+      "mechanism_weights": {
+        "fundamental": 0.5894,
+        "sentiment": 0.1566,
+        "liquidity": 0.2275,
+        "macro": 0.0264,
+        "regulatory": 0.0,
+        "trust": 0.0
+      },
+      "dominant_mechanism": "fundamental",
+      "posterior_weights": {
+        "fundamental": 0.613,
+        "sentiment": 0.1496,
+        "liquidity": 0.145,
+        "macro": 0.0475,
+        "regulatory": 0.0225,
+        "trust": 0.0225
+      },
+      "prior_weights": {
+        "fundamental": 0.4091,
+        "sentiment": 0.2273,
+        "liquidity": 0.1818,
+        "macro": 0.0909,
+        "regulatory": 0.0455,
+        "trust": 0.0455
+      },
+      "posterior_confidence": 0.743,
+      "feature_vector": {
+        "claim_count": 7.0,
+        "m_fundamental": 0.5654,
+        "m_liquidity": 0.2622,
+        "m_macro": 0.03,
+        "m_regulatory": 0.0,
+        "m_sentiment": 0.1424,
+        "m_trust": 0.0,
+        "max_severity": 0.98,
+        "mean_confidence": 0.65,
+        "trace_total": 1.0
+      },
+      "claim_count": 7,
+      "model_version": "v0.7-ridge",
+      "computed_at": "2026-06-09T03:17:00+00:00"
+    },
+    "nflx_2022q1_earnings": {
+      "case_id": "nflx_2022q1_earnings",
+      "domain": "earnings",
+      "outcome_effect": -0.32149,
+      "outcome_method": "synthetic_control",
+      "predicted_effect": 0.011475,
+      "predicted_direction": "up",
+      "actual_direction": "down",
+      "direction_match": false,
+      "confidence": 0.356,
+      "mechanism_weights": {
+        "fundamental": 0.5943,
+        "sentiment": 0.1583,
+        "liquidity": 0.221,
+        "macro": 0.0264,
+        "regulatory": 0.0,
+        "trust": 0.0
+      },
+      "dominant_mechanism": "fundamental",
+      "posterior_weights": {
+        "fundamental": 0.6124,
+        "sentiment": 0.1509,
+        "liquidity": 0.1432,
+        "macro": 0.048,
+        "regulatory": 0.0227,
+        "trust": 0.0227
+      },
+      "prior_weights": {
+        "fundamental": 0.4091,
+        "sentiment": 0.2273,
+        "liquidity": 0.1818,
+        "macro": 0.0909,
+        "regulatory": 0.0455,
+        "trust": 0.0455
+      },
+      "posterior_confidence": 0.743,
+      "feature_vector": {
+        "claim_count": 7.0,
+        "m_fundamental": 0.5708,
+        "m_liquidity": 0.255,
+        "m_macro": 0.03,
+        "m_regulatory": 0.0,
+        "m_sentiment": 0.1441,
+        "m_trust": 0.0,
+        "max_severity": 0.88,
+        "mean_confidence": 0.6478,
+        "trace_total": 0.9999
+      },
+      "claim_count": 7,
+      "model_version": "v0.7-ridge",
+      "computed_at": "2026-06-09T03:17:00+00:00"
+    },
+    "shop_2022q2_earnings": {
+      "case_id": "shop_2022q2_earnings",
+      "domain": "earnings",
+      "outcome_effect": -0.05807,
+      "outcome_method": "synthetic_control",
+      "predicted_effect": -0.017538,
+      "predicted_direction": "down",
+      "actual_direction": "down",
+      "direction_match": true,
+      "confidence": 0.364,
+      "mechanism_weights": {
+        "fundamental": 0.6385,
+        "sentiment": 0.166,
+        "liquidity": 0.1694,
+        "macro": 0.0261,
+        "regulatory": 0.0,
+        "trust": 0.0
+      },
+      "dominant_mechanism": "fundamental",
+      "posterior_weights": {
+        "fundamental": 0.6506,
+        "sentiment": 0.1427,
+        "liquidity": 0.1207,
+        "macro": 0.0442,
+        "regulatory": 0.0209,
+        "trust": 0.0209
+      },
+      "prior_weights": {
+        "fundamental": 0.4091,
+        "sentiment": 0.2273,
+        "liquidity": 0.1818,
+        "macro": 0.0909,
+        "regulatory": 0.0455,
+        "trust": 0.0455
+      },
+      "posterior_confidence": 0.616,
+      "feature_vector": {
+        "claim_count": 6.0,
+        "m_fundamental": 0.6198,
+        "m_liquidity": 0.1975,
+        "m_macro": 0.03,
+        "m_regulatory": 0.0,
+        "m_sentiment": 0.1527,
+        "m_trust": 0.0,
+        "max_severity": 0.98,
+        "mean_confidence": 0.65,
+        "trace_total": 1.0
+      },
+      "claim_count": 6,
+      "model_version": "v0.7-ridge",
+      "computed_at": "2026-06-09T03:17:00+00:00"
+    },
+    "snap_2022q3_earnings": {
+      "case_id": "snap_2022q3_earnings",
+      "domain": "earnings",
+      "outcome_effect": -0.274796,
+      "outcome_method": "synthetic_control",
+      "predicted_effect": 0.009245,
+      "predicted_direction": "up",
+      "actual_direction": "down",
+      "direction_match": false,
+      "confidence": 0.304,
+      "mechanism_weights": {
+        "fundamental": 0.5765,
+        "sentiment": 0.1664,
+        "liquidity": 0.225,
+        "macro": 0.0321,
+        "regulatory": 0.0,
+        "trust": 0.0
+      },
+      "dominant_mechanism": "fundamental",
+      "posterior_weights": {
+        "fundamental": 0.6036,
+        "sentiment": 0.155,
+        "liquidity": 0.1464,
+        "macro": 0.0491,
+        "regulatory": 0.023,
+        "trust": 0.023
+      },
+      "prior_weights": {
+        "fundamental": 0.4091,
+        "sentiment": 0.2273,
+        "liquidity": 0.1818,
+        "macro": 0.0909,
+        "regulatory": 0.0455,
+        "trust": 0.0455
+      },
+      "posterior_confidence": 0.739,
+      "feature_vector": {
+        "claim_count": 7.0,
+        "m_fundamental": 0.553,
+        "m_liquidity": 0.2593,
+        "m_macro": 0.0364,
+        "m_regulatory": 0.0,
+        "m_sentiment": 0.1513,
+        "m_trust": 0.0,
+        "max_severity": 0.9,
+        "mean_confidence": 0.6487,
+        "trace_total": 1.0
+      },
+      "claim_count": 7,
+      "model_version": "v0.7-ridge",
+      "computed_at": "2026-06-09T03:17:00+00:00"
+    }
+  },
+  "computed_at": "2026-06-09T03:17:00+00:00"
+}

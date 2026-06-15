@@ -1,0 +1,34 @@
+{
+  "event_id": "MDT_2020Q3_earnings",
+  "ticker": "MDT",
+  "event_date": "2020-07-20",
+  "fiscal_period": "2020Q3",
+  "atom_count": 4,
+  "text_length": 41350,
+  "summary_length": 12000,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\MDT_2020Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\MDT_2020Q3_earnings\\sec_8k.txt",
+  "filing_date": "2020-08-25",
+  "accession_number": "0001613103-20-000026",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1613103/000161310320000026/mdt-20200825.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001613103",
+  "window_days": 45,
+  "search_date_from": "2020-10-01",
+  "search_date_to": "2020-11-30",
+  "aligned_filing_date": "2020-08-25",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 2.46,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

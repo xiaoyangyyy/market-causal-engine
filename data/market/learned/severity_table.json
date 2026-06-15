@@ -1,0 +1,16 @@
+{
+  "by_kind": {
+    "E1": 0.025,
+    "E2": 0.04,
+    "earnings_miss": 0.85,
+    "guidance_cut": 0.88,
+    "short_seller_report": 0.82,
+    "macro_rate_shock": 0.45,
+    "cpi_surprise": 0.42,
+    "liquidity_dry_up": 0.72,
+    "viral_negative_news": 0.68,
+    "earnings": 0.025,
+    "macro": 0.4
+  },
+  "computed_at": "2026-06-09T10:23:53+00:00"
+}

@@ -1,0 +1,44 @@
+{
+  "event_id": "QCOM_2024Q3_earnings",
+  "ticker": "QCOM",
+  "event_date": "2024-07-22",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:08:34+00:00",
+  "accepted": [
+    {
+      "cause": "earnings miss",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.93,
+      "polarity": -1.0,
+      "evidence_span": "revenues 25 % 34 % Net income (loss",
+      "source_id": "QCOM2024Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "QCOM2024Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.98,
+      "span_score": 1.0,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "QCOM2024Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

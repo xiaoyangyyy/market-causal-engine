@@ -1,0 +1,25 @@
+{
+  "quality_eligible": 951,
+  "catalog_only_acc": 0.5941,
+  "catalog_only_n": 951,
+  "direction_holdout": 0.2827,
+  "direction_train": 0.1947,
+  "fit_samples": 951,
+  "llm_events": 1892,
+  "heuristic_events": 0,
+  "policy": {
+    "llm_only": true,
+    "min_accepted_claims": 2,
+    "min_claim_confidence": 0.5,
+    "min_claim_polarity": 0.1,
+    "min_claim_severity": 0.0,
+    "min_net_polarity": 0.08,
+    "exclude_boilerplate": true,
+    "exclude_generic_effects": true,
+    "exclude_atom_fallback": true,
+    "require_event_proposer": true,
+    "max_claims_per_event": 4
+  },
+  "inference": "domain_polarity_consensus",
+  "claims_refined": true
+}

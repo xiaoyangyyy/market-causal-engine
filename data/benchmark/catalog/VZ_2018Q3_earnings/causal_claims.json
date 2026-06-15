@@ -1,0 +1,69 @@
+{
+  "event_id": "VZ_2018Q3_earnings",
+  "ticker": "VZ",
+  "event_date": "2018-07-19",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:05:22+00:00",
+  "accepted": [
+    {
+      "cause": "Adjusted EPS increase to $1.20",
+      "effect": "Positive earnings surprise",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "On an adjusted basis (non-GAAP), second-quarter 2018 EPS was $1.20, compared with 96 cents in second-quarter 2017.",
+      "source_id": "VZ2018Q3_006",
+      "published_at": 0,
+      "atom_id": "VZ2018Q3_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.823,
+      "span_score": 1.0,
+      "severity_align": 0.292,
+      "mechanism_hint": 1.0,
+      "claim_id": "VZ2018Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Total consolidated revenue growth of 5.4 percent",
+      "effect": "Revenue beat expectations",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "• Total consolidated revenue growth of 5.4 percent year over year, or 2.6 percent on an adjusted basis (non-GAAP).",
+      "source_id": "VZ2018Q3_001",
+      "published_at": 0,
+      "atom_id": "VZ2018Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.848,
+      "span_score": 1.0,
+      "severity_align": 0.392,
+      "mechanism_hint": 1.0,
+      "claim_id": "VZ2018Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,87 @@
+{
+  "event_id": "MA_2016Q3_earnings",
+  "ticker": "MA",
+  "event_date": "2016-07-11",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T11:38:09+00:00",
+  "accepted": [
+    {
+      "cause": "Net revenue increased 14% on a currency-neutral basis",
+      "effect": "Revenue growth accelerates top-line valuation models",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "On a currency-neutral basis, net revenue increased 14% .",
+      "source_id": "MA2016Q3_004",
+      "published_at": 0,
+      "atom_id": "MA2016Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.814,
+      "span_score": 1.0,
+      "severity_align": 0.256,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MA2016Q3_C001"
+    },
+    {
+      "cause": "Second-quarter net income of $983 million including special item",
+      "effect": "EPS beat driven by special item inclusion",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Second -quarter net income of $983 million , including a special item, or $0.89 per diluted share",
+      "source_id": "MA2016Q3_000",
+      "published_at": 0,
+      "atom_id": "MA2016Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.843,
+      "span_score": 0.919,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MA2016Q3_C000"
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Earnings per diluted share up 8% on a currency-neutral basis",
+      "effect": "Currency-adjusted EPS growth supports earnings multiple expansion",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 0.8,
+      "evidence_span": "earnings per diluted share was $1.82 , up 5% , or 8% on a currency-neutral basis compared to the same period in 2015",
+      "source_id": "MA2016Q3_009",
+      "published_at": 0,
+      "atom_id": "MA2016Q3_009",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event"
+}

@@ -1,0 +1,34 @@
+{
+  "event_id": "BRK.B_2019Q4_earnings",
+  "ticker": "BRK.B",
+  "event_date": "2019-10-14",
+  "fiscal_period": "2019Q4",
+  "atom_count": 2,
+  "text_length": 16279,
+  "summary_length": 9915,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\BRK.B_2019Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\BRK.B_2019Q4_earnings\\sec_8k.txt",
+  "filing_date": "2019-11-05",
+  "accession_number": "0001193125-19-283594",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312519283594/d826077d8k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001067983",
+  "window_days": 45,
+  "search_date_from": "2020-01-01",
+  "search_date_to": "2020-02-29",
+  "aligned_filing_date": "2019-11-05",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.33,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

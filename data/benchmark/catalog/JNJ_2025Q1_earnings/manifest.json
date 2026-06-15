@@ -1,0 +1,34 @@
+{
+  "event_id": "JNJ_2025Q1_earnings",
+  "ticker": "JNJ",
+  "event_date": "2025-01-17",
+  "fiscal_period": "2025Q1",
+  "atom_count": 4,
+  "text_length": 67991,
+  "summary_length": 11995,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\JNJ_2025Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\JNJ_2025Q1_earnings\\sec_8k.txt",
+  "filing_date": "2025-01-22",
+  "accession_number": "0000200406-25-000003",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000003/jnj-20250122.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000200406",
+  "window_days": 45,
+  "search_date_from": "2025-04-01",
+  "search_date_to": "2025-05-31",
+  "aligned_filing_date": "2025-01-22",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -1.94,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

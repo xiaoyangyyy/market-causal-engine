@@ -1,0 +1,31 @@
+{
+  "event_id": "COST_2022Q3_earnings",
+  "ticker": "COST",
+  "event_date": "2022-07-19",
+  "fiscal_period": "2022Q3",
+  "atom_count": 1,
+  "text_length": 11811,
+  "summary_length": 3477,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\COST_2022Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\COST_2022Q3_earnings\\sec_8k.txt",
+  "filing_date": "2022-10-12",
+  "accession_number": "0001193125-22-261321",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/909832/000119312522261321/d329642d8k.htm",
+  "form": "8-K",
+  "search_date_from": "2022-10-01",
+  "search_date_to": "2022-11-30",
+  "aligned_filing_date": "2022-10-12",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -1.19,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

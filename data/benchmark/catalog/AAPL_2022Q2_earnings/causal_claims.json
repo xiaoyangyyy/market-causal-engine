@@ -1,0 +1,70 @@
+{
+  "event_id": "AAPL_2022Q2_earnings",
+  "ticker": "AAPL",
+  "event_date": "2022-04-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T11:57:06+00:00",
+  "accepted": [
+    {
+      "cause": "Revenue record of $97.3 billion",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "The Company posted a March quarter revenue record of $97.3 billion, up 9 percent year over year",
+      "source_id": "AAPL2022Q2_001",
+      "published_at": 0,
+      "atom_id": "AAPL2022Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.817,
+      "span_score": 0.979,
+      "severity_align": 0.313,
+      "mechanism_hint": 1.0,
+      "claim_id": "AAPL2022Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Earnings per diluted share of $1.52",
+      "effect": "Bullish sentiment on profitability",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "quarterly earnings per diluted share of $1.52",
+      "source_id": "AAPL2022Q2_001",
+      "published_at": 0,
+      "atom_id": "AAPL2022Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.804,
+      "span_score": 0.911,
+      "severity_align": 0.413,
+      "mechanism_hint": 1.0,
+      "claim_id": "AAPL2022Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

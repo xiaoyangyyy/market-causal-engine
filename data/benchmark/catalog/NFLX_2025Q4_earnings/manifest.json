@@ -1,0 +1,31 @@
+{
+  "event_id": "NFLX_2025Q4_earnings",
+  "ticker": "NFLX",
+  "event_date": "2025-10-20",
+  "fiscal_period": "2025Q4",
+  "atom_count": 5,
+  "text_length": 61669,
+  "summary_length": 5994,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\NFLX_2025Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\NFLX_2025Q4_earnings\\sec_8k.txt",
+  "filing_date": "2026-01-20",
+  "accession_number": "0001065280-26-000033",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000033/nflx-20260120.htm",
+  "form": "8-K",
+  "search_date_from": "2026-01-01",
+  "search_date_to": "2026-02-28",
+  "aligned_filing_date": "2026-01-20",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.84,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

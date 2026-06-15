@@ -1,0 +1,16 @@
+{
+  "event_id": "XOM_2017Q4_earnings",
+  "ticker": "XOM",
+  "event_date": "2017-10-12",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T14:16:54+00:00",
+  "accepted": [],
+  "rejected": [],
+  "claim_count": 0,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback_empty"
+}

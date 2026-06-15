@@ -1,0 +1,34 @@
+{
+  "event_id": "COIN_2025Q1_earnings",
+  "ticker": "COIN",
+  "event_date": "2025-01-22",
+  "fiscal_period": "2025Q1",
+  "atom_count": 39,
+  "text_length": 86668,
+  "summary_length": 1761,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\COIN_2025Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\COIN_2025Q1_earnings\\sec_8k.txt",
+  "filing_date": "2025-02-13",
+  "accession_number": "0001679788-25-000021",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978825000021/coin-20250213.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001679788",
+  "window_days": 45,
+  "search_date_from": "2025-04-01",
+  "search_date_to": "2025-05-31",
+  "aligned_filing_date": "2025-02-13",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 8.44,
+    "magnitude_bucket": "large"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

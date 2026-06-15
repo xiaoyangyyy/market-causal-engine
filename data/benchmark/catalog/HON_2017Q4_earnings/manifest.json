@@ -1,0 +1,34 @@
+{
+  "event_id": "HON_2017Q4_earnings",
+  "ticker": "HON",
+  "event_date": "2017-10-10",
+  "fiscal_period": "2017Q4",
+  "atom_count": 11,
+  "text_length": 30049,
+  "summary_length": 11997,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\HON_2017Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\HON_2017Q4_earnings\\sec_8k.txt",
+  "filing_date": "2017-10-20",
+  "accession_number": "0000930413-17-003584",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/773840/000093041317003584/c89546_8k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000773840",
+  "window_days": 45,
+  "search_date_from": "2018-01-01",
+  "search_date_to": "2018-02-28",
+  "aligned_filing_date": "2017-10-20",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.2,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

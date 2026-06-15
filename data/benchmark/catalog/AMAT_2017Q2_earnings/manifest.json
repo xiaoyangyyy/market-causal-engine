@@ -1,0 +1,31 @@
+{
+  "event_id": "AMAT_2017Q2_earnings",
+  "ticker": "AMAT",
+  "event_date": "2017-04-07",
+  "fiscal_period": "2017Q2",
+  "atom_count": 15,
+  "text_length": 21647,
+  "summary_length": 12000,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\AMAT_2017Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\AMAT_2017Q2_earnings\\sec_8k.txt",
+  "filing_date": "2017-08-17",
+  "accession_number": "0000006951-17-000022",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/6951/000000695117000022/q317earnings8-k.htm",
+  "form": "8-K",
+  "search_date_from": "2017-07-01",
+  "search_date_to": "2017-08-31",
+  "aligned_filing_date": "2017-08-17",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -3.01,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

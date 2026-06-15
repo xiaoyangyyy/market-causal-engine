@@ -1,0 +1,84 @@
+{
+  "event_id": "PG_2021Q3_earnings",
+  "ticker": "PG",
+  "event_date": "2021-07-16",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:48:32+00:00",
+  "accepted": [
+    {
+      "cause": "Diluted Net EPS increase of 11%",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Diluted Net EPS $5.50, +11%",
+      "source_id": "PG2021Q3_000",
+      "published_at": 0,
+      "atom_id": "PG2021Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.797,
+      "span_score": 1.0,
+      "severity_align": 0.188,
+      "mechanism_hint": 1.0,
+      "claim_id": "PG2021Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Core EPS growth of 11% and Net Sales increase of 7%",
+      "effect": "Positive market reaction expected",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "Core EPS $5.66, +11% Q4 '21: Net Sales +7%",
+      "source_id": "PG2021Q3_001",
+      "published_at": 0,
+      "atom_id": "PG2021Q3_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    },
+    {
+      "cause": "Organic Sales growth of 4% and Diluted EPS increase of 6%",
+      "effect": "Positive market reaction expected",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Organic Sales +4% Q4 '21: Diluted Net EPS $1.13, +6% versus prior year Reported EPS",
+      "source_id": "PG2021Q3_002",
+      "published_at": 0,
+      "atom_id": "PG2021Q3_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

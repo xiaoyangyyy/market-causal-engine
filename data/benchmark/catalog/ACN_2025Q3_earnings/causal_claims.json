@@ -1,0 +1,84 @@
+{
+  "event_id": "ACN_2025Q3_earnings",
+  "ticker": "ACN",
+  "event_date": "2025-07-15",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T13:32:36+00:00",
+  "accepted": [
+    {
+      "cause": "Adjusted EPS increase driven by higher revenue and lower tax rate",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Year over Year Increase in Diluted Earnings Per Share Third Quarter Fiscal 2024 Adjusted EPS $3.13 Higher revenue and operating results $0.32 Lower effective tax rate $0.07",
+      "source_id": "ACN2025Q3_015",
+      "published_at": 0,
+      "atom_id": "ACN2025Q3_015",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.815,
+      "span_score": 0.973,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "ACN2025Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Revenue exceeded adjusted guidance range",
+      "effect": "Bullish sentiment on top-line growth surprise",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 0.8,
+      "evidence_span": "Accenture's third quarter fiscal 2025 revenues were above this adjusted range.",
+      "source_id": "ACN2025Q3_005",
+      "published_at": 0,
+      "atom_id": "ACN2025Q3_005",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    },
+    {
+      "cause": "Foreign exchange impact adjusted revenue guidance range set",
+      "effect": "Neutral to slightly positive baseline expectation",
+      "mechanism": "fundamental",
+      "severity": 0.4,
+      "polarity": 0.2,
+      "evidence_span": "Adjusting for the actual foreign exchange impact, the company's guided range for quarterly revenues was approximately $17.0 billion to $17.6 billion.",
+      "source_id": "ACN2025Q3_004",
+      "published_at": 0,
+      "atom_id": "ACN2025Q3_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

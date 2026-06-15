@@ -1,0 +1,2 @@
+{"atom_id": "DHR2019Q4_000", "text": "above the Company’s previously announced guidance", "source": "8-K", "time": 0, "tags": ["earnings"], "metadata": {"severity": 0.052, "extracted_by": "beat_miss_consensus", "source_class": "primary_filing"}, "published_at": 0}
+{"atom_id": "DHR2019Q4_001", "text": "anticipated financial performance for the fourth quarter", "source": "guidance", "time": 0, "tags": ["earnings", "guidance"], "metadata": {"severity": 0.056, "extracted_by": "outlook_statement", "source_class": "primary_filing"}, "published_at": 0}

@@ -1,0 +1,70 @@
+{
+  "event_id": "WFC_2024Q3_earnings",
+  "ticker": "WFC",
+  "event_date": "2024-07-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:02:18+00:00",
+  "accepted": [
+    {
+      "cause": "Noninterest expense up $306",
+      "effect": "Operating Losses",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Noninterest expense up $306",
+      "source_id": "WFC2024Q3_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "WFC2024Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.821,
+      "span_score": 0.869,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "claim_id": "WFC2024Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.057,
+      "polarity": -1.0,
+      "evidence_span": "Total revenue 20,689 20,863 20,533 (174) 156 Net charge-of",
+      "source_id": "WFC2024Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "WFC2024Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "WFC2024Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

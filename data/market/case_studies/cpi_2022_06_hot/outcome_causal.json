@@ -1,0 +1,101 @@
+{
+  "treated": "SPY",
+  "event_date": "2022-07-13",
+  "event_window": [
+    0,
+    1
+  ],
+  "method": "synthetic_control",
+  "controls": [
+    "QQQ",
+    "IWM",
+    "DIA"
+  ],
+  "control_weights": {
+    "QQQ": 0.333965,
+    "IWM": 0.027177,
+    "DIA": 0.638858
+  },
+  "estimation_days": 120,
+  "event_window_dates": [
+    "2022-07-13",
+    "2022-07-14"
+  ],
+  "observed_return": -0.007667,
+  "counterfactual_return": -0.007167,
+  "effect": -0.000501,
+  "pre_fit_rmse": 0.00168,
+  "alternates": {
+    "abnormal_return": {
+      "method": "abnormal_return",
+      "benchmark": "SPY",
+      "event_window": [
+        0,
+        1
+      ],
+      "event_window_dates": [
+        "2022-07-13",
+        "2022-07-14"
+      ],
+      "observed_return": -0.007667,
+      "counterfactual_return": -0.007667,
+      "effect": 0.0,
+      "pre_fit_rmse": null
+    },
+    "factor_model": {
+      "method": "factor_model",
+      "factors": [
+        "QQQ",
+        "SPY"
+      ],
+      "factor_loadings": {
+        "alpha": -0.0,
+        "QQQ": 3e-06,
+        "SPY": 0.999995
+      },
+      "estimation_days": 120,
+      "event_window": [
+        0,
+        1
+      ],
+      "event_window_dates": [
+        "2022-07-13",
+        "2022-07-14"
+      ],
+      "observed_return": -0.007667,
+      "counterfactual_return": -0.007667,
+      "effect": -0.0,
+      "pre_fit_rmse": 0.0
+    },
+    "synthetic_control": {
+      "method": "synthetic_control",
+      "controls": [
+        "QQQ",
+        "IWM",
+        "DIA"
+      ],
+      "control_weights": {
+        "QQQ": 0.333965,
+        "IWM": 0.027177,
+        "DIA": 0.638858
+      },
+      "estimation_days": 120,
+      "event_window": [
+        0,
+        1
+      ],
+      "event_window_dates": [
+        "2022-07-13",
+        "2022-07-14"
+      ],
+      "observed_return": -0.007667,
+      "counterfactual_return": -0.007167,
+      "effect": -0.000501,
+      "pre_fit_rmse": 0.00168
+    }
+  },
+  "placebo_rank": 0.25,
+  "placebo_n": 8,
+  "computed_at": "2026-06-06T13:04:35+00:00",
+  "case_id": "cpi_2022_06_hot"
+}

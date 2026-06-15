@@ -1,0 +1,70 @@
+{
+  "event_id": "VRTX_2017Q3_earnings",
+  "ticker": "VRTX",
+  "event_date": "2017-07-06",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T02:47:48+00:00",
+  "accepted": [
+    {
+      "cause": "Total CF product revenues increased 21% year-over-year",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "TOTAL CF product revenues, net $ 514 $ 426 21%",
+      "source_id": "VRTX2017Q3_001",
+      "published_at": 0,
+      "atom_id": "VRTX2017Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.778,
+      "span_score": 0.883,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "VRTX2017Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "ORKAMBI product revenues grew 32% driven by global uptake and age expansion",
+      "effect": "Stronger than expected product performance",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "The increase in ORKAMBI revenues was primarily driven by the continued uptake in the medicine globally and additional uptake in people with CF ages 6 to 11 in the U.S.",
+      "source_id": "VRTX2017Q3_004",
+      "published_at": 0,
+      "atom_id": "VRTX2017Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.864,
+      "span_score": 1.0,
+      "severity_align": 0.456,
+      "mechanism_hint": 1.0,
+      "claim_id": "VRTX2017Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

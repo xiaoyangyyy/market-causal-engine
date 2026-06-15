@@ -26,8 +26,14 @@ NEGATIVE_TERMS = (
     "hawkish",
     "surprise hike",
     "hot cpi",
+    "decreased",
+    "fell",
+    "drop",
+    "unfavorable",
 )
-POSITIVE_TERMS = ("beat", "raised", "upgrade", "strong", "exceeded", "record")
+POSITIVE_TERMS = ("beat", "raised", "upgrade", "strong", "exceeded", "record", "growth", "increased", "surpassed")
+
+SEC_FILING_SOURCE_TYPES = ("sec_8k", "sec_filing", "sec_6k", "press_release")
 
 
 @dataclass(frozen=True)
@@ -50,27 +56,25 @@ def infer_tone(text: str) -> float:
     return max(-1.0, min(1.0, (pos - neg) / max(neg + pos, 1)))
 
 
-def infer_severity(text: str, base: float = 0.7) -> float:
-    lower = text.lower()
-    boost = 0.0
-    if any(w in lower for w in ("massive", "plunge", "crash", "fraud", "surprise")):
-        boost += 0.12
-    if re.search(r"\d{2,3}%", lower):
-        boost += 0.08
-    if "miss" in lower or "cut" in lower:
-        boost += 0.05
-    return round(min(0.98, base + boost), 3)
+def infer_severity(text: str, base: float = 0.7, *, event_kind: str = "", domain: str = "earnings") -> float:
+    try:
+        from market_causal_engine.learned.severity import estimate_severity
+
+        return estimate_severity(text=text, event_kind=event_kind, domain=domain, default=base)
+    except Exception:  # noqa: BLE001
+        return round(min(0.98, base), 3)
 
 
 EXTRACTION_RULES: list[ExtractionRule] = [
     ExtractionRule(
         "earnings_release",
-        ("sec_8k", "sec_filing", "press_release"),
+        SEC_FILING_SOURCE_TYPES,
         re.compile(
             r"(reports?\s+(?:q[1-4]|first|second|third|fourth).{0,40}(?:miss|beat|revenue|eps|subscriber|earnings))"
             r"|((?:revenue|eps|subscriber).{0,30}(?:miss|beat|decline|loss))"
             r"|(missing\s+wall\s+street\s+estimates)"
-            r"|(earnings\s+miss\s+relative\s+to)",
+            r"|(earnings\s+miss\s+relative\s+to)"
+            r"|(announced\s+(?:its\s+)?(?:financial\s+)?results\s+for\s+(?:the\s+)?(?:quarter|three|six|nine|fiscal))",
             re.I,
         ),
         ("earnings",),
@@ -79,8 +83,62 @@ EXTRACTION_RULES: list[ExtractionRule] = [
         {"miss_severity": 0.85},
     ),
     ExtractionRule(
+        "financial_results",
+        SEC_FILING_SOURCE_TYPES,
+        re.compile(
+            r"((?:total\s+)?revenue.{0,50}(?:was|were|of|reached|totaled|grew|increased|declined|decreased|rose|fell))"
+            r"|((?:net\s+(?:income|loss|earnings)).{0,40}(?:was|were|of|\$|totaled))"
+            r"|(((?:diluted\s+)?(?:eps|earnings\s+per\s+share)).{0,35}(?:was|were|of|\$))"
+            r"|((?:gross\s+(?:margin|profit)).{0,40}(?:was|were|of|\d))"
+            r"|((?:operating\s+(?:income|loss)).{0,40}(?:was|were|of|\$))",
+            re.I,
+        ),
+        ("earnings", "financials"),
+        "8-K",
+        0.78,
+    ),
+    ExtractionRule(
+        "beat_miss_consensus",
+        SEC_FILING_SOURCE_TYPES + ("transcript", "news"),
+        re.compile(
+            r"((?:exceeded|surpassed|beat|missed|below|above|ahead\s+of|short\s+of).{0,45}"
+            r"(?:expect|estimate|consensus|street|guidance|forecast))"
+            r"|((?:in\s+line\s+with|compared\s+to).{0,30}(?:expect|estimate|consensus))",
+            re.I,
+        ),
+        ("earnings",),
+        "8-K",
+        0.82,
+    ),
+    ExtractionRule(
+        "subscribers_members",
+        SEC_FILING_SOURCE_TYPES + ("transcript", "news"),
+        re.compile(
+            r"((?:paid\s+)?(?:members|subscribers|customers|merchants).{0,55}"
+            r"(?:million|loss|gain|grew|declined|decreased|increased|added|churn))"
+            r"|((?:member|subscriber).{0,30}(?:growth|loss|decline))",
+            re.I,
+        ),
+        ("earnings", "user_metrics"),
+        "8-K",
+        0.8,
+    ),
+    ExtractionRule(
+        "outlook_statement",
+        SEC_FILING_SOURCE_TYPES + ("transcript",),
+        re.compile(
+            r"((?:outlook|forecast|expect|anticipate|project).{0,60}"
+            r"(?:revenue|growth|quarter|year|earnings|margin|subscriber))"
+            r"|((?:for\s+(?:the\s+)?(?:full\s+)?(?:fiscal\s+)?year).{0,40}(?:expect|forecast|outlook))",
+            re.I,
+        ),
+        ("earnings", "guidance"),
+        "guidance",
+        0.76,
+    ),
+    ExtractionRule(
         "user_metric_decline",
-        ("sec_8k", "press_release", "transcript", "news"),
+        SEC_FILING_SOURCE_TYPES + ("transcript", "news"),
         re.compile(
             r"((?:daily\s+active\s+users?|dau|mau).{0,40}(?:declin|decreas|fell|drop))"
             r"|((?:users?).{0,30}declined\s+sequentially)",
@@ -92,7 +150,7 @@ EXTRACTION_RULES: list[ExtractionRule] = [
     ),
     ExtractionRule(
         "guidance_cut",
-        ("sec_8k", "sec_filing", "press_release", "transcript"),
+        SEC_FILING_SOURCE_TYPES + ("transcript",),
         re.compile(
             r"(lower(?:s|ed)?\s+(?:guidance|outlook|forecast|revenue|fy))"
             r"|(guidance.{0,20}cut)"
@@ -106,7 +164,7 @@ EXTRACTION_RULES: list[ExtractionRule] = [
     ),
     ExtractionRule(
         "ad_revenue_miss",
-        ("sec_8k", "press_release", "transcript"),
+        SEC_FILING_SOURCE_TYPES + ("transcript",),
         re.compile(
             r"(ad\s+revenue.{0,25}(?:miss|decline|slowdown|worse))"
             r"|(digital\s+ad.{0,30}(?:worse|weak|cut|slowdown))"
@@ -268,8 +326,13 @@ EXTRACTION_RULES: list[ExtractionRule] = [
 
 
 def split_sentences(text: str) -> list[str]:
-    parts = re.split(r"(?<=[.!?])\s+|\n+", text.strip())
-    return [p.strip() for p in parts if len(p.strip()) >= 30]
+    parts = re.split(r"(?<=[.!?])\s+|\n+|;\s+", text.strip())
+    return [p.strip() for p in parts if len(p.strip()) >= 20]
+
+
+def split_paragraphs(text: str) -> list[str]:
+    parts = re.split(r"\n{2,}|(?<=[.!?])\s+(?=[A-Z(])", text.strip())
+    return [p.strip() for p in parts if len(p.strip()) >= 35]
 
 
 def match_rules(text: str, source_type: str) -> list[tuple[ExtractionRule, re.Match[str]]]:

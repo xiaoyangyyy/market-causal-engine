@@ -1,0 +1,70 @@
+{
+  "event_id": "META_2021Q4_earnings",
+  "ticker": "META",
+  "event_date": "2021-10-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:52:57+00:00",
+  "accepted": [
+    {
+      "cause": "Net income $ 9,194",
+      "effect": "Stock price increase",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Net income $ 9,194 $ 7,846 $ 29,085 $",
+      "source_id": "META2021Q4_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "META2021Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.811,
+      "span_score": 1.0,
+      "severity_align": 0.244,
+      "mechanism_hint": 1.0,
+      "claim_id": "META2021Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.171,
+      "polarity": -1.0,
+      "evidence_span": "\"I'm excited about our roadmap, especially around creators, commerce, and helping to build the metaverse.\" Third Quarter 2021 Financial Highlights Three Months Ended September 30,",
+      "source_id": "META2021Q4_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "META2021Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.988,
+      "span_score": 0.978,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "META2021Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

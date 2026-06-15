@@ -1,0 +1,34 @@
+{
+  "event_id": "AMD_2017Q4_earnings",
+  "ticker": "AMD",
+  "event_date": "2017-10-06",
+  "fiscal_period": "2017Q4",
+  "atom_count": 1,
+  "text_length": 4597,
+  "summary_length": 1363,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\AMD_2017Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\AMD_2017Q4_earnings\\sec_8k.txt",
+  "filing_date": "2017-10-24",
+  "accession_number": "0000002488-17-000213",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248817000213/a20171024q317earnings8-k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000002488",
+  "window_days": 45,
+  "search_date_from": "2018-01-01",
+  "search_date_to": "2018-02-28",
+  "aligned_filing_date": "2017-10-24",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.06,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

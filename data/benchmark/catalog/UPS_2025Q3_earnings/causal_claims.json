@@ -1,0 +1,141 @@
+{
+  "event_id": "UPS_2025Q3_earnings",
+  "ticker": "UPS",
+  "event_date": "2025-07-21",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:36:13+00:00",
+  "accepted": [
+    {
+      "cause": "Non-GAAP Adjusted * Consolidated Operating Margin of 8.8%",
+      "effect": "Diluted EPS of $1.51",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Non-GAAP Adjusted * Consolidated Operating Margin of 8.8% • Diluted EPS of $1.51",
+      "source_id": "UPS2025Q3_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "UPS2025Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.868,
+      "span_score": 1.0,
+      "severity_align": 0.471,
+      "mechanism_hint": 1.0,
+      "claim_id": "UPS2025Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "expected decline in volume",
+      "effect": "Revenue declined 0.8%",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Revenue declined 0.8%, primarily driven by the expected decline in volume",
+      "source_id": "UPS2025Q3_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "UPS2025Q3_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.839,
+      "span_score": 0.902,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "claim_id": "UPS2025Q3_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Network Reconfiguration and Efficiency Reimagined Initiatives",
+      "effect": "Full-Year Savings Target",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "On Track With Full-Year Savings Target From Network Reconfiguration and Efficiency Reimagined Initiatives",
+      "source_id": "UPS2025Q3_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "UPS2025Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.808,
+      "span_score": 0.936,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "UPS2025Q3_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.054,
+      "polarity": -1.0,
+      "evidence_span": "Revenues of $21.2B • Consolidated Operating Margin of",
+      "source_id": "UPS2025Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "UPS2025Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "UPS2025Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "diluted earnings per share were $",
+      "source_id": "UPS2025Q3_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "UPS2025Q3_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

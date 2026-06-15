@@ -1,0 +1,114 @@
+{
+  "event_id": "MS_2020Q4_earnings",
+  "ticker": "MS",
+  "event_date": "2020-10-14",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T10:56:29+00:00",
+  "accepted": [
+    {
+      "cause": "Investment Management net revenues increased by 38%",
+      "effect": "Positive earnings surprise and revenue growth",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Investment Management net revenues increased by 38% driven by record asset management fees and AUM.",
+      "source_id": "MS2020Q4_002",
+      "published_at": 0,
+      "atom_id": "MS2020Q4_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.808,
+      "span_score": 1.0,
+      "severity_align": 0.234,
+      "mechanism_hint": 1.0,
+      "claim_id": "MS2020Q4_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Equity underwriting revenues increased significantly",
+      "effect": "Higher revenue from capital markets activity",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "Equity underwriting revenues increased significantly from a year ago on higher revenues from IPOs, follow-on offerings and blocks",
+      "source_id": "MS2020Q4_005",
+      "published_at": 0,
+      "atom_id": "MS2020Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.842,
+      "span_score": 0.994,
+      "severity_align": 0.383,
+      "mechanism_hint": 1.0,
+      "claim_id": "MS2020Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Fixed income underwriting revenues decreased",
+      "effect": "Revenue decline due to muted M&A financings",
+      "mechanism": "fundamental",
+      "severity": 0.4,
+      "polarity": -1.0,
+      "evidence_span": "Fixed income underwriting revenues decreased from a year ago due to declines in loan issuances as large event-driven and M&A financings were muted.",
+      "source_id": "MS2020Q4_006",
+      "published_at": 0,
+      "atom_id": "MS2020Q4_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.929,
+      "span_score": 1.0,
+      "severity_align": 0.714,
+      "mechanism_hint": 1.0,
+      "claim_id": "MS2020Q4_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Sales and Trading net revenues up 20%",
+      "effect": "Strong performance across products and geographies",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 0.85,
+      "evidence_span": "Sales and Trading net revenues up 20% from a year ago: Equity sales and trading net revenues increased from a year ago reflecting strong performance",
+      "source_id": "MS2020Q4_007",
+      "published_at": 0,
+      "atom_id": "MS2020Q4_007",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,31 @@
+{
+  "event_id": "AMD_2025Q3_earnings",
+  "ticker": "AMD",
+  "event_date": "2025-07-22",
+  "fiscal_period": "2025Q3",
+  "atom_count": 17,
+  "text_length": 29909,
+  "summary_length": 2873,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\AMD_2025Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\AMD_2025Q3_earnings\\sec_8k.txt",
+  "filing_date": "2025-11-04",
+  "accession_number": "0000002488-25-000163",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248825000163/amd-20251104.htm",
+  "form": "8-K",
+  "search_date_from": "2025-10-01",
+  "search_date_to": "2025-11-30",
+  "aligned_filing_date": "2025-11-04",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -3.7,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

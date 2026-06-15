@@ -1,0 +1,71 @@
+{
+  "event_id": "MSFT_2019Q1_earnings",
+  "ticker": "MSFT",
+  "event_date": "2019-01-24",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:12:16+00:00",
+  "accepted": [
+    {
+      "cause": "Revenue growth of 13% in Productivity and Business Processes",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Revenue in Productivity and Business Processes was $10.1 billion and increased 13% (up 13% in constant currency)",
+      "source_id": "MSFT2019Q1_002",
+      "published_at": 0,
+      "atom_id": "MSFT2019Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.792,
+      "span_score": 0.93,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "MSFT2019Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Total revenue increase to $32.5 billion",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "Revenue was $32.5 billion and increased",
+      "source_id": "MSFT2019Q1_000",
+      "published_at": 0,
+      "atom_id": "MSFT2019Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.824,
+      "span_score": 1.0,
+      "severity_align": 0.296,
+      "mechanism_hint": 1.0,
+      "claim_id": "MSFT2019Q1_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

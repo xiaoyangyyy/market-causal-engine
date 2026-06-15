@@ -1,0 +1,31 @@
+{
+  "event_id": "CRM_2020Q2_earnings",
+  "ticker": "CRM",
+  "event_date": "2020-04-23",
+  "fiscal_period": "2020Q2",
+  "atom_count": 25,
+  "text_length": 49565,
+  "summary_length": 856,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\CRM_2020Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\CRM_2020Q2_earnings\\sec_8k.txt",
+  "filing_date": "2020-08-25",
+  "accession_number": "0001108524-20-000038",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852420000038/crm-20200825.htm",
+  "form": "8-K",
+  "search_date_from": "2020-07-01",
+  "search_date_to": "2020-08-31",
+  "aligned_filing_date": "2020-08-25",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 3.64,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

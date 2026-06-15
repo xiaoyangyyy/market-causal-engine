@@ -1,0 +1,36 @@
+{
+  "event_id": "DIS_2019Q1_earnings",
+  "ticker": "DIS",
+  "event_date": "2019-01-16",
+  "fiscal_period": "2019Q1",
+  "atom_count": 26,
+  "text_length": 36927,
+  "summary_length": 11995,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\DIS_2019Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\DIS_2019Q1_earnings\\sec_8k.txt",
+  "filing_date": "2019-05-08",
+  "accession_number": "0001744489-19-000097",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1744489/000174448919000097/fy2019_q2x8kxcover.htm",
+  "form": "8-K",
+  "fetch_strategy": "fiscal_padded",
+  "cik": "0001744489",
+  "date_from": "2019-03-11",
+  "date_to": "2019-06-21",
+  "window_days": 7,
+  "search_date_from": "2019-04-01",
+  "search_date_to": "2019-05-31",
+  "aligned_filing_date": "2019-05-08",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.16,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

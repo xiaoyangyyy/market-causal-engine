@@ -1,0 +1,71 @@
+{
+  "event_id": "SNPS_2018Q2_earnings",
+  "ticker": "SNPS",
+  "event_date": "2018-04-19",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:33:19+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.171,
+      "polarity": -1.0,
+      "evidence_span": "650-584-6454 simone@synopsys.com Synopsys Posts Financial Results for Second Quarter Fiscal Year 2018 Q2 2018 Financial Highlights • Revenue: $776.8 million • GAAP earnings per sha",
+      "source_id": "SNPS2018Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "SNPS2018Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.997,
+      "span_score": 0.995,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNPS2018Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.057,
+      "polarity": -1.0,
+      "evidence_span": "Total revenue 776,836 680,069 1,546,262 1,332,855 Cost of",
+      "source_id": "SNPS2018Q2_006",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "SNPS2018Q2_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNPS2018Q2_C003",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

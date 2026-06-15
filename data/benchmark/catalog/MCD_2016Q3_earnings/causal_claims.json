@@ -1,0 +1,165 @@
+{
+  "event_id": "MCD_2016Q3_earnings",
+  "ticker": "MCD",
+  "event_date": "2016-07-06",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T11:35:29+00:00",
+  "accepted": [
+    {
+      "cause": "Revenues decreased",
+      "effect": "earnings estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Revenues: Revenues decreased",
+      "source_id": "MCD2016Q3_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MCD2016Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.811,
+      "span_score": 1.0,
+      "severity_align": 0.239,
+      "mechanism_hint": 1.0,
+      "claim_id": "MCD2016Q3_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "lack of specific guidance",
+      "effect": "guidance change",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "While the Company does not provide specific guidance on earnings",
+      "source_id": "MCD2016Q3_014",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MCD2016Q3_014",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.883,
+      "span_score": 1.0,
+      "severity_align": 0.566,
+      "mechanism_hint": 1.0,
+      "claim_id": "MCD2016Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Earnings per share-diluted $ 1.25",
+      "effect": "estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "Earnings per share-diluted $ 1.25 $ 1.26",
+      "source_id": "MCD2016Q3_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MCD2016Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.879,
+      "span_score": 1.0,
+      "severity_align": 0.548,
+      "mechanism_hint": 1.0,
+      "claim_id": "MCD2016Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "revenue based on a percentage of",
+      "effect": "margin shift",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "revenue based on a percentage of",
+      "source_id": "MCD2016Q3_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MCD2016Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.877,
+      "span_score": 1.0,
+      "severity_align": 0.541,
+      "mechanism_hint": 1.0,
+      "claim_id": "MCD2016Q3_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "earnings miss",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.128,
+      "polarity": -1.0,
+      "evidence_span": "Revenues decreased for the quarter and were",
+      "source_id": "MCD2016Q3_004",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "MCD2016Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.96,
+      "span_score": 1.0,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "MCD2016Q3_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "MCD2016Q3_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MCD2016Q3_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 5,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback"
+}

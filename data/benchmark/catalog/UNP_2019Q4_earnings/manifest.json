@@ -1,0 +1,31 @@
+{
+  "event_id": "UNP_2019Q4_earnings",
+  "ticker": "UNP",
+  "event_date": "2019-10-21",
+  "fiscal_period": "2019Q4",
+  "atom_count": 9,
+  "text_length": 30854,
+  "summary_length": 11997,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\UNP_2019Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\UNP_2019Q4_earnings\\sec_8k.txt",
+  "filing_date": "2020-01-23",
+  "accession_number": "0000100885-20-000035",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/100885/000010088520000035/unp-20200123x8k.htm",
+  "form": "8-K",
+  "search_date_from": "2020-01-01",
+  "search_date_to": "2020-02-29",
+  "aligned_filing_date": "2020-01-23",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 3.46,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "event_id": "MCD_2017Q4_earnings",
+  "ticker": "MCD",
+  "event_date": "2017-10-17",
+  "fiscal_period": "2017Q4",
+  "atom_count": 17,
+  "text_length": 79977,
+  "summary_length": 11993,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\MCD_2017Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\MCD_2017Q4_earnings\\sec_8k.txt",
+  "filing_date": "2017-10-24",
+  "accession_number": "0000063908-17-000046",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/63908/000006390817000046/a8-kcoverexhibitlistingand.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000063908",
+  "window_days": 45,
+  "search_date_from": "2018-01-01",
+  "search_date_to": "2018-02-28",
+  "aligned_filing_date": "2017-10-24",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": 0.33,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

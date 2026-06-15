@@ -1,0 +1,34 @@
+{
+  "event_id": "SPGI_2025Q3_earnings",
+  "ticker": "SPGI",
+  "event_date": "2025-07-08",
+  "fiscal_period": "2025Q3",
+  "atom_count": 25,
+  "text_length": 51828,
+  "summary_length": 846,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\SPGI_2025Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\SPGI_2025Q3_earnings\\sec_8k.txt",
+  "filing_date": "2025-07-31",
+  "accession_number": "0000064040-25-000143",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/64040/000006404025000143/spgi-20250731.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000064040",
+  "window_days": 45,
+  "search_date_from": "2025-10-01",
+  "search_date_to": "2025-11-30",
+  "aligned_filing_date": "2025-07-31",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 4.11,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

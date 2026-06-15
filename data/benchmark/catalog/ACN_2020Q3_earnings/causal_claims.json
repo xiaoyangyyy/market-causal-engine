@@ -1,0 +1,89 @@
+{
+  "event_id": "ACN_2020Q3_earnings",
+  "ticker": "ACN",
+  "event_date": "2020-07-10",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T02:39:09+00:00",
+  "accepted": [
+    {
+      "cause": "Earnings per share realization",
+      "effect": "Investor confidence in profitability metrics",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "Diluted earnings per share were $1.90, compared with $",
+      "source_id": "ACN2020Q3_005",
+      "published_at": 0,
+      "atom_id": "ACN2020Q3_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.889,
+      "span_score": 1.0,
+      "severity_align": 0.555,
+      "mechanism_hint": 1.0,
+      "claim_id": "ACN2020Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Revenue decline in US market",
+      "effect": "Negative pressure on stock price due to regional contraction",
+      "mechanism": "fundamental",
+      "severity": 0.4,
+      "polarity": -1.0,
+      "evidence_span": "Revenues are $11.0 billion, a 1% decrease in U.S.",
+      "source_id": "ACN2020Q3_000",
+      "published_at": 0,
+      "atom_id": "ACN2020Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.883,
+      "span_score": 0.92,
+      "severity_align": 0.709,
+      "mechanism_hint": 1.0,
+      "claim_id": "ACN2020Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Revenue guidance range adjustment",
+      "effect": "Positive market reaction to FX-adjusted revenue outlook",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": 0.4,
+      "evidence_span": "Adjusting for the actual foreign-exchange impact, the company's guided range for quarterly revenues was approximately $10.65 billion to $11.05 billion.",
+      "source_id": "ACN2020Q3_008",
+      "published_at": 0,
+      "atom_id": "ACN2020Q3_008",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

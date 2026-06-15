@@ -1,0 +1,141 @@
+{
+  "event_id": "VZ_2019Q1_earnings",
+  "ticker": "VZ",
+  "event_date": "2019-01-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:48:22+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.171,
+      "polarity": -1.0,
+      "evidence_span": "Ended 12/31/18 Operating Income $ 7,436 Add Depreciation and amortization expense 2,395 Segment EBITDA $ 9,831 Total operating revenues $ 24,269 Segment EBITDA Margin 40.5 % (1) Am",
+      "source_id": "VZ2019Q1_052",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "VZ2019Q1_052",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.988,
+      "span_score": 0.979,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "VZ2019Q1_C002",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "reported loss",
+      "effect": "profitability concern",
+      "mechanism": "fundamental",
+      "severity": 0.251,
+      "polarity": -1.0,
+      "evidence_span": "Ended 12/31/18 Operating Loss $ (328 ) Add Depreciation and amortization expense 1,571 Segment EBITDA $ 1,243 Total operating revenues $ 7,353 Segment EBITDA Margin",
+      "source_id": "VZ2019Q1_053",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "VZ2019Q1_053",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.962,
+      "span_score": 0.967,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "VZ2019Q1_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "revenue growth",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.181,
+      "polarity": 1.0,
+      "evidence_span": "• Service revenue growth of 1.9 percent year over year, excluding the impact of the revenue recognition standard adopted on Jan.",
+      "source_id": "VZ2019Q1_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "VZ2019Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.98,
+      "span_score": 1.0,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "VZ2019Q1_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.047,
+      "polarity": -1.0,
+      "evidence_span": "earnings per share (EPS), compared with $",
+      "source_id": "VZ2019Q1_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "VZ2019Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "VZ2019Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "revenue recognition standard",
+      "effect": "segment EBITDA margin",
+      "mechanism": "regulatory",
+      "severity": 0.5,
+      "polarity": 0.0,
+      "evidence_span": "revenue recognition standard, segment EBITDA margin was",
+      "source_id": "VZ2019Q1_034",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "VZ2019Q1_034",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "mechanism_not_allowed_for_domain:regulatory:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

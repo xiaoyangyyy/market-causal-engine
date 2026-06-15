@@ -1,0 +1,69 @@
+{
+  "event_id": "PANW_2019Q1_earnings",
+  "ticker": "PANW",
+  "event_date": "2019-01-08",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T08:59:14+00:00",
+  "accepted": [
+    {
+      "cause": "Earnings per share and operating margin expansion",
+      "effect": "Improved bottom-line profitability",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "we expanded both GAAP and non-GAAP earnings per share and operating margin",
+      "source_id": "PANW2019Q1_005",
+      "published_at": 0,
+      "atom_id": "PANW2019Q1_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.764,
+      "span_score": 0.903,
+      "severity_align": 0.271,
+      "mechanism_hint": 1.0,
+      "claim_id": "PANW2019Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Product and subscription revenue growth",
+      "effect": "Increased top-line performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "both product and subscription revenue increased by more than 30 percent year over year",
+      "source_id": "PANW2019Q1_005",
+      "published_at": 0,
+      "atom_id": "PANW2019Q1_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.794,
+      "span_score": 0.911,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "PANW2019Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

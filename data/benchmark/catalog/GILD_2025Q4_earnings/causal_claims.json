@@ -1,0 +1,91 @@
+{
+  "event_id": "GILD_2025Q4_earnings",
+  "ticker": "GILD",
+  "event_date": "2025-10-07",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T13:37:51+00:00",
+  "accepted": [
+    {
+      "cause": "Non-GAAP diluted EPS beat",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Non-GAAP diluted EPS of $2.47 in the third quarter 2025 compared to $2.02 in the same period in 2024",
+      "source_id": "GILD2025Q4_003",
+      "published_at": 0,
+      "atom_id": "GILD2025Q4_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.809,
+      "span_score": 1.0,
+      "severity_align": 0.236,
+      "mechanism_hint": 1.0,
+      "claim_id": "GILD2025Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Royalty revenue increase driven by one-time IP sale",
+      "effect": "Temporary revenue boost masking core growth",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": 1.0,
+      "evidence_span": "Total third quarter 2025 royalty, contract and other revenues increased by approximately $400 million compared to the same period in 2024, primarily driven by revenue related to a previous sale of intellectual property not expected to reoccur",
+      "source_id": "GILD2025Q4_001",
+      "published_at": 0,
+      "atom_id": "GILD2025Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.893,
+      "span_score": 1.0,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "claim_id": "GILD2025Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Full year guidance uncertainty due to Veklury and IRA",
+      "effect": "Increased investor risk perception",
+      "mechanism": "regulatory",
+      "severity": 0.7,
+      "polarity": -0.4,
+      "evidence_span": "Gilead's ability to achieve its full year 2025 financial guidance, including as a result of the uncertainty of the amount and timing of Veklury revenues, the impact of the Inflation Reduction Act",
+      "source_id": "GILD2025Q4_007",
+      "published_at": 0,
+      "atom_id": "GILD2025Q4_007",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:regulatory:earnings"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,70 @@
+{
+  "event_id": "GOOGL_2018Q3_earnings",
+  "ticker": "GOOGL",
+  "event_date": "2018-07-16",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T08:37:00+00:00",
+  "accepted": [
+    {
+      "cause": "Revenue growth of 26% year-over-year",
+      "effect": "estimate upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "We delivered another quarter of very strong performance, with revenues of $32.7 billion, up 26% versus the second quarter of 2017",
+      "source_id": "GOOGL2018Q3_001",
+      "published_at": 0,
+      "atom_id": "GOOGL2018Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.819,
+      "span_score": 1.0,
+      "severity_align": 0.276,
+      "mechanism_hint": 1.0,
+      "claim_id": "GOOGL2018Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Operating income increase to $4,132 million",
+      "effect": "Improved profitability driving stock value",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Operating income $4,132 $2,807 $6,868 $",
+      "source_id": "GOOGL2018Q3_002",
+      "published_at": 0,
+      "atom_id": "GOOGL2018Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.824,
+      "span_score": 1.0,
+      "severity_align": 0.296,
+      "mechanism_hint": 1.0,
+      "claim_id": "GOOGL2018Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

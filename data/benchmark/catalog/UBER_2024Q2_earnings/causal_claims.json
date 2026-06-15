@@ -1,0 +1,44 @@
+{
+  "event_id": "UBER_2024Q2_earnings",
+  "ticker": "UBER",
+  "event_date": "2024-04-15",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T04:22:20+00:00",
+  "accepted": [
+    {
+      "cause": "Freight Revenue decline",
+      "effect": "Segment revenue contraction",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Freight Revenue declined 8% YoY and was flat QoQ",
+      "source_id": "UBER2024Q2_004",
+      "published_at": 0,
+      "atom_id": "UBER2024Q2_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.848,
+      "span_score": 0.962,
+      "severity_align": 0.475,
+      "mechanism_hint": 1.0,
+      "claim_id": "UBER2024Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

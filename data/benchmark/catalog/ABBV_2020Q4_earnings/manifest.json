@@ -1,0 +1,31 @@
+{
+  "event_id": "ABBV_2020Q4_earnings",
+  "ticker": "ABBV",
+  "event_date": "2020-10-06",
+  "fiscal_period": "2020Q4",
+  "atom_count": 36,
+  "text_length": 49010,
+  "summary_length": 11993,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\ABBV_2020Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\ABBV_2020Q4_earnings\\sec_8k.txt",
+  "filing_date": "2021-02-03",
+  "accession_number": "0001551152-21-000003",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115221000003/abbv-20210203.htm",
+  "form": "8-K",
+  "search_date_from": "2021-01-01",
+  "search_date_to": "2021-02-28",
+  "aligned_filing_date": "2021-02-03",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 3.36,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

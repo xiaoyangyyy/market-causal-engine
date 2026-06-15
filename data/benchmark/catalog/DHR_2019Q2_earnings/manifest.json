@@ -1,0 +1,34 @@
+{
+  "event_id": "DHR_2019Q2_earnings",
+  "ticker": "DHR",
+  "event_date": "2019-04-10",
+  "fiscal_period": "2019Q2",
+  "atom_count": 18,
+  "text_length": 30538,
+  "summary_length": 11989,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\DHR_2019Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\DHR_2019Q2_earnings\\sec_8k.txt",
+  "filing_date": "2019-04-18",
+  "accession_number": "0000313616-19-000070",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/313616/000031361619000070/dhr-2019418x8k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000313616",
+  "window_days": 45,
+  "search_date_from": "2019-07-01",
+  "search_date_to": "2019-08-31",
+  "aligned_filing_date": "2019-04-18",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.51,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 5,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

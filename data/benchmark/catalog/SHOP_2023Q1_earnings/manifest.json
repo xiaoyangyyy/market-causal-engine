@@ -1,0 +1,31 @@
+{
+  "event_id": "SHOP_2023Q1_earnings",
+  "ticker": "SHOP",
+  "event_date": "2023-01-05",
+  "fiscal_period": "2023Q1",
+  "atom_count": 34,
+  "text_length": 120034,
+  "summary_length": 11994,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\SHOP_2023Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\SHOP_2023Q1_earnings\\sec_8k.txt",
+  "filing_date": "2023-05-26",
+  "accession_number": "0001594805-23-000029",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1594805/000159480523000029/form6k-2023annualreport.htm",
+  "form": "6-K",
+  "search_date_from": "2023-04-01",
+  "search_date_to": "2023-05-31",
+  "aligned_filing_date": "2023-05-26",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 2.69,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "event_id": "MSFT_2022Q1_earnings",
+  "ticker": "MSFT",
+  "event_date": "2022-01-24",
+  "fiscal_period": "2022Q1",
+  "atom_count": 6,
+  "text_length": 26649,
+  "summary_length": 11996,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\MSFT_2022Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\MSFT_2022Q1_earnings\\sec_8k.txt",
+  "filing_date": "2022-01-25",
+  "accession_number": "0001193125-22-017041",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312522017041/d299919d8k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000789019",
+  "window_days": 45,
+  "search_date_from": "2022-04-01",
+  "search_date_to": "2022-05-31",
+  "aligned_filing_date": "2022-01-25",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -2.66,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 5,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

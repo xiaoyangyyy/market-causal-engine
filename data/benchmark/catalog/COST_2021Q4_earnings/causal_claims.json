@@ -1,0 +1,70 @@
+{
+  "event_id": "COST_2021Q4_earnings",
+  "ticker": "COST",
+  "event_date": "2021-10-14",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:56:15+00:00",
+  "accepted": [
+    {
+      "cause": "NET INCOME ATTRIBUTABLE TO COSTCO",
+      "effect": "stock price increase",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "NET INCOME ATTRIBUTABLE TO COSTCO $ 1,670 $ 1,389",
+      "source_id": "COST2021Q4_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "COST2021Q4_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.813,
+      "span_score": 1.0,
+      "severity_align": 0.253,
+      "mechanism_hint": 1.0,
+      "claim_id": "COST2021Q4_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.046,
+      "polarity": -1.0,
+      "evidence_span": "Net income for the fourth quarter was $",
+      "source_id": "COST2021Q4_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "COST2021Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "COST2021Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

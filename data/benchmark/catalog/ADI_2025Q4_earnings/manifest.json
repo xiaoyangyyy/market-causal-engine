@@ -1,0 +1,31 @@
+{
+  "event_id": "ADI_2025Q4_earnings",
+  "ticker": "ADI",
+  "event_date": "2025-10-07",
+  "fiscal_period": "2025Q4",
+  "atom_count": 14,
+  "text_length": 33167,
+  "summary_length": 11991,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\ADI_2025Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\ADI_2025Q4_earnings\\sec_8k.txt",
+  "filing_date": "2026-02-18",
+  "accession_number": "0000006281-26-000015",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/6281/000000628126000015/adi-20260217.htm",
+  "form": "8-K",
+  "search_date_from": "2026-01-01",
+  "search_date_to": "2026-02-28",
+  "aligned_filing_date": "2026-02-18",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 2.63,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

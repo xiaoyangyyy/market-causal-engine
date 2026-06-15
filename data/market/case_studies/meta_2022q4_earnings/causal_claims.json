@@ -1,0 +1,196 @@
+{
+  "case_id": "meta_2022q4_earnings",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": false,
+  "computed_at": "2026-06-09T03:07:55+00:00",
+  "accepted": [
+    {
+      "cause": "earnings miss",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "evidence_span": "revenue of $33.67 billion, miss",
+      "source_id": "META22Q4_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "META22Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "META_2022Q4__C000"
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "downside pressure",
+      "mechanism": "fundamental",
+      "severity": 0.82,
+      "evidence_span": "Daily active users across the Facebook family declin",
+      "source_id": "META22Q4_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "META22Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "META_2022Q4__C001"
+    },
+    {
+      "cause": "price move",
+      "effect": "momentum feedback",
+      "mechanism": "fundamental",
+      "severity": 0.98,
+      "evidence_span": "shares plunge 26%",
+      "source_id": "META22Q4_006",
+      "published_at": 10,
+      "proposer": "heuristic",
+      "atom_id": "META22Q4_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "META_2022Q4__C002"
+    },
+    {
+      "cause": "options/liquidity stress",
+      "effect": "forced de-risking",
+      "mechanism": "liquidity",
+      "severity": 0.72,
+      "evidence_span": "Put option volume spikes as volatility surge",
+      "source_id": "META22Q4_007",
+      "published_at": 18,
+      "proposer": "heuristic",
+      "atom_id": "META22Q4_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "META_2022Q4__C003"
+    },
+    {
+      "cause": "management commentary",
+      "effect": "narrative shift",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "evidence_span": "Management stated that advertisers in verticals such as e-commerce and consumer goods reduced budgets faster than expected.",
+      "source_id": "META22Q4_003",
+      "published_at": 50,
+      "proposer": "heuristic",
+      "atom_id": "META22Q4_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "META_2022Q4__C004"
+    },
+    {
+      "cause": "guidance reduction",
+      "effect": "forward earnings revision",
+      "mechanism": "fundamental",
+      "severity": 0.88,
+      "evidence_span": "expects Q1 revenue to decline",
+      "source_id": "META22Q4_004",
+      "published_at": 50,
+      "proposer": "heuristic",
+      "atom_id": "META22Q4_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "META_2022Q4__C005"
+    },
+    {
+      "cause": "analyst downgrade",
+      "effect": "sentiment deterioration",
+      "mechanism": "sentiment",
+      "severity": 0.75,
+      "evidence_span": "downgrades Meta from Overweight to",
+      "source_id": "META22Q4_008",
+      "published_at": 85,
+      "proposer": "heuristic",
+      "atom_id": "META22Q4_008",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "META_2022Q4__C006"
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "regulatory scrutiny",
+      "effect": "regulatory overhang",
+      "mechanism": "regulatory",
+      "severity": 0.6,
+      "evidence_span": "sector ETF decline",
+      "source_id": "META22Q4_009",
+      "published_at": 90,
+      "proposer": "heuristic",
+      "atom_id": "META22Q4_009",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "mechanism_not_allowed_for_domain:regulatory:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "market-relevant disclosure",
+      "effect": "price sensitivity",
+      "mechanism": "fundamental",
+      "severity": 0.65,
+      "evidence_span": "Post-mortem: Meta two-day decline exceeded 30 percent",
+      "source_id": "META22Q4_010",
+      "published_at": 2880,
+      "proposer": "heuristic",
+      "atom_id": "META22Q4_010",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "lookahead_violation"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 7,
+  "rejected_count": 2
+}

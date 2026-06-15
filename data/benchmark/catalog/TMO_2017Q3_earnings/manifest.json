@@ -1,0 +1,34 @@
+{
+  "event_id": "TMO_2017Q3_earnings",
+  "ticker": "TMO",
+  "event_date": "2017-07-05",
+  "fiscal_period": "2017Q3",
+  "atom_count": 19,
+  "text_length": 36910,
+  "summary_length": 11993,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\TMO_2017Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\TMO_2017Q3_earnings\\sec_8k.txt",
+  "filing_date": "2017-07-26",
+  "accession_number": "0000097745-17-000038",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/97745/000009774517000038/q217earnings8k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000097745",
+  "window_days": 45,
+  "search_date_from": "2017-10-01",
+  "search_date_to": "2017-11-30",
+  "aligned_filing_date": "2017-07-26",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -2.81,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

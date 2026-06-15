@@ -1,0 +1,64 @@
+{
+  "event_id": "UNP_2016Q4_earnings",
+  "ticker": "UNP",
+  "event_date": "2016-10-24",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T12:41:23+00:00",
+  "accepted": [
+    {
+      "cause": "Quarterly freight revenue decreased 7 percent due to volume declines and lower fuel surcharge revenue",
+      "effect": "Bearish sentiment on revenue growth",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "Quarterly freight revenue decreased 7 percent compared to the third quarter 2015, as volume declines and lower fuel surcharge revenue more than offset core pricing gains",
+      "source_id": "UNP2016Q4_005",
+      "published_at": 0,
+      "atom_id": "UNP2016Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.86,
+      "span_score": 1.0,
+      "severity_align": 0.438,
+      "mechanism_hint": 1.0,
+      "claim_id": "UNP2016Q4_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Diluted earnings per share of $1.36 declined 9 percent",
+      "effect": "Negative market reaction to earnings miss",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -0.8,
+      "evidence_span": "Diluted earnings per share of $1.36 declined 9 percent",
+      "source_id": "UNP2016Q4_000",
+      "published_at": 0,
+      "atom_id": "UNP2016Q4_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

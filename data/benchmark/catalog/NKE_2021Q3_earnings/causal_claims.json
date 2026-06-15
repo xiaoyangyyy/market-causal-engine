@@ -1,0 +1,115 @@
+{
+  "event_id": "NKE_2021Q3_earnings",
+  "ticker": "NKE",
+  "event_date": "2021-07-08",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T11:36:10+00:00",
+  "accepted": [
+    {
+      "cause": "Fourth quarter revenues up 96 percent",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "Fourth quarter reported revenues were $12.3 billion, up 96 percent compared to prior year and increasing 21 percent compared to the fourth quarter of 2019.",
+      "source_id": "NKE2021Q3_000",
+      "published_at": 0,
+      "atom_id": "NKE2021Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.805,
+      "span_score": 1.0,
+      "severity_align": 0.219,
+      "mechanism_hint": 1.0,
+      "claim_id": "NKE2021Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Gross margin increased 850 basis points",
+      "effect": "Improved profitability expectations",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Gross margin for the fourth quarter increased 850",
+      "source_id": "NKE2021Q3_002",
+      "published_at": 0,
+      "atom_id": "NKE2021Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.8,
+      "span_score": 1.0,
+      "severity_align": 0.202,
+      "mechanism_hint": 1.0,
+      "claim_id": "NKE2021Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Digital revenue growth of 41 percent",
+      "effect": "Strong digital channel performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "NIKE Brand Digital continued to deliver strong revenue growth of 41 percent versus prior year and 147 percent compared to the fourth quarter of 2019.",
+      "source_id": "NKE2021Q3_005",
+      "published_at": 0,
+      "atom_id": "NKE2021Q3_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.833,
+      "span_score": 1.0,
+      "severity_align": 0.333,
+      "mechanism_hint": 1.0,
+      "claim_id": "NKE2021Q3_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Greater China double-digit growth for seven years",
+      "effect": "Sustained regional market strength",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "including seven consecutive years of double-digit, currency-neutral growth for our Greater China business.",
+      "source_id": "NKE2021Q3_007",
+      "published_at": 0,
+      "atom_id": "NKE2021Q3_007",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

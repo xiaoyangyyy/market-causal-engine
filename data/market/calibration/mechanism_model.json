@@ -1,0 +1,28 @@
+{
+  "version": "v0.7-ridge",
+  "feature_names": [
+    "m_fundamental",
+    "m_sentiment",
+    "m_liquidity",
+    "m_macro",
+    "m_regulatory",
+    "m_trust",
+    "max_severity",
+    "mean_confidence",
+    "trace_total"
+  ],
+  "coefficients": [
+    -0.007112,
+    -0.276369,
+    0.346858,
+    -0.062393,
+    0.078317,
+    -0.006456,
+    -0.06713,
+    0.008112,
+    0.025657,
+    -0.087834
+  ],
+  "training_rmse": 0.118283,
+  "n_samples": 233
+}

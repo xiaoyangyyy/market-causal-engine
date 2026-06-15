@@ -1,0 +1,31 @@
+{
+  "event_id": "AVGO_2023Q3_earnings",
+  "ticker": "AVGO",
+  "event_date": "2023-07-06",
+  "fiscal_period": "2023Q3",
+  "atom_count": 1,
+  "text_length": 25349,
+  "summary_length": 9803,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\AVGO_2023Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\AVGO_2023Q3_earnings\\sec_8k.txt",
+  "filing_date": "2023-11-22",
+  "accession_number": "0001140361-23-054354",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1730168/000114036123054354/ef20015100_form8k.htm",
+  "form": "8-K",
+  "search_date_from": "2023-10-01",
+  "search_date_to": "2023-11-30",
+  "aligned_filing_date": "2023-11-22",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.94,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 0,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

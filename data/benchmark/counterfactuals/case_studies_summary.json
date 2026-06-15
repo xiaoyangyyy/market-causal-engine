@@ -1,0 +1,1000 @@
+{
+  "cases": 9,
+  "ok": 9,
+  "errors": [],
+  "results": {
+    "cpi_2022_06_hot": {
+      "treated": "SPY",
+      "event_date": "2022-07-13",
+      "event_window": [
+        0,
+        1
+      ],
+      "method": "synthetic_control",
+      "controls": [
+        "QQQ",
+        "IWM",
+        "DIA"
+      ],
+      "control_weights": {
+        "QQQ": 0.333965,
+        "IWM": 0.027177,
+        "DIA": 0.638858
+      },
+      "estimation_days": 120,
+      "event_window_dates": [
+        "2022-07-13",
+        "2022-07-14"
+      ],
+      "observed_return": -0.007667,
+      "counterfactual_return": -0.007167,
+      "effect": -0.000501,
+      "pre_fit_rmse": 0.00168,
+      "alternates": {
+        "abnormal_return": {
+          "method": "abnormal_return",
+          "benchmark": "SPY",
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-07-13",
+            "2022-07-14"
+          ],
+          "observed_return": -0.007667,
+          "counterfactual_return": -0.007667,
+          "effect": 0.0,
+          "pre_fit_rmse": null
+        },
+        "factor_model": {
+          "method": "factor_model",
+          "factors": [
+            "QQQ",
+            "SPY"
+          ],
+          "factor_loadings": {
+            "alpha": -0.0,
+            "QQQ": 3e-06,
+            "SPY": 0.999995
+          },
+          "estimation_days": 120,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-07-13",
+            "2022-07-14"
+          ],
+          "observed_return": -0.007667,
+          "counterfactual_return": -0.007667,
+          "effect": -0.0,
+          "pre_fit_rmse": 0.0
+        },
+        "synthetic_control": {
+          "method": "synthetic_control",
+          "controls": [
+            "QQQ",
+            "IWM",
+            "DIA"
+          ],
+          "control_weights": {
+            "QQQ": 0.333965,
+            "IWM": 0.027177,
+            "DIA": 0.638858
+          },
+          "estimation_days": 120,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-07-13",
+            "2022-07-14"
+          ],
+          "observed_return": -0.007667,
+          "counterfactual_return": -0.007167,
+          "effect": -0.000501,
+          "pre_fit_rmse": 0.00168
+        }
+      },
+      "placebo_rank": 0.25,
+      "placebo_n": 8,
+      "computed_at": "2026-06-06T13:04:35+00:00",
+      "case_id": "cpi_2022_06_hot"
+    },
+    "fomc_2022_75bp": {
+      "treated": "SPY",
+      "event_date": "2022-09-21",
+      "event_window": [
+        0,
+        1
+      ],
+      "method": "synthetic_control",
+      "controls": [
+        "QQQ",
+        "IWM",
+        "DIA"
+      ],
+      "control_weights": {
+        "QQQ": 0.303498,
+        "IWM": 0.064918,
+        "DIA": 0.631584
+      },
+      "estimation_days": 120,
+      "event_window_dates": [
+        "2022-09-21",
+        "2022-09-22"
+      ],
+      "observed_return": -0.025697,
+      "counterfactual_return": -0.024906,
+      "effect": -0.000791,
+      "pre_fit_rmse": 0.001537,
+      "alternates": {
+        "abnormal_return": {
+          "method": "abnormal_return",
+          "benchmark": "SPY",
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-09-21",
+            "2022-09-22"
+          ],
+          "observed_return": -0.025697,
+          "counterfactual_return": -0.025697,
+          "effect": 0.0,
+          "pre_fit_rmse": null
+        },
+        "factor_model": {
+          "method": "factor_model",
+          "factors": [
+            "QQQ",
+            "SPY"
+          ],
+          "factor_loadings": {
+            "alpha": 0.0,
+            "QQQ": 4e-06,
+            "SPY": 0.999995
+          },
+          "estimation_days": 120,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-09-21",
+            "2022-09-22"
+          ],
+          "observed_return": -0.025697,
+          "counterfactual_return": -0.025697,
+          "effect": -0.0,
+          "pre_fit_rmse": 0.0
+        },
+        "synthetic_control": {
+          "method": "synthetic_control",
+          "controls": [
+            "QQQ",
+            "IWM",
+            "DIA"
+          ],
+          "control_weights": {
+            "QQQ": 0.303498,
+            "IWM": 0.064918,
+            "DIA": 0.631584
+          },
+          "estimation_days": 120,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-09-21",
+            "2022-09-22"
+          ],
+          "observed_return": -0.025697,
+          "counterfactual_return": -0.024906,
+          "effect": -0.000791,
+          "pre_fit_rmse": 0.001537
+        }
+      },
+      "placebo_rank": 0.5,
+      "placebo_n": 8,
+      "computed_at": "2026-06-06T13:04:38+00:00",
+      "case_id": "fomc_2022_75bp"
+    },
+    "gme_2021_01_squeeze": {
+      "treated": "GME",
+      "event_date": "2021-01-27",
+      "event_window": [
+        0,
+        1
+      ],
+      "method": "synthetic_control",
+      "controls": [
+        "XRT",
+        "AMC",
+        "BBBY",
+        "SPY",
+        "QQQ"
+      ],
+      "control_weights": {
+        "XRT": 0.571741,
+        "AMC": 0.000118,
+        "BBBY": 0.0,
+        "SPY": 0.0,
+        "QQQ": 0.428141
+      },
+      "estimation_days": 120,
+      "event_window_dates": [
+        "2021-01-27",
+        "2021-01-28"
+      ],
+      "observed_return": 0.308285,
+      "counterfactual_return": 0.005109,
+      "effect": 0.303176,
+      "pre_fit_rmse": 0.096672,
+      "alternates": {
+        "abnormal_return": {
+          "method": "abnormal_return",
+          "benchmark": "SPY",
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2021-01-27",
+            "2021-01-28"
+          ],
+          "observed_return": 0.308285,
+          "counterfactual_return": -0.01605,
+          "effect": 0.324335,
+          "pre_fit_rmse": null
+        },
+        "factor_model": {
+          "method": "factor_model",
+          "factors": [
+            "QQQ",
+            "SPY",
+            "XRT"
+          ],
+          "factor_loadings": {
+            "alpha": 0.01457,
+            "QQQ": 1.32563,
+            "SPY": -2.496398,
+            "XRT": 2.642528
+          },
+          "estimation_days": 120,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2021-01-27",
+            "2021-01-28"
+          ],
+          "observed_return": 0.308285,
+          "counterfactual_return": 0.033347,
+          "effect": 0.274938,
+          "pre_fit_rmse": 0.091333
+        },
+        "synthetic_control": {
+          "method": "synthetic_control",
+          "controls": [
+            "XRT",
+            "AMC",
+            "BBBY",
+            "SPY",
+            "QQQ"
+          ],
+          "control_weights": {
+            "XRT": 0.571741,
+            "AMC": 0.000118,
+            "BBBY": 0.0,
+            "SPY": 0.0,
+            "QQQ": 0.428141
+          },
+          "estimation_days": 120,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2021-01-27",
+            "2021-01-28"
+          ],
+          "observed_return": 0.308285,
+          "counterfactual_return": 0.005109,
+          "effect": 0.303176,
+          "pre_fit_rmse": 0.096672
+        }
+      },
+      "placebo_rank": 1.0,
+      "placebo_n": 9,
+      "computed_at": "2026-06-06T13:04:41+00:00",
+      "case_id": "gme_2021_01_squeeze"
+    },
+    "hindenburg_nikola_2020": {
+      "treated": "NKLA",
+      "event_date": "2020-09-10",
+      "event_window": [
+        0,
+        1
+      ],
+      "method": "synthetic_control",
+      "controls": [
+        "XLI",
+        "TSLA",
+        "GM",
+        "F",
+        "SPY",
+        "QQQ"
+      ],
+      "control_weights": {
+        "XLI": 0.250012,
+        "TSLA": 0.249996,
+        "GM": 0.24999,
+        "F": 0.249992,
+        "SPY": 9e-06,
+        "QQQ": 0.0
+      },
+      "estimation_days": 105,
+      "event_window_dates": [
+        "2020-09-10",
+        "2020-09-11"
+      ],
+      "observed_return": -0.155299,
+      "counterfactual_return": -0.005991,
+      "effect": -0.149307,
+      "pre_fit_rmse": 1e-06,
+      "alternates": {
+        "abnormal_return": {
+          "method": "abnormal_return",
+          "benchmark": "SPY",
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2020-09-10",
+            "2020-09-11"
+          ],
+          "observed_return": -0.155299,
+          "counterfactual_return": -0.016863,
+          "effect": -0.138435,
+          "pre_fit_rmse": null
+        },
+        "factor_model": {
+          "method": "factor_model",
+          "factors": [
+            "QQQ",
+            "SPY",
+            "XLI"
+          ],
+          "factor_loadings": {
+            "alpha": 0.003098,
+            "QQQ": 0.19523,
+            "SPY": 0.402978,
+            "XLI": 0.692057
+          },
+          "estimation_days": 105,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2020-09-10",
+            "2020-09-11"
+          ],
+          "observed_return": -0.155299,
+          "counterfactual_return": -0.005466,
+          "effect": -0.149832,
+          "pre_fit_rmse": 0.013812
+        },
+        "synthetic_control": {
+          "method": "synthetic_control",
+          "controls": [
+            "XLI",
+            "TSLA",
+            "GM",
+            "F",
+            "SPY",
+            "QQQ"
+          ],
+          "control_weights": {
+            "XLI": 0.250012,
+            "TSLA": 0.249996,
+            "GM": 0.24999,
+            "F": 0.249992,
+            "SPY": 9e-06,
+            "QQQ": 0.0
+          },
+          "estimation_days": 105,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2020-09-10",
+            "2020-09-11"
+          ],
+          "observed_return": -0.155299,
+          "counterfactual_return": -0.005991,
+          "effect": -0.149307,
+          "pre_fit_rmse": 1e-06
+        }
+      },
+      "placebo_rank": 1.0,
+      "placebo_n": 5,
+      "computed_at": "2026-06-06T13:04:44+00:00",
+      "case_id": "hindenburg_nikola_2020"
+    },
+    "luckin_2020_fraud": {
+      "treated": "LKNCY",
+      "event_date": "2020-01-31",
+      "event_window": [
+        0,
+        1
+      ],
+      "method": "synthetic_control",
+      "controls": [
+        "SPY",
+        "QQQ"
+      ],
+      "control_weights": {
+        "SPY": 1.0,
+        "QQQ": 0.0
+      },
+      "estimation_days": 120,
+      "event_window_dates": [
+        "2020-01-31",
+        "2020-02-03"
+      ],
+      "observed_return": -0.138736,
+      "counterfactual_return": -0.010864,
+      "effect": -0.127872,
+      "pre_fit_rmse": 0.04809,
+      "alternates": {
+        "abnormal_return": {
+          "method": "abnormal_return",
+          "benchmark": "SPY",
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2020-01-31",
+            "2020-02-03"
+          ],
+          "observed_return": -0.138736,
+          "counterfactual_return": -0.010864,
+          "effect": -0.127872,
+          "pre_fit_rmse": null
+        },
+        "factor_model": {
+          "method": "factor_model",
+          "factors": [
+            "QQQ",
+            "SPY"
+          ],
+          "factor_loadings": {
+            "alpha": 0.004878,
+            "QQQ": -2.530699,
+            "SPY": 5.200147
+          },
+          "estimation_days": 120,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2020-01-31",
+            "2020-02-03"
+          ],
+          "observed_return": -0.138736,
+          "counterfactual_return": -0.044405,
+          "effect": -0.094332,
+          "pre_fit_rmse": 0.046335
+        },
+        "synthetic_control": {
+          "method": "synthetic_control",
+          "controls": [
+            "SPY",
+            "QQQ"
+          ],
+          "control_weights": {
+            "SPY": 1.0,
+            "QQQ": 0.0
+          },
+          "estimation_days": 120,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2020-01-31",
+            "2020-02-03"
+          ],
+          "observed_return": -0.138736,
+          "counterfactual_return": -0.010864,
+          "effect": -0.127872,
+          "pre_fit_rmse": 0.04809
+        }
+      },
+      "placebo_rank": 0.875,
+      "placebo_n": 8,
+      "computed_at": "2026-06-06T13:04:46+00:00",
+      "case_id": "luckin_2020_fraud"
+    },
+    "meta_2022q4_earnings": {
+      "treated": "META",
+      "event_date": "2022-02-02",
+      "event_window": [
+        0,
+        1
+      ],
+      "method": "synthetic_control",
+      "controls": [
+        "XLC",
+        "SNAP",
+        "GOOGL",
+        "PINS",
+        "TTD",
+        "SPY",
+        "QQQ"
+      ],
+      "control_weights": {
+        "XLC": 0.666062,
+        "SNAP": 0.0,
+        "GOOGL": 0.0,
+        "PINS": 0.0,
+        "TTD": 0.005937,
+        "SPY": 0.0,
+        "QQQ": 0.328001
+      },
+      "estimation_days": 120,
+      "event_window_dates": [
+        "2022-02-02",
+        "2022-02-03"
+      ],
+      "observed_return": -0.254671,
+      "counterfactual_return": -0.043258,
+      "effect": -0.211413,
+      "pre_fit_rmse": 0.011766,
+      "alternates": {
+        "abnormal_return": {
+          "method": "abnormal_return",
+          "benchmark": "SPY",
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-02-02",
+            "2022-02-03"
+          ],
+          "observed_return": -0.254671,
+          "counterfactual_return": -0.014019,
+          "effect": -0.240652,
+          "pre_fit_rmse": null
+        },
+        "factor_model": {
+          "method": "factor_model",
+          "factors": [
+            "QQQ",
+            "SPY",
+            "XLC"
+          ],
+          "factor_loadings": {
+            "alpha": 0.000978,
+            "QQQ": 0.740831,
+            "SPY": -1.301043,
+            "XLC": 1.795833
+          },
+          "estimation_days": 120,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-02-02",
+            "2022-02-03"
+          ],
+          "observed_return": -0.254671,
+          "counterfactual_return": -0.091979,
+          "effect": -0.162692,
+          "pre_fit_rmse": 0.009341
+        },
+        "synthetic_control": {
+          "method": "synthetic_control",
+          "controls": [
+            "XLC",
+            "SNAP",
+            "GOOGL",
+            "PINS",
+            "TTD",
+            "SPY",
+            "QQQ"
+          ],
+          "control_weights": {
+            "XLC": 0.666062,
+            "SNAP": 0.0,
+            "GOOGL": 0.0,
+            "PINS": 0.0,
+            "TTD": 0.005937,
+            "SPY": 0.0,
+            "QQQ": 0.328001
+          },
+          "estimation_days": 120,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-02-02",
+            "2022-02-03"
+          ],
+          "observed_return": -0.254671,
+          "counterfactual_return": -0.043258,
+          "effect": -0.211413,
+          "pre_fit_rmse": 0.011766
+        }
+      },
+      "placebo_rank": 1.0,
+      "placebo_n": 8,
+      "computed_at": "2026-06-06T13:04:50+00:00",
+      "case_id": "meta_2022q4_earnings"
+    },
+    "nflx_2022q1_earnings": {
+      "treated": "NFLX",
+      "event_date": "2022-04-19",
+      "event_window": [
+        0,
+        1
+      ],
+      "method": "synthetic_control",
+      "controls": [
+        "XLC",
+        "DIS",
+        "WBD",
+        "CMCSA",
+        "SPY",
+        "QQQ"
+      ],
+      "control_weights": {
+        "XLC": 0.309429,
+        "DIS": 0.205968,
+        "WBD": 0.0,
+        "CMCSA": 0.0,
+        "SPY": 0.0,
+        "QQQ": 0.484602
+      },
+      "estimation_days": 120,
+      "event_window_dates": [
+        "2022-04-19",
+        "2022-04-20"
+      ],
+      "observed_return": -0.330522,
+      "counterfactual_return": -0.009031,
+      "effect": -0.32149,
+      "pre_fit_rmse": 0.02629,
+      "alternates": {
+        "abnormal_return": {
+          "method": "abnormal_return",
+          "benchmark": "SPY",
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-04-19",
+            "2022-04-20"
+          ],
+          "observed_return": -0.330522,
+          "counterfactual_return": 0.015389,
+          "effect": -0.345911,
+          "pre_fit_rmse": null
+        },
+        "factor_model": {
+          "method": "factor_model",
+          "factors": [
+            "QQQ",
+            "SPY",
+            "XLC"
+          ],
+          "factor_loadings": {
+            "alpha": -0.002438,
+            "QQQ": 1.352147,
+            "SPY": -1.20032,
+            "XLC": 0.894246
+          },
+          "estimation_days": 120,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-04-19",
+            "2022-04-20"
+          ],
+          "observed_return": -0.330522,
+          "counterfactual_return": -0.035393,
+          "effect": -0.295129,
+          "pre_fit_rmse": 0.025279
+        },
+        "synthetic_control": {
+          "method": "synthetic_control",
+          "controls": [
+            "XLC",
+            "DIS",
+            "WBD",
+            "CMCSA",
+            "SPY",
+            "QQQ"
+          ],
+          "control_weights": {
+            "XLC": 0.309429,
+            "DIS": 0.205968,
+            "WBD": 0.0,
+            "CMCSA": 0.0,
+            "SPY": 0.0,
+            "QQQ": 0.484602
+          },
+          "estimation_days": 120,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-04-19",
+            "2022-04-20"
+          ],
+          "observed_return": -0.330522,
+          "counterfactual_return": -0.009031,
+          "effect": -0.32149,
+          "pre_fit_rmse": 0.02629
+        }
+      },
+      "placebo_rank": 1.0,
+      "placebo_n": 7,
+      "computed_at": "2026-06-06T13:04:58+00:00",
+      "case_id": "nflx_2022q1_earnings"
+    },
+    "shop_2022q2_earnings": {
+      "treated": "SHOP",
+      "event_date": "2022-07-26",
+      "event_window": [
+        0,
+        1
+      ],
+      "method": "synthetic_control",
+      "controls": [
+        "XLC",
+        "AMZN",
+        "EBAY",
+        "ETSY",
+        "SPY",
+        "QQQ"
+      ],
+      "control_weights": {
+        "XLC": 0.207941,
+        "AMZN": 0.0,
+        "EBAY": 0.030663,
+        "ETSY": 0.106076,
+        "SPY": 0.0,
+        "QQQ": 0.655319
+      },
+      "estimation_days": 120,
+      "event_window_dates": [
+        "2022-07-26",
+        "2022-07-27"
+      ],
+      "observed_return": -0.040044,
+      "counterfactual_return": 0.018027,
+      "effect": -0.05807,
+      "pre_fit_rmse": 0.049355,
+      "alternates": {
+        "abnormal_return": {
+          "method": "abnormal_return",
+          "benchmark": "SPY",
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-07-26",
+            "2022-07-27"
+          ],
+          "observed_return": -0.040044,
+          "counterfactual_return": 0.013828,
+          "effect": -0.053872,
+          "pre_fit_rmse": null
+        },
+        "factor_model": {
+          "method": "factor_model",
+          "factors": [
+            "QQQ",
+            "SPY",
+            "XLC"
+          ],
+          "factor_loadings": {
+            "alpha": -0.002322,
+            "QQQ": 3.415697,
+            "SPY": -3.292168,
+            "XLC": 1.366951
+          },
+          "estimation_days": 120,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-07-26",
+            "2022-07-27"
+          ],
+          "observed_return": -0.040044,
+          "counterfactual_return": 0.049743,
+          "effect": -0.089786,
+          "pre_fit_rmse": 0.039732
+        },
+        "synthetic_control": {
+          "method": "synthetic_control",
+          "controls": [
+            "XLC",
+            "AMZN",
+            "EBAY",
+            "ETSY",
+            "SPY",
+            "QQQ"
+          ],
+          "control_weights": {
+            "XLC": 0.207941,
+            "AMZN": 0.0,
+            "EBAY": 0.030663,
+            "ETSY": 0.106076,
+            "SPY": 0.0,
+            "QQQ": 0.655319
+          },
+          "estimation_days": 120,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-07-26",
+            "2022-07-27"
+          ],
+          "observed_return": -0.040044,
+          "counterfactual_return": 0.018027,
+          "effect": -0.05807,
+          "pre_fit_rmse": 0.049355
+        }
+      },
+      "placebo_rank": 0.875,
+      "placebo_n": 8,
+      "computed_at": "2026-06-06T13:05:06+00:00",
+      "case_id": "shop_2022q2_earnings"
+    },
+    "snap_2022q3_earnings": {
+      "treated": "SNAP",
+      "event_date": "2022-10-20",
+      "event_window": [
+        0,
+        1
+      ],
+      "method": "synthetic_control",
+      "controls": [
+        "XLC",
+        "META",
+        "PINS",
+        "GOOGL",
+        "TTWO",
+        "SPY",
+        "QQQ"
+      ],
+      "control_weights": {
+        "XLC": 0.145405,
+        "META": 0.046305,
+        "PINS": 0.297152,
+        "GOOGL": 0.226321,
+        "TTWO": 0.074352,
+        "SPY": 0.0,
+        "QQQ": 0.210465
+      },
+      "estimation_days": 120,
+      "event_window_dates": [
+        "2022-10-20",
+        "2022-10-21"
+      ],
+      "observed_return": -0.285451,
+      "counterfactual_return": -0.010655,
+      "effect": -0.274796,
+      "pre_fit_rmse": 0.053064,
+      "alternates": {
+        "abnormal_return": {
+          "method": "abnormal_return",
+          "benchmark": "SPY",
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-10-20",
+            "2022-10-21"
+          ],
+          "observed_return": -0.285451,
+          "counterfactual_return": 0.015712,
+          "effect": -0.301164,
+          "pre_fit_rmse": null
+        },
+        "factor_model": {
+          "method": "factor_model",
+          "factors": [
+            "QQQ",
+            "SPY",
+            "XLC"
+          ],
+          "factor_loadings": {
+            "alpha": -0.00123,
+            "QQQ": 1.671303,
+            "SPY": -3.42544,
+            "XLC": 3.177161
+          },
+          "estimation_days": 120,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-10-20",
+            "2022-10-21"
+          ],
+          "observed_return": -0.285451,
+          "counterfactual_return": 0.001091,
+          "effect": -0.286542,
+          "pre_fit_rmse": 0.052227
+        },
+        "synthetic_control": {
+          "method": "synthetic_control",
+          "controls": [
+            "XLC",
+            "META",
+            "PINS",
+            "GOOGL",
+            "TTWO",
+            "SPY",
+            "QQQ"
+          ],
+          "control_weights": {
+            "XLC": 0.145405,
+            "META": 0.046305,
+            "PINS": 0.297152,
+            "GOOGL": 0.226321,
+            "TTWO": 0.074352,
+            "SPY": 0.0,
+            "QQQ": 0.210465
+          },
+          "estimation_days": 120,
+          "event_window": [
+            0,
+            1
+          ],
+          "event_window_dates": [
+            "2022-10-20",
+            "2022-10-21"
+          ],
+          "observed_return": -0.285451,
+          "counterfactual_return": -0.010655,
+          "effect": -0.274796,
+          "pre_fit_rmse": 0.053064
+        }
+      },
+      "placebo_rank": 1.0,
+      "placebo_n": 7,
+      "computed_at": "2026-06-06T13:05:09+00:00",
+      "case_id": "snap_2022q3_earnings"
+    }
+  }
+}

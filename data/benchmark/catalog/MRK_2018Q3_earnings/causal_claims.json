@@ -1,0 +1,141 @@
+{
+  "event_id": "MRK_2018Q3_earnings",
+  "ticker": "MRK",
+  "event_date": "2018-07-13",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:36:32+00:00",
+  "accepted": [
+    {
+      "cause": "EPS Range to be Between $4.22 and $",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "EPS Range to be Between $4.22 and $",
+      "source_id": "MRK2018Q3_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MRK2018Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.811,
+      "span_score": 1.0,
+      "severity_align": 0.243,
+      "mechanism_hint": 1.0,
+      "claim_id": "MRK2018Q3_C002",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Non-GAAP gross margin decline",
+      "effect": "Lower profitability",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "The non-GAAP gross margin was 74.4 percent for the second quarter of 2018 compared to 77.3 percent for the second quarter of 2017",
+      "source_id": "MRK2018Q3_012",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MRK2018Q3_012",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.881,
+      "span_score": 0.997,
+      "severity_align": 0.531,
+      "mechanism_hint": 1.0,
+      "claim_id": "MRK2018Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.052,
+      "polarity": -1.0,
+      "evidence_span": "earnings per share assuming dilution (EPS) were $",
+      "source_id": "MRK2018Q3_003",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "MRK2018Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "MRK2018Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "MRK2018Q3_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MRK2018Q3_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "MRK2018Q3_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MRK2018Q3_005",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,31 @@
+{
+  "event_id": "CSCO_2019Q4_earnings",
+  "ticker": "CSCO",
+  "event_date": "2019-10-22",
+  "fiscal_period": "2019Q4",
+  "atom_count": 23,
+  "text_length": 45019,
+  "summary_length": 11996,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\CSCO_2019Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\CSCO_2019Q4_earnings\\sec_8k.txt",
+  "filing_date": "2020-02-12",
+  "accession_number": "0001193125-20-033208",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/858877/000119312520033208/d885601d8k.htm",
+  "form": "8-K",
+  "search_date_from": "2020-01-01",
+  "search_date_to": "2020-02-29",
+  "aligned_filing_date": "2020-02-12",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.63,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

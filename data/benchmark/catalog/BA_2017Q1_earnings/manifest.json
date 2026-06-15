@@ -1,0 +1,34 @@
+{
+  "event_id": "BA_2017Q1_earnings",
+  "ticker": "BA",
+  "event_date": "2017-01-19",
+  "fiscal_period": "2017Q1",
+  "atom_count": 22,
+  "text_length": 31521,
+  "summary_length": 11992,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\BA_2017Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\BA_2017Q1_earnings\\sec_8k.txt",
+  "filing_date": "2017-01-25",
+  "accession_number": "0000950123-17-000426",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/12927/000095012317000426/a201612dec318-k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000012927",
+  "window_days": 45,
+  "search_date_from": "2017-04-01",
+  "search_date_to": "2017-05-31",
+  "aligned_filing_date": "2017-01-25",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 4.24,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

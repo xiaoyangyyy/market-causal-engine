@@ -1,0 +1,31 @@
+{
+  "event_id": "COIN_2024Q2_earnings",
+  "ticker": "COIN",
+  "event_date": "2024-04-16",
+  "fiscal_period": "2024Q2",
+  "atom_count": 28,
+  "text_length": 62959,
+  "summary_length": 1761,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\COIN_2024Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\COIN_2024Q2_earnings\\sec_8k.txt",
+  "filing_date": "2024-08-01",
+  "accession_number": "0001679788-24-000148",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978824000148/coin-20240801.htm",
+  "form": "8-K",
+  "search_date_from": "2024-07-01",
+  "search_date_to": "2024-08-31",
+  "aligned_filing_date": "2024-08-01",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -5.22,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

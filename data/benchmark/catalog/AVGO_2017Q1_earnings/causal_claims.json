@@ -1,0 +1,71 @@
+{
+  "event_id": "AVGO_2017Q1_earnings",
+  "ticker": "AVGO",
+  "event_date": "2017-01-19",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T07:26:41+00:00",
+  "accepted": [
+    {
+      "cause": "Gross margin decline of 420 basis points",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Gross margin 48.3 % 52.5 % 53.1 % -420bps -480",
+      "source_id": "AVGO2017Q1_011",
+      "published_at": 0,
+      "atom_id": "AVGO2017Q1_011",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.825,
+      "span_score": 1.0,
+      "severity_align": 0.3,
+      "mechanism_hint": 1.0,
+      "claim_id": "AVGO2017Q1_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Net revenue increase of 134 percent year-over-year",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Net revenue was $4,139 million, slightly higher than the $4,136 million in the previous quarter and an increase of 134 percent from $1,771 million in the same quarter last year.",
+      "source_id": "AVGO2017Q1_003",
+      "published_at": 0,
+      "atom_id": "AVGO2017Q1_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.827,
+      "span_score": 1.0,
+      "severity_align": 0.309,
+      "mechanism_hint": 1.0,
+      "claim_id": "AVGO2017Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

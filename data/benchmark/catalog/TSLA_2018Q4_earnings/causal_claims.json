@@ -1,0 +1,69 @@
+{
+  "event_id": "TSLA_2018Q4_earnings",
+  "ticker": "TSLA",
+  "event_date": "2018-10-16",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T08:48:13+00:00",
+  "accepted": [
+    {
+      "cause": "Gross margin decrease to 24.7%",
+      "effect": "Lower than previous quarter profitability",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "gross margin decreased to 24.7% in Q4 from 25.5",
+      "source_id": "TSLA2018Q4_006",
+      "published_at": 0,
+      "atom_id": "TSLA2018Q4_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.93,
+      "span_score": 1.0,
+      "severity_align": 0.72,
+      "mechanism_hint": 1.0,
+      "claim_id": "TSLA2018Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Gross margin decline on Model S and X",
+      "effect": "Slight negative impact on profitability expectations",
+      "mechanism": "fundamental",
+      "severity": 0.4,
+      "polarity": -1.0,
+      "evidence_span": "Gross margin of Model S and Model X declined very slightly compared to Q3",
+      "source_id": "TSLA2018Q4_008",
+      "published_at": 0,
+      "atom_id": "TSLA2018Q4_008",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.893,
+      "span_score": 0.979,
+      "severity_align": 0.62,
+      "mechanism_hint": 1.0,
+      "claim_id": "TSLA2018Q4_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,34 @@
+{
+  "event_id": "SNAP_2020Q3_earnings",
+  "ticker": "SNAP",
+  "event_date": "2020-07-17",
+  "fiscal_period": "2020Q3",
+  "atom_count": 8,
+  "text_length": 40531,
+  "summary_length": 11994,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\SNAP_2020Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\SNAP_2020Q3_earnings\\sec_8k.txt",
+  "filing_date": "2020-07-21",
+  "accession_number": "0001564590-20-032933",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1564408/000156459020032933/snap-8k_20200721.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001564408",
+  "window_days": 45,
+  "search_date_from": "2020-10-01",
+  "search_date_to": "2020-11-30",
+  "aligned_filing_date": "2020-07-21",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -2.1,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "event_id": "AXP_2025Q2_earnings",
+  "ticker": "AXP",
+  "event_date": "2025-04-21",
+  "fiscal_period": "2025Q2",
+  "atom_count": 9,
+  "text_length": 77106,
+  "summary_length": 11997,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\AXP_2025Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\AXP_2025Q2_earnings\\sec_8k.txt",
+  "filing_date": "2025-07-18",
+  "accession_number": "0000004962-25-000082",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/4962/000000496225000082/axp-20250718.htm",
+  "form": "8-K",
+  "search_date_from": "2025-07-01",
+  "search_date_to": "2025-08-31",
+  "aligned_filing_date": "2025-07-18",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -2.35,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 5,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

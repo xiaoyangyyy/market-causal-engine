@@ -1,0 +1,31 @@
+{
+  "event_id": "ADBE_2022Q2_earnings",
+  "ticker": "ADBE",
+  "event_date": "2022-04-08",
+  "fiscal_period": "2022Q2",
+  "atom_count": 1,
+  "text_length": 13954,
+  "summary_length": 258,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\ADBE_2022Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\ADBE_2022Q2_earnings\\sec_8k.txt",
+  "filing_date": "2022-07-01",
+  "accession_number": "0001193125-22-186450",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/796343/000119312522186450/d368091d8k.htm",
+  "form": "8-K",
+  "search_date_from": "2022-07-01",
+  "search_date_to": "2022-08-31",
+  "aligned_filing_date": "2022-07-01",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": 0.66,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

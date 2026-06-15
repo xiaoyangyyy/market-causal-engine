@@ -1,0 +1,69 @@
+{
+  "event_id": "GS_2017Q3_earnings",
+  "ticker": "GS",
+  "event_date": "2017-07-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T07:52:26+00:00",
+  "accepted": [
+    {
+      "cause": "First half net revenues up 12%",
+      "effect": "Pre-tax margin improved 340 basis points",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Highlights • Goldman Sachs reported first half net revenues of $15.91 billion, 12% higher than the first half of 2016, which contributed to a 340 basis point improvement in pre-tax margin to 31.7%.",
+      "source_id": "GS2017Q3_002",
+      "published_at": 0,
+      "atom_id": "GS2017Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.824,
+      "span_score": 1.0,
+      "severity_align": 0.294,
+      "mechanism_hint": 1.0,
+      "claim_id": "GS2017Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Debt underwriting third highest quarterly performance",
+      "effect": "Net revenues of $721 million",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "(3) • Debt underwriting produced its third highest quarterly performance with net revenues of $721 million.",
+      "source_id": "GS2017Q3_003",
+      "published_at": 0,
+      "atom_id": "GS2017Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.835,
+      "span_score": 1.0,
+      "severity_align": 0.338,
+      "mechanism_hint": 1.0,
+      "claim_id": "GS2017Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.6,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

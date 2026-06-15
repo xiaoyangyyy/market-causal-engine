@@ -1,0 +1,92 @@
+{
+  "event_id": "ABBV_2016Q3_earnings",
+  "ticker": "ABBV",
+  "event_date": "2016-07-12",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T11:38:49+00:00",
+  "accepted": [
+    {
+      "cause": "Full-year GAAP diluted EPS guidance raised",
+      "effect": "estimate revision upside for full-year earnings",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "Outlook AbbVie is raising GAAP diluted EPS guidance for the full-year",
+      "source_id": "ABBV2016Q3_012",
+      "published_at": 0,
+      "atom_id": "ABBV2016Q3_012",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.794,
+      "span_score": 1.0,
+      "severity_align": 0.164,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ABBV2016Q3_C000"
+    },
+    {
+      "cause": "Diluted EPS of $1.21 reflecting growth ahead of expectations",
+      "effect": "earnings beat drives upward estimate revisions",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "“We delivered another strong quarter, with EPS growth ahead of our expectations.",
+      "source_id": "ABBV2016Q3_005",
+      "published_at": 0,
+      "atom_id": "ABBV2016Q3_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.807,
+      "span_score": 1.0,
+      "severity_align": 0.221,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ABBV2016Q3_C002"
+    },
+    {
+      "cause": "Adjusted Net Revenues grew 8.0% with Humira sales up 11.3%",
+      "effect": "revenue growth validates top-line expansion narrative",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Adjusted Net Revenues Grew 8.0 Percent on an Operational Basis · Revenue Growth Reflects 11.3 Percent HUMIRA Global Reported Sales Growth",
+      "source_id": "ABBV2016Q3_002",
+      "published_at": 0,
+      "atom_id": "ABBV2016Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.826,
+      "span_score": 1.0,
+      "severity_align": 0.307,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ABBV2016Q3_C001"
+    }
+  ],
+  "rejected": [],
+  "claim_count": 3,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event"
+}

@@ -1,0 +1,92 @@
+{
+  "event_id": "LRCX_2016Q3_earnings",
+  "ticker": "LRCX",
+  "event_date": "2016-07-11",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T11:37:52+00:00",
+  "accepted": [
+    {
+      "cause": "Gross margin expansion to 45.2% from 43.5%",
+      "effect": "fundamental valuation uplift via margin expansion",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Gross margin as percentage of revenue 45.2 % 43.5",
+      "source_id": "LRCX2016Q3_004",
+      "published_at": 0,
+      "atom_id": "LRCX2016Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.802,
+      "span_score": 1.0,
+      "severity_align": 0.202,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "LRCX2016Q3_C000"
+    },
+    {
+      "cause": "Revenue reported at $1,546 million for the quarter",
+      "effect": "estimate revision upside driven by top-line delivery",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Highlights for the June 2016 quarter were as follows: • Shipments of $1,587 million and revenue of $1,546 million",
+      "source_id": "LRCX2016Q3_001",
+      "published_at": 0,
+      "atom_id": "LRCX2016Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.833,
+      "span_score": 1.0,
+      "severity_align": 0.343,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "LRCX2016Q3_C001"
+    },
+    {
+      "cause": "GAAP operating margin reached 20.0%",
+      "effect": "profitability metric improvement supports earnings multiple",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "gross margin of 45.2% , GAAP operating margin of 20.0",
+      "source_id": "LRCX2016Q3_002",
+      "published_at": 0,
+      "atom_id": "LRCX2016Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.858,
+      "span_score": 1.0,
+      "severity_align": 0.454,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "LRCX2016Q3_C002"
+    }
+  ],
+  "rejected": [],
+  "claim_count": 3,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event"
+}

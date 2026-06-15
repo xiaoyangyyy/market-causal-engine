@@ -1,0 +1,31 @@
+{
+  "event_id": "ROKU_2025Q2_earnings",
+  "ticker": "ROKU",
+  "event_date": "2025-04-24",
+  "fiscal_period": "2025Q2",
+  "atom_count": 1,
+  "text_length": 34879,
+  "summary_length": 1089,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\ROKU_2025Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\ROKU_2025Q2_earnings\\sec_8k.txt",
+  "filing_date": "2025-07-31",
+  "accession_number": "0001428439-25-000035",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1428439/000142843925000035/wk-20250728.htm",
+  "form": "8-K",
+  "search_date_from": "2025-07-01",
+  "search_date_to": "2025-08-31",
+  "aligned_filing_date": "2025-07-31",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 2.35,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

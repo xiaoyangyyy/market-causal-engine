@@ -1,0 +1,31 @@
+{
+  "event_id": "AVGO_2019Q3_earnings",
+  "ticker": "AVGO",
+  "event_date": "2019-07-10",
+  "fiscal_period": "2019Q3",
+  "atom_count": 2,
+  "text_length": 24244,
+  "summary_length": 7902,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\AVGO_2019Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\AVGO_2019Q3_earnings\\sec_8k.txt",
+  "filing_date": "2019-11-04",
+  "accession_number": "0001193125-19-282605",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1730168/000119312519282605/d808250d8k.htm",
+  "form": "8-K",
+  "search_date_from": "2019-10-01",
+  "search_date_to": "2019-11-30",
+  "aligned_filing_date": "2019-11-04",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 2.84,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

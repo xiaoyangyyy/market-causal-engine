@@ -1,0 +1,89 @@
+{
+  "event_id": "GE_2018Q3_earnings",
+  "ticker": "GE",
+  "event_date": "2018-07-17",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:37:38+00:00",
+  "accepted": [
+    {
+      "cause": "Sales of goods and services",
+      "effect": "Revenues",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Sales of goods and services $ 54,967 $ 51,691 6 %",
+      "source_id": "GE2018Q3_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GE2018Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.83,
+      "span_score": 0.885,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "claim_id": "GE2018Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "earnings miss",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.251,
+      "polarity": -1.0,
+      "evidence_span": "ELECTRIC COMPANY CONDENSED STATEMENT OF EARNINGS (LOSS) (UNAUDITED) Consolidated GE(a) Financial Services (GE Capital) Three months ended June 30 2018 2017 V% 2018 2017 V% 2018 201",
+      "source_id": "GE2018Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GE2018Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.968,
+      "span_score": 0.979,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "GE2018Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "outlook and the results reported in today's earnings",
+      "effect": "market reaction",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": 0.0,
+      "evidence_span": "outlook and the results reported in today's earnings",
+      "source_id": "GE2018Q3_012",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GE2018Q3_012",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

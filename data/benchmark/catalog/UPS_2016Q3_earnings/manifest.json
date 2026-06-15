@@ -1,0 +1,34 @@
+{
+  "event_id": "UPS_2016Q3_earnings",
+  "ticker": "UPS",
+  "event_date": "2016-07-22",
+  "fiscal_period": "2016Q3",
+  "atom_count": 17,
+  "text_length": 21921,
+  "summary_length": 11997,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\UPS_2016Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\UPS_2016Q3_earnings\\sec_8k.txt",
+  "filing_date": "2016-07-29",
+  "accession_number": "0001090727-16-000070",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1090727/000109072716000070/form8-kq22016earningsrelea.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001090727",
+  "window_days": 45,
+  "search_date_from": "2016-10-01",
+  "search_date_to": "2016-11-30",
+  "aligned_filing_date": "2016-07-29",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.58,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

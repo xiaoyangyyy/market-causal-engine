@@ -1,0 +1,2 @@
+{"atom_id": "COST2021Q1_000", "text": "Net income for the quarter was $1,166 million, or $", "source": "8-K", "time": 0, "tags": ["earnings", "financials"], "metadata": {"severity": 0.053, "extracted_by": "financial_results", "source_class": "primary_filing"}, "published_at": 0}
+{"atom_id": "COST2021Q1_001", "text": "NET INCOME ATTRIBUTABLE TO COSTCO $ 1,166 $", "source": "8-K", "time": 0, "tags": ["earnings", "financials"], "metadata": {"severity": 0.048, "extracted_by": "financial_results", "source_class": "primary_filing"}, "published_at": 0}

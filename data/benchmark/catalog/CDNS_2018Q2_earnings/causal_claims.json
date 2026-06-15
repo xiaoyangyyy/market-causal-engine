@@ -1,0 +1,45 @@
+{
+  "event_id": "CDNS_2018Q2_earnings",
+  "ticker": "CDNS",
+  "event_date": "2018-04-19",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:32:55+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.171,
+      "polarity": -1.0,
+      "evidence_span": "For comparison purposes, the company expects the outlook for 2018 on the prior ASC Topic 605 basis to be as follows: revenue in the range of $2.085 billion to $2.115 billion, GAAP",
+      "source_id": "CDNS2018Q2_009",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "CDNS2018Q2_009",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.988,
+      "span_score": 0.978,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "CDNS2018Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

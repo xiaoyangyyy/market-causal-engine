@@ -1,0 +1,52 @@
+{
+  "case_id": "nflx_2022q1_earnings",
+  "domain": "earnings",
+  "outcome_effect": -0.32149,
+  "outcome_method": "synthetic_control",
+  "predicted_effect": 0.011475,
+  "predicted_direction": "up",
+  "actual_direction": "down",
+  "direction_match": false,
+  "confidence": 0.356,
+  "mechanism_weights": {
+    "fundamental": 0.5943,
+    "sentiment": 0.1583,
+    "liquidity": 0.221,
+    "macro": 0.0264,
+    "regulatory": 0.0,
+    "trust": 0.0
+  },
+  "dominant_mechanism": "fundamental",
+  "posterior_weights": {
+    "fundamental": 0.6124,
+    "sentiment": 0.1509,
+    "liquidity": 0.1432,
+    "macro": 0.048,
+    "regulatory": 0.0227,
+    "trust": 0.0227
+  },
+  "prior_weights": {
+    "fundamental": 0.4091,
+    "sentiment": 0.2273,
+    "liquidity": 0.1818,
+    "macro": 0.0909,
+    "regulatory": 0.0455,
+    "trust": 0.0455
+  },
+  "posterior_confidence": 0.743,
+  "feature_vector": {
+    "claim_count": 7.0,
+    "m_fundamental": 0.5708,
+    "m_liquidity": 0.255,
+    "m_macro": 0.03,
+    "m_regulatory": 0.0,
+    "m_sentiment": 0.1441,
+    "m_trust": 0.0,
+    "max_severity": 0.88,
+    "mean_confidence": 0.6478,
+    "trace_total": 0.9999
+  },
+  "claim_count": 7,
+  "model_version": "v0.7-ridge",
+  "computed_at": "2026-06-09T03:17:00+00:00"
+}

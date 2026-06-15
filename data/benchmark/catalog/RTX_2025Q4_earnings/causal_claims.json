@@ -1,0 +1,71 @@
+{
+  "event_id": "RTX_2025Q4_earnings",
+  "ticker": "RTX",
+  "event_date": "2025-10-07",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T04:41:34+00:00",
+  "accepted": [
+    {
+      "cause": "Net income increase of 30 percent",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Net Income $ 1,918 $ 1,472 30 %",
+      "source_id": "RTX2025Q4_005",
+      "published_at": 0,
+      "atom_id": "RTX2025Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.807,
+      "span_score": 0.991,
+      "severity_align": 0.249,
+      "mechanism_hint": 1.0,
+      "claim_id": "RTX2025Q4_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Adjusted EPS growth of 17 percent",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Adjusted EPS* of $1.70 was up 17 percent versus the prior year.",
+      "source_id": "RTX2025Q4_003",
+      "published_at": 0,
+      "atom_id": "RTX2025Q4_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.803,
+      "span_score": 1.0,
+      "severity_align": 0.211,
+      "mechanism_hint": 1.0,
+      "claim_id": "RTX2025Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

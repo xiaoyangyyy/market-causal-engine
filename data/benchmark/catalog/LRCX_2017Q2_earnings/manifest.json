@@ -1,0 +1,34 @@
+{
+  "event_id": "LRCX_2017Q2_earnings",
+  "ticker": "LRCX",
+  "event_date": "2017-04-20",
+  "fiscal_period": "2017Q2",
+  "atom_count": 21,
+  "text_length": 23958,
+  "summary_length": 11999,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\LRCX_2017Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\LRCX_2017Q2_earnings\\sec_8k.txt",
+  "filing_date": "2017-04-18",
+  "accession_number": "0000707549-17-000052",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/707549/000070754917000052/lrcx_8-kx3qx2017.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000707549",
+  "window_days": 45,
+  "search_date_from": "2017-07-01",
+  "search_date_to": "2017-08-31",
+  "aligned_filing_date": "2017-04-18",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": 0.08,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

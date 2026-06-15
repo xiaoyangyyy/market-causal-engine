@@ -1,0 +1,71 @@
+{
+  "event_id": "JNJ_2019Q4_earnings",
+  "ticker": "JNJ",
+  "event_date": "2019-10-09",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T13:03:08+00:00",
+  "accepted": [
+    {
+      "cause": "Company increasing Full Year Sales and EPS guidance",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "Company increasing Full Year Sales and EPS guidance due to strong performance",
+      "source_id": "JNJ2019Q4_001",
+      "published_at": 0,
+      "atom_id": "JNJ2019Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.781,
+      "span_score": 0.962,
+      "severity_align": 0.207,
+      "mechanism_hint": 1.0,
+      "claim_id": "JNJ2019Q4_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "EPS increased 25.7% to $1.81",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "EPS of $1.81 increased 25.7%",
+      "source_id": "JNJ2019Q4_000",
+      "published_at": 0,
+      "atom_id": "JNJ2019Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.759,
+      "span_score": 0.876,
+      "severity_align": 0.307,
+      "mechanism_hint": 1.0,
+      "claim_id": "JNJ2019Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

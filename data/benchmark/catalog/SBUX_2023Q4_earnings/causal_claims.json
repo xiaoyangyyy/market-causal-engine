@@ -1,0 +1,118 @@
+{
+  "event_id": "SBUX_2023Q4_earnings",
+  "ticker": "SBUX",
+  "event_date": "2023-10-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:40:26+00:00",
+  "accepted": [
+    {
+      "cause": "Net earnings attributable to Starbucks",
+      "effect": "positive stock performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Net earnings attributable to Starbucks $ 4,124.5",
+      "source_id": "SBUX2023Q4_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SBUX2023Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.813,
+      "span_score": 1.0,
+      "severity_align": 0.253,
+      "mechanism_hint": 1.0,
+      "claim_id": "SBUX2023Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Operating income $ 1,601.4",
+      "effect": "positive stock performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Operating income $ 1,601.4",
+      "source_id": "SBUX2023Q4_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SBUX2023Q4_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.81,
+      "span_score": 1.0,
+      "severity_align": 0.239,
+      "mechanism_hint": 1.0,
+      "claim_id": "SBUX2023Q4_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.053,
+      "polarity": -1.0,
+      "evidence_span": "Net earnings attributable to Starbucks $ 1,219.3 $",
+      "source_id": "SBUX2023Q4_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "SBUX2023Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SBUX2023Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "SBUX2023Q4_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SBUX2023Q4_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

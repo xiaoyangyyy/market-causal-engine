@@ -1,0 +1,137 @@
+{
+  "event_id": "UPS_2025Q2_earnings",
+  "ticker": "UPS",
+  "event_date": "2025-04-21",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:30:55+00:00",
+  "accepted": [
+    {
+      "cause": "Non-GAAP Adjusted Consolidated Operating Margin of 8.2%",
+      "effect": "Diluted EPS of $1.40",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Non-GAAP Adjusted * Consolidated Operating Margin of 8.2% • Diluted EPS of $1.40",
+      "source_id": "UPS2025Q2_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "UPS2025Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.818,
+      "span_score": 1.0,
+      "severity_align": 0.271,
+      "mechanism_hint": 1.0,
+      "claim_id": "UPS2025Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Revenue $14,460 M",
+      "effect": "Operating prof",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Revenue $14,460 M $14,266 M Operating prof",
+      "source_id": "UPS2025Q2_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "UPS2025Q2_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.812,
+      "span_score": 1.0,
+      "severity_align": 0.248,
+      "mechanism_hint": 1.0,
+      "claim_id": "UPS2025Q2_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "strong results",
+      "effect": "estimate upside",
+      "mechanism": "fundamental",
+      "severity": 0.192,
+      "polarity": 1.0,
+      "evidence_span": "Exhibit 99.1 UPS RELEASES 1Q 2025 EARNINGS • Consolidated Revenues of $21.5B, Compared to $21.7B Last Year • Consolidated Operating Margin of 7.7%",
+      "source_id": "UPS2025Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "UPS2025Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.98,
+      "span_score": 1.0,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "UPS2025Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "UPS2025Q2_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "UPS2025Q2_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "diluted earnings per share were $",
+      "source_id": "UPS2025Q2_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "UPS2025Q2_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

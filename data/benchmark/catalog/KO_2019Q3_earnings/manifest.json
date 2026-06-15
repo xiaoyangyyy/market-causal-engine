@@ -1,0 +1,34 @@
+{
+  "event_id": "KO_2019Q3_earnings",
+  "ticker": "KO",
+  "event_date": "2019-07-09",
+  "fiscal_period": "2019Q3",
+  "atom_count": 36,
+  "text_length": 85096,
+  "summary_length": 568,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\KO_2019Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\KO_2019Q3_earnings\\sec_8k.txt",
+  "filing_date": "2019-07-23",
+  "accession_number": "0000021344-19-000031",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/21344/000002134419000031/a2019q2form8-kearningsrele.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000021344",
+  "window_days": 45,
+  "search_date_from": "2019-10-01",
+  "search_date_to": "2019-11-30",
+  "aligned_filing_date": "2019-07-23",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 6.07,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

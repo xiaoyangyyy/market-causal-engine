@@ -1,0 +1,90 @@
+{
+  "event_id": "ADBE_2018Q1_earnings",
+  "ticker": "ADBE",
+  "event_date": "2018-01-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T08:10:45+00:00",
+  "accepted": [
+    {
+      "cause": "Record quarterly revenue of $2.01 billion",
+      "effect": "estimate upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Adobe achieved quarterly revenue of $2.01 billion, which represents 25 percent year-over-year growth.",
+      "source_id": "ADBE2018Q1_001",
+      "published_at": 0,
+      "atom_id": "ADBE2018Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.81,
+      "span_score": 0.99,
+      "severity_align": 0.261,
+      "mechanism_hint": 1.0,
+      "claim_id": "ADBE2018Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Digital Media segment record revenue",
+      "effect": "Increased investor confidence in core business growth",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "Digital Media segment revenue was $1.39 billion, with Creative and Document Cloud achieving record quarterly revenue",
+      "source_id": "ADBE2018Q1_006",
+      "published_at": 0,
+      "atom_id": "ADBE2018Q1_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.838,
+      "span_score": 0.989,
+      "severity_align": 0.376,
+      "mechanism_hint": 1.0,
+      "claim_id": "ADBE2018Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Annualized Recurring Revenue growth",
+      "effect": "Stronger future revenue visibility driving stock price",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 0.75,
+      "evidence_span": "Digital Media Annualized Recurring Revenue (ARR) grew to $5.23 billion exiting the quarter, a quarter-over-quarter increase of $359 million.",
+      "source_id": "ADBE2018Q1_007",
+      "published_at": 0,
+      "atom_id": "ADBE2018Q1_007",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

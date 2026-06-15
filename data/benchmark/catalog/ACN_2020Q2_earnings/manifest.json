@@ -1,0 +1,34 @@
+{
+  "event_id": "ACN_2020Q2_earnings",
+  "ticker": "ACN",
+  "event_date": "2020-04-08",
+  "fiscal_period": "2020Q2",
+  "atom_count": 21,
+  "text_length": 38645,
+  "summary_length": 11996,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\ACN_2020Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\ACN_2020Q2_earnings\\sec_8k.txt",
+  "filing_date": "2020-03-19",
+  "accession_number": "0001467373-20-000157",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1467373/000146737320000157/fy20q28-kbody.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001467373",
+  "window_days": 45,
+  "search_date_from": "2020-07-01",
+  "search_date_to": "2020-08-31",
+  "aligned_filing_date": "2020-03-19",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 4.86,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

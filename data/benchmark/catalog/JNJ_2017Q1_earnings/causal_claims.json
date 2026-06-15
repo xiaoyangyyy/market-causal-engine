@@ -1,0 +1,91 @@
+{
+  "event_id": "JNJ_2017Q1_earnings",
+  "ticker": "JNJ",
+  "event_date": "2017-01-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:53:35+00:00",
+  "accepted": [
+    {
+      "cause": "impressive performance of our Pharmaceutical business",
+      "effect": "strong adjusted sales and EPS growth",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "The strong adjusted sales and EPS growth was driven by the impressive performance of our Pharmaceutical business",
+      "source_id": "JNJ2017Q1_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "JNJ2017Q1_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.779,
+      "span_score": 0.93,
+      "severity_align": 0.271,
+      "mechanism_hint": 1.0,
+      "claim_id": "JNJ2017Q1_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.046,
+      "polarity": -1.0,
+      "evidence_span": "EPS was $1.38 2016 Full-Year Sales of $",
+      "source_id": "JNJ2017Q1_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "JNJ2017Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "JNJ2017Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "net earnings for the full-year of 2016 were $",
+      "source_id": "JNJ2017Q1_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "JNJ2017Q1_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

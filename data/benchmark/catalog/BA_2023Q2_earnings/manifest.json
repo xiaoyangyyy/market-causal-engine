@@ -1,0 +1,31 @@
+{
+  "event_id": "BA_2023Q2_earnings",
+  "ticker": "BA",
+  "event_date": "2023-04-12",
+  "fiscal_period": "2023Q2",
+  "atom_count": 9,
+  "text_length": 35526,
+  "summary_length": 11999,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\BA_2023Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\BA_2023Q2_earnings\\sec_8k.txt",
+  "filing_date": "2023-07-26",
+  "accession_number": "0000012927-23-000045",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/12927/000001292723000045/ba-20230726.htm",
+  "form": "8-K",
+  "search_date_from": "2023-07-01",
+  "search_date_to": "2023-08-31",
+  "aligned_filing_date": "2023-07-26",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 8.72,
+    "magnitude_bucket": "large"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

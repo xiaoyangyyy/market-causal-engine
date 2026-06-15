@@ -1,0 +1,215 @@
+{
+  "case_id": "nflx_2022q1_earnings",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": false,
+  "computed_at": "2026-06-09T03:07:55+00:00",
+  "accepted": [
+    {
+      "cause": "guidance reduction",
+      "effect": "forward earnings revision",
+      "mechanism": "fundamental",
+      "severity": 0.88,
+      "evidence_span": "expectations, reflecting slower",
+      "source_id": "NFLX22Q1_002",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "NFLX22Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "NFLX_2022Q1__C001"
+    },
+    {
+      "cause": "price move",
+      "effect": "momentum feedback",
+      "mechanism": "fundamental",
+      "severity": 0.88,
+      "evidence_span": "shares fall 25%",
+      "source_id": "NFLX22Q1_008",
+      "published_at": 15,
+      "proposer": "heuristic",
+      "atom_id": "NFLX22Q1_008",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "NFLX_2022Q1__C002"
+    },
+    {
+      "cause": "options/liquidity stress",
+      "effect": "forced de-risking",
+      "mechanism": "liquidity",
+      "severity": 0.72,
+      "evidence_span": "Put option volume and volatility spike",
+      "source_id": "NFLX22Q1_009",
+      "published_at": 20,
+      "proposer": "heuristic",
+      "atom_id": "NFLX22Q1_009",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "NFLX_2022Q1__C003"
+    },
+    {
+      "cause": "management commentary",
+      "effect": "narrative shift",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "evidence_span": "CFO says paid sharing and competition weighed on Q1 results and Q2 guidance implies a loss of 2 million subscribers.",
+      "source_id": "NFLX22Q1_004",
+      "published_at": 55,
+      "proposer": "heuristic",
+      "atom_id": "NFLX22Q1_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "NFLX_2022Q1__C004"
+    },
+    {
+      "cause": "guidance reduction",
+      "effect": "forward earnings revision",
+      "mechanism": "fundamental",
+      "severity": 0.88,
+      "evidence_span": "expects Q2 revenue growth to slow",
+      "source_id": "NFLX22Q1_007",
+      "published_at": 55,
+      "proposer": "heuristic",
+      "atom_id": "NFLX22Q1_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "NFLX_2022Q1__C005"
+    },
+    {
+      "cause": "analyst downgrade",
+      "effect": "sentiment deterioration",
+      "mechanism": "sentiment",
+      "severity": 0.75,
+      "evidence_span": "downgrades Netflix from Buy to",
+      "source_id": "NFLX22Q1_010",
+      "published_at": 90,
+      "proposer": "heuristic",
+      "atom_id": "NFLX22Q1_010",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "NFLX_2022Q1__C006"
+    },
+    {
+      "cause": "subscriber loss",
+      "effect": "growth narrative break",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "evidence_span": "for a gain of approximately 2.5 million subscribers, marking the first subscriber loss in more than a decade.",
+      "source_id": "NFLX22Q1_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "NFLX22Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.976,
+      "span_score": 0.956,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "NFLX_2022Q1__C000"
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "regulatory scrutiny",
+      "effect": "regulatory overhang",
+      "mechanism": "regulatory",
+      "severity": 0.6,
+      "evidence_span": "sector ETF sympathy selloff; peer multiples compress",
+      "source_id": "NFLX22Q1_011",
+      "published_at": 95,
+      "proposer": "heuristic",
+      "atom_id": "NFLX22Q1_011",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "mechanism_not_allowed_for_domain:regulatory:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "downside pressure",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "evidence_span": "Multiple analysts cut price targets next morning (Apr 20)",
+      "source_id": "NFLX22Q1_TRAP_NEXTDAY",
+      "published_at": 960,
+      "proposer": "heuristic",
+      "atom_id": "NFLX22Q1_TRAP_NEXTDAY",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "lookahead_violation"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "downside pressure",
+      "mechanism": "fundamental",
+      "severity": 1.0,
+      "evidence_span": "Post-mortem: two-day decline reached 37 percent — calibration label",
+      "source_id": "NFLX22Q1_TRAP_ANALYST",
+      "published_at": 2880,
+      "proposer": "heuristic",
+      "atom_id": "NFLX22Q1_TRAP_ANALYST",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "atom_uses_future_price",
+          "lookahead_violation"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 7,
+  "rejected_count": 3
+}

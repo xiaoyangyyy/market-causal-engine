@@ -1,0 +1,65 @@
+{
+  "event_id": "INTC_2021Q2_earnings",
+  "ticker": "INTC",
+  "event_date": "2021-04-08",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:42:37+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.092,
+      "polarity": -1.0,
+      "evidence_span": "The attached press release includes non-GAAP financial measures relating to our operations and forecasted outlook.",
+      "source_id": "INTC2021Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "INTC2021Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "INTC2021Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Certain of these non-GAAP measures will be used in Intel's earnings conference for the first quarter of 2021",
+      "effect": "Intel's earnings conference for the first quarter of 2021",
+      "mechanism": "fundamental",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "Certain of these non-GAAP measures will be used in Intel's earnings conference for the first quarter of 2021",
+      "source_id": "INTC2021Q2_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "INTC2021Q2_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

@@ -55,6 +55,35 @@ MECHANISM_CATEGORIES: dict[str, str] = {
 }
 
 
+def category_for_kind(kind: str, *, learned: dict[str, Any] | None = None) -> str | None:
+    """Resolve mechanism category; prefers learned map when artifacts exist."""
+    if learned is None:
+        try:
+            from market_causal_engine.learned.store import learned_available, load_learned_store
+
+            if learned_available():
+                learned = load_learned_store()
+        except Exception:  # noqa: BLE001
+            learned = None
+    if learned:
+        cat = learned.get("category_map", {}).get(kind)
+        if cat:
+            return str(cat)
+    return MECHANISM_CATEGORIES.get(kind)
+
+
+def _path_off_weight() -> float:
+    try:
+        from market_causal_engine.learned.store import learned_available, load_learned_store
+
+        if learned_available():
+            on = float(load_learned_store().get("path_attention", 0.65))
+            return max(0.1, min(0.9, 1.0 - on))
+    except Exception:  # noqa: BLE001
+        pass
+    return 0.35
+
+
 def _kinds_on_dominant_path(trace: list[dict[str, Any]], dominant_path: list[str]) -> set[str]:
     if not dominant_path:
         return {e.get("kind", "") for e in trace if e.get("action") == "executed"}
@@ -83,6 +112,7 @@ def compute_mechanism_contributions(
     """Attribute outcome deltas; path-weighted mode down-weights off-path amplification."""
     dominant_path = dominant_path or []
     on_path = _kinds_on_dominant_path(trace, dominant_path)
+    off_weight = _path_off_weight()
 
     buckets: dict[str, float] = {
         "fundamental": 0.0,
@@ -97,12 +127,12 @@ def compute_mechanism_contributions(
         if entry.get("action") != "commit":
             continue
         kind = entry.get("kind", "")
-        category = MECHANISM_CATEGORIES.get(kind)
+        category = category_for_kind(kind)
         if not category or category == "intervention":
             continue
         patch = entry.get("patch", {})
         delta = sum(max(0.0, float(patch.get(k, 0.0))) for k in OUTCOME_KEYS)
-        weight = 1.0 if not path_weighted else (1.0 if kind in on_path else 0.35)
+        weight = 1.0 if not path_weighted else (1.0 if kind in on_path else off_weight)
         weighted = delta * weight
         buckets[category] += weighted
         by_mechanism[kind] = by_mechanism.get(kind, 0.0) + weighted

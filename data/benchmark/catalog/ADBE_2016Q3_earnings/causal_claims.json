@@ -1,0 +1,92 @@
+{
+  "event_id": "ADBE_2016Q3_earnings",
+  "ticker": "ADBE",
+  "event_date": "2016-07-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T11:34:17+00:00",
+  "accepted": [
+    {
+      "cause": "Record quarterly revenue of $1.40 billion",
+      "effect": "revenue beat drives estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "Adobe achieved record quarterly revenue of $1.40 billion, representing year-over-year growth of 20 percent.",
+      "source_id": "ADBE2016Q3_001",
+      "published_at": 0,
+      "atom_id": "ADBE2016Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.804,
+      "span_score": 0.998,
+      "severity_align": 0.212,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ADBE2016Q3_C000"
+    },
+    {
+      "cause": "Digital Media segment revenue grew 26 percent to record $943 million",
+      "effect": "segment growth reinforces valuation multiple expansion",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Digital Media segment revenue grew by 26 percent year-over-year to a record $943 million, with Creative revenue growing 37 percent year-over-year to a record $755 million.",
+      "source_id": "ADBE2016Q3_003",
+      "published_at": 0,
+      "atom_id": "ADBE2016Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.83,
+      "span_score": 1.0,
+      "severity_align": 0.329,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ADBE2016Q3_C001"
+    },
+    {
+      "cause": "Deferred revenue grew to $1.68 billion",
+      "effect": "deferred revenue increase signals future revenue visibility",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": 1.0,
+      "evidence_span": "Cash flow from operations was $489 million, and deferred revenue grew to $1.68 billion.",
+      "source_id": "ADBE2016Q3_005",
+      "published_at": 0,
+      "atom_id": "ADBE2016Q3_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.863,
+      "span_score": 1.0,
+      "severity_align": 0.477,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ADBE2016Q3_C002"
+    }
+  ],
+  "rejected": [],
+  "claim_count": 3,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event"
+}

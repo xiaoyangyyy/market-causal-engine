@@ -1,0 +1,34 @@
+{
+  "event_id": "META_2025Q4_earnings",
+  "ticker": "META",
+  "event_date": "2025-10-06",
+  "fiscal_period": "2025Q4",
+  "atom_count": 15,
+  "text_length": 25510,
+  "summary_length": 11993,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\META_2025Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\META_2025Q4_earnings\\sec_8k.txt",
+  "filing_date": "2025-10-29",
+  "accession_number": "0001628280-25-047114",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047114/meta-20251029.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001326801",
+  "window_days": 45,
+  "search_date_from": "2026-01-01",
+  "search_date_to": "2026-02-28",
+  "aligned_filing_date": "2025-10-29",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": 0.03,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

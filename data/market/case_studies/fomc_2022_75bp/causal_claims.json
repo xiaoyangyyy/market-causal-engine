@@ -1,0 +1,136 @@
+{
+  "case_id": "fomc_2022_75bp",
+  "domain": "macro",
+  "as_of": 90,
+  "use_llm": false,
+  "computed_at": "2026-06-09T03:07:55+00:00",
+  "accepted": [
+    {
+      "cause": "monetary policy shock",
+      "effect": "risk appetite compression",
+      "mechanism": "macro",
+      "severity": 0.82,
+      "evidence_span": "Federal Reserve Board - Federal Reserve issues FOMC statement",
+      "source_id": "FOMC22SEP_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "FOMC22SEP_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "FOMC_2022_75_C000"
+    },
+    {
+      "cause": "monetary policy shock",
+      "effect": "risk appetite compression",
+      "mechanism": "macro",
+      "severity": 0.82,
+      "evidence_span": "Fed raises interest rates by 75 basis points in hawkish",
+      "source_id": "FOMC22SEP_003",
+      "published_at": 2,
+      "proposer": "heuristic",
+      "atom_id": "FOMC22SEP_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "FOMC_2022_75_C001"
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "downside pressure",
+      "mechanism": "macro",
+      "severity": 0.75,
+      "evidence_span": "Treasury yield jump",
+      "source_id": "FOMC22SEP_004",
+      "published_at": 15,
+      "proposer": "heuristic",
+      "atom_id": "FOMC22SEP_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "FOMC_2022_75_C002"
+    },
+    {
+      "cause": "sector transmission",
+      "effect": "cross-asset repricing",
+      "mechanism": "macro",
+      "severity": 0.65,
+      "evidence_span": "High-beta stocks sell off as macro risk appetite falls",
+      "source_id": "FOMC22SEP_006",
+      "published_at": 35,
+      "proposer": "heuristic",
+      "atom_id": "FOMC22SEP_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "FOMC_2022_75_C003"
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "downside pressure",
+      "mechanism": "macro",
+      "severity": 0.77,
+      "evidence_span": "S&P 500 falls sharply following surprise restrictive Fed guidance",
+      "source_id": "FOMC22SEP_007",
+      "published_at": 50,
+      "proposer": "heuristic",
+      "atom_id": "FOMC22SEP_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "FOMC_2022_75_C004"
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "regulatory scrutiny",
+      "effect": "regulatory overhang",
+      "mechanism": "regulatory",
+      "severity": 0.6,
+      "evidence_span": "sector ETF decline",
+      "source_id": "FOMC22SEP_005",
+      "published_at": 25,
+      "proposer": "heuristic",
+      "atom_id": "FOMC22SEP_005",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "mechanism_not_allowed_for_domain:regulatory:macro"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 5,
+  "rejected_count": 1
+}

@@ -1,0 +1,52 @@
+{
+  "case_id": "cpi_2022_06_hot",
+  "domain": "macro",
+  "outcome_effect": -0.000501,
+  "outcome_method": "synthetic_control",
+  "predicted_effect": -0.06066,
+  "predicted_direction": "down",
+  "actual_direction": "neutral",
+  "direction_match": false,
+  "confidence": 0.359,
+  "mechanism_weights": {
+    "fundamental": 0.035,
+    "sentiment": 0.0554,
+    "liquidity": 0.1125,
+    "macro": 0.7971,
+    "regulatory": 0.0,
+    "trust": 0.0
+  },
+  "dominant_mechanism": "macro",
+  "posterior_weights": {
+    "fundamental": 0.0316,
+    "sentiment": 0.0491,
+    "liquidity": 0.0746,
+    "macro": 0.815,
+    "regulatory": 0.0148,
+    "trust": 0.0148
+  },
+  "prior_weights": {
+    "fundamental": 0.0909,
+    "sentiment": 0.1364,
+    "liquidity": 0.1818,
+    "macro": 0.5,
+    "regulatory": 0.0455,
+    "trust": 0.0455
+  },
+  "posterior_confidence": 0.635,
+  "feature_vector": {
+    "claim_count": 5.0,
+    "m_fundamental": 0.03,
+    "m_liquidity": 0.1159,
+    "m_macro": 0.8091,
+    "m_regulatory": 0.0,
+    "m_sentiment": 0.045,
+    "m_trust": 0.0,
+    "max_severity": 0.92,
+    "mean_confidence": 0.65,
+    "trace_total": 1.0
+  },
+  "claim_count": 5,
+  "model_version": "v0.7-ridge",
+  "computed_at": "2026-06-09T03:17:00+00:00"
+}

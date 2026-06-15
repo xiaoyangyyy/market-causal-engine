@@ -1,0 +1,31 @@
+{
+  "event_id": "COST_2019Q2_earnings",
+  "ticker": "COST",
+  "event_date": "2019-04-05",
+  "fiscal_period": "2019Q2",
+  "atom_count": 1,
+  "text_length": 11254,
+  "summary_length": 2826,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\COST_2019Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\COST_2019Q2_earnings\\sec_8k.txt",
+  "filing_date": "2019-08-14",
+  "accession_number": "0001193125-19-221072",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/909832/000119312519221072/d792584d8k.htm",
+  "form": "8-K",
+  "search_date_from": "2019-07-01",
+  "search_date_to": "2019-08-31",
+  "aligned_filing_date": "2019-08-14",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -2.94,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

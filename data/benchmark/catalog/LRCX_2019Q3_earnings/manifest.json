@@ -1,0 +1,31 @@
+{
+  "event_id": "LRCX_2019Q3_earnings",
+  "ticker": "LRCX",
+  "event_date": "2019-07-18",
+  "fiscal_period": "2019Q3",
+  "atom_count": 28,
+  "text_length": 21150,
+  "summary_length": 11993,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\LRCX_2019Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\LRCX_2019Q3_earnings\\sec_8k.txt",
+  "filing_date": "2019-10-23",
+  "accession_number": "0000707549-19-000159",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/707549/000070754919000159/lrcx8-k1q2020.htm",
+  "form": "8-K",
+  "search_date_from": "2019-10-01",
+  "search_date_to": "2019-11-30",
+  "aligned_filing_date": "2019-10-23",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.74,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

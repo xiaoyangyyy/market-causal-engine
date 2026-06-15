@@ -1,0 +1,34 @@
+{
+  "event_id": "ABBV_2023Q3_earnings",
+  "ticker": "ABBV",
+  "event_date": "2023-07-17",
+  "fiscal_period": "2023Q3",
+  "atom_count": 35,
+  "text_length": 41241,
+  "summary_length": 12000,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\ABBV_2023Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\ABBV_2023Q3_earnings\\sec_8k.txt",
+  "filing_date": "2023-07-27",
+  "accession_number": "0001551152-23-000028",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115223000028/abbv-20230727.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001551152",
+  "window_days": 45,
+  "search_date_from": "2023-10-01",
+  "search_date_to": "2023-11-30",
+  "aligned_filing_date": "2023-07-27",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 4.9,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "corpus": "earnings_sp500_2016_2025",
+  "attempted": 1998,
+  "ok": 1953,
+  "errors": 45,
+  "error_samples": [
+    {
+      "event_id": "NVDA_2020Q2_earnings",
+      "ticker": "NVDA",
+      "error": "No price history for treated ticker NVDA"
+    },
+    {
+      "event_id": "UNH_2020Q2_earnings",
+      "ticker": "UNH",
+      "error": "No price history for treated ticker UNH"
+    },
+    {
+      "event_id": "XOM_2020Q2_earnings",
+      "ticker": "XOM",
+      "error": "No price history for treated ticker XOM"
+    },
+    {
+      "event_id": "CMCSA_2020Q2_earnings",
+      "ticker": "CMCSA",
+      "error": "No price history for treated ticker CMCSA"
+    },
+    {
+      "event_id": "CRM_2020Q2_earnings",
+      "ticker": "CRM",
+      "error": "No price history for treated ticker CRM"
+    },
+    {
+      "event_id": "JPM_2020Q2_earnings",
+      "ticker": "JPM",
+      "error": "No price history for treated ticker JPM"
+    },
+    {
+      "event_id": "SPGI_2020Q2_earnings",
+      "ticker": "SPGI",
+      "error": "No price history for treated ticker SPGI"
+    },
+    {
+      "event_id": "UBER_2020Q2_earnings",
+      "ticker": "UBER",
+      "error": "No price history for treated ticker UBER"
+    },
+    {
+      "event_id": "ABT_2020Q2_earnings",
+      "ticker": "ABT",
+      "error": "No price history for treated ticker ABT"
+    },
+    {
+      "event_id": "ADI_2020Q2_earnings",
+      "ticker": "ADI",
+      "error": "No price history for treated ticker ADI"
+    },
+    {
+      "event_id": "JNJ_2020Q2_earnings",
+      "ticker": "JNJ",
+      "error": "No price history for treated ticker JNJ"
+    },
+    {
+      "event_id": "MA_2020Q2_earnings",
+      "ticker": "MA",
+      "error": "No price history for treated ticker MA"
+    },
+    {
+      "event_id": "ROKU_2020Q2_earnings",
+      "ticker": "ROKU",
+      "error": "No price history for treated ticker ROKU"
+    },
+    {
+      "event_id": "WMT_2020Q2_earnings",
+      "ticker": "WMT",
+      "error": "No price history for treated ticker WMT"
+    },
+    {
+      "event_id": "ZM_2020Q2_earnings",
+      "ticker": "ZM",
+      "error": "No price history for treated ticker ZM"
+    },
+    {
+      "event_id": "UNP_2020Q3_earnings",
+      "ticker": "UNP",
+      "error": "No price history for treated ticker UNP"
+    },
+    {
+      "event_id": "ADBE_2020Q3_earnings",
+      "ticker": "ADBE",
+      "error": "No price history for treated ticker ADBE"
+    },
+    {
+      "event_id": "ISRG_2020Q3_earnings",
+      "ticker": "ISRG",
+      "error": "No price history for treated ticker ISRG"
+    },
+    {
+      "event_id": "VRTX_2020Q3_earnings",
+      "ticker": "VRTX",
+      "error": "No price history for treated ticker VRTX"
+    },
+    {
+      "event_id": "LOW_2020Q3_earnings",
+      "ticker": "LOW",
+      "error": "No price history for treated ticker LOW"
+    }
+  ],
+  "output": "E:\\ca\\data\\benchmark\\counterfactuals\\earnings_sp500_2016_2025.jsonl",
+  "computed_at": "2026-06-06T14:02:46+00:00"
+}

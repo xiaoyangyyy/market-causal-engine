@@ -1,0 +1,69 @@
+{
+  "event_id": "SHOP_2021Q4_earnings",
+  "ticker": "SHOP",
+  "event_date": "2021-10-12",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T03:19:15+00:00",
+  "accepted": [
+    {
+      "cause": "Subscription solutions revenue growth",
+      "effect": "Increased total revenue and market confidence",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Subscription solutions revenues increased from $629.3 million in the nine months ended September 30, 2020 to $991.1 million in the nine months ended September 30, 2021, representing an increase of 57.5% .",
+      "source_id": "SHOP2021Q4_008",
+      "published_at": 0,
+      "atom_id": "SHOP2021Q4_008",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.825,
+      "span_score": 1.0,
+      "severity_align": 0.299,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP2021Q4_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Total revenue increase",
+      "effect": "Positive earnings surprise expectation",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "total revenue was $3,231.8 million, an increase of",
+      "source_id": "SHOP2021Q4_006",
+      "published_at": 0,
+      "atom_id": "SHOP2021Q4_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.826,
+      "span_score": 1.0,
+      "severity_align": 0.303,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP2021Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

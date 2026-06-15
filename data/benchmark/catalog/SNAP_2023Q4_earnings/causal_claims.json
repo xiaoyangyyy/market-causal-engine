@@ -1,0 +1,45 @@
+{
+  "event_id": "SNAP_2023Q4_earnings",
+  "ticker": "SNAP",
+  "event_date": "2023-10-13",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:46:19+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.77,
+      "polarity": -1.0,
+      "evidence_span": "(Exact name of Registrant as Specified in Its Charter) ________________________ Delaware 001-38017 45-5452795 (State or Other Jurisdiction of Incorporation) (Commission File Number",
+      "source_id": "SNAP2023Q4_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "SNAP2023Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.988,
+      "span_score": 0.979,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNAP2023Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

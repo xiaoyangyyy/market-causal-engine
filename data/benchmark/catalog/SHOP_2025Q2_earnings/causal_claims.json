@@ -1,0 +1,83 @@
+{
+  "event_id": "SHOP_2025Q2_earnings",
+  "ticker": "SHOP",
+  "event_date": "2025-04-14",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T13:26:54+00:00",
+  "accepted": [
+    {
+      "cause": "Eight consecutive quarters of pro forma revenue growth",
+      "effect": "Increased free cash flow and market confidence",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "We have now achieved eight consecutive quarters of pro forma revenue growth of 25% or more",
+      "source_id": "SHOP2025Q2_008",
+      "published_at": 0,
+      "atom_id": "SHOP2025Q2_008",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.804,
+      "span_score": 0.943,
+      "severity_align": 0.342,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP2025Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Merchant solutions revenue growth",
+      "effect": "Strong revenue growth and profitability",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 0.9,
+      "evidence_span": "Merchant solutions revenue 1,740 1,350",
+      "source_id": "SHOP2025Q2_003",
+      "published_at": 0,
+      "atom_id": "SHOP2025Q2_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    },
+    {
+      "cause": "Guidance for mid-twenties percentage revenue growth",
+      "effect": "Positive market sentiment and stock direction",
+      "mechanism": "sentiment",
+      "severity": 0.75,
+      "polarity": 0.7,
+      "evidence_span": "expect: Revenue to grow at a mid-twenties percentage rate on a year",
+      "source_id": "SHOP2025Q2_006",
+      "published_at": 0,
+      "atom_id": "SHOP2025Q2_006",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

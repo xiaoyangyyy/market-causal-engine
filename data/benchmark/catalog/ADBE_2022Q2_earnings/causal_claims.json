@@ -1,0 +1,45 @@
+{
+  "event_id": "ADBE_2022Q2_earnings",
+  "ticker": "ADBE",
+  "event_date": "2022-04-08",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:05:07+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.171,
+      "polarity": -1.0,
+      "evidence_span": "Pursuant to the terms of the Revolving Credit Agreement, the Company may, subject to the agreement of lenders to provide additional commitments, obtain up to an additional $500 mil",
+      "source_id": "ADBE2022Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "ADBE2022Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.994,
+      "span_score": 0.99,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "ADBE2022Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

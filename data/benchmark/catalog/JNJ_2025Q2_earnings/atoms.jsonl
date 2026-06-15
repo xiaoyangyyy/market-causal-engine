@@ -1,0 +1,2 @@
+{"atom_id": "JNJ2025Q2_000", "text": "earnings per share (EPS) increased to $", "source": "8-K", "time": 0, "tags": ["earnings", "financials"], "metadata": {"severity": 0.046, "extracted_by": "financial_results", "source_class": "primary_filing"}, "published_at": 0}
+{"atom_id": "JNJ2025Q2_001", "text": "Net Earnings $10,999 $3,255 237.9% EPS (diluted) $", "source": "8-K", "time": 0, "tags": ["earnings", "financials"], "metadata": {"severity": 0.053, "extracted_by": "financial_results", "source_class": "primary_filing"}, "published_at": 0}

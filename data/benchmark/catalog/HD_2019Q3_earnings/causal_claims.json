@@ -1,0 +1,70 @@
+{
+  "event_id": "HD_2019Q3_earnings",
+  "ticker": "HD",
+  "event_date": "2019-07-24",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T09:47:44+00:00",
+  "accepted": [
+    {
+      "cause": "Expected EPS growth of 3.1 percent",
+      "effect": "Bullish outlook for fiscal year performance",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "expects diluted earnings-per-share growth of approximately 3.1 percent from fiscal 2018",
+      "source_id": "HD2019Q3_001",
+      "published_at": 0,
+      "atom_id": "HD2019Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.828,
+      "span_score": 0.944,
+      "severity_align": 0.437,
+      "mechanism_hint": 1.0,
+      "claim_id": "HD2019Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Reaffirmed EPS growth guidance",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": 1.0,
+      "evidence_span": "The Company reaffirmed its diluted earnings-per-share growth guidance for the year",
+      "source_id": "HD2019Q3_001",
+      "published_at": 0,
+      "atom_id": "HD2019Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.851,
+      "span_score": 0.939,
+      "severity_align": 0.537,
+      "mechanism_hint": 1.0,
+      "claim_id": "HD2019Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

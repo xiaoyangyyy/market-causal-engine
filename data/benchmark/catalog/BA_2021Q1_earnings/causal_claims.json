@@ -1,0 +1,141 @@
+{
+  "event_id": "BA_2021Q1_earnings",
+  "ticker": "BA",
+  "event_date": "2021-01-15",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:38:09+00:00",
+  "accepted": [
+    {
+      "cause": "lower commercial deliveries and services volume",
+      "effect": "fourth-quarter revenue of $15.3 billion",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "reflecting lower commercial deliveries and services volume primarily due",
+      "source_id": "BA2021Q1_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "BA2021Q1_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.788,
+      "span_score": 0.901,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "BA2021Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Net Loss",
+      "effect": "stock decline",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Net Loss ($8,439)",
+      "source_id": "BA2021Q1_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "BA2021Q1_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.774,
+      "span_score": 0.931,
+      "severity_align": 0.248,
+      "mechanism_hint": 1.0,
+      "claim_id": "BA2021Q1_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Net loss attributable to Boeing Shareholders",
+      "effect": "profitability concern",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Net loss attributable to Boeing Shareholders",
+      "source_id": "BA2021Q1_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "BA2021Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.813,
+      "span_score": 1.0,
+      "severity_align": 0.251,
+      "mechanism_hint": 1.0,
+      "claim_id": "BA2021Q1_C002",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.053,
+      "polarity": -1.0,
+      "evidence_span": "Total revenues 58,158 76,559 15,304 17,911 Cost of",
+      "source_id": "BA2021Q1_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "BA2021Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "BA2021Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Total shareholders' deficit",
+      "effect": "Negative stock price movement",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Total shareholders' deficit (18,316",
+      "source_id": "BA2021Q1_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "BA2021Q1_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,114 @@
+{
+  "event_id": "MS_2024Q4_earnings",
+  "ticker": "MS",
+  "event_date": "2024-10-24",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T13:15:18+00:00",
+  "accepted": [
+    {
+      "cause": "Strong asset management and transactional revenues",
+      "effect": "Record net revenues of $7.3 billion achieved",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "Record net revenues of $7.3 billion reflect strong asset management and transactional revenues",
+      "source_id": "MS2024Q4_002",
+      "published_at": 0,
+      "atom_id": "MS2024Q4_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.796,
+      "span_score": 1.0,
+      "severity_align": 0.182,
+      "mechanism_hint": 1.0,
+      "claim_id": "MS2024Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.6,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Strong performance in Equity and Fixed Income driven by higher client activity",
+      "effect": "Institutional Securities net revenues increased to $6.8 billion",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Institutional Securities net revenues of $6.8 billion reflect strong performance in Equity and Fixed Income on higher client activity",
+      "source_id": "MS2024Q4_001",
+      "published_at": 0,
+      "atom_id": "MS2024Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.831,
+      "span_score": 0.995,
+      "severity_align": 0.336,
+      "mechanism_hint": 1.0,
+      "claim_id": "MS2024Q4_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.6,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Mark-to-market gains on investments associated with DCP versus prior year losses",
+      "effect": "Performance-based income and other revenues increased year-over-year",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "Performance-based income and other revenues increased from a year ago on mark-to-market gains on investments associated with DCP versus losses in the prior year",
+      "source_id": "MS2024Q4_007",
+      "published_at": 0,
+      "atom_id": "MS2024Q4_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.856,
+      "span_score": 1.0,
+      "severity_align": 0.423,
+      "mechanism_hint": 1.0,
+      "claim_id": "MS2024Q4_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Net income applicable to Morgan Stanley rising from $1,436 million to $3,188 million",
+      "effect": "Significant year-over-year profitability increase",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 0.8,
+      "evidence_span": "Net income applicable to Morgan Stanley $ 3,188 $ compared to $ 1,436 $",
+      "source_id": "MS2024Q4_004",
+      "published_at": 0,
+      "atom_id": "MS2024Q4_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

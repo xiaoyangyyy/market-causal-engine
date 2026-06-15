@@ -1,0 +1,71 @@
+{
+  "event_id": "ZM_2021Q1_earnings",
+  "ticker": "ZM",
+  "event_date": "2021-01-19",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T13:12:19+00:00",
+  "accepted": [
+    {
+      "cause": "GAAP income from operations up 2327% year-over-year",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.95,
+      "polarity": -1.0,
+      "evidence_span": "Fourth quarter GAAP income from operations of $256.1 million, up 2327% year-over-year",
+      "source_id": "ZM2021Q1_001",
+      "published_at": 0,
+      "atom_id": "ZM2021Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.768,
+      "span_score": 0.955,
+      "severity_align": 0.173,
+      "mechanism_hint": 1.0,
+      "claim_id": "ZM2021Q1_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Fourth quarter total revenue up 369% year-over-year",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "Fourth quarter total revenue of $882.5 million, up 369% year-over-year",
+      "source_id": "ZM2021Q1_000",
+      "published_at": 0,
+      "atom_id": "ZM2021Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.769,
+      "span_score": 0.931,
+      "severity_align": 0.229,
+      "mechanism_hint": 1.0,
+      "claim_id": "ZM2021Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

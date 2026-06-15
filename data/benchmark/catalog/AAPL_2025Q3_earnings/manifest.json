@@ -1,0 +1,34 @@
+{
+  "event_id": "AAPL_2025Q3_earnings",
+  "ticker": "AAPL",
+  "event_date": "2025-07-18",
+  "fiscal_period": "2025Q3",
+  "atom_count": 3,
+  "text_length": 14324,
+  "summary_length": 10194,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\AAPL_2025Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\AAPL_2025Q3_earnings\\sec_8k.txt",
+  "filing_date": "2025-07-31",
+  "accession_number": "0000320193-25-000071",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000071/aapl-20250731.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000320193",
+  "window_days": 45,
+  "search_date_from": "2025-10-01",
+  "search_date_to": "2025-11-30",
+  "aligned_filing_date": "2025-07-31",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.71,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

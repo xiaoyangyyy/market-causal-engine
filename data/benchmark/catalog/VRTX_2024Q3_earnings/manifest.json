@@ -1,0 +1,34 @@
+{
+  "event_id": "VRTX_2024Q3_earnings",
+  "ticker": "VRTX",
+  "event_date": "2024-07-24",
+  "fiscal_period": "2024Q3",
+  "atom_count": 3,
+  "text_length": 47999,
+  "summary_length": 11998,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\VRTX_2024Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\VRTX_2024Q3_earnings\\sec_8k.txt",
+  "filing_date": "2024-08-01",
+  "accession_number": "0000875320-24-000193",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/875320/000087532024000193/vrtx-20240801.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000875320",
+  "window_days": 45,
+  "search_date_from": "2024-10-01",
+  "search_date_to": "2024-11-30",
+  "aligned_filing_date": "2024-08-01",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 2.03,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

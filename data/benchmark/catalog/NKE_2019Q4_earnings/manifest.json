@@ -1,0 +1,31 @@
+{
+  "event_id": "NKE_2019Q4_earnings",
+  "ticker": "NKE",
+  "event_date": "2019-10-23",
+  "fiscal_period": "2019Q4",
+  "atom_count": 2,
+  "text_length": 14697,
+  "summary_length": 10069,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\NKE_2019Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\NKE_2019Q4_earnings\\sec_8k.txt",
+  "filing_date": "2020-02-06",
+  "accession_number": "0001193125-20-026172",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/320187/000119312520026172/d865187d8k.htm",
+  "form": "8-K",
+  "search_date_from": "2020-01-01",
+  "search_date_to": "2020-02-29",
+  "aligned_filing_date": "2020-02-06",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.27,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

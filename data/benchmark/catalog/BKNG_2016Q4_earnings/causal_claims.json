@@ -1,0 +1,70 @@
+{
+  "event_id": "BKNG_2016Q4_earnings",
+  "ticker": "BKNG",
+  "event_date": "2016-10-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T07:00:24+00:00",
+  "accepted": [
+    {
+      "cause": "Net income per diluted share increased 35% year-over-year",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Net income was $13.47 per diluted share, a 35% increase as compared to the prior year.",
+      "source_id": "BKNG2016Q4_003",
+      "published_at": 0,
+      "atom_id": "BKNG2016Q4_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.806,
+      "span_score": 1.0,
+      "severity_align": 0.225,
+      "mechanism_hint": 1.0,
+      "claim_id": "BKNG2016Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Non-GAAP net income per diluted share increased 32% year-over-year",
+      "effect": "Investor confidence in adjusted profitability growth",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Non-GAAP net income was $14.21 per diluted share, a 32% increase compared to $10.73 per diluted share a year ago.",
+      "source_id": "BKNG2016Q4_005",
+      "published_at": 0,
+      "atom_id": "BKNG2016Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.823,
+      "span_score": 1.0,
+      "severity_align": 0.292,
+      "mechanism_hint": 1.0,
+      "claim_id": "BKNG2016Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

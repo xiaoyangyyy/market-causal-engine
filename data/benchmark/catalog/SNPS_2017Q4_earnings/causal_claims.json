@@ -1,0 +1,71 @@
+{
+  "event_id": "SNPS_2017Q4_earnings",
+  "ticker": "SNPS",
+  "event_date": "2017-10-16",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T02:52:11+00:00",
+  "accepted": [
+    {
+      "cause": "GAAP loss reported",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Revenue: $696.6 million • GAAP loss",
+      "source_id": "SNPS2017Q4_000",
+      "published_at": 0,
+      "atom_id": "SNPS2017Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.861,
+      "span_score": 1.0,
+      "severity_align": 0.443,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNPS2017Q4_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Revenue growth to $696.6 million",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "For the fourth quarter of fiscal 2017, Synopsys reported revenue of $696.6 million, compared to $633.7 million for the fourth quarter of fiscal 2016.",
+      "source_id": "SNPS2017Q4_001",
+      "published_at": 0,
+      "atom_id": "SNPS2017Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.854,
+      "span_score": 1.0,
+      "severity_align": 0.414,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNPS2017Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

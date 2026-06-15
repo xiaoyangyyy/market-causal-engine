@@ -1,0 +1,111 @@
+{
+  "event_id": "MS_2020Q1_earnings",
+  "ticker": "MS",
+  "event_date": "2020-01-06",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:09:56+00:00",
+  "accepted": [
+    {
+      "cause": "positive impact",
+      "effect": "Revenues for 2014",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "positive impact",
+      "source_id": "MS2020Q1_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MS2020Q1_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.839,
+      "span_score": 0.911,
+      "severity_align": 0.552,
+      "mechanism_hint": 1.0,
+      "claim_id": "MS2020Q1_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.6,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.171,
+      "polarity": -1.0,
+      "evidence_span": "Pre-Tax Margin is a non-GAAP financial measures that the Firm considers useful for analysts, investors and other stakeholders to assess operating performance.Wallet represents aggr",
+      "source_id": "MS2020Q1_006",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "MS2020Q1_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.988,
+      "span_score": 0.979,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "MS2020Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "revenues.The calculation of",
+      "source_id": "MS2020Q1_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MS2020Q1_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "revenues.The calculation of",
+      "source_id": "MS2020Q1_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MS2020Q1_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

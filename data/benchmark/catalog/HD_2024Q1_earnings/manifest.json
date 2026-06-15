@@ -1,0 +1,34 @@
+{
+  "event_id": "HD_2024Q1_earnings",
+  "ticker": "HD",
+  "event_date": "2024-01-11",
+  "fiscal_period": "2024Q1",
+  "atom_count": 3,
+  "text_length": 21360,
+  "summary_length": 6958,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\HD_2024Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\HD_2024Q1_earnings\\sec_8k.txt",
+  "filing_date": "2024-02-20",
+  "accession_number": "0000354950-24-000031",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/354950/000035495024000031/hd-20240220.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000354950",
+  "window_days": 45,
+  "search_date_from": "2024-04-01",
+  "search_date_to": "2024-05-31",
+  "aligned_filing_date": "2024-02-20",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": 0.06,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

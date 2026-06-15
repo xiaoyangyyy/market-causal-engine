@@ -1,0 +1,70 @@
+{
+  "event_id": "VRTX_2024Q1_earnings",
+  "ticker": "VRTX",
+  "event_date": "2024-01-19",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T04:19:11+00:00",
+  "accepted": [
+    {
+      "cause": "Net income increase",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "Net income $ 968.8 $ 818.9",
+      "source_id": "VRTX2024Q1_000",
+      "published_at": 0,
+      "atom_id": "VRTX2024Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.829,
+      "span_score": 0.987,
+      "severity_align": 0.345,
+      "mechanism_hint": 1.0,
+      "claim_id": "VRTX2024Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Growth expectations",
+      "effect": "Investor confidence",
+      "mechanism": "sentiment",
+      "severity": 0.6,
+      "polarity": 1.0,
+      "evidence_span": "expectations for continued growth",
+      "source_id": "VRTX2024Q1_002",
+      "published_at": 0,
+      "atom_id": "VRTX2024Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.861,
+      "span_score": 1.0,
+      "severity_align": 0.442,
+      "mechanism_hint": 1.0,
+      "claim_id": "VRTX2024Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

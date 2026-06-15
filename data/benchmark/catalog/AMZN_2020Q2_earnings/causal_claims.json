@@ -1,0 +1,141 @@
+{
+  "event_id": "AMZN_2020Q2_earnings",
+  "ticker": "AMZN",
+  "event_date": "2020-04-21",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:17:30+00:00",
+  "accepted": [
+    {
+      "cause": "Operating income decreased",
+      "effect": "likely next-day stock decline",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Operating income decreased to $",
+      "source_id": "AMZN2020Q2_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "AMZN2020Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.81,
+      "span_score": 1.0,
+      "severity_align": 0.241,
+      "mechanism_hint": 1.0,
+      "claim_id": "AMZN2020Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Net income decreased",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Net income decreased to $",
+      "source_id": "AMZN2020Q2_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "AMZN2020Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.809,
+      "span_score": 1.0,
+      "severity_align": 0.237,
+      "mechanism_hint": 1.0,
+      "claim_id": "AMZN2020Q2_C002",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Net product sales increased from $34,283 million to $41,841 million",
+      "effect": "Total net sales increased from $59,700 million to $75,452 million",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Net product sales $ 34,283 $ 41,841",
+      "source_id": "AMZN2020Q2_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "AMZN2020Q2_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.774,
+      "span_score": 0.875,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "AMZN2020Q2_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.6,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.048,
+      "polarity": -1.0,
+      "evidence_span": "revenue rather than a reduction in cost of",
+      "source_id": "AMZN2020Q2_009",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "AMZN2020Q2_009",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "AMZN2020Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "removed over one million",
+      "effect": "customers from bad actors",
+      "mechanism": "trust",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "customers from bad actors and have removed over one million",
+      "source_id": "AMZN2020Q2_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "AMZN2020Q2_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "mechanism_not_allowed_for_domain:trust:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

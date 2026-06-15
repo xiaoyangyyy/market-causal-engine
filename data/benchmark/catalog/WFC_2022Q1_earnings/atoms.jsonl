@@ -1,0 +1,2 @@
+{"atom_id": "WFC2022Q1_000", "text": "net income $ 5,750 5,122 6,040 4,636 3,091 12 86 $", "source": "8-K", "time": 0, "tags": ["earnings", "financials"], "metadata": {"severity": 0.053, "extracted_by": "financial_results", "source_class": "primary_filing"}, "published_at": 0}
+{"atom_id": "WFC2022Q1_001", "text": "Total revenue 20,856 18,834 18,489 2,022 2,367 Net charge-of", "source": "8-K", "time": 0, "tags": ["earnings", "financials"], "metadata": {"severity": 0.059, "extracted_by": "financial_results", "source_class": "primary_filing"}, "published_at": 0}

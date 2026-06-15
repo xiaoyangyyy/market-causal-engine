@@ -1,0 +1,31 @@
+{
+  "event_id": "TSLA_2018Q3_earnings",
+  "ticker": "TSLA",
+  "event_date": "2018-07-17",
+  "fiscal_period": "2018Q3",
+  "atom_count": 1,
+  "text_length": 37763,
+  "summary_length": 496,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\TSLA_2018Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\TSLA_2018Q3_earnings\\sec_8k.txt",
+  "filing_date": "2018-10-24",
+  "accession_number": "0001564590-18-024902",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1318605/000156459018024902/tsla-8k_20181024.htm",
+  "form": "8-K",
+  "search_date_from": "2018-10-01",
+  "search_date_to": "2018-11-30",
+  "aligned_filing_date": "2018-10-24",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -1.92,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "event_id": "ZM_2023Q1_earnings",
+  "ticker": "ZM",
+  "event_date": "2023-01-20",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T12:25:05+00:00",
+  "accepted": [
+    {
+      "cause": "Online revenue decline",
+      "effect": "Mixed revenue performance",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "Online revenue was $473.4 million, down 8% year over year",
+      "source_id": "ZM2023Q1_003",
+      "published_at": 0,
+      "atom_id": "ZM2023Q1_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.878,
+      "span_score": 0.942,
+      "severity_align": 0.64,
+      "mechanism_hint": 1.0,
+      "claim_id": "ZM2023Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Total revenue growth rate",
+      "effect": "Modest top-line expansion",
+      "mechanism": "fundamental",
+      "severity": 0.4,
+      "polarity": -1.0,
+      "evidence_span": "First quarter total revenue of $1,105.4 million, up 3% year over year",
+      "source_id": "ZM2023Q1_000",
+      "published_at": 0,
+      "atom_id": "ZM2023Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.829,
+      "span_score": 0.899,
+      "severity_align": 0.54,
+      "mechanism_hint": 1.0,
+      "claim_id": "ZM2023Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Enterprise revenue growth",
+      "effect": "Positive revenue surprise",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 0.6,
+      "evidence_span": "Enterprise revenue of $632.0 million, up 13% year over year",
+      "source_id": "ZM2023Q1_000",
+      "published_at": 0,
+      "atom_id": "ZM2023Q1_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

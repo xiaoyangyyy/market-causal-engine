@@ -1,0 +1,34 @@
+{
+  "event_id": "UPS_2022Q2_earnings",
+  "ticker": "UPS",
+  "event_date": "2022-04-13",
+  "fiscal_period": "2022Q2",
+  "atom_count": 15,
+  "text_length": 45893,
+  "summary_length": 11999,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\UPS_2022Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\UPS_2022Q2_earnings\\sec_8k.txt",
+  "filing_date": "2022-04-26",
+  "accession_number": "0001090727-22-000019",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1090727/000109072722000019/ups-20220426.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001090727",
+  "window_days": 45,
+  "search_date_from": "2022-07-01",
+  "search_date_to": "2022-08-31",
+  "aligned_filing_date": "2022-04-26",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -3.48,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 5,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "event_id": "JPM_2017Q2_earnings",
+  "ticker": "JPM",
+  "event_date": "2017-04-19",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:15:38+00:00",
+  "accepted": [
+    {
+      "cause": "Net income $ 6,448",
+      "effect": "earnings per share",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "earnings per share Net income $ 6,448 $ 6,727",
+      "source_id": "JPM2017Q2_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "JPM2017Q2_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.888,
+      "span_score": 1.0,
+      "severity_align": 0.551,
+      "mechanism_hint": 1.0,
+      "claim_id": "JPM2017Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "NET INCOME Consumer & Community Banking $ 1,988",
+      "effect": "positive stock performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "NET INCOME Consumer & Community Banking $ 1,988",
+      "source_id": "JPM2017Q2_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "JPM2017Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.813,
+      "span_score": 1.0,
+      "severity_align": 0.252,
+      "mechanism_hint": 1.0,
+      "claim_id": "JPM2017Q2_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.053,
+      "polarity": -1.0,
+      "evidence_span": "EARNINGS PER SHARE DATA Net income: Basic $ 1.66 $",
+      "source_id": "JPM2017Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "JPM2017Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "JPM2017Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.049,
+      "polarity": -1.0,
+      "evidence_span": "NET INCOME $ 6,448 $ 6,727 $ 6,286 $ 6,200 $",
+      "source_id": "JPM2017Q2_003",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "JPM2017Q2_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "JPM2017Q2_C003",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "earnings per share in any of",
+      "source_id": "JPM2017Q2_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "JPM2017Q2_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "JPM2017Q2_011",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "JPM2017Q2_011",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

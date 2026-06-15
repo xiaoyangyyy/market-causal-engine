@@ -1,0 +1,167 @@
+{
+  "event_id": "ADBE_2025Q3_earnings",
+  "ticker": "ADBE",
+  "event_date": "2025-07-23",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:37:05+00:00",
+  "accepted": [
+    {
+      "cause": "Digital Experience subscription revenue was $1.33 billion",
+      "effect": "11 percent year-over-year growth",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Digital Experience subscription revenue was $1.33 billion, representing 11 percent year-over-year growth as reported and in constant currency.",
+      "source_id": "ADBE2025Q3_007",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "ADBE2025Q3_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.828,
+      "span_score": 1.0,
+      "severity_align": 0.31,
+      "mechanism_hint": 1.0,
+      "claim_id": "ADBE2025Q3_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Digital Experience segment revenue was $1.46 billion",
+      "effect": "10 percent year-over-year growth",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Digital Experience segment revenue was $1.46 billion, representing 10 percent year-over-year growth as reported and in constant currency.",
+      "source_id": "ADBE2025Q3_006",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "ADBE2025Q3_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.827,
+      "span_score": 1.0,
+      "severity_align": 0.308,
+      "mechanism_hint": 1.0,
+      "claim_id": "ADBE2025Q3_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Diluted earnings per share was $3.94 on a GAAP basis",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Diluted earnings per share was $3.94 on a GAAP basis",
+      "source_id": "ADBE2025Q3_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "ADBE2025Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.814,
+      "span_score": 1.0,
+      "severity_align": 0.257,
+      "mechanism_hint": 1.0,
+      "claim_id": "ADBE2025Q3_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "positive fundamental signal",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.144,
+      "polarity": 1.0,
+      "evidence_span": "Second Quarter Fiscal Year 2025 Business Segment Highlights • Digital Media segment revenue was $4.35 billion, which represents 11 percent year-over-year growth, or 12 percent in c",
+      "source_id": "ADBE2025Q3_004",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "ADBE2025Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "ADBE2025Q3_C002",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.052,
+      "polarity": -1.0,
+      "evidence_span": "revenue of $5.87 billion in its second quarter of",
+      "source_id": "ADBE2025Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "ADBE2025Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "ADBE2025Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Revenue (ARR) exiting the quarter",
+      "effect": "stock price movement",
+      "mechanism": "fundamental",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "Revenue (\"ARR\") exiting the quarter was",
+      "source_id": "ADBE2025Q3_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "ADBE2025Q3_005",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 5,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

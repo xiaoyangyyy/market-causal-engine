@@ -1,0 +1,34 @@
+{
+  "event_id": "MCD_2023Q2_earnings",
+  "ticker": "MCD",
+  "event_date": "2023-04-21",
+  "fiscal_period": "2023Q2",
+  "atom_count": 7,
+  "text_length": 82788,
+  "summary_length": 11569,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\MCD_2023Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\MCD_2023Q2_earnings\\sec_8k.txt",
+  "filing_date": "2023-04-25",
+  "accession_number": "0000063908-23-000030",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/63908/000006390823000030/mcd-20230425.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000063908",
+  "window_days": 45,
+  "search_date_from": "2023-07-01",
+  "search_date_to": "2023-08-31",
+  "aligned_filing_date": "2023-04-25",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.58,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

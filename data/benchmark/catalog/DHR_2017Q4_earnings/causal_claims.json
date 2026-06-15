@@ -1,0 +1,116 @@
+{
+  "event_id": "DHR_2017Q4_earnings",
+  "ticker": "DHR",
+  "event_date": "2017-10-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:24:23+00:00",
+  "accepted": [
+    {
+      "cause": "net earnings were $572.1 million",
+      "effect": "positive stock performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "net earnings were $572.1 million",
+      "source_id": "DHR2017Q4_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "DHR2017Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.811,
+      "span_score": 1.0,
+      "severity_align": 0.245,
+      "mechanism_hint": 1.0,
+      "claim_id": "DHR2017Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "revenues increased 9.5% year-over-year",
+      "effect": "stock price increase",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "revenues increased 9.5% year-over-year to $4.5 billion",
+      "source_id": "DHR2017Q4_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "DHR2017Q4_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.79,
+      "span_score": 0.936,
+      "severity_align": 0.3,
+      "mechanism_hint": 1.0,
+      "claim_id": "DHR2017Q4_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.056,
+      "polarity": -1.0,
+      "evidence_span": "earnings per share guidance, and now expects a range of",
+      "source_id": "DHR2017Q4_005",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "DHR2017Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "DHR2017Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "net earnings per share were $",
+      "source_id": "DHR2017Q4_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "DHR2017Q4_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,142 @@
+{
+  "event_id": "GILD_2020Q3_earnings",
+  "ticker": "GILD",
+  "event_date": "2020-07-10",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:20:57+00:00",
+  "accepted": [
+    {
+      "cause": "net income and diluted EPS of $1.9 billion and $",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "net income and diluted EPS of $1.9 billion and $",
+      "source_id": "GILD2020Q3_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GILD2020Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.813,
+      "span_score": 1.0,
+      "severity_align": 0.251,
+      "mechanism_hint": 1.0,
+      "claim_id": "GILD2020Q3_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "gross margin 79.0 %",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "gross margin 79.0 % 82.2 % 80.7 % 81.9",
+      "source_id": "GILD2020Q3_010",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GILD2020Q3_010",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.861,
+      "span_score": 1.0,
+      "severity_align": 0.445,
+      "mechanism_hint": 1.0,
+      "claim_id": "GILD2020Q3_C004",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Gross Margin 86% - 87%",
+      "effect": "Positive stock performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Gross Margin 86% - 87%",
+      "source_id": "GILD2020Q3_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GILD2020Q3_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.806,
+      "span_score": 0.992,
+      "severity_align": 0.241,
+      "mechanism_hint": 1.0,
+      "claim_id": "GILD2020Q3_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.06,
+      "polarity": -1.0,
+      "evidence_span": "Total revenues for the second quarter and first half 2020 were",
+      "source_id": "GILD2020Q3_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GILD2020Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GILD2020Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "potential adverse revenue impacts from COVID-19 or increases in expenses due to the development and commercialization of remdesivir",
+      "effect": "Gilead's ability to achieve its anticipated full year 2020 financial results",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Gilead's ability to achieve its anticipated full year 2020 financial results, including as a result of potential adverse revenue impacts from COVID-19 or increases in expenses due to the development and commercialization of remdesivir",
+      "source_id": "GILD2020Q3_008",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GILD2020Q3_008",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

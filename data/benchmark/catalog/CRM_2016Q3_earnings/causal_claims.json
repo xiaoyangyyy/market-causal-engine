@@ -1,0 +1,83 @@
+{
+  "event_id": "CRM_2016Q3_earnings",
+  "ticker": "CRM",
+  "event_date": "2016-07-06",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T13:45:28+00:00",
+  "accepted": [
+    {
+      "cause": "Acquisition transaction fees",
+      "effect": "Reduction in Q2 FY17 diluted non-GAAP EPS",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Transaction fees related to the acquisition are expected to reduce Q2 FY17 diluted non-GAAP EPS by approximately $0.03.",
+      "source_id": "CRM2016Q3_006",
+      "published_at": 0,
+      "atom_id": "CRM2016Q3_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.877,
+      "span_score": 1.0,
+      "severity_align": 0.509,
+      "mechanism_hint": 1.0,
+      "claim_id": "CRM2016Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Acquisition impact",
+      "effect": "Increase in FY17 total revenue",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 0.5,
+      "evidence_span": "expected to increase Salesforce's FY17 total revenue",
+      "source_id": "CRM2016Q3_002",
+      "published_at": 0,
+      "atom_id": "CRM2016Q3_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    },
+    {
+      "cause": "Acquisition impact",
+      "effect": "Increase in Q2 FY17 total revenue",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 0.5,
+      "evidence_span": "expected to increase Salesforce's Q2 FY17 total revenue",
+      "source_id": "CRM2016Q3_005",
+      "published_at": 0,
+      "atom_id": "CRM2016Q3_005",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

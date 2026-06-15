@@ -1,0 +1,16 @@
+{
+  "version": "v1.2-catalog-tiered",
+  "params": {
+    "neutral_pressure_max": 0.1,
+    "neutral_drawdown_max": 0.22,
+    "hard_down_pressure": 0.16,
+    "hard_down_drawdown": 0.22,
+    "strong_beat_net": 5.0,
+    "strong_beat_bull": 5.0,
+    "medium_down_net": -2.0,
+    "medium_up_net": 3.0,
+    "medium_up_pressure_max": 0.18
+  },
+  "training_accuracy": 0.4347,
+  "n_samples": 750
+}

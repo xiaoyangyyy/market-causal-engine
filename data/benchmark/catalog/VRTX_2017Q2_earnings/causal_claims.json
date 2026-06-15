@@ -1,0 +1,70 @@
+{
+  "event_id": "VRTX_2017Q2_earnings",
+  "ticker": "VRTX",
+  "event_date": "2017-04-21",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T02:47:21+00:00",
+  "accepted": [
+    {
+      "cause": "Significant year-over-year growth in collaborative revenues",
+      "effect": "Stronger than expected revenue diversification",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Collaborative revenues were $232.5 million , compared to $0.1 million for the first quarter of 2016",
+      "source_id": "VRTX2017Q2_007",
+      "published_at": 0,
+      "atom_id": "VRTX2017Q2_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.834,
+      "span_score": 1.0,
+      "severity_align": 0.336,
+      "mechanism_hint": 1.0,
+      "claim_id": "VRTX2017Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Increased 2017 KALYDECO revenue guidance",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "increases 2017 guidance for KALYDECO product revenues to $710 to $730 million",
+      "source_id": "VRTX2017Q2_001",
+      "published_at": 0,
+      "atom_id": "VRTX2017Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.778,
+      "span_score": 0.905,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "VRTX2017Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

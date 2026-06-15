@@ -1,0 +1,34 @@
+{
+  "event_id": "CAT_2018Q3_earnings",
+  "ticker": "CAT",
+  "event_date": "2018-07-17",
+  "fiscal_period": "2018Q3",
+  "atom_count": 2,
+  "text_length": 2755,
+  "summary_length": 1524,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\CAT_2018Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\CAT_2018Q3_earnings\\sec_8k.txt",
+  "filing_date": "2018-07-30",
+  "accession_number": "0000018230-18-000219",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/18230/000001823018000219/cat_8-kx2qx2018xearningsxr.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000018230",
+  "window_days": 45,
+  "search_date_from": "2018-10-01",
+  "search_date_to": "2018-11-30",
+  "aligned_filing_date": "2018-07-30",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -1.97,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 0,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

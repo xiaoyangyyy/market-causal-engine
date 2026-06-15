@@ -1,0 +1,31 @@
+{
+  "event_id": "CVX_2025Q4_earnings",
+  "ticker": "CVX",
+  "event_date": "2025-10-15",
+  "fiscal_period": "2025Q4",
+  "atom_count": 5,
+  "text_length": 37352,
+  "summary_length": 547,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\CVX_2025Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\CVX_2025Q4_earnings\\sec_8k.txt",
+  "filing_date": "2026-01-30",
+  "accession_number": "0000093410-26-000019",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/93410/000009341026000019/cvx-20260130.htm",
+  "form": "8-K",
+  "search_date_from": "2026-01-01",
+  "search_date_to": "2026-02-28",
+  "aligned_filing_date": "2026-01-30",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 3.34,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

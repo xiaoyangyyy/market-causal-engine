@@ -1,0 +1,116 @@
+{
+  "event_id": "META_2020Q4_earnings",
+  "ticker": "META",
+  "event_date": "2020-10-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:26:24+00:00",
+  "accepted": [
+    {
+      "cause": "fourth quarter 2020 year-over-year ad revenue growth",
+      "effect": "stock price increase",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "expect our fourth quarter 2020 year-over-year ad revenue growth",
+      "source_id": "META2020Q4_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "META2020Q4_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.815,
+      "span_score": 1.0,
+      "severity_align": 0.261,
+      "mechanism_hint": 1.0,
+      "claim_id": "META2020Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "significant investments in our products and hiring",
+      "effect": "deliver new and meaningful experiences for our community around the world",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "We continue to make significant investments in our products and hiring in order to deliver new and meaningful experiences for our community around the world.",
+      "source_id": "META2020Q4_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "META2020Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.847,
+      "span_score": 0.962,
+      "severity_align": 0.471,
+      "mechanism_hint": 1.0,
+      "claim_id": "META2020Q4_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.039,
+      "polarity": -1.0,
+      "evidence_span": "diluted EPS would have been $",
+      "source_id": "META2020Q4_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "META2020Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "META2020Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "As expected, in the third quarter",
+      "source_id": "META2020Q4_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "META2020Q4_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

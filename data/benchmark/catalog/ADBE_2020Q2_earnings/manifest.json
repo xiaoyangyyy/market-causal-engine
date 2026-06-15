@@ -1,0 +1,34 @@
+{
+  "event_id": "ADBE_2020Q2_earnings",
+  "ticker": "ADBE",
+  "event_date": "2020-04-17",
+  "fiscal_period": "2020Q2",
+  "atom_count": 14,
+  "text_length": 32631,
+  "summary_length": 11995,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\ADBE_2020Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\ADBE_2020Q2_earnings\\sec_8k.txt",
+  "filing_date": "2020-03-12",
+  "accession_number": "0000796343-20-000054",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634320000054/adbe8kq120.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000796343",
+  "window_days": 45,
+  "search_date_from": "2020-07-01",
+  "search_date_to": "2020-08-31",
+  "aligned_filing_date": "2020-03-12",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -9.59,
+    "magnitude_bucket": "large"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

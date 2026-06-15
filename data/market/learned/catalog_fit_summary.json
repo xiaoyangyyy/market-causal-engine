@@ -1,0 +1,30 @@
+{
+  "computed_at": "2026-06-15T11:30:18+00:00",
+  "catalog_claims_policy": {
+    "llm_only": true,
+    "min_accepted_claims": 2,
+    "min_claim_confidence": 0.5,
+    "min_claim_polarity": 0.1,
+    "min_claim_severity": 0.0,
+    "min_net_polarity": 0.08,
+    "exclude_boilerplate": true,
+    "exclude_generic_effects": true,
+    "exclude_atom_fallback": true,
+    "require_event_proposer": true,
+    "max_claims_per_event": 4
+  },
+  "catalog_domain_samples": 951,
+  "catalog_domain_rmse": 0.02552,
+  "catalog_direction_samples": 951,
+  "catalog_direction_train_accuracy": 0.1947,
+  "catalog_direction_holdout_accuracy": 0.2827,
+  "catalog_direction_confidence_margin": 0.0,
+  "router_samples": 951,
+  "router_training_accuracy": 0.9821,
+  "artifacts": {
+    "catalog_claims_policy": "E:\\ca\\data\\market\\learned\\catalog_claims_policy.json",
+    "catalog_domain_model": "E:\\ca\\data\\market\\learned\\catalog_domain_model.json",
+    "catalog_direction_model": "E:\\ca\\data\\market\\learned\\catalog_direction_model.json",
+    "catalog_router": "E:\\ca\\data\\market\\learned\\catalog_router.json"
+  }
+}

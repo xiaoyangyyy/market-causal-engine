@@ -1,0 +1,70 @@
+{
+  "event_id": "RTX_2024Q4_earnings",
+  "ticker": "RTX",
+  "event_date": "2024-10-10",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T04:27:51+00:00",
+  "accepted": [
+    {
+      "cause": "Raised full year outlook for adjusted sales and EPS",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "“Demand across our portfolio, particularly within commercial aftermarket and defense, remains robust and gives us the confidence to again raise our full year outlook for adjusted sales* and adjusted EPS*.”",
+      "source_id": "RTX2024Q4_002",
+      "published_at": 0,
+      "atom_id": "RTX2024Q4_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.828,
+      "span_score": 0.996,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "RTX2024Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Record $221 billion backlog",
+      "effect": "Strong future revenue visibility and bullish sentiment",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "“With a record $221 billion backlog, we are focused on executing our strat",
+      "source_id": "RTX2024Q4_002",
+      "published_at": 0,
+      "atom_id": "RTX2024Q4_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.802,
+      "span_score": 0.903,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "claim_id": "RTX2024Q4_C001",
+      "polarity_source": "full_text",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

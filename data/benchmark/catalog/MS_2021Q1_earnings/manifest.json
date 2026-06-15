@@ -1,0 +1,34 @@
+{
+  "event_id": "MS_2021Q1_earnings",
+  "ticker": "MS",
+  "event_date": "2021-01-21",
+  "fiscal_period": "2021Q1",
+  "atom_count": 30,
+  "text_length": 120034,
+  "summary_length": 11997,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\MS_2021Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\MS_2021Q1_earnings\\sec_8k.txt",
+  "filing_date": "2021-01-20",
+  "accession_number": "0001157523-21-000058",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/895421/000115752321000058/a52363086.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000895421",
+  "window_days": 45,
+  "search_date_from": "2021-04-01",
+  "search_date_to": "2021-05-31",
+  "aligned_filing_date": "2021-01-20",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.2,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

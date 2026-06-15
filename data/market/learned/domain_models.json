@@ -1,0 +1,101 @@
+{
+  "version": "v0.9-earnings-interaction",
+  "models": {
+    "earnings": {
+      "version": "v0.7-ridge",
+      "feature_names": [
+        "m_fundamental",
+        "m_sentiment",
+        "m_liquidity",
+        "m_macro",
+        "m_regulatory",
+        "m_trust",
+        "max_severity",
+        "mean_confidence",
+        "trace_total",
+        "x_fund_sent",
+        "x_fund_liq",
+        "x_sent_liq",
+        "x_fund_sev",
+        "x_sent_trace",
+        "x_fund_macro"
+      ],
+      "coefficients": [
+        0.030604,
+        -0.059408,
+        0.195973,
+        0.043503,
+        0.059368,
+        0.0,
+        0.0,
+        -0.177395,
+        0.034509,
+        0.0,
+        0.085312,
+        -0.006851,
+        0.057799,
+        -0.138084,
+        0.0,
+        0.027137
+      ],
+      "training_rmse": 0.108408,
+      "n_samples": 208
+    },
+    "macro": {
+      "version": "v0.7-ridge",
+      "feature_names": [
+        "m_fundamental",
+        "m_sentiment",
+        "m_liquidity",
+        "m_macro",
+        "m_regulatory",
+        "m_trust",
+        "max_severity",
+        "mean_confidence",
+        "trace_total"
+      ],
+      "coefficients": [
+        -0.000197,
+        -6e-06,
+        -9e-06,
+        -1.2e-05,
+        -0.00017,
+        0.0,
+        0.0,
+        -9.6e-05,
+        -0.000197,
+        0.0
+      ],
+      "training_rmse": 0.000371,
+      "n_samples": 10
+    },
+    "short_report": {
+      "version": "v0.7-ridge",
+      "feature_names": [
+        "m_fundamental",
+        "m_sentiment",
+        "m_liquidity",
+        "m_macro",
+        "m_regulatory",
+        "m_trust",
+        "max_severity",
+        "mean_confidence",
+        "trace_total"
+      ],
+      "coefficients": [
+        0.03786,
+        0.0,
+        0.254109,
+        0.052527,
+        0.0,
+        -0.052648,
+        -0.216236,
+        -0.014561,
+        0.03786,
+        0.0
+      ],
+      "training_rmse": 0.260305,
+      "n_samples": 15
+    }
+  }
+}

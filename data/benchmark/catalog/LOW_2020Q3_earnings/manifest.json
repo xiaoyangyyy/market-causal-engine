@@ -1,0 +1,34 @@
+{
+  "event_id": "LOW_2020Q3_earnings",
+  "ticker": "LOW",
+  "event_date": "2020-07-08",
+  "fiscal_period": "2020Q3",
+  "atom_count": 13,
+  "text_length": 34271,
+  "summary_length": 11993,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\LOW_2020Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\LOW_2020Q3_earnings\\sec_8k.txt",
+  "filing_date": "2020-08-19",
+  "accession_number": "0000060667-20-000134",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/60667/000006066720000134/low-20200819.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000060667",
+  "window_days": 45,
+  "search_date_from": "2020-10-01",
+  "search_date_to": "2020-11-30",
+  "aligned_filing_date": "2020-08-19",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": 0.23,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

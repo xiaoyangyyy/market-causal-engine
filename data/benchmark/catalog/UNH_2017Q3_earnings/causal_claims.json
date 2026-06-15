@@ -1,0 +1,71 @@
+{
+  "event_id": "UNH_2017Q3_earnings",
+  "ticker": "UNH",
+  "event_date": "2017-07-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T02:47:40+00:00",
+  "accepted": [
+    {
+      "cause": "net earnings grew 26 percent",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "net earnings grew 26 percent to $",
+      "source_id": "UNH2017Q3_004",
+      "published_at": 0,
+      "atom_id": "UNH2017Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.786,
+      "span_score": 1.0,
+      "severity_align": 0.142,
+      "mechanism_hint": 1.0,
+      "claim_id": "UNH2017Q3_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Revenues of $50.1 Billion Grew",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Revenues of $50.1 Billion Grew",
+      "source_id": "UNH2017Q3_000",
+      "published_at": 0,
+      "atom_id": "UNH2017Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.81,
+      "span_score": 1.0,
+      "severity_align": 0.24,
+      "mechanism_hint": 1.0,
+      "claim_id": "UNH2017Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,36 @@
+{
+  "event_id": "CAT_2024Q3_earnings",
+  "ticker": "CAT",
+  "event_date": "2024-07-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:06:16+00:00",
+  "accepted": [],
+  "rejected": [
+    {
+      "cause": "an increase in delinquencies, repossessions or net losses of Cat Financial's customers",
+      "effect": "negative impact on Cat Financial's financial performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "(xvii) an increase in delinquencies, repossessions or net losses of Cat Financial's customers",
+      "source_id": "CAT2024Q3_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "CAT2024Q3_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 0,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback_empty"
+}

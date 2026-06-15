@@ -1,0 +1,71 @@
+{
+  "event_id": "PEP_2019Q3_earnings",
+  "ticker": "PEP",
+  "event_date": "2019-07-16",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:19:46+00:00",
+  "accepted": [
+    {
+      "cause": "Expected 3% decrease in 2019 core EPS",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "This assumption and the guidance above implies 2019 core earnings per share of $5.50, a 3 percent decrease compared to 2018 core earnings per share of $5.66.",
+      "source_id": "PEP2019Q3_005",
+      "published_at": 0,
+      "atom_id": "PEP2019Q3_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.842,
+      "span_score": 1.0,
+      "severity_align": 0.369,
+      "mechanism_hint": 1.0,
+      "claim_id": "PEP2019Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Decline in core constant currency EPS of approximately 1 percent",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.65,
+      "polarity": -0.6,
+      "evidence_span": "A decline in core constant currency EPS of approximately 1 percent, which incorporates lapping a number of 2018 strategic asset-sale and refranchising gains, the expected increased core effective tax rate, and expected 2019 incremental investments to strengthen the business.",
+      "source_id": "PEP2019Q3_004",
+      "published_at": 0,
+      "atom_id": "PEP2019Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.88,
+      "span_score": 1.0,
+      "severity_align": 0.521,
+      "mechanism_hint": 1.0,
+      "claim_id": "PEP2019Q3_C001",
+      "effect_rewritten": true,
+      "polarity_source": "llm",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

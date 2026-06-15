@@ -1,0 +1,44 @@
+{
+  "event_id": "DOCU_2022Q4_earnings",
+  "ticker": "DOCU",
+  "event_date": "2022-10-07",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:14:10+00:00",
+  "accepted": [
+    {
+      "cause": "execution of the Restructuring Plan",
+      "effect": "restructuring charges will be incurred in the first quarter of fiscal 2024",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "The Company expects that the majority of the restructuring charges will be incurred in the first quarter of fiscal 2024, and that the execution of the Restructuring Plan will be substantially complete by the end of the second quarter of fiscal 2024.",
+      "source_id": "DOCU2022Q4_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "DOCU2022Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.958,
+      "span_score": 1.0,
+      "severity_align": 0.83,
+      "mechanism_hint": 1.0,
+      "claim_id": "DOCU2022Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.6,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

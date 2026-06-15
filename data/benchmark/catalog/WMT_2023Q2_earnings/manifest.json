@@ -1,0 +1,34 @@
+{
+  "event_id": "WMT_2023Q2_earnings",
+  "ticker": "WMT",
+  "event_date": "2023-04-12",
+  "fiscal_period": "2023Q2",
+  "atom_count": 15,
+  "text_length": 90551,
+  "summary_length": 11994,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\WMT_2023Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\WMT_2023Q2_earnings\\sec_8k.txt",
+  "filing_date": "2023-05-18",
+  "accession_number": "0000104169-23-000043",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/104169/000010416923000043/wmt-20230518.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000104169",
+  "window_days": 45,
+  "search_date_from": "2023-07-01",
+  "search_date_to": "2023-08-31",
+  "aligned_filing_date": "2023-05-18",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.3,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

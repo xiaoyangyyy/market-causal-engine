@@ -1,0 +1,34 @@
+{
+  "event_id": "PEP_2024Q3_earnings",
+  "ticker": "PEP",
+  "event_date": "2024-07-19",
+  "fiscal_period": "2024Q3",
+  "atom_count": 8,
+  "text_length": 52951,
+  "summary_length": 11997,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\PEP_2024Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\PEP_2024Q3_earnings\\sec_8k.txt",
+  "filing_date": "2024-07-11",
+  "accession_number": "0000077476-24-000043",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/77476/000007747624000043/pep-20240711.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000077476",
+  "window_days": 45,
+  "search_date_from": "2024-10-01",
+  "search_date_to": "2024-11-30",
+  "aligned_filing_date": "2024-07-11",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": 0.22,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

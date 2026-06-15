@@ -1,0 +1,31 @@
+{
+  "event_id": "SNAP_2019Q2_earnings",
+  "ticker": "SNAP",
+  "event_date": "2019-04-08",
+  "fiscal_period": "2019Q2",
+  "atom_count": 14,
+  "text_length": 34736,
+  "summary_length": 12000,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\SNAP_2019Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\SNAP_2019Q2_earnings\\sec_8k.txt",
+  "filing_date": "2019-07-23",
+  "accession_number": "0001564590-19-025632",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1564408/000156459019025632/snap-8k_20190723.htm",
+  "form": "8-K",
+  "search_date_from": "2019-07-01",
+  "search_date_to": "2019-08-31",
+  "aligned_filing_date": "2019-07-23",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 4.81,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

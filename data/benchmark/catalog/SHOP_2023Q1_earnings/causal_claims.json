@@ -1,0 +1,91 @@
+{
+  "event_id": "SHOP_2023Q1_earnings",
+  "ticker": "SHOP",
+  "event_date": "2023-01-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:17:40+00:00",
+  "accepted": [
+    {
+      "cause": "revenue from Shopify Shipping, the sale of",
+      "effect": "revenue growth",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "revenue from Shopify Shipping, the sale of",
+      "source_id": "SHOP2023Q1_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SHOP2023Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.812,
+      "span_score": 1.0,
+      "severity_align": 0.248,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP2023Q1_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.046,
+      "polarity": -1.0,
+      "evidence_span": "forecasted transaction impacts earnings",
+      "source_id": "SHOP2023Q1_023",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "SHOP2023Q1_023",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP2023Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "Revenue Recognition The Company's sources of",
+      "source_id": "SHOP2023Q1_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SHOP2023Q1_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

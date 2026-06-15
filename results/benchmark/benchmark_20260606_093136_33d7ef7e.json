@@ -1,0 +1,233 @@
+{
+  "run_id": "benchmark_20260606_093136_33d7ef7e",
+  "generated_at": "2026-06-06T09:31:36+00:00",
+  "config": {
+    "corpora": [
+      "placebo_quiet_days",
+      "macro_releases"
+    ],
+    "max_events_per_corpus": 5,
+    "until": 30,
+    "oot_cutoff_date": "2022-01-01",
+    "seed": 42
+  },
+  "summary": {
+    "count": 10,
+    "direction_accuracy": 0.875,
+    "direction_scored": 8,
+    "placebo_false_positive_rate": 0.0,
+    "placebo_count": 5,
+    "mean_calibration_error_pct": 0.19,
+    "mean_calibration_error_real_cases_pct": 0.19,
+    "by_corpus": {
+      "placebo_quiet_days": {
+        "n": 5,
+        "direction_accuracy": 1.0,
+        "placebo_fp_rate": 0.0
+      },
+      "macro_releases": {
+        "n": 5,
+        "direction_accuracy": 0.6666666666666666,
+        "placebo_fp_rate": null
+      }
+    }
+  },
+  "out_of_time": {
+    "cutoff_used": true,
+    "train_n": 7,
+    "test_n": 3,
+    "train_direction_accuracy": 1.0,
+    "test_direction_accuracy": 0.0
+  },
+  "confidence": {
+    "high_risk_mean_cal_error": 0.19,
+    "low_risk_mean_cal_error": null,
+    "high_risk_n": 2,
+    "low_risk_n": 0
+  },
+  "ablation": {},
+  "sensitivity": {},
+  "errors": [],
+  "scores": [
+    {
+      "event_id": "placebo_2019-07-29",
+      "corpus": "placebo_quiet_days",
+      "domain": "placebo",
+      "observed_direction": "neutral",
+      "simulated_direction": "neutral",
+      "direction_match": true,
+      "drawdown_risk": 0.0,
+      "directional_pressure": 0.0,
+      "calibration_error_pct": null,
+      "is_placebo": true,
+      "false_positive": false,
+      "is_major_event": false,
+      "synthetic_labels": false,
+      "dominant_path": [],
+      "replay_mode": "placebo"
+    },
+    {
+      "event_id": "placebo_2019-06-17",
+      "corpus": "placebo_quiet_days",
+      "domain": "placebo",
+      "observed_direction": "neutral",
+      "simulated_direction": "neutral",
+      "direction_match": true,
+      "drawdown_risk": 0.0,
+      "directional_pressure": 0.0,
+      "calibration_error_pct": null,
+      "is_placebo": true,
+      "false_positive": false,
+      "is_major_event": false,
+      "synthetic_labels": false,
+      "dominant_path": [],
+      "replay_mode": "placebo"
+    },
+    {
+      "event_id": "placebo_2019-06-24",
+      "corpus": "placebo_quiet_days",
+      "domain": "placebo",
+      "observed_direction": "neutral",
+      "simulated_direction": "neutral",
+      "direction_match": true,
+      "drawdown_risk": 0.0,
+      "directional_pressure": 0.0,
+      "calibration_error_pct": null,
+      "is_placebo": true,
+      "false_positive": false,
+      "is_major_event": false,
+      "synthetic_labels": false,
+      "dominant_path": [],
+      "replay_mode": "placebo"
+    },
+    {
+      "event_id": "placebo_2019-03-18",
+      "corpus": "placebo_quiet_days",
+      "domain": "placebo",
+      "observed_direction": "neutral",
+      "simulated_direction": "neutral",
+      "direction_match": true,
+      "drawdown_risk": 0.0,
+      "directional_pressure": 0.0,
+      "calibration_error_pct": null,
+      "is_placebo": true,
+      "false_positive": false,
+      "is_major_event": false,
+      "synthetic_labels": false,
+      "dominant_path": [],
+      "replay_mode": "placebo"
+    },
+    {
+      "event_id": "placebo_2019-06-03",
+      "corpus": "placebo_quiet_days",
+      "domain": "placebo",
+      "observed_direction": "neutral",
+      "simulated_direction": "neutral",
+      "direction_match": true,
+      "drawdown_risk": 0.0,
+      "directional_pressure": 0.0,
+      "calibration_error_pct": null,
+      "is_placebo": true,
+      "false_positive": false,
+      "is_major_event": false,
+      "synthetic_labels": false,
+      "dominant_path": [],
+      "replay_mode": "placebo"
+    },
+    {
+      "event_id": "macro_2021-11-10_cpi",
+      "corpus": "macro_releases",
+      "domain": "macro",
+      "observed_direction": "down",
+      "simulated_direction": "down",
+      "direction_match": true,
+      "drawdown_risk": 0.443,
+      "directional_pressure": 0.584,
+      "calibration_error_pct": 1.35,
+      "is_placebo": false,
+      "false_positive": false,
+      "is_major_event": true,
+      "synthetic_labels": true,
+      "dominant_path": [
+        "cpi_surprise"
+      ],
+      "replay_mode": "scenario"
+    },
+    {
+      "event_id": "cpi_2022_06_hot",
+      "corpus": "macro_releases",
+      "domain": "macro",
+      "observed_direction": null,
+      "simulated_direction": "down",
+      "direction_match": null,
+      "drawdown_risk": 0.5619,
+      "directional_pressure": 0.6987,
+      "calibration_error_pct": 0.26,
+      "is_placebo": false,
+      "false_positive": false,
+      "is_major_event": true,
+      "synthetic_labels": false,
+      "dominant_path": [
+        "cpi_surprise"
+      ],
+      "replay_mode": "case_study"
+    },
+    {
+      "event_id": "macro_2020-03-15_fomc",
+      "corpus": "macro_releases",
+      "domain": "macro",
+      "observed_direction": "down",
+      "simulated_direction": "down",
+      "direction_match": true,
+      "drawdown_risk": 0.3897,
+      "directional_pressure": 0.5858,
+      "calibration_error_pct": 6.65,
+      "is_placebo": false,
+      "false_positive": false,
+      "is_major_event": true,
+      "synthetic_labels": true,
+      "dominant_path": [
+        "fomc_statement"
+      ],
+      "replay_mode": "scenario"
+    },
+    {
+      "event_id": "macro_2023-03-22_fomc",
+      "corpus": "macro_releases",
+      "domain": "macro",
+      "observed_direction": "neutral",
+      "simulated_direction": "down",
+      "direction_match": false,
+      "drawdown_risk": 0.3897,
+      "directional_pressure": 0.5858,
+      "calibration_error_pct": 0.09,
+      "is_placebo": false,
+      "false_positive": false,
+      "is_major_event": true,
+      "synthetic_labels": true,
+      "dominant_path": [
+        "fomc_statement"
+      ],
+      "replay_mode": "scenario"
+    },
+    {
+      "event_id": "fomc_2022_75bp",
+      "corpus": "macro_releases",
+      "domain": "macro",
+      "observed_direction": null,
+      "simulated_direction": "down",
+      "direction_match": null,
+      "drawdown_risk": 0.5101,
+      "directional_pressure": 0.6743,
+      "calibration_error_pct": 0.12,
+      "is_placebo": false,
+      "false_positive": false,
+      "is_major_event": true,
+      "synthetic_labels": false,
+      "dominant_path": [
+        "fomc_statement"
+      ],
+      "replay_mode": "case_study"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "event_id": "AXP_2024Q1_earnings",
+  "ticker": "AXP",
+  "event_date": "2024-01-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T12:46:12+00:00",
+  "accepted": [
+    {
+      "cause": "Record full-year 2023 revenue of $60.5 billion",
+      "effect": "estimate upside",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "AMERICAN EXPRESS ANNOUNCES RECORD FULL-YEAR 2023 REVENUE OF $60.5 BILLION, UP 14% ON A REPORTED BASIS",
+      "source_id": "AXP2024Q1_000",
+      "published_at": 0,
+      "atom_id": "AXP2024Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.775,
+      "span_score": 0.922,
+      "severity_align": 0.271,
+      "mechanism_hint": 1.0,
+      "claim_id": "AXP2024Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Full-year earnings per share increased 14% to $11.21",
+      "effect": "Bullish sentiment on profitability growth",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "FULL-YEAR EARNINGS PER SHARE INCREASED 14% TO $11.21",
+      "source_id": "AXP2024Q1_000",
+      "published_at": 0,
+      "atom_id": "AXP2024Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.768,
+      "span_score": 0.887,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "AXP2024Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "2024 guidance for revenue growth of 9% to 11% and mid-teens EPS growth",
+      "effect": "Expectation of continued strong performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "revenue growth of 9 percent to 11 percent and EPS of mid-teens growth",
+      "source_id": "AXP2024Q1_004",
+      "published_at": 0,
+      "atom_id": "AXP2024Q1_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

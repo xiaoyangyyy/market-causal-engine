@@ -1,0 +1,159 @@
+{
+  "case_id": "hindenburg_nikola_2020",
+  "domain": "short_report",
+  "as_of": 150,
+  "use_llm": false,
+  "computed_at": "2026-06-09T03:07:55+00:00",
+  "accepted": [
+    {
+      "cause": "fraud allegations",
+      "effect": "trust collapse",
+      "mechanism": "trust",
+      "severity": 0.9,
+      "evidence_span": "Hindenburg Research publishes a short seller report",
+      "source_id": "NKLA20_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "NKLA20_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "HINDENBURG_N_C000"
+    },
+    {
+      "cause": "fraud allegations",
+      "effect": "trust collapse",
+      "mechanism": "trust",
+      "severity": 0.9,
+      "evidence_span": "Hindenburg short seller report",
+      "source_id": "NKLA20_001",
+      "published_at": 5,
+      "proposer": "heuristic",
+      "atom_id": "NKLA20_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "HINDENBURG_N_C001"
+    },
+    {
+      "cause": "fraud allegations",
+      "effect": "trust collapse",
+      "mechanism": "trust",
+      "severity": 0.6,
+      "evidence_span": "Company denies Hindenburg allegations in press release but offers limited technical rebuttal.",
+      "source_id": "NKLA20_002",
+      "published_at": 30,
+      "proposer": "heuristic",
+      "atom_id": "NKLA20_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "HINDENBURG_N_C002"
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "downside pressure",
+      "mechanism": "trust",
+      "severity": 0.65,
+      "evidence_span": "Breaking headline widely shared across financial media on Nikola controversy",
+      "source_id": "NKLA20_003",
+      "published_at": 45,
+      "proposer": "heuristic",
+      "atom_id": "NKLA20_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "HINDENBURG_N_C003"
+    },
+    {
+      "cause": "regulatory scrutiny",
+      "effect": "regulatory overhang",
+      "mechanism": "regulatory",
+      "severity": 0.78,
+      "evidence_span": "SEC opens inquiry",
+      "source_id": "NKLA20_004",
+      "published_at": 60,
+      "proposer": "heuristic",
+      "atom_id": "NKLA20_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "HINDENBURG_N_C004"
+    },
+    {
+      "cause": "retail coordination",
+      "effect": "short-covering pressure",
+      "mechanism": "sentiment",
+      "severity": 0.65,
+      "evidence_span": "Heavy volume spike as retail discussion trending on Stocktwits",
+      "source_id": "NKLA20_005",
+      "published_at": 90,
+      "proposer": "heuristic",
+      "atom_id": "NKLA20_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "HINDENBURG_N_C005"
+    },
+    {
+      "cause": "options/liquidity stress",
+      "effect": "forced de-risking",
+      "mechanism": "liquidity",
+      "severity": 0.72,
+      "evidence_span": "Put option volume spikes with elevated",
+      "source_id": "NKLA20_006",
+      "published_at": 120,
+      "proposer": "heuristic",
+      "atom_id": "NKLA20_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "HINDENBURG_N_C006"
+    }
+  ],
+  "rejected": [],
+  "claim_count": 7,
+  "rejected_count": 0
+}

@@ -1,0 +1,34 @@
+{
+  "event_id": "ABNB_2023Q2_earnings",
+  "ticker": "ABNB",
+  "event_date": "2023-04-12",
+  "fiscal_period": "2023Q2",
+  "atom_count": 30,
+  "text_length": 57238,
+  "summary_length": 817,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\ABNB_2023Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\ABNB_2023Q2_earnings\\sec_8k.txt",
+  "filing_date": "2023-05-09",
+  "accession_number": "0001193125-23-139392",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312523139392/d453262d8k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001559720",
+  "window_days": 45,
+  "search_date_from": "2023-07-01",
+  "search_date_to": "2023-08-31",
+  "aligned_filing_date": "2023-05-09",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.13,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "event_id": "NVDA_2018Q4_earnings",
+  "ticker": "NVDA",
+  "event_date": "2018-10-15",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T08:46:38+00:00",
+  "accepted": [
+    {
+      "cause": "Fourth quarter revenue guidance cut to $2.20 billion from $2.70 billion",
+      "effect": "Bearish sentiment due to significant revenue shortfall",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "Fourth quarter revenue expected to be $2.20 billion versus previous guidance of $2.70 billion",
+      "source_id": "NVDA2018Q4_000",
+      "published_at": 0,
+      "atom_id": "NVDA2018Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.934,
+      "span_score": 0.916,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "NVDA2018Q4_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Gross margin impacted by approximately $120 million",
+      "effect": "Reduced profitability expectations driving sell pressure",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "gross margin to be impacted by approximately $120",
+      "source_id": "NVDA2018Q4_003",
+      "published_at": 0,
+      "atom_id": "NVDA2018Q4_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.98,
+      "span_score": 1.0,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "NVDA2018Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Gaming and Datacenter revenue below expectations",
+      "effect": "Negative market reaction to core segment underperformance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -0.7,
+      "evidence_span": "Gaming and Datacenter revenue below company's expectations",
+      "source_id": "NVDA2018Q4_000",
+      "published_at": 0,
+      "atom_id": "NVDA2018Q4_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

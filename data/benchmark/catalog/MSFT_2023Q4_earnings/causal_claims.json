@@ -1,0 +1,70 @@
+{
+  "event_id": "MSFT_2023Q4_earnings",
+  "ticker": "MSFT",
+  "event_date": "2023-10-17",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:46:31+00:00",
+  "accepted": [
+    {
+      "cause": "Revenue growth",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Revenue was $56.5 billion and increased",
+      "source_id": "MSFT2023Q4_000",
+      "published_at": 0,
+      "atom_id": "MSFT2023Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.812,
+      "span_score": 1.0,
+      "severity_align": 0.246,
+      "mechanism_hint": 1.0,
+      "claim_id": "MSFT2023Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Microsoft Cloud revenue strength",
+      "effect": "Bullish sentiment on execution",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 0.6,
+      "evidence_span": "Consistent execution by our sales teams and partners drove a strong start to the fiscal year with Microsoft Cloud revenue of",
+      "source_id": "MSFT2023Q4_001",
+      "published_at": 0,
+      "atom_id": "MSFT2023Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.822,
+      "span_score": 0.939,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "claim_id": "MSFT2023Q4_C001",
+      "polarity_source": "llm",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

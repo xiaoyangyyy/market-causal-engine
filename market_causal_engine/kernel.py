@@ -65,8 +65,18 @@ class Kernel:
         resources: dict[str, float] | None = None,
         priors: dict[str, dict[str, float]] | None = None,
         config: KernelConfig | None = None,
+        *,
+        domain: str = "earnings",
+        use_learned: bool = True,
     ):
         self.config = config or KernelConfig.full()
+        self.domain = domain
+        try:
+            from market_causal_engine.learned.store import learned_available
+
+            self.use_learned = use_learned and learned_available()
+        except Exception:  # noqa: BLE001
+            self.use_learned = False
         base = default_state_with_baseline()
         if initial_state:
             base.update(initial_state)
@@ -308,6 +318,10 @@ class Kernel:
         )
 
     def commit(self, event: Event, patch: dict[str, float]) -> None:
+        if self.use_learned:
+            from market_causal_engine.learned.propagation import scale_patch
+
+            patch = scale_patch(patch, event_kind=event.kind, domain=self.domain)
         applied: dict[str, float] = {}
         for key, delta in patch.items():
             if key not in self.state:

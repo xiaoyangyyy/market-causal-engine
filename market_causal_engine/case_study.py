@@ -7,7 +7,6 @@ from pathlib import Path
 from typing import Any
 
 from market_causal_engine.analysis import enrich_result
-from market_causal_engine.calibration import attach_calibration
 from market_causal_engine.config import KernelConfig
 from market_causal_engine.evidence import load_atoms
 from market_causal_engine.feed import FeedRunner
@@ -54,6 +53,15 @@ def load_case_manifest(case_id: str) -> dict[str, Any]:
     return data
 
 
+def _attach_mechanism_calibration(result: dict[str, Any], case_root: Path) -> None:
+    cal_path = case_root / "mechanism_calibration.json"
+    if not cal_path.exists():
+        return
+    result["mechanism_calibration"] = json.loads(cal_path.read_text(encoding="utf-8"))
+    if isinstance(result.get("case_study"), dict):
+        result["case_study"]["mechanism_calibration"] = result["mechanism_calibration"]
+
+
 def run_case_study(
     case_id: str,
     *,
@@ -95,8 +103,9 @@ def run_case_study(
 
     scenario_path = root / manifest.get("scenario_path", "scenario.json")
     scenario = load_scenario(scenario_path)
+    domain = str(manifest.get("domain", "earnings"))
     config = KernelConfig.full()
-    kernel = build_kernel(scenario, world_id, priors_path)
+    kernel = build_kernel(scenario, world_id, priors_path, domain=domain)
 
     if config.use_interventions:
         inject_interventions(
@@ -110,6 +119,7 @@ def run_case_study(
         skip_evidence_ledger=not config.use_evidence_ledger,
         lookahead_policy=policy,
         as_of=horizon,
+        domain=domain,
     )
     runner.run_atoms(admissible, until=horizon)
 
@@ -127,7 +137,11 @@ def run_case_study(
     result["compiled_events"] = [e.to_dict() for e in runner._compiled_events]
     result["lookahead_audit"] = lookahead_report.to_dict()
     result["case_study"] = build_case_report(manifest, result, horizon, runner)
+    from market_causal_engine.calibration import attach_calibration
+
     attach_calibration(result, manifest.get("observed_outcomes", {}))
+    result["domain"] = domain
+    _attach_mechanism_calibration(result, root)
 
     if runner.ledger is not None:
         result["evidence_ledger"] = (
@@ -153,11 +167,13 @@ def build_case_report(
     forensic = result.get("forensic_output", result.get("mvp_output", {}))
     calibrated = result.get("calibrated_impact", {})
 
-    sim_direction = "down" if sim_risk.get("directional_pressure", 0) > 0.12 else "up" if sim_risk.get("directional_pressure", 0) < -0.05 else "neutral"
+    from market_causal_engine.benchmark.replay import infer_simulated_direction
+
+    sim_direction = infer_simulated_direction(result)
     obs_direction = observed.get("direction", "unknown")
     direction_match = sim_direction == obs_direction if obs_direction != "unknown" else None
 
-    return {
+    report = {
         "case_id": manifest.get("case_id"),
         "ticker": manifest.get("ticker"),
         "event_date": manifest.get("event_date"),
@@ -195,6 +211,13 @@ def build_case_report(
             "they are NOT fed into the kernel (look-ahead safe)."
         ),
     }
+    if manifest.get("outcome_causal"):
+        report["outcome_causal"] = manifest["outcome_causal"]
+    if manifest.get("causal_claims"):
+        report["causal_claims"] = manifest["causal_claims"]
+    if manifest.get("mechanism_calibration"):
+        report["mechanism_calibration"] = manifest["mechanism_calibration"]
+    return report
 
 
 def run_case_counterfactual(

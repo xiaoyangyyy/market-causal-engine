@@ -1,0 +1,34 @@
+{
+  "event_id": "BLK_2016Q3_earnings",
+  "ticker": "BLK",
+  "event_date": "2016-07-07",
+  "fiscal_period": "2016Q3",
+  "atom_count": 15,
+  "text_length": 66385,
+  "summary_length": 11991,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\BLK_2016Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\BLK_2016Q3_earnings\\sec_8k.txt",
+  "filing_date": "2016-07-14",
+  "accession_number": "0001193125-16-647832",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1364742/000119312516647832/d183296d8k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001364742",
+  "window_days": 45,
+  "search_date_from": "2016-10-01",
+  "search_date_to": "2016-11-30",
+  "aligned_filing_date": "2016-07-14",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.65,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

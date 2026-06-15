@@ -1,0 +1,69 @@
+{
+  "event_id": "AXP_2017Q1_earnings",
+  "ticker": "AXP",
+  "event_date": "2017-01-23",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T07:26:58+00:00",
+  "accepted": [
+    {
+      "cause": "Underlying performance confidence",
+      "effect": "2017 EPS outlook of $5.60-$5.80",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "our underlying performance this quarter gives me added confidence in our ability to deliver our 2017 EPS outlook",
+      "source_id": "AXP2017Q1_007",
+      "published_at": 0,
+      "atom_id": "AXP2017Q1_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.809,
+      "span_score": 0.938,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "AXP2017Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Diluted earnings per share decline",
+      "effect": "8 percent decrease in EPS",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "Diluted earnings per share was $1.34, down 8 percent from",
+      "source_id": "AXP2017Q1_001",
+      "published_at": 0,
+      "atom_id": "AXP2017Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.84,
+      "span_score": 1.0,
+      "severity_align": 0.358,
+      "mechanism_hint": 1.0,
+      "claim_id": "AXP2017Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

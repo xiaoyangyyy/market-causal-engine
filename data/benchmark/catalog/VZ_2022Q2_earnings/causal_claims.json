@@ -1,0 +1,70 @@
+{
+  "event_id": "VZ_2022Q2_earnings",
+  "ticker": "VZ",
+  "event_date": "2022-04-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:06:50+00:00",
+  "accepted": [
+    {
+      "cause": "use of",
+      "effect": "revenue that is generated",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "revenue that is generated in part from the use of",
+      "source_id": "VZ2022Q2_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "VZ2022Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.888,
+      "span_score": 1.0,
+      "severity_align": 0.552,
+      "mechanism_hint": 1.0,
+      "claim_id": "VZ2022Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.167,
+      "polarity": -1.0,
+      "evidence_span": "Adjusted EPS is calculated by excluding from the calculation of reported EPS the effect of the following special items: amortization of acquisition-related intangible assets, early",
+      "source_id": "VZ2022Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "VZ2022Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "VZ2022Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,31 @@
+{
+  "event_id": "AXP_2017Q1_earnings",
+  "ticker": "AXP",
+  "event_date": "2017-01-23",
+  "fiscal_period": "2017Q1",
+  "atom_count": 20,
+  "text_length": 28128,
+  "summary_length": 11991,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\AXP_2017Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\AXP_2017Q1_earnings\\sec_8k.txt",
+  "filing_date": "2017-04-19",
+  "accession_number": "0000004962-17-000034",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/4962/000000496217000034/earnings8kq12017.htm",
+  "form": "8-K",
+  "search_date_from": "2017-04-01",
+  "search_date_to": "2017-05-31",
+  "aligned_filing_date": "2017-04-19",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.32,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

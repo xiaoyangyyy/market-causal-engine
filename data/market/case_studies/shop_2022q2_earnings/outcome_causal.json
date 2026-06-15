@@ -1,0 +1,115 @@
+{
+  "treated": "SHOP",
+  "event_date": "2022-07-26",
+  "event_window": [
+    0,
+    1
+  ],
+  "method": "synthetic_control",
+  "controls": [
+    "XLC",
+    "AMZN",
+    "EBAY",
+    "ETSY",
+    "SPY",
+    "QQQ"
+  ],
+  "control_weights": {
+    "XLC": 0.207941,
+    "AMZN": 0.0,
+    "EBAY": 0.030663,
+    "ETSY": 0.106076,
+    "SPY": 0.0,
+    "QQQ": 0.655319
+  },
+  "estimation_days": 120,
+  "event_window_dates": [
+    "2022-07-26",
+    "2022-07-27"
+  ],
+  "observed_return": -0.040044,
+  "counterfactual_return": 0.018027,
+  "effect": -0.05807,
+  "pre_fit_rmse": 0.049355,
+  "alternates": {
+    "abnormal_return": {
+      "method": "abnormal_return",
+      "benchmark": "SPY",
+      "event_window": [
+        0,
+        1
+      ],
+      "event_window_dates": [
+        "2022-07-26",
+        "2022-07-27"
+      ],
+      "observed_return": -0.040044,
+      "counterfactual_return": 0.013828,
+      "effect": -0.053872,
+      "pre_fit_rmse": null
+    },
+    "factor_model": {
+      "method": "factor_model",
+      "factors": [
+        "QQQ",
+        "SPY",
+        "XLC"
+      ],
+      "factor_loadings": {
+        "alpha": -0.002322,
+        "QQQ": 3.415697,
+        "SPY": -3.292168,
+        "XLC": 1.366951
+      },
+      "estimation_days": 120,
+      "event_window": [
+        0,
+        1
+      ],
+      "event_window_dates": [
+        "2022-07-26",
+        "2022-07-27"
+      ],
+      "observed_return": -0.040044,
+      "counterfactual_return": 0.049743,
+      "effect": -0.089786,
+      "pre_fit_rmse": 0.039732
+    },
+    "synthetic_control": {
+      "method": "synthetic_control",
+      "controls": [
+        "XLC",
+        "AMZN",
+        "EBAY",
+        "ETSY",
+        "SPY",
+        "QQQ"
+      ],
+      "control_weights": {
+        "XLC": 0.207941,
+        "AMZN": 0.0,
+        "EBAY": 0.030663,
+        "ETSY": 0.106076,
+        "SPY": 0.0,
+        "QQQ": 0.655319
+      },
+      "estimation_days": 120,
+      "event_window": [
+        0,
+        1
+      ],
+      "event_window_dates": [
+        "2022-07-26",
+        "2022-07-27"
+      ],
+      "observed_return": -0.040044,
+      "counterfactual_return": 0.018027,
+      "effect": -0.05807,
+      "pre_fit_rmse": 0.049355
+    }
+  },
+  "placebo_rank": 0.875,
+  "placebo_n": 8,
+  "computed_at": "2026-06-06T13:05:06+00:00",
+  "case_id": "shop_2022q2_earnings"
+}

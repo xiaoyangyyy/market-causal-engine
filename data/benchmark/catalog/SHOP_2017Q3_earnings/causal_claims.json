@@ -1,0 +1,45 @@
+{
+  "event_id": "SHOP_2017Q3_earnings",
+  "ticker": "SHOP",
+  "event_date": "2017-07-12",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T12:46:40+00:00",
+  "accepted": [
+    {
+      "cause": "Subscription solutions revenues increased 63.5%",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Subscription solutions revenues increased from $132.2 million in the nine months ended September 30, 2016 to $216.1 million in the nine months ended September 30, 2017 , representing an increase of 63.5% .",
+      "source_id": "SHOP2017Q3_005",
+      "published_at": 0,
+      "atom_id": "SHOP2017Q3_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.983,
+      "span_score": 1.0,
+      "severity_align": 0.93,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP2017Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

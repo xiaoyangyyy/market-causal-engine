@@ -1,0 +1,34 @@
+{
+  "event_id": "DHR_2022Q4_earnings",
+  "ticker": "DHR",
+  "event_date": "2022-10-14",
+  "fiscal_period": "2022Q4",
+  "atom_count": 5,
+  "text_length": 47178,
+  "summary_length": 11226,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\DHR_2022Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\DHR_2022Q4_earnings\\sec_8k.txt",
+  "filing_date": "2022-10-20",
+  "accession_number": "0000313616-22-000227",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/313616/000031361622000227/dhr-20221020.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000313616",
+  "window_days": 45,
+  "search_date_from": "2023-01-01",
+  "search_date_to": "2023-02-28",
+  "aligned_filing_date": "2022-10-20",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -5.74,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

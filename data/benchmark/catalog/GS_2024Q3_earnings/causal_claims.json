@@ -1,0 +1,135 @@
+{
+  "event_id": "GS_2024Q3_earnings",
+  "ticker": "GS",
+  "event_date": "2024-07-16",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:05:35+00:00",
+  "accepted": [
+    {
+      "cause": "net earnings $ 0.21",
+      "effect": "Impact to EPS $ 0.22",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "net earnings $ $ 0.21 0.22 Impact to EPS $ $",
+      "source_id": "GS2024Q3_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GS2024Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.887,
+      "span_score": 1.0,
+      "severity_align": 0.549,
+      "mechanism_hint": 1.0,
+      "claim_id": "GS2024Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Net earnings $ 2,458",
+      "effect": "18% $ 5,990 18% $",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Net earnings $ 2,458 (30)% 18% $ 5,990 18% $",
+      "source_id": "GS2024Q3_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GS2024Q3_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.812,
+      "span_score": 1.0,
+      "severity_align": 0.249,
+      "mechanism_hint": 1.0,
+      "claim_id": "GS2024Q3_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.6,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.048,
+      "polarity": -1.0,
+      "evidence_span": "Net Earnings EPS 2Q24 $12.73 billion 2Q24 $",
+      "source_id": "GS2024Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GS2024Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GS2024Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "higher net revenues in Global Banking & Markets and Asset & Wealth Management",
+      "effect": "2Q24 net revenues were higher YoY",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "2Q24 net revenues were higher YoY, reflecting higher net revenues in Global Banking & Markets and Asset & Wealth Management",
+      "source_id": "GS2024Q3_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GS2024Q3_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "revenues — Net interest income of",
+      "source_id": "GS2024Q3_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GS2024Q3_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

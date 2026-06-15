@@ -1,0 +1,71 @@
+{
+  "event_id": "LRCX_2021Q2_earnings",
+  "ticker": "LRCX",
+  "event_date": "2021-04-12",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:43:31+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.103,
+      "polarity": -1.0,
+      "evidence_span": "• Non-GAAP gross margin of 46.3%, non-GAAP operating income as a percentage of revenue of 31.6%, and non-GAAP diluted EPS of $7.49.",
+      "source_id": "LRCX2021Q2_005",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "LRCX2021Q2_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "LRCX2021Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Gross margin as percentage of revenue 46.3 %",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.1,
+      "polarity": -1.0,
+      "evidence_span": "Gross margin as percentage of revenue 46.3 % 46.4",
+      "source_id": "LRCX2021Q2_006",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "LRCX2021Q2_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.988,
+      "span_score": 1.0,
+      "severity_align": 0.952,
+      "mechanism_hint": 1.0,
+      "claim_id": "LRCX2021Q2_C002",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,31 @@
+{
+  "event_id": "NFLX_2022Q1_earnings",
+  "ticker": "NFLX",
+  "event_date": "2022-01-06",
+  "fiscal_period": "2022Q1",
+  "atom_count": 14,
+  "text_length": 38406,
+  "summary_length": 11996,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\NFLX_2022Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\NFLX_2022Q1_earnings\\sec_8k.txt",
+  "filing_date": "2022-04-19",
+  "accession_number": "0001065280-22-000144",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528022000144/nflx-20220419.htm",
+  "form": "8-K",
+  "search_date_from": "2022-04-01",
+  "search_date_to": "2022-05-31",
+  "aligned_filing_date": "2022-04-19",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 3.18,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

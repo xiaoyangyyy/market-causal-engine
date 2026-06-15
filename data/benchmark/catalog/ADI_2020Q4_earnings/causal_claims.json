@@ -1,0 +1,116 @@
+{
+  "event_id": "ADI_2020Q4_earnings",
+  "ticker": "ADI",
+  "event_date": "2020-10-06",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:26:55+00:00",
+  "accepted": [
+    {
+      "cause": "proposed transaction",
+      "effect": "expected benefits and synergies",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "expected benefits and synergies of the proposed transaction and growth",
+      "source_id": "ADI2020Q4_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "ADI2020Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.816,
+      "span_score": 1.0,
+      "severity_align": 0.265,
+      "mechanism_hint": 1.0,
+      "claim_id": "ADI2020Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "synergies",
+      "effect": "expected benefits",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "expected benefits, synergies and growth",
+      "source_id": "ADI2020Q4_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "ADI2020Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.812,
+      "span_score": 1.0,
+      "severity_align": 0.246,
+      "mechanism_hint": 1.0,
+      "claim_id": "ADI2020Q4_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.037,
+      "polarity": -1.0,
+      "evidence_span": "Revenue EBITDA Gross Prof",
+      "source_id": "ADI2020Q4_002",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "ADI2020Q4_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "ADI2020Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "",
+      "source_id": "ADI2020Q4_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "ADI2020Q4_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

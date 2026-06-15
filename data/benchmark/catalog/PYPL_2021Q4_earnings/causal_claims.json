@@ -1,0 +1,114 @@
+{
+  "event_id": "PYPL_2021Q4_earnings",
+  "ticker": "PYPL",
+  "event_date": "2021-10-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:52:12+00:00",
+  "accepted": [
+    {
+      "cause": "Net revenue of $6.18 billion, growing 13% on a spot and FXN basis",
+      "effect": "Revenue growth exceeding expectations",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "net revenue of $6.18 billion, growing 13% on a spot and FXN basis",
+      "source_id": "PYPL2021Q4_001",
+      "published_at": 0,
+      "atom_id": "PYPL2021Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.804,
+      "span_score": 0.966,
+      "severity_align": 0.291,
+      "mechanism_hint": 1.0,
+      "claim_id": "PYPL2021Q4_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "EPS expected to grow ~19% to ~$",
+      "effect": "Strong forward earnings guidance",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "EPS expected to grow ~19% to ~$",
+      "source_id": "PYPL2021Q4_005",
+      "published_at": 0,
+      "atom_id": "PYPL2021Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.823,
+      "span_score": 1.0,
+      "severity_align": 0.291,
+      "mechanism_hint": 1.0,
+      "claim_id": "PYPL2021Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Venmo on Amazon.com starting in 2022",
+      "effect": "Strategic partnership expanding user base",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "will be able to pay with Venmo on Amazon.com starting in 2022",
+      "source_id": "PYPL2021Q4_006",
+      "published_at": 0,
+      "atom_id": "PYPL2021Q4_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.809,
+      "span_score": 0.894,
+      "severity_align": 0.471,
+      "mechanism_hint": 1.0,
+      "claim_id": "PYPL2021Q4_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "GAAP EPS of $0.92 compared to $0.86 in Q3'20",
+      "effect": "Positive earnings surprise driving stock price",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "GAAP EPS of $0.92 compared to $0.86 in Q3'20",
+      "source_id": "PYPL2021Q4_001",
+      "published_at": 0,
+      "atom_id": "PYPL2021Q4_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,91 @@
+{
+  "event_id": "PG_2016Q3_earnings",
+  "ticker": "PG",
+  "event_date": "2016-07-19",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T06:35:04+00:00",
+  "accepted": [
+    {
+      "cause": "Net sales decrease of 3% driven by foreign exchange",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "net sales of $16.1 billion, a decrease of three percent versus the prior year period driven by a negative three percentage point impact from foreign exchange",
+      "source_id": "PG2016Q3_003",
+      "published_at": 0,
+      "atom_id": "PG2016Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.872,
+      "span_score": 0.962,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "claim_id": "PG2016Q3_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Diluted Net EPS increase of 283%",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Diluted Net EPS $0.69, +283%",
+      "source_id": "PG2016Q3_000",
+      "published_at": 0,
+      "atom_id": "PG2016Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.797,
+      "span_score": 1.0,
+      "severity_align": 0.189,
+      "mechanism_hint": 1.0,
+      "claim_id": "PG2016Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Core EPS decrease of 15% and Net Sales decrease of 8%",
+      "effect": "Negative market reaction expected",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -0.8,
+      "evidence_span": "Core EPS $0.79, -15% FY'16: Net Sales -8%",
+      "source_id": "PG2016Q3_001",
+      "published_at": 0,
+      "atom_id": "PG2016Q3_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

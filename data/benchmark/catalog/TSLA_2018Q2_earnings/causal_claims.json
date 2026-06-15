@@ -1,0 +1,44 @@
+{
+  "event_id": "TSLA_2018Q2_earnings",
+  "ticker": "TSLA",
+  "event_date": "2018-04-09",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:29:07+00:00",
+  "accepted": [
+    {
+      "cause": "guidance reduction",
+      "effect": "forward earnings revision",
+      "mechanism": "fundamental",
+      "severity": 0.88,
+      "polarity": -1.0,
+      "evidence_span": "expectations, and decrease",
+      "source_id": "TSLA2018Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "TSLA2018Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "TSLA2018Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

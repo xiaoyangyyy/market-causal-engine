@@ -1,0 +1,29 @@
+{
+  "event_id": "SNPS_2024Q4_earnings",
+  "ticker": "SNPS",
+  "event_date": "2024-10-10",
+  "fiscal_period": "2024Q4",
+  "atom_count": 0,
+  "text_length": 8038,
+  "summary_length": 4963,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\SNPS_2024Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\SNPS_2024Q4_earnings\\sec_8k.txt",
+  "filing_date": "2024-10-01",
+  "accession_number": "0001193125-24-230216",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/883241/000119312524230216/d883834d8k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000883241",
+  "window_days": 45,
+  "search_date_from": "2025-01-01",
+  "search_date_to": "2025-02-28",
+  "aligned_filing_date": "2024-10-01",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -2.14,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  }
+}

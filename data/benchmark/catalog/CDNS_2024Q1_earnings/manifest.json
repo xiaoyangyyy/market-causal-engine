@@ -1,0 +1,31 @@
+{
+  "event_id": "CDNS_2024Q1_earnings",
+  "ticker": "CDNS",
+  "event_date": "2024-01-19",
+  "fiscal_period": "2024Q1",
+  "atom_count": 6,
+  "text_length": 57730,
+  "summary_length": 11999,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\CDNS_2024Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\CDNS_2024Q1_earnings\\sec_8k.txt",
+  "filing_date": "2024-04-22",
+  "accession_number": "0000813672-24-000083",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/813672/000081367224000083/cdns-20240422.htm",
+  "form": "8-K",
+  "search_date_from": "2024-04-01",
+  "search_date_to": "2024-05-31",
+  "aligned_filing_date": "2024-04-22",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.7,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

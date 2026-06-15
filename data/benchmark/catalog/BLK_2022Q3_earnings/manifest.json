@@ -1,0 +1,34 @@
+{
+  "event_id": "BLK_2022Q3_earnings",
+  "ticker": "BLK",
+  "event_date": "2022-07-06",
+  "fiscal_period": "2022Q3",
+  "atom_count": 1,
+  "text_length": 76191,
+  "summary_length": 10921,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\BLK_2022Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\BLK_2022Q3_earnings\\sec_8k.txt",
+  "filing_date": "2022-07-15",
+  "accession_number": "0001564590-22-025811",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1364742/000156459022025811/blk-8k_20220715.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001364742",
+  "window_days": 45,
+  "search_date_from": "2022-10-01",
+  "search_date_to": "2022-11-30",
+  "aligned_filing_date": "2022-07-15",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.99,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

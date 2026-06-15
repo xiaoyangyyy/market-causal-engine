@@ -1,0 +1,116 @@
+{
+  "event_id": "GOOGL_2021Q4_earnings",
+  "ticker": "GOOGL",
+  "event_date": "2021-10-12",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:55:45+00:00",
+  "accepted": [
+    {
+      "cause": "Operating income $ 11,213",
+      "effect": "positive stock performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Operating income $ 11,213",
+      "source_id": "GOOGL2021Q4_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GOOGL2021Q4_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.81,
+      "span_score": 1.0,
+      "severity_align": 0.238,
+      "mechanism_hint": 1.0,
+      "claim_id": "GOOGL2021Q4_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "consistent investments to support long-term growth",
+      "effect": "strong financial",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Our consistent investments to support long-term growth are reflected in strong financial",
+      "source_id": "GOOGL2021Q4_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GOOGL2021Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.795,
+      "span_score": 0.913,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "GOOGL2021Q4_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.056,
+      "polarity": -1.0,
+      "evidence_span": "Revenues, Traffic Acquisition Costs (TAC) and number of",
+      "source_id": "GOOGL2021Q4_003",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GOOGL2021Q4_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GOOGL2021Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "revenues” included at the end of",
+      "source_id": "GOOGL2021Q4_006",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GOOGL2021Q4_006",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

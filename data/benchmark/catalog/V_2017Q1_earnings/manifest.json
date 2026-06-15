@@ -1,0 +1,34 @@
+{
+  "event_id": "V_2017Q1_earnings",
+  "ticker": "V",
+  "event_date": "2017-01-10",
+  "fiscal_period": "2017Q1",
+  "atom_count": 3,
+  "text_length": 58586,
+  "summary_length": 11998,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\V_2017Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\V_2017Q1_earnings\\sec_8k.txt",
+  "filing_date": "2017-02-02",
+  "accession_number": "0001403161-17-000010",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316117000010/earningsrelease123116.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001403161",
+  "window_days": 45,
+  "search_date_from": "2017-04-01",
+  "search_date_to": "2017-05-31",
+  "aligned_filing_date": "2017-02-02",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.17,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

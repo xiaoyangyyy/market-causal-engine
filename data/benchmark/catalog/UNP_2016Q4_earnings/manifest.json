@@ -1,0 +1,34 @@
+{
+  "event_id": "UNP_2016Q4_earnings",
+  "ticker": "UNP",
+  "event_date": "2016-10-24",
+  "fiscal_period": "2016Q4",
+  "atom_count": 9,
+  "text_length": 21174,
+  "summary_length": 11995,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\UNP_2016Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\UNP_2016Q4_earnings\\sec_8k.txt",
+  "filing_date": "2016-10-20",
+  "accession_number": "0000100885-16-000451",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/100885/000010088516000451/unp-20161020x8k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000100885",
+  "window_days": 45,
+  "search_date_from": "2017-01-01",
+  "search_date_to": "2017-02-28",
+  "aligned_filing_date": "2016-10-20",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -6.67,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

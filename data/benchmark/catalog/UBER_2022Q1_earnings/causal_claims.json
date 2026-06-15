@@ -1,0 +1,69 @@
+{
+  "event_id": "UBER_2022Q1_earnings",
+  "ticker": "UBER",
+  "event_date": "2022-01-21",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T11:55:44+00:00",
+  "accepted": [
+    {
+      "cause": "Expectation of meaningful positive free cash flows",
+      "effect": "Improved long-term liquidity and profitability outlook",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "expect to generate meaningful positive free cash flows for full-year",
+      "source_id": "UBER2022Q1_000",
+      "published_at": 0,
+      "atom_id": "UBER2022Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.965,
+      "span_score": 1.0,
+      "severity_align": 0.86,
+      "mechanism_hint": 1.0,
+      "claim_id": "UBER2022Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Revenue growth significantly outpacing Gross Bookings",
+      "effect": "Positive revenue surprise driven by business model changes",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Revenue growth significantly outpacing Gross Bookings growth primarily due to the acquisition of Transplace by Freight",
+      "source_id": "UBER2022Q1_004",
+      "published_at": 0,
+      "atom_id": "UBER2022Q1_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.949,
+      "span_score": 0.934,
+      "severity_align": 0.94,
+      "mechanism_hint": 1.0,
+      "claim_id": "UBER2022Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

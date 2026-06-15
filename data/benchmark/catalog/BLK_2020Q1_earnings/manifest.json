@@ -1,0 +1,34 @@
+{
+  "event_id": "BLK_2020Q1_earnings",
+  "ticker": "BLK",
+  "event_date": "2020-01-06",
+  "fiscal_period": "2020Q1",
+  "atom_count": 5,
+  "text_length": 67737,
+  "summary_length": 11998,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\BLK_2020Q1_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\BLK_2020Q1_earnings\\sec_8k.txt",
+  "filing_date": "2020-01-15",
+  "accession_number": "0001564590-20-001144",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1364742/000156459020001144/blk-8k_20200115.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001364742",
+  "window_days": 45,
+  "search_date_from": "2020-04-01",
+  "search_date_to": "2020-05-31",
+  "aligned_filing_date": "2020-01-15",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 2.3,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

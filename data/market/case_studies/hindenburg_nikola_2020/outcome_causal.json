@@ -1,0 +1,115 @@
+{
+  "treated": "NKLA",
+  "event_date": "2020-09-10",
+  "event_window": [
+    0,
+    1
+  ],
+  "method": "synthetic_control",
+  "controls": [
+    "XLI",
+    "TSLA",
+    "GM",
+    "F",
+    "SPY",
+    "QQQ"
+  ],
+  "control_weights": {
+    "XLI": 0.250012,
+    "TSLA": 0.249996,
+    "GM": 0.24999,
+    "F": 0.249992,
+    "SPY": 9e-06,
+    "QQQ": 0.0
+  },
+  "estimation_days": 105,
+  "event_window_dates": [
+    "2020-09-10",
+    "2020-09-11"
+  ],
+  "observed_return": -0.155299,
+  "counterfactual_return": -0.005991,
+  "effect": -0.149307,
+  "pre_fit_rmse": 1e-06,
+  "alternates": {
+    "abnormal_return": {
+      "method": "abnormal_return",
+      "benchmark": "SPY",
+      "event_window": [
+        0,
+        1
+      ],
+      "event_window_dates": [
+        "2020-09-10",
+        "2020-09-11"
+      ],
+      "observed_return": -0.155299,
+      "counterfactual_return": -0.016863,
+      "effect": -0.138435,
+      "pre_fit_rmse": null
+    },
+    "factor_model": {
+      "method": "factor_model",
+      "factors": [
+        "QQQ",
+        "SPY",
+        "XLI"
+      ],
+      "factor_loadings": {
+        "alpha": 0.003098,
+        "QQQ": 0.19523,
+        "SPY": 0.402978,
+        "XLI": 0.692057
+      },
+      "estimation_days": 105,
+      "event_window": [
+        0,
+        1
+      ],
+      "event_window_dates": [
+        "2020-09-10",
+        "2020-09-11"
+      ],
+      "observed_return": -0.155299,
+      "counterfactual_return": -0.005466,
+      "effect": -0.149832,
+      "pre_fit_rmse": 0.013812
+    },
+    "synthetic_control": {
+      "method": "synthetic_control",
+      "controls": [
+        "XLI",
+        "TSLA",
+        "GM",
+        "F",
+        "SPY",
+        "QQQ"
+      ],
+      "control_weights": {
+        "XLI": 0.250012,
+        "TSLA": 0.249996,
+        "GM": 0.24999,
+        "F": 0.249992,
+        "SPY": 9e-06,
+        "QQQ": 0.0
+      },
+      "estimation_days": 105,
+      "event_window": [
+        0,
+        1
+      ],
+      "event_window_dates": [
+        "2020-09-10",
+        "2020-09-11"
+      ],
+      "observed_return": -0.155299,
+      "counterfactual_return": -0.005991,
+      "effect": -0.149307,
+      "pre_fit_rmse": 1e-06
+    }
+  },
+  "placebo_rank": 1.0,
+  "placebo_n": 5,
+  "computed_at": "2026-06-06T13:04:44+00:00",
+  "case_id": "hindenburg_nikola_2020"
+}

@@ -1,6 +1,6 @@
 {
   "case_id": "luckin_2020_fraud",
-  "ticker": "LK",
+  "ticker": "LKNCY",
   "event_date": "2020-01-31",
   "event_type": "short_report",
   "domain": "short_report",
@@ -13,11 +13,56 @@
   "scenario_path": "scenario.json",
   "atoms_path": "atoms.jsonl",
   "default_until": 120,
-  "lookahead_policy": {"strict": true, "forbid_post_hoc_sources": true},
+  "lookahead_policy": {
+    "strict": true,
+    "forbid_post_hoc_sources": true
+  },
   "observed_outcomes": {
     "direction": "down",
     "session_return_pct": -31,
     "calibration_reference_drawdown": 0.58,
     "dominant_narrative": "Muddy Waters fraud allegations + trust collapse + SEC/regulatory overhang"
+  },
+  "outcome_causal": {
+    "method": "synthetic_control",
+    "effect": -0.127872,
+    "observed_return": -0.138736,
+    "counterfactual_return": -0.010864,
+    "placebo_rank": 0.875,
+    "artifact": "data\\market\\case_studies\\luckin_2020_fraud\\outcome_causal.json"
+  },
+  "causal_claims": {
+    "claim_count": 6,
+    "rejected_count": 0,
+    "top_claim": {
+      "cause": "fraud allegations",
+      "effect": "trust collapse",
+      "mechanism": "trust",
+      "severity": 0.9,
+      "evidence_span": "Muddy Waters Research publishes a short seller report",
+      "source_id": "LK20MW_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "LK20MW_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "LUCKIN_2020__C000"
+    },
+    "artifact": "causal_claims.json"
+  },
+  "mechanism_calibration": {
+    "predicted_effect": -0.005475,
+    "outcome_effect": -0.127872,
+    "dominant_mechanism": "trust",
+    "direction_match": true,
+    "confidence": 0.309,
+    "artifact": "mechanism_calibration.json"
   }
 }

@@ -1,0 +1,117 @@
+{
+  "event_id": "GE_2017Q4_earnings",
+  "ticker": "GE",
+  "event_date": "2017-10-13",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:23:23+00:00",
+  "accepted": [
+    {
+      "cause": "Industrial operating prof",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Industrial operating prof",
+      "source_id": "GE2017Q4_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GE2017Q4_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.81,
+      "span_score": 1.0,
+      "severity_align": 0.241,
+      "mechanism_hint": 1.0,
+      "claim_id": "GE2017Q4_C003",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Consolidated earnings from continuing operations attributable to GE common shareowners (GAAP) $ 1,905 $ 2,097 (9 )%",
+      "effect": "Likely decline in stock price due to lower earnings",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Consolidated earnings from continuing operations attributable to GE common shareowners (GAAP) $ 1,905 $ 2,097 (9 )%",
+      "source_id": "GE2017Q4_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GE2017Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.805,
+      "span_score": 0.932,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "GE2017Q4_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.042,
+      "polarity": -1.0,
+      "evidence_span": "Revenues and other income Sales of",
+      "source_id": "GE2017Q4_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GE2017Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GE2017Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "revenues and profit include the sum of",
+      "source_id": "GE2017Q4_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GE2017Q4_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

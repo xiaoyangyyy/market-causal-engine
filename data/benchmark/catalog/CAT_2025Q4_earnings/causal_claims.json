@@ -1,0 +1,71 @@
+{
+  "event_id": "CAT_2025Q4_earnings",
+  "ticker": "CAT",
+  "event_date": "2025-10-10",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T13:41:08+00:00",
+  "accepted": [
+    {
+      "cause": "Third-quarter 2025 profit per share of $4.88",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "Third-quarter 2025 profit per share of $4.88",
+      "source_id": "CAT2025Q4_001",
+      "published_at": 0,
+      "atom_id": "CAT2025Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.757,
+      "span_score": 0.925,
+      "severity_align": 0.194,
+      "mechanism_hint": 1.0,
+      "claim_id": "CAT2025Q4_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Third-quarter 2025 sales and revenues increased 10% to $17.6 billion",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Third-quarter 2025 sales and revenues increased 10% to $17.6 billion",
+      "source_id": "CAT2025Q4_001",
+      "published_at": 0,
+      "atom_id": "CAT2025Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.792,
+      "span_score": 0.966,
+      "severity_align": 0.244,
+      "mechanism_hint": 1.0,
+      "claim_id": "CAT2025Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:31+00:00",
+  "claims_refined": true
+}

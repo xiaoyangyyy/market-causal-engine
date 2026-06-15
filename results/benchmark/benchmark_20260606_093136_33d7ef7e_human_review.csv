@@ -1,0 +1,11 @@
+event_id,corpus,ticker,event_date,domain,observed_direction,simulated_direction,direction_match,calibration_error_pct,drawdown_risk,dominant_path,synthetic_labels,analyst_rating_1_to_5,analyst_notes
+placebo_2019-07-29,placebo_quiet_days,SPY,2019-07-29,placebo,neutral,neutral,True,,0.0,,False,,
+placebo_2019-06-17,placebo_quiet_days,SPY,2019-06-17,placebo,neutral,neutral,True,,0.0,,False,,
+placebo_2019-06-24,placebo_quiet_days,SPY,2019-06-24,placebo,neutral,neutral,True,,0.0,,False,,
+placebo_2019-03-18,placebo_quiet_days,SPY,2019-03-18,placebo,neutral,neutral,True,,0.0,,False,,
+placebo_2019-06-03,placebo_quiet_days,SPY,2019-06-03,placebo,neutral,neutral,True,,0.0,,False,,
+macro_2021-11-10_cpi,macro_releases,SPY,2021-11-10,macro,down,down,True,1.35,0.443,cpi_surprise,True,,
+cpi_2022_06_hot,macro_releases,SPY,2022-06-10,macro,,down,,0.26,0.5619,cpi_surprise,False,,
+macro_2020-03-15_fomc,macro_releases,SPY,2020-03-15,macro,down,down,True,6.65,0.3897,fomc_statement,True,,
+macro_2023-03-22_fomc,macro_releases,SPY,2023-03-22,macro,neutral,down,False,0.09,0.3897,fomc_statement,True,,
+fomc_2022_75bp,macro_releases,SPY,2022-06-15,macro,,down,,0.12,0.5101,fomc_statement,False,,

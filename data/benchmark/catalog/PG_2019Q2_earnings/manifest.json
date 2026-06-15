@@ -1,0 +1,34 @@
+{
+  "event_id": "PG_2019Q2_earnings",
+  "ticker": "PG",
+  "event_date": "2019-04-22",
+  "fiscal_period": "2019Q2",
+  "atom_count": 19,
+  "text_length": 32972,
+  "summary_length": 11995,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\PG_2019Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\PG_2019Q2_earnings\\sec_8k.txt",
+  "filing_date": "2019-04-23",
+  "accession_number": "0000080424-19-000028",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042419000028/fy1819q3jfm8-kcoverpage.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000080424",
+  "window_days": 45,
+  "search_date_from": "2019-07-01",
+  "search_date_to": "2019-08-31",
+  "aligned_filing_date": "2019-04-23",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -2.69,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

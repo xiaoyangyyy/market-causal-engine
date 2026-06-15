@@ -1,0 +1,31 @@
+{
+  "event_id": "ABNB_2025Q4_earnings",
+  "ticker": "ABNB",
+  "event_date": "2025-10-20",
+  "fiscal_period": "2025Q4",
+  "atom_count": 25,
+  "text_length": 48066,
+  "summary_length": 880,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\ABNB_2025Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\ABNB_2025Q4_earnings\\sec_8k.txt",
+  "filing_date": "2026-02-12",
+  "accession_number": "0001193125-26-048670",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526048670/d58192d8k.htm",
+  "form": "8-K",
+  "search_date_from": "2026-01-01",
+  "search_date_to": "2026-02-28",
+  "aligned_filing_date": "2026-02-12",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -3.0,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

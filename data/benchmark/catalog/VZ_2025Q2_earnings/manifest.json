@@ -1,0 +1,34 @@
+{
+  "event_id": "VZ_2025Q2_earnings",
+  "ticker": "VZ",
+  "event_date": "2025-04-08",
+  "fiscal_period": "2025Q2",
+  "atom_count": 2,
+  "text_length": 57172,
+  "summary_length": 8173,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\VZ_2025Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\VZ_2025Q2_earnings\\sec_8k.txt",
+  "filing_date": "2025-04-22",
+  "accession_number": "0000732712-25-000021",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/732712/000073271225000021/vz-20250422.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000732712",
+  "window_days": 45,
+  "search_date_from": "2025-07-01",
+  "search_date_to": "2025-08-31",
+  "aligned_filing_date": "2025-04-22",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": 0.61,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

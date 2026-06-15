@@ -1,0 +1,31 @@
+{
+  "event_id": "CDNS_2016Q3_earnings",
+  "ticker": "CDNS",
+  "event_date": "2016-07-18",
+  "fiscal_period": "2016Q3",
+  "atom_count": 15,
+  "text_length": 42784,
+  "summary_length": 11994,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\CDNS_2016Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\CDNS_2016Q3_earnings\\sec_8k.txt",
+  "filing_date": "2016-10-24",
+  "accession_number": "0000813672-16-000055",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/813672/000081367216000055/cdns102420168-k.htm",
+  "form": "8-K",
+  "search_date_from": "2016-10-01",
+  "search_date_to": "2016-11-30",
+  "aligned_filing_date": "2016-10-24",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": 0.12,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

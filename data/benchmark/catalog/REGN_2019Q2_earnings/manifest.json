@@ -1,0 +1,31 @@
+{
+  "event_id": "REGN_2019Q2_earnings",
+  "ticker": "REGN",
+  "event_date": "2019-04-11",
+  "fiscal_period": "2019Q2",
+  "atom_count": 11,
+  "text_length": 36609,
+  "summary_length": 11995,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\REGN_2019Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\REGN_2019Q2_earnings\\sec_8k.txt",
+  "filing_date": "2019-08-06",
+  "accession_number": "0001532176-19-000024",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/872589/000153217619000024/form8-kq22019.htm",
+  "form": "8-K",
+  "search_date_from": "2019-07-01",
+  "search_date_to": "2019-08-31",
+  "aligned_filing_date": "2019-08-06",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": 0.23,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

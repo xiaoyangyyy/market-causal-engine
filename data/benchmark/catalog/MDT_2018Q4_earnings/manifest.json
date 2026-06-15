@@ -1,0 +1,36 @@
+{
+  "event_id": "MDT_2018Q4_earnings",
+  "ticker": "MDT",
+  "event_date": "2018-10-05",
+  "fiscal_period": "2018Q4",
+  "atom_count": 38,
+  "text_length": 43909,
+  "summary_length": 11997,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\MDT_2018Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\MDT_2018Q4_earnings\\sec_8k.txt",
+  "filing_date": "2019-02-19",
+  "accession_number": "0001613103-19-000008",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1613103/000161310319000008/q3fy19earningsrelease.htm",
+  "form": "8-K",
+  "fetch_strategy": "fiscal_padded",
+  "cik": "0001613103",
+  "date_from": "2018-12-11",
+  "date_to": "2019-03-21",
+  "window_days": 7,
+  "search_date_from": "2019-01-01",
+  "search_date_to": "2019-02-28",
+  "aligned_filing_date": "2019-02-19",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": 0.07,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

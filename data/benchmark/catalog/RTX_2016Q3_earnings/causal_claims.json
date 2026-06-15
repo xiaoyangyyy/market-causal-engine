@@ -1,0 +1,66 @@
+{
+  "event_id": "RTX_2016Q3_earnings",
+  "ticker": "RTX",
+  "event_date": "2016-07-15",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T11:41:42+00:00",
+  "accepted": [
+    {
+      "cause": "Adjusted EPS of $1.82 was up 9 percent versus the prior year",
+      "effect": "estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Adjusted EPS of $1.82 was up 9 percent versus the prior year",
+      "source_id": "RTX2016Q3_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "RTX2016Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.815,
+      "span_score": 1.0,
+      "severity_align": 0.259,
+      "mechanism_hint": 1.0,
+      "claim_id": "RTX2016Q3_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Diluted Earnings Per Share from Continuing Operations",
+      "effect": "estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Diluted Earnings Per Share from Continuing Operations $ 1.71",
+      "source_id": "RTX2016Q3_007",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "RTX2016Q3_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.815,
+      "span_score": 1.0,
+      "severity_align": 0.26,
+      "mechanism_hint": 1.0,
+      "claim_id": "RTX2016Q3_C005",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "REPORTS SECOND QUARTER 2016 RESULTS",
+      "effect": "estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evide

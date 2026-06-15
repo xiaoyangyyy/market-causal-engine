@@ -1,0 +1,34 @@
+{
+  "event_id": "QCOM_2017Q4_earnings",
+  "ticker": "QCOM",
+  "event_date": "2017-10-20",
+  "fiscal_period": "2017Q4",
+  "atom_count": 15,
+  "text_length": 39798,
+  "summary_length": 1144,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\QCOM_2017Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\QCOM_2017Q4_earnings\\sec_8k.txt",
+  "filing_date": "2017-11-01",
+  "accession_number": "0001234452-17-000189",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/804328/000123445217000189/qcom092417er8-k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000804328",
+  "window_days": 45,
+  "search_date_from": "2018-01-01",
+  "search_date_to": "2018-02-28",
+  "aligned_filing_date": "2017-11-01",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 4.8,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 5,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

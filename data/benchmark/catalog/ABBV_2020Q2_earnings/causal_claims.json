@@ -1,0 +1,85 @@
+{
+  "event_id": "ABBV_2020Q2_earnings",
+  "ticker": "ABBV",
+  "event_date": "2020-04-07",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:14:13+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.171,
+      "polarity": -1.0,
+      "evidence_span": "(Exact name of registrant as specified in its charter) Delaware 001-35565 32-0375147 (State or other Jurisdiction (Commission File Number) (IRS Employer of Incorporation) Identific",
+      "source_id": "ABBV2020Q2_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "ABBV2020Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.988,
+      "span_score": 0.979,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "ABBV2020Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "",
+      "source_id": "ABBV2020Q2_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "ABBV2020Q2_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "regulatory",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act.",
+      "source_id": "ABBV2020Q2_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "ABBV2020Q2_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "mechanism_not_allowed_for_domain:regulatory:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

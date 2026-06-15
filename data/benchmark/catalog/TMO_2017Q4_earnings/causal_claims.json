@@ -1,0 +1,71 @@
+{
+  "event_id": "TMO_2017Q4_earnings",
+  "ticker": "TMO",
+  "event_date": "2017-10-16",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:23:45+00:00",
+  "accepted": [
+    {
+      "cause": "Reported revenue of $5.1 billion",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "Reported revenue of $5.1 billion",
+      "source_id": "TMO2017Q4_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "TMO2017Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.862,
+      "span_score": 0.948,
+      "severity_align": 0.562,
+      "mechanism_hint": 1.0,
+      "claim_id": "TMO2017Q4_C004",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.058,
+      "polarity": -1.0,
+      "evidence_span": "revenue and earnings guidance to reflect the acquisition of",
+      "source_id": "TMO2017Q4_009",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "TMO2017Q4_009",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "TMO2017Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

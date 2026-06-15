@@ -1,0 +1,89 @@
+{
+  "event_id": "QCOM_2019Q3_earnings",
+  "ticker": "QCOM",
+  "event_date": "2019-07-12",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T15:01:51+00:00",
+  "accepted": [
+    {
+      "cause": "Guidance for Q4 FY19 revenue decline",
+      "effect": "Expected year-over-year revenue decrease of 12% to 26%",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Current Guidance Q4 FY19 Estimates (2)(3) Revenues $5.8B $4.3B - $5.1B Year-over-year change decrease 12% - 26%",
+      "source_id": "QCOM2019Q3_009",
+      "published_at": 0,
+      "atom_id": "QCOM2019Q3_009",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.804,
+      "span_score": 0.929,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "QCOM2019Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Settlement with Apple recognized in Q3",
+      "effect": "Licensing revenues increased to $4.7 billion",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "In the third quarter of fiscal 2019 , we recognized licensing revenues of $4.7 billion resulting from the settlement",
+      "source_id": "QCOM2019Q3_004",
+      "published_at": 0,
+      "atom_id": "QCOM2019Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.782,
+      "span_score": 0.935,
+      "severity_align": 0.271,
+      "mechanism_hint": 1.0,
+      "claim_id": "QCOM2019Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.6,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Immaterial error in royalty revenue recognition",
+      "effect": "Prior period financial statements require restatement",
+      "mechanism": "fundamental",
+      "severity": 0.4,
+      "polarity": -0.3,
+      "evidence_span": "we identified an immaterial error related to the recognition of certain royalty revenues of our QTL segment",
+      "source_id": "QCOM2019Q3_002",
+      "published_at": 0,
+      "atom_id": "QCOM2019Q3_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

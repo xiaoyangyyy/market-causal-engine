@@ -1,0 +1,29 @@
+{
+  "event_id": "WFC_2017Q2_earnings",
+  "ticker": "WFC",
+  "event_date": "2017-04-05",
+  "fiscal_period": "2017Q2",
+  "atom_count": 0,
+  "text_length": 3731,
+  "summary_length": 3731,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\WFC_2017Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\WFC_2017Q2_earnings\\sec_8k.txt",
+  "filing_date": "2017-04-13",
+  "accession_number": "0000072971-17-000308",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/72971/000007297117000308/wfc1qer4-13x2017form8xk.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000072971",
+  "window_days": 45,
+  "search_date_from": "2017-07-01",
+  "search_date_to": "2017-08-31",
+  "aligned_filing_date": "2017-04-13",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -3.33,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  }
+}

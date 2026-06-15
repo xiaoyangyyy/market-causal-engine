@@ -17,7 +17,12 @@
   "lookahead_policy": {
     "strict": true,
     "forbid_post_hoc_sources": true,
-    "forbidden_source_classes": ["post_mortem", "next_day_only", "calibration_label", "future_analyst"]
+    "forbidden_source_classes": [
+      "post_mortem",
+      "next_day_only",
+      "calibration_label",
+      "future_analyst"
+    ]
   },
   "observed_outcomes": {
     "direction": "down",
@@ -26,5 +31,47 @@
     "calibration_reference_drawdown": 0.72,
     "dominant_narrative": "subscriber miss + weak Q2 guidance + password sharing overhang",
     "sources_note": "Public market data and SEC filings; labels for qualitative comparison only"
+  },
+  "outcome_causal": {
+    "method": "synthetic_control",
+    "effect": -0.32149,
+    "observed_return": -0.330522,
+    "counterfactual_return": -0.009031,
+    "placebo_rank": 1.0,
+    "artifact": "data\\market\\case_studies\\nflx_2022q1_earnings\\outcome_causal.json"
+  },
+  "causal_claims": {
+    "claim_count": 7,
+    "rejected_count": 3,
+    "top_claim": {
+      "cause": "guidance reduction",
+      "effect": "forward earnings revision",
+      "mechanism": "fundamental",
+      "severity": 0.88,
+      "evidence_span": "expectations, reflecting slower",
+      "source_id": "NFLX22Q1_002",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "NFLX22Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "NFLX_2022Q1__C001"
+    },
+    "artifact": "causal_claims.json"
+  },
+  "mechanism_calibration": {
+    "predicted_effect": 0.011475,
+    "outcome_effect": -0.32149,
+    "dominant_mechanism": "fundamental",
+    "direction_match": false,
+    "confidence": 0.356,
+    "artifact": "mechanism_calibration.json"
   }
 }

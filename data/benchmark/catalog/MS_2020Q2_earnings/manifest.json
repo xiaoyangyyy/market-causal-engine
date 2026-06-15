@@ -1,0 +1,31 @@
+{
+  "event_id": "MS_2020Q2_earnings",
+  "ticker": "MS",
+  "event_date": "2020-04-13",
+  "fiscal_period": "2020Q2",
+  "atom_count": 19,
+  "text_length": 78027,
+  "summary_length": 12000,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\MS_2020Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\MS_2020Q2_earnings\\sec_8k.txt",
+  "filing_date": "2020-07-16",
+  "accession_number": "0001157523-20-000980",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/895421/000115752320000980/a52250280.htm",
+  "form": "8-K",
+  "search_date_from": "2020-07-01",
+  "search_date_to": "2020-08-31",
+  "aligned_filing_date": "2020-07-16",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 2.51,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

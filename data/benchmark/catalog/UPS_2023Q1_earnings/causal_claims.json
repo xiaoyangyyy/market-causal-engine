@@ -1,0 +1,140 @@
+{
+  "event_id": "UPS_2023Q1_earnings",
+  "ticker": "UPS",
+  "event_date": "2023-01-17",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:20:27+00:00",
+  "accepted": [
+    {
+      "cause": "Adjusted Consolidated Operating Margin of 14.1%",
+      "effect": "Diluted EPS of $3.96",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Adjusted Consolidated Operating Margin of 14.1% • Diluted EPS of $3.96",
+      "source_id": "UPS2023Q1_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "UPS2023Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.816,
+      "span_score": 1.0,
+      "severity_align": 0.265,
+      "mechanism_hint": 1.0,
+      "claim_id": "UPS2023Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Revenue $18,252 M",
+      "effect": "Operating prof",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Revenue $18,252 M $17,697 M Operating prof",
+      "source_id": "UPS2023Q1_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "UPS2023Q1_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.812,
+      "span_score": 1.0,
+      "severity_align": 0.248,
+      "mechanism_hint": 1.0,
+      "claim_id": "UPS2023Q1_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Diluted EPS Up 0.8% Over Last Year",
+      "effect": "Stock price increase",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Diluted EPS Up 0.8% Over Last Year to $",
+      "source_id": "UPS2023Q1_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "UPS2023Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.862,
+      "span_score": 1.0,
+      "severity_align": 0.446,
+      "mechanism_hint": 1.0,
+      "claim_id": "UPS2023Q1_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "strong results",
+      "effect": "estimate upside",
+      "mechanism": "fundamental",
+      "severity": 0.191,
+      "polarity": 1.0,
+      "evidence_span": "Exhibit 99.1 UPS RELEASES 4Q 2022 EARNINGS • Consolidated Revenues of $27.0B, Down 2.7% from Last Year • Consolidated Operating Margin of 11.8%",
+      "source_id": "UPS2023Q1_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "UPS2023Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.98,
+      "span_score": 1.0,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "UPS2023Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "",
+      "source_id": "UPS2023Q1_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "UPS2023Q1_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

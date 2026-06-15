@@ -1,0 +1,136 @@
+{
+  "case_id": "cpi_2022_06_hot",
+  "domain": "macro",
+  "as_of": 90,
+  "use_llm": false,
+  "computed_at": "2026-06-09T03:07:55+00:00",
+  "accepted": [
+    {
+      "cause": "CPI surprise",
+      "effect": "inflation path repricing",
+      "mechanism": "macro",
+      "severity": 0.8,
+      "evidence_span": "CPI rose 0.7 percent in June, above",
+      "source_id": "CPI22JUN_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "CPI22JUN_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "CPI_2022_06__C000"
+    },
+    {
+      "cause": "monetary policy shock",
+      "effect": "risk appetite compression",
+      "mechanism": "macro",
+      "severity": 0.82,
+      "evidence_span": "Federal Reserve rate hike",
+      "source_id": "CPI22JUN_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "CPI22JUN_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "CPI_2022_06__C001"
+    },
+    {
+      "cause": "inflation surprise",
+      "effect": "rate path repricing",
+      "mechanism": "macro",
+      "severity": 0.92,
+      "evidence_span": "CPI surprise: June inflation 9.1% YoY above",
+      "source_id": "CPI22JUN_002",
+      "published_at": 5,
+      "proposer": "heuristic",
+      "atom_id": "CPI22JUN_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "CPI_2022_06__C002"
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "downside pressure",
+      "mechanism": "macro",
+      "severity": 0.75,
+      "evidence_span": "Treasury yield jump",
+      "source_id": "CPI22JUN_003",
+      "published_at": 12,
+      "proposer": "heuristic",
+      "atom_id": "CPI22JUN_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "CPI_2022_06__C003"
+    },
+    {
+      "cause": "market-relevant disclosure",
+      "effect": "price sensitivity",
+      "mechanism": "macro",
+      "severity": 0.65,
+      "evidence_span": "Growth stocks sell off as yields surge; Nasdaq leads declines",
+      "source_id": "CPI22JUN_004",
+      "published_at": 25,
+      "proposer": "heuristic",
+      "atom_id": "CPI22JUN_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "CPI_2022_06__C004"
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "regulatory scrutiny",
+      "effect": "regulatory overhang",
+      "mechanism": "regulatory",
+      "severity": 0.65,
+      "evidence_span": "Sector ETF rotation: value outperforms growth after inflation print",
+      "source_id": "CPI22JUN_005",
+      "published_at": 40,
+      "proposer": "heuristic",
+      "atom_id": "CPI22JUN_005",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "mechanism_not_allowed_for_domain:regulatory:macro"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 5,
+  "rejected_count": 1
+}

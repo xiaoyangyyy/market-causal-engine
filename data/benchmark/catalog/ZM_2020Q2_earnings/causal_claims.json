@@ -1,0 +1,69 @@
+{
+  "event_id": "ZM_2020Q2_earnings",
+  "ticker": "ZM",
+  "event_date": "2020-04-24",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T10:30:50+00:00",
+  "accepted": [
+    {
+      "cause": "355% year-over-year revenue growth",
+      "effect": "Increased full-year revenue outlook to $2.37B-$2.39B",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "led to revenue growth of 355% year-over-year in Q2 and enabled us to increase our revenue outlook",
+      "source_id": "ZM2020Q2_002",
+      "published_at": 0,
+      "atom_id": "ZM2020Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.953,
+      "span_score": 0.919,
+      "severity_align": 0.99,
+      "mechanism_hint": 1.0,
+      "claim_id": "ZM2020Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "112% increase in customers contributing over $100k",
+      "effect": "Strong enterprise adoption driving financial performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Number of customers contributing more than $100,000 in TTM revenue up 112% year-over-ye",
+      "source_id": "ZM2020Q2_000",
+      "published_at": 0,
+      "atom_id": "ZM2020Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.937,
+      "span_score": 0.912,
+      "severity_align": 0.94,
+      "mechanism_hint": 1.0,
+      "claim_id": "ZM2020Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,90 @@
+{
+  "event_id": "UBER_2024Q3_earnings",
+  "ticker": "UBER",
+  "event_date": "2024-07-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T13:05:03+00:00",
+  "accepted": [
+    {
+      "cause": "Combined Mobility and Delivery revenue growth",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Combined Mobility and Delivery revenue grew 23% YoY to $9.9 billion, or 25% on a constant currency basis.",
+      "source_id": "UBER2024Q3_005",
+      "published_at": 0,
+      "atom_id": "UBER2024Q3_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.998,
+      "span_score": 1.0,
+      "severity_align": 0.99,
+      "mechanism_hint": 1.0,
+      "claim_id": "UBER2024Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Significant year-over-year revenue increase",
+      "effect": "Stronger than expected quarterly performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Revenue $ 9,292 $ 11,188 $ 27,345 $ 32,019",
+      "source_id": "UBER2024Q3_004",
+      "published_at": 0,
+      "atom_id": "UBER2024Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.929,
+      "span_score": 0.88,
+      "severity_align": 0.98,
+      "mechanism_hint": 1.0,
+      "claim_id": "UBER2024Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Removal of equity investment revaluation headwinds",
+      "effect": "Improved net income comparability and quality",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 0.6,
+      "evidence_span": "Q3 2023 net income includes a $96 million net headwind (pre-tax) from revaluations of Uber's equity investments.",
+      "source_id": "UBER2024Q3_001",
+      "published_at": 0,
+      "atom_id": "UBER2024Q3_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

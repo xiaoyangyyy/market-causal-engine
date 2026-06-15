@@ -1,0 +1,71 @@
+{
+  "event_id": "GS_2018Q1_earnings",
+  "ticker": "GS",
+  "event_date": "2018-01-22",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T08:12:26+00:00",
+  "accepted": [
+    {
+      "cause": "Record Investment Banking revenues",
+      "effect": "estimate upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Investment Banking produced net revenues of $7.37 billion, its second highest annual performance",
+      "source_id": "GS2018Q1_002",
+      "published_at": 0,
+      "atom_id": "GS2018Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.8,
+      "span_score": 0.965,
+      "severity_align": 0.276,
+      "mechanism_hint": 1.0,
+      "claim_id": "GS2018Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Record Investment Management revenues",
+      "effect": "estimate upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Investment Management generated record net revenues of $6.22 billion, including record management and other fees",
+      "source_id": "GS2018Q1_004",
+      "published_at": 0,
+      "atom_id": "GS2018Q1_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.823,
+      "span_score": 1.0,
+      "severity_align": 0.293,
+      "mechanism_hint": 1.0,
+      "claim_id": "GS2018Q1_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

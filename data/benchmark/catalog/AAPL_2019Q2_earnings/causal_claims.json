@@ -1,0 +1,45 @@
+{
+  "event_id": "AAPL_2019Q2_earnings",
+  "ticker": "AAPL",
+  "event_date": "2019-04-23",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T13:00:37+00:00",
+  "accepted": [
+    {
+      "cause": "Revenue decline to $58 billion",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "revenue of $58 billion, a decline",
+      "source_id": "AAPL2019Q2_001",
+      "published_at": 0,
+      "atom_id": "AAPL2019Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.81,
+      "span_score": 1.0,
+      "severity_align": 0.242,
+      "mechanism_hint": 1.0,
+      "claim_id": "AAPL2019Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

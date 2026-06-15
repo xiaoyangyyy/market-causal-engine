@@ -1,0 +1,91 @@
+{
+  "event_id": "AXP_2021Q1_earnings",
+  "ticker": "AXP",
+  "event_date": "2021-01-13",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:37:19+00:00",
+  "accepted": [
+    {
+      "cause": "the impact of",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "EPS) was reduced by the impact of",
+      "source_id": "AXP2021Q1_007",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "AXP2021Q1_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.81,
+      "span_score": 1.0,
+      "severity_align": 0.242,
+      "mechanism_hint": 1.0,
+      "claim_id": "AXP2021Q1_C004",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "earnings disclosure",
+      "effect": "fundamental repricing",
+      "mechanism": "fundamental",
+      "severity": 0.057,
+      "polarity": -1.0,
+      "evidence_span": "RST-QUARTER REVENUE OF $9.1 BILLION AND EARNINGS",
+      "source_id": "AXP2021Q1_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "AXP2021Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "AXP2021Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "Total revenues net of interest expense were",
+      "source_id": "AXP2021Q1_006",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "AXP2021Q1_006",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

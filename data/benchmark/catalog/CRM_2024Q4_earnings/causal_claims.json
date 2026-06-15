@@ -1,0 +1,110 @@
+{
+  "event_id": "CRM_2024Q4_earnings",
+  "ticker": "CRM",
+  "event_date": "2024-10-15",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:15:27+00:00",
+  "accepted": [
+    {
+      "cause": "positive fundamental signal",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.162,
+      "polarity": -1.0,
+      "evidence_span": "Exhibit 99.1 These solutions are essential for protecting customers' most valuable assets—their data—and for deriving the most value from their historical data by leveraging AI to",
+      "source_id": "CRM2024Q4_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "CRM2024Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "CRM2024Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.057,
+      "polarity": -1.0,
+      "evidence_span": "customers are increasingly focused on mitigating data loss",
+      "source_id": "CRM2024Q4_003",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "CRM2024Q4_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "CRM2024Q4_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "expected to close in the fourth quarter of Salesforce's fiscal year",
+      "effect": "Salesforce stock price movement",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": 0.0,
+      "evidence_span": "expected to close in the fourth quarter of Salesforce's fiscal year",
+      "source_id": "CRM2024Q4_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "CRM2024Q4_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "anticipated change to Salesforce's fiscal year",
+      "effect": "change to Salesforce's fiscal year",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": 0.0,
+      "evidence_span": "anticipated change to Salesforce's fiscal year",
+      "source_id": "CRM2024Q4_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "CRM2024Q4_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

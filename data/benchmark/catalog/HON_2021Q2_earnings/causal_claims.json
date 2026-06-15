@@ -1,0 +1,36 @@
+{
+  "event_id": "HON_2021Q2_earnings",
+  "ticker": "HON",
+  "event_date": "2021-04-13",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T11:25:39+00:00",
+  "accepted": [],
+  "rejected": [
+    {
+      "cause": "issued a press release announcing its first quarter 2021 earnings",
+      "effect": "earnings announcement",
+      "mechanism": "fundamental",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "(the \"Company\") issued a press release announcing its first quarter 2021 earnings",
+      "source_id": "HON2021Q2_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "HON2021Q2_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 0,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback_empty"
+}

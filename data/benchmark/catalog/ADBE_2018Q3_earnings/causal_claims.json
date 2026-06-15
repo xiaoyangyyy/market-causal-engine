@@ -1,0 +1,89 @@
+{
+  "event_id": "ADBE_2018Q3_earnings",
+  "ticker": "ADBE",
+  "event_date": "2018-07-11",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T08:29:43+00:00",
+  "accepted": [
+    {
+      "cause": "Document Cloud revenue growth",
+      "effect": "Digital Media segment performance boost",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Document Cloud achieving record revenue of $243 million, which represents 22 percent year-over-year growth",
+      "source_id": "ADBE2018Q3_002",
+      "published_at": 0,
+      "atom_id": "ADBE2018Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.811,
+      "span_score": 0.951,
+      "severity_align": 0.352,
+      "mechanism_hint": 1.0,
+      "claim_id": "ADBE2018Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Deferred revenue surge",
+      "effect": "Future revenue visibility improvement",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": 1.0,
+      "evidence_span": "deferred revenue grew 27 percent year-over-year to approximately $2.63 billion",
+      "source_id": "ADBE2018Q3_005",
+      "published_at": 0,
+      "atom_id": "ADBE2018Q3_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.86,
+      "span_score": 0.971,
+      "severity_align": 0.502,
+      "mechanism_hint": 1.0,
+      "claim_id": "ADBE2018Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Digital Media ARR expansion",
+      "effect": "Recurring revenue stability increase",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 0.8,
+      "evidence_span": "Digital Media Annualized Recurring Revenue grew to $6.06 billion exiting the quarter, a quarter-over-quarter increase of $343 million",
+      "source_id": "ADBE2018Q3_003",
+      "published_at": 0,
+      "atom_id": "ADBE2018Q3_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

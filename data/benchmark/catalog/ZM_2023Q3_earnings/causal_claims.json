@@ -1,0 +1,89 @@
+{
+  "event_id": "ZM_2023Q3_earnings",
+  "ticker": "ZM",
+  "event_date": "2023-07-17",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T12:37:02+00:00",
+  "accepted": [
+    {
+      "cause": "Online revenue decline",
+      "effect": "Concerns over consumer segment weakness",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "Online revenue was $476.1 million, down 2.4% year over year",
+      "source_id": "ZM2023Q3_004",
+      "published_at": 0,
+      "atom_id": "ZM2023Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.899,
+      "span_score": 0.943,
+      "severity_align": 0.72,
+      "mechanism_hint": 1.0,
+      "claim_id": "ZM2023Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Enterprise revenue growth",
+      "effect": "Improved investor confidence in core business",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Enterprise revenue was $660.6 million, up 7.5% year over year",
+      "source_id": "ZM2023Q3_004",
+      "published_at": 0,
+      "atom_id": "ZM2023Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.925,
+      "span_score": 0.946,
+      "severity_align": 0.82,
+      "mechanism_hint": 1.0,
+      "claim_id": "ZM2023Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Revenue beat guidance",
+      "effect": "Positive market reaction expected",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 0.7,
+      "evidence_span": "In Q3, revenue came in ahead of guidance as we bolstered Zoom's all-in-one intelligent collaboration platform",
+      "source_id": "ZM2023Q3_001",
+      "published_at": 0,
+      "atom_id": "ZM2023Q3_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

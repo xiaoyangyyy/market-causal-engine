@@ -1,0 +1,31 @@
+{
+  "event_id": "TMO_2019Q2_earnings",
+  "ticker": "TMO",
+  "event_date": "2019-04-16",
+  "fiscal_period": "2019Q2",
+  "atom_count": 23,
+  "text_length": 36084,
+  "summary_length": 11997,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\TMO_2019Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\TMO_2019Q2_earnings\\sec_8k.txt",
+  "filing_date": "2019-07-24",
+  "accession_number": "0000097745-19-000032",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/97745/000009774519000032/q219earnings8k.htm",
+  "form": "8-K",
+  "search_date_from": "2019-07-01",
+  "search_date_to": "2019-08-31",
+  "aligned_filing_date": "2019-07-24",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -1.79,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "version": "v1.0-catalog-router",
+  "feature_names": [
+    "cat_pressure",
+    "cat_drawdown",
+    "cat_trace_total",
+    "cat_pred_effect",
+    "scn_pressure",
+    "scn_drawdown",
+    "scn_trace_total",
+    "scn_pred_effect",
+    "delta_pressure",
+    "delta_pred_effect"
+  ],
+  "coefficients": [
+    0.001182,
+    -0.005386,
+    0.000657,
+    0.001532,
+    0.000222,
+    0.003475,
+    -0.002864,
+    0.001033,
+    -1.9e-05,
+    -0.008861,
+    0.000241
+  ],
+  "threshold": 0.5,
+  "training_accuracy": 0.9821,
+  "n_samples": 951
+}

@@ -1,0 +1,52 @@
+{
+  "case_id": "luckin_2020_fraud",
+  "domain": "short_report",
+  "outcome_effect": -0.127872,
+  "outcome_method": "synthetic_control",
+  "predicted_effect": -0.005475,
+  "predicted_direction": "down",
+  "actual_direction": "down",
+  "direction_match": true,
+  "confidence": 0.309,
+  "mechanism_weights": {
+    "fundamental": 0.0027,
+    "sentiment": 0.2079,
+    "liquidity": 0.1972,
+    "macro": 0.0,
+    "regulatory": 0.1781,
+    "trust": 0.4141
+  },
+  "dominant_mechanism": "trust",
+  "posterior_weights": {
+    "fundamental": 0.0272,
+    "sentiment": 0.1948,
+    "liquidity": 0.1608,
+    "macro": 0.0271,
+    "regulatory": 0.1566,
+    "trust": 0.4333
+  },
+  "prior_weights": {
+    "fundamental": 0.0455,
+    "sentiment": 0.2273,
+    "liquidity": 0.1818,
+    "macro": 0.0455,
+    "regulatory": 0.1818,
+    "trust": 0.3182
+  },
+  "posterior_confidence": 0.627,
+  "feature_vector": {
+    "claim_count": 6.0,
+    "m_fundamental": 0.0023,
+    "m_liquidity": 0.2048,
+    "m_macro": 0.0,
+    "m_regulatory": 0.1952,
+    "m_sentiment": 0.1703,
+    "m_trust": 0.4281,
+    "max_severity": 0.98,
+    "mean_confidence": 0.65,
+    "trace_total": 1.0
+  },
+  "claim_count": 6,
+  "model_version": "v0.7-ridge",
+  "computed_at": "2026-06-09T03:17:00+00:00"
+}

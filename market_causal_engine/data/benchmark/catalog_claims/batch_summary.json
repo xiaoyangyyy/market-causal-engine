@@ -1,0 +1,14 @@
+{
+  "attempted": 1,
+  "ok": 1,
+  "errors": [],
+  "total_claims": 3,
+  "use_llm": true,
+  "heuristic_only": false,
+  "atom_fallback_only": false,
+  "quality_refresh_only": true,
+  "llm_events": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "computed_at": "2026-06-15T11:33:45+00:00"
+}

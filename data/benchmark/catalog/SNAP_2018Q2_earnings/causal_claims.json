@@ -1,0 +1,70 @@
+{
+  "event_id": "SNAP_2018Q2_earnings",
+  "ticker": "SNAP",
+  "event_date": "2018-04-10",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T02:59:31+00:00",
+  "accepted": [
+    {
+      "cause": "Revenue growth of 54% year-over-year",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Revenue was $230.7 million in Q1 2018, up 54% year-over-year driven by growth in Snap Ads",
+      "source_id": "SNAP2018Q2_002",
+      "published_at": 0,
+      "atom_id": "SNAP2018Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.808,
+      "span_score": 0.957,
+      "severity_align": 0.325,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNAP2018Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Sequential revenue decline of 19%",
+      "effect": "Concerns over seasonality and redesign impact",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "down 19% sequentially, primarily due to seasonality and our redesign",
+      "source_id": "SNAP2018Q2_002",
+      "published_at": 0,
+      "atom_id": "SNAP2018Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.844,
+      "span_score": 0.932,
+      "severity_align": 0.525,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNAP2018Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

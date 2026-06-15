@@ -1,0 +1,31 @@
+{
+  "event_id": "META_2024Q2_earnings",
+  "ticker": "META",
+  "event_date": "2024-04-05",
+  "fiscal_period": "2024Q2",
+  "atom_count": 1,
+  "text_length": 22223,
+  "summary_length": 2257,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\META_2024Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\META_2024Q2_earnings\\sec_8k.txt",
+  "filing_date": "2024-07-31",
+  "accession_number": "0001326801-24-000065",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000065/meta-20240731.htm",
+  "form": "8-K",
+  "search_date_from": "2024-07-01",
+  "search_date_to": "2024-08-31",
+  "aligned_filing_date": "2024-07-31",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 2.51,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

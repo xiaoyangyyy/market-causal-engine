@@ -1,0 +1,34 @@
+{
+  "event_id": "SPGI_2023Q2_earnings",
+  "ticker": "SPGI",
+  "event_date": "2023-04-21",
+  "fiscal_period": "2023Q2",
+  "atom_count": 5,
+  "text_length": 58313,
+  "summary_length": 1576,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\SPGI_2023Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\SPGI_2023Q2_earnings\\sec_8k.txt",
+  "filing_date": "2023-04-27",
+  "accession_number": "0000064040-23-000110",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/64040/000006404023000110/spgi-20230427.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000064040",
+  "window_days": 45,
+  "search_date_from": "2023-07-01",
+  "search_date_to": "2023-08-31",
+  "aligned_filing_date": "2023-04-27",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 4.56,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

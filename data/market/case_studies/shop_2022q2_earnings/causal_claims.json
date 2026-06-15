@@ -1,0 +1,157 @@
+{
+  "case_id": "shop_2022q2_earnings",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": false,
+  "computed_at": "2026-06-09T03:07:55+00:00",
+  "accepted": [
+    {
+      "cause": "earnings miss",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "evidence_span": "reports Q2 revenue of $1.29 billion, miss",
+      "source_id": "SHOP22Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "SHOP22Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP_2022Q2__C000"
+    },
+    {
+      "cause": "price move",
+      "effect": "momentum feedback",
+      "mechanism": "fundamental",
+      "severity": 0.98,
+      "evidence_span": "shares plunge 14%",
+      "source_id": "SHOP22Q2_005",
+      "published_at": 8,
+      "proposer": "heuristic",
+      "atom_id": "SHOP22Q2_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP_2022Q2__C001"
+    },
+    {
+      "cause": "options activity spike",
+      "effect": "dealer hedging pressure",
+      "mechanism": "fundamental",
+      "severity": 0.72,
+      "evidence_span": "Options volatility surge",
+      "source_id": "SHOP22Q2_006",
+      "published_at": 15,
+      "proposer": "heuristic",
+      "atom_id": "SHOP22Q2_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP_2022Q2__C002"
+    },
+    {
+      "cause": "management commentary",
+      "effect": "narrative shift",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "evidence_span": "CEO stated that e-commerce normalized faster than expected and that Shopify must adjust investment pace to the new growth environment.",
+      "source_id": "SHOP22Q2_002",
+      "published_at": 50,
+      "proposer": "heuristic",
+      "atom_id": "SHOP22Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP_2022Q2__C003"
+    },
+    {
+      "cause": "guidance reduction",
+      "effect": "forward earnings revision",
+      "mechanism": "fundamental",
+      "severity": 0.88,
+      "evidence_span": "Management said the company lowers outlook for the remainder of 2022 due to macro uncertainty and softer online spending trends.",
+      "source_id": "SHOP22Q2_004",
+      "published_at": 50,
+      "proposer": "heuristic",
+      "atom_id": "SHOP22Q2_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP_2022Q2__C004"
+    },
+    {
+      "cause": "analyst downgrade",
+      "effect": "sentiment deterioration",
+      "mechanism": "sentiment",
+      "severity": 0.75,
+      "evidence_span": "downgrades Shopify from Buy to",
+      "source_id": "SHOP22Q2_007",
+      "published_at": 70,
+      "proposer": "heuristic",
+      "atom_id": "SHOP22Q2_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP_2022Q2__C005"
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "regulatory scrutiny",
+      "effect": "regulatory overhang",
+      "mechanism": "regulatory",
+      "severity": 0.6,
+      "evidence_span": "sector ETF decline",
+      "source_id": "SHOP22Q2_008",
+      "published_at": 85,
+      "proposer": "heuristic",
+      "atom_id": "SHOP22Q2_008",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "mechanism_not_allowed_for_domain:regulatory:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 6,
+  "rejected_count": 1
+}

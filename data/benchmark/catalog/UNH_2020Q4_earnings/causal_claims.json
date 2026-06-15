@@ -1,0 +1,115 @@
+{
+  "event_id": "UNH_2020Q4_earnings",
+  "ticker": "UNH",
+  "event_date": "2020-10-19",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T10:47:31+00:00",
+  "accepted": [
+    {
+      "cause": "Operating earnings decline to $2.1 billion",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "Operating earnings of $2.1 billion in the third quarter compare to $2.7 billion last year",
+      "source_id": "UNH2020Q4_006",
+      "published_at": 0,
+      "atom_id": "UNH2020Q4_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.82,
+      "span_score": 0.914,
+      "severity_align": 0.471,
+      "mechanism_hint": 1.0,
+      "claim_id": "UNH2020Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Addition of 935,000 members in Medicaid and Medicare Advantage",
+      "effect": "Expansion of customer base driving future revenue",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "with 935,000 additional people served year to date in Medicaid and Medicare Advantage",
+      "source_id": "UNH2020Q4_005",
+      "published_at": 0,
+      "atom_id": "UNH2020Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.844,
+      "span_score": 0.912,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "claim_id": "UNH2020Q4_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Growth in public-sector and senior program revenues",
+      "effect": "Positive contribution to overall revenue growth",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": 1.0,
+      "evidence_span": "UnitedHealthcare public-sector and senior program revenues, grew by 9.7% year-over-year in the quarter",
+      "source_id": "UNH2020Q4_005",
+      "published_at": 0,
+      "atom_id": "UNH2020Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.877,
+      "span_score": 0.925,
+      "severity_align": 0.671,
+      "mechanism_hint": 1.0,
+      "claim_id": "UNH2020Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "COVID-19 costs and assistance measures",
+      "effect": "Reduced profitability for the quarter",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -0.7,
+      "evidence_span": "expected decline due to the impact of the Company's consumer and customer assistance measures and COVID-19 related costs",
+      "source_id": "UNH2020Q4_006",
+      "published_at": 0,
+      "atom_id": "UNH2020Q4_006",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

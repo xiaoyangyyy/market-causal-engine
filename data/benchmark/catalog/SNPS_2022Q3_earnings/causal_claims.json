@@ -1,0 +1,45 @@
+{
+  "event_id": "SNPS_2022Q3_earnings",
+  "ticker": "SNPS",
+  "event_date": "2022-07-11",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:57:50+00:00",
+  "accepted": [
+    {
+      "cause": "CEO statement of excellent results and increased outlook",
+      "effect": "sentiment improvement",
+      "mechanism": "sentiment",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "We delivered excellent fiscal third quarter results, with broad-based strength, and are increasing our outlook for the year",
+      "source_id": "SNPS2022Q3_001",
+      "published_at": 0,
+      "atom_id": "SNPS2022Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.815,
+      "span_score": 0.991,
+      "severity_align": 0.28,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNPS2022Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

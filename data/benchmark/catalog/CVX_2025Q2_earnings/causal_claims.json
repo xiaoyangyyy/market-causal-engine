@@ -1,0 +1,65 @@
+{
+  "event_id": "CVX_2025Q2_earnings",
+  "ticker": "CVX",
+  "event_date": "2025-04-23",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T13:29:31+00:00",
+  "accepted": [
+    {
+      "cause": "EPS beat of $0.16",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Earnings Per Share - Diluted $/Share $ 2.00 $ 1.84",
+      "source_id": "CVX2025Q2_002",
+      "published_at": 0,
+      "atom_id": "CVX2025Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.801,
+      "span_score": 1.0,
+      "severity_align": 0.204,
+      "mechanism_hint": 1.0,
+      "claim_id": "CVX2025Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Net loss from UK tax charge",
+      "effect": "Negative earnings impact",
+      "mechanism": "regulatory",
+      "severity": 0.4,
+      "polarity": -0.3,
+      "evidence_span": "net loss of $175 million related to legal reserves and a tax charge due to changes in the energy profits levy",
+      "source_id": "CVX2025Q2_001",
+      "published_at": 0,
+      "atom_id": "CVX2025Q2_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "mechanism_not_allowed_for_domain:regulatory:earnings"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

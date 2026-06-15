@@ -1,0 +1,339 @@
+﻿Starting counts: {"llm": 1107, "heuristic": 873, "atom_fallback": 525}
+
+=== Heuristic → LLM === remaining=873
+[catalog-claims] 10/873 events, claims=31
+[catalog-claims] 20/873 events, claims=54
+[catalog-claims] 30/873 events, claims=82
+[catalog-claims] 40/873 events, claims=105
+[catalog-claims] 50/873 events, claims=125
+[catalog-claims] 60/873 events, claims=152
+[catalog-claims] 70/873 events, claims=176
+[catalog-claims] 80/873 events, claims=206
+[catalog-claims] 90/873 events, claims=236
+[catalog-claims] 100/873 events, claims=263
+[catalog-claims] 110/873 events, claims=294
+[catalog-claims] 120/873 events, claims=326
+[catalog-claims] 130/873 events, claims=348
+[catalog-claims] 140/873 events, claims=376
+[catalog-claims] 150/873 events, claims=405
+[catalog-claims] 160/873 events, claims=435
+[catalog-claims] 170/873 events, claims=469
+[catalog-claims] 180/873 events, claims=496
+[catalog-claims] 190/873 events, claims=516
+[catalog-claims] 200/873 events, claims=534
+[catalog-claims] 210/873 ok=203 err=7
+[catalog-claims] 220/873 ok=205 err=15
+[catalog-claims] 230/873 ok=205 err=25
+[catalog-claims] 240/873 events, claims=583
+[catalog-claims] 250/873 events, claims=601
+[catalog-claims] 260/873 events, claims=625
+[catalog-claims] 270/873 events, claims=653
+[catalog-claims] 280/873 events, claims=664
+[catalog-claims] 290/873 events, claims=684
+[catalog-claims] 300/873 events, claims=706
+[catalog-claims] 310/873 events, claims=735
+[catalog-claims] 320/873 events, claims=756
+[catalog-claims] 330/873 events, claims=776
+[catalog-claims] 340/873 ok=302 err=38
+[catalog-claims] 350/873 ok=307 err=43
+[catalog-claims] 360/873 events, claims=822
+[catalog-claims] 370/873 events, claims=842
+[catalog-claims] 380/873 events, claims=867
+[catalog-claims] 390/873 events, claims=898
+[catalog-claims] 400/873 events, claims=920
+[catalog-claims] 410/873 events, claims=944
+[catalog-claims] 420/873 events, claims=979
+[catalog-claims] 430/873 events, claims=1001
+[catalog-claims] 440/873 events, claims=1033
+[catalog-claims] 450/873 events, claims=1068
+[catalog-claims] 460/873 events, claims=1089
+[catalog-claims] 470/873 events, claims=1107
+[catalog-claims] 480/873 events, claims=1137
+[catalog-claims] 490/873 events, claims=1160
+[catalog-claims] 500/873 events, claims=1179
+[catalog-claims] 510/873 events, claims=1207
+[catalog-claims] 520/873 events, claims=1232
+[catalog-claims] 530/873 events, claims=1258
+[catalog-claims] 540/873 events, claims=1279
+[catalog-claims] 550/873 events, claims=1301
+[catalog-claims] 560/873 events, claims=1324
+[catalog-claims] 570/873 events, claims=1355
+[catalog-claims] 580/873 events, claims=1380
+[catalog-claims] 590/873 events, claims=1408
+[catalog-claims] 600/873 events, claims=1433
+[catalog-claims] 610/873 events, claims=1451
+[catalog-claims] 620/873 events, claims=1479
+[catalog-claims] 630/873 events, claims=1500
+[catalog-claims] 640/873 events, claims=1527
+[catalog-claims] 650/873 events, claims=1553
+[catalog-claims] 660/873 events, claims=1586
+[catalog-claims] 670/873 events, claims=1611
+[catalog-claims] 680/873 events, claims=1644
+[catalog-claims] 690/873 events, claims=1666
+[catalog-claims] 700/873 events, claims=1690
+[catalog-claims] 710/873 events, claims=1720
+[catalog-claims] 720/873 events, claims=1751
+[catalog-claims] 730/873 events, claims=1776
+[catalog-claims] 740/873 events, claims=1801
+[catalog-claims] 750/873 events, claims=1821
+[catalog-claims] 760/873 events, claims=1850
+[catalog-claims] 770/873 events, claims=1876
+[catalog-claims] 780/873 events, claims=1911
+[catalog-claims] 790/873 events, claims=1936
+[catalog-claims] 800/873 events, claims=1966
+[catalog-claims] 810/873 events, claims=1991
+[catalog-claims] 820/873 events, claims=2014
+[catalog-claims] 830/873 events, claims=2041
+[catalog-claims] 840/873 events, claims=2075
+[catalog-claims] 850/873 events, claims=2105
+[catalog-claims] 860/873 events, claims=2137
+[catalog-claims] 870/873 events, claims=2170
+{
+  "attempted": 873,
+  "ok": 826,
+  "errors": [
+    {
+      "event_id": "SHOP_2018Q4_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "AXP_2019Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "UPS_2019Q3_earnings",
+      "error": "Invalid control character at: line 18 column 12 (char 500)"
+    },
+    {
+      "event_id": "GILD_2019Q3_earnings",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "event_id": "LRCX_2019Q3_earnings",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "event_id": "DHR_2019Q4_earnings",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "event_id": "AXP_2019Q4_earnings",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "event_id": "SPGI_2019Q4_earnings",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "event_id": "AMD_2019Q4_earnings",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "event_id": "BKNG_2019Q4_earnings",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "event_id": "HON_2019Q4_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "ADI_2019Q4_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "CDNS_2019Q4_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "UNP_2019Q4_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "AMZN_2019Q4_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "GS_2019Q4_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "ISRG_2019Q4_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "PYPL_2019Q4_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "SHOP_2019Q4_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "GOOGL_2019Q4_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "NKE_2019Q4_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "CMCSA_2019Q4_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "QCOM_2019Q4_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "ABT_2020Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "BRK.B_2020Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "ADBE_2020Q3_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "ISRG_2020Q3_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "LOW_2020Q3_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "AAPL_2020Q3_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "ACN_2020Q3_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "GILD_2020Q3_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "SBUX_2020Q4_earnings",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "event_id": "CMCSA_2020Q4_earnings",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "event_id": "AXP_2020Q4_earnings",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "event_id": "BLK_2020Q4_earnings",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "event_id": "REGN_2020Q4_earnings",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "event_id": "QCOM_2021Q1_earnings",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "event_id": "GILD_2021Q1_earnings",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "event_id": "ADI_2021Q1_earnings",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "event_id": "GS_2021Q1_earnings",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "event_id": "GOOGL_2021Q1_earnings",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "event_id": "ABNB_2021Q1_earnings",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "event_id": "CMCSA_2021Q1_earnings",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "event_id": "SBUX_2021Q1_earnings",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "event_id": "GE_2021Q1_earnings",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "event_id": "CDNS_2021Q1_earnings",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "event_id": "BLK_2021Q2_earnings",
+      "error": "HTTP Error 429: Too Many Requests"
+    }
+  ],
+  "total_claims": 2180,
+  "use_llm": true,
+  "heuristic_only": true,
+  "atom_fallback_only": false,
+  "llm_events": 826,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "computed_at": "2026-06-12T13:43:24+00:00"
+}
+Heuristic → LLM exit=0 heuristic: 873 -> 6
+
+=== Heuristic → LLM === remaining=6
+{
+  "attempted": 6,
+  "ok": 6,
+  "errors": [],
+  "total_claims": 12,
+  "use_llm": true,
+  "heuristic_only": true,
+  "atom_fallback_only": false,
+  "llm_events": 6,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "computed_at": "2026-06-12T13:45:14+00:00"
+}
+Heuristic → LLM exit=0 heuristic: 6 -> 0
+
+=== Heuristic → LLM === remaining=0
+Heuristic → LLM: done
+
+=== Atom-fallback upgrade === remaining=942
+[catalog-claims] 10/943 events, claims=30
+[catalog-claims] 20/943 events, claims=61
+[catalog-claims] 30/943 events, claims=92
+[catalog-claims] 40/943 events, claims=120
+[catalog-claims] 50/943 events, claims=153
+[catalog-claims] 60/943 events, claims=189
+[catalog-claims] 70/943 events, claims=227
+[catalog-claims] 80/943 events, claims=253
+[catalog-claims] 90/943 events, claims=280
+[catalog-claims] 100/943 events, claims=306
+[catalog-claims] 110/943 events, claims=334
+[catalog-claims] 120/943 events, claims=356
+[catalog-claims] 130/943 events, claims=393
+[catalog-claims] 140/943 events, claims=434
+[catalog-claims] 150/943 events, claims=465
+[catalog-claims] 160/943 events, claims=500
+[catalog-claims] 170/943 events, claims=522
+[catalog-claims] 180/943 events, claims=543
+[catalog-claims] 190/943 events, claims=580
+[catalog-claims] 200/943 events, claims=615
+[catalog-claims] 210/943 events, claims=643
+[catalog-claims] 220/943 events, claims=667
+[catalog-claims] 230/943 events, claims=687
+[catalog-claims] 240/943 events, claims=710
+[catalog-claims] 250/943 events, claims=731

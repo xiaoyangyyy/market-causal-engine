@@ -1,0 +1,92 @@
+{
+  "event_id": "PEP_2016Q3_earnings",
+  "ticker": "PEP",
+  "event_date": "2016-07-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T11:34:48+00:00",
+  "accepted": [
+    {
+      "cause": "Core EPS guidance raised to $4.71 from $4.57",
+      "effect": "estimate revision upside for full-year core earnings",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "2016 core earnings per share of $4.71, driven by the following expectations and factors: 2015 core earnings per share $4.57",
+      "source_id": "PEP2016Q3_016",
+      "published_at": 0,
+      "atom_id": "PEP2016Q3_016",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.798,
+      "span_score": 0.938,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PEP2016Q3_C000"
+    },
+    {
+      "cause": "Reported net revenue declined 3.3 percent",
+      "effect": "top-line miss triggers revenue estimate downward revision",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Summary of Second Quarter Financial Performance: • Reported net revenue declined 3.3 percent",
+      "source_id": "PEP2016Q3_003",
+      "published_at": 0,
+      "atom_id": "PEP2016Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.81,
+      "span_score": 0.918,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PEP2016Q3_C001"
+    },
+    {
+      "cause": "Foreign exchange and Venezuela deconsolidation impacted revenue",
+      "effect": "currency headwinds pressure reported margin and growth metrics",
+      "mechanism": "macro",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "While reported net revenue performance was negatively impacted by foreign exchange translation and the deconsolidation of our Venezuelan operations",
+      "source_id": "PEP2016Q3_001",
+      "published_at": 0,
+      "atom_id": "PEP2016Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.861,
+      "span_score": 0.955,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PEP2016Q3_C002"
+    }
+  ],
+  "rejected": [],
+  "claim_count": 3,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event"
+}

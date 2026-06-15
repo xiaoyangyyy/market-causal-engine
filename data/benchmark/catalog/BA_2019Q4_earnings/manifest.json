@@ -1,0 +1,31 @@
+{
+  "event_id": "BA_2019Q4_earnings",
+  "ticker": "BA",
+  "event_date": "2019-10-21",
+  "fiscal_period": "2019Q4",
+  "atom_count": 4,
+  "text_length": 32658,
+  "summary_length": 285,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\BA_2019Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\BA_2019Q4_earnings\\sec_8k.txt",
+  "filing_date": "2020-01-29",
+  "accession_number": "0001193125-20-017662",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/12927/000119312520017662/d856652d8k.htm",
+  "form": "8-K",
+  "search_date_from": "2020-01-01",
+  "search_date_to": "2020-02-29",
+  "aligned_filing_date": "2020-01-29",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.72,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

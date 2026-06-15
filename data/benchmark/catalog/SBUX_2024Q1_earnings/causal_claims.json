@@ -1,0 +1,118 @@
+{
+  "event_id": "SBUX_2024Q1_earnings",
+  "ticker": "SBUX",
+  "event_date": "2024-01-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:49:03+00:00",
+  "accepted": [
+    {
+      "cause": "Operating Income $1,520.8",
+      "effect": "positive stock performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Operating Income $1,520.8",
+      "source_id": "SBUX2024Q1_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SBUX2024Q1_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.81,
+      "span_score": 1.0,
+      "severity_align": 0.238,
+      "mechanism_hint": 1.0,
+      "claim_id": "SBUX2024Q1_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Operating income $ 1,520.8",
+      "effect": "Positive stock performance",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "Operating income $ 1,520.8",
+      "source_id": "SBUX2024Q1_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SBUX2024Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.885,
+      "span_score": 1.0,
+      "severity_align": 0.539,
+      "mechanism_hint": 1.0,
+      "claim_id": "SBUX2024Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.053,
+      "polarity": -1.0,
+      "evidence_span": "Net earnings attributable to Starbucks $ 1,024.4 $",
+      "source_id": "SBUX2024Q1_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "SBUX2024Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SBUX2024Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "SBUX2024Q1_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SBUX2024Q1_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,44 @@
+{
+  "event_id": "TSLA_2018Q3_earnings",
+  "ticker": "TSLA",
+  "event_date": "2018-07-17",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T08:38:40+00:00",
+  "accepted": [
+    {
+      "cause": "Seasonality of solar business",
+      "effect": "Decline in energy generation and storage revenue in Q4",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Energy generation and storage revenue should decline slightly in Q4 compared to Q3, mainly due to seasonality of the solar business.",
+      "source_id": "TSLA2018Q3_000",
+      "published_at": 0,
+      "atom_id": "TSLA2018Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.938,
+      "span_score": 1.0,
+      "severity_align": 0.75,
+      "mechanism_hint": 1.0,
+      "claim_id": "TSLA2018Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

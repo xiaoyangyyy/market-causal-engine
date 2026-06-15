@@ -1,0 +1,55 @@
+{
+  "event_id": "CSCO_2024Q2_earnings",
+  "ticker": "CSCO",
+  "event_date": "2024-04-15",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T04:21:39+00:00",
+  "accepted": [],
+  "rejected": [
+    {
+      "cause": "gross margin accretion",
+      "effect": "fiscal year 2025 profitability increase",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "gross margin accretive in Cisco's fiscal year 2025",
+      "source_id": "CSCO2024Q2_000",
+      "published_at": 0,
+      "atom_id": "CSCO2024Q2_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    },
+    {
+      "cause": "gross margin accretive",
+      "effect": "Cisco's fiscal year 2025 performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "gross margin accretive in Cisco's fiscal year 2025",
+      "source_id": "CSCO2024Q2_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "CSCO2024Q2_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 0,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback_empty"
+}

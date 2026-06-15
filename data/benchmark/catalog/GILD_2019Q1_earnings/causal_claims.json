@@ -1,0 +1,142 @@
+{
+  "event_id": "GILD_2019Q1_earnings",
+  "ticker": "GILD",
+  "event_date": "2019-01-17",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:48:07+00:00",
+  "accepted": [
+    {
+      "cause": "gross margin 72.4 %",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "gross margin 72.4 % 78.5 % 77.6 % 83.0",
+      "source_id": "GILD2019Q1_009",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GILD2019Q1_009",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.811,
+      "span_score": 1.0,
+      "severity_align": 0.245,
+      "mechanism_hint": 1.0,
+      "claim_id": "GILD2019Q1_C003",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Full year 2018 total revenues were $22.1 billion",
+      "effect": "compared to $26.1 billion for 2017",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Full year 2018 total revenues were $22.1 billion , compared to $26.1 billion for 2017",
+      "source_id": "GILD2019Q1_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GILD2019Q1_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.819,
+      "span_score": 1.0,
+      "severity_align": 0.276,
+      "mechanism_hint": 1.0,
+      "claim_id": "GILD2019Q1_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.6,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Gross Margin 85% - 87%",
+      "effect": "positive stock performance",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Gross Margin 85% - 87%",
+      "source_id": "GILD2019Q1_010",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GILD2019Q1_010",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.778,
+      "span_score": 0.936,
+      "severity_align": 0.253,
+      "mechanism_hint": 1.0,
+      "claim_id": "GILD2019Q1_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.171,
+      "polarity": -1.0,
+      "evidence_span": "EX-99.1 2 exhibit991earningspressrel.htm EXHIBIT 99.1 Exhibit CONTACTS: Investors Media Robin Washington Amy Flood (650) 522-5688 (650) 522-5643 Sung Lee (650) 524-7792 For Immedia",
+      "source_id": "GILD2019Q1_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GILD2019Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.988,
+      "span_score": 0.979,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GILD2019Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "earnings per share for the fourth quarter of",
+      "source_id": "GILD2019Q1_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GILD2019Q1_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

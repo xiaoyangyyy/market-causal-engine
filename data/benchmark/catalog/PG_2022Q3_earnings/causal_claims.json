@@ -1,0 +1,71 @@
+{
+  "event_id": "PG_2022Q3_earnings",
+  "ticker": "PG",
+  "event_date": "2022-07-19",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T12:10:25+00:00",
+  "accepted": [
+    {
+      "cause": "EPS beat expectations",
+      "effect": "positive revision momentum",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Diluted EPS $5.81 $5.50 6% Core EPS $5.81",
+      "source_id": "PG2022Q3_001",
+      "published_at": 0,
+      "atom_id": "PG2022Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.812,
+      "span_score": 1.0,
+      "severity_align": 0.248,
+      "mechanism_hint": 1.0,
+      "claim_id": "PG2022Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Expectation of significant headwinds",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "we expect another year of significant headwinds",
+      "source_id": "PG2022Q3_000",
+      "published_at": 0,
+      "atom_id": "PG2022Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.848,
+      "span_score": 0.963,
+      "severity_align": 0.473,
+      "mechanism_hint": 1.0,
+      "claim_id": "PG2022Q3_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

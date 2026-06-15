@@ -1,0 +1,92 @@
+{
+  "event_id": "AAPL_2016Q3_earnings",
+  "ticker": "AAPL",
+  "event_date": "2016-07-11",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T11:37:34+00:00",
+  "accepted": [
+    {
+      "cause": "Services revenue growth of 24 percent setting a record",
+      "effect": "Services segment revenue growth drives valuation upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "incredible momentum of our Services business, where revenue grew 24 percent to set another all-time record",
+      "source_id": "AAPL2016Q3_004",
+      "published_at": 0,
+      "atom_id": "AAPL2016Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.792,
+      "span_score": 0.926,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "AAPL2016Q3_C000"
+    },
+    {
+      "cause": "Gross margin decline from 39.9 percent to 38 percent",
+      "effect": "Gross margin compression lowers profitability estimates",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Gross margin was 38 percent compared to 39.9",
+      "source_id": "AAPL2016Q3_003",
+      "published_at": 0,
+      "atom_id": "AAPL2016Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.824,
+      "span_score": 1.0,
+      "severity_align": 0.299,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "AAPL2016Q3_C001"
+    },
+    {
+      "cause": "Guidance for gross margin between 38 percent and 38.5 percent",
+      "effect": "Forward margin guidance caps near-term earnings upside",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "gross margin between 38 percent and 38.5",
+      "source_id": "AAPL2016Q3_005",
+      "published_at": 0,
+      "atom_id": "AAPL2016Q3_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.856,
+      "span_score": 1.0,
+      "severity_align": 0.446,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "AAPL2016Q3_C002"
+    }
+  ],
+  "rejected": [],
+  "claim_count": 3,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event"
+}

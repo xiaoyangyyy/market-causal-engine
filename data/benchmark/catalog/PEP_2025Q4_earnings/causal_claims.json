@@ -1,0 +1,142 @@
+{
+  "event_id": "PEP_2025Q4_earnings",
+  "ticker": "PEP",
+  "event_date": "2025-10-13",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:40:22+00:00",
+  "accepted": [
+    {
+      "cause": "resilience",
+      "effect": "revenue growth accelerated",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "revenue growth accelerated and reflects the resilience of",
+      "source_id": "PEP2025Q4_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "PEP2025Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.814,
+      "span_score": 1.0,
+      "severity_align": 0.257,
+      "mechanism_hint": 1.0,
+      "claim_id": "PEP2025Q4_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "expect to deliver low-single-digit organic revenue growth",
+      "effect": "positive stock performance",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": 1.0,
+      "evidence_span": "expect to deliver low-single-digit organic revenue growth",
+      "source_id": "PEP2025Q4_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "PEP2025Q4_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.864,
+      "span_score": 1.0,
+      "severity_align": 0.457,
+      "mechanism_hint": 1.0,
+      "claim_id": "PEP2025Q4_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "low-single-digit increase in organic revenue",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "A low-single-digit increase in organic revenue",
+      "source_id": "PEP2025Q4_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "PEP2025Q4_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.864,
+      "span_score": 1.0,
+      "severity_align": 0.456,
+      "mechanism_hint": 1.0,
+      "claim_id": "PEP2025Q4_C004",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.041,
+      "polarity": -1.0,
+      "evidence_span": "Earnings per share (EPS) $1.90 $",
+      "source_id": "PEP2025Q4_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "PEP2025Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "PEP2025Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "Outlook” for additional information regarding PepsiCo’s full-year",
+      "source_id": "PEP2025Q4_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "PEP2025Q4_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:31+00:00",
+  "claims_refined": true
+}

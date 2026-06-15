@@ -1,0 +1,31 @@
+{
+  "event_id": "DHR_2021Q2_earnings",
+  "ticker": "DHR",
+  "event_date": "2021-04-16",
+  "fiscal_period": "2021Q2",
+  "atom_count": 4,
+  "text_length": 46987,
+  "summary_length": 11991,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\DHR_2021Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\DHR_2021Q2_earnings\\sec_8k.txt",
+  "filing_date": "2021-07-22",
+  "accession_number": "0000313616-21-000102",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/313616/000031361621000102/dhr-20210722.htm",
+  "form": "8-K",
+  "search_date_from": "2021-07-01",
+  "search_date_to": "2021-08-31",
+  "aligned_filing_date": "2021-07-22",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 3.27,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

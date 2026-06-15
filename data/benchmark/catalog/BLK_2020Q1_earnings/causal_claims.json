@@ -1,0 +1,141 @@
+{
+  "event_id": "BLK_2020Q1_earnings",
+  "ticker": "BLK",
+  "event_date": "2020-01-06",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:09:35+00:00",
+  "accepted": [
+    {
+      "cause": "broadly diversified business across clients, products and geographies",
+      "effect": "Assets Under Management of $7.43 trillion",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "A broadly diversified business across clients, products and geographies",
+      "source_id": "BLK2020Q1_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "BLK2020Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.788,
+      "span_score": 0.901,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "BLK2020Q1_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.6,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Base fees ex. securities lending",
+      "effect": "2 % Percentage Change Year-over-Year",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "Base fees ex. securities lending 2 %",
+      "source_id": "BLK2020Q1_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "BLK2020Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.85,
+      "span_score": 0.876,
+      "severity_align": 0.671,
+      "mechanism_hint": 1.0,
+      "claim_id": "BLK2020Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.6,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.171,
+      "polarity": -1.0,
+      "evidence_span": "Operating Income, as adjusted Operating Margin, as adjusted Net Income, as adjusted EPS, as adjusted Operating Income and Margin, as adjusted Net Income and EPS, as adjusted 3 Divi",
+      "source_id": "BLK2020Q1_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "BLK2020Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.988,
+      "span_score": 0.979,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "BLK2020Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Aggregate Bond Index 2221",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.1,
+      "polarity": -1.0,
+      "evidence_span": "Aggregate Bond Index 2047 2221 2225",
+      "source_id": "BLK2020Q1_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "BLK2020Q1_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.913,
+      "span_score": 0.875,
+      "severity_align": 0.929,
+      "mechanism_hint": 1.0,
+      "claim_id": "BLK2020Q1_C003",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Tax Cuts and Jobs Act",
+      "effect": "non-GAAP adjustment of $1.3 billion",
+      "mechanism": "regulatory",
+      "severity": 0.8,
+      "polarity": 0.0,
+      "evidence_span": "includes a non-GAAP adjustment of $1.3 billion related to the Tax Cuts and Jobs Act",
+      "source_id": "BLK2020Q1_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "BLK2020Q1_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "mechanism_not_allowed_for_domain:regulatory:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

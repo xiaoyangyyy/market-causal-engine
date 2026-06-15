@@ -1,0 +1,34 @@
+{
+  "event_id": "JPM_2022Q3_earnings",
+  "ticker": "JPM",
+  "event_date": "2022-07-06",
+  "fiscal_period": "2022Q3",
+  "atom_count": 25,
+  "text_length": 120034,
+  "summary_length": 11993,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\JPM_2022Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\JPM_2022Q3_earnings\\sec_8k.txt",
+  "filing_date": "2022-07-14",
+  "accession_number": "0000019617-22-000410",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961722000410/jpm-20220714.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000019617",
+  "window_days": 45,
+  "search_date_from": "2022-10-01",
+  "search_date_to": "2022-11-30",
+  "aligned_filing_date": "2022-07-14",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -3.49,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

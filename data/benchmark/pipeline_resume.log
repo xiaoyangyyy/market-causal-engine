@@ -1,0 +1,216 @@
+﻿Starting counts: {"llm": 1923, "heuristic": 0, "atom_fallback": 882}
+
+=== Heuristic → LLM === remaining=0
+Heuristic → LLM: done
+
+=== Atom-fallback upgrade === remaining=882
+[catalog-claims] 10/883 events, claims=29
+[catalog-claims] 20/883 events, claims=60
+[catalog-claims] 30/883 events, claims=87
+[catalog-claims] 40/883 events, claims=114
+[catalog-claims] 50/883 events, claims=148
+[catalog-claims] 60/883 events, claims=182
+[catalog-claims] 70/883 events, claims=208
+[catalog-claims] 80/883 events, claims=234
+[catalog-claims] 90/883 events, claims=256
+[catalog-claims] 100/883 events, claims=288
+[catalog-claims] 110/883 events, claims=319
+[catalog-claims] 120/883 events, claims=356
+[catalog-claims] 130/883 events, claims=378
+[catalog-claims] 140/883 events, claims=404
+[catalog-claims] 150/883 events, claims=438
+[catalog-claims] 160/883 events, claims=462
+[catalog-claims] 170/883 events, claims=487
+[catalog-claims] 180/883 events, claims=515
+[catalog-claims] 190/883 events, claims=537
+[catalog-claims] 200/883 events, claims=566
+[catalog-claims] 210/883 events, claims=585
+[catalog-claims] 220/883 events, claims=603
+[catalog-claims] 230/883 events, claims=619
+[catalog-claims] 240/883 events, claims=639
+[catalog-claims] 250/883 events, claims=663
+[catalog-claims] 260/883 events, claims=689
+[catalog-claims] 270/883 events, claims=705
+[catalog-claims] 280/883 events, claims=723
+[catalog-claims] 290/883 events, claims=746
+[catalog-claims] 300/883 events, claims=762
+[catalog-claims] 310/883 events, claims=787
+[catalog-claims] 320/883 events, claims=813
+[catalog-claims] 330/883 events, claims=831
+[catalog-claims] 340/883 events, claims=856
+[catalog-claims] 350/883 events, claims=882
+[catalog-claims] 360/883 events, claims=901
+[catalog-claims] 370/883 events, claims=922
+[catalog-claims] 380/883 events, claims=947
+[catalog-claims] 390/883 events, claims=977
+[catalog-claims] 400/883 events, claims=999
+[catalog-claims] 410/883 events, claims=1022
+[catalog-claims] 420/883 events, claims=1053
+[catalog-claims] 430/883 events, claims=1076
+[catalog-claims] 440/883 events, claims=1099
+[catalog-claims] 450/883 events, claims=1123
+[catalog-claims] 460/883 events, claims=1140
+[catalog-claims] 470/883 events, claims=1154
+[catalog-claims] 480/883 events, claims=1183
+[catalog-claims] 490/883 events, claims=1201
+[catalog-claims] 500/883 events, claims=1220
+[catalog-claims] 510/883 events, claims=1244
+[catalog-claims] 520/883 events, claims=1265
+[catalog-claims] 530/883 events, claims=1286
+[catalog-claims] 540/883 events, claims=1301
+[catalog-claims] 550/883 events, claims=1319
+[catalog-claims] 560/883 events, claims=1337
+[catalog-claims] 570/883 events, claims=1358
+[catalog-claims] 580/883 events, claims=1380
+[catalog-claims] 590/883 events, claims=1404
+[catalog-claims] 600/883 events, claims=1430
+[catalog-claims] 610/883 events, claims=1445
+[catalog-claims] 620/883 events, claims=1457
+[catalog-claims] 630/883 events, claims=1478
+[catalog-claims] 640/883 events, claims=1510
+[catalog-claims] 650/883 events, claims=1532
+[catalog-claims] 660/883 events, claims=1558
+[catalog-claims] 670/883 events, claims=1582
+[catalog-claims] 680/883 events, claims=1604
+[catalog-claims] 690/883 events, claims=1629
+[catalog-claims] 700/883 events, claims=1650
+[catalog-claims] 710/883 events, claims=1680
+[catalog-claims] 720/883 events, claims=1693
+[catalog-claims] 730/883 events, claims=1710
+[catalog-claims] 740/883 events, claims=1730
+[catalog-claims] 750/883 events, claims=1752
+[catalog-claims] 760/883 events, claims=1774
+[catalog-claims] 770/883 events, claims=1795
+[catalog-claims] 780/883 events, claims=1817
+[catalog-claims] 790/883 events, claims=1839
+[catalog-claims] 800/883 events, claims=1866
+[catalog-claims] 810/883 events, claims=1890
+[catalog-claims] 820/883 events, claims=1914
+[catalog-claims] 830/883 events, claims=1931
+[catalog-claims] 840/883 events, claims=1953
+[catalog-claims] 850/883 events, claims=1978
+[catalog-claims] 860/883 events, claims=2013
+[catalog-claims] 870/883 events, claims=2046
+[catalog-claims] 880/883 events, claims=2079
+{
+  "attempted": 883,
+  "ok": 883,
+  "errors": [],
+  "total_claims": 2083,
+  "use_llm": true,
+  "heuristic_only": false,
+  "atom_fallback_only": true,
+  "llm_events": 883,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "computed_at": "2026-06-15T05:01:37+00:00"
+}
+Atom-fallback upgrade exit=0 atom_fallback: 882 -> 794
+
+=== Atom-fallback upgrade === remaining=794
+[catalog-claims] 10/794 events, claims=30
+[catalog-claims] 20/794 events, claims=59
+[catalog-claims] 30/794 events, claims=85
+[catalog-claims] 40/794 events, claims=120
+[catalog-claims] 50/794 events, claims=157
+[catalog-claims] 60/794 events, claims=190
+[catalog-claims] 70/794 events, claims=217
+[catalog-claims] 80/794 events, claims=243
+[catalog-claims] 90/794 events, claims=270
+[catalog-claims] 100/794 events, claims=304
+[catalog-claims] 110/794 events, claims=343
+[catalog-claims] 120/794 events, claims=374
+[catalog-claims] 130/794 events, claims=399
+[catalog-claims] 140/794 events, claims=434
+[catalog-claims] 150/794 events, claims=468
+[catalog-claims] 160/794 events, claims=494
+[catalog-claims] 170/794 events, claims=516
+[catalog-claims] 180/794 events, claims=542
+[catalog-claims] 190/794 events, claims=568
+[catalog-claims] 200/794 events, claims=591
+[catalog-claims] 210/794 events, claims=609
+[catalog-claims] 220/794 events, claims=624
+[catalog-claims] 230/794 events, claims=644
+[catalog-claims] 240/794 events, claims=666
+[catalog-claims] 250/794 events, claims=689
+[catalog-claims] 260/794 events, claims=710
+[catalog-claims] 270/794 events, claims=727
+[catalog-claims] 280/794 events, claims=746
+[catalog-claims] 290/794 events, claims=771
+[catalog-claims] 300/794 events, claims=796
+[catalog-claims] 310/794 events, claims=820
+[catalog-claims] 320/794 events, claims=839
+[catalog-claims] 330/794 events, claims=862
+[catalog-claims] 340/794 events, claims=887
+[catalog-claims] 350/794 events, claims=908
+[catalog-claims] 360/794 events, claims=937
+[catalog-claims] 370/794 events, claims=963
+[catalog-claims] 380/794 events, claims=983
+[catalog-claims] 390/794 events, claims=1011
+[catalog-claims] 400/794 events, claims=1032
+[catalog-claims] 410/794 events, claims=1053
+[catalog-claims] 420/794 events, claims=1071
+[catalog-claims] 430/794 events, claims=1089
+[catalog-claims] 440/794 events, claims=1115
+[catalog-claims] 450/794 events, claims=1136
+[catalog-claims] 460/794 events, claims=1155
+[catalog-claims] 470/794 events, claims=1179
+[catalog-claims] 480/794 events, claims=1197
+[catalog-claims] 490/794 events, claims=1214
+[catalog-claims] 500/794 events, claims=1228
+[catalog-claims] 510/794 events, claims=1250
+[catalog-claims] 520/794 events, claims=1270
+[catalog-claims] 530/794 events, claims=1290
+[catalog-claims] 540/794 events, claims=1312
+[catalog-claims] 550/794 events, claims=1328
+[catalog-claims] 560/794 events, claims=1345
+[catalog-claims] 570/794 events, claims=1366
+[catalog-claims] 580/794 events, claims=1398
+[catalog-claims] 590/794 events, claims=1422
+[catalog-claims] 600/794 events, claims=1446
+[catalog-claims] 610/794 events, claims=1466
+[catalog-claims] 620/794 events, claims=1494
+[catalog-claims] 630/794 events, claims=1518
+[catalog-claims] 640/794 events, claims=1550
+[catalog-claims] 650/794 events, claims=1564
+[catalog-claims] 660/794 events, claims=1586
+[catalog-claims] 670/794 events, claims=1610
+[catalog-claims] 680/794 events, claims=1633
+[catalog-claims] 690/794 events, claims=1657
+[catalog-claims] 700/794 events, claims=1679
+[catalog-claims] 710/794 events, claims=1702
+[catalog-claims] 720/794 events, claims=1729
+[catalog-claims] 730/794 events, claims=1759
+[catalog-claims] 740/794 events, claims=1775
+[catalog-claims] 750/794 events, claims=1794
+[catalog-claims] 760/794 events, claims=1820
+[catalog-claims] 770/794 events, claims=1851
+[catalog-claims] 780/794 events, claims=1894
+[catalog-claims] 790/794 events, claims=1930
+{
+  "attempted": 794,
+  "ok": 792,
+  "errors": [
+    {
+      "event_id": "BRK.B_2019Q3_earnings",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "event_id": "CSCO_2025Q1_earnings",
+      "error": "HTTP Error 429: Too Many Requests"
+    }
+  ],
+  "total_claims": 1941,
+  "use_llm": true,
+  "heuristic_only": false,
+  "atom_fallback_only": true,
+  "llm_events": 792,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "computed_at": "2026-06-15T08:43:46+00:00"
+}
+Atom-fallback upgrade exit=0 atom_fallback: 794 -> 764
+
+=== Atom-fallback upgrade === remaining=764
+[catalog-claims] 10/764 events, claims=29
+[catalog-claims] 20/764 events, claims=60

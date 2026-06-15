@@ -1,0 +1,31 @@
+{
+  "event_id": "AMD_2020Q3_earnings",
+  "ticker": "AMD",
+  "event_date": "2020-07-23",
+  "fiscal_period": "2020Q3",
+  "atom_count": 2,
+  "text_length": 39232,
+  "summary_length": 2313,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\AMD_2020Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\AMD_2020Q3_earnings\\sec_8k.txt",
+  "filing_date": "2020-10-27",
+  "accession_number": "0000002488-20-000161",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/2488/000000248820000161/amd-20201027.htm",
+  "form": "8-K",
+  "search_date_from": "2020-10-01",
+  "search_date_to": "2020-11-30",
+  "aligned_filing_date": "2020-10-27",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -4.07,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

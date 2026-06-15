@@ -1,0 +1,70 @@
+{
+  "event_id": "SNPS_2018Q1_earnings",
+  "ticker": "SNPS",
+  "event_date": "2018-01-09",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T12:50:14+00:00",
+  "accepted": [
+    {
+      "cause": "Raised full-year revenue and non-GAAP earnings expectations",
+      "effect": "Increased investor confidence in future performance",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "expectations, raising full-year revenue and non-GAAP earnings",
+      "source_id": "SNPS2018Q1_002",
+      "published_at": 0,
+      "atom_id": "SNPS2018Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.79,
+      "span_score": 1.0,
+      "severity_align": 0.159,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNPS2018Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Revenue increase of 17.9% to $769.4 million",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "For the first quarter of fiscal 2018, Synopsys reported revenue of $769.4 million, compared to $652.8 million for the first quarter of fiscal 2017, an increase of approximately 17.9 percent.",
+      "source_id": "SNPS2018Q1_001",
+      "published_at": 0,
+      "atom_id": "SNPS2018Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.823,
+      "span_score": 1.0,
+      "severity_align": 0.29,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNPS2018Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

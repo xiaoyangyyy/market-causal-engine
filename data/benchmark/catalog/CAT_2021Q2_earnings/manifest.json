@@ -1,0 +1,31 @@
+{
+  "event_id": "CAT_2021Q2_earnings",
+  "ticker": "CAT",
+  "event_date": "2021-04-20",
+  "fiscal_period": "2021Q2",
+  "atom_count": 2,
+  "text_length": 9462,
+  "summary_length": 2104,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\CAT_2021Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\CAT_2021Q2_earnings\\sec_8k.txt",
+  "filing_date": "2021-07-30",
+  "accession_number": "0000018230-21-000218",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/18230/000001823021000218/cat-20210730.htm",
+  "form": "8-K",
+  "search_date_from": "2021-07-01",
+  "search_date_to": "2021-08-31",
+  "aligned_filing_date": "2021-07-30",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -2.73,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

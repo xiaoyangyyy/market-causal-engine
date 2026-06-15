@@ -13,11 +13,56 @@
   "scenario_path": "scenario.json",
   "atoms_path": "atoms.jsonl",
   "default_until": 120,
-  "lookahead_policy": {"strict": true, "forbid_post_hoc_sources": true},
+  "lookahead_policy": {
+    "strict": true,
+    "forbid_post_hoc_sources": true
+  },
   "observed_outcomes": {
     "direction": "down",
     "after_hours_return_pct": -14,
     "calibration_reference_drawdown": 0.62,
     "dominant_narrative": "e-commerce slowdown + merchant growth deceleration + guidance cut"
+  },
+  "outcome_causal": {
+    "method": "synthetic_control",
+    "effect": -0.05807,
+    "observed_return": -0.040044,
+    "counterfactual_return": 0.018027,
+    "placebo_rank": 0.875,
+    "artifact": "data\\market\\case_studies\\shop_2022q2_earnings\\outcome_causal.json"
+  },
+  "causal_claims": {
+    "claim_count": 6,
+    "rejected_count": 1,
+    "top_claim": {
+      "cause": "earnings miss",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "evidence_span": "reports Q2 revenue of $1.29 billion, miss",
+      "source_id": "SHOP22Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "SHOP22Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SHOP_2022Q2__C000"
+    },
+    "artifact": "causal_claims.json"
+  },
+  "mechanism_calibration": {
+    "predicted_effect": -0.017538,
+    "outcome_effect": -0.05807,
+    "dominant_mechanism": "fundamental",
+    "direction_match": true,
+    "confidence": 0.364,
+    "artifact": "mechanism_calibration.json"
   }
 }

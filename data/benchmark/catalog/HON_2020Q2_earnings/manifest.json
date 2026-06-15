@@ -1,0 +1,34 @@
+{
+  "event_id": "HON_2020Q2_earnings",
+  "ticker": "HON",
+  "event_date": "2020-04-21",
+  "fiscal_period": "2020Q2",
+  "atom_count": 5,
+  "text_length": 32597,
+  "summary_length": 11994,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\HON_2020Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\HON_2020Q2_earnings\\sec_8k.txt",
+  "filing_date": "2020-05-01",
+  "accession_number": "0000773840-20-000024",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/773840/000077384020000024/q12020earningsrelease.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000773840",
+  "window_days": 45,
+  "search_date_from": "2020-07-01",
+  "search_date_to": "2020-08-31",
+  "aligned_filing_date": "2020-05-01",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -3.28,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

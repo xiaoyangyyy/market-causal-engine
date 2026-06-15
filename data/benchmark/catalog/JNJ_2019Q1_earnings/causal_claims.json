@@ -1,0 +1,91 @@
+{
+  "event_id": "JNJ_2019Q1_earnings",
+  "ticker": "JNJ",
+  "event_date": "2019-01-14",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:46:15+00:00",
+  "accepted": [
+    {
+      "cause": "expected operational growth",
+      "effect": "stock price increase",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "expected operational growth",
+      "source_id": "JNJ2019Q1_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "JNJ2019Q1_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.835,
+      "span_score": 1.0,
+      "severity_align": 0.338,
+      "mechanism_hint": 1.0,
+      "claim_id": "JNJ2019Q1_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.046,
+      "polarity": -1.0,
+      "evidence_span": "EPS was $1.12 2018 Full-Year Sales of $",
+      "source_id": "JNJ2019Q1_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "JNJ2019Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "JNJ2019Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "net earnings for the current quarter were $",
+      "source_id": "JNJ2019Q1_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "JNJ2019Q1_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

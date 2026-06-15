@@ -1,0 +1,44 @@
+{
+  "event_id": "NFLX_2025Q1_earnings",
+  "ticker": "NFLX",
+  "event_date": "2025-01-13",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:20:54+00:00",
+  "accepted": [
+    {
+      "cause": "earnings disclosure",
+      "effect": "fundamental repricing",
+      "mechanism": "fundamental",
+      "severity": 0.051,
+      "polarity": -1.0,
+      "evidence_span": "announced its financial results for the quarter",
+      "source_id": "NFLX2025Q1_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "NFLX2025Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "NFLX2025Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

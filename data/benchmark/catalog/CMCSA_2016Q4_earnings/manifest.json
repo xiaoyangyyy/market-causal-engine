@@ -1,0 +1,31 @@
+{
+  "event_id": "CMCSA_2016Q4_earnings",
+  "ticker": "CMCSA",
+  "event_date": "2016-10-18",
+  "fiscal_period": "2016Q4",
+  "atom_count": 70,
+  "text_length": 52393,
+  "summary_length": 5390,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\CMCSA_2016Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\CMCSA_2016Q4_earnings\\sec_8k.txt",
+  "filing_date": "2017-01-26",
+  "accession_number": "0001104659-17-004122",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1166691/000110465917004122/a17-3187_18k.htm",
+  "form": "8-K",
+  "search_date_from": "2017-01-01",
+  "search_date_to": "2017-02-28",
+  "aligned_filing_date": "2017-01-26",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 2.81,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

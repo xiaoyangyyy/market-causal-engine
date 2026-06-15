@@ -1,0 +1,71 @@
+{
+  "event_id": "QCOM_2019Q2_earnings",
+  "ticker": "QCOM",
+  "event_date": "2019-04-15",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:14:26+00:00",
+  "accepted": [
+    {
+      "cause": "EPS beat",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "earnings per share above the high end of",
+      "source_id": "QCOM2019Q2_001",
+      "published_at": 0,
+      "atom_id": "QCOM2019Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.786,
+      "span_score": 1.0,
+      "severity_align": 0.146,
+      "mechanism_hint": 1.0,
+      "claim_id": "QCOM2019Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Operating income surge",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Operating income $0.9B $0.4B +135% $",
+      "source_id": "QCOM2019Q2_002",
+      "published_at": 0,
+      "atom_id": "QCOM2019Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.798,
+      "span_score": 1.0,
+      "severity_align": 0.194,
+      "mechanism_hint": 1.0,
+      "claim_id": "QCOM2019Q2_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

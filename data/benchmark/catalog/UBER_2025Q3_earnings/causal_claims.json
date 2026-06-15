@@ -1,0 +1,65 @@
+{
+  "event_id": "UBER_2025Q3_earnings",
+  "ticker": "UBER",
+  "event_date": "2025-07-08",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T04:36:28+00:00",
+  "accepted": [
+    {
+      "cause": "Revenue growth of 18% YoY",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Revenue grew 18% YoY to $12.7 billion",
+      "source_id": "UBER2025Q3_001",
+      "published_at": 0,
+      "atom_id": "UBER2025Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.775,
+      "span_score": 0.945,
+      "severity_align": 0.22,
+      "mechanism_hint": 1.0,
+      "claim_id": "UBER2025Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Shift from equity investment benefit to headwind",
+      "effect": "Reduced net income quality compared to prior year",
+      "mechanism": "fundamental",
+      "severity": 0.4,
+      "polarity": -0.3,
+      "evidence_span": "Q2 2025 net income includes a $17 million net headwind (pre-tax) from revaluations of Uber's equity investments",
+      "source_id": "UBER2025Q3_003",
+      "published_at": 0,
+      "atom_id": "UBER2025Q3_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

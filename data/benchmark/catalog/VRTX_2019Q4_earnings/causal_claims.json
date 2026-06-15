@@ -1,0 +1,70 @@
+{
+  "event_id": "VRTX_2019Q4_earnings",
+  "ticker": "VRTX",
+  "event_date": "2019-10-14",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:20:54+00:00",
+  "accepted": [
+    {
+      "cause": "Pipeline progression expected to yield proof-of-concept data in 2020",
+      "effect": "Investor confidence in continued long-term growth",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "The rapid progress of our pipeline is expected to yield proof-of-concept data in multiple diseases in 2020, which will position Vertex for continued growth in the years ahead",
+      "source_id": "VRTX2019Q4_001",
+      "published_at": 0,
+      "atom_id": "VRTX2019Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.853,
+      "span_score": 0.974,
+      "severity_align": 0.471,
+      "mechanism_hint": 1.0,
+      "claim_id": "VRTX2019Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Product revenues increased 21% year-over-year to $950 million",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Product revenues of $950 million , a 21% increase compared to Q3 2018",
+      "source_id": "VRTX2019Q4_000",
+      "published_at": 0,
+      "atom_id": "VRTX2019Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.775,
+      "span_score": 0.899,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "VRTX2019Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

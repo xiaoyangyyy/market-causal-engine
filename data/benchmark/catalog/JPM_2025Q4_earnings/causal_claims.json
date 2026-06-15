@@ -1,0 +1,70 @@
+{
+  "event_id": "JPM_2025Q4_earnings",
+  "ticker": "JPM",
+  "event_date": "2025-10-14",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:40:48+00:00",
+  "accepted": [
+    {
+      "cause": "Net income $ 14,393",
+      "effect": "earnings per share",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "earnings per share Net income $ 14,393 $ 14,987",
+      "source_id": "JPM2025Q4_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "JPM2025Q4_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.888,
+      "span_score": 1.0,
+      "severity_align": 0.552,
+      "mechanism_hint": 1.0,
+      "claim_id": "JPM2025Q4_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.139,
+      "polarity": -1.0,
+      "evidence_span": "Markets revenue consists of principal transactions, fees, commissions and other income, as well as net interest income.These metrics, which exclude Markets, are non-GAAP financial",
+      "source_id": "JPM2025Q4_010",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "JPM2025Q4_010",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "JPM2025Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:31+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,70 @@
+{
+  "event_id": "PEP_2024Q1_earnings",
+  "ticker": "PEP",
+  "event_date": "2024-01-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:48:34+00:00",
+  "accepted": [
+    {
+      "cause": "Net income $ 9,155",
+      "effect": "positive stock performance",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Net income $ 9,155",
+      "source_id": "PEP2024Q1_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "PEP2024Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.817,
+      "span_score": 0.863,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "claim_id": "PEP2024Q1_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.041,
+      "polarity": -1.0,
+      "evidence_span": "Earnings per share (EPS) $0.94 $",
+      "source_id": "PEP2024Q1_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "PEP2024Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "PEP2024Q1_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

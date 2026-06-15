@@ -1,0 +1,44 @@
+{
+  "event_id": "AMD_2018Q2_earnings",
+  "ticker": "AMD",
+  "event_date": "2018-04-09",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T05:28:39+00:00",
+  "accepted": [
+    {
+      "cause": "earnings miss",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.251,
+      "polarity": -1.0,
+      "evidence_span": "rinciples (“GAAP”) basis, the Company’s earnings press release contain non-GAAP financial measures, including non-GAAP gross margin, non-GAAP operating expenses, non-GAAP operating",
+      "source_id": "AMD2018Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "AMD2018Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.968,
+      "span_score": 0.979,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "AMD2018Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

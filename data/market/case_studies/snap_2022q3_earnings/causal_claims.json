@@ -1,0 +1,178 @@
+{
+  "case_id": "snap_2022q3_earnings",
+  "domain": "earnings",
+  "as_of": 100,
+  "use_llm": false,
+  "computed_at": "2026-06-09T03:07:55+00:00",
+  "accepted": [
+    {
+      "cause": "earnings miss",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "evidence_span": "reports Q3 revenue of $1.13 billion, miss",
+      "source_id": "SNAP22Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "SNAP22Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNAP_2022Q3__C000"
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "downside pressure",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "evidence_span": "digital ad market has worse",
+      "source_id": "SNAP22Q3_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "SNAP22Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNAP_2022Q3__C001"
+    },
+    {
+      "cause": "options/liquidity stress",
+      "effect": "forced de-risking",
+      "mechanism": "liquidity",
+      "severity": 0.72,
+      "evidence_span": "Put option volume spikes as volatility surge",
+      "source_id": "SNAP22Q3_005",
+      "published_at": 18,
+      "proposer": "heuristic",
+      "atom_id": "SNAP22Q3_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNAP_2022Q3__C003"
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "downside pressure",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "evidence_span": "advertisers cutting budgets",
+      "source_id": "SNAP22Q3_002",
+      "published_at": 45,
+      "proposer": "heuristic",
+      "atom_id": "SNAP22Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNAP_2022Q3__C004"
+    },
+    {
+      "cause": "management commentary",
+      "effect": "narrative shift",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "evidence_span": "Management stated competitive pressure from larger platforms also weighed on monetization during the quarter.",
+      "source_id": "SNAP22Q3_003",
+      "published_at": 45,
+      "proposer": "heuristic",
+      "atom_id": "SNAP22Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNAP_2022Q3__C005"
+    },
+    {
+      "cause": "analyst downgrade",
+      "effect": "sentiment deterioration",
+      "mechanism": "sentiment",
+      "severity": 0.75,
+      "evidence_span": "downgrades Snap to",
+      "source_id": "SNAP22Q3_006",
+      "published_at": 75,
+      "proposer": "heuristic",
+      "atom_id": "SNAP22Q3_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNAP_2022Q3__C006"
+    },
+    {
+      "cause": "earnings miss",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.78,
+      "evidence_span": "ares down 27% after hours on ad revenue miss",
+      "source_id": "SNAP22Q3_004",
+      "published_at": 12,
+      "proposer": "heuristic",
+      "atom_id": "SNAP22Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.986,
+      "span_score": 0.974,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNAP_2022Q3__C002"
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "regulatory scrutiny",
+      "effect": "regulatory overhang",
+      "mechanism": "regulatory",
+      "severity": 0.6,
+      "evidence_span": "sector ETF decline",
+      "source_id": "SNAP22Q3_007",
+      "published_at": 80,
+      "proposer": "heuristic",
+      "atom_id": "SNAP22Q3_007",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "mechanism_not_allowed_for_domain:regulatory:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 7,
+  "rejected_count": 1
+}

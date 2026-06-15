@@ -1,0 +1,37 @@
+services:
+  postgres:
+    image: timescale/timescaledb:latest-pg16
+    environment:
+      POSTGRES_USER: market
+      POSTGRES_PASSWORD: market
+      POSTGRES_DB: market_causal
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      DATABASE_URL: postgresql://market:market@postgres:5432/market_causal
+      REDIS_URL: redis://redis:6379/0
+      FRED_API_KEY: ${FRED_API_KEY:-}
+      NEWSAPI_KEY: ${NEWSAPI_KEY:-}
+    depends_on:
+      postgres:
+        condition: service_started
+      redis:
+        condition: service_started
+    command: >
+      sh -c "python -m market_causal_engine.platform.cli migrate &&
+             uvicorn market_causal_engine.api.app:app --host 0.0.0.0 --port 8080"
+
+volumes:
+  pgdata:

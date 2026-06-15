@@ -22,5 +22,47 @@
     "after_hours_return_pct": -27,
     "calibration_reference_drawdown": 0.68,
     "dominant_narrative": "ad revenue miss + macro ad budget cuts"
+  },
+  "outcome_causal": {
+    "method": "synthetic_control",
+    "effect": -0.274796,
+    "observed_return": -0.285451,
+    "counterfactual_return": -0.010655,
+    "placebo_rank": 1.0,
+    "artifact": "data\\market\\case_studies\\snap_2022q3_earnings\\outcome_causal.json"
+  },
+  "causal_claims": {
+    "claim_count": 7,
+    "rejected_count": 1,
+    "top_claim": {
+      "cause": "earnings miss",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "evidence_span": "reports Q3 revenue of $1.13 billion, miss",
+      "source_id": "SNAP22Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "SNAP22Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SNAP_2022Q3__C000"
+    },
+    "artifact": "causal_claims.json"
+  },
+  "mechanism_calibration": {
+    "predicted_effect": 0.009245,
+    "outcome_effect": -0.274796,
+    "dominant_mechanism": "fundamental",
+    "direction_match": false,
+    "confidence": 0.304,
+    "artifact": "mechanism_calibration.json"
   }
 }

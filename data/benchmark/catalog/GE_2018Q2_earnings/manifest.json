@@ -1,0 +1,34 @@
+{
+  "event_id": "GE_2018Q2_earnings",
+  "ticker": "GE",
+  "event_date": "2018-04-24",
+  "fiscal_period": "2018Q2",
+  "atom_count": 8,
+  "text_length": 29453,
+  "summary_length": 11996,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\GE_2018Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\GE_2018Q2_earnings\\sec_8k.txt",
+  "filing_date": "2018-04-20",
+  "accession_number": "0000040545-18-000025",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/40545/000004054518000025/ge1q20188-k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000040545",
+  "window_days": 45,
+  "search_date_from": "2018-07-01",
+  "search_date_to": "2018-08-31",
+  "aligned_filing_date": "2018-04-20",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 3.93,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

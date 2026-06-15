@@ -1,0 +1,69 @@
+{
+  "event_id": "ABT_2019Q2_earnings",
+  "ticker": "ABT",
+  "event_date": "2019-04-12",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T09:24:41+00:00",
+  "accepted": [
+    {
+      "cause": "Raising full-year guidance for organic sales growth",
+      "effect": "Increased investor confidence in future revenue trajectory",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Raising full-year guidance for organic sales growth to 7 to 8 percent",
+      "source_id": "ABT2019Q2_000",
+      "published_at": 0,
+      "atom_id": "ABT2019Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.775,
+      "span_score": 0.899,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "ABT2019Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Accelerated and sustainable growth driven by strong performance",
+      "effect": "Positive market perception of portfolio strength",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "Accelerated and sustainable growth driven by strong performance across portfolio",
+      "source_id": "ABT2019Q2_000",
+      "published_at": 0,
+      "atom_id": "ABT2019Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.804,
+      "span_score": 0.907,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "claim_id": "ABT2019Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

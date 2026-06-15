@@ -1,0 +1,69 @@
+{
+  "event_id": "GE_2021Q2_earnings",
+  "ticker": "GE",
+  "event_date": "2021-04-06",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:41:57+00:00",
+  "accepted": [
+    {
+      "cause": "strong results",
+      "effect": "estimate upside",
+      "mechanism": "fundamental",
+      "severity": 0.251,
+      "polarity": -1.0,
+      "evidence_span": "11 ADJUSTED EARNINGS (LOSS) (NON-GAAP) Three months ended March 31 (Dollars in millions) 2021 2020 V% Consolidated earnings (loss) from continuing operations attributable to GE com",
+      "source_id": "GE2021Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GE2021Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.968,
+      "span_score": 0.979,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "GE2021Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "earnings miss",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.251,
+      "polarity": -1.0,
+      "evidence_span": "11 ADJUSTED EARNINGS (LOSS) (NON-GAAP) Three months ended March 31 (Dollars in millions) 2021 2020 V% Consolidated earnings (loss) from continuing opera",
+      "source_id": "GE2021Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GE2021Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.957,
+      "span_score": 0.959,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "GE2021Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,31 @@
+{
+  "event_id": "COIN_2022Q2_earnings",
+  "ticker": "COIN",
+  "event_date": "2022-04-21",
+  "fiscal_period": "2022Q2",
+  "atom_count": 27,
+  "text_length": 73991,
+  "summary_length": 2555,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\COIN_2022Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\COIN_2022Q2_earnings\\sec_8k.txt",
+  "filing_date": "2022-08-09",
+  "accession_number": "0001679788-22-000083",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1679788/000167978822000083/coin-20220809.htm",
+  "form": "8-K",
+  "search_date_from": "2022-07-01",
+  "search_date_to": "2022-08-31",
+  "aligned_filing_date": "2022-08-09",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -10.55,
+    "magnitude_bucket": "large"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

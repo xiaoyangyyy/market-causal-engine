@@ -1,0 +1,119 @@
+{
+  "treated": "SNAP",
+  "event_date": "2022-10-20",
+  "event_window": [
+    0,
+    1
+  ],
+  "method": "synthetic_control",
+  "controls": [
+    "XLC",
+    "META",
+    "PINS",
+    "GOOGL",
+    "TTWO",
+    "SPY",
+    "QQQ"
+  ],
+  "control_weights": {
+    "XLC": 0.145405,
+    "META": 0.046305,
+    "PINS": 0.297152,
+    "GOOGL": 0.226321,
+    "TTWO": 0.074352,
+    "SPY": 0.0,
+    "QQQ": 0.210465
+  },
+  "estimation_days": 120,
+  "event_window_dates": [
+    "2022-10-20",
+    "2022-10-21"
+  ],
+  "observed_return": -0.285451,
+  "counterfactual_return": -0.010655,
+  "effect": -0.274796,
+  "pre_fit_rmse": 0.053064,
+  "alternates": {
+    "abnormal_return": {
+      "method": "abnormal_return",
+      "benchmark": "SPY",
+      "event_window": [
+        0,
+        1
+      ],
+      "event_window_dates": [
+        "2022-10-20",
+        "2022-10-21"
+      ],
+      "observed_return": -0.285451,
+      "counterfactual_return": 0.015712,
+      "effect": -0.301164,
+      "pre_fit_rmse": null
+    },
+    "factor_model": {
+      "method": "factor_model",
+      "factors": [
+        "QQQ",
+        "SPY",
+        "XLC"
+      ],
+      "factor_loadings": {
+        "alpha": -0.00123,
+        "QQQ": 1.671303,
+        "SPY": -3.42544,
+        "XLC": 3.177161
+      },
+      "estimation_days": 120,
+      "event_window": [
+        0,
+        1
+      ],
+      "event_window_dates": [
+        "2022-10-20",
+        "2022-10-21"
+      ],
+      "observed_return": -0.285451,
+      "counterfactual_return": 0.001091,
+      "effect": -0.286542,
+      "pre_fit_rmse": 0.052227
+    },
+    "synthetic_control": {
+      "method": "synthetic_control",
+      "controls": [
+        "XLC",
+        "META",
+        "PINS",
+        "GOOGL",
+        "TTWO",
+        "SPY",
+        "QQQ"
+      ],
+      "control_weights": {
+        "XLC": 0.145405,
+        "META": 0.046305,
+        "PINS": 0.297152,
+        "GOOGL": 0.226321,
+        "TTWO": 0.074352,
+        "SPY": 0.0,
+        "QQQ": 0.210465
+      },
+      "estimation_days": 120,
+      "event_window": [
+        0,
+        1
+      ],
+      "event_window_dates": [
+        "2022-10-20",
+        "2022-10-21"
+      ],
+      "observed_return": -0.285451,
+      "counterfactual_return": -0.010655,
+      "effect": -0.274796,
+      "pre_fit_rmse": 0.053064
+    }
+  },
+  "placebo_rank": 1.0,
+  "placebo_n": 7,
+  "computed_at": "2026-06-06T13:05:09+00:00",
+  "case_id": "snap_2022q3_earnings"
+}

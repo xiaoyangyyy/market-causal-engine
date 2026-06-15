@@ -1,0 +1,44 @@
+{
+  "event_id": "META_2020Q2_earnings",
+  "ticker": "META",
+  "event_date": "2020-04-07",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:26:18+00:00",
+  "accepted": [
+    {
+      "cause": "Expected revenue weakness",
+      "effect": "Negative impact on 2020 operating margins",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "expected revenue weakness will have a negative impact on 2020 operating margins",
+      "source_id": "META2020Q2_003",
+      "published_at": 0,
+      "atom_id": "META2020Q2_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.785,
+      "span_score": 0.926,
+      "severity_align": 0.302,
+      "mechanism_hint": 1.0,
+      "claim_id": "META2020Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.6,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,13 @@
+{
+  "llm_only": true,
+  "min_accepted_claims": 2,
+  "min_claim_confidence": 0.5,
+  "min_claim_polarity": 0.1,
+  "min_claim_severity": 0.0,
+  "min_net_polarity": 0.08,
+  "exclude_boilerplate": true,
+  "exclude_generic_effects": true,
+  "exclude_atom_fallback": true,
+  "require_event_proposer": true,
+  "max_claims_per_event": 4
+}

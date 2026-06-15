@@ -1,0 +1,70 @@
+{
+  "event_id": "UBER_2022Q3_earnings",
+  "ticker": "UBER",
+  "event_date": "2022-07-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-09T13:22:47+00:00",
+  "accepted": [
+    {
+      "cause": "Adjusted EBITDA well above guidance",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "Adjusted EBITDA well above our guidance",
+      "source_id": "UBER2022Q3_000",
+      "published_at": 0,
+      "atom_id": "UBER2022Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.913,
+      "span_score": 0.878,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "UBER2022Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Revenue grew 72% YoY to $8.3 billion",
+      "effect": "Strong top-line growth signal",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Revenue grew 72% YoY to $8.3 billion",
+      "source_id": "UBER2022Q3_002",
+      "published_at": 0,
+      "atom_id": "UBER2022Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.93,
+      "span_score": 0.878,
+      "severity_align": 0.99,
+      "mechanism_hint": 1.0,
+      "claim_id": "UBER2022Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

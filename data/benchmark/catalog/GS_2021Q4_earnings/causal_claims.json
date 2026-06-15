@@ -1,0 +1,91 @@
+{
+  "event_id": "GS_2021Q4_earnings",
+  "ticker": "GS",
+  "event_date": "2021-10-11",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:54:56+00:00",
+  "accepted": [
+    {
+      "cause": "revenues of $46.70 billion",
+      "effect": "net earnings",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "revenues of $46.70 billion, net earnings of",
+      "source_id": "GS2021Q4_007",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GS2021Q4_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.812,
+      "span_score": 1.0,
+      "severity_align": 0.248,
+      "mechanism_hint": 1.0,
+      "claim_id": "GS2021Q4_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.051,
+      "polarity": -1.0,
+      "evidence_span": "Net Earnings EPS 3Q21 $13.61 billion 3Q21 YTD $",
+      "source_id": "GS2021Q4_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GS2021Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GS2021Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "Reports Third Quarter Earnings",
+      "source_id": "GS2021Q4_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GS2021Q4_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

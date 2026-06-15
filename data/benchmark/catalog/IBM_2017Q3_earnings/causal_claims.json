@@ -1,0 +1,89 @@
+{
+  "event_id": "IBM_2017Q3_earnings",
+  "ticker": "IBM",
+  "event_date": "2017-07-21",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T08:01:00+00:00",
+  "accepted": [
+    {
+      "cause": "As-a-service revenue run rate expansion",
+      "effect": "Higher recurring revenue visibility",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "The annual exit run rate for as-a-service revenue increased to $8.8 billion from $6.7 billion in the second quarter of 2016.",
+      "source_id": "IBM2017Q3_006",
+      "published_at": 0,
+      "atom_id": "IBM2017Q3_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.837,
+      "span_score": 1.0,
+      "severity_align": 0.349,
+      "mechanism_hint": 1.0,
+      "claim_id": "IBM2017Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Strong R&D investment and shareholder returns",
+      "effect": "Positive sentiment regarding capital allocation",
+      "mechanism": "fundamental",
+      "severity": 0.65,
+      "polarity": 1.0,
+      "evidence_span": "This allowed us to continue our strong R&D investment levels and return more than $5 billion to shareholders through dividends and gross share repurchases during the first half.",
+      "source_id": "IBM2017Q3_004",
+      "published_at": 0,
+      "atom_id": "IBM2017Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.867,
+      "span_score": 0.976,
+      "severity_align": 0.521,
+      "mechanism_hint": 1.0,
+      "claim_id": "IBM2017Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Cloud revenue growth",
+      "effect": "Increased investor confidence in strategic transformation",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 0.7,
+      "evidence_span": "Second-quarter cloud revenues increased 15 percent (up 17 percent adjusting f",
+      "source_id": "IBM2017Q3_004",
+      "published_at": 0,
+      "atom_id": "IBM2017Q3_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,34 @@
+{
+  "event_id": "ZM_2024Q3_earnings",
+  "ticker": "ZM",
+  "event_date": "2024-07-23",
+  "fiscal_period": "2024Q3",
+  "atom_count": 14,
+  "text_length": 37274,
+  "summary_length": 12000,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\ZM_2024Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\ZM_2024Q3_earnings\\sec_8k.txt",
+  "filing_date": "2024-08-21",
+  "accession_number": "0001585521-24-000178",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552124000178/zm-20240821.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001585521",
+  "window_days": 45,
+  "search_date_from": "2024-10-01",
+  "search_date_to": "2024-11-30",
+  "aligned_filing_date": "2024-08-21",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.86,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

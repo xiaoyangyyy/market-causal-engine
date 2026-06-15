@@ -1,0 +1,117 @@
+{
+  "event_id": "KO_2019Q3_earnings",
+  "ticker": "KO",
+  "event_date": "2019-07-09",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:17:49+00:00",
+  "accepted": [
+    {
+      "cause": "EPS grew 12% to $0.61",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "EPS Grew 12% to $0.61",
+      "source_id": "KO2019Q3_003",
+      "published_at": 0,
+      "atom_id": "KO2019Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.749,
+      "span_score": 0.882,
+      "severity_align": 0.254,
+      "mechanism_hint": 1.0,
+      "claim_id": "KO2019Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Net Revenues grew 6%",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "Net Revenues Grew 6%",
+      "source_id": "KO2019Q3_000",
+      "published_at": 0,
+      "atom_id": "KO2019Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.79,
+      "span_score": 0.935,
+      "severity_align": 0.301,
+      "mechanism_hint": 1.0,
+      "claim_id": "KO2019Q3_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Organic revenues grew 6%",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "Organic revenues (non-GAAP) grew 6%",
+      "source_id": "KO2019Q3_007",
+      "published_at": 0,
+      "atom_id": "KO2019Q3_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.836,
+      "span_score": 1.0,
+      "severity_align": 0.344,
+      "mechanism_hint": 1.0,
+      "claim_id": "KO2019Q3_C002",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Operating Income grew 14%",
+      "effect": "Positive stock price reaction",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Operating Income Grew 14%",
+      "source_id": "KO2019Q3_002",
+      "published_at": 0,
+      "atom_id": "KO2019Q3_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

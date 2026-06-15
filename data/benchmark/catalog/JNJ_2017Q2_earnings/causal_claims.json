@@ -1,0 +1,70 @@
+{
+  "event_id": "JNJ_2017Q2_earnings",
+  "ticker": "JNJ",
+  "event_date": "2017-04-12",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T07:43:50+00:00",
+  "accepted": [
+    {
+      "cause": "Adjusted EPS of $1.83",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "2017 Adjusted First-Quarter EPS of $1.83 Increased",
+      "source_id": "JNJ2017Q2_000",
+      "published_at": 0,
+      "atom_id": "JNJ2017Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.768,
+      "span_score": 0.886,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "JNJ2017Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "CEO confidence in full-year guidance",
+      "effect": "Increased investor trust and bullish sentiment",
+      "mechanism": "sentiment",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "confident we will achieve the full-year financial guidance we established",
+      "source_id": "JNJ2017Q2_003",
+      "published_at": 0,
+      "atom_id": "JNJ2017Q2_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.843,
+      "span_score": 0.909,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "claim_id": "JNJ2017Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:26+00:00",
+  "claims_refined": true
+}

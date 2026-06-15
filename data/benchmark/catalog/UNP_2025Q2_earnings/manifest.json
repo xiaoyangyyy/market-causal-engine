@@ -1,0 +1,34 @@
+{
+  "event_id": "UNP_2025Q2_earnings",
+  "ticker": "UNP",
+  "event_date": "2025-04-10",
+  "fiscal_period": "2025Q2",
+  "atom_count": 7,
+  "text_length": 26604,
+  "summary_length": 11994,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\UNP_2025Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\UNP_2025Q2_earnings\\sec_8k.txt",
+  "filing_date": "2025-04-24",
+  "accession_number": "0000100885-25-000150",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/100885/000010088525000150/unp-20250424.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000100885",
+  "window_days": 45,
+  "search_date_from": "2025-07-01",
+  "search_date_to": "2025-08-31",
+  "aligned_filing_date": "2025-04-24",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -1.97,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

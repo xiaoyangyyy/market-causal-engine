@@ -1,0 +1,34 @@
+{
+  "event_id": "TXN_2017Q2_earnings",
+  "ticker": "TXN",
+  "event_date": "2017-04-10",
+  "fiscal_period": "2017Q2",
+  "atom_count": 16,
+  "text_length": 20063,
+  "summary_length": 11993,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\TXN_2017Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\TXN_2017Q2_earnings\\sec_8k.txt",
+  "filing_date": "2017-04-25",
+  "accession_number": "0001564590-17-007157",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/97476/000156459017007157/txn-8k_20170425.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000097476",
+  "window_days": 45,
+  "search_date_from": "2017-07-01",
+  "search_date_to": "2017-08-31",
+  "aligned_filing_date": "2017-04-25",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.58,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

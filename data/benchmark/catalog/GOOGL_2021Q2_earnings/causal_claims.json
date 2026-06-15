@@ -1,0 +1,64 @@
+{
+  "event_id": "GOOGL_2021Q2_earnings",
+  "ticker": "GOOGL",
+  "event_date": "2021-04-06",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T11:22:58+00:00",
+  "accepted": [
+    {
+      "cause": "elevated consumer activity online",
+      "effect": "Total revenues of $55.3 billion",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Total revenues of $55.3 billion in the first quarter reflect elevated consumer activity online",
+      "source_id": "GOOGL2021Q2_001",
+      "published_at": 0,
+      "atom_id": "GOOGL2021Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.785,
+      "span_score": 0.917,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "GOOGL2021Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.6,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "ongoing momentum in Google Cloud",
+      "effect": "revenues of $4.0 billion in the quarter",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 0.8,
+      "evidence_span": "We're very pleased with the ongoing momentum in Google Cloud, with revenues of $4.0 billion",
+      "source_id": "GOOGL2021Q2_002",
+      "published_at": 0,
+      "atom_id": "GOOGL2021Q2_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

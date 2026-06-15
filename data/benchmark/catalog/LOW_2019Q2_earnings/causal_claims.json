@@ -1,0 +1,71 @@
+{
+  "event_id": "LOW_2019Q2_earnings",
+  "ticker": "LOW",
+  "event_date": "2019-04-12",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:14:19+00:00",
+  "accepted": [
+    {
+      "cause": "Net earnings rose to $1.0 billion from $988 million",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "net earnings of $1.0 billion and diluted earnings per share of $1.31 for the quarter ended May 3, 2019, compared to net earnings of $988 million",
+      "source_id": "LOW2019Q2_002",
+      "published_at": 0,
+      "atom_id": "LOW2019Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.839,
+      "span_score": 0.97,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "claim_id": "LOW2019Q2_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Diluted EPS increased to $1.31 from $1.19",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "diluted earnings per share of $1.31 for the quarter ended May 3, 2019, compared to net earnings of $988 million and diluted earnings per share of $1.19 in the first quarter of 2018",
+      "source_id": "LOW2019Q2_002",
+      "published_at": 0,
+      "atom_id": "LOW2019Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.83,
+      "span_score": 0.999,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "LOW2019Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

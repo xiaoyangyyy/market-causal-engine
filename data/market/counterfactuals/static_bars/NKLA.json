@@ -1,0 +1,1178 @@
+[
+  {
+    "time": "2020-04-02T13:30:00+00:00",
+    "close": 21.061,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-03T13:30:00+00:00",
+    "close": 21.0985,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-06T13:30:00+00:00",
+    "close": 22.664,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-07T13:30:00+00:00",
+    "close": 23.7038,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-08T13:30:00+00:00",
+    "close": 24.8673,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-09T13:30:00+00:00",
+    "close": 25.905,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-13T13:30:00+00:00",
+    "close": 26.0606,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-14T13:30:00+00:00",
+    "close": 26.9304,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-15T13:30:00+00:00",
+    "close": 26.2156,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-16T13:30:00+00:00",
+    "close": 25.9392,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-17T13:30:00+00:00",
+    "close": 27.0558,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-20T13:30:00+00:00",
+    "close": 26.5931,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-21T13:30:00+00:00",
+    "close": 25.2859,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-22T13:30:00+00:00",
+    "close": 25.788,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-23T13:30:00+00:00",
+    "close": 25.8347,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-24T13:30:00+00:00",
+    "close": 26.1678,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-27T13:30:00+00:00",
+    "close": 27.5463,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-28T13:30:00+00:00",
+    "close": 27.6166,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-29T13:30:00+00:00",
+    "close": 28.3745,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-04-30T13:30:00+00:00",
+    "close": 27.3949,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-01T13:30:00+00:00",
+    "close": 25.8265,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-04T13:30:00+00:00",
+    "close": 26.1707,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-05T13:30:00+00:00",
+    "close": 26.5655,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-06T13:30:00+00:00",
+    "close": 26.6614,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-07T13:30:00+00:00",
+    "close": 26.885,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-08T13:30:00+00:00",
+    "close": 28.3483,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-11T13:30:00+00:00",
+    "close": 27.6923,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-12T13:30:00+00:00",
+    "close": 27.2196,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-13T13:30:00+00:00",
+    "close": 26.2067,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-14T13:30:00+00:00",
+    "close": 26.8734,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-15T13:30:00+00:00",
+    "close": 26.9251,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-18T13:30:00+00:00",
+    "close": 28.7023,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-19T13:30:00+00:00",
+    "close": 28.5128,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-20T13:30:00+00:00",
+    "close": 29.1963,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-21T13:30:00+00:00",
+    "close": 29.5991,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-22T13:30:00+00:00",
+    "close": 29.5753,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-26T13:30:00+00:00",
+    "close": 30.5565,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-27T13:30:00+00:00",
+    "close": 31.1814,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-28T13:30:00+00:00",
+    "close": 30.4266,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-05-29T13:30:00+00:00",
+    "close": 30.2451,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-01T13:30:00+00:00",
+    "close": 31.3548,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-02T13:30:00+00:00",
+    "close": 31.489,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-03T13:30:00+00:00",
+    "close": 32.6723,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-04T13:30:00+00:00",
+    "close": 33.1141,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-05T13:30:00+00:00",
+    "close": 35.0039,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-08T13:30:00+00:00",
+    "close": 36.0609,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-09T13:30:00+00:00",
+    "close": 35.1604,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-10T13:30:00+00:00",
+    "close": 34.8898,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-11T13:30:00+00:00",
+    "close": 32.2792,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-12T13:30:00+00:00",
+    "close": 33.0033,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-15T13:30:00+00:00",
+    "close": 33.5705,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-16T13:30:00+00:00",
+    "close": 33.728,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-17T13:30:00+00:00",
+    "close": 33.2789,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-18T13:30:00+00:00",
+    "close": 33.3288,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-19T13:30:00+00:00",
+    "close": 32.9157,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-22T13:30:00+00:00",
+    "close": 32.837,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-23T13:30:00+00:00",
+    "close": 32.6925,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-24T13:30:00+00:00",
+    "close": 31.5067,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-25T13:30:00+00:00",
+    "close": 31.8905,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-26T13:30:00+00:00",
+    "close": 31.1284,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-29T13:30:00+00:00",
+    "close": 32.185,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-06-30T13:30:00+00:00",
+    "close": 32.8863,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-01T13:30:00+00:00",
+    "close": 32.9067,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-02T13:30:00+00:00",
+    "close": 33.8204,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-06T13:30:00+00:00",
+    "close": 35.4412,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-07T13:30:00+00:00",
+    "close": 35.0828,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-08T13:30:00+00:00",
+    "close": 34.8222,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-09T13:30:00+00:00",
+    "close": 33.9263,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-10T13:30:00+00:00",
+    "close": 35.6798,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-13T13:30:00+00:00",
+    "close": 35.5551,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-14T13:30:00+00:00",
+    "close": 36.5838,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-15T13:30:00+00:00",
+    "close": 37.9821,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-16T13:30:00+00:00",
+    "close": 37.8645,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-17T13:30:00+00:00",
+    "close": 37.6989,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-20T13:30:00+00:00",
+    "close": 38.1256,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-21T13:30:00+00:00",
+    "close": 37.8985,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-22T13:30:00+00:00",
+    "close": 38.4008,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-23T13:30:00+00:00",
+    "close": 38.2583,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-24T13:30:00+00:00",
+    "close": 37.2551,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-27T13:30:00+00:00",
+    "close": 37.9724,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-28T13:30:00+00:00",
+    "close": 37.8597,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-29T13:30:00+00:00",
+    "close": 37.869,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-30T13:30:00+00:00",
+    "close": 37.2021,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-07-31T13:30:00+00:00",
+    "close": 36.5187,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-03T13:30:00+00:00",
+    "close": 37.2886,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-04T13:30:00+00:00",
+    "close": 37.6195,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-05T13:30:00+00:00",
+    "close": 38.117,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-06T13:30:00+00:00",
+    "close": 38.2464,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-07T13:30:00+00:00",
+    "close": 38.1122,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-10T13:30:00+00:00",
+    "close": 38.8916,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-11T13:30:00+00:00",
+    "close": 39.0202,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-12T13:30:00+00:00",
+    "close": 40.0024,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-13T13:30:00+00:00",
+    "close": 40.0919,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-14T13:30:00+00:00",
+    "close": 40.4416,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-17T13:30:00+00:00",
+    "close": 42.2214,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-18T13:30:00+00:00",
+    "close": 42.2639,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-19T13:30:00+00:00",
+    "close": 41.9382,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-20T13:30:00+00:00",
+    "close": 42.3845,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-21T13:30:00+00:00",
+    "close": 42.3045,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-24T13:30:00+00:00",
+    "close": 43.467,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-25T13:30:00+00:00",
+    "close": 43.2178,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-26T13:30:00+00:00",
+    "close": 43.6534,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-27T13:30:00+00:00",
+    "close": 44.3482,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-28T13:30:00+00:00",
+    "close": 44.4991,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-08-31T13:30:00+00:00",
+    "close": 45.4221,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-01T13:30:00+00:00",
+    "close": 45.0851,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-02T13:30:00+00:00",
+    "close": 45.2555,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-03T13:30:00+00:00",
+    "close": 43.1649,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-04T13:30:00+00:00",
+    "close": 43.807,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-08T13:30:00+00:00",
+    "close": 42.37,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-09T13:30:00+00:00",
+    "close": 42.37,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-10T13:30:00+00:00",
+    "close": 37.57,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-11T13:30:00+00:00",
+    "close": 35.79,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-14T13:30:00+00:00",
+    "close": 37.4018,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-15T13:30:00+00:00",
+    "close": 38.0943,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-16T13:30:00+00:00",
+    "close": 38.0579,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-17T13:30:00+00:00",
+    "close": 38.0736,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-18T13:30:00+00:00",
+    "close": 38.1975,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-21T13:30:00+00:00",
+    "close": 37.0709,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-22T13:30:00+00:00",
+    "close": 36.3492,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-23T13:30:00+00:00",
+    "close": 35.0285,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-24T13:30:00+00:00",
+    "close": 35.1701,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-25T13:30:00+00:00",
+    "close": 35.5139,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-28T13:30:00+00:00",
+    "close": 36.3564,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-29T13:30:00+00:00",
+    "close": 35.8915,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-09-30T13:30:00+00:00",
+    "close": 36.428,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-01T13:30:00+00:00",
+    "close": 37.1736,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-02T13:30:00+00:00",
+    "close": 36.8091,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-05T13:30:00+00:00",
+    "close": 37.5168,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-06T13:30:00+00:00",
+    "close": 36.9218,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-07T13:30:00+00:00",
+    "close": 38.079,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-08T13:30:00+00:00",
+    "close": 38.523,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-09T13:30:00+00:00",
+    "close": 38.5956,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-12T13:30:00+00:00",
+    "close": 39.4091,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-13T13:30:00+00:00",
+    "close": 39.4084,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-14T13:30:00+00:00",
+    "close": 39.4837,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-15T13:30:00+00:00",
+    "close": 39.6053,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-16T13:30:00+00:00",
+    "close": 39.8006,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-19T13:30:00+00:00",
+    "close": 39.3438,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-20T13:30:00+00:00",
+    "close": 40.0501,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-21T13:30:00+00:00",
+    "close": 40.1555,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-22T13:30:00+00:00",
+    "close": 41.2336,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-23T13:30:00+00:00",
+    "close": 40.9268,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-26T13:30:00+00:00",
+    "close": 40.2188,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-27T13:30:00+00:00",
+    "close": 39.7055,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-28T13:30:00+00:00",
+    "close": 38.4403,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-29T13:30:00+00:00",
+    "close": 39.1692,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-10-30T13:30:00+00:00",
+    "close": 38.3026,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-02T13:30:00+00:00",
+    "close": 38.8499,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-03T13:30:00+00:00",
+    "close": 40.1428,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-04T13:30:00+00:00",
+    "close": 39.633,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-05T13:30:00+00:00",
+    "close": 41.2572,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-06T13:30:00+00:00",
+    "close": 40.9092,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-09T13:30:00+00:00",
+    "close": 41.9957,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-10T13:30:00+00:00",
+    "close": 42.7105,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-11T13:30:00+00:00",
+    "close": 42.598,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-12T13:30:00+00:00",
+    "close": 41.8602,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-13T13:30:00+00:00",
+    "close": 42.9277,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-16T13:30:00+00:00",
+    "close": 43.7501,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-17T13:30:00+00:00",
+    "close": 44.5188,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-18T13:30:00+00:00",
+    "close": 45.8893,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-19T13:30:00+00:00",
+    "close": 46.2429,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-20T13:30:00+00:00",
+    "close": 45.8693,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-23T13:30:00+00:00",
+    "close": 47.4346,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-24T13:30:00+00:00",
+    "close": 49.6412,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-25T13:30:00+00:00",
+    "close": 49.2101,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-27T13:30:00+00:00",
+    "close": 49.3467,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  },
+  {
+    "time": "2020-11-30T13:30:00+00:00",
+    "close": 48.5069,
+    "volume": null,
+    "currency": "USD",
+    "source": "static_peer_synth"
+  }
+]

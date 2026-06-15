@@ -1,0 +1,34 @@
+{
+  "event_id": "UNH_2016Q4_earnings",
+  "ticker": "UNH",
+  "event_date": "2016-10-17",
+  "fiscal_period": "2016Q4",
+  "atom_count": 20,
+  "text_length": 28949,
+  "summary_length": 12000,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\UNH_2016Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\UNH_2016Q4_earnings\\sec_8k.txt",
+  "filing_date": "2016-10-18",
+  "accession_number": "0000731766-16-000085",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/731766/000073176616000085/a2016q3er8-k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000731766",
+  "window_days": 45,
+  "search_date_from": "2017-01-01",
+  "search_date_to": "2017-02-28",
+  "aligned_filing_date": "2016-10-18",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 6.9,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 5,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "event_id": "INTC_2021Q4_earnings",
+  "ticker": "INTC",
+  "event_date": "2021-10-22",
+  "fiscal_period": "2021Q4",
+  "atom_count": 2,
+  "text_length": 54238,
+  "summary_length": 2337,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\INTC_2021Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\INTC_2021Q4_earnings\\sec_8k.txt",
+  "filing_date": "2022-01-26",
+  "accession_number": "0000050863-22-000006",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086322000006/intc-20220126.htm",
+  "form": "8-K",
+  "search_date_from": "2022-01-01",
+  "search_date_to": "2022-02-28",
+  "aligned_filing_date": "2022-01-26",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.35,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

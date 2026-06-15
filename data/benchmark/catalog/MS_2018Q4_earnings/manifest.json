@@ -1,0 +1,34 @@
+{
+  "event_id": "MS_2018Q4_earnings",
+  "ticker": "MS",
+  "event_date": "2018-10-08",
+  "fiscal_period": "2018Q4",
+  "atom_count": 25,
+  "text_length": 69105,
+  "summary_length": 11996,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\MS_2018Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\MS_2018Q4_earnings\\sec_8k.txt",
+  "filing_date": "2018-10-16",
+  "accession_number": "0001157523-18-002043",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/895421/000115752318002043/a51882701.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000895421",
+  "window_days": 45,
+  "search_date_from": "2019-01-01",
+  "search_date_to": "2019-02-28",
+  "aligned_filing_date": "2018-10-16",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 5.68,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

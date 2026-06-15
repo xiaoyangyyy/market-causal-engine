@@ -1,0 +1,34 @@
+{
+  "event_id": "XOM_2022Q4_earnings",
+  "ticker": "XOM",
+  "event_date": "2022-10-19",
+  "fiscal_period": "2022Q4",
+  "atom_count": 1,
+  "text_length": 9570,
+  "summary_length": 2743,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\XOM_2022Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\XOM_2022Q4_earnings\\sec_8k.txt",
+  "filing_date": "2022-10-28",
+  "accession_number": "0000034088-22-000057",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/34088/000003408822000057/xom-20221028.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000034088",
+  "window_days": 45,
+  "search_date_from": "2023-01-01",
+  "search_date_to": "2023-02-28",
+  "aligned_filing_date": "2022-10-28",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 2.93,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

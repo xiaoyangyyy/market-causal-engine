@@ -13,11 +13,56 @@
   "scenario_path": "scenario.json",
   "atoms_path": "atoms.jsonl",
   "default_until": 390,
-  "lookahead_policy": {"strict": true, "forbid_post_hoc_sources": true},
+  "lookahead_policy": {
+    "strict": true,
+    "forbid_post_hoc_sources": true
+  },
   "observed_outcomes": {
     "direction": "up",
     "session_return_pct": 44,
     "calibration_reference_pressure": 0.46,
     "dominant_narrative": "retail coordination + high short interest + forced short covering"
+  },
+  "outcome_causal": {
+    "method": "synthetic_control",
+    "effect": 0.303176,
+    "observed_return": 0.308285,
+    "counterfactual_return": 0.005109,
+    "placebo_rank": 1.0,
+    "artifact": "data\\market\\case_studies\\gme_2021_01_squeeze\\outcome_causal.json"
+  },
+  "causal_claims": {
+    "claim_count": 7,
+    "rejected_count": 0,
+    "top_claim": {
+      "cause": "retail coordination",
+      "effect": "short-covering pressure",
+      "mechanism": "sentiment",
+      "severity": 0.72,
+      "evidence_span": "Reddit forum WallStreetBets sees viral discussion spike",
+      "source_id": "GME21JAN_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GME21JAN_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GME_2021_01__C000"
+    },
+    "artifact": "causal_claims.json"
+  },
+  "mechanism_calibration": {
+    "predicted_effect": -0.08274,
+    "outcome_effect": 0.303176,
+    "dominant_mechanism": "sentiment",
+    "direction_match": false,
+    "confidence": 0.356,
+    "artifact": "mechanism_calibration.json"
   }
 }

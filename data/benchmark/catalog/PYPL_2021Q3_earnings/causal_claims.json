@@ -1,0 +1,117 @@
+{
+  "event_id": "PYPL_2021Q3_earnings",
+  "ticker": "PYPL",
+  "event_date": "2021-07-14",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:47:11+00:00",
+  "accepted": [
+    {
+      "cause": "Full year revenue outlook reaffirmed",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "reaffirming full year revenue outlook",
+      "source_id": "PYPL2021Q3_002",
+      "published_at": 0,
+      "atom_id": "PYPL2021Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.8,
+      "span_score": 0.885,
+      "severity_align": 0.452,
+      "mechanism_hint": 1.0,
+      "claim_id": "PYPL2021Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "GAAP EPS decline",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "GAAP EPS of $1.00, down 23%",
+      "source_id": "PYPL2021Q3_007",
+      "published_at": 0,
+      "atom_id": "PYPL2021Q3_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.819,
+      "span_score": 0.908,
+      "severity_align": 0.479,
+      "mechanism_hint": 1.0,
+      "claim_id": "PYPL2021Q3_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Operating margin contraction",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "non- GAAP operating margin of 26.5%, declining 171 basis points",
+      "source_id": "PYPL2021Q3_007",
+      "published_at": 0,
+      "atom_id": "PYPL2021Q3_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.887,
+      "span_score": 0.985,
+      "severity_align": 0.579,
+      "mechanism_hint": 1.0,
+      "claim_id": "PYPL2021Q3_C002",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Non-GAAP EPS beat",
+      "effect": "Positive stock reaction",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "non-GAAP EPS of $1.15 compared to $1.07 in Q2'20",
+      "source_id": "PYPL2021Q3_001",
+      "published_at": 0,
+      "atom_id": "PYPL2021Q3_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

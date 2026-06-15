@@ -1,0 +1,69 @@
+{
+  "event_id": "DHR_2025Q1_earnings",
+  "ticker": "DHR",
+  "event_date": "2025-01-23",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:24:42+00:00",
+  "accepted": [
+    {
+      "cause": "Portfolio transformation",
+      "effect": "Higher long-term growth and expanded margins",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "The transformation in our portfolio over the last several years has created a focused life sciences and diagnostics innovator, poised for higher long-term growth, expanded margins and stronger cash flow",
+      "source_id": "DHR2025Q1_001",
+      "published_at": 0,
+      "atom_id": "DHR2025Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.852,
+      "span_score": 0.994,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "claim_id": "DHR2025Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Revenue growth",
+      "effect": "Increased top-line performance",
+      "mechanism": "fundamental",
+      "severity": 0.4,
+      "polarity": 1.0,
+      "evidence_span": "Revenues increased 2.0% year-over-year to $6.5 billion and non-GAAP core revenue increased 1.0%",
+      "source_id": "DHR2025Q1_003",
+      "published_at": 0,
+      "atom_id": "DHR2025Q1_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.921,
+      "span_score": 1.0,
+      "severity_align": 0.683,
+      "mechanism_hint": 1.0,
+      "claim_id": "DHR2025Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

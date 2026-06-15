@@ -1,0 +1,31 @@
+{
+  "event_id": "PANW_2018Q4_earnings",
+  "ticker": "PANW",
+  "event_date": "2018-10-24",
+  "fiscal_period": "2018Q4",
+  "atom_count": 13,
+  "text_length": 26960,
+  "summary_length": 11998,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\PANW_2018Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\PANW_2018Q4_earnings\\sec_8k.txt",
+  "filing_date": "2019-02-26",
+  "accession_number": "0001327567-19-000006",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1327567/000132756719000006/panw-8xkxq219earningsrelea.htm",
+  "form": "8-K",
+  "search_date_from": "2019-01-01",
+  "search_date_to": "2019-02-28",
+  "aligned_filing_date": "2019-02-26",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": 0.71,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 1,
+    "artifact": "causal_claims.json"
+  }
+}

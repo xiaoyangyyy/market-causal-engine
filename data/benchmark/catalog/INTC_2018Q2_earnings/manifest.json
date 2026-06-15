@@ -1,0 +1,34 @@
+{
+  "event_id": "INTC_2018Q2_earnings",
+  "ticker": "INTC",
+  "event_date": "2018-04-05",
+  "fiscal_period": "2018Q2",
+  "atom_count": 17,
+  "text_length": 34113,
+  "summary_length": 2063,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\INTC_2018Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\INTC_2018Q2_earnings\\sec_8k.txt",
+  "filing_date": "2018-04-26",
+  "accession_number": "0000050863-18-000012",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086318000012/q1-2018_form8xk.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000050863",
+  "window_days": 45,
+  "search_date_from": "2018-07-01",
+  "search_date_to": "2018-08-31",
+  "aligned_filing_date": "2018-04-26",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 3.25,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

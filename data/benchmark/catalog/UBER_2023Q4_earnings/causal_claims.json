@@ -1,0 +1,45 @@
+{
+  "event_id": "UBER_2023Q4_earnings",
+  "ticker": "UBER",
+  "event_date": "2023-10-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T04:13:53+00:00",
+  "accepted": [
+    {
+      "cause": "Combined Mobility and Delivery revenue growth",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Combined Mobility and Delivery revenue grew 21% YoY to $8.0 billion, or 20% on a constant currency basis.",
+      "source_id": "UBER2023Q4_004",
+      "published_at": 0,
+      "atom_id": "UBER2023Q4_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.809,
+      "span_score": 1.0,
+      "severity_align": 0.237,
+      "mechanism_hint": 1.0,
+      "claim_id": "UBER2023Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

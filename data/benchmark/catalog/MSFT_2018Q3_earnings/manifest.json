@@ -1,0 +1,34 @@
+{
+  "event_id": "MSFT_2018Q3_earnings",
+  "ticker": "MSFT",
+  "event_date": "2018-07-20",
+  "fiscal_period": "2018Q3",
+  "atom_count": 52,
+  "text_length": 33904,
+  "summary_length": 842,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\MSFT_2018Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\MSFT_2018Q3_earnings\\sec_8k.txt",
+  "filing_date": "2018-07-19",
+  "accession_number": "0001193125-18-221458",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312518221458/d501766d8k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000789019",
+  "window_days": 45,
+  "search_date_from": "2018-10-01",
+  "search_date_to": "2018-11-30",
+  "aligned_filing_date": "2018-07-19",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.68,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 5,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

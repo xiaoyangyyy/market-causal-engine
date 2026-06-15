@@ -1,0 +1,34 @@
+{
+  "event_id": "PYPL_2017Q2_earnings",
+  "ticker": "PYPL",
+  "event_date": "2017-04-17",
+  "fiscal_period": "2017Q2",
+  "atom_count": 14,
+  "text_length": 43346,
+  "summary_length": 8075,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\PYPL_2017Q2_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\PYPL_2017Q2_earnings\\sec_8k.txt",
+  "filing_date": "2017-04-26",
+  "accession_number": "0001633917-17-000073",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1633917/000163391717000073/pypl8-kq12017.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001633917",
+  "window_days": 45,
+  "search_date_from": "2017-07-01",
+  "search_date_to": "2017-08-31",
+  "aligned_filing_date": "2017-04-26",
+  "aligned_observed_outcomes": {
+    "direction": "neutral",
+    "after_hours_return_pct": -0.67,
+    "magnitude_bucket": "none"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 5,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

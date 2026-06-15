@@ -1,0 +1,36 @@
+{
+  "event_id": "SNPS_2018Q4_earnings",
+  "ticker": "SNPS",
+  "event_date": "2018-10-15",
+  "fiscal_period": "2018Q4",
+  "atom_count": 18,
+  "text_length": 44849,
+  "summary_length": 11999,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\SNPS_2018Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\SNPS_2018Q4_earnings\\sec_8k.txt",
+  "filing_date": "2019-02-20",
+  "accession_number": "0001193125-19-045457",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/883241/000119312519045457/d680223d8k.htm",
+  "form": "8-K",
+  "fetch_strategy": "fiscal_padded",
+  "cik": "0000883241",
+  "date_from": "2018-12-11",
+  "date_to": "2019-03-21",
+  "window_days": 7,
+  "search_date_from": "2019-01-01",
+  "search_date_to": "2019-02-28",
+  "aligned_filing_date": "2019-02-20",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 1.1,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

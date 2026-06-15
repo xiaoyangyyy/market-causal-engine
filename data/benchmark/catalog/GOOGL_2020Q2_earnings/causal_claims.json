@@ -1,0 +1,91 @@
+{
+  "event_id": "GOOGL_2020Q2_earnings",
+  "ticker": "GOOGL",
+  "event_date": "2020-04-07",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:14:35+00:00",
+  "accepted": [
+    {
+      "cause": "Total revenues $36,339",
+      "effect": "Total TAC $6,860",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "Total revenues $36,339 $41,159 Total TAC $6,860 $7,452",
+      "source_id": "GOOGL2020Q2_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GOOGL2020Q2_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.89,
+      "span_score": 1.0,
+      "severity_align": 0.561,
+      "mechanism_hint": 1.0,
+      "claim_id": "GOOGL2020Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.6,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.056,
+      "polarity": -1.0,
+      "evidence_span": "Revenues, Traffic Acquisition Costs (TAC) and number of",
+      "source_id": "GOOGL2020Q2_002",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "GOOGL2020Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GOOGL2020Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "revenues” included at the end of",
+      "source_id": "GOOGL2020Q2_006",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GOOGL2020Q2_006",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

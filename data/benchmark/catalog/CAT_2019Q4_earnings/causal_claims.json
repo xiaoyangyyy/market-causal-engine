@@ -1,0 +1,136 @@
+{
+  "event_id": "CAT_2019Q4_earnings",
+  "ticker": "CAT",
+  "event_date": "2019-10-24",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T06:09:09+00:00",
+  "accepted": [
+    {
+      "cause": "third-quarter 2019 sales and revenues of $12.8 billion, a 6% decrease compared with $13.5 billion in the third quarter of 2018",
+      "effect": "likely decline in stock price",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "third-quarter 2019 sales and revenues of $12.8 billion, a 6% decrease compared with $13.5 billion in the third quarter of 2018",
+      "source_id": "CAT2019Q4_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "CAT2019Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.855,
+      "span_score": 1.0,
+      "severity_align": 0.418,
+      "mechanism_hint": 1.0,
+      "claim_id": "CAT2019Q4_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Sales of Machinery, Energy & Transportation",
+      "effect": "Sales and revenues",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Sales of Machinery, Energy & Transportation $ 11,974 $ 12,763",
+      "source_id": "CAT2019Q4_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "CAT2019Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.834,
+      "span_score": 0.894,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "claim_id": "CAT2019Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.041,
+      "polarity": -1.0,
+      "evidence_span": "Revenues by Segment (Millions of",
+      "source_id": "CAT2019Q4_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "CAT2019Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "CAT2019Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "Supplemental Data for Results of Operations For the Three Months Ended September 30, 2019 (Unaudited) (Millions of dollars) Supplemental Consolidating Data Consolidated Machinery, Energy & Transportation 1 Financial Products Consolidating Adjustments Sales and revenues: Sales of",
+      "source_id": "CAT2019Q4_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "CAT2019Q4_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "Supplemental Data for Results of Operations For the Three Months Ended September 30, 2018 (Unaudited) (Millions of dollars) Supplemental Consolidating Data Consolidated Machinery, Energy & Transportation 1 Financial Products Consolidating Adjustments Sales and revenues: Sales of",
+      "source_id": "CAT2019Q4_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "CAT2019Q4_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

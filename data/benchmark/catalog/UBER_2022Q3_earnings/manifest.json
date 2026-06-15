@@ -1,0 +1,31 @@
+{
+  "event_id": "UBER_2022Q3_earnings",
+  "ticker": "UBER",
+  "event_date": "2022-07-18",
+  "fiscal_period": "2022Q3",
+  "atom_count": 5,
+  "text_length": 62134,
+  "summary_length": 11994,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\UBER_2022Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\UBER_2022Q3_earnings\\sec_8k.txt",
+  "filing_date": "2022-11-01",
+  "accession_number": "0001543151-22-000029",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1543151/000154315122000029/uber-20221101.htm",
+  "form": "8-K",
+  "search_date_from": "2022-10-01",
+  "search_date_to": "2022-11-30",
+  "aligned_filing_date": "2022-11-01",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 11.97,
+    "magnitude_bucket": "large"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 2,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

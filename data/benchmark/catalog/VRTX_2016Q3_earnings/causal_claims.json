@@ -1,0 +1,92 @@
+{
+  "event_id": "VRTX_2016Q3_earnings",
+  "ticker": "VRTX",
+  "event_date": "2016-07-12",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T11:39:20+00:00",
+  "accepted": [
+    {
+      "cause": "Total CF product revenues surged 175% year-over-year to $426 million",
+      "effect": "drives fundamental revenue estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "TOTAL CF product revenues, net $ 426 $ 155 175 %",
+      "source_id": "VRTX2016Q3_002",
+      "published_at": 0,
+      "atom_id": "VRTX2016Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.76,
+      "span_score": 0.884,
+      "severity_align": 0.271,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "VRTX2016Q3_C000"
+    },
+    {
+      "cause": "Reiteration of 2016 ORKAMBI guidance range of $1.0 to $1.1 billion",
+      "effect": "solidifies FY revenue visibility and reduces forecast uncertainty",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "Vertex reiterates 2016 guidance for ORKAMBI product revenues of $1.0 to $1.1 billion",
+      "source_id": "VRTX2016Q3_001",
+      "published_at": 0,
+      "atom_id": "VRTX2016Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.817,
+      "span_score": 0.91,
+      "severity_align": 0.471,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "VRTX2016Q3_C001"
+    },
+    {
+      "cause": "KALYDECO product revenues increased 16% to $180 million",
+      "effect": "supports sustained growth narrative for legacy CF franchise",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "KALYDECO product revenues, net $ 180 $ 155 16 %",
+      "source_id": "VRTX2016Q3_002",
+      "published_at": 0,
+      "atom_id": "VRTX2016Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.826,
+      "span_score": 0.884,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "VRTX2016Q3_C002"
+    }
+  ],
+  "rejected": [],
+  "claim_count": 3,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event"
+}

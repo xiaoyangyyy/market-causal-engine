@@ -1,0 +1,15 @@
+{
+  "tickers": ["NFLX", "SNAP", "META", "SHOP", "GME", "NKLA", "LKNCY"],
+  "sector_etfs": {
+    "NFLX": "XLC",
+    "SNAP": "XLC",
+    "META": "XLC",
+    "SHOP": "XLY",
+    "GME": "XRT",
+    "NKLA": "XLI",
+    "LKNCY": "XLY",
+    "DEFAULT": "SPY"
+  },
+  "edgar_forms": ["8-K", "10-Q", "10-K"],
+  "poll_lookback_days": 30
+}

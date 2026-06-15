@@ -1,0 +1,115 @@
+{
+  "event_id": "ADBE_2023Q4_earnings",
+  "ticker": "ADBE",
+  "event_date": "2023-10-23",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T04:11:24+00:00",
+  "accepted": [
+    {
+      "cause": "Robust Digital Experience subscription growth",
+      "effect": "Bullish outlook on enterprise software demand",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "Digital Experience subscription revenue was $1.10 billion, representing 12 percent year-over-year growth",
+      "source_id": "ADBE2023Q4_009",
+      "published_at": 0,
+      "atom_id": "ADBE2023Q4_009",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.852,
+      "span_score": 0.999,
+      "severity_align": 0.409,
+      "mechanism_hint": 1.0,
+      "claim_id": "ADBE2023Q4_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Digital Media segment revenue growth",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Digital Media segment revenue was $3.59 billion, which represents 11 percent year-over-year growth",
+      "source_id": "ADBE2023Q4_004",
+      "published_at": 0,
+      "atom_id": "ADBE2023Q4_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.809,
+      "span_score": 0.951,
+      "severity_align": 0.343,
+      "mechanism_hint": 1.0,
+      "claim_id": "ADBE2023Q4_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Strong Creative revenue performance",
+      "effect": "Increased investor confidence in flagship product line",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "Creative revenue grew to $2.91 billion, representing 11 percent year-over-year growth",
+      "source_id": "ADBE2023Q4_005",
+      "published_at": 0,
+      "atom_id": "ADBE2023Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.831,
+      "span_score": 0.99,
+      "severity_align": 0.347,
+      "mechanism_hint": 1.0,
+      "claim_id": "ADBE2023Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Significant net new ARR addition",
+      "effect": "Enhanced future revenue visibility and valuation support",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 0.8,
+      "evidence_span": "Net new Digital Media Annualized Recurring Revenue was $464 million, exiting the quarter with Digital Media ARR of $14.60 billion",
+      "source_id": "ADBE2023Q4_007",
+      "published_at": 0,
+      "atom_id": "ADBE2023Q4_007",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

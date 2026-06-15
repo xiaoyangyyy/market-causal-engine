@@ -1,0 +1,137 @@
+{
+  "event_id": "PEP_2025Q3_earnings",
+  "ticker": "PEP",
+  "event_date": "2025-07-08",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:32:56+00:00",
+  "accepted": [
+    {
+      "cause": "low-single-digit increase in organic revenue",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "A low-single-digit increase in organic revenue",
+      "source_id": "PEP2025Q3_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "PEP2025Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.864,
+      "span_score": 1.0,
+      "severity_align": 0.456,
+      "mechanism_hint": 1.0,
+      "claim_id": "PEP2025Q3_C002",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Revenue $ 22,726",
+      "effect": "Revenue $ 22,501",
+      "mechanism": "fundamental",
+      "severity": 0.1,
+      "polarity": -1.0,
+      "evidence_span": "Revenue $ 22,726 $ 22,501",
+      "source_id": "PEP2025Q3_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "PEP2025Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.96,
+      "span_score": 0.948,
+      "severity_align": 0.953,
+      "mechanism_hint": 1.0,
+      "claim_id": "PEP2025Q3_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.041,
+      "polarity": -1.0,
+      "evidence_span": "Earnings per share (EPS) $0.92 $",
+      "source_id": "PEP2025Q3_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "PEP2025Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "PEP2025Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "Outlook” for additional information regarding PepsiCo’s full-year",
+      "source_id": "PEP2025Q3_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "PEP2025Q3_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "EPS) compared to 2024 core EPS of $",
+      "source_id": "PEP2025Q3_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "PEP2025Q3_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 2,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

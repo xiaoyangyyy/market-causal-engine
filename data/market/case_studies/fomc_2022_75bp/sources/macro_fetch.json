@@ -1,7 +1,7 @@
 {
   "case_id": "fomc_2022_75bp",
-  "output_path": "E:\\ca\\data\\market\\case_studies\\fomc_2022_75bp\\sources\\fomc_statement.txt",
-  "text_length": 12045,
+  "output_path": "E:\\ca\\data\\market\\case_studies\\fomc_2022_75bp\\sources\\fomc_statement_fetched_test.txt",
+  "text_length": 63,
   "source": "fomc",
   "event_date": "2022-09-21"
 }

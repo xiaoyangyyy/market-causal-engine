@@ -63,7 +63,34 @@ class MarketCompiler:
     def __init__(self, rules: list[CompilerRule]):
         self.rules = rules
 
-    def compile_atom(self, atom: MarketAtom) -> CompiledEvent | None:
+    def compile_atom(self, atom: MarketAtom, *, domain: str = "earnings") -> CompiledEvent | None:
+        try:
+            from market_causal_engine.learned.compiler_scorer import select_best_rule
+            from market_causal_engine.learned.severity import estimate_severity
+
+            rule, score = select_best_rule(self.rules, atom, domain=domain)
+            if rule is None:
+                return None
+            payload = {
+                k: v
+                for k, v in atom.metadata.items()
+                if k not in ("severity", "source_class", "available_from", "uses_future_price")
+            }
+            payload["compiler_score"] = score
+            event_time = atom.effective_time()
+            severity = estimate_severity(atom, event_kind=rule.event_kind, domain=domain)
+            return CompiledEvent(
+                event_kind=rule.event_kind,
+                time=event_time,
+                severity=severity,
+                payload=payload,
+                source_cluster_id=atom.atom_id,
+                rule_id=rule.rule_id,
+            )
+        except Exception:  # noqa: BLE001
+            return self._compile_atom_legacy(atom)
+
+    def _compile_atom_legacy(self, atom: MarketAtom) -> CompiledEvent | None:
         text_lower = atom.text.lower()
         for rule in self.rules:
             tag_match = not rule.match_tags or any(t in atom.tags for t in rule.match_tags)

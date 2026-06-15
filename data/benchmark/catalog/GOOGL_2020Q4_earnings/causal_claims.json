@@ -1,0 +1,64 @@
+{
+  "event_id": "GOOGL_2020Q4_earnings",
+  "ticker": "GOOGL",
+  "event_date": "2020-10-23",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T10:51:48+00:00",
+  "accepted": [
+    {
+      "cause": "Broad based growth led by advertiser demand",
+      "effect": "Total revenues of $46.2 billion in the third quarter",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "Total revenues of $46.2 billion in the third quarter reflect broad based growth led by an increase in advertiser s",
+      "source_id": "GOOGL2020Q4_001",
+      "published_at": 0,
+      "atom_id": "GOOGL2020Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.78,
+      "span_score": 0.931,
+      "severity_align": 0.271,
+      "mechanism_hint": 1.0,
+      "claim_id": "GOOGL2020Q4_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.6,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "Deep investments in AI and technologies",
+      "effect": "Broad based revenue growth of $46.2 billion",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "deep investments we've made in AI and other technologies, to deliver services that people turn to for help",
+      "source_id": "GOOGL2020Q4_001",
+      "published_at": 0,
+      "atom_id": "GOOGL2020Q4_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 1,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:28+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,44 @@
+{
+  "event_id": "MSFT_2022Q2_earnings",
+  "ticker": "MSFT",
+  "event_date": "2022-04-06",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T03:28:40+00:00",
+  "accepted": [
+    {
+      "cause": "Customer shift to cloud offerings",
+      "effect": "Office Commercial products revenue decline",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Office Commercial products revenue declined 32% driven by continued customer shift to cloud offerings.",
+      "source_id": "MSFT2022Q2_001",
+      "published_at": 0,
+      "atom_id": "MSFT2022Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.968,
+      "span_score": 1.0,
+      "severity_align": 0.87,
+      "mechanism_hint": 1.0,
+      "claim_id": "MSFT2022Q2_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

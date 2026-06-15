@@ -1,0 +1,71 @@
+{
+  "event_id": "JNJ_2024Q2_earnings",
+  "ticker": "JNJ",
+  "event_date": "2024-04-22",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T08:00:23+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.054,
+      "polarity": -1.0,
+      "evidence_span": "Net Earnings from Continuing Operations, after tax $",
+      "source_id": "JNJ2024Q2_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "JNJ2024Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "JNJ2024Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.046,
+      "polarity": -1.0,
+      "evidence_span": "Gross Profit 14,872 69.6 14,207 68.0 4.7",
+      "source_id": "JNJ2024Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "JNJ2024Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "JNJ2024Q2_C002",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:30+00:00",
+  "claims_refined": true
+}

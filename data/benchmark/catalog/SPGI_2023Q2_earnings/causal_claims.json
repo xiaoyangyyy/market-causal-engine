@@ -1,0 +1,141 @@
+{
+  "event_id": "SPGI_2023Q2_earnings",
+  "ticker": "SPGI",
+  "event_date": "2023-04-21",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:29:05+00:00",
+  "accepted": [
+    {
+      "cause": "Adjusted operating profit margin for Market Intelligence, Ratings, Commodity Insights, Mobility, Indices, and Engineering Solutions",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Adjusted operating profit margin for Market Intelligence, Ratings, Commodity Insights, Mobility, Indices, and Engineering Solutions was 32%, 58%, 46%, 39%, 72%, and 16% for the three months ended March 31, 2023",
+      "source_id": "SPGI2023Q2_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SPGI2023Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.839,
+      "span_score": 1.0,
+      "severity_align": 0.357,
+      "mechanism_hint": 1.0,
+      "claim_id": "SPGI2023Q2_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Adjusted operating profit margin",
+      "effect": "stock price",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Adjusted operating profit margin for the Company was 46% for the three months ended March 31, 2023",
+      "source_id": "SPGI2023Q2_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SPGI2023Q2_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.821,
+      "span_score": 1.0,
+      "severity_align": 0.283,
+      "mechanism_hint": 1.0,
+      "claim_id": "SPGI2023Q2_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "gain on dispositions of $46 million",
+      "effect": "increased reported earnings",
+      "mechanism": "fundamental",
+      "severity": 0.3,
+      "polarity": -1.0,
+      "evidence_span": "2023 includes a gain on dispositions of $46 million",
+      "source_id": "SPGI2023Q2_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SPGI2023Q2_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.905,
+      "span_score": 0.886,
+      "severity_align": 0.871,
+      "mechanism_hint": 1.0,
+      "claim_id": "SPGI2023Q2_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.086,
+      "polarity": -1.0,
+      "evidence_span": "Adjusted operating profit margin is calculated as adjusted operating profit divided by adjusted revenue.",
+      "source_id": "SPGI2023Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "SPGI2023Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "SPGI2023Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "earnings release containing a discussion of the Registrant's results of operations and financial condition for the first quarter ended March 31, 2023",
+      "effect": "guidance for 2023",
+      "mechanism": "fundamental",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "issued an earnings release containing a discussion of the Registrant's results of operations and financial condition for the first quarter ended March 31, 2023, as well as certain guidance for 2023",
+      "source_id": "SPGI2023Q2_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "SPGI2023Q2_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,90 @@
+{
+  "event_id": "PANW_2023Q1_earnings",
+  "ticker": "PANW",
+  "event_date": "2023-01-09",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:18:46+00:00",
+  "accepted": [
+    {
+      "cause": "Total revenue for the fiscal second quarter 2023 grew",
+      "effect": "Stock price increase",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Total revenue for the fiscal second quarter 2023 grew",
+      "source_id": "PANW2023Q1_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "PANW2023Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.814,
+      "span_score": 1.0,
+      "severity_align": 0.254,
+      "mechanism_hint": 1.0,
+      "claim_id": "PANW2023Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "revenue growth",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.12,
+      "polarity": 1.0,
+      "evidence_span": "revenue and billings each grew",
+      "source_id": "PANW2023Q1_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "PANW2023Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.98,
+      "span_score": 1.0,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "PANW2023Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "Total revenue in the range of",
+      "source_id": "PANW2023Q1_007",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "PANW2023Q1_007",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

@@ -1,0 +1,70 @@
+{
+  "event_id": "VRTX_2019Q3_earnings",
+  "ticker": "VRTX",
+  "event_date": "2019-07-18",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T09:44:45+00:00",
+  "accepted": [
+    {
+      "cause": "Full-year 2019 total product revenue guidance raised to $3.6-$3.7 billion",
+      "effect": "Bullish sentiment driven by upwardly revised revenue outlook",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "Company increases full-year 2019 total product revenue guidance to $3.6 to $3.7 billion",
+      "source_id": "VRTX2019Q3_000",
+      "published_at": 0,
+      "atom_id": "VRTX2019Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.769,
+      "span_score": 0.912,
+      "severity_align": 0.271,
+      "mechanism_hint": 1.0,
+      "claim_id": "VRTX2019Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Product revenues increased 25% to $940 million",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Product revenues of $940 million , a 25% increase compared to 2018",
+      "source_id": "VRTX2019Q3_000",
+      "published_at": 0,
+      "atom_id": "VRTX2019Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.774,
+      "span_score": 0.897,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "claim_id": "VRTX2019Q3_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

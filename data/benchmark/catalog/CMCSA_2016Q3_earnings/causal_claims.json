@@ -1,0 +1,92 @@
+{
+  "event_id": "CMCSA_2016Q3_earnings",
+  "ticker": "CMCSA",
+  "event_date": "2016-07-05",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T11:34:32+00:00",
+  "accepted": [
+    {
+      "cause": "Earnings per Share Increased 15.0%",
+      "effect": "estimate revision upside on EPS beat",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "Earnings per Share Increased 15.0% to $",
+      "source_id": "CMCSA2016Q3_001",
+      "published_at": 0,
+      "atom_id": "CMCSA2016Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.79,
+      "span_score": 1.0,
+      "severity_align": 0.146,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "CMCSA2016Q3_C001"
+    },
+    {
+      "cause": "High-Speed Internet Customers Increased by 330,000",
+      "effect": "subscriber growth narrative reinforced",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "High-Speed Internet Customers Increased by 330,000, the Best Third Quarter Result in 7 Years",
+      "source_id": "CMCSA2016Q3_002",
+      "published_at": 0,
+      "atom_id": "CMCSA2016Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.787,
+      "span_score": 0.916,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "CMCSA2016Q3_C000"
+    },
+    {
+      "cause": "NBCUniversal Revenue Increased 28.3%",
+      "effect": "segment revenue growth drives valuation uplift",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "NBCUniversal Revenue Increased 28.3% and Op",
+      "source_id": "CMCSA2016Q3_002",
+      "published_at": 0,
+      "atom_id": "CMCSA2016Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.791,
+      "span_score": 0.881,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "CMCSA2016Q3_C002"
+    }
+  ],
+  "rejected": [],
+  "claim_count": 3,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event"
+}

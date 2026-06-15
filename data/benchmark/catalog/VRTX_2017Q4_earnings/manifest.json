@@ -1,0 +1,34 @@
+{
+  "event_id": "VRTX_2017Q4_earnings",
+  "ticker": "VRTX",
+  "event_date": "2017-10-20",
+  "fiscal_period": "2017Q4",
+  "atom_count": 20,
+  "text_length": 41648,
+  "summary_length": 11994,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\VRTX_2017Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\VRTX_2017Q4_earnings\\sec_8k.txt",
+  "filing_date": "2017-10-25",
+  "accession_number": "0000875320-17-000054",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/875320/000087532017000054/a8-kq32017.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0000875320",
+  "window_days": 45,
+  "search_date_from": "2018-01-01",
+  "search_date_to": "2018-02-28",
+  "aligned_filing_date": "2017-10-25",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -2.85,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 3,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

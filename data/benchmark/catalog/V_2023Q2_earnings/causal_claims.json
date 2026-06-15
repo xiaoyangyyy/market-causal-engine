@@ -1,0 +1,45 @@
+{
+  "event_id": "V_2023Q2_earnings",
+  "ticker": "V",
+  "event_date": "2023-04-19",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T07:28:28+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.104,
+      "polarity": -1.0,
+      "evidence_span": "(the \"Company\") issued an earnings release announcing financial results for the Company's fiscal second quarter ended March 31, 2023.",
+      "source_id": "V2023Q2_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "V2023Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 1.0,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "V2023Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 1,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_atom_fallback",
+  "refined_at": "2026-06-15T11:29:29+00:00",
+  "claims_refined": true
+}

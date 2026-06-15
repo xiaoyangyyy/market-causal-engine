@@ -1,0 +1,92 @@
+{
+  "event_id": "REGN_2016Q3_earnings",
+  "ticker": "REGN",
+  "event_date": "2016-07-11",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-15T11:38:34+00:00",
+  "accepted": [
+    {
+      "cause": "Non-GAAP EPS growth of 24% year-over-year",
+      "effect": "estimate revision upside driven by profitability expansion",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Non-GAAP net income per share - diluted (2) $ 2.82 $ 2.27 24 %",
+      "source_id": "REGN2016Q3_000",
+      "published_at": 0,
+      "atom_id": "REGN2016Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.776,
+      "span_score": 0.894,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "REGN2016Q3_C000"
+    },
+    {
+      "cause": "Net product sales grew 27% year-over-year",
+      "effect": "core business acceleration supports revenue forecast",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "net product sales $ 831 $ 655 27 %",
+      "source_id": "REGN2016Q3_000",
+      "published_at": 0,
+      "atom_id": "REGN2016Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.777,
+      "span_score": 0.874,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "REGN2016Q3_C002"
+    },
+    {
+      "cause": "Total revenues increased 21% year-over-year",
+      "effect": "top-line growth validates pricing power and demand",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Total revenues $ 1,213 $ 999 21 %",
+      "source_id": "REGN2016Q3_000",
+      "published_at": 0,
+      "atom_id": "REGN2016Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.788,
+      "span_score": 0.874,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "REGN2016Q3_C001"
+    }
+  ],
+  "rejected": [],
+  "claim_count": 3,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event"
+}

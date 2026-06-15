@@ -1,0 +1,70 @@
+{
+  "event_id": "MA_2019Q2_earnings",
+  "ticker": "MA",
+  "event_date": "2019-04-23",
+  "domain": "earnings",
+  "as_of": 120,
+  "use_llm": true,
+  "computed_at": "2026-06-12T03:15:49+00:00",
+  "accepted": [
+    {
+      "cause": "First-quarter net income of $1.9 billion",
+      "effect": "estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "First -quarter net income of $1.9 billion , or diluted earnings per share of $1.80",
+      "source_id": "MA2019Q2_000",
+      "published_at": 0,
+      "atom_id": "MA2019Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.793,
+      "span_score": 0.909,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "MA2019Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Net revenue increased 9% as reported",
+      "effect": "Revenue growth driving stock price up",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "Net revenue increased 9% as reported, or 13% on a currency-neutral basis",
+      "source_id": "MA2019Q2_002",
+      "published_at": 0,
+      "atom_id": "MA2019Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.813,
+      "span_score": 0.901,
+      "severity_align": 0.471,
+      "mechanism_hint": 1.0,
+      "claim_id": "MA2019Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event",
+  "refined_at": "2026-06-15T11:29:27+00:00",
+  "claims_refined": true
+}

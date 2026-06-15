@@ -1,0 +1,31 @@
+{
+  "event_id": "NFLX_2016Q3_earnings",
+  "ticker": "NFLX",
+  "event_date": "2016-07-19",
+  "fiscal_period": "2016Q3",
+  "atom_count": 1,
+  "text_length": 33660,
+  "summary_length": 5261,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\NFLX_2016Q3_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\NFLX_2016Q3_earnings\\sec_8k.txt",
+  "filing_date": "2016-10-17",
+  "accession_number": "0001065280-16-000076",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528016000076/form8-kxq316.htm",
+  "form": "8-K",
+  "search_date_from": "2016-10-01",
+  "search_date_to": "2016-11-30",
+  "aligned_filing_date": "2016-10-17",
+  "aligned_observed_outcomes": {
+    "direction": "down",
+    "after_hours_return_pct": -1.65,
+    "magnitude_bucket": "small"
+  },
+  "labels": {
+    "is_major_event": false
+  },
+  "causal_claims": {
+    "claim_count": 1,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "event_id": "CMCSA_2018Q4_earnings",
+  "ticker": "CMCSA",
+  "event_date": "2018-10-15",
+  "fiscal_period": "2018Q4",
+  "atom_count": 57,
+  "text_length": 50460,
+  "summary_length": 7273,
+  "atoms_path": "E:\\ca\\data\\benchmark\\catalog\\CMCSA_2018Q4_earnings\\atoms.jsonl",
+  "sec_text_path": "E:\\ca\\data\\benchmark\\catalog\\CMCSA_2018Q4_earnings\\sec_8k.txt",
+  "filing_date": "2018-10-25",
+  "accession_number": "0001104659-18-063795",
+  "document_url": "https://www.sec.gov/Archives/edgar/data/1166691/000110465918063795/a18-37140_18k.htm",
+  "form": "8-K",
+  "fetch_strategy": "event_date_45d",
+  "cik": "0001166691",
+  "window_days": 45,
+  "search_date_from": "2019-01-01",
+  "search_date_to": "2019-02-28",
+  "aligned_filing_date": "2018-10-25",
+  "aligned_observed_outcomes": {
+    "direction": "up",
+    "after_hours_return_pct": 5.04,
+    "magnitude_bucket": "medium"
+  },
+  "labels": {
+    "is_major_event": true
+  },
+  "causal_claims": {
+    "claim_count": 4,
+    "rejected_count": 0,
+    "artifact": "causal_claims.json"
+  }
+}
