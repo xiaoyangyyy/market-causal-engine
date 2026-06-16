@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T03:20:41+00:00",
+  "computed_at": "2026-06-15T14:58:06+00:00",
   "accepted": [
     {
-      "cause": "9% increase in average paid streaming memberships",
-      "effect": "Revenue growth in Q3",
+      "cause": "Q3 revenue growth driven by membership and ARM increases",
+      "effect": "revenue growth validates pricing power and membership expansion",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -27,39 +27,14 @@
       "span_score": 1.0,
       "severity_align": 0.264,
       "mechanism_hint": 1.0,
-      "claim_id": "NFLX2021Q4_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "APAC region contributed 2.2m paid net adds",
-      "effect": "Largest contributor to membership growth",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": 0.9,
-      "evidence_span": "For the second consecutive quarter, the APAC region was our largest contributor to membership growth with 2.2m paid net adds",
-      "source_id": "NFLX2021Q4_004",
-      "published_at": 0,
-      "atom_id": "NFLX2021Q4_004",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.833,
-      "span_score": 0.966,
-      "severity_align": 0.405,
-      "mechanism_hint": 1.0,
-      "claim_id": "NFLX2021Q4_C001",
-      "polarity_source": "llm",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "NFLX2021Q4_C000"
     },
     {
-      "cause": "Operating Income increased to $1,315",
-      "effect": "Improved profitability compared to prior period",
+      "cause": "Operating Income increased significantly compared to prior periods",
+      "effect": "operating leverage improves margin outlook and profitability estimates",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
@@ -77,10 +52,35 @@
       "span_score": 1.0,
       "severity_align": 0.256,
       "mechanism_hint": 1.0,
-      "claim_id": "NFLX2021Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "NFLX2021Q4_C002"
+    },
+    {
+      "cause": "APAC region contributed half of total paid net adds",
+      "effect": "regional diversification strengthens subscriber growth narrative",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 0.9,
+      "evidence_span": "For the second consecutive quarter, the APAC region was our largest contributor to membership growth with 2.2m paid net adds (half of total paid net adds)",
+      "source_id": "NFLX2021Q4_004",
+      "published_at": 0,
+      "atom_id": "NFLX2021Q4_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.844,
+      "span_score": 0.994,
+      "severity_align": 0.405,
+      "mechanism_hint": 1.0,
+      "polarity_source": "llm",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "NFLX2021Q4_C001"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

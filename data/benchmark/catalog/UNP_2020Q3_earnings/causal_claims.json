@@ -5,40 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:29:20+00:00",
+  "computed_at": "2026-06-15T14:12:50+00:00",
   "accepted": [
     {
-      "cause": "Bulk down 17 percent, Industrial down 23 percent, Premium down 33 percent",
-      "effect": "Reduced revenue outlook",
+      "cause": "Net Income decreased by 28 percent year-over-year",
+      "effect": "earnings miss reduces EPS consensus targets",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.9,
       "polarity": -1.0,
-      "evidence_span": "Summary of Second Quarter Freight Revenues · Bulk down 17 percent · Industrial down 23 percent · Premium down 33 percent",
-      "source_id": "UNP2020Q3_004",
-      "published_at": 0,
-      "atom_id": "UNP2020Q3_004",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.808,
-      "span_score": 0.936,
-      "severity_align": 0.371,
-      "mechanism_hint": 1.0,
-      "claim_id": "UNP2020Q3_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Net Income decreased 28 percent",
-      "effect": "Bearish sentiment on earnings performance",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": -1.0,
-      "evidence_span": "Net Income $ 1,132 $ 1,570 (28) %",
+      "evidence_span": "Net Income $ 1,132 $ 1,570 (28) % $ 2,606",
       "source_id": "UNP2020Q3_005",
       "published_at": 0,
       "atom_id": "UNP2020Q3_005",
@@ -48,22 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.825,
+      "confidence": 0.791,
       "span_score": 1.0,
-      "severity_align": 0.298,
+      "severity_align": 0.148,
       "mechanism_hint": 1.0,
-      "claim_id": "UNP2020Q3_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UNP2020Q3_C001"
     },
     {
       "cause": "Quarterly freight revenue declined 24 percent",
-      "effect": "Negative impact on stock price",
+      "effect": "revenue contraction lowers top-line growth estimates",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
-      "evidence_span": "Quarterly freight revenue declined 24 percent, compared to second quarter 2019, as core pricing gains were offset by lower volumes, negative business mix and decreased fuel surcharge revenue.",
+      "evidence_span": "Quarterly freight revenue declined 24 percent, compared to second quarter 2019",
       "source_id": "UNP2020Q3_003",
       "published_at": 0,
       "atom_id": "UNP2020Q3_003",
@@ -73,14 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.825,
-      "span_score": 1.0,
+      "confidence": 0.787,
+      "span_score": 0.925,
       "severity_align": 0.301,
       "mechanism_hint": 1.0,
-      "claim_id": "UNP2020Q3_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "UNP2020Q3_C000"
+    },
+    {
+      "cause": "Bulk, Industrial, and Premium freight segments all down significantly",
+      "effect": "broad volume decline signals weak demand outlook",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Bulk down 17 percent · Industrial down 23 percent · Premium down 33 percent",
+      "source_id": "UNP2020Q3_004",
+      "published_at": 0,
+      "atom_id": "UNP2020Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.803,
+      "span_score": 0.904,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "UNP2020Q3_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

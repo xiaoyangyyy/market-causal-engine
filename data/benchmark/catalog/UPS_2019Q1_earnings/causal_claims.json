@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:10:32+00:00",
+  "computed_at": "2026-06-16T11:30:29+00:00",
   "accepted": [
     {
       "cause": "Adjusted 4Q EPS up nearly 17% to $1.94",
-      "effect": "estimate revision upside",
+      "effect": "estimate revision upside driven by earnings beat",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.9,
       "polarity": -1.0,
-      "evidence_span": "Adjusted 4Q EPS up nearly 17% to $1.94",
+      "evidence_span": "Adjusted 4Q EPS up nearly 17% to $1.94 • Pricing and Mix Strategies Lift 4Q Revenue Quality",
       "source_id": "UPS2019Q1_001",
       "published_at": 0,
       "atom_id": "UPS2019Q1_001",
@@ -23,48 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.769,
-      "span_score": 0.928,
-      "severity_align": 0.233,
+      "confidence": 0.798,
+      "span_score": 1.0,
+      "severity_align": 0.183,
       "mechanism_hint": 1.0,
-      "claim_id": "UPS2019Q1_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UPS2019Q1_C000"
     },
     {
-      "cause": "Pricing and Mix Strategies Lift 4Q Revenue Quality",
-      "effect": "Improved profitability outlook",
+      "cause": "Domestic segment revenue increased $742 million or 6.3% with growth across all products",
+      "effect": "segment diversification reduces concentration risk in earnings model",
       "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": -1.0,
-      "evidence_span": "Pricing and Mix Strategies Lift 4Q Revenue Quality",
-      "source_id": "UPS2019Q1_001",
-      "published_at": 0,
-      "atom_id": "UPS2019Q1_001",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.807,
-      "span_score": 0.952,
-      "severity_align": 0.333,
-      "mechanism_hint": 1.0,
-      "claim_id": "UPS2019Q1_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Domestic segment revenue increased 6.3% over 4Q 2017",
-      "effect": "Strong segment performance",
-      "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.6,
       "polarity": 1.0,
-      "evidence_span": "Revenue increased $742 million or 6.3% over 4Q 2017, with growth across all products",
+      "evidence_span": "Domestic segment in 4Q 2018: • Revenue increased $742 million or 6.3% over 4Q 2017, with growth across all products.",
       "source_id": "UPS2019Q1_007",
       "published_at": 0,
       "atom_id": "UPS2019Q1_007",
@@ -74,47 +48,40 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.846,
-      "span_score": 0.995,
-      "severity_align": 0.394,
+      "confidence": 0.867,
+      "span_score": 1.0,
+      "severity_align": 0.494,
       "mechanism_hint": 1.0,
-      "claim_id": "UPS2019Q1_C003",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Revenue increased 4.6% in 4Q 2018",
-      "effect": "Top-line growth validation",
-      "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": 1.0,
-      "evidence_span": "Revenue increased 4.6%",
-      "source_id": "UPS2019Q1_004",
-      "published_at": 0,
-      "atom_id": "UPS2019Q1_004",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.824,
-      "span_score": 0.926,
-      "severity_align": 0.457,
-      "mechanism_hint": 1.0,
-      "claim_id": "UPS2019Q1_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UPS2019Q1_C001"
     }
   ],
-  "rejected": [],
-  "claim_count": 4,
-  "rejected_count": 0,
+  "rejected": [
+    {
+      "cause": "Revenue increased 4.6% and currency-neutral revenue was up 5.2%",
+      "effect": "top-line growth supports valuation multiple expansion",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 0.8,
+      "evidence_span": "For the total company in 4Q 2018: • Revenue increased 4.6% • currency-neutral revenue was up 5.2%.",
+      "source_id": "UPS2019Q1_005",
+      "published_at": 0,
+      "atom_id": "UPS2019Q1_005",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

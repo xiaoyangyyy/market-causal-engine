@@ -5,11 +5,36 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:53:11+00:00",
+  "computed_at": "2026-06-16T11:44:58+00:00",
   "accepted": [
     {
-      "cause": "revenue was $ 13.28 billion",
-      "effect": "increase of",
+      "cause": "revenue increase",
+      "effect": "estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "revenues were $228 million, an increase of",
+      "source_id": "CRM2019Q2_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "CRM2019Q2_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.813,
+      "span_score": 1.0,
+      "severity_align": 0.248,
+      "mechanism_hint": 1.0,
+      "claim_id": "CRM2019Q2_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "revenue increase",
+      "effect": "estimate revision",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
@@ -23,13 +48,13 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.812,
+      "confidence": 0.813,
       "span_score": 1.0,
       "severity_align": 0.248,
       "mechanism_hint": 1.0,
       "claim_id": "CRM2019Q2_C005",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
@@ -48,7 +73,7 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
+      "confidence": 0.9,
       "span_score": 1.0,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
@@ -74,7 +99,7 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
+      "confidence": 0.9,
       "span_score": 1.0,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
@@ -100,37 +125,11 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
+      "confidence": 0.9,
       "span_score": 1.0,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
       "claim_id": "CRM2019Q2_C002",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "negative fundamental signal",
-      "effect": "valuation de-rating",
-      "mechanism": "fundamental",
-      "severity": 0.048,
-      "polarity": -1.0,
-      "evidence_span": "revenues were $3.38 billion, an increase of",
-      "source_id": "CRM2019Q2_003",
-      "published_at": 0,
-      "proposer": "heuristic",
-      "atom_id": "CRM2019Q2_003",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "confidence": 1.0,
-      "span_score": 1.0,
-      "severity_align": 1.0,
-      "mechanism_hint": 1.0,
-      "claim_id": "CRM2019Q2_C003",
       "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
@@ -142,7 +141,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

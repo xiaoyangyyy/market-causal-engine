@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:14:53+00:00",
+  "computed_at": "2026-06-16T11:50:03+00:00",
   "accepted": [
     {
-      "cause": "Revenue decreased 5% due to slowing demand",
-      "effect": "valuation de-rating",
+      "cause": "Revenue decreased 5% from the same quarter a year ago",
+      "effect": "revenue decline signals demand slowdown across markets",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
@@ -27,19 +27,18 @@
       "span_score": 0.939,
       "severity_align": 0.371,
       "mechanism_hint": 1.0,
-      "claim_id": "TXN2019Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "TXN2019Q2_C000"
     },
     {
-      "cause": "Embedded Processing revenue declined 14%",
-      "effect": "Weakness in core business segments driving negative outlook",
+      "cause": "Embedded Processing revenue declined 14% year-over-year",
+      "effect": "core business segment contraction lowers growth expectations",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.75,
       "polarity": -1.0,
-      "evidence_span": "Embedded Processing declined 14% from the same quarter a year ago.",
+      "evidence_span": "In our core businesses, Analog revenue declined 2% and Embedded Processing declined 14% from the same quarter a year ago.",
       "source_id": "TXN2019Q2_002",
       "published_at": 0,
       "atom_id": "TXN2019Q2_002",
@@ -49,47 +48,40 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.826,
-      "span_score": 0.956,
-      "severity_align": 0.399,
+      "confidence": 0.835,
+      "span_score": 1.0,
+      "severity_align": 0.349,
       "mechanism_hint": 1.0,
-      "claim_id": "TXN2019Q2_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
+      "polarity_aligned": true,
+      "claim_id": "TXN2019Q2_C001"
+    }
+  ],
+  "rejected": [
     {
-      "cause": "Q2 revenue guidance range of $3.46B to $3.74B",
-      "effect": "Uncertainty in future revenue performance affecting valuation",
+      "cause": "Q2 outlook sets revenue range of $3.46B to $3.74B",
+      "effect": "forward guidance establishes revenue floor for analyst revisions",
       "mechanism": "fundamental",
-      "severity": 0.5,
-      "polarity": -1.0,
-      "evidence_span": "TI’s second-quarter outlook is for revenue in the range of $3.46 billion to $3.74 billion",
+      "severity": 0.6,
+      "polarity": 0.5,
+      "evidence_span": "TI's second-quarter outlook is for revenue in the range of $3.46 billion to $3.74 billion, and earnings per share between $1.12 and $1.32",
       "source_id": "TXN2019Q2_003",
       "published_at": 0,
       "atom_id": "TXN2019Q2_003",
       "validation": {
-        "passed": true,
-        "errors": [],
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
         "warnings": []
       },
-      "proposer": "llm_event",
-      "confidence": 0.878,
-      "span_score": 0.938,
-      "severity_align": 0.648,
-      "mechanism_hint": 1.0,
-      "claim_id": "TXN2019Q2_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "proposer": "llm_event"
     }
   ],
-  "rejected": [],
-  "claim_count": 3,
-  "rejected_count": 0,
+  "claim_count": 2,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

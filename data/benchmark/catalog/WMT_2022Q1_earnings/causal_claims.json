@@ -5,67 +5,158 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:53:32+00:00",
+  "computed_at": "2026-06-15T15:01:12+00:00",
   "accepted": [
     {
-      "cause": "Operating income decline",
-      "effect": "valuation de-rating",
+      "cause": "net income (loss) attributable to Walmart",
+      "effect": "earnings estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "net income (loss) attributable to Walmart $ 3,562",
+      "source_id": "WMT2022Q1_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "WMT2022Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.814,
+      "span_score": 1.0,
+      "severity_align": 0.253,
+      "mechanism_hint": 1.0,
+      "claim_id": "WMT2022Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Operating income decline",
+      "effect": "margin shift",
+      "mechanism": "fundamental",
+      "severity": 0.8,
       "polarity": -1.0,
       "evidence_span": "Operating income: As reported $ 832 -13.7 %",
       "source_id": "WMT2022Q1_005",
       "published_at": 0,
+      "proposer": "llm",
       "atom_id": "WMT2022Q1_005",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "proposer": "llm_event",
-      "confidence": 0.825,
+      "confidence": 0.813,
       "span_score": 1.0,
-      "severity_align": 0.299,
+      "severity_align": 0.249,
       "mechanism_hint": 1.0,
-      "claim_id": "WMT2022Q1_C000",
-      "effect_rewritten": true,
+      "claim_id": "WMT2022Q1_C003",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
-      "cause": "Adjusted operating income decrease",
-      "effect": "valuation de-rating",
+      "cause": "Gross profit rate increase",
+      "effect": "Margin shift",
       "mechanism": "fundamental",
-      "severity": 0.65,
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Gross profit rate2 23.8% +10",
+      "source_id": "WMT2022Q1_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "WMT2022Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.811,
+      "span_score": 1.0,
+      "severity_align": 0.239,
+      "mechanism_hint": 1.0,
+      "claim_id": "WMT2022Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "operating income decline",
+      "effect": "margin shift",
+      "mechanism": "fundamental",
+      "severity": 0.6,
       "polarity": -1.0,
       "evidence_span": "operating income1 $0.9 -2.5% Adj.",
       "source_id": "WMT2022Q1_003",
       "published_at": 0,
+      "proposer": "llm",
       "atom_id": "WMT2022Q1_003",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "proposer": "llm_event",
-      "confidence": 0.848,
+      "confidence": 0.855,
       "span_score": 1.0,
-      "severity_align": 0.392,
+      "severity_align": 0.442,
       "mechanism_hint": 1.0,
-      "claim_id": "WMT2022Q1_C001",
-      "effect_rewritten": true,
+      "claim_id": "WMT2022Q1_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true
     }
   ],
-  "rejected": [],
-  "claim_count": 2,
-  "rejected_count": 0,
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "WMT2022Q1_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "WMT2022Q1_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "WMT2022Q1_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "WMT2022Q1_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 2,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

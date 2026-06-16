@@ -165,7 +165,8 @@ def test_replay_event_routes_via_learned_stack(catalog_event):
     extract_claims_for_catalog_event(catalog_event, write=True)
     result = replay_event(catalog_event, until=60)
     assert result["replay_mode"] in {"catalog_feed", "scenario"}
-    if result["replay_mode"] == "scenario":
+    assert "outcome_causal" in result
+    if result["replay_mode"] == "scenario" and result.get("router_preferred") == "scenario":
         assert result.get("catalog_fallback") is True
 
 

@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T11:38:34+00:00",
+  "computed_at": "2026-06-16T08:54:31+00:00",
   "accepted": [
     {
-      "cause": "Non-GAAP EPS growth of 24% year-over-year",
-      "effect": "estimate revision upside driven by profitability expansion",
+      "cause": "Non-GAAP net income per share increased 24% year-over-year",
+      "effect": "Non-GAAP EPS beat drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -33,8 +33,8 @@
       "claim_id": "REGN2016Q3_C000"
     },
     {
-      "cause": "Net product sales grew 27% year-over-year",
-      "effect": "core business acceleration supports revenue forecast",
+      "cause": "Net product sales increased 27% year-over-year",
+      "effect": "Core product sales acceleration reinforces growth narrative",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
@@ -59,7 +59,7 @@
     },
     {
       "cause": "Total revenues increased 21% year-over-year",
-      "effect": "top-line growth validates pricing power and demand",
+      "effect": "Revenue growth supports top-line valuation expansion",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": -1.0,

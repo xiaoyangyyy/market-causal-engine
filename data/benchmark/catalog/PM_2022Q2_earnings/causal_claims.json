@@ -5,40 +5,40 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:56:22+00:00",
+  "computed_at": "2026-06-15T15:13:30+00:00",
   "accepted": [
     {
-      "cause": "Combustible business exceeded category share objective with positive shipment volume",
-      "effect": "Organic net revenue growth and robust top-line performance",
+      "cause": "Adjusted diluted EPS of $1.56 driven by IQOS growth and pricing",
+      "effect": "EPS beat reinforces earnings quality and valuation support",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
-      "evidence_span": "This was complemented by the robust performance of our combustible business, which exceeded our objective of stable category share in the quarter and delivered positive shipment volume and organic net revenue growth.",
-      "source_id": "PM2022Q2_004",
+      "evidence_span": "the company’s strong net revenue growth, coupled with the positive effects from the increasing size of IQOS , higher pricing, and cost efficiencies, drove adjusted diluted EPS of $1.56",
+      "source_id": "PM2022Q2_008",
       "published_at": 0,
-      "atom_id": "PM2022Q2_004",
+      "atom_id": "PM2022Q2_008",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.83,
-      "span_score": 1.0,
+      "confidence": 0.819,
+      "span_score": 0.981,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "PM2022Q2_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "PM2022Q2_C000"
     },
     {
-      "cause": "Management expects robust top- and bottom-line growth",
-      "effect": "Positive outlook for future earnings and stock direction",
+      "cause": "Combustible business exceeded stable category share objective with positive volume growth",
+      "effect": "Core business stability validates top-line growth narrative",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": 1.0,
-      "evidence_span": "We expect to deliver robust top- and bottom-line growth this",
+      "evidence_span": "robust performance of our combustible business, which exceeded our objective of stable category share in the quarter and delivered positive shipment volume and organic net revenue growth",
       "source_id": "PM2022Q2_004",
       "published_at": 0,
       "atom_id": "PM2022Q2_004",
@@ -48,72 +48,40 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.796,
-      "span_score": 0.893,
+      "confidence": 0.842,
+      "span_score": 0.983,
       "severity_align": 0.421,
       "mechanism_hint": 1.0,
-      "claim_id": "PM2022Q2_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
+      "polarity_aligned": true,
+      "claim_id": "PM2022Q2_C001"
+    }
+  ],
+  "rejected": [
     {
-      "cause": "Revenue per unit increased",
-      "effect": "Improved pricing power and margin potential",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": 1.0,
-      "evidence_span": "revenue per unit increased",
-      "source_id": "PM2022Q2_007",
-      "published_at": 0,
-      "atom_id": "PM2022Q2_007",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.835,
-      "span_score": 1.0,
-      "severity_align": 0.338,
-      "mechanism_hint": 1.0,
-      "claim_id": "PM2022Q2_C003",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Net revenues increased by 9.0% on an organic basis",
-      "effect": "Strong financial performance driving investor confidence",
+      "cause": "Organic net revenues increased by 9.0% in Q1",
+      "effect": "Revenue acceleration supports FY growth target confidence",
       "mechanism": "fundamental",
       "severity": 0.8,
-      "polarity": 1.0,
-      "evidence_span": "Net revenues increased by 9.0% on an organic basis, reflecting total volume g",
+      "polarity": 0.95,
+      "evidence_span": "Net revenues increased by 9.0% on an organic basis, reflecting total volume growth and pricing actions",
       "source_id": "PM2022Q2_005",
       "published_at": 0,
       "atom_id": "PM2022Q2_005",
       "validation": {
-        "passed": true,
-        "errors": [],
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
         "warnings": []
       },
-      "proposer": "llm_event",
-      "confidence": 0.79,
-      "span_score": 0.905,
-      "severity_align": 0.371,
-      "mechanism_hint": 1.0,
-      "claim_id": "PM2022Q2_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "proposer": "llm_event"
     }
   ],
-  "rejected": [],
-  "claim_count": 4,
-  "rejected_count": 0,
+  "claim_count": 2,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

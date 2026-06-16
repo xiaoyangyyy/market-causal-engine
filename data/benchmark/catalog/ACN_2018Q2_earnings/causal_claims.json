@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T08:26:00+00:00",
+  "computed_at": "2026-06-16T10:47:32+00:00",
   "accepted": [
     {
-      "cause": "Raised adjusted EPS outlook",
-      "effect": "Increased investor confidence in future profitability",
+      "cause": "Adjusted EPS outlook raised to $6.61-$6.70",
+      "effect": "estimate revision upside for full-year earnings",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -23,18 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.8,
+      "confidence": 0.802,
       "span_score": 1.0,
       "severity_align": 0.202,
       "mechanism_hint": 1.0,
-      "claim_id": "ACN2018Q2_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ACN2018Q2_C000"
     },
     {
-      "cause": "Adjusted EPS growth of 19 percent",
-      "effect": "Positive perception of shareholder value creation",
+      "cause": "Adjusted EPS growth of 19 percent delivered",
+      "effect": "growth narrative reinforcement via earnings expansion",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": 1.0,
@@ -48,39 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.824,
+      "confidence": 0.823,
       "span_score": 0.972,
       "severity_align": 0.359,
       "mechanism_hint": 1.0,
-      "claim_id": "ACN2018Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ACN2018Q2_C001"
     },
     {
-      "cause": "Revenue increase to $9.6 billion",
-      "effect": "Stronger top-line performance expectations",
+      "cause": "Diluted EPS of $1.37 includes a $0.21 charge",
+      "effect": "margin compression concern due to one-time charge",
       "mechanism": "fundamental",
-      "severity": 0.65,
+      "severity": 0.4,
       "polarity": -1.0,
-      "evidence_span": "dollars and 10% in local currency to $9.6 billion -- -- EPS of $1.37 include a $0.21 charge related to U.S.",
-      "source_id": "ACN2018Q2_000",
+      "evidence_span": "Diluted earnings per share were $1.37, including a charge of $",
+      "source_id": "ACN2018Q2_004",
       "published_at": 0,
-      "atom_id": "ACN2018Q2_000",
+      "atom_id": "ACN2018Q2_004",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.859,
+      "confidence": 0.903,
       "span_score": 1.0,
-      "severity_align": 0.438,
+      "severity_align": 0.66,
       "mechanism_hint": 1.0,
-      "claim_id": "ACN2018Q2_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ACN2018Q2_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

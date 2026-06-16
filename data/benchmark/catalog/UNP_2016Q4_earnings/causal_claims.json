@@ -5,13 +5,38 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T12:41:23+00:00",
+  "computed_at": "2026-06-16T09:19:48+00:00",
   "accepted": [
     {
-      "cause": "Quarterly freight revenue decreased 7 percent due to volume declines and lower fuel surcharge revenue",
-      "effect": "Bearish sentiment on revenue growth",
+      "cause": "Net income dropped 13% year-over-year to $1.131 billion",
+      "effect": "Profitability miss reduces valuation multiples",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Net Income $ 1,131 $ 1,300 (13) % $ 3,089",
+      "source_id": "UNP2016Q4_006",
+      "published_at": 0,
+      "atom_id": "UNP2016Q4_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.813,
+      "span_score": 1.0,
+      "severity_align": 0.248,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "UNP2016Q4_C001"
+    },
+    {
+      "cause": "Quarterly freight revenue decreased 7 percent due to volume declines and lower fuel surcharge revenue",
+      "effect": "Revenue contraction lowers top-line growth expectations",
+      "mechanism": "fundamental",
+      "severity": 0.75,
       "polarity": -1.0,
       "evidence_span": "Quarterly freight revenue decreased 7 percent compared to the third quarter 2015, as volume declines and lower fuel surcharge revenue more than offset core pricing gains",
       "source_id": "UNP2016Q4_005",
@@ -23,22 +48,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.86,
+      "confidence": 0.843,
       "span_score": 1.0,
-      "severity_align": 0.438,
+      "severity_align": 0.388,
       "mechanism_hint": 1.0,
-      "claim_id": "UNP2016Q4_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UNP2016Q4_C000"
     }
   ],
   "rejected": [
     {
       "cause": "Diluted earnings per share of $1.36 declined 9 percent",
-      "effect": "Negative market reaction to earnings miss",
+      "effect": "EPS decline triggers downward estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.85,
       "polarity": -0.8,
       "evidence_span": "Diluted earnings per share of $1.36 declined 9 percent",
       "source_id": "UNP2016Q4_000",
@@ -54,11 +79,9 @@
       "proposer": "llm_event"
     }
   ],
-  "claim_count": 1,
+  "claim_count": 2,
   "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

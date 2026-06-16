@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T08:04:01+00:00",
+  "computed_at": "2026-06-16T10:06:44+00:00",
   "accepted": [
     {
-      "cause": "Sales growth",
-      "effect": "estimate revision upside",
+      "cause": "Q3 sales increased 10.3% to $19.7 billion",
+      "effect": "revenue growth drives top-line estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.85,
       "polarity": 1.0,
       "evidence_span": "2017 Third-Quarter Sales of $19.7 Billion Increased 10.3% versus 2016",
       "source_id": "JNJ2017Q4_000",
@@ -23,21 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.8,
+      "confidence": 0.778,
       "span_score": 0.899,
-      "severity_align": 0.421,
+      "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "JNJ2017Q4_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "JNJ2017Q4_C000"
     },
     {
-      "cause": "Adjusted EPS increase",
-      "effect": "fundamental upside",
+      "cause": "Adjusted EPS of $1.90 reported",
+      "effect": "adjusted earnings beat supports valuation multiple",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.75,
       "polarity": 1.0,
       "evidence_span": "2017 Adjusted Third-Quarter EPS of $1.90 increase",
       "source_id": "JNJ2017Q4_000",
@@ -49,15 +48,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.767,
+      "confidence": 0.793,
       "span_score": 0.885,
-      "severity_align": 0.321,
+      "severity_align": 0.421,
       "mechanism_hint": 1.0,
-      "claim_id": "JNJ2017Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "JNJ2017Q4_C001"
     }
   ],
   "rejected": [],
@@ -65,7 +63,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

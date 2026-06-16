@@ -92,7 +92,14 @@ def events_replay(body: ReplayRequest) -> dict[str, Any]:
             REGISTRY.inc("replay_errors_total")
             raise HTTPException(status_code=500, detail=str(exc)) from exc
 
+    from market_causal_engine.case_study import load_case_manifest
+    from market_causal_engine.counterfactuals.outcome_layer import attach_outcome_causal, build_event_card
+
+    manifest = load_case_manifest(body.event_id)
+    attach_outcome_causal(result, {"event_id": body.event_id, **manifest}, run_placebo=False, car_ablation=True)
+    event_card = build_event_card(result, event={"event_id": body.event_id, **manifest})
     snap = _storage.latest_snapshot_id() or "none"
+    result["event_card"] = event_card
     result["provenance"] = build_provenance(
         run_id=new_run_id("replay"),
         data_snapshot_id=snap,
@@ -114,8 +121,12 @@ def get_event(event_id: str) -> dict[str, Any]:
     result = run_case_study(event_id, as_of=120)
     meta = cases[event_id]
     snap = _storage.latest_snapshot_id() or "none"
+    from market_causal_engine.counterfactuals.outcome_layer import attach_outcome_causal, build_event_card
+
+    attach_outcome_causal(result, {"event_id": event_id, **meta}, run_placebo=False, car_ablation=True)
+    card = build_event_card(result, event={"event_id": event_id, **meta})
     return {
-        "event_id": event_id,
+        **card,
         "summary": {
             "ticker": meta.get("ticker"),
             "event_type": meta.get("event_type"),
@@ -150,6 +161,7 @@ def get_event_trace(event_id: str, as_of: int = 120) -> dict[str, Any]:
         "trace": trace,
         "trace_hash": trace_determinism_hash(trace),
         "lookahead_audit": result.get("lookahead_audit"),
+        "pit_audit": result.get("pit_audit"),
         "dominant_path": result.get("dominant_path", []),
     }
 
@@ -172,6 +184,25 @@ def asset_event_risk(ticker: str) -> dict[str, Any]:
             }
         )
     return {"ticker": ticker_u, "historical_events": exposures, "count": len(exposures)}
+
+
+@app.get("/demo/killer/{case_id}")
+def demo_killer(case_id: str, as_of: int = 120) -> dict[str, Any]:
+    """Killer demo payload: timeline, path, counterfactual, neighbors, caveats."""
+    from market_causal_engine.case_study import list_case_studies
+    from market_causal_engine.demo.killer_demo import build_killer_demo
+
+    cases = {c["case_id"] for c in list_case_studies()}
+    if case_id not in cases:
+        raise HTTPException(status_code=404, detail=f"Unknown demo case: {case_id}")
+    return build_killer_demo(case_id, as_of=as_of)
+
+
+@app.get("/demo/killer")
+def demo_killer_default(as_of: int = 120) -> dict[str, Any]:
+    from market_causal_engine.demo.killer_demo import DEFAULT_DEMO_CASE, build_killer_demo
+
+    return build_killer_demo(DEFAULT_DEMO_CASE, as_of=as_of)
 
 
 @app.get("/cases/similar")

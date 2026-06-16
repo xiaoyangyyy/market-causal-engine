@@ -5,13 +5,38 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T03:18:03+00:00",
+  "computed_at": "2026-06-15T14:55:46+00:00",
   "accepted": [
     {
-      "cause": "Adjusted diluted EPS growth of 11.3%",
-      "effect": "Positive earnings surprise expectation",
+      "cause": "Full year adjusted diluted EPS projected to increase 13% to 14%",
+      "effect": "Forward guidance implies sustained earnings expansion for FY2021",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "projected currency-neutral increase in adjusted diluted EPS of around 13% to 14% versus adjusted diluted EPS of $5.17 in 2020",
+      "source_id": "PM2021Q4_010",
+      "published_at": 0,
+      "atom_id": "PM2021Q4_010",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.856,
+      "span_score": 0.985,
+      "severity_align": 0.287,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "PM2021Q4_C002"
+    },
+    {
+      "cause": "Adjusted diluted EPS growth of 11.3% in Q3",
+      "effect": "EPS growth validates earnings quality and supports valuation multiples",
+      "mechanism": "fundamental",
+      "severity": 0.75,
       "polarity": -1.0,
       "evidence_span": "Adjusted diluted EPS of $1.58, up by 11.3%",
       "source_id": "PM2021Q4_003",
@@ -23,43 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.796,
+      "confidence": 0.809,
       "span_score": 0.962,
-      "severity_align": 0.268,
+      "severity_align": 0.318,
       "mechanism_hint": 1.0,
-      "claim_id": "PM2021Q4_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "PM2021Q4_C000"
     },
     {
-      "cause": "Year-to-date adjusted diluted EPS increase of 20.4%",
-      "effect": "Strong annual profitability trend",
-      "mechanism": "fundamental",
-      "severity": 0.9,
-      "polarity": -1.0,
-      "evidence_span": "Adjusted diluted EPS of $4.72, up by 20.4%",
-      "source_id": "PM2021Q4_006",
-      "published_at": 0,
-      "atom_id": "PM2021Q4_006",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.771,
-      "span_score": 0.961,
-      "severity_align": 0.169,
-      "mechanism_hint": 1.0,
-      "claim_id": "PM2021Q4_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Smoke-free product revenue share at 28.6%",
-      "effect": "Strategic transition progress signal",
+      "cause": "Smoke-free product revenues reaching 28.6% of total",
+      "effect": "Strategic transition progress reduces long-term regulatory risk premium",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
@@ -73,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.864,
+      "confidence": 0.81,
       "span_score": 1.0,
       "severity_align": 0.456,
       "mechanism_hint": 1.0,
-      "claim_id": "PM2021Q4_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "PM2021Q4_C001"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

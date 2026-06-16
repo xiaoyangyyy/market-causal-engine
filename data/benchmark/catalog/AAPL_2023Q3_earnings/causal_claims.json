@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T12:38:37+00:00",
+  "computed_at": "2026-06-15T15:53:37+00:00",
   "accepted": [
     {
-      "cause": "Earnings per share increase",
-      "effect": "estimate revision upside",
+      "cause": "EPS up 5 percent year over year",
+      "effect": "estimate revision upside on earnings per share",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
@@ -23,23 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.798,
+      "confidence": 0.799,
       "span_score": 0.94,
       "severity_align": 0.324,
       "mechanism_hint": 1.0,
-      "claim_id": "AAPL2023Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "AAPL2023Q3_C000"
     },
     {
-      "cause": "Revenue decline",
-      "effect": "valuation de-rating",
+      "cause": "Revenue down 1 percent year over year",
+      "effect": "top-line growth slowdown concerns",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
-      "evidence_span": "quarterly revenue of $81.8 billion, down 1 percent year over year",
+      "evidence_span": "The Company posted quarterly revenue of $81.8 billion, down 1 percent year over year",
       "source_id": "AAPL2023Q3_001",
       "published_at": 0,
       "atom_id": "AAPL2023Q3_001",
@@ -49,19 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.842,
-      "span_score": 0.929,
+      "confidence": 0.849,
+      "span_score": 0.952,
       "severity_align": 0.524,
       "mechanism_hint": 1.0,
-      "claim_id": "AAPL2023Q3_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "AAPL2023Q3_C001"
     },
     {
-      "cause": "Gross margin expansion",
-      "effect": "limited estimate surprise",
+      "cause": "Gross margin increase from prior period",
+      "effect": "margin expansion supports valuation",
       "mechanism": "fundamental",
       "severity": 0.5,
       "polarity": -1.0,
@@ -75,15 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.887,
+      "confidence": 0.879,
       "span_score": 1.0,
       "severity_align": 0.548,
       "mechanism_hint": 1.0,
-      "claim_id": "AAPL2023Q3_C002",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "AAPL2023Q3_C002"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

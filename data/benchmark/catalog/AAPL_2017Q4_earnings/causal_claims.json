@@ -5,39 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T12:48:12+00:00",
+  "computed_at": "2026-06-16T10:09:10+00:00",
   "accepted": [
     {
-      "cause": "Gross margin guidance between 38% and 38.5%",
-      "effect": "estimate revision upside",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "gross margin between 38 percent and 38.5",
-      "source_id": "AAPL2017Q4_003",
-      "published_at": 0,
-      "atom_id": "AAPL2017Q4_003",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.837,
-      "span_score": 1.0,
-      "severity_align": 0.346,
-      "mechanism_hint": 1.0,
-      "claim_id": "AAPL2017Q4_C001",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
       "cause": "Revenue increase to $52.6 billion",
-      "effect": "fundamental upside",
+      "effect": "estimate revision upside driven by top-line growth",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": -1.0,
       "evidence_span": "revenue of $52.6 billion, an increase of",
       "source_id": "AAPL2017Q4_001",
@@ -49,43 +23,70 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.812,
+      "confidence": 0.801,
       "span_score": 1.0,
-      "severity_align": 0.246,
+      "severity_align": 0.196,
       "mechanism_hint": 1.0,
-      "claim_id": "AAPL2017Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    }
-  ],
-  "rejected": [
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "AAPL2017Q4_C000"
+    },
     {
       "cause": "Launch of iPhone X and new product lineup",
-      "effect": "Positive market reaction",
+      "effect": "growth narrative reinforcement via product cycle",
       "mechanism": "sentiment",
-      "severity": 0.6,
-      "polarity": 1.0,
-      "evidence_span": "With fantastic new products including iPhone 8 and iPhone 8 Plus, Apple Watch Series 3, and Apple TV 4K joining our product lineup, we're looking forward to a great holiday season, and with the launch of iPhone X getting underway right now, we couldn't be more excited as we begi",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "With fantastic new products including iPhone 8 and iPhone 8 Plus, Apple Watch Series 3, and Apple TV 4K joining our product lineup",
       "source_id": "AAPL2017Q4_002",
       "published_at": 0,
       "atom_id": "AAPL2017Q4_002",
       "validation": {
-        "passed": false,
-        "errors": [
-          "evidence_span_not_in_atom_text"
-        ],
+        "passed": true,
+        "errors": [],
         "warnings": []
       },
-      "proposer": "llm_event"
+      "proposer": "llm_event",
+      "confidence": 0.833,
+      "span_score": 0.943,
+      "severity_align": 0.471,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "AAPL2017Q4_C002"
+    },
+    {
+      "cause": "Gross margin guidance set between 38% and 38.5%",
+      "effect": "margin stability supports valuation floor",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "gross margin between 38 percent and 38.5",
+      "source_id": "AAPL2017Q4_003",
+      "published_at": 0,
+      "atom_id": "AAPL2017Q4_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.856,
+      "span_score": 1.0,
+      "severity_align": 0.446,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "AAPL2017Q4_C001"
     }
   ],
-  "claim_count": 2,
-  "rejected_count": 1,
+  "rejected": [],
+  "claim_count": 3,
+  "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

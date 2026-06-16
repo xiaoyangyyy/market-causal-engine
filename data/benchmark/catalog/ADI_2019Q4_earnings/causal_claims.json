@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T10:12:16+00:00",
+  "computed_at": "2026-06-16T12:19:46+00:00",
   "accepted": [
     {
-      "cause": "Q1 FY2020 adjusted EPS guidance of $1.00",
-      "effect": "estimate revision upside",
+      "cause": "Adjusted EPS guidance set at $1.00",
+      "effect": "earnings estimate revision based on $1.00 adjusted EPS target",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": -1.0,
       "evidence_span": "We are planning for reported EPS to be $0.61, +/- $0.07, and adjusted EPS to be $1.00, +/- $0.07.",
       "source_id": "ADI2019Q4_005",
@@ -23,21 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.821,
+      "confidence": 0.851,
       "span_score": 1.0,
-      "severity_align": 0.282,
+      "severity_align": 0.232,
       "mechanism_hint": 1.0,
-      "claim_id": "ADI2019Q4_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "ADI2019Q4_C001"
     },
     {
-      "cause": "Q1 FY2020 revenue guidance of $1.30 billion",
-      "effect": "estimate revision upside",
+      "cause": "Q1 FY2020 revenue forecast set at $1.30 billion",
+      "effect": "revenue estimate revision based on $1.30B guidance",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.8,
       "polarity": -1.0,
       "evidence_span": "Outlook for the First Quarter of Fiscal Year 2020 For the first quarter of fiscal 2020, we are forecasting revenue of $1.30 billion, +/- $50 million.",
       "source_id": "ADI2019Q4_003",
@@ -49,40 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.854,
+      "confidence": 0.869,
       "span_score": 1.0,
-      "severity_align": 0.414,
+      "severity_align": 0.314,
       "mechanism_hint": 1.0,
-      "claim_id": "ADI2019Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "ADI2019Q4_C000"
     },
     {
-      "cause": "Full year revenue of $6 billion and cost management",
-      "effect": "Positive sentiment on operational efficiency",
+      "cause": "Gross margin decline from $1,046 to $942",
+      "effect": "margin compression concern impacting profitability outlook",
       "mechanism": "fundamental",
-      "severity": 0.5,
+      "severity": 0.75,
       "polarity": -1.0,
-      "evidence_span": "Over the course of the year, we generated revenue of $6 billion and effectively managed costs, while continuing to prioritize strategic investments to drive innovation.",
-      "source_id": "ADI2019Q4_001",
+      "evidence_span": "Gross margin $ 942 $ 1,046 (10",
+      "source_id": "ADI2019Q4_002",
       "published_at": 0,
-      "atom_id": "ADI2019Q4_001",
+      "atom_id": "ADI2019Q4_002",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.907,
+      "confidence": 0.822,
       "span_score": 1.0,
-      "severity_align": 0.627,
+      "severity_align": 0.29,
       "mechanism_hint": 1.0,
-      "claim_id": "ADI2019Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ADI2019Q4_C002"
     }
   ],
   "rejected": [],
@@ -90,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

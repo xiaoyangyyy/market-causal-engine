@@ -5,38 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T12:12:51+00:00",
+  "computed_at": "2026-06-15T15:23:38+00:00",
   "accepted": [
     {
-      "cause": "Product ARR growth of 12% year over year",
-      "effect": "Increased confidence in recurring revenue stability",
+      "cause": "Non-GAAP EPS growth of 5% year over year",
+      "effect": "Non-GAAP earnings beat drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.8,
-      "polarity": -1.0,
-      "evidence_span": "product ARR up 12% year over year",
-      "source_id": "CSCO2022Q4_001",
-      "published_at": 0,
-      "atom_id": "CSCO2022Q4_001",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.773,
-      "span_score": 0.874,
-      "severity_align": 0.371,
-      "mechanism_hint": 1.0,
-      "claim_id": "CSCO2022Q4_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Non-GAAP EPS growth of 5% year over year",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.7,
       "polarity": -1.0,
       "evidence_span": "Non-GAAP EPS $0.86, up 5% year over year",
       "source_id": "CSCO2022Q4_001",
@@ -48,23 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.801,
+      "confidence": 0.779,
       "span_score": 0.879,
-      "severity_align": 0.471,
+      "severity_align": 0.371,
       "mechanism_hint": 1.0,
-      "claim_id": "CSCO2022Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "CSCO2022Q4_C000"
     },
     {
-      "cause": "Total annualized recurring revenue reaching $23.2 billion",
-      "effect": "Perception of strong long-term business model transformation",
+      "cause": "Product ARR growth of 12% year over year",
+      "effect": "Recurring revenue acceleration strengthens growth narrative",
       "mechanism": "fundamental",
-      "severity": 0.65,
+      "severity": 0.7,
       "polarity": -1.0,
-      "evidence_span": "Total annualized recurring revenue (ARR) at $23.2 billion",
+      "evidence_span": "product ARR up 12% year over year",
       "source_id": "CSCO2022Q4_001",
       "published_at": 0,
       "atom_id": "CSCO2022Q4_001",
@@ -74,18 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.82,
-      "span_score": 0.891,
-      "severity_align": 0.521,
+      "confidence": 0.799,
+      "span_score": 0.874,
+      "severity_align": 0.471,
       "mechanism_hint": 1.0,
-      "claim_id": "CSCO2022Q4_C003",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "CSCO2022Q4_C001"
     },
     {
       "cause": "Fiscal 2023 revenue guidance of 4.5% to 6.5% growth",
-      "effect": "Market expectation of sustained top-line expansion",
+      "effect": "Revenue growth guidance sets baseline for FY valuation",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": 1.0,
@@ -99,14 +73,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.825,
+      "confidence": 0.822,
       "span_score": 0.888,
       "severity_align": 0.546,
       "mechanism_hint": 1.0,
-      "claim_id": "CSCO2022Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "CSCO2022Q4_C002"
+    },
+    {
+      "cause": "GAAP EPS decline of 7% year over year",
+      "effect": "GAAP earnings contraction raises margin efficiency concerns",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "GAAP EPS $0.65, down 7% year over year",
+      "source_id": "CSCO2022Q4_001",
+      "published_at": 0,
+      "atom_id": "CSCO2022Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.844,
+      "span_score": 0.877,
+      "severity_align": 0.671,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "CSCO2022Q4_C003"
     }
   ],
   "rejected": [],
@@ -114,7 +113,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,37 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T02:33:49+00:00",
+  "computed_at": "2026-06-15T14:09:23+00:00",
   "accepted": [
     {
-      "cause": "Non-GAAP diluted EPS of $4.78",
-      "effect": "estimate revision upside",
-      "mechanism": "fundamental",
-      "severity": 0.85,
-      "polarity": -1.0,
-      "evidence_span": "non-GAAP diluted EPS of $4.78",
-      "source_id": "LRCX2020Q2_005",
-      "published_at": 0,
-      "atom_id": "LRCX2020Q2_005",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.924,
-      "span_score": 0.893,
-      "severity_align": 0.93,
-      "mechanism_hint": 1.0,
-      "claim_id": "LRCX2020Q2_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
       "cause": "Revenue of $2.79 billion",
-      "effect": "Strong top-line performance driving sentiment",
+      "effect": "Top-line growth reinforces revenue estimate trajectory",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
@@ -49,18 +23,43 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.995,
+      "confidence": 0.974,
       "span_score": 1.0,
       "severity_align": 0.98,
       "mechanism_hint": 1.0,
-      "claim_id": "LRCX2020Q2_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "LRCX2020Q2_C002"
+    },
+    {
+      "cause": "Non-GAAP diluted EPS of $4.78",
+      "effect": "EPS beat drives estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Non-GAAP diluted EPS of $4.78",
+      "source_id": "LRCX2020Q2_005",
+      "published_at": 0,
+      "atom_id": "LRCX2020Q2_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.909,
+      "span_score": 0.893,
+      "severity_align": 0.93,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "LRCX2020Q2_C000"
     },
     {
       "cause": "Non-GAAP gross margin of 46.1%",
-      "effect": "Improved profitability perception",
+      "effect": "Margin expansion supports valuation multiple",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": -1.0,
@@ -74,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.958,
+      "confidence": 0.94,
       "span_score": 0.937,
       "severity_align": 0.97,
       "mechanism_hint": 1.0,
-      "claim_id": "LRCX2020Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "LRCX2020Q2_C001"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

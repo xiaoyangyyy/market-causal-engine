@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T06:12:33+00:00",
+  "computed_at": "2026-06-16T12:33:44+00:00",
   "accepted": [
     {
-      "cause": "Operating Income $ 1,143",
-      "effect": "Stock price increase",
+      "cause": "Operating Income increase",
+      "effect": "margin shift",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
-      "evidence_span": "Operating Income $ 1,143 $ 1,010",
+      "evidence_span": "Operating Income $ 1,143 $ 1,010 $ 6,579 $",
       "source_id": "LOW2020Q1_001",
       "published_at": 0,
       "proposer": "llm",
@@ -23,18 +23,43 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.812,
+      "confidence": 0.813,
       "span_score": 1.0,
       "severity_align": 0.248,
       "mechanism_hint": 1.0,
-      "claim_id": "LOW2020Q1_C003",
+      "claim_id": "LOW2020Q1_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
-      "cause": "additional pre-tax operating losses of $14 million",
-      "effect": "negative impact on stock price",
+      "cause": "additional pre-tax operating losses",
+      "effect": "margin shift",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "recognized additional pre-tax operating losses of $9 million",
+      "source_id": "LOW2020Q1_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "LOW2020Q1_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.807,
+      "span_score": 0.974,
+      "severity_align": 0.282,
+      "mechanism_hint": 1.0,
+      "claim_id": "LOW2020Q1_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "additional pre-tax operating losses",
+      "effect": "margin shift",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
@@ -48,38 +73,38 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.799,
+      "confidence": 0.8,
       "span_score": 0.955,
       "severity_align": 0.294,
       "mechanism_hint": 1.0,
-      "claim_id": "LOW2020Q1_C004",
+      "claim_id": "LOW2020Q1_C003",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
-      "cause": "additional pre-tax operating losses of $9 million",
-      "effect": "negative impact on stock price",
+      "cause": "Outlook for 2018",
+      "effect": "guidance change",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.5,
       "polarity": -1.0,
-      "evidence_span": "additional pre-tax operating losses of $9 million",
-      "source_id": "LOW2020Q1_004",
+      "evidence_span": "Outlook for 2018: • During the fourth quarter",
+      "source_id": "LOW2020Q1_007",
       "published_at": 0,
       "proposer": "llm",
-      "atom_id": "LOW2020Q1_004",
+      "atom_id": "LOW2020Q1_007",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.819,
-      "span_score": 0.951,
-      "severity_align": 0.382,
+      "confidence": 0.879,
+      "span_score": 1.0,
+      "severity_align": 0.549,
       "mechanism_hint": 1.0,
-      "claim_id": "LOW2020Q1_C005",
+      "claim_id": "LOW2020Q1_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
@@ -98,7 +123,7 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
+      "confidence": 0.9,
       "span_score": 1.0,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
@@ -109,12 +134,33 @@
       "polarity_aligned": true
     }
   ],
-  "rejected": [],
-  "claim_count": 4,
-  "rejected_count": 0,
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "LOW2020Q1_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "LOW2020Q1_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 5,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T12:44:18+00:00",
+  "computed_at": "2026-06-16T09:42:12+00:00",
   "accepted": [
     {
-      "cause": "Net income per diluted share increased 22% year-over-year",
-      "effect": "Positive earnings surprise driving stock price up",
+      "cause": "EPS beat with 22% year-over-year growth",
+      "effect": "estimate revision upside driven by GAAP earnings surprise",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -23,18 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.806,
+      "confidence": 0.807,
       "span_score": 1.0,
       "severity_align": 0.224,
       "mechanism_hint": 1.0,
-      "claim_id": "BKNG2017Q2_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "BKNG2017Q2_C000"
     },
     {
-      "cause": "Non-GAAP net income per diluted share increased 7% year-over-year",
-      "effect": "Positive adjusted earnings performance supporting bullish sentiment",
+      "cause": "Non-GAAP EPS growth of 7% exceeding prior year",
+      "effect": "valuation uplift from adjusted earnings momentum",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": -1.0,
@@ -48,22 +48,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.835,
+      "confidence": 0.833,
       "span_score": 1.0,
       "severity_align": 0.34,
       "mechanism_hint": 1.0,
-      "claim_id": "BKNG2017Q2_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "BKNG2017Q2_C001"
     },
     {
-      "cause": "Room nights booked grew between 16% and 21% year-over-year",
-      "effect": "Strong operational volume growth indicating demand strength",
+      "cause": "Room nights booked growth between 16% and 21%",
+      "effect": "growth narrative reinforcement via volume metrics",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.65,
       "polarity": 1.0,
-      "evidence_span": "Year over year growth - Room nights booked 16 % 21 %",
+      "evidence_span": "Year over year growth - Room nights booked 16 % 21 % Year over year growth - Total gross travel bookings 12 % 17 %",
       "source_id": "BKNG2017Q2_006",
       "published_at": 0,
       "atom_id": "BKNG2017Q2_006",
@@ -73,47 +73,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.781,
-      "span_score": 0.887,
-      "severity_align": 0.371,
+      "confidence": 0.838,
+      "span_score": 0.931,
+      "severity_align": 0.521,
       "mechanism_hint": 1.0,
-      "claim_id": "BKNG2017Q2_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Total gross travel bookings grew between 12% and 17% year-over-year",
-      "effect": "Revenue expansion driven by booking volume",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": 1.0,
-      "evidence_span": "Year over year growth - Total gross travel bookings 12 % 17 %",
-      "source_id": "BKNG2017Q2_006",
-      "published_at": 0,
-      "atom_id": "BKNG2017Q2_006",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.809,
-      "span_score": 0.894,
-      "severity_align": 0.471,
-      "mechanism_hint": 1.0,
-      "claim_id": "BKNG2017Q2_C003",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "BKNG2017Q2_C002"
     }
   ],
   "rejected": [],
-  "claim_count": 4,
+  "claim_count": 3,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

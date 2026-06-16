@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T11:39:35+00:00",
+  "computed_at": "2026-06-16T08:55:51+00:00",
   "accepted": [
     {
-      "cause": "Record annual EPS of $1.54, up 38 percent year over year",
-      "effect": "earnings surprise drives estimate revision upside",
+      "cause": "Record annual EPS growth of 38% year over year",
+      "effect": "EPS estimate revision upside driven by non-GAAP beat",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -33,8 +33,8 @@
       "claim_id": "AMAT2016Q3_C000"
     },
     {
-      "cause": "Gross margin increased 300 basis points to 43.2",
-      "effect": "significant margin improvement reinforces profitability narrative",
+      "cause": "Gross margin increase of 300 basis points to 43.2%",
+      "effect": "Operating leverage improvement drives earnings model upside",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": 1.0,
@@ -58,8 +58,8 @@
       "claim_id": "AMAT2016Q3_C002"
     },
     {
-      "cause": "Gross margin increased 1.5 points year over year",
-      "effect": "margin expansion supports valuation multiple",
+      "cause": "Gross margin expansion of 1.5 points year over year",
+      "effect": "Margin expansion supports higher valuation multiples",
       "mechanism": "fundamental",
       "severity": 0.7,
       "polarity": 1.0,

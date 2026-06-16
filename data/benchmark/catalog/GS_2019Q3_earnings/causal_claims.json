@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T09:50:35+00:00",
+  "computed_at": "2026-06-16T11:56:08+00:00",
   "accepted": [
     {
-      "cause": "Net earnings to common declined 6% year-over-year",
-      "effect": "Negative pressure on stock price due to lower profitability",
+      "cause": "Q2 net earnings declined 6% year-over-year",
+      "effect": "earnings miss lowers EPS estimates",
       "mechanism": "fundamental",
-      "severity": 0.6,
+      "severity": 0.75,
       "polarity": -1.0,
       "evidence_span": "Net earnings to common $ 2,198 1% -6% $",
       "source_id": "GS2019Q3_002",
@@ -23,20 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.862,
+      "confidence": 0.823,
       "span_score": 1.0,
-      "severity_align": 0.446,
+      "severity_align": 0.296,
       "mechanism_hint": 1.0,
-      "claim_id": "GS2019Q3_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GS2019Q3_C000"
     },
     {
-      "cause": "Net gains from private investments increased 82% quarter-over-quarter",
-      "effect": "Bullish impact on stock price driven by investment income surge",
+      "cause": "Equity securities net gains increased 82% quarter-over-quarter",
+      "effect": "investment gains drive revenue upside",
       "mechanism": "fundamental",
-      "severity": 0.5,
+      "severity": 0.6,
       "polarity": -1.0,
       "evidence_span": "n 2Q19 net revenues were significantly higher QoQ, reflecting $ in millions 2Q19 1Q19 2Q18 YTD YTD significantly higher net gains from private investments Equity securities $ 1,541 82% 20% $ 2,388 2%",
       "source_id": "GS2019Q3_007",
@@ -48,23 +48,23 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.913,
+      "confidence": 0.88,
       "span_score": 0.992,
-      "severity_align": 0.671,
+      "severity_align": 0.571,
       "mechanism_hint": 1.0,
-      "claim_id": "GS2019Q3_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GS2019Q3_C001"
     }
   ],
   "rejected": [
     {
       "cause": "FICC net revenues declined 20% quarter-over-quarter",
-      "effect": "Bearish sentiment due to weak fixed income trading performance",
+      "effect": "revenue miss in FICC breaks growth narrative",
       "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -0.5,
+      "severity": 0.8,
+      "polarity": -0.7,
       "evidence_span": "n 2Q19 net revenues declined QoQ across FICC's major businesses.",
       "source_id": "GS2019Q3_004",
       "published_at": 0,
@@ -83,7 +83,5 @@
   "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

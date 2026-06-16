@@ -5,13 +5,38 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:30:20+00:00",
+  "computed_at": "2026-06-15T14:14:27+00:00",
   "accepted": [
     {
-      "cause": "Revenue decreased 12% from the same quarter a year ago",
-      "effect": "valuation de-rating",
+      "cause": "Embedded Processing revenue declined 31% year-over-year",
+      "effect": "sharp segment contraction in core business reduces overall earnings power",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "In our core businesses, Analog revenue declined 4% and Embedded Processing declined 31% from the same quarter a year ago.",
+      "source_id": "TXN2020Q3_002",
+      "published_at": 0,
+      "atom_id": "TXN2020Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.802,
+      "span_score": 1.0,
+      "severity_align": 0.199,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TXN2020Q3_C001"
+    },
+    {
+      "cause": "Revenue decreased 12% from the same quarter a year ago",
+      "effect": "revenue decline driven by automotive market weakness lowers top-line growth expectations",
+      "mechanism": "fundamental",
+      "severity": 0.85,
       "polarity": -1.0,
       "evidence_span": "Revenue decreased 12% from the same quarter a year ago, driven primarily by weakness in the automotive market.",
       "source_id": "TXN2020Q3_001",
@@ -23,23 +48,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.808,
+      "confidence": 0.797,
       "span_score": 0.936,
-      "severity_align": 0.371,
+      "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "TXN2020Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "TXN2020Q3_C000"
     },
     {
-      "cause": "Third quarter revenue outlook of $3.26 billion to $3.54 billion",
-      "effect": "Guidance sets expectations for future revenue performance",
+      "cause": "Q3 revenue outlook range of $3.26 billion to $3.54 billion",
+      "effect": "forward guidance sets upper bound for revenue expectations below prior year levels",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
-      "evidence_span": "TI’s third quarter outlook is for revenue in the range of $3.26 billion to $3.54 billion",
+      "evidence_span": "TI’s third quarter outlook is for revenue in the range of $3.26 billion to $3.54 billion, and earnings per share between $1.14 and $1.34.",
       "source_id": "TXN2020Q3_003",
       "published_at": 0,
       "atom_id": "TXN2020Q3_003",
@@ -49,39 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.85,
-      "span_score": 0.922,
+      "confidence": 0.865,
+      "span_score": 0.962,
       "severity_align": 0.571,
       "mechanism_hint": 1.0,
-      "claim_id": "TXN2020Q3_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Embedded Processing revenue declined 31%",
-      "effect": "Significant drop in core business performance",
-      "mechanism": "fundamental",
-      "severity": 0.9,
-      "polarity": -1.0,
-      "evidence_span": "Embedded Processing declined 31% from the same quarter a year ago.",
-      "source_id": "TXN2020Q3_002",
-      "published_at": 0,
-      "atom_id": "TXN2020Q3_002",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.776,
-      "span_score": 0.956,
-      "severity_align": 0.199,
-      "mechanism_hint": 1.0,
-      "claim_id": "TXN2020Q3_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "TXN2020Q3_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

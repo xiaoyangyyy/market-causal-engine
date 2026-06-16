@@ -5,31 +5,32 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:57:18+00:00",
+  "computed_at": "2026-06-16T11:55:52+00:00",
   "accepted": [
     {
-      "cause": "Cash flow from operations of $7.8 billion",
-      "effect": "Share repurchases of $1.25 billion",
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.171,
       "polarity": -1.0,
-      "evidence_span": "Cash flow from operations of $7.8 billion • Share repurchases of $1.25 billion",
+      "evidence_span": "EXHIBIT 99.1 Exhibit news release FOR RELEASE AT 5:30 AM PDT NOVEMBER 1, 2019 Chevron Reports Third Quarter Net Income of $2.6 Billion • Cash flow from operations of $7.8 billion •",
       "source_id": "CVX2019Q3_000",
       "published_at": 0,
-      "proposer": "llm",
+      "proposer": "heuristic",
       "atom_id": "CVX2019Q3_000",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.796,
-      "span_score": 0.915,
-      "severity_align": 0.371,
+      "confidence": 0.9,
+      "span_score": 1.0,
+      "severity_align": 1.0,
       "mechanism_hint": 1.0,
       "claim_id": "CVX2019Q3_C001",
+      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.6,
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
@@ -48,7 +49,7 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
+      "confidence": 0.9,
       "span_score": 1.0,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
@@ -64,7 +65,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

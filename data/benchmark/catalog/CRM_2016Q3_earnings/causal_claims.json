@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T13:45:28+00:00",
+  "computed_at": "2026-06-16T08:51:00+00:00",
   "accepted": [
     {
-      "cause": "Acquisition transaction fees",
-      "effect": "Reduction in Q2 FY17 diluted non-GAAP EPS",
+      "cause": "Transaction fees reduce Q2 non-GAAP EPS",
+      "effect": "EPS guidance reduction lowers near-term valuation",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
@@ -23,23 +23,23 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.877,
+      "confidence": 0.87,
       "span_score": 1.0,
       "severity_align": 0.509,
       "mechanism_hint": 1.0,
-      "claim_id": "CRM2016Q3_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "CRM2016Q3_C000"
     }
   ],
   "rejected": [
     {
-      "cause": "Acquisition impact",
-      "effect": "Increase in FY17 total revenue",
+      "cause": "Guidance update increases FY17 total revenue",
+      "effect": "Revenue forecast expansion drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.7,
-      "polarity": 0.5,
+      "polarity": 0.7,
       "evidence_span": "expected to increase Salesforce's FY17 total revenue",
       "source_id": "CRM2016Q3_002",
       "published_at": 0,
@@ -54,10 +54,10 @@
       "proposer": "llm_event"
     },
     {
-      "cause": "Acquisition impact",
-      "effect": "Increase in Q2 FY17 total revenue",
+      "cause": "Guidance update increases Q2 FY17 total revenue",
+      "effect": "Quarterly revenue outlook improvement supports growth narrative",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.5,
       "polarity": 0.5,
       "evidence_span": "expected to increase Salesforce's Q2 FY17 total revenue",
       "source_id": "CRM2016Q3_005",
@@ -77,7 +77,5 @@
   "rejected_count": 2,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

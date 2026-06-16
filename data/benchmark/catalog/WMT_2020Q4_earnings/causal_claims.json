@@ -5,40 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T13:10:47+00:00",
+  "computed_at": "2026-06-15T14:29:25+00:00",
   "accepted": [
     {
-      "cause": "Operating income growth of 16.7% in Walmart U.S.",
-      "effect": "Improved profitability outlook",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": -1.0,
-      "evidence_span": "operating income1 $5.0 +16.7% Walmart U.S.",
-      "source_id": "WMT2020Q4_005",
-      "published_at": 0,
-      "atom_id": "WMT2020Q4_005",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.825,
-      "span_score": 1.0,
-      "severity_align": 0.298,
-      "mechanism_hint": 1.0,
-      "claim_id": "WMT2020Q4_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Adjusted EPS increase of 16.4% to $1.34",
-      "effect": "fundamental upside",
+      "cause": "Adjusted EPS increased 16.4% to $1.34",
+      "effect": "earnings surprise drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
-      "evidence_span": "Adjusted EPS $133.8 +16.4% $1.34",
+      "evidence_span": "Adjusted EPS $133.8 +16.4% $1.34 +5.3%",
       "source_id": "WMT2020Q4_003",
       "published_at": 0,
       "atom_id": "WMT2020Q4_003",
@@ -48,19 +23,43 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.76,
-      "span_score": 0.873,
+      "confidence": 0.767,
+      "span_score": 0.877,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "WMT2020Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "WMT2020Q4_C000"
     },
     {
-      "cause": "Gross margin pressure mentioned",
-      "effect": "Potential headwinds for future margins",
+      "cause": "Operating income grew 41% to $15.8",
+      "effect": "operating leverage supports valuation expansion",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Gross profit rate Operating income $15.8 +41% +79",
+      "source_id": "WMT2020Q4_000",
+      "published_at": 0,
+      "atom_id": "WMT2020Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.824,
+      "span_score": 1.0,
+      "severity_align": 0.302,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "WMT2020Q4_C002"
+    },
+    {
+      "cause": "Gross margin pressure noted in financials",
+      "effect": "margin compression concern lowers profitability outlook",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
@@ -74,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.86,
+      "confidence": 0.854,
       "span_score": 1.0,
       "severity_align": 0.438,
       "mechanism_hint": 1.0,
-      "claim_id": "WMT2020Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "WMT2020Q4_C001"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

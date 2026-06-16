@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T11:41:57+00:00",
+  "computed_at": "2026-06-16T08:59:10+00:00",
   "accepted": [
     {
       "cause": "Adjusted EPS grew 10% to $2.03",
-      "effect": "EPS beat supports estimate revision upside",
+      "effect": "estimate revision upside driven by double-digit adjusted EPS growth",
       "mechanism": "fundamental",
-      "severity": 0.9,
+      "severity": 0.85,
       "polarity": 1.0,
       "evidence_span": "Adjusted EPS grew 10% to $2.03.",
       "source_id": "TMO2016Q3_002",
@@ -23,20 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.789,
+      "confidence": 0.8,
       "span_score": 1.0,
-      "severity_align": 0.141,
+      "severity_align": 0.191,
       "mechanism_hint": 1.0,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true,
-      "claim_id": "TMO2016Q3_C001"
+      "claim_id": "TMO2016Q3_C000"
     },
     {
       "cause": "Revenue increased 6% to $4.54 billion",
-      "effect": "Revenue growth drives fundamental valuation uplift",
+      "effect": "top-line growth supports valuation multiple expansion",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.75,
       "polarity": 1.0,
       "evidence_span": "Second Quarter 2016 Highlights • Revenue increased 6% to $4.54 billion.",
       "source_id": "TMO2016Q3_000",
@@ -48,18 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.817,
+      "confidence": 0.828,
       "span_score": 1.0,
-      "severity_align": 0.266,
+      "severity_align": 0.316,
       "mechanism_hint": 1.0,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true,
-      "claim_id": "TMO2016Q3_C000"
+      "claim_id": "TMO2016Q3_C001"
     },
     {
       "cause": "Organic revenue growth was 4%",
-      "effect": "Organic growth rate validates core business health",
+      "effect": "organic growth metric validates core business momentum",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": 1.0,
@@ -87,4 +87,6 @@
   "claim_count": 3,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
-  "llm_base_u
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event"
+}

@@ -5,8 +5,108 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:28:23+00:00",
+  "computed_at": "2026-06-16T10:31:48+00:00",
   "accepted": [
+    {
+      "cause": "Cost of revenues",
+      "effect": "margin shift",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Costs and expenses: Cost of",
+      "source_id": "GOOGL2018Q2_006",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GOOGL2018Q2_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.789,
+      "span_score": 0.95,
+      "severity_align": 0.255,
+      "mechanism_hint": 1.0,
+      "claim_id": "GOOGL2018Q2_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "revenues as total revenues excluding the impact of",
+      "effect": "margin shift",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "revenues as total revenues excluding the impact of",
+      "source_id": "GOOGL2018Q2_008",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GOOGL2018Q2_008",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.88,
+      "span_score": 1.0,
+      "severity_align": 0.553,
+      "mechanism_hint": 1.0,
+      "claim_id": "GOOGL2018Q2_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "revenues excluding the impact of",
+      "effect": "margin shift",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "revenues excluding the impact of",
+      "source_id": "GOOGL2018Q2_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GOOGL2018Q2_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.877,
+      "span_score": 1.0,
+      "severity_align": 0.541,
+      "mechanism_hint": 1.0,
+      "claim_id": "GOOGL2018Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "revenues, operating income (loss",
+      "effect": "margin shift",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "revenues, operating income (loss",
+      "source_id": "GOOGL2018Q2_009",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GOOGL2018Q2_009",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.877,
+      "span_score": 1.0,
+      "severity_align": 0.541,
+      "mechanism_hint": 1.0,
+      "claim_id": "GOOGL2018Q2_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
     {
       "cause": "negative fundamental signal",
       "effect": "valuation de-rating",
@@ -23,7 +123,7 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
+      "confidence": 0.9,
       "span_score": 1.0,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
@@ -41,7 +141,7 @@
       "mechanism": "none",
       "severity": 0.0,
       "polarity": 0.0,
-      "evidence_span": "revenues\" included at the end of",
+      "evidence_span": "None",
       "source_id": "GOOGL2018Q2_005",
       "published_at": 0,
       "proposer": "llm",
@@ -50,17 +150,17 @@
         "passed": false,
         "errors": [
           "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
           "mechanism_not_allowed_for_domain:none:earnings"
         ],
         "warnings": []
       }
     }
   ],
-  "claim_count": 1,
+  "claim_count": 5,
   "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

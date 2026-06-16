@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T13:10:22+00:00",
+  "computed_at": "2026-06-15T14:28:20+00:00",
   "accepted": [
     {
-      "cause": "Paid net adds exceeded projection",
-      "effect": "estimate revision upside",
+      "cause": "Paid net adds exceeded projection by 2.5m",
+      "effect": "subscriber growth beats consensus estimates",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -23,21 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.94,
+      "confidence": 0.925,
       "span_score": 0.946,
       "severity_align": 0.88,
       "mechanism_hint": 1.0,
-      "claim_id": "NFLX2020Q4_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "NFLX2020Q4_C000"
     },
     {
-      "cause": "Revenue exceeded guidance forecast",
-      "effect": "positive revision momentum",
+      "cause": "Revenue exceeded guidance forecast by 1%",
+      "effect": "revenue beat drives estimate revision upside",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.8,
       "polarity": -1.0,
       "evidence_span": "Revenue was 1% higher than our guidance forecast",
       "source_id": "NFLX2020Q4_003",
@@ -49,41 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.951,
+      "confidence": 0.945,
       "span_score": 0.942,
-      "severity_align": 0.93,
+      "severity_align": 0.98,
       "mechanism_hint": 1.0,
-      "claim_id": "NFLX2020Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "NFLX2020Q4_C001"
     },
     {
-      "cause": "Operating income growth",
-      "effect": "estimate revision upside",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": -1.0,
-      "evidence_span": "revenue (+24% year over year) and grew operating prof",
-      "source_id": "NFLX2020Q4_000",
+      "cause": "Record year of paid membership growth",
+      "effect": "historical growth milestone reinforces valuation narrative",
+      "mechanism": "sentiment",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "recorded the biggest year of paid membership growth in our history",
+      "source_id": "NFLX2020Q4_008",
       "published_at": 0,
-      "atom_id": "NFLX2020Q4_000",
+      "atom_id": "NFLX2020Q4_008",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.973,
-      "span_score": 1.0,
-      "severity_align": 0.89,
+      "confidence": 0.903,
+      "span_score": 0.946,
+      "severity_align": 0.78,
       "mechanism_hint": 1.0,
-      "claim_id": "NFLX2020Q4_C002",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "NFLX2020Q4_C002"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

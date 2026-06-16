@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T12:40:09+00:00",
+  "computed_at": "2026-06-16T09:17:06+00:00",
   "accepted": [
     {
       "cause": "Adjusted EPS grew 13% to $2.03",
-      "effect": "fundamental upside",
+      "effect": "earnings beat supports estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -23,23 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.785,
+      "confidence": 0.789,
       "span_score": 1.0,
       "severity_align": 0.141,
       "mechanism_hint": 1.0,
-      "claim_id": "TMO2016Q4_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TMO2016Q4_C001"
     },
     {
       "cause": "Revenue increased 9% to $4.49 billion",
-      "effect": "fundamental upside",
+      "effect": "revenue growth drives fundamental valuation upside",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": 1.0,
-      "evidence_span": "Revenue increased 9% to $4.49 billion.",
+      "evidence_span": "Third Quarter 2016 Highlights • Revenue increased 9% to $4.49 billion.",
       "source_id": "TMO2016Q4_000",
       "published_at": 0,
       "atom_id": "TMO2016Q4_000",
@@ -49,21 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.794,
-      "span_score": 0.959,
-      "severity_align": 0.265,
+      "confidence": 0.805,
+      "span_score": 1.0,
+      "severity_align": 0.215,
       "mechanism_hint": 1.0,
-      "claim_id": "TMO2016Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TMO2016Q4_C000"
     },
     {
       "cause": "Organic revenue growth was 4%",
-      "effect": "fundamental upside",
+      "effect": "organic growth rate validates core business expansion",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.6,
       "polarity": 1.0,
       "evidence_span": "Organic revenue growth was 4%",
       "source_id": "TMO2016Q4_004",
@@ -75,15 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.835,
+      "confidence": 0.855,
       "span_score": 1.0,
-      "severity_align": 0.339,
+      "severity_align": 0.439,
       "mechanism_hint": 1.0,
-      "claim_id": "TMO2016Q4_C002",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TMO2016Q4_C002"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

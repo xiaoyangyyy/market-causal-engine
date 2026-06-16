@@ -5,37 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T02:46:14+00:00",
+  "computed_at": "2026-06-16T09:41:44+00:00",
   "accepted": [
     {
-      "cause": "Strong ecommerce delivery demand",
-      "effect": "estimate revision upside",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": 1.0,
-      "evidence_span": "The Domestic segment benefitted from strong demand for ecommerce deliveries and revenue was up 5% over Q1 2016",
-      "source_id": "UPS2017Q2_005",
-      "published_at": 0,
-      "atom_id": "UPS2017Q2_005",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.838,
-      "span_score": 1.0,
-      "severity_align": 0.351,
-      "mechanism_hint": 1.0,
-      "claim_id": "UPS2017Q2_C002",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Q1 EPS increase",
-      "effect": "fundamental upside",
+      "cause": "Q1 revenue growth of 6.2% and EPS increase",
+      "effect": "estimate revision upside driven by top-line expansion",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -49,49 +23,65 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.769,
+      "confidence": 0.773,
       "span_score": 0.889,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "UPS2017Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "UPS2017Q2_C000"
     },
     {
-      "cause": "6.2% total revenue growth",
-      "effect": "fundamental upside",
+      "cause": "Domestic segment revenue up 5% due to ecommerce demand",
+      "effect": "margin expansion potential from high-volume ecommerce mix",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.7,
       "polarity": 1.0,
-      "evidence_span": "Total revenue climbed 6.2% and currency-neutral revenue increased",
-      "source_id": "UPS2017Q2_003",
+      "evidence_span": "Domestic Segment The Domestic segment benefitted from strong demand for ecommerce deliveries and revenue was up 5% over Q1 2016.",
+      "source_id": "UPS2017Q2_005",
       "published_at": 0,
-      "atom_id": "UPS2017Q2_003",
+      "atom_id": "UPS2017Q2_005",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.816,
+      "confidence": 0.846,
       "span_score": 1.0,
-      "severity_align": 0.262,
+      "severity_align": 0.401,
       "mechanism_hint": 1.0,
-      "claim_id": "UPS2017Q2_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "UPS2017Q2_C001"
     }
   ],
-  "rejected": [],
-  "claim_count": 3,
-  "rejected_count": 0,
+  "rejected": [
+    {
+      "cause": "Revenue growth across all segments and product categories",
+      "effect": "broad-based growth narrative reinforcement for FY outlook",
+      "mechanism": "sentiment",
+      "severity": 0.6,
+      "polarity": 0.65,
+      "evidence_span": "Revenue grew in all segments and in all major product categories, as balanced market demand occurred across the company's broad product portfolio.",
+      "source_id": "UPS2017Q2_004",
+      "published_at": 0,
+      "atom_id": "UPS2017Q2_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:37:38+00:00",
+  "computed_at": "2026-06-16T11:00:00+00:00",
   "accepted": [
     {
       "cause": "Sales of goods and services",
-      "effect": "Revenues",
+      "effect": "margin shift",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
@@ -23,13 +23,63 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.83,
+      "confidence": 0.826,
       "span_score": 0.885,
       "severity_align": 0.571,
       "mechanism_hint": 1.0,
       "claim_id": "GE2018Q3_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "revenues and profit include the sum of",
+      "effect": "earnings estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "revenues and profit include the sum of",
+      "source_id": "GE2018Q3_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GE2018Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.878,
+      "span_score": 1.0,
+      "severity_align": 0.545,
+      "mechanism_hint": 1.0,
+      "claim_id": "GE2018Q3_C005",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "debt-to-earnings",
+      "effect": "guidance change",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "outlooks and debt-to-earnings",
+      "source_id": "GE2018Q3_011",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GE2018Q3_011",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.877,
+      "span_score": 1.0,
+      "severity_align": 0.539,
+      "mechanism_hint": 1.0,
+      "claim_id": "GE2018Q3_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
@@ -48,7 +98,7 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.968,
+      "confidence": 0.95,
       "span_score": 0.979,
       "severity_align": 0.92,
       "mechanism_hint": 1.0,
@@ -56,34 +106,38 @@
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true
-    }
-  ],
-  "rejected": [
+    },
     {
-      "cause": "outlook and the results reported in today's earnings",
-      "effect": "market reaction",
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
       "mechanism": "fundamental",
-      "severity": 0.5,
-      "polarity": 0.0,
-      "evidence_span": "outlook and the results reported in today's earnings",
+      "severity": 0.054,
+      "polarity": -1.0,
+      "evidence_span": "outlook and the results reported in today’s earnings",
       "source_id": "GE2018Q3_012",
       "published_at": 0,
-      "proposer": "llm",
+      "proposer": "heuristic",
       "atom_id": "GE2018Q3_012",
       "validation": {
-        "passed": false,
-        "errors": [
-          "evidence_span_not_in_atom_text"
-        ],
+        "passed": true,
+        "errors": [],
         "warnings": []
-      }
+      },
+      "confidence": 0.9,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "GE2018Q3_C003",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
     }
   ],
-  "claim_count": 2,
-  "rejected_count": 1,
+  "rejected": [],
+  "claim_count": 5,
+  "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

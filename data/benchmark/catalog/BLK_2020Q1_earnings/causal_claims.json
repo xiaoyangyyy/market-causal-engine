@@ -5,11 +5,36 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T06:09:35+00:00",
+  "computed_at": "2026-06-16T12:26:28+00:00",
   "accepted": [
     {
+      "cause": "Foreign Exchange Rates GBP to USD",
+      "effect": "margin shift",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Foreign Exchange Rates GBP to USD 1.28 1.23 1.33 8.1300813008130149E-2 3.9062500000000035E-2",
+      "source_id": "BLK2020Q1_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "BLK2020Q1_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.798,
+      "span_score": 0.916,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "BLK2020Q1_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
       "cause": "broadly diversified business across clients, products and geographies",
-      "effect": "Assets Under Management of $7.43 trillion",
+      "effect": "stable base fees and assets under management",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
@@ -23,38 +48,13 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.788,
+      "confidence": 0.742,
       "span_score": 0.901,
       "severity_align": 0.371,
       "mechanism_hint": 1.0,
       "claim_id": "BLK2020Q1_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.6,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Base fees ex. securities lending",
-      "effect": "2 % Percentage Change Year-over-Year",
-      "mechanism": "fundamental",
-      "severity": 0.5,
-      "polarity": -1.0,
-      "evidence_span": "Base fees ex. securities lending 2 %",
-      "source_id": "BLK2020Q1_002",
-      "published_at": 0,
-      "proposer": "llm",
-      "atom_id": "BLK2020Q1_002",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "confidence": 0.85,
-      "span_score": 0.876,
-      "severity_align": 0.671,
-      "mechanism_hint": 1.0,
-      "claim_id": "BLK2020Q1_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.6,
+      "effect_specificity": 0.25,
       "polarity_aligned": true
     },
     {
@@ -73,7 +73,7 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.988,
+      "confidence": 0.889,
       "span_score": 0.979,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
@@ -84,26 +84,26 @@
       "polarity_aligned": true
     },
     {
-      "cause": "Aggregate Bond Index 2221",
-      "effect": "estimate revision upside",
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
       "mechanism": "fundamental",
-      "severity": 0.1,
+      "severity": 0.171,
       "polarity": -1.0,
-      "evidence_span": "Aggregate Bond Index 2047 2221 2225",
-      "source_id": "BLK2020Q1_003",
+      "evidence_span": "For further information, see the item included under Non-GAAP expense adjustments on page 12 of this earnings release supplement and note (1) in the current earnings release. $341",
+      "source_id": "BLK2020Q1_002",
       "published_at": 0,
-      "proposer": "llm",
-      "atom_id": "BLK2020Q1_003",
+      "proposer": "heuristic",
+      "atom_id": "BLK2020Q1_002",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.913,
-      "span_score": 0.875,
-      "severity_align": 0.929,
+      "confidence": 0.889,
+      "span_score": 0.978,
+      "severity_align": 1.0,
       "mechanism_hint": 1.0,
-      "claim_id": "BLK2020Q1_C003",
+      "claim_id": "BLK2020Q1_C001",
       "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
@@ -113,7 +113,7 @@
   "rejected": [
     {
       "cause": "Tax Cuts and Jobs Act",
-      "effect": "non-GAAP adjustment of $1.3 billion",
+      "effect": "non-GAAP adjustment",
       "mechanism": "regulatory",
       "severity": 0.8,
       "polarity": 0.0,
@@ -135,7 +135,5 @@
   "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

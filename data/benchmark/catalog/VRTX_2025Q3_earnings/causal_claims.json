@@ -5,13 +5,38 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T04:39:14+00:00",
+  "computed_at": "2026-06-15T16:53:55+00:00",
   "accepted": [
     {
-      "cause": "Strong execution of CASGEVY, ALYFTREK, and JOURNAVX launches",
-      "effect": "Drives revenue growth and market expansion",
+      "cause": "Positive operating income and net income figures",
+      "effect": "confirms profitability and earnings per share strength",
       "mechanism": "fundamental",
       "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "operating income (loss) $ 1,151.1 $ (3,514.7) $ 1,781.2 $",
+      "source_id": "VRTX2025Q3_000",
+      "published_at": 0,
+      "atom_id": "VRTX2025Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.815,
+      "span_score": 1.0,
+      "severity_align": 0.257,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "VRTX2025Q3_C002"
+    },
+    {
+      "cause": "Strong execution of CASGEVY, ALYFTREK, and JOURNAVX launches",
+      "effect": "supports growth narrative for new product revenue",
+      "mechanism": "fundamental",
+      "severity": 0.7,
       "polarity": 1.0,
       "evidence_span": "Continued strong execution of CASGEVY ® , ALYFTREK ® and JOURNAVX ® launches",
       "source_id": "VRTX2025Q3_002",
@@ -23,20 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.79,
+      "confidence": 0.814,
       "span_score": 0.904,
-      "severity_align": 0.371,
+      "severity_align": 0.471,
       "mechanism_hint": 1.0,
-      "claim_id": "VRTX2025Q3_C001",
       "polarity_source": "full_text",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "VRTX2025Q3_C001"
     },
     {
       "cause": "Reiteration of full year 2025 revenue guidance",
-      "effect": "Confirms revenue stability and execution confidence",
+      "effect": "stabilizes FY revenue estimate range",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.6,
       "polarity": -1.0,
       "evidence_span": "reiterated full year 2025 financial guidance, including revenue guidance of $11.85 to $12 billion",
       "source_id": "VRTX2025Q3_002",
@@ -48,39 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.823,
+      "confidence": 0.843,
       "span_score": 0.919,
-      "severity_align": 0.471,
+      "severity_align": 0.571,
       "mechanism_hint": 1.0,
-      "claim_id": "VRTX2025Q3_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Positive net income recovery",
-      "effect": "Indicates improved profitability compared to prior period loss",
-      "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": -1.0,
-      "evidence_span": "Net income (loss) $ 1,032.9 $ (3,593.6) $ 1,679.2",
-      "source_id": "VRTX2025Q3_004",
-      "published_at": 0,
-      "atom_id": "VRTX2025Q3_004",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.863,
-      "span_score": 1.0,
-      "severity_align": 0.453,
-      "mechanism_hint": 1.0,
-      "claim_id": "VRTX2025Q3_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "VRTX2025Q3_C000"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

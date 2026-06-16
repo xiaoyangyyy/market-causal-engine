@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:04:09+00:00",
+  "computed_at": "2026-06-16T09:01:59+00:00",
   "accepted": [
     {
-      "cause": "Freight revenue decline",
-      "effect": "Lower quarterly earnings performance",
+      "cause": "Quarterly freight revenue decreased 13 percent",
+      "effect": "revenue decline lowers top-line growth expectations",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": -1.0,
       "evidence_span": "Quarterly freight revenue decreased 13 percent compared to the second quarter 2015",
       "source_id": "UNP2016Q3_005",
@@ -23,20 +23,45 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.8,
+      "confidence": 0.79,
       "span_score": 0.938,
-      "severity_align": 0.338,
+      "severity_align": 0.288,
       "mechanism_hint": 1.0,
-      "claim_id": "UNP2016Q3_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UNP2016Q3_C000"
     },
     {
-      "cause": "Volume declines and lower fuel surcharges",
-      "effect": "Offset core pricing gains",
+      "cause": "Net Income decreased 19 percent year-over-year",
+      "effect": "earnings miss reduces bottom-line valuation support",
       "mechanism": "fundamental",
-      "severity": 0.6,
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Net Income $ 979 $ 1,204 (19) % $ 1,958",
+      "source_id": "UNP2016Q3_006",
+      "published_at": 0,
+      "atom_id": "UNP2016Q3_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.812,
+      "span_score": 1.0,
+      "severity_align": 0.247,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "UNP2016Q3_C002"
+    },
+    {
+      "cause": "Volume declines and lower fuel surcharge offset pricing gains",
+      "effect": "operating leverage deterioration due to volume weakness",
+      "mechanism": "fundamental",
+      "severity": 0.75,
       "polarity": -1.0,
       "evidence_span": "volume declines and lower fuel surcharge revenue more than offset core pricing gains",
       "source_id": "UNP2016Q3_005",
@@ -48,39 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.851,
+      "confidence": 0.813,
       "span_score": 0.94,
-      "severity_align": 0.538,
+      "severity_align": 0.388,
       "mechanism_hint": 1.0,
-      "claim_id": "UNP2016Q3_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Net income drop",
-      "effect": "Reduced profitability compared to prior quarter",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "Net Income $ 979 $ 1,204 (19) %",
-      "source_id": "UNP2016Q3_006",
-      "published_at": 0,
-      "atom_id": "UNP2016Q3_006",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.837,
-      "span_score": 1.0,
-      "severity_align": 0.347,
-      "mechanism_hint": 1.0,
-      "claim_id": "UNP2016Q3_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UNP2016Q3_C001"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,61 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:50:12+00:00",
+  "computed_at": "2026-06-15T15:00:29+00:00",
   "accepted": [
     {
-      "cause": "Immunology portfolio revenue growth of 14.1 percent",
-      "effect": "Strong segment performance driving stock value",
-      "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": -1.0,
-      "evidence_span": "Full-Year Global Net Revenues from the Immunology Portfolio Were $25.284 Billion, an Increase of 14.1 Percent",
-      "source_id": "ABBV2022Q1_002",
-      "published_at": 0,
-      "atom_id": "ABBV2022Q1_002",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.812,
-      "span_score": 0.951,
-      "severity_align": 0.356,
-      "mechanism_hint": 1.0,
-      "claim_id": "ABBV2022Q1_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Confirmation of Skyrizi and Rinvoq sales guidance above $15 billion",
-      "effect": "Increased investor confidence in future growth",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "AbbVie confirmed prior revenue guidance of greater than $15 billion in combined Skyrizi (risankizumab) and Rinvoq (upadacitinib) risk-adjusted sales in 2025",
-      "source_id": "ABBV2022Q1_039",
-      "published_at": 0,
-      "atom_id": "ABBV2022Q1_039",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.858,
-      "span_score": 1.0,
-      "severity_align": 0.431,
-      "mechanism_hint": 1.0,
-      "claim_id": "ABBV2022Q1_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Full-year diluted EPS increase of 137.1 percent",
-      "effect": "fundamental upside",
+      "cause": "Full-Year Diluted EPS increase of 137.1 percent",
+      "effect": "earnings surprise drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": -1.0,
@@ -73,15 +23,64 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.776,
+      "confidence": 0.78,
       "span_score": 0.939,
       "severity_align": 0.239,
       "mechanism_hint": 1.0,
-      "claim_id": "ABBV2022Q1_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ABBV2022Q1_C000"
+    },
+    {
+      "cause": "Immunology Portfolio revenues increased 14.1 percent",
+      "effect": "core segment growth reinforces valuation multiple",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "Full-Year Global Net Revenues from the Immunology Portfolio Were $25.284 Billion, an Increase of 14.1 Percent on a Reported Basis",
+      "source_id": "ABBV2022Q1_002",
+      "published_at": 0,
+      "atom_id": "ABBV2022Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.843,
+      "span_score": 0.97,
+      "severity_align": 0.456,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ABBV2022Q1_C001"
+    },
+    {
+      "cause": "Confirmed risk-adjusted sales guidance for Skyrizi and Rinvoq",
+      "effect": "long-term revenue visibility supports growth narrative",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "AbbVie confirmed prior revenue guidance of greater than $15 billion in combined Skyrizi (risankizumab) and Rinvoq (upadacitinib) risk-adjusted sales in 2025",
+      "source_id": "ABBV2022Q1_039",
+      "published_at": 0,
+      "atom_id": "ABBV2022Q1_039",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.875,
+      "span_score": 1.0,
+      "severity_align": 0.531,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ABBV2022Q1_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

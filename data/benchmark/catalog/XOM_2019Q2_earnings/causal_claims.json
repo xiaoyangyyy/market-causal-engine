@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:57:07+00:00",
+  "computed_at": "2026-06-16T11:55:04+00:00",
   "accepted": [
     {
       "cause": "scheduled maintenance",
-      "effect": "earnings above 2018 1Q19",
+      "effect": "earnings estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.6,
       "polarity": -1.0,
       "evidence_span": "above 2018 1Q19 scheduled maintenance expect",
       "source_id": "XOM2019Q2_000",
@@ -23,13 +23,38 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.812,
+      "confidence": 0.857,
       "span_score": 1.0,
-      "severity_align": 0.249,
+      "severity_align": 0.449,
       "mechanism_hint": 1.0,
       "claim_id": "XOM2019Q2_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 1.0,
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Upstream Volumes consistent with fourth quarter",
+      "effect": "guidance change",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "Upstream Volumes consistent with fourth quarter",
+      "source_id": "XOM2019Q2_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "XOM2019Q2_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.88,
+      "span_score": 1.0,
+      "severity_align": 0.556,
+      "mechanism_hint": 1.0,
+      "claim_id": "XOM2019Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
@@ -48,7 +73,7 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
+      "confidence": 0.9,
       "span_score": 1.0,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
@@ -61,8 +86,8 @@
   ],
   "rejected": [
     {
-      "cause": "IMO",
-      "effect": "Fuel oil price expected to decline",
+      "cause": "IMO regulations",
+      "effect": "margin shift",
       "mechanism": "regulatory",
       "severity": 0.8,
       "polarity": 1.0,
@@ -80,11 +105,9 @@
       }
     }
   ],
-  "claim_count": 2,
+  "claim_count": 3,
   "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T13:35:42+00:00",
+  "computed_at": "2026-06-15T16:58:45+00:00",
   "accepted": [
     {
       "cause": "Transaction revenue decline",
-      "effect": "Lower total revenue and net income",
+      "effect": "transaction revenue miss lowers Q3 revenue estimates",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -23,20 +23,45 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.801,
+      "confidence": 0.845,
       "span_score": 1.0,
       "severity_align": 0.204,
       "mechanism_hint": 1.0,
-      "claim_id": "COIN2025Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "COIN2025Q3_C000"
+    },
+    {
+      "cause": "Net income decline",
+      "effect": "net income fall reduces EPS valuation multiples",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "total revenue, $1.4 billion in net income Fell",
+      "source_id": "COIN2025Q3_000",
+      "published_at": 0,
+      "atom_id": "COIN2025Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.835,
+      "span_score": 1.0,
+      "severity_align": 0.35,
+      "mechanism_hint": 1.0,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "COIN2025Q3_C002"
     },
     {
       "cause": "Subscription revenue contraction",
-      "effect": "Reduced recurring revenue growth momentum",
+      "effect": "subscription revenue miss breaks recurring growth narrative",
       "mechanism": "fundamental",
-      "severity": 0.6,
+      "severity": 0.65,
       "polarity": -1.0,
       "evidence_span": "Subscription and services revenue was $656 million , down 6% Q/Q.",
       "source_id": "COIN2025Q3_005",
@@ -48,22 +73,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.865,
+      "confidence": 0.849,
       "span_score": 1.0,
-      "severity_align": 0.462,
+      "severity_align": 0.412,
       "mechanism_hint": 1.0,
-      "claim_id": "COIN2025Q3_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "COIN2025Q3_C001"
     },
     {
-      "cause": "Growth in USDC balances and staking",
-      "effect": "Support for subscription and services revenue base",
+      "cause": "Staking and USDC balance growth",
+      "effect": "balance growth supports long-term fee revenue stability",
       "mechanism": "fundamental",
-      "severity": 0.5,
+      "severity": 0.4,
       "polarity": 1.0,
-      "evidence_span": "driven by continued growth in average USDC balances, native units staked",
+      "evidence_span": "driven by continued growth in average USDC balances, native units staked, and all-time high average Prime Financing balances.",
       "source_id": "COIN2025Q3_002",
       "published_at": 0,
       "atom_id": "COIN2025Q3_002",
@@ -73,22 +98,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.87,
-      "span_score": 0.931,
-      "severity_align": 0.633,
+      "confidence": 0.914,
+      "span_score": 0.99,
+      "severity_align": 0.733,
       "mechanism_hint": 1.0,
-      "claim_id": "COIN2025Q3_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "COIN2025Q3_C003"
     }
   ],
   "rejected": [],
-  "claim_count": 3,
+  "claim_count": 4,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

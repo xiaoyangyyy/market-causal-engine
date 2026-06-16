@@ -5,36 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:20:19+00:00",
+  "computed_at": "2026-06-16T12:06:47+00:00",
   "accepted": [
     {
-      "cause": "Productivity and Business Processes revenue increase",
-      "effect": "Segment growth driven by Office 365",
-      "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": 1.0,
-      "evidence_span": "Revenue in Productivity and Business Processes was $11.0 billion and increased 14% (up 17% in constant currency), with the following business highlights: • Office Commercial products and cloud services revenue increased 14% (up 16% in constant currency) driven by Office 365 Comme",
-      "source_id": "MSFT2019Q3_004",
-      "published_at": 0,
-      "atom_id": "MSFT2019Q3_004",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.843,
-      "span_score": 1.0,
-      "severity_align": 0.371,
-      "mechanism_hint": 1.0,
-      "claim_id": "MSFT2019Q3_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
-    },
-    {
       "cause": "Commercial cloud revenue growth",
-      "effect": "Strongest commercial quarter performance",
+      "effect": "cloud revenue growth drives FY outlook revision",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -48,22 +23,70 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.794,
+      "confidence": 0.796,
       "span_score": 0.967,
       "severity_align": 0.249,
       "mechanism_hint": 1.0,
-      "claim_id": "MSFT2019Q3_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MSFT2019Q3_C000"
+    },
+    {
+      "cause": "Productivity segment revenue increase",
+      "effect": "segment growth supports estimate upside",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "Revenue in Productivity and Business Processes was $11.0 billion and increased 14% (up 17% in constant currency)",
+      "source_id": "MSFT2019Q3_004",
+      "published_at": 0,
+      "atom_id": "MSFT2019Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.827,
+      "span_score": 0.93,
+      "severity_align": 0.471,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MSFT2019Q3_C001"
+    },
+    {
+      "cause": "Competition risk disclosure",
+      "effect": "margin compression concern lowers valuation multiple",
+      "mechanism": "sentiment",
+      "severity": 0.4,
+      "polarity": -1.0,
+      "evidence_span": "intense competition in all of our markets that may lead to lower revenue or operating margins",
+      "source_id": "MSFT2019Q3_010",
+      "published_at": 0,
+      "atom_id": "MSFT2019Q3_010",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.828,
+      "span_score": 0.965,
+      "severity_align": 0.723,
+      "mechanism_hint": 0.6,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MSFT2019Q3_C002"
     }
   ],
   "rejected": [],
-  "claim_count": 2,
+  "claim_count": 3,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,13 +5,38 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T09:26:27+00:00",
+  "computed_at": "2026-06-16T11:48:09+00:00",
   "accepted": [
     {
-      "cause": "Net income of $2.3 billion reported",
-      "effect": "Strong profitability driving investor confidence",
+      "cause": "Total revenues increased to $5.3 billion",
+      "effect": "revenue beat drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Total revenues were $5.3 billion in 2019 compared to $5.1 billion in 2018",
+      "source_id": "GILD2019Q2_001",
+      "published_at": 0,
+      "atom_id": "GILD2019Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.817,
+      "span_score": 1.0,
+      "severity_align": 0.268,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GILD2019Q2_C000"
+    },
+    {
+      "cause": "Net income reported at $2.3 billion",
+      "effect": "earnings beat supports EPS estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.75,
       "polarity": -1.0,
       "evidence_span": "net income was $2.3 billion or $",
       "source_id": "GILD2019Q2_003",
@@ -23,44 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.81,
+      "confidence": 0.822,
       "span_score": 1.0,
-      "severity_align": 0.241,
+      "severity_align": 0.291,
       "mechanism_hint": 1.0,
-      "claim_id": "GILD2019Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GILD2019Q2_C001"
     },
     {
-      "cause": "Revenue increase to $5.3 billion",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "Total revenues were $5.3 billion in 2019 compared to $5.1 billion in 2018 .",
-      "source_id": "GILD2019Q2_001",
-      "published_at": 0,
-      "atom_id": "GILD2019Q2_001",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.842,
-      "span_score": 1.0,
-      "severity_align": 0.368,
-      "mechanism_hint": 1.0,
-      "claim_id": "GILD2019Q2_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Gross margin guidance of 85% - 87%",
-      "effect": "Expectation of sustained high profitability",
+      "cause": "Gross margin guidance set at 85% - 87%",
+      "effect": "margin expansion reinforces profitability outlook",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
@@ -74,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.863,
+      "confidence": 0.858,
       "span_score": 1.0,
       "severity_align": 0.453,
       "mechanism_hint": 1.0,
-      "claim_id": "GILD2019Q2_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GILD2019Q2_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

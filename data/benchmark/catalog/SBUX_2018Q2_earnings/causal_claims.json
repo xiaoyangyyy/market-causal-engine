@@ -5,15 +5,90 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T02:59:03+00:00",
+  "computed_at": "2026-06-16T10:35:05+00:00",
   "accepted": [
     {
-      "cause": "Consolidated net revenues grew 14% driven by new store openings and East China consolidation",
-      "effect": "estimate upside",
+      "cause": "Q2 revenue up 14% to record $6.0B",
+      "effect": "revenue growth drives estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "Revenues Up 14% to a Record $6.0 Billion GAAP EPS of",
+      "source_id": "SBUX2018Q2_000",
+      "published_at": 0,
+      "atom_id": "SBUX2018Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.792,
+      "span_score": 1.0,
+      "severity_align": 0.154,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "SBUX2018Q2_C000"
+    },
+    {
+      "cause": "Non-GAAP EPS up 18% YoY to $0.53",
+      "effect": "earnings beat strengthens valuation multiple support",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Non-GAAP EPS of $0.53, Up 18% Year-Over-Year Active Starbucks Rewards TM Membership in the U.S.",
+      "source_id": "SBUX2018Q2_001",
+      "published_at": 0,
+      "atom_id": "SBUX2018Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.809,
+      "span_score": 1.0,
+      "severity_align": 0.231,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "SBUX2018Q2_C001"
+    },
+    {
+      "cause": "Comp store sales increased 2% with China up 4%",
+      "effect": "same-store sales growth reinforces organic demand narrative",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": 1.0,
-      "evidence_span": "Consolidated net revenues grew 14% over Q2 FY17 to $6.0 billion in Q2 FY18 , primarily driven by incremental revenues from the impact of our ownership change in East China, incremental revenues from 2,103 net new Starbucks store openings",
+      "evidence_span": "comp store sales increased 2% ◦ CAP comp store sales increased 3% ▪ China comp store sales increased 4% • Consolidated net revenues of $6.0 billion, up 14% over the prior year including: ◦ 3% net benefit from consolidation of the recently acquired East China business and other st",
+      "source_id": "SBUX2018Q2_002",
+      "published_at": 0,
+      "atom_id": "SBUX2018Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.851,
+      "span_score": 1.0,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "SBUX2018Q2_C002"
+    },
+    {
+      "cause": "Revenue growth driven by 2,103 net new store openings",
+      "effect": "store expansion validates long-term growth trajectory",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "Consolidated net revenues grew 14% over Q2 FY17 to $6.0 billion in Q2 FY18 , primarily driven by incremental revenues from the impact of our ownership change in East China, incremental revenues from 2,103 net new Starbucks store openings over the past 12 months, and 2% growth in",
       "source_id": "SBUX2018Q2_004",
       "published_at": 0,
       "atom_id": "SBUX2018Q2_004",
@@ -23,62 +98,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.855,
+      "confidence": 0.862,
       "span_score": 1.0,
-      "severity_align": 0.421,
+      "severity_align": 0.471,
       "mechanism_hint": 1.0,
-      "claim_id": "SBUX2018Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "SBUX2018Q2_C003"
     }
   ],
-  "rejected": [
-    {
-      "cause": "GAAP EPS record and Non-GAAP EPS up 18%",
-      "effect": "Positive stock price reaction",
-      "mechanism": "fundamental",
-      "severity": 0.85,
-      "polarity": 1.0,
-      "evidence_span": "Revenues Up 14% to a Record $6.0 Billion GAAP EPS of Non-GAAP EPS of $0.53, Up 18% Year-Over-Year",
-      "source_id": "SBUX2018Q2_000",
-      "published_at": 0,
-      "atom_id": "SBUX2018Q2_000",
-      "validation": {
-        "passed": false,
-        "errors": [
-          "evidence_span_not_in_atom_text"
-        ],
-        "warnings": []
-      },
-      "proposer": "llm_event"
-    },
-    {
-      "cause": "Operating income declined 17% and 3% in reported segments",
-      "effect": "Negative stock price reaction",
-      "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": -0.6,
-      "evidence_span": "operating income declined 17% to $ Operating income declined 3% to $",
-      "source_id": "SBUX2018Q2_005",
-      "published_at": 0,
-      "atom_id": "SBUX2018Q2_005",
-      "validation": {
-        "passed": false,
-        "errors": [
-          "evidence_span_not_in_atom_text"
-        ],
-        "warnings": []
-      },
-      "proposer": "llm_event"
-    }
-  ],
-  "claim_count": 1,
-  "rejected_count": 2,
+  "rejected": [],
+  "claim_count": 4,
+  "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

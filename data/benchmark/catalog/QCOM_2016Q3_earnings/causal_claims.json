@@ -5,7 +5,7 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T11:35:44+00:00",
+  "computed_at": "2026-06-16T08:51:44+00:00",
   "accepted": [
     {
       "cause": "EPS well ahead of guidance due to progress with licensees in China",
@@ -58,24 +58,24 @@
       "claim_id": "QCOM2016Q3_C001"
     },
     {
-      "cause": "Operating income increased 19% to $2.0B",
-      "effect": "profitability beat reinforces earnings quality narrative",
+      "cause": "Revenue impact of $0.13 per share due to termination of a license agreement",
+      "effect": "revenue headwind lowers near-term earnings expectations",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.6,
       "polarity": -1.0,
-      "evidence_span": "Operating income $2.0B $1.7B +19% $1.9B +8% Net income $",
-      "source_id": "QCOM2016Q3_003",
+      "evidence_span": "revenues, or $0.13 per share, due to the termination of",
+      "source_id": "QCOM2016Q3_005",
       "published_at": 0,
-      "atom_id": "QCOM2016Q3_003",
+      "atom_id": "QCOM2016Q3_005",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.836,
+      "confidence": 0.858,
       "span_score": 1.0,
-      "severity_align": 0.356,
+      "severity_align": 0.456,
       "mechanism_hint": 1.0,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,

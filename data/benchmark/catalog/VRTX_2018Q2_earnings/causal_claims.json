@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T08:16:28+00:00",
+  "computed_at": "2026-06-16T10:37:08+00:00",
   "accepted": [
     {
-      "cause": "33% increase in CF product revenues",
-      "effect": "estimate revision upside",
+      "cause": "Q1 CF product revenues increased 33% to $638 million",
+      "effect": "revenue growth drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
-      "evidence_span": "First-quarter 2018 total CF product revenues of $638 million , a 33% increase compared to $481 million",
+      "evidence_span": "First-quarter 2018 total CF product revenues of $638 million , a 33% increase compared to $481 million in the first quarter of",
       "source_id": "VRTX2018Q2_003",
       "published_at": 0,
       "atom_id": "VRTX2018Q2_003",
@@ -23,23 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.788,
-      "span_score": 0.923,
+      "confidence": 0.799,
+      "span_score": 0.94,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "VRTX2018Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "VRTX2018Q2_C000"
     },
     {
-      "cause": "Significant drop in collaborative revenues",
-      "effect": "Offsetting impact on total net income",
+      "cause": "GAAP net income decreased 15% year-over-year",
+      "effect": "earnings miss triggers margin compression concern",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
-      "evidence_span": "GAAP collaborative revenues $ 2 $ 233 n/a GAAP net income $ 210 $ 248 (15)%",
+      "evidence_span": "GAAP net income $ 210 $ 248 (15)% GAAP net income p",
       "source_id": "VRTX2018Q2_002",
       "published_at": 0,
       "atom_id": "VRTX2018Q2_002",
@@ -49,14 +48,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.84,
-      "span_score": 0.904,
+      "confidence": 0.827,
+      "span_score": 0.886,
       "severity_align": 0.571,
       "mechanism_hint": 1.0,
-      "claim_id": "VRTX2018Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "VRTX2018Q2_C001"
     }
   ],
   "rejected": [],
@@ -64,7 +63,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

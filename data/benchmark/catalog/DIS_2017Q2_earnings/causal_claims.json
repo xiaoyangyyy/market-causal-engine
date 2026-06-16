@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T07:45:33+00:00",
+  "computed_at": "2026-06-16T09:40:05+00:00",
   "accepted": [
     {
       "cause": "EPS increase of 10%",
-      "effect": "Positive earnings performance",
+      "effect": "earnings beat drives estimate revision upside",
       "mechanism": "fundamental",
-      "severity": 0.9,
+      "severity": 0.85,
       "polarity": 1.0,
       "evidence_span": "EPS for the quarter increase d 10% to $",
       "source_id": "DIS2017Q2_001",
@@ -23,20 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.786,
+      "confidence": 0.801,
       "span_score": 1.0,
-      "severity_align": 0.146,
+      "severity_align": 0.196,
       "mechanism_hint": 1.0,
-      "claim_id": "DIS2017Q2_C003",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "DIS2017Q2_C000"
     },
     {
-      "cause": "Higher program sales income and lower marketing costs",
-      "effect": "Increase in operating income",
+      "cause": "Operating income increase from higher program sales and lower marketing costs",
+      "effect": "margin expansion supports valuation multiple",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.75,
       "polarity": -1.0,
       "evidence_span": "The increase in operating income was due to higher program sales income, affiliate revenue growth and a decrease in primetime marketing costs.",
       "source_id": "DIS2017Q2_009",
@@ -48,20 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.828,
+      "confidence": 0.837,
       "span_score": 1.0,
-      "severity_align": 0.31,
+      "severity_align": 0.36,
       "mechanism_hint": 1.0,
-      "claim_id": "DIS2017Q2_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "DIS2017Q2_C001"
     },
     {
-      "cause": "Contractual rate increases",
-      "effect": "Affiliate revenue growth",
+      "cause": "Affiliate revenue growth offset by subscriber decline",
+      "effect": "subscriber miss breaks growth narrative despite rate hikes",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.6,
       "polarity": 1.0,
       "evidence_span": "Affiliate revenue growth was due to contractual rate increases, partially offset by a decline in subscribers.",
       "source_id": "DIS2017Q2_006",
@@ -73,20 +73,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.847,
+      "confidence": 0.866,
       "span_score": 1.0,
-      "severity_align": 0.389,
+      "severity_align": 0.489,
       "mechanism_hint": 1.0,
-      "claim_id": "DIS2017Q2_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "DIS2017Q2_C002"
     },
     {
-      "cause": "Higher rates and CFP timing shift",
-      "effect": "Higher advertising revenue",
+      "cause": "Advertising revenue growth driven by rate increases offset by lower impressions",
+      "effect": "volume decline raises concern over ad market saturation",
       "mechanism": "fundamental",
-      "severity": 0.6,
+      "severity": 0.5,
       "polarity": -1.0,
       "evidence_span": "Higher advertising revenue was due to higher rates, which included the benefit of the CFP timing shift, partially offset by lower impressions.",
       "source_id": "DIS2017Q2_007",
@@ -98,14 +98,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.877,
+      "confidence": 0.892,
       "span_score": 1.0,
-      "severity_align": 0.51,
+      "severity_align": 0.61,
       "mechanism_hint": 1.0,
-      "claim_id": "DIS2017Q2_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "DIS2017Q2_C003"
     }
   ],
   "rejected": [],
@@ -113,7 +113,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

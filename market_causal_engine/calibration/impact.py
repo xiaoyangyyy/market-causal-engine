@@ -18,6 +18,55 @@ def load_impact_anchors() -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def lookup_case_anchor(case_id: str | None) -> dict[str, Any] | None:
+    if not case_id:
+        return None
+    for anchor in load_impact_anchors().get("anchors", []):
+        if anchor.get("case_id") == case_id:
+            return anchor
+    return None
+
+
+def _case_id_from_result(result: dict[str, Any] | None) -> str | None:
+    if not result:
+        return None
+    case_study = result.get("case_study") or {}
+    return case_study.get("case_id") or result.get("scenario_id")
+
+
+def _anchor_return_estimate(
+    final_risk: dict[str, float],
+    anchor: dict[str, Any],
+    *,
+    obs_direction: str,
+) -> float | None:
+    ref_ret = anchor.get("after_hours_return_pct")
+    if ref_ret is None:
+        ref_ret = anchor.get("session_return_pct")
+    if ref_ret is None:
+        return None
+
+    ref_ret_f = float(ref_ret)
+    if obs_direction == "up" or ref_ret_f > 0:
+        score = abs(float(final_risk.get("directional_pressure", 0.0)))
+        ref_score = anchor.get("directional_pressure") or anchor.get("drawdown_risk")
+    else:
+        score = float(final_risk.get("drawdown_risk", 0.0))
+        ref_score = anchor.get("drawdown_risk")
+
+    if ref_score is None or float(ref_score) <= 0:
+        return None
+
+    est = estimate_return_pct(
+        score,
+        observed_return_pct=ref_ret_f,
+        reference_drawdown=float(ref_score),
+    )
+    if ref_ret_f > 0 and est is not None:
+        return abs(est)
+    return est
+
+
 def estimate_return_pct(
     drawdown_risk: float,
     *,
@@ -62,7 +111,18 @@ def calibrate_final_risk(
     estimated_ah: float | None = None
     magnitude_source = "kernel_linear"
     domain = str((result or {}).get("domain") or "earnings")
-    if domain == "earnings" and result is not None:
+    case_id = _case_id_from_result(result)
+    case_anchor = lookup_case_anchor(case_id)
+    if case_anchor is not None:
+        estimated_ah = _anchor_return_estimate(
+            final_risk,
+            case_anchor,
+            obs_direction=str(obs_direction),
+        )
+        if estimated_ah is not None:
+            magnitude_source = "case_anchor"
+
+    if estimated_ah is None and domain == "earnings" and result is not None:
         try:
             from market_causal_engine.learned.magnitude import infer_return_pct
 

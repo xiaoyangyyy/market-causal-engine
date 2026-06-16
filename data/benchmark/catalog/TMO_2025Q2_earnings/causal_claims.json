@@ -5,53 +5,77 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T04:34:54+00:00",
+  "computed_at": "2026-06-15T16:46:18+00:00",
   "accepted": [
     {
-      "cause": "Diluted EPS growth of 15%",
-      "effect": "fundamental upside",
+      "cause": "diluted earnings per share (EPS) grew 15% to $",
+      "effect": "estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.8,
       "polarity": 1.0,
       "evidence_span": "diluted earnings per share (EPS) grew 15% to $",
       "source_id": "TMO2025Q2_001",
       "published_at": 0,
+      "proposer": "llm",
       "atom_id": "TMO2025Q2_001",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "proposer": "llm_event",
-      "confidence": 0.8,
+      "confidence": 0.813,
       "span_score": 1.0,
-      "severity_align": 0.2,
+      "severity_align": 0.25,
       "mechanism_hint": 1.0,
       "claim_id": "TMO2025Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
-      "cause": "Adjusted EPS growth of 1%",
-      "effect": "Modest positive earnings performance",
+      "cause": "diluted EPS in the first quarter of 2025",
+      "effect": "estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.4,
+      "severity": 0.0,
+      "polarity": -1.0,
+      "evidence_span": "diluted EPS in the first quarter of 2025 was $",
+      "source_id": "TMO2025Q2_006",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "TMO2025Q2_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.967,
+      "span_score": 1.0,
+      "severity_align": 0.95,
+      "mechanism_hint": 1.0,
+      "claim_id": "TMO2025Q2_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "First quarter adjusted EPS grew 1% to $5.15",
+      "effect": "estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.3,
       "polarity": 1.0,
-      "evidence_span": "First quarter adjusted EPS grew 1% to $5.15.",
+      "evidence_span": "First quarter adjusted EPS grew 1% to $5.15",
       "source_id": "TMO2025Q2_002",
       "published_at": 0,
+      "proposer": "llm",
       "atom_id": "TMO2025Q2_002",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "proposer": "llm_event",
-      "confidence": 0.913,
+      "confidence": 0.923,
       "span_score": 1.0,
-      "severity_align": 0.65,
+      "severity_align": 0.75,
       "mechanism_hint": 1.0,
       "claim_id": "TMO2025Q2_C001",
       "polarity_source": "evidence",
@@ -59,37 +83,80 @@
       "polarity_aligned": true
     },
     {
-      "cause": "Organic revenue growth of 1%",
-      "effect": "Limited top-line expansion signal",
+      "cause": "Organic revenue growth was 1%",
+      "effect": "estimate revision",
       "mechanism": "fundamental",
       "severity": 0.3,
       "polarity": 1.0,
-      "evidence_span": "Organic revenue growth was 1%.",
+      "evidence_span": "Organic revenue growth was 1%",
       "source_id": "TMO2025Q2_005",
       "published_at": 0,
+      "proposer": "llm",
       "atom_id": "TMO2025Q2_005",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "proposer": "llm_event",
-      "confidence": 0.935,
+      "confidence": 0.921,
       "span_score": 1.0,
       "severity_align": 0.74,
       "mechanism_hint": 1.0,
       "claim_id": "TMO2025Q2_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     }
   ],
-  "rejected": [],
-  "claim_count": 3,
-  "rejected_count": 0,
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "TMO2025Q2_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "TMO2025Q2_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "TMO2025Q2_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "TMO2025Q2_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 2,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

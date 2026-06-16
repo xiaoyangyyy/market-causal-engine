@@ -5,7 +5,7 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T08:01:37+00:00",
+  "computed_at": "2026-06-16T10:03:36+00:00",
   "accepted": [],
   "rejected": [
     {
@@ -14,17 +14,15 @@
       "mechanism": "none",
       "severity": 0.0,
       "polarity": 0.0,
-      "evidence_span": "None",
-      "source_id": "CAT2017Q3_000",
+      "evidence_span": "100 NE Adams Street, Peoria, Illinois (Address of principal executive offices)",
+      "source_id": "CAT2017Q3_001",
       "published_at": 0,
       "proposer": "llm",
-      "atom_id": "CAT2017Q3_000",
+      "atom_id": "CAT2017Q3_001",
       "validation": {
         "passed": false,
         "errors": [
           "invalid_mechanism:none",
-          "evidence_span_too_short",
-          "evidence_span_not_in_atom_text",
           "mechanism_not_allowed_for_domain:none:earnings"
         ],
         "warnings": []

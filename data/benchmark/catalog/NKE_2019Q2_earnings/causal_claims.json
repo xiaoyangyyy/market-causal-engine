@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:13:18+00:00",
+  "computed_at": "2026-06-16T11:42:24+00:00",
   "accepted": [
     {
-      "cause": "Strong revenue growth and margin expansion",
-      "effect": "Diluted earnings per share of $0.68",
+      "cause": "Gross margin expansion and lower tax rate",
+      "effect": "EPS beat driven by margin and tax tailwinds",
       "mechanism": "fundamental",
-      "severity": 0.9,
+      "severity": 0.85,
       "polarity": 1.0,
-      "evidence_span": "Net income was $1.1 billion in the third quarter and diluted earnings per share was $0.68 driven by strong revenue growth, gross margin expansion",
+      "evidence_span": "Net income was $1.1 billion in the third quarter and diluted earnings per share was $0.68 driven by strong revenue growth, gross margin expansion, the lower effective tax rate",
       "source_id": "NKE2019Q2_005",
       "published_at": 0,
       "atom_id": "NKE2019Q2_005",
@@ -23,20 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.792,
-      "span_score": 0.954,
-      "severity_align": 0.271,
+      "confidence": 0.816,
+      "span_score": 0.975,
+      "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "NKE2019Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "NKE2019Q2_C000"
     },
     {
-      "cause": "Gross margin expansion",
-      "effect": "Increased net income and diluted EPS",
+      "cause": "Gross margin increased 130 basis points",
+      "effect": "Margin expansion supports valuation multiple",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.75,
       "polarity": 1.0,
       "evidence_span": "Gross margin increased 130 basis points to 45.1",
       "source_id": "NKE2019Q2_004",
@@ -48,22 +48,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.8,
+      "confidence": 0.824,
       "span_score": 1.0,
-      "severity_align": 0.201,
+      "severity_align": 0.301,
       "mechanism_hint": 1.0,
-      "claim_id": "NKE2019Q2_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "NKE2019Q2_C001"
     },
     {
-      "cause": "Broad-based strength across geographies and NIKE Direct",
-      "effect": "Revenue growth",
+      "cause": "Revenue growth driven by NIKE Direct digital strength",
+      "effect": "Direct channel growth reinforces long-term margin narrative",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.65,
       "polarity": 1.0,
-      "evidence_span": "Revenue growth was driven by broad-based strength across all geographies as well as NIKE Direct, led by digital.",
+      "evidence_span": "Revenue growth was driven by broad-based strength across all geographies as well as NIKE Direct, led by digital",
       "source_id": "NKE2019Q2_000",
       "published_at": 0,
       "atom_id": "NKE2019Q2_000",
@@ -73,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.835,
+      "confidence": 0.855,
       "span_score": 1.0,
-      "severity_align": 0.341,
+      "severity_align": 0.441,
       "mechanism_hint": 1.0,
-      "claim_id": "NKE2019Q2_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "NKE2019Q2_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

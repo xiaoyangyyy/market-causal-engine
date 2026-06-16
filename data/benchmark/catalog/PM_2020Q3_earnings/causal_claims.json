@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T02:42:00+00:00",
+  "computed_at": "2026-06-15T14:16:43+00:00",
   "accepted": [
     {
-      "cause": "Reported diluted EPS decline of 16.1%",
-      "effect": "valuation de-rating",
+      "cause": "Q2 reported diluted EPS decline of 16.1% year-over-year",
+      "effect": "earnings miss triggers downward estimate revisions",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -27,15 +27,14 @@
       "span_score": 1.0,
       "severity_align": 0.261,
       "mechanism_hint": 1.0,
-      "claim_id": "PM2020Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "PM2020Q3_C000"
     },
     {
-      "cause": "Adjusted diluted EPS down by 11.6%",
-      "effect": "Bearish sentiment on profitability trends",
+      "cause": "Adjusted diluted EPS down by 11.6% excluding currency",
+      "effect": "core profitability contraction lowers valuation multiples",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": -1.0,
@@ -49,24 +48,24 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.831,
+      "confidence": 0.829,
       "span_score": 1.0,
       "severity_align": 0.322,
       "mechanism_hint": 1.0,
-      "claim_id": "PM2020Q3_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PM2020Q3_C001"
     }
   ],
   "rejected": [
     {
       "cause": "FDA authorization of IQOS as modified risk product",
-      "effect": "Potential long-term growth catalyst",
+      "effect": "regulatory approval supports long-term growth narrative",
       "mechanism": "regulatory",
       "severity": 0.6,
-      "polarity": 0.5,
-      "evidence_span": "Food and Drug Administration (FDA) authorized the marketing of the IQOS tobacco heating system as a modified risk tobacco product",
+      "polarity": 0.6,
+      "evidence_span": "Food and Drug Administration (FDA) authorized the marketing of the IQOS tobacco heating system as a modified risk tobacco product 2020 Six Months Year-to-Date",
       "source_id": "PM2020Q3_004",
       "published_at": 0,
       "atom_id": "PM2020Q3_004",
@@ -84,7 +83,5 @@
   "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:55:59+00:00",
+  "computed_at": "2026-06-16T11:52:42+00:00",
   "accepted": [
     {
-      "cause": "Revenue $ 15,077",
-      "effect": "Costs and expenses: Cost of",
+      "cause": "Revenue increase",
+      "effect": "Margin shift",
       "mechanism": "fundamental",
-      "severity": 0.5,
+      "severity": 0.8,
       "polarity": -1.0,
       "evidence_span": "Revenue $ 15,077 $ 11,966 Costs and expenses: Cost of",
       "source_id": "META2019Q2_003",
@@ -23,20 +23,45 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.889,
+      "confidence": 0.814,
       "span_score": 1.0,
-      "severity_align": 0.554,
+      "severity_align": 0.254,
       "mechanism_hint": 1.0,
-      "claim_id": "META2019Q2_C002",
+      "claim_id": "META2019Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
-      "cause": "building out our privacy-focused vision for the future of social networking",
-      "effect": "future of social networking",
+      "cause": "Net income decline",
+      "effect": "Operating cash flow reduction",
       "mechanism": "fundamental",
-      "severity": 0.5,
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Net income $ 2,429 $ 4,988 Adjustments to reconcile net income to net cash provided by operating activities",
+      "source_id": "META2019Q2_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "META2019Q2_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.803,
+      "span_score": 0.926,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "claim_id": "META2019Q2_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "building out privacy-focused vision and addressing internet issues",
+      "effect": "long-term revenue growth estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.6,
       "polarity": -1.0,
       "evidence_span": "We are focused on building out our privacy-focused vision for the future of social networking",
       "source_id": "META2019Q2_000",
@@ -48,22 +73,69 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.872,
+      "confidence": 0.842,
       "span_score": 0.916,
-      "severity_align": 0.671,
+      "severity_align": 0.571,
       "mechanism_hint": 1.0,
-      "claim_id": "META2019Q2_C003",
+      "claim_id": "META2019Q2_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.039,
+      "polarity": -1.0,
+      "evidence_span": "diluted EPS would have been $",
+      "source_id": "META2019Q2_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "META2019Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.9,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "META2019Q2_C000",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     }
   ],
-  "rejected": [],
-  "claim_count": 2,
-  "rejected_count": 0,
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "META2019Q2_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "META2019Q2_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 4,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

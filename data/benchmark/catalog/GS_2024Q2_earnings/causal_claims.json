@@ -5,90 +5,153 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T12:53:14+00:00",
+  "computed_at": "2026-06-15T16:14:25+00:00",
   "accepted": [
     {
-      "cause": "Record quarterly Management and other fees",
-      "effect": "Asset & Wealth Management revenue growth",
+      "cause": "Net Earnings EPS 1Q24 $14.21 billion",
+      "effect": "earnings estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": 1.0,
-      "evidence_span": "including record quarterly Management and other fees",
-      "source_id": "GS2024Q2_006",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Net Earnings EPS 1Q24 $14.21 billion 1Q24 $",
+      "source_id": "GS2024Q2_001",
       "published_at": 0,
-      "atom_id": "GS2024Q2_006",
+      "proposer": "llm",
+      "atom_id": "GS2024Q2_001",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "proposer": "llm_event",
-      "confidence": 0.799,
-      "span_score": 0.928,
-      "severity_align": 0.355,
+      "confidence": 0.813,
+      "span_score": 1.0,
+      "severity_align": 0.248,
       "mechanism_hint": 1.0,
-      "claim_id": "GS2024Q2_C001",
+      "claim_id": "GS2024Q2_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
-      "cause": "Strong Investment banking fees and FICC revenues",
-      "effect": "Record quarterly net revenues in financing",
+      "cause": "Net Earnings EPS 1Q24 $14.21 billion",
+      "effect": "earnings estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.85,
-      "polarity": 1.0,
-      "evidence_span": "driven by strong performances in Investment banking fees, Fixed Income, Currency and Commodities (including record quarterly net revenues in financing)",
-      "source_id": "GS2024Q2_005",
-      "published_at": 0,
-      "atom_id": "GS2024Q2_005",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.807,
-      "span_score": 0.958,
-      "severity_align": 0.321,
-      "mechanism_hint": 1.0,
-      "claim_id": "GS2024Q2_C000",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Second highest quarter in Equities performance",
-      "effect": "Increased Global Banking & Markets net revenues",
-      "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.8,
       "polarity": -1.0,
-      "evidence_span": "Equities (including the second highest quarter",
-      "source_id": "GS2024Q2_005",
+      "evidence_span": "Net Earnings EPS 1Q24 $14.21 billion 1Q24 $",
+      "source_id": "GS2024Q2_020",
       "published_at": 0,
-      "atom_id": "GS2024Q2_005",
+      "proposer": "llm",
+      "atom_id": "GS2024Q2_020",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "proposer": "llm_event",
-      "confidence": 0.803,
-      "span_score": 0.883,
-      "severity_align": 0.471,
+      "confidence": 0.813,
+      "span_score": 1.0,
+      "severity_align": 0.248,
       "mechanism_hint": 1.0,
       "claim_id": "GS2024Q2_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "revenues of $14.21 billion and net earnings",
+      "effect": "earnings estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "revenues of $14.21 billion and net earnings of",
+      "source_id": "GS2024Q2_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GS2024Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.879,
+      "span_score": 1.0,
+      "severity_align": 0.55,
+      "mechanism_hint": 1.0,
+      "claim_id": "GS2024Q2_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     }
   ],
-  "rejected": [],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "GS2024Q2_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GS2024Q2_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "GS2024Q2_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GS2024Q2_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "Reports First Quarter 2024 Earnings",
+      "source_id": "GS2024Q2_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "GS2024Q2_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
   "claim_count": 3,
-  "rejected_count": 0,
+  "rejected_count": 3,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

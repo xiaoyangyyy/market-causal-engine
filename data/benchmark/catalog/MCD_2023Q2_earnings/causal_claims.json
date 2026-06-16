@@ -5,39 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T04:08:20+00:00",
+  "computed_at": "2026-06-15T15:43:05+00:00",
   "accepted": [
     {
-      "cause": "Diluted earnings per share was $2.45",
-      "effect": "estimate revision upside",
+      "cause": "NET INCOME $ 1,802.3 $ 1,104.4",
+      "effect": "significant net income jump reinforces profitability valuation metrics",
       "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": -1.0,
-      "evidence_span": "Diluted earnings per share was $2.45, an increase of",
-      "source_id": "MCD2023Q2_001",
-      "published_at": 0,
-      "atom_id": "MCD2023Q2_001",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.814,
-      "span_score": 1.0,
-      "severity_align": 0.254,
-      "mechanism_hint": 1.0,
-      "claim_id": "MCD2023Q2_C001",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Net income increased to $1,802.3",
-      "effect": "estimate revision upside",
-      "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.85,
       "polarity": -1.0,
       "evidence_span": "NET INCOME $ 1,802.3 $ 1,104.4 $",
       "source_id": "MCD2023Q2_006",
@@ -49,21 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.823,
+      "confidence": 0.8,
       "span_score": 1.0,
-      "severity_align": 0.291,
+      "severity_align": 0.191,
       "mechanism_hint": 1.0,
-      "claim_id": "MCD2023Q2_C002",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "MCD2023Q2_C002"
     },
     {
-      "cause": "Consolidated revenues increased 4%",
-      "effect": "estimate upside",
+      "cause": "Consolidated revenues increased 4% (8% in constant currencies)",
+      "effect": "revenue growth drives top-line estimate revision upside",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.8,
       "polarity": 1.0,
       "evidence_span": "Consolidated revenues increased 4% (8% in constant currencies).",
       "source_id": "MCD2023Q2_000",
@@ -75,15 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.841,
+      "confidence": 0.816,
       "span_score": 1.0,
-      "severity_align": 0.362,
+      "severity_align": 0.262,
       "mechanism_hint": 1.0,
-      "claim_id": "MCD2023Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "MCD2023Q2_C000"
+    },
+    {
+      "cause": "Diluted earnings per share was $2.45, an increase of",
+      "effect": "EPS increase supports earnings per share estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Diluted earnings per share was $2.45, an increase of",
+      "source_id": "MCD2023Q2_001",
+      "published_at": 0,
+      "atom_id": "MCD2023Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.825,
+      "span_score": 1.0,
+      "severity_align": 0.304,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MCD2023Q2_C001"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

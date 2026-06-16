@@ -5,107 +5,54 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:15:48+00:00",
+  "computed_at": "2026-06-16T09:42:36+00:00",
   "accepted": [
     {
-      "cause": "revenue growth",
-      "effect": "fundamental upside",
+      "cause": "revenue increased $171 million from the first quarter of",
+      "effect": "estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.136,
+      "severity": 0.8,
       "polarity": 1.0,
       "evidence_span": "revenue increased $171 million from the first quarter of",
       "source_id": "BLK2017Q2_006",
       "published_at": 0,
-      "proposer": "heuristic",
+      "proposer": "llm",
       "atom_id": "BLK2017Q2_006",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.98,
+      "confidence": 0.814,
       "span_score": 1.0,
-      "severity_align": 0.92,
+      "severity_align": 0.256,
       "mechanism_hint": 1.0,
-      "claim_id": "BLK2017Q2_C005",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "negative fundamental signal",
-      "effect": "valuation de-rating",
-      "mechanism": "fundamental",
-      "severity": 0.054,
-      "polarity": -1.0,
-      "evidence_span": "revenue” on the condensed consolidated statements of",
-      "source_id": "BLK2017Q2_005",
-      "published_at": 0,
-      "proposer": "heuristic",
-      "atom_id": "BLK2017Q2_005",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "confidence": 1.0,
-      "span_score": 1.0,
-      "severity_align": 1.0,
-      "mechanism_hint": 1.0,
-      "claim_id": "BLK2017Q2_C004",
-      "effect_rewritten": true,
+      "claim_id": "BLK2017Q2_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
-      "cause": "negative fundamental signal",
-      "effect": "valuation de-rating",
+      "cause": "revenue growth",
+      "effect": "margin shift",
       "mechanism": "fundamental",
-      "severity": 0.046,
-      "polarity": -1.0,
-      "evidence_span": "revenue is currently reported as part of",
-      "source_id": "BLK2017Q2_004",
-      "published_at": 0,
-      "proposer": "heuristic",
-      "atom_id": "BLK2017Q2_004",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "confidence": 1.0,
-      "span_score": 1.0,
-      "severity_align": 1.0,
-      "mechanism_hint": 1.0,
-      "claim_id": "BLK2017Q2_C003",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "negative fundamental signal",
-      "effect": "valuation de-rating",
-      "mechanism": "fundamental",
-      "severity": 0.041,
+      "severity": 0.5,
       "polarity": -1.0,
       "evidence_span": "revenue and 100 basis points of",
       "source_id": "BLK2017Q2_001",
       "published_at": 0,
-      "proposer": "heuristic",
+      "proposer": "llm",
       "atom_id": "BLK2017Q2_001",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
+      "confidence": 0.877,
       "span_score": 1.0,
-      "severity_align": 1.0,
+      "severity_align": 0.541,
       "mechanism_hint": 1.0,
       "claim_id": "BLK2017Q2_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true
@@ -126,7 +73,7 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
+      "confidence": 0.93,
       "span_score": 1.0,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
@@ -136,12 +83,77 @@
       "polarity_aligned": true
     }
   ],
-  "rejected": [],
-  "claim_count": 5,
-  "rejected_count": 0,
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "BLK2017Q2_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "BLK2017Q2_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "BLK2017Q2_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "BLK2017Q2_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "BLK2017Q2_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "BLK2017Q2_005",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 3,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

@@ -5,32 +5,31 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:21:42+00:00",
+  "computed_at": "2026-06-16T10:01:34+00:00",
   "accepted": [
     {
-      "cause": "negative fundamental signal",
-      "effect": "valuation de-rating",
-      "mechanism": "fundamental",
-      "severity": 0.171,
+      "cause": "domestic and international economic conditions",
+      "effect": "uncertainties in the financial markets",
+      "mechanism": "macro",
+      "severity": 0.6,
       "polarity": -1.0,
-      "evidence_span": "These risks and uncertainties include, but are not limited to, domestic and international economic conditions, including exchange rates, the effects of competition and regulation,",
+      "evidence_span": "domestic and international economic conditions, including exchange rates",
       "source_id": "COST2017Q3_000",
       "published_at": 0,
-      "proposer": "heuristic",
+      "proposer": "llm",
       "atom_id": "COST2017Q3_000",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.988,
-      "span_score": 0.978,
-      "severity_align": 1.0,
+      "confidence": 0.786,
+      "span_score": 0.901,
+      "severity_align": 0.571,
       "mechanism_hint": 1.0,
       "claim_id": "COST2017Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.65,
+      "effect_specificity": 0.25,
       "polarity_aligned": true
     }
   ],
@@ -39,7 +38,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

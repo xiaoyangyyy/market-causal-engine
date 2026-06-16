@@ -5,7 +5,7 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:26:14+00:00",
+  "computed_at": "2026-06-16T10:20:10+00:00",
   "accepted": [
     {
       "cause": "negative fundamental signal",
@@ -23,7 +23,7 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.988,
+      "confidence": 0.889,
       "span_score": 0.979,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
@@ -38,10 +38,10 @@
     {
       "cause": "None",
       "effect": "None",
-      "mechanism": "regulatory",
+      "mechanism": "none",
       "severity": 0.0,
       "polarity": 0.0,
-      "evidence_span": "If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act.",
+      "evidence_span": "None",
       "source_id": "PANW2018Q1_001",
       "published_at": 0,
       "proposer": "llm",
@@ -49,7 +49,10 @@
       "validation": {
         "passed": false,
         "errors": [
-          "mechanism_not_allowed_for_domain:regulatory:earnings"
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
         ],
         "warnings": []
       }
@@ -59,7 +62,5 @@
   "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

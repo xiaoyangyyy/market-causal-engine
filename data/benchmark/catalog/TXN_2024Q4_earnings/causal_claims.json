@@ -5,39 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T04:29:09+00:00",
+  "computed_at": "2026-06-15T16:29:24+00:00",
   "accepted": [
     {
-      "cause": "Revenue decreased 8% year-over-year",
-      "effect": "valuation de-rating",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": -1.0,
-      "evidence_span": "Revenue decreased 8% from the same quarter a year ago",
-      "source_id": "TXN2024Q4_001",
-      "published_at": 0,
-      "atom_id": "TXN2024Q4_001",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.796,
-      "span_score": 0.899,
-      "severity_align": 0.407,
-      "mechanism_hint": 1.0,
-      "claim_id": "TXN2024Q4_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
       "cause": "Q4 revenue guidance range of $3.70B to $4.00B",
-      "effect": "Potential bearish sentiment if guidance misses consensus expectations",
+      "effect": "Q4 revenue estimate revision based on midpoint guidance",
       "mechanism": "fundamental",
-      "severity": 0.65,
+      "severity": 0.8,
       "polarity": -1.0,
       "evidence_span": "TI's fourth quarter outlook is for revenue in the range of $3.70 billion to $4.00 billion",
       "source_id": "TXN2024Q4_002",
@@ -49,22 +23,47 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.852,
+      "confidence": 0.856,
       "span_score": 0.977,
-      "severity_align": 0.459,
+      "severity_align": 0.309,
       "mechanism_hint": 1.0,
-      "claim_id": "TXN2024Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "TXN2024Q4_C000"
     },
     {
-      "cause": "Diluted EPS decline from $1.709 to $1.355",
-      "effect": "Reduced investor confidence due to lower profitability",
+      "cause": "Year-over-year revenue decline of 8%",
+      "effect": "YoY revenue contraction lowers growth narrative",
       "mechanism": "fundamental",
       "severity": 0.7,
       "polarity": -1.0,
-      "evidence_span": "Net income $ 1,362 $ 1,709",
+      "evidence_span": "Revenue decreased 8% from the same quarter a year ago and increased 9% sequentially",
+      "source_id": "TXN2024Q4_001",
+      "published_at": 0,
+      "atom_id": "TXN2024Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.822,
+      "span_score": 0.926,
+      "severity_align": 0.457,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TXN2024Q4_C001"
+    },
+    {
+      "cause": "Net income drop from $1.709B to $1.362B",
+      "effect": "Net income decline reduces EPS valuation support",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Net income $ 1,362 $ 1,709 Income allocated to RSUs (7) (10) Income allocated to common stock",
       "source_id": "TXN2024Q4_005",
       "published_at": 0,
       "atom_id": "TXN2024Q4_005",
@@ -74,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.796,
-      "span_score": 0.869,
-      "severity_align": 0.471,
+      "confidence": 0.842,
+      "span_score": 0.916,
+      "severity_align": 0.571,
       "mechanism_hint": 1.0,
-      "claim_id": "TXN2024Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TXN2024Q4_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

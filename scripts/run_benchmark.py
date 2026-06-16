@@ -66,10 +66,11 @@ def main() -> int:
     print(json.dumps(
         {
             "run_id": report["run_id"],
-            "summary": report["summary"],
-            "out_of_time": report["out_of_time"],
-            "ablation": report.get("ablation"),
-            "sensitivity": report.get("sensitivity"),
+            "headline": report.get("headline"),
+            "catalog_only": report.get("catalog_only"),
+            "appendix_mixed_accuracy": report.get("appendix", {}).get("mixed_overall_direction_accuracy"),
+            "out_of_time_real_label": report.get("out_of_time"),
+            "failed_cases": len(report.get("failed_cases", [])),
             "artifacts": report.get("artifacts"),
             "errors": len(report.get("errors", [])),
         },

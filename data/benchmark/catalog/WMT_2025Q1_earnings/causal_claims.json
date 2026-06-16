@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T04:32:36+00:00",
+  "computed_at": "2026-06-15T16:36:43+00:00",
   "accepted": [
     {
-      "cause": "Operating income growth driven by higher gross margins and membership income",
-      "effect": "Positive earnings performance and improved profitability",
+      "cause": "Operating income up 8.3% due to higher gross margins and membership income growth",
+      "effect": "margin expansion drives operating income upside",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -27,16 +27,41 @@
       "span_score": 1.0,
       "severity_align": 0.252,
       "mechanism_hint": 1.0,
-      "claim_id": "WMT2025Q1_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "WMT2025Q1_C000"
     },
     {
-      "cause": "Adjusted EPS of $0.66 excluding one-time losses",
-      "effect": "Stronger reported earnings per share performance",
+      "cause": "Product mix headwinds as grocery and health & wellness outgrew general merchandise",
+      "effect": "lower-margin category mix pressures gross profit growth",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "Offset by product mix headwinds as grocery and health & wellness sales outgrew gen merch Gross profit $33.1 billion",
+      "source_id": "WMT2025Q1_009",
+      "published_at": 0,
+      "atom_id": "WMT2025Q1_009",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.893,
+      "span_score": 1.0,
+      "severity_align": 0.613,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "WMT2025Q1_C002"
+    },
+    {
+      "cause": "Adjusted EPS of $0.66 excludes net loss on investments and opioid settlement proceeds",
+      "effect": "non-recurring investment loss reduces adjusted EPS quality",
+      "mechanism": "fundamental",
+      "severity": 0.4,
       "polarity": -1.0,
       "evidence_span": "Adjusted EPS 1 of $0.66 excludes the effect, net of tax, from a net loss of $0.02 on equity and other investments as well as $0.01 from the proceeds of an opioid-related legal settlement",
       "source_id": "WMT2025Q1_002",
@@ -48,39 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.846,
+      "confidence": 0.919,
       "span_score": 0.983,
-      "severity_align": 0.421,
+      "severity_align": 0.771,
       "mechanism_hint": 1.0,
-      "claim_id": "WMT2025Q1_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Revenue growth of 4.1% and 5.3% currency-adjusted",
-      "effect": "Top-line expansion and market share gains",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "Revenue of $180.6 billion, up 4.1%, or 5.3% (cc) 1",
-      "source_id": "WMT2025Q1_000",
-      "published_at": 0,
-      "atom_id": "WMT2025Q1_000",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.805,
-      "span_score": 0.886,
-      "severity_align": 0.471,
-      "mechanism_hint": 1.0,
-      "claim_id": "WMT2025Q1_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "WMT2025Q1_C001"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

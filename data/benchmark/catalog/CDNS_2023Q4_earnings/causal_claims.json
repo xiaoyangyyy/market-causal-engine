@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T12:40:38+00:00",
+  "computed_at": "2026-06-15T15:55:04+00:00",
   "accepted": [
     {
       "cause": "Raising 2023 outlook for revenue",
-      "effect": "estimate revision upside",
+      "effect": "revenue guidance increase lifts FY valuation",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -23,19 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.803,
+      "confidence": 0.804,
       "span_score": 1.0,
       "severity_align": 0.211,
       "mechanism_hint": 1.0,
-      "claim_id": "CDNS2023Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "CDNS2023Q4_C000"
     },
     {
-      "cause": "Q4 2023 Revenue guidance of $1.039 billion - $1.079 billion",
-      "effect": "Increased investor confidence in near-term top-line growth",
+      "cause": "Q4 2023 Revenue guidance set at $1.039 billion - $1.079 billion",
+      "effect": "revenue range establishes top-line growth baseline",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": -1.0,
@@ -49,39 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.827,
+      "confidence": 0.826,
       "span_score": 1.0,
       "severity_align": 0.309,
       "mechanism_hint": 1.0,
-      "claim_id": "CDNS2023Q4_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "CDNS2023Q4_C001"
     },
     {
-      "cause": "Outlook for non-GAAP operating margin improvement",
-      "effect": "Expectation of enhanced profitability driving stock value",
+      "cause": "Non-GAAP EPS guidance of $0.93",
+      "effect": "earnings per share target supports profitability expectations",
       "mechanism": "fundamental",
       "severity": 0.7,
       "polarity": -1.0,
-      "evidence_span": "outlook for non-GAAP operating margin",
-      "source_id": "CDNS2023Q4_001",
+      "evidence_span": "EPS $0.93 • Non-GAAP EPS $",
+      "source_id": "CDNS2023Q4_005",
       "published_at": 0,
-      "atom_id": "CDNS2023Q4_001",
+      "atom_id": "CDNS2023Q4_005",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.836,
+      "confidence": 0.832,
       "span_score": 1.0,
-      "severity_align": 0.344,
+      "severity_align": 0.338,
       "mechanism_hint": 1.0,
-      "claim_id": "CDNS2023Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "CDNS2023Q4_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

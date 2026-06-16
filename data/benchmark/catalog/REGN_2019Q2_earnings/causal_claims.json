@@ -5,13 +5,38 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T09:34:07+00:00",
+  "computed_at": "2026-06-16T11:47:24+00:00",
   "accepted": [
     {
-      "cause": "Dupixent global net sales increased 166% to $557 million",
-      "effect": "Strong growth in key product line driving valuation",
+      "cause": "Q2 2019 revenues increased 20% to $1.93 billion",
+      "effect": "revenue growth drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "Second quarter 2019 revenues increased 20% to $1.93 billion versus second quarter 2018",
+      "source_id": "REGN2019Q2_000",
+      "published_at": 0,
+      "atom_id": "REGN2019Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.937,
+      "span_score": 0.936,
+      "severity_align": 0.96,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "REGN2019Q2_C000"
+    },
+    {
+      "cause": "Dupixent global net sales increased 166% to $557 million",
+      "effect": "collaborator sales surge reinforces growth narrative",
+      "mechanism": "fundamental",
+      "severity": 0.85,
       "polarity": 1.0,
       "evidence_span": "Dupixent ® global net sales, which are recorded by the Company's collaborator Sanofi, increased 166% to $557 million versus second quarter 2018",
       "source_id": "REGN2019Q2_001",
@@ -23,18 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.964,
+      "confidence": 0.952,
       "span_score": 0.952,
-      "severity_align": 0.96,
+      "severity_align": 0.99,
       "mechanism_hint": 1.0,
-      "claim_id": "REGN2019Q2_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "REGN2019Q2_C001"
     },
     {
-      "cause": "GAAP diluted EPS includes $3.55 impact from Alnylam payment",
-      "effect": "One-time earnings boost masking operational performance",
+      "cause": "GAAP diluted EPS includes $3.55 impact related to Alnylam payment and unrealized losses",
+      "effect": "one-time charges obscure core earnings quality",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
@@ -48,40 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.955,
+      "confidence": 0.938,
       "span_score": 1.0,
       "severity_align": 0.82,
       "mechanism_hint": 1.0,
-      "claim_id": "REGN2019Q2_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Q2 2019 revenues increased 20% to $1.93 billion",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.85,
-      "polarity": 1.0,
-      "evidence_span": "Second quarter 2019 revenues increased 20% to $1.93 billion versus second quarter 2018",
-      "source_id": "REGN2019Q2_000",
-      "published_at": 0,
-      "atom_id": "REGN2019Q2_000",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.962,
-      "span_score": 0.936,
-      "severity_align": 0.99,
-      "mechanism_hint": 1.0,
-      "claim_id": "REGN2019Q2_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "REGN2019Q2_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

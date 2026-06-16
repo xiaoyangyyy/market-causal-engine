@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T09:52:05+00:00",
+  "computed_at": "2026-06-16T11:58:37+00:00",
   "accepted": [
     {
-      "cause": "Adjusted EPS of $1.96 reported",
-      "effect": "Investor confidence in earnings performance",
+      "cause": "Q2 2019 Adjusted EPS of $1.96",
+      "effect": "EPS beat drives estimate revision upside",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": -1.0,
       "evidence_span": "2Q19 Adjusted* EPS of $1.96 • U.S.",
       "source_id": "UPS2019Q3_001",
@@ -23,20 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.81,
+      "confidence": 0.8,
       "span_score": 1.0,
-      "severity_align": 0.242,
+      "severity_align": 0.192,
       "mechanism_hint": 1.0,
-      "claim_id": "UPS2019Q3_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UPS2019Q3_C000"
     },
     {
       "cause": "Consolidated revenue increased 3.4% to $18 billion",
-      "effect": "estimate upside",
+      "effect": "Revenue growth supports top-line valuation models",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.75,
       "polarity": 1.0,
       "evidence_span": "Consolidated revenue increased 3.4% to $18 billion, driven by gains in average daily volume in the U.S.",
       "source_id": "UPS2019Q3_004",
@@ -48,40 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.851,
+      "confidence": 0.836,
       "span_score": 0.998,
-      "severity_align": 0.408,
+      "severity_align": 0.358,
       "mechanism_hint": 1.0,
-      "claim_id": "UPS2019Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UPS2019Q3_C001"
     },
     {
-      "cause": "Revenue per piece rose 0.3%",
-      "effect": "Improved pricing power perception",
+      "cause": "Total revenue per piece fell less than 1%",
+      "effect": "Pricing pressure raises margin compression concern",
       "mechanism": "fundamental",
-      "severity": 0.5,
-      "polarity": 1.0,
-      "evidence_span": "revenue per piece rose 0.3%, an increase of",
-      "source_id": "UPS2019Q3_008",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Total revenue per piece fell less than 1%, but grew",
+      "source_id": "UPS2019Q3_007",
       "published_at": 0,
-      "atom_id": "UPS2019Q3_008",
+      "atom_id": "UPS2019Q3_007",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.887,
+      "confidence": 0.858,
       "span_score": 1.0,
-      "severity_align": 0.548,
+      "severity_align": 0.453,
       "mechanism_hint": 1.0,
-      "claim_id": "UPS2019Q3_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UPS2019Q3_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

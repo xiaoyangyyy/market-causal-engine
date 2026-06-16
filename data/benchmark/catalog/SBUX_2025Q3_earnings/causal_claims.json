@@ -5,40 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T04:37:31+00:00",
+  "computed_at": "2026-06-15T16:51:08+00:00",
   "accepted": [
     {
-      "cause": "Non-recurring investment and discrete tax item",
-      "effect": "Negative impact on Q3 EPS",
-      "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": -1.0,
-      "evidence_span": "In the quarter, we made a significant non-recurring investment in our Leadership Experience 2025 and also incurred a discrete tax item, which in the aggregate, negatively impacted Q3 EPS by $0.11",
-      "source_id": "SBUX2025Q3_003",
-      "published_at": 0,
-      "atom_id": "SBUX2025Q3_003",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.893,
-      "span_score": 1.0,
-      "severity_align": 0.571,
-      "mechanism_hint": 1.0,
-      "claim_id": "SBUX2025Q3_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Significant decline in GAAP and Non-GAAP EPS",
-      "effect": "Negative impact on stock price",
+      "cause": "GAAP and Non-GAAP EPS declined over 45% year-over-year",
+      "effect": "earnings miss triggers downward estimate revisions",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": -1.0,
-      "evidence_span": "GAAP earnings per share of $0.49 declined 47% over prior year",
+      "evidence_span": "GAAP earnings per share of $0.49 declined 47% over prior year ◦ Non-GAAP earnings per share of $0.50 declined 46% over prior year",
       "source_id": "SBUX2025Q3_002",
       "published_at": 0,
       "atom_id": "SBUX2025Q3_002",
@@ -48,42 +23,70 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.759,
-      "span_score": 0.894,
+      "confidence": 0.789,
+      "span_score": 0.942,
       "severity_align": 0.271,
       "mechanism_hint": 1.0,
-      "claim_id": "SBUX2025Q3_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    }
-  ],
-  "rejected": [
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "SBUX2025Q3_C001"
+    },
     {
-      "cause": "GAAP operating margin contraction",
-      "effect": "Negative impact on stock price",
+      "cause": "GAAP operating margin contracted 680 basis points year-over-year",
+      "effect": "margin compression concern drives valuation multiple contraction",
       "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": -0.7,
-      "evidence_span": "GAAP operating margin contracted 680 basis points year-over-year to 9.9%, primarily driven by deleverage, investments in support of \"Back to Starbucks\"",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "GAAP operating margin contracted 680 basis points year-over-year to 9.9%, primarily driven by deleverage",
       "source_id": "SBUX2025Q3_001",
       "published_at": 0,
       "atom_id": "SBUX2025Q3_001",
       "validation": {
-        "passed": false,
-        "errors": [
-          "evidence_span_not_in_atom_text"
-        ],
+        "passed": true,
+        "errors": [],
         "warnings": []
       },
-      "proposer": "llm_event"
+      "proposer": "llm_event",
+      "confidence": 0.791,
+      "span_score": 0.924,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "SBUX2025Q3_C000"
+    },
+    {
+      "cause": "Discrete tax item and non-recurring investment negatively impacted Q3 EPS by $0.11",
+      "effect": "one-time charges obscure underlying earnings quality",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "incurred a discrete tax item, which in the aggregate, negatively impacted Q3 EPS by $0.11",
+      "source_id": "SBUX2025Q3_003",
+      "published_at": 0,
+      "atom_id": "SBUX2025Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.845,
+      "span_score": 0.923,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "SBUX2025Q3_C002"
     }
   ],
-  "claim_count": 2,
-  "rejected_count": 1,
+  "rejected": [],
+  "claim_count": 3,
+  "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

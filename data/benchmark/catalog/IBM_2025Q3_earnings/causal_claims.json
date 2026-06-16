@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T13:34:01+00:00",
+  "computed_at": "2026-06-15T16:55:12+00:00",
   "accepted": [
     {
       "cause": "Exceeded expectations for revenue, profit, and free cash flow",
-      "effect": "positive revision momentum",
+      "effect": "estimate revision upside on revenue and EPS",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -23,44 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.794,
+      "confidence": 0.797,
       "span_score": 1.0,
       "severity_align": 0.178,
       "mechanism_hint": 1.0,
-      "claim_id": "IBM2025Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "IBM2025Q3_C000"
     },
     {
-      "cause": "Software revenue up 10 percent and constant currency growth expectations",
-      "effect": "Bullish sentiment on high-margin segment growth",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "Software revenue up 10 per",
-      "source_id": "IBM2025Q3_001",
-      "published_at": 0,
-      "atom_id": "IBM2025Q3_001",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.796,
-      "span_score": 0.869,
-      "severity_align": 0.471,
-      "mechanism_hint": 1.0,
-      "claim_id": "IBM2025Q3_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Raised full-year outlook for free cash flow to exceed $13.5 billion",
-      "effect": "Increased investor confidence in cash generation",
+      "cause": "Raising full-year outlook for free cash flow to exceed $13.5 billion",
+      "effect": "valuation uplift driven by improved free cash flow guidance",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -74,14 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.802,
+      "confidence": 0.803,
       "span_score": 0.948,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "IBM2025Q3_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "IBM2025Q3_C001"
+    },
+    {
+      "cause": "Software revenue up 10 percent",
+      "effect": "growth narrative reinforcement in high-margin software segment",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Software revenue up 10 per",
+      "source_id": "IBM2025Q3_001",
+      "published_at": 0,
+      "atom_id": "IBM2025Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.785,
+      "span_score": 0.869,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "IBM2025Q3_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

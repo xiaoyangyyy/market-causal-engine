@@ -5,39 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T14:46:20+00:00",
+  "computed_at": "2026-06-16T11:29:33+00:00",
   "accepted": [
     {
-      "cause": "Non-GAAP diluted EPS of $3.87",
-      "effect": "estimate revision upside",
-      "mechanism": "fundamental",
-      "severity": 0.85,
-      "polarity": -1.0,
-      "evidence_span": "non-GAAP diluted EPS of $3.87",
-      "source_id": "LRCX2019Q1_005",
-      "published_at": 0,
-      "atom_id": "LRCX2019Q1_005",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.755,
-      "span_score": 0.893,
-      "severity_align": 0.255,
-      "mechanism_hint": 1.0,
-      "claim_id": "LRCX2019Q1_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
       "cause": "Revenue of $2.52 billion",
-      "effect": "Strong top-line growth signal",
+      "effect": "Revenue beat reinforces growth narrative",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.8,
       "polarity": -1.0,
       "evidence_span": "Highlights for the December 2018 quarter were as follows: • Revenue of $2.52 billion",
       "source_id": "LRCX2019Q1_001",
@@ -49,18 +23,43 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.844,
+      "confidence": 0.818,
       "span_score": 1.0,
-      "severity_align": 0.375,
+      "severity_align": 0.275,
       "mechanism_hint": 1.0,
-      "claim_id": "LRCX2019Q1_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "LRCX2019Q1_C002"
+    },
+    {
+      "cause": "Non-GAAP diluted EPS of $3.87",
+      "effect": "EPS beat drives estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Non-GAAP diluted EPS of $3.87",
+      "source_id": "LRCX2019Q1_005",
+      "published_at": 0,
+      "atom_id": "LRCX2019Q1_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.761,
+      "span_score": 0.893,
+      "severity_align": 0.255,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "LRCX2019Q1_C000"
     },
     {
       "cause": "Non-GAAP gross margin of 46.3%",
-      "effect": "Improved profitability perception",
+      "effect": "Margin expansion supports valuation multiple",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": -1.0,
@@ -74,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.804,
+      "confidence": 0.805,
       "span_score": 0.937,
       "severity_align": 0.355,
       "mechanism_hint": 1.0,
-      "claim_id": "LRCX2019Q1_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "LRCX2019Q1_C001"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

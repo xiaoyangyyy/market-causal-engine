@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T08:03:04+00:00",
+  "computed_at": "2026-06-16T10:05:12+00:00",
   "accepted": [
     {
-      "cause": "Platform revenues up 115% YoY",
-      "effect": "Gross margin expansion to 39%",
+      "cause": "Platform revenues up 115% YoY to record $225M",
+      "effect": "accelerates gross profit growth and expands gross margin",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -23,22 +23,47 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.956,
+      "confidence": 0.938,
       "span_score": 0.938,
       "severity_align": 0.96,
       "mechanism_hint": 1.0,
-      "claim_id": "ROKU2017Q4_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ROKU2017Q4_C000"
     },
     {
-      "cause": "Total net revenue grew 28% YoY",
-      "effect": "Platform growth of 129% YoY",
+      "cause": "Gross margin expansion of nearly 9 percentage points to 39%",
+      "effect": "improves profitability metrics and valuation multiples",
       "mechanism": "fundamental",
       "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "deliver nearly 9 percentage points of gross margin expansion to 39% as a percentage of revenues",
+      "source_id": "ROKU2017Q4_006",
+      "published_at": 0,
+      "atom_id": "ROKU2017Q4_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.939,
+      "span_score": 0.927,
+      "severity_align": 0.99,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ROKU2017Q4_C001"
+    },
+    {
+      "cause": "Total net revenue grew 28% YoY to $188.3 million",
+      "effect": "drives top-line growth expectations and revenue estimate revisions",
+      "mechanism": "fundamental",
+      "severity": 0.75,
       "polarity": 1.0,
-      "evidence_span": "Total net revenue grew 28% YoY to $188.3 million driven by platform growth of 129% YoY to $85.4 million",
+      "evidence_span": "Total net revenue grew 28% YoY to $188.3 million driven by platform growth of 129% YoY",
       "source_id": "ROKU2017Q4_001",
       "published_at": 0,
       "atom_id": "ROKU2017Q4_001",
@@ -48,22 +73,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.996,
-      "span_score": 0.998,
-      "severity_align": 0.99,
+      "confidence": 0.941,
+      "span_score": 0.974,
+      "severity_align": 0.89,
       "mechanism_hint": 1.0,
-      "claim_id": "ROKU2017Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ROKU2017Q4_C002"
     }
   ],
   "rejected": [],
-  "claim_count": 2,
+  "claim_count": 3,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

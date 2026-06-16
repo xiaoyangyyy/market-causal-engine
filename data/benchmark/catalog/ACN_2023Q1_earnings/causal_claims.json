@@ -5,11 +5,36 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T12:24:21+00:00",
+  "computed_at": "2026-06-15T15:35:06+00:00",
   "accepted": [
     {
+      "cause": "Raised full-year EPS guidance to $11.20 to $11.52",
+      "effect": "guidance raise lifts FY earnings expectations",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "raises EPS to $11.20 to $11.52",
+      "source_id": "ACN2023Q1_002",
+      "published_at": 0,
+      "atom_id": "ACN2023Q1_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.789,
+      "span_score": 1.0,
+      "severity_align": 0.14,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ACN2023Q1_C002"
+    },
+    {
       "cause": "EPS increase driven by higher revenue and operating results",
-      "effect": "Positive earnings surprise signaling strong operational performance",
+      "effect": "estimate revision upside on earnings beat",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -23,45 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.808,
+      "confidence": 0.809,
       "span_score": 1.0,
       "severity_align": 0.231,
       "mechanism_hint": 1.0,
-      "claim_id": "ACN2023Q1_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ACN2023Q1_C000"
     },
     {
-      "cause": "Raised full-year EPS guidance to $11.20 to $11.52",
-      "effect": "Increased investor confidence in future earnings trajectory",
+      "cause": "Diluted EPS increased 11% year-over-year",
+      "effect": "double-digit earnings growth validates performance",
       "mechanism": "fundamental",
       "severity": 0.8,
-      "polarity": -1.0,
-      "evidence_span": "raises EPS to $11.20 to $11.52",
-      "source_id": "ACN2023Q1_002",
-      "published_at": 0,
-      "atom_id": "ACN2023Q1_002",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.81,
-      "span_score": 1.0,
-      "severity_align": 0.24,
-      "mechanism_hint": 1.0,
-      "claim_id": "ACN2023Q1_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Diluted earnings per share increased 11% year-over-year",
-      "effect": "Strong historical growth momentum supporting bullish outlook",
-      "mechanism": "fundamental",
-      "severity": 0.7,
       "polarity": -1.0,
       "evidence_span": "Diluted earnings per share were $3.08, an 11% increase from $",
       "source_id": "ACN2023Q1_005",
@@ -73,18 +73,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.84,
+      "confidence": 0.815,
       "span_score": 1.0,
-      "severity_align": 0.359,
+      "severity_align": 0.259,
       "mechanism_hint": 1.0,
-      "claim_id": "ACN2023Q1_C003",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ACN2023Q1_C003"
     },
     {
       "cause": "Operating margin expansion of 20 basis points",
-      "effect": "Improved profitability efficiency driving stock value",
+      "effect": "margin expansion improves profitability outlook",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": -1.0,
@@ -98,14 +98,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.841,
+      "confidence": 0.838,
       "span_score": 1.0,
       "severity_align": 0.362,
       "mechanism_hint": 1.0,
-      "claim_id": "ACN2023Q1_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ACN2023Q1_C001"
     }
   ],
   "rejected": [],
@@ -113,7 +113,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

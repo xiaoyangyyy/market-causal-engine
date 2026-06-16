@@ -93,13 +93,17 @@ def run_case_study(
     )
 
     if validate_only:
-        return {
+        from market_causal_engine.platform.pit_hardening import attach_pit_audit
+
+        pit_only: dict[str, Any] = {
             "case_id": case_id,
             "as_of": horizon,
             "lookahead_audit": lookahead_report.to_dict(),
             "atom_count_total": len(all_atoms),
             "atom_count_admissible": len(admissible),
         }
+        attach_pit_audit(pit_only, manifest=manifest, atoms=all_atoms, as_of_minutes=horizon, policy=policy)
+        return pit_only
 
     scenario_path = root / manifest.get("scenario_path", "scenario.json")
     scenario = load_scenario(scenario_path)
@@ -136,6 +140,9 @@ def run_case_study(
 
     result["compiled_events"] = [e.to_dict() for e in runner._compiled_events]
     result["lookahead_audit"] = lookahead_report.to_dict()
+    from market_causal_engine.platform.pit_hardening import attach_pit_audit
+
+    attach_pit_audit(result, manifest=manifest, atoms=all_atoms, as_of_minutes=horizon, policy=policy)
     result["case_study"] = build_case_report(manifest, result, horizon, runner)
     from market_causal_engine.calibration import attach_calibration
 
@@ -184,6 +191,8 @@ def build_case_report(
         "feed_only": True,
         "atoms_ingested": len(runner._compiled_events),
         "atoms_rejected_lookahead": result.get("lookahead_audit", {}).get("rejected_count", 0),
+        "pit_audit_passed": (result.get("pit_audit") or {}).get("passed"),
+        "pit_envelope_coverage": (result.get("pit_audit") or {}).get("envelope_coverage"),
         "direction_match": direction_match,
         "observed_outcomes": observed,
         "simulated_outcomes": {

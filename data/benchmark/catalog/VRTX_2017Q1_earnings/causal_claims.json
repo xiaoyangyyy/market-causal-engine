@@ -5,36 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T12:42:17+00:00",
+  "computed_at": "2026-06-16T09:22:56+00:00",
   "accepted": [
     {
-      "cause": "Significant year-over-year increase in collaborative revenues",
-      "effect": "Stronger than expected revenue diversification",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": -1.0,
-      "evidence_span": "Collaborative revenues were $232.5 million , compared to $0.1 million for the first quarter of 2016",
-      "source_id": "VRTX2017Q1_007",
-      "published_at": 0,
-      "atom_id": "VRTX2017Q1_007",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.992,
-      "span_score": 1.0,
-      "severity_align": 0.97,
-      "mechanism_hint": 1.0,
-      "claim_id": "VRTX2017Q1_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
       "cause": "Increased 2017 KALYDECO revenue guidance",
-      "effect": "fundamental upside",
+      "effect": "raises FY revenue estimates for KALYDECO product line",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -48,19 +23,43 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.93,
+      "confidence": 0.915,
       "span_score": 0.905,
       "severity_align": 0.93,
       "mechanism_hint": 1.0,
-      "claim_id": "VRTX2017Q1_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "VRTX2017Q1_C000"
     },
     {
-      "cause": "Reiteration of strong ORKAMBI revenue guidance",
-      "effect": "Confidence in core product performance",
+      "cause": "Collaborative revenues surge to $232.5 million",
+      "effect": "drives significant year-over-year revenue growth in collaborative segment",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Collaborative revenues were $232.5 million , compared to $0.1 million for the first quarter of 2016",
+      "source_id": "VRTX2017Q1_007",
+      "published_at": 0,
+      "atom_id": "VRTX2017Q1_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.971,
+      "span_score": 1.0,
+      "severity_align": 0.97,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "VRTX2017Q1_C002"
+    },
+    {
+      "cause": "Reiterated ORKAMBI 2017 revenue guidance",
+      "effect": "confirms stability in ORKAMBI revenue forecast expectations",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
@@ -74,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.906,
+      "confidence": 0.894,
       "span_score": 0.911,
       "severity_align": 0.82,
       "mechanism_hint": 1.0,
-      "claim_id": "VRTX2017Q1_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "VRTX2017Q1_C001"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

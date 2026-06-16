@@ -5,37 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:38:24+00:00",
+  "computed_at": "2026-06-15T14:47:37+00:00",
   "accepted": [
     {
-      "cause": "Record revenue and earnings reported",
-      "effect": "estimate upside",
-      "mechanism": "fundamental",
-      "severity": 0.9,
-      "polarity": 1.0,
-      "evidence_span": "Analog Devices Reports Record Revenue and Earnings for the Third Quarter Fiscal 2021",
-      "source_id": "ADI2021Q3_000",
-      "published_at": 0,
-      "atom_id": "ADI2021Q3_000",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.768,
-      "span_score": 0.91,
-      "severity_align": 0.271,
-      "mechanism_hint": 1.0,
-      "claim_id": "ADI2021Q3_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
       "cause": "Adjusted EPS guidance of $1.72",
-      "effect": "Earnings beat potential",
+      "effect": "earnings estimate revision based on $1.72 adjusted EPS",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
@@ -49,18 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.777,
+      "confidence": 0.823,
       "span_score": 0.922,
       "severity_align": 0.281,
       "mechanism_hint": 1.0,
-      "claim_id": "ADI2021Q3_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "ADI2021Q3_C002"
     },
     {
-      "cause": "Revenue forecast of $1.78 billion for Q4",
-      "effect": "Anticipated revenue growth momentum",
+      "cause": "Revenue guidance set at $1.78 billion",
+      "effect": "forward revenue estimate anchoring at $1.78 billion",
       "mechanism": "fundamental",
       "severity": 0.7,
       "polarity": -1.0,
@@ -74,14 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.815,
+      "confidence": 0.856,
       "span_score": 0.929,
       "severity_align": 0.416,
       "mechanism_hint": 1.0,
-      "claim_id": "ADI2021Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "ADI2021Q3_C001"
+    },
+    {
+      "cause": "Record revenue and earnings reported",
+      "effect": "estimate revision upside driven by record revenue",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "Analog Devices Reports Record Revenue and Earnings for the Third Quarter Fiscal 2021",
+      "source_id": "ADI2021Q3_000",
+      "published_at": 0,
+      "atom_id": "ADI2021Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.773,
+      "span_score": 0.91,
+      "severity_align": 0.271,
+      "mechanism_hint": 1.0,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ADI2021Q3_C000"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

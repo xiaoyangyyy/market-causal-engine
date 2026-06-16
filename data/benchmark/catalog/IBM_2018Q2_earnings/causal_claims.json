@@ -5,11 +5,36 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T08:16:02+00:00",
+  "computed_at": "2026-06-16T10:36:20+00:00",
   "accepted": [
     {
-      "cause": "Operating EPS growth",
-      "effect": "fundamental upside",
+      "cause": "Increase in revenue, operating net income and free cash flow",
+      "effect": "valuation uplift from simultaneous top-line and cash flow expansion",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Revenue, operating net income and free cash flow increased",
+      "source_id": "IBM2018Q2_003",
+      "published_at": 0,
+      "atom_id": "IBM2018Q2_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.804,
+      "span_score": 1.0,
+      "severity_align": 0.207,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "IBM2018Q2_C002"
+    },
+    {
+      "cause": "Operating EPS growth of 4 percent",
+      "effect": "estimate revision upside driven by non-GAAP earnings beat",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
@@ -23,19 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.78,
+      "confidence": 0.783,
       "span_score": 0.905,
       "severity_align": 0.328,
       "mechanism_hint": 1.0,
-      "claim_id": "IBM2018Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "IBM2018Q2_C000"
     },
     {
-      "cause": "Strategic imperatives revenue increase",
-      "effect": "fundamental upside",
+      "cause": "Strategic imperatives revenue growth of 12 percent",
+      "effect": "growth narrative reinforcement via strategic revenue expansion",
       "mechanism": "fundamental",
       "severity": 0.7,
       "polarity": -1.0,
@@ -49,41 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.827,
+      "confidence": 0.825,
       "span_score": 0.945,
       "severity_align": 0.428,
       "mechanism_hint": 1.0,
-      "claim_id": "IBM2018Q2_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Revenue and cash flow increase",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": 1.0,
-      "evidence_span": "Revenue, operating net income and free cash flow increased",
-      "source_id": "IBM2018Q2_003",
-      "published_at": 0,
-      "atom_id": "IBM2018Q2_003",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.864,
-      "span_score": 1.0,
-      "severity_align": 0.457,
-      "mechanism_hint": 1.0,
-      "claim_id": "IBM2018Q2_C002",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "IBM2018Q2_C001"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

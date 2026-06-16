@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T04:32:58+00:00",
+  "computed_at": "2026-06-15T16:39:07+00:00",
   "accepted": [
     {
       "cause": "EPS reported at $1.11",
-      "effect": "estimate revision upside",
+      "effect": "EPS beat drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
-      "evidence_span": "Earnings per share (EPS) $1.11",
+      "evidence_span": "Earnings per share (EPS) $1.11 $",
       "source_id": "PEP2025Q1_000",
       "published_at": 0,
       "atom_id": "PEP2025Q1_000",
@@ -23,23 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.81,
+      "confidence": 0.811,
       "span_score": 1.0,
       "severity_align": 0.241,
       "mechanism_hint": 1.0,
-      "claim_id": "PEP2025Q1_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "PEP2025Q1_C000"
     },
     {
       "cause": "Gross and operating margin expansion",
-      "effect": "Improved profitability outlook driving stock price",
+      "effect": "Margin expansion supports valuation multiple",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.7,
       "polarity": -1.0,
-      "evidence_span": "gross margin, operating margin expansion",
+      "evidence_span": "gross margin, operating margin expansion and EPS in 2",
       "source_id": "PEP2025Q1_001",
       "published_at": 0,
       "atom_id": "PEP2025Q1_001",
@@ -49,22 +48,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.826,
+      "confidence": 0.836,
       "span_score": 1.0,
-      "severity_align": 0.304,
+      "severity_align": 0.354,
       "mechanism_hint": 1.0,
-      "claim_id": "PEP2025Q1_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "PEP2025Q1_C001"
     },
     {
       "cause": "Net revenue decline due to Quaker Recall",
-      "effect": "Negative pressure on stock price from revenue headwinds",
+      "effect": "Revenue miss from recall triggers growth narrative concern",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
-      "evidence_span": "Net revenue decline was impacted by the Quaker Recall",
+      "evidence_span": "Net revenue decline was impacted by the Quaker Recall.",
       "source_id": "PEP2025Q1_005",
       "published_at": 0,
       "atom_id": "PEP2025Q1_005",
@@ -74,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.864,
+      "confidence": 0.859,
       "span_score": 1.0,
       "severity_align": 0.457,
       "mechanism_hint": 1.0,
-      "claim_id": "PEP2025Q1_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "PEP2025Q1_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

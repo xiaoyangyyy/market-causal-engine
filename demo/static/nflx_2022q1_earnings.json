@@ -1,0 +1,595 @@
+{
+  "demo_id": "killer_nflx_2022q1_earnings",
+  "case_id": "nflx_2022q1_earnings",
+  "as_of_minutes": 120,
+  "hero": {
+    "title": "NFLX — Netflix Q1 2022: first subscriber loss in a decade, weak Q2 guidance, ~25% AH decline",
+    "ticker": "NFLX",
+    "event_date": "2022-04-19",
+    "domain": "earnings",
+    "tagline": "Point-in-time event forensics: path + econometric counterfactual"
+  },
+  "event_timeline": [
+    {
+      "atom_id": "NFLX22Q1_000",
+      "minute": 0,
+      "published_at": 0,
+      "source": "8-K",
+      "source_class": "primary_filing",
+      "text": "The company reported a net loss of 200,000 paid memberships in Q1 versus consensus expectations for a gain of approximately 2.5 million subscribers, marking the first subscriber loss in more than a decade.",
+      "tags": [
+        "earnings"
+      ],
+      "published_time_iso": "2022-04-19T20:01:00+00:00",
+      "source_hash": "sha256:abef568eee9d6f2cbd08cfa2a7038c9573e048c166b0bc0ba0ff25f851dcbf23"
+    },
+    {
+      "atom_id": "NFLX22Q1_002",
+      "minute": 0,
+      "published_at": 0,
+      "source": "guidance",
+      "source_class": "primary_filing",
+      "text": "expectations, reflecting slower",
+      "tags": [
+        "earnings",
+        "guidance"
+      ],
+      "published_time_iso": "2022-04-19T20:01:00+00:00",
+      "source_hash": "sha256:86e9160b7f091cb83be19ce5251a679a842055720522f55d0da2e37c55bc80f4"
+    },
+    {
+      "atom_id": "NFLX22Q1_008",
+      "minute": 15,
+      "published_at": 15,
+      "source": "market_watch",
+      "source_class": "news_wire",
+      "text": "shares fall 25%",
+      "tags": [
+        "intraday",
+        "volume"
+      ],
+      "published_time_iso": "2022-04-19T20:16:00+00:00",
+      "source_hash": "sha256:2be70d3880213e58876731c848c4a1cb4c6edce04a828cc6921301bc63a807c4"
+    },
+    {
+      "atom_id": "NFLX22Q1_009",
+      "minute": 20,
+      "published_at": 20,
+      "source": "options_analytics",
+      "source_class": "news_wire",
+      "text": "Put option volume and volatility spike",
+      "tags": [
+        "options",
+        "intraday"
+      ],
+      "published_time_iso": "2022-04-19T20:21:00+00:00",
+      "source_hash": "sha256:ea83379d24574d8b955a867eba9c9f0bd338d3fe6598cb49a21ce1a1c5dc007a"
+    },
+    {
+      "atom_id": "NFLX22Q1_004",
+      "minute": 55,
+      "published_at": 55,
+      "source": "earnings_call_transcript",
+      "source_class": "primary_filing",
+      "text": "CFO says paid sharing and competition weighed on Q1 results and Q2 guidance implies a loss of 2 million subscribers.",
+      "tags": [
+        "transcript",
+        "earnings_call"
+      ],
+      "published_time_iso": "2022-04-19T20:56:00+00:00",
+      "source_hash": "sha256:0866d20355c7f411fa93bb72c2694fd11f81eb4bee4660736ef1f3bfd2ce14e5"
+    },
+    {
+      "atom_id": "NFLX22Q1_007",
+      "minute": 55,
+      "published_at": 55,
+      "source": "guidance",
+      "source_class": "primary_filing",
+      "text": "expects Q2 revenue growth to slow",
+      "tags": [
+        "earnings",
+        "guidance"
+      ],
+      "published_time_iso": "2022-04-19T20:56:00+00:00",
+      "source_hash": "sha256:4d56097b5b1b4e2ef739f7a23843606671023908a0d2d10cbf0f91e61c2f8475"
+    },
+    {
+      "atom_id": "NFLX22Q1_010",
+      "minute": 90,
+      "published_at": 90,
+      "source": "sell_side_note",
+      "source_class": "news_wire",
+      "text": "downgrades Netflix from Buy to",
+      "tags": [
+        "analyst",
+        "rating"
+      ],
+      "published_time_iso": "2022-04-19T21:31:00+00:00",
+      "source_hash": "sha256:900c53a681c045fc4826830e77b5611ec5f104aed1ddc82e29f16325c295120a"
+    },
+    {
+      "atom_id": "NFLX22Q1_011",
+      "minute": 95,
+      "published_at": 95,
+      "source": "etf_flow",
+      "source_class": "news_wire",
+      "text": "sector ETF sympathy selloff; peer multiples compress",
+      "tags": [
+        "sector",
+        "etf"
+      ],
+      "published_time_iso": "2022-04-19T21:36:00+00:00",
+      "source_hash": "sha256:043fcf7c9af66f29bd8b89a2560450ddc9e9977246ec66b5085957fdbf755f18"
+    }
+  ],
+  "mechanism_path": {
+    "steps": [
+      "earnings_release",
+      "earnings_miss"
+    ],
+    "narrative": [
+      "earnings release",
+      "subscriber / earnings miss"
+    ],
+    "dominant_path": [
+      "earnings_release",
+      "earnings_miss"
+    ],
+    "mechanism_contributions": {
+      "fundamental": 0.744,
+      "sentiment": 0.0072,
+      "liquidity": 0.2488,
+      "macro": 0.0,
+      "regulatory": 0.0,
+      "raw": {
+        "fundamental": 0.8894,
+        "sentiment": 0.0086,
+        "liquidity": 0.2974,
+        "macro": 0.0,
+        "regulatory": 0.0
+      },
+      "dominant_bucket": "fundamental",
+      "by_mechanism": {
+        "earnings_miss": 0.6447,
+        "guidance_cut": 0.098,
+        "institutional_rebalance": 0.0904,
+        "price_impact_amplified": 0.0853,
+        "option_gamma_pressure": 0.0647,
+        "intraday_volatility_spike": 0.0084,
+        "analyst_downgrade": 0.0072,
+        "earnings_call_transcript": 0.0008
+      },
+      "path_weighted": true
+    }
+  },
+  "counterfactual": {
+    "outcome_causal": {
+      "method": "synthetic_control",
+      "effect": -0.32149,
+      "observed_return": -0.330522,
+      "counterfactual_return": -0.009031,
+      "placebo_rank": 1.0,
+      "artifact": "data\\market\\case_studies\\nflx_2022q1_earnings\\outcome_causal.json",
+      "event_study": {
+        "CAR": -0.32149,
+        "AAR": -0.32149,
+        "CAR_pct": -32.149,
+        "AAR_pct": -32.149,
+        "event_window_days": 1,
+        "t_stat": null,
+        "confidence_interval_95": null,
+        "placebo_rank": 1.0,
+        "placebo_n": null
+      },
+      "car_ablation": {
+        "observed_car_pct": -32.149,
+        "baseline_predicted_return_pct": -18.08,
+        "channels": {
+          "no_news": {
+            "channel": "no_news",
+            "ablated_predicted_return_pct": -15.15,
+            "marginal_return_pct": -2.93,
+            "share_of_observed_car": 0.0911,
+            "direction_flipped": false,
+            "path_changed": false,
+            "baseline_direction": "down",
+            "ablated_direction": "down"
+          },
+          "no_sec": {
+            "channel": "no_sec",
+            "ablated_predicted_return_pct": -4.56,
+            "marginal_return_pct": -13.52,
+            "share_of_observed_car": 0.4205,
+            "direction_flipped": false,
+            "path_changed": true,
+            "baseline_direction": "down",
+            "ablated_direction": "down"
+          },
+          "no_price": {
+            "channel": "no_price",
+            "ablated_predicted_return_pct": -17.48,
+            "marginal_return_pct": -0.6,
+            "share_of_observed_car": 0.0187,
+            "direction_flipped": false,
+            "path_changed": false,
+            "baseline_direction": "down",
+            "ablated_direction": "down"
+          }
+        },
+        "dominant_channel": "no_sec",
+        "dominant_share_of_observed_car": 0.4205,
+        "total_abs_share_of_observed_car": 0.5303,
+        "n_channels": 3
+      }
+    },
+    "event_study": {
+      "CAR": -0.32149,
+      "AAR": -0.32149,
+      "CAR_pct": -32.149,
+      "AAR_pct": -32.149,
+      "event_window_days": 1,
+      "t_stat": null,
+      "confidence_interval_95": null,
+      "placebo_rank": 1.0,
+      "placebo_n": null
+    },
+    "car_ablation": {
+      "observed_car_pct": -32.149,
+      "baseline_predicted_return_pct": -18.08,
+      "channels": {
+        "no_news": {
+          "channel": "no_news",
+          "ablated_predicted_return_pct": -15.15,
+          "marginal_return_pct": -2.93,
+          "share_of_observed_car": 0.0911,
+          "direction_flipped": false,
+          "path_changed": false,
+          "baseline_direction": "down",
+          "ablated_direction": "down"
+        },
+        "no_sec": {
+          "channel": "no_sec",
+          "ablated_predicted_return_pct": -4.56,
+          "marginal_return_pct": -13.52,
+          "share_of_observed_car": 0.4205,
+          "direction_flipped": false,
+          "path_changed": true,
+          "baseline_direction": "down",
+          "ablated_direction": "down"
+        },
+        "no_price": {
+          "channel": "no_price",
+          "ablated_predicted_return_pct": -17.48,
+          "marginal_return_pct": -0.6,
+          "share_of_observed_car": 0.0187,
+          "direction_flipped": false,
+          "path_changed": false,
+          "baseline_direction": "down",
+          "ablated_direction": "down"
+        }
+      },
+      "dominant_channel": "no_sec",
+      "dominant_share_of_observed_car": 0.4205,
+      "total_abs_share_of_observed_car": 0.5303,
+      "n_channels": 3
+    },
+    "observed": {
+      "direction": "down",
+      "after_hours_return_pct": -25,
+      "two_day_return_pct": -37
+    },
+    "model": {
+      "simulated_direction": null,
+      "estimated_after_hours_return_pct": -18.08,
+      "after_hours_error_pct": 6.92
+    }
+  },
+  "channel_ablation": {
+    "no_news": {
+      "channel": "no_news",
+      "ablated_predicted_return_pct": -15.15,
+      "marginal_return_pct": -2.93,
+      "share_of_observed_car": 0.0911,
+      "direction_flipped": false,
+      "path_changed": false,
+      "baseline_direction": "down",
+      "ablated_direction": "down"
+    },
+    "no_sec": {
+      "channel": "no_sec",
+      "ablated_predicted_return_pct": -4.56,
+      "marginal_return_pct": -13.52,
+      "share_of_observed_car": 0.4205,
+      "direction_flipped": false,
+      "path_changed": true,
+      "baseline_direction": "down",
+      "ablated_direction": "down"
+    },
+    "no_price": {
+      "channel": "no_price",
+      "ablated_predicted_return_pct": -17.48,
+      "marginal_return_pct": -0.6,
+      "share_of_observed_car": 0.0187,
+      "direction_flipped": false,
+      "path_changed": false,
+      "baseline_direction": "down",
+      "ablated_direction": "down"
+    }
+  },
+  "dominant_channel": "no_sec",
+  "benchmark_neighbors": [
+    {
+      "case_id": "shop_2022q2_earnings",
+      "ticker": "SHOP",
+      "event_date": "2022-07-26",
+      "domain": "earnings",
+      "similarity_score": 1.3,
+      "description": "Shopify Q2 2022: revenue miss, guidance cut on e-commerce slowdown, stock -14% after hours"
+    },
+    {
+      "case_id": "snap_2022q3_earnings",
+      "ticker": "SNAP",
+      "event_date": "2022-10-20",
+      "domain": "earnings",
+      "similarity_score": 1.3,
+      "description": "Snap Q3 2022: digital ad slowdown warning, revenue miss, stock -27% after hours"
+    },
+    {
+      "case_id": "meta_2022q4_earnings",
+      "ticker": "META",
+      "event_date": "2022-02-02",
+      "domain": "earnings",
+      "similarity_score": 0.3,
+      "description": "Meta Q4 2021: first DAU decline, weak Q1 guidance, stock -26% after hours"
+    },
+    {
+      "case_id": "cpi_2022_06_hot",
+      "ticker": "SPY",
+      "event_date": "2022-07-13",
+      "domain": "macro",
+      "similarity_score": 0.0,
+      "description": "June 2022 CPI: 9.1% YoY hot print, yields jump, growth stocks sell off"
+    },
+    {
+      "case_id": "fomc_2022_75bp",
+      "ticker": "SPY",
+      "event_date": "2022-09-21",
+      "domain": "macro",
+      "similarity_score": 0.0,
+      "description": "FOMC Sep 2022: 75bp hike, hawkish dots, yields jump, growth stocks sell off"
+    }
+  ],
+  "confidence": {
+    "path_attribution": null,
+    "drawdown_risk": 0.5208,
+    "directional_pressure": 0.9324,
+    "direction_match": true,
+    "pit_audit_passed": true,
+    "lookahead_rejected": 2
+  },
+  "audits": {
+    "lookahead_audit": {
+      "as_of": 120,
+      "policy": {
+        "strict": true,
+        "forbid_post_hoc_sources": true,
+        "forbidden_source_classes": [
+          "post_mortem",
+          "next_day_only",
+          "calibration_label",
+          "future_analyst"
+        ]
+      },
+      "passed": false,
+      "accepted_count": 8,
+      "rejected_count": 2,
+      "validations": [
+        {
+          "atom_id": "NFLX22Q1_000",
+          "accepted": true,
+          "reason_code": "accepted",
+          "detail": "",
+          "published_at": 0,
+          "simulation_time": 0
+        },
+        {
+          "atom_id": "NFLX22Q1_002",
+          "accepted": true,
+          "reason_code": "accepted",
+          "detail": "",
+          "published_at": 0,
+          "simulation_time": 0
+        },
+        {
+          "atom_id": "NFLX22Q1_008",
+          "accepted": true,
+          "reason_code": "accepted",
+          "detail": "",
+          "published_at": 15,
+          "simulation_time": 15
+        },
+        {
+          "atom_id": "NFLX22Q1_009",
+          "accepted": true,
+          "reason_code": "accepted",
+          "detail": "",
+          "published_at": 20,
+          "simulation_time": 20
+        },
+        {
+          "atom_id": "NFLX22Q1_004",
+          "accepted": true,
+          "reason_code": "accepted",
+          "detail": "",
+          "published_at": 55,
+          "simulation_time": 55
+        },
+        {
+          "atom_id": "NFLX22Q1_007",
+          "accepted": true,
+          "reason_code": "accepted",
+          "detail": "",
+          "published_at": 55,
+          "simulation_time": 55
+        },
+        {
+          "atom_id": "NFLX22Q1_010",
+          "accepted": true,
+          "reason_code": "accepted",
+          "detail": "",
+          "published_at": 90,
+          "simulation_time": 90
+        },
+        {
+          "atom_id": "NFLX22Q1_011",
+          "accepted": true,
+          "reason_code": "accepted",
+          "detail": "",
+          "published_at": 95,
+          "simulation_time": 95
+        },
+        {
+          "atom_id": "NFLX22Q1_TRAP_NEXTDAY",
+          "accepted": false,
+          "reason_code": "lookahead_published_at",
+          "detail": "published_at=960 exceeds as_of=120",
+          "published_at": 960,
+          "simulation_time": 960
+        },
+        {
+          "atom_id": "NFLX22Q1_TRAP_ANALYST",
+          "accepted": false,
+          "reason_code": "lookahead_published_at",
+          "detail": "published_at=2880 exceeds as_of=120",
+          "published_at": 2880,
+          "simulation_time": 120
+        }
+      ],
+      "rejected": [
+        {
+          "atom_id": "NFLX22Q1_TRAP_NEXTDAY",
+          "accepted": false,
+          "reason_code": "lookahead_published_at",
+          "detail": "published_at=960 exceeds as_of=120",
+          "published_at": 960,
+          "simulation_time": 960
+        },
+        {
+          "atom_id": "NFLX22Q1_TRAP_ANALYST",
+          "accepted": false,
+          "reason_code": "lookahead_published_at",
+          "detail": "published_at=2880 exceeds as_of=120",
+          "published_at": 2880,
+          "simulation_time": 120
+        }
+      ]
+    },
+    "pit_audit": {
+      "as_of_minutes": 120,
+      "as_of_iso": "2022-04-19T22:01:00+00:00",
+      "total_atoms": 10,
+      "admissible_atoms": 8,
+      "envelope_complete": 8,
+      "envelope_coverage": 1.0,
+      "passed": true,
+      "error_count": 0,
+      "warning_count": 0,
+      "violations_by_code": {},
+      "violations": [],
+      "time_axis_origin": "2022-04-19T16:01:00-04:00"
+    }
+  },
+  "limitations": [
+    "Not investment advice — forensic replay for research and audit only.",
+    "Observed returns are comparison labels; they never enter the causal kernel at replay time.",
+    "2 post-hoc / look-ahead atoms excluded at this as_of (e.g. next-day analyst, calibration labels).",
+    "Macro regime and peer spillovers are approximated; not a full factor model of the tape.",
+    "Catalog / scenario router paths differ; headline benchmark uses catalog-only EDGAR path (58.81%, n=840)."
+  ],
+  "event_card": {
+    "event_id": "nflx_2022q1_earnings",
+    "ticker": "NFLX",
+    "event_date": "2022-04-19",
+    "domain": "earnings",
+    "dominant_path": [
+      "earnings_release",
+      "earnings_miss"
+    ],
+    "observed_direction": "down",
+    "outcome_causal": {
+      "method": "synthetic_control",
+      "effect": -0.32149,
+      "observed_return": -0.330522,
+      "counterfactual_return": -0.009031,
+      "placebo_rank": 1.0,
+      "artifact": "data\\market\\case_studies\\nflx_2022q1_earnings\\outcome_causal.json",
+      "event_study": {
+        "CAR": -0.32149,
+        "AAR": -0.32149,
+        "CAR_pct": -32.149,
+        "AAR_pct": -32.149,
+        "event_window_days": 1,
+        "t_stat": null,
+        "confidence_interval_95": null,
+        "placebo_rank": 1.0,
+        "placebo_n": null
+      },
+      "car_ablation": {
+        "observed_car_pct": -32.149,
+        "baseline_predicted_return_pct": -18.08,
+        "channels": {
+          "no_news": {
+            "channel": "no_news",
+            "ablated_predicted_return_pct": -15.15,
+            "marginal_return_pct": -2.93,
+            "share_of_observed_car": 0.0911,
+            "direction_flipped": false,
+            "path_changed": false,
+            "baseline_direction": "down",
+            "ablated_direction": "down"
+          },
+          "no_sec": {
+            "channel": "no_sec",
+            "ablated_predicted_return_pct": -4.56,
+            "marginal_return_pct": -13.52,
+            "share_of_observed_car": 0.4205,
+            "direction_flipped": false,
+            "path_changed": true,
+            "baseline_direction": "down",
+            "ablated_direction": "down"
+          },
+          "no_price": {
+            "channel": "no_price",
+            "ablated_predicted_return_pct": -17.48,
+            "marginal_return_pct": -0.6,
+            "share_of_observed_car": 0.0187,
+            "direction_flipped": false,
+            "path_changed": false,
+            "baseline_direction": "down",
+            "ablated_direction": "down"
+          }
+        },
+        "dominant_channel": "no_sec",
+        "dominant_share_of_observed_car": 0.4205,
+        "total_abs_share_of_observed_car": 0.5303,
+        "n_channels": 3
+      }
+    },
+    "car_ablation_dominant_channel": "no_sec",
+    "calibrated_impact": {
+      "raw": {
+        "directional_pressure": 0.9324,
+        "volatility_risk": 0.3403,
+        "liquidity_stress": 0.1908,
+        "drawdown_risk": 0.5208
+      },
+      "estimated_after_hours_return_pct": -18.08,
+      "magnitude_source": "case_anchor",
+      "after_hours_error_pct": 6.92,
+      "after_hours_within_band": true,
+      "estimated_two_day_return_pct": -24.41,
+      "two_day_error_pct": 12.59,
+      "estimated_realized_vol_multiplier": 1.51
+    }
+  }
+}

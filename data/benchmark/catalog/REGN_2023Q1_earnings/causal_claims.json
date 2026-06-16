@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T04:03:08+00:00",
+  "computed_at": "2026-06-15T15:31:59+00:00",
   "accepted": [
     {
-      "cause": "Acquired IPR&D charge",
-      "effect": "Reduction in GAAP and non-GAAP net income per diluted share by $0.21",
+      "cause": "Acquired IPR&D charge impact on net income",
+      "effect": "EPS reduction of $0.21 per diluted share",
       "mechanism": "fundamental",
       "severity": 0.7,
       "polarity": -1.0,
@@ -23,18 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.856,
+      "confidence": 0.894,
       "span_score": 1.0,
       "severity_align": 0.425,
       "mechanism_hint": 1.0,
-      "claim_id": "REGN2023Q1_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.6,
-      "polarity_aligned": true
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "REGN2023Q1_C001"
     },
     {
-      "cause": "Temporary closing of fund and shift to off-label Avastin use",
-      "effect": "Negative impact on Q4 2022 EYLEA U.S. net product sales",
+      "cause": "Temporary closing in Q4 2022 of fund",
+      "effect": "EYLEA sales headwinds from off-label Avastin shift",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
@@ -48,14 +48,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.863,
+      "confidence": 0.809,
       "span_score": 0.946,
       "severity_align": 0.571,
       "mechanism_hint": 1.0,
-      "claim_id": "REGN2023Q1_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 0.6,
-      "polarity_aligned": true
+      "effect_specificity": 0.25,
+      "polarity_aligned": true,
+      "claim_id": "REGN2023Q1_C000"
     }
   ],
   "rejected": [],
@@ -63,7 +63,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

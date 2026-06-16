@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T06:35:59+00:00",
+  "computed_at": "2026-06-16T09:03:09+00:00",
   "accepted": [
     {
       "cause": "Adjusted EPS of 94 cents excluding non-operational items",
-      "effect": "Positive earnings surprise driving stock price",
+      "effect": "EPS beat drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -27,14 +27,14 @@
       "span_score": 0.965,
       "severity_align": 0.309,
       "mechanism_hint": 1.0,
-      "claim_id": "VZ2016Q3_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "VZ2016Q3_C000"
     },
     {
-      "cause": "Addition of 1.3 million postpaid connections and stabilized revenue",
-      "effect": "Improved wireless segment performance and investor confidence",
+      "cause": "1.3 million net postpaid connections added in first-half 2016",
+      "effect": "Subscriber growth reinforces wireless revenue stability narrative",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": -1.0,
@@ -48,18 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.826,
+      "confidence": 0.824,
       "span_score": 0.946,
       "severity_align": 0.421,
       "mechanism_hint": 1.0,
-      "claim_id": "VZ2016Q3_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "VZ2016Q3_C001"
     },
     {
-      "cause": "Operating income margin of 14.9 percent",
-      "effect": "Demonstration of operational efficiency and profitability",
+      "cause": "Operating income margin of 14.9 percent in second-quarter 2016",
+      "effect": "Margin expansion supports valuation multiple maintenance",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
@@ -73,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.872,
+      "confidence": 0.865,
       "span_score": 1.0,
       "severity_align": 0.487,
       "mechanism_hint": 1.0,
-      "claim_id": "VZ2016Q3_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "VZ2016Q3_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,11 +5,36 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T02:32:38+00:00",
+  "computed_at": "2026-06-15T14:08:40+00:00",
   "accepted": [
     {
-      "cause": "Gross margin expansion",
-      "effect": "Positive earnings surprise",
+      "cause": "Diluted EPS of $1.76 representing a 35% year-over-year increase",
+      "effect": "earnings beat triggers upward estimate revisions",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "DILUTED EPS INVESTED $340 MILLION IN Q1 TO SUPPORT OUR ASSOCIATES CUSTOMER SERVICE SCORES IMPROVED $1.76 +35%",
+      "source_id": "LOW2020Q2_000",
+      "published_at": 0,
+      "atom_id": "LOW2020Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.782,
+      "span_score": 0.928,
+      "severity_align": 0.271,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "LOW2020Q2_C001"
+    },
+    {
+      "cause": "Gross margin expansion of 164 basis points to 33.10%",
+      "effect": "margin expansion drives valuation multiple re-rating",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -23,39 +48,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.8,
+      "confidence": 0.802,
       "span_score": 1.0,
       "severity_align": 0.198,
       "mechanism_hint": 1.0,
-      "claim_id": "LOW2020Q2_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Diluted EPS growth",
-      "effect": "Stronger than expected profitability",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": -1.0,
-      "evidence_span": "DILUTED EPS INVESTED $340 MILLION IN Q1 TO SUPPORT OUR ASSOCIATES",
-      "source_id": "LOW2020Q2_000",
-      "published_at": 0,
-      "atom_id": "LOW2020Q2_000",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.798,
-      "span_score": 0.896,
-      "severity_align": 0.421,
-      "mechanism_hint": 1.0,
-      "claim_id": "LOW2020Q2_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "LOW2020Q2_C000"
     }
   ],
   "rejected": [],
@@ -63,7 +63,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

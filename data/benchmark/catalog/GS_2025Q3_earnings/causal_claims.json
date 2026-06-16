@@ -5,61 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T13:33:32+00:00",
+  "computed_at": "2026-06-15T16:53:33+00:00",
   "accepted": [
     {
-      "cause": "30 consecutive quarter of long-term fee-based net inflows",
-      "effect": "Sustained revenue stability and growth momentum",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": -1.0,
-      "evidence_span": "th 30 consecutive quarter of long-term fee-based net inflows Impact to net earnings",
-      "source_id": "GS2025Q3_001",
-      "published_at": 0,
-      "atom_id": "GS2025Q3_001",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.805,
-      "span_score": 0.909,
-      "severity_align": 0.421,
-      "mechanism_hint": 1.0,
-      "claim_id": "GS2025Q3_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "2Q25 net revenues were higher YoY",
-      "effect": "Top-line growth driving earnings potential",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "2Q25 net revenues were higher YoY, reflecting significantly higher net revenues in Global",
-      "source_id": "GS2025Q3_002",
-      "published_at": 0,
-      "atom_id": "GS2025Q3_002",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.82,
-      "span_score": 0.914,
-      "severity_align": 0.471,
-      "mechanism_hint": 1.0,
-      "claim_id": "GS2025Q3_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Increased quarterly dividend by 33%",
-      "effect": "Positive signal for shareholder value and confidence",
+      "cause": "Increased quarterly dividend by 33% to $4.00 per common share in 3Q25",
+      "effect": "dividend increase signals capital return confidence",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -73,22 +23,90 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.775,
+      "confidence": 0.778,
       "span_score": 0.899,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "GS2025Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GS2025Q3_C000"
+    },
+    {
+      "cause": "Net earnings / (loss) $ (47) N.M.",
+      "effect": "segment loss indicates margin pressure in Platform Solutions",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "61% $ (32) 88% Platform Solutions Net Revenues ($ in millions) Net earnings / (loss) $ (47) N.M.",
+      "source_id": "GS2025Q3_007",
+      "published_at": 0,
+      "atom_id": "GS2025Q3_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.864,
+      "span_score": 1.0,
+      "severity_align": 0.481,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GS2025Q3_C002"
+    },
+    {
+      "cause": "30 consecutive quarter of long-term fee-based net inflows",
+      "effect": "sustained fee-based inflows reinforce asset management stability",
+      "mechanism": "fundamental",
+      "severity": 0.65,
+      "polarity": -1.0,
+      "evidence_span": "th 30 consecutive quarter of long-term fee-based net inflows Impact to net earnings $ (104) $ (184) (0.33) (0.57)",
+      "source_id": "GS2025Q3_001",
+      "published_at": 0,
+      "atom_id": "GS2025Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.79,
+      "span_score": 0.931,
+      "severity_align": 0.521,
+      "mechanism_hint": 1.0,
       "polarity_source": "evidence",
       "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "GS2025Q3_C001"
     }
   ],
-  "rejected": [],
+  "rejected": [
+    {
+      "cause": "2Q25 net revenues were higher YoY, reflecting significantly higher net revenues in Global Banking & Markets",
+      "effect": "revenue growth in core banking segment drives top-line expansion",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 0.9,
+      "evidence_span": "2Q25 net revenues were higher YoY, reflecting significantly higher net revenues in Global Banking & Markets",
+      "source_id": "GS2025Q3_002",
+      "published_at": 0,
+      "atom_id": "GS2025Q3_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
   "claim_count": 3,
-  "rejected_count": 0,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

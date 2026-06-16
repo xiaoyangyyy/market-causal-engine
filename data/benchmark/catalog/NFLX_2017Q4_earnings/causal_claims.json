@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T02:53:09+00:00",
+  "computed_at": "2026-06-16T10:13:17+00:00",
   "accepted": [
     {
       "cause": "Operating income nearly doubled year-over-year",
-      "effect": "Positive earnings surprise",
+      "effect": "fundamental valuation uplift from doubled operating income",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.9,
       "polarity": -1.0,
       "evidence_span": "Operating income nearly doubled year-over-year to $",
       "source_id": "NFLX2017Q4_001",
@@ -23,45 +23,45 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.801,
+      "confidence": 0.792,
       "span_score": 1.0,
-      "severity_align": 0.203,
+      "severity_align": 0.153,
       "mechanism_hint": 1.0,
-      "claim_id": "NFLX2017Q4_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "NFLX2017Q4_C000"
     },
     {
       "cause": "International revenue growth exceeding guidance",
-      "effect": "Positive revenue surprise",
+      "effect": "estimate revision upside from international revenue beat",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.8,
       "polarity": 1.0,
-      "evidence_span": "exceeded our 2.3% guidance",
-      "source_id": "NFLX2017Q4_005",
+      "evidence_span": "Q3 international revenue grew 54% year over year, excluding currency.",
+      "source_id": "NFLX2017Q4_004",
       "published_at": 0,
-      "atom_id": "NFLX2017Q4_005",
+      "atom_id": "NFLX2017Q4_004",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.822,
-      "span_score": 1.0,
-      "severity_align": 0.288,
+      "confidence": 0.802,
+      "span_score": 0.954,
+      "severity_align": 0.304,
       "mechanism_hint": 1.0,
-      "claim_id": "NFLX2017Q4_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "NFLX2017Q4_C002"
     },
     {
-      "cause": "Margin performance below forecast",
-      "effect": "Negative earnings surprise",
+      "cause": "Operating margin below forecast due to content deals",
+      "effect": "margin compression concern from early content deal closures",
       "mechanism": "fundamental",
-      "severity": 0.6,
+      "severity": 0.7,
       "polarity": -1.0,
       "evidence_span": "36.4% last year was below our forecast of 37.1% due primarily to the earlier-than-anticipated close of certain content deals.",
       "source_id": "NFLX2017Q4_003",
@@ -73,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.875,
+      "confidence": 0.846,
       "span_score": 1.0,
-      "severity_align": 0.499,
+      "severity_align": 0.399,
       "mechanism_hint": 1.0,
-      "claim_id": "NFLX2017Q4_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "NFLX2017Q4_C001"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

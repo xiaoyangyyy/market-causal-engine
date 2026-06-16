@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T07:00:24+00:00",
+  "computed_at": "2026-06-16T09:12:10+00:00",
   "accepted": [
     {
-      "cause": "Net income per diluted share increased 35% year-over-year",
-      "effect": "estimate revision upside",
+      "cause": "Q4 net income per diluted share increased 35% year-over-year",
+      "effect": "EPS beat drives fundamental valuation upside",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.9,
       "polarity": -1.0,
       "evidence_span": "Net income was $13.47 per diluted share, a 35% increase as compared to the prior year.",
       "source_id": "BKNG2016Q4_003",
@@ -23,21 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.806,
+      "confidence": 0.796,
       "span_score": 1.0,
-      "severity_align": 0.225,
+      "severity_align": 0.175,
       "mechanism_hint": 1.0,
-      "claim_id": "BKNG2016Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "BKNG2016Q4_C000"
     },
     {
-      "cause": "Non-GAAP net income per diluted share increased 32% year-over-year",
-      "effect": "Investor confidence in adjusted profitability growth",
+      "cause": "Non-GAAP net income per diluted share rose 32% compared to prior year",
+      "effect": "Non-GAAP earnings growth supports estimate revision upside",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": -1.0,
       "evidence_span": "Non-GAAP net income was $14.21 per diluted share, a 32% increase compared to $10.73 per diluted share a year ago.",
       "source_id": "BKNG2016Q4_005",
@@ -49,14 +48,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.823,
+      "confidence": 0.811,
       "span_score": 1.0,
-      "severity_align": 0.292,
+      "severity_align": 0.242,
       "mechanism_hint": 1.0,
-      "claim_id": "BKNG2016Q4_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "BKNG2016Q4_C001"
     }
   ],
   "rejected": [],
@@ -64,7 +63,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

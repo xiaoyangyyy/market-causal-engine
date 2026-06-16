@@ -5,40 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T04:42:51+00:00",
+  "computed_at": "2026-06-15T17:06:21+00:00",
   "accepted": [
     {
-      "cause": "Fourth quarter revenue guidance range",
-      "effect": "Investor expectations set for next quarter revenue",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": -1.0,
-      "evidence_span": "TI's fourth quarter outlook is for revenue in the range of $4.22 billion to $4.58 billion and earnings per share between $1.13 and $1.39.",
-      "source_id": "TXN2025Q4_003",
-      "published_at": 0,
-      "atom_id": "TXN2025Q4_003",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.829,
-      "span_score": 0.952,
-      "severity_align": 0.421,
-      "mechanism_hint": 1.0,
-      "claim_id": "TXN2025Q4_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Revenue growth of 14% year-over-year",
-      "effect": "fundamental upside",
+      "cause": "Revenue increased 14% year-over-year with growth across all end markets",
+      "effect": "revenue growth validates end-market demand recovery",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
-      "evidence_span": "Revenue increased 7% sequentially and 14% from the same quarter a year ago with growth across all end markets.",
+      "evidence_span": "Revenue increased 7% sequentially and 14% from the same quarter a year ago with growth across all end markets",
       "source_id": "TXN2025Q4_002",
       "published_at": 0,
       "atom_id": "TXN2025Q4_002",
@@ -48,19 +23,43 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.798,
-      "span_score": 0.941,
+      "confidence": 0.799,
+      "span_score": 0.94,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "TXN2025Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TXN2025Q4_C000"
     },
     {
-      "cause": "10-cent reduction in earnings per share",
-      "effect": "Potential negative sentiment regarding profitability",
+      "cause": "Q4 revenue guidance range of $4.22B to $4.58B set below prior quarter actuals",
+      "effect": "forward guidance implies sequential revenue contraction",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "TI's fourth quarter outlook is for revenue in the range of $4.22 billion to $4.58 billion and earnings per share between $1.13 and $1.39",
+      "source_id": "TXN2025Q4_003",
+      "published_at": 0,
+      "atom_id": "TXN2025Q4_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.826,
+      "span_score": 0.951,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TXN2025Q4_C001"
+    },
+    {
+      "cause": "EPS included a 10-cent reduction due to specific factors",
+      "effect": "earnings per share reduction signals margin or cost headwinds",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
@@ -74,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.864,
+      "confidence": 0.858,
       "span_score": 1.0,
       "severity_align": 0.456,
       "mechanism_hint": 1.0,
-      "claim_id": "TXN2025Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TXN2025Q4_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:31+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

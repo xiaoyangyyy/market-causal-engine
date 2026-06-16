@@ -5,15 +5,40 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T04:24:19+00:00",
+  "computed_at": "2026-06-15T16:22:16+00:00",
   "accepted": [
     {
+      "cause": "Net income dropped from $1.722B to $1.127B",
+      "effect": "significant net income contraction reduces EPS valuation",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": -1.0,
+      "evidence_span": "Net income $ 1,127 $ 1,722 Income allocated to RSUs (6) (8) Income allocated to common stock",
+      "source_id": "TXN2024Q3_004",
+      "published_at": 0,
+      "atom_id": "TXN2024Q3_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.776,
+      "span_score": 0.916,
+      "severity_align": 0.271,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TXN2024Q3_C002"
+    },
+    {
       "cause": "Revenue decreased 16% year-over-year",
-      "effect": "valuation de-rating",
+      "effect": "year-over-year revenue decline lowers growth narrative",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
-      "evidence_span": "Revenue decreased 16% from the same quarter a year ago",
+      "evidence_span": "Revenue decreased 16% from the same quarter a year ago and increased 4% sequentially",
       "source_id": "TXN2024Q3_001",
       "published_at": 0,
       "atom_id": "TXN2024Q3_001",
@@ -23,21 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.772,
-      "span_score": 0.9,
+      "confidence": 0.789,
+      "span_score": 0.927,
       "severity_align": 0.307,
       "mechanism_hint": 1.0,
-      "claim_id": "TXN2024Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "TXN2024Q3_C001"
     },
     {
-      "cause": "Q3 revenue guidance range of $3.94B to $4.26B",
-      "effect": "limited estimate surprise",
+      "cause": "Q3 revenue guidance range set at $3.94B to $4.26B",
+      "effect": "forward revenue estimate revision upside",
       "mechanism": "fundamental",
-      "severity": 0.6,
+      "severity": 0.75,
       "polarity": -1.0,
       "evidence_span": "TI's third quarter outlook is for revenue in the range of $3.94 billion to $4.26 billion",
       "source_id": "TXN2024Q3_002",
@@ -49,40 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.864,
+      "confidence": 0.825,
       "span_score": 0.977,
-      "severity_align": 0.508,
+      "severity_align": 0.358,
       "mechanism_hint": 1.0,
-      "claim_id": "TXN2024Q3_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Diluted EPS decline from $1.722 to $1.127",
-      "effect": "Negative sentiment due to lower profitability",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": -1.0,
-      "evidence_span": "Net income $ 1,127 $ 1,722",
-      "source_id": "TXN2024Q3_004",
-      "published_at": 0,
-      "atom_id": "TXN2024Q3_004",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.783,
-      "span_score": 0.869,
-      "severity_align": 0.421,
-      "mechanism_hint": 1.0,
-      "claim_id": "TXN2024Q3_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "TXN2024Q3_C000"
     }
   ],
   "rejected": [],
@@ -90,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

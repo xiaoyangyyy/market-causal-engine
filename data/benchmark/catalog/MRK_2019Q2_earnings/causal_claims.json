@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T13:00:09+00:00",
+  "computed_at": "2026-06-16T11:51:02+00:00",
   "accepted": [
     {
-      "cause": "Raised 2019 Full-Year Revenue Range",
-      "effect": "estimate revision upside",
+      "cause": "Raised 2019 Full-Year Revenue Range to $45.2B-$46.2B",
+      "effect": "guidance raise lifts FY revenue outlook",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": -1.0,
@@ -23,23 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.947,
+      "confidence": 0.93,
       "span_score": 0.922,
       "severity_align": 0.96,
       "mechanism_hint": 1.0,
-      "claim_id": "MRK2019Q2_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "MRK2019Q2_C001"
     },
     {
-      "cause": "Sales grew 36% excluding FX",
-      "effect": "estimate revision upside",
+      "cause": "Non-GAAP EPS of $1.30 for Q2 2019",
+      "effect": "estimate revision upside driven by earnings beat",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
-      "evidence_span": "Excluding the Impact of Foreign Exchange, Sales Grew 36%",
+      "evidence_span": "Second-Quarter 2019 GAAP EPS was $1.03, Second-Quarter Non-GAAP EPS was $1.30",
       "source_id": "MRK2019Q2_000",
       "published_at": 0,
       "atom_id": "MRK2019Q2_000",
@@ -49,23 +48,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.937,
-      "span_score": 0.89,
+      "confidence": 0.928,
+      "span_score": 0.905,
       "severity_align": 0.99,
       "mechanism_hint": 1.0,
-      "claim_id": "MRK2019Q2_C002",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "MRK2019Q2_C000"
     },
     {
-      "cause": "Non-GAAP EPS of $1.30",
-      "effect": "estimate revision upside",
+      "cause": "Sales grew 36% excluding foreign exchange impact",
+      "effect": "top-line growth accelerates valuation multiples",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.75,
       "polarity": -1.0,
-      "evidence_span": "Second-Quarter Non-GAAP EPS was $1.30",
+      "evidence_span": "Excluding the Impact of Foreign Exchange, Sales Grew 36% · Second-Quarter 2019 GAAP EPS was $1.03",
       "source_id": "MRK2019Q2_000",
       "published_at": 0,
       "atom_id": "MRK2019Q2_000",
@@ -75,15 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.917,
-      "span_score": 0.876,
-      "severity_align": 0.94,
+      "confidence": 0.913,
+      "span_score": 0.919,
+      "severity_align": 0.89,
       "mechanism_hint": 1.0,
-      "claim_id": "MRK2019Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "MRK2019Q2_C002"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

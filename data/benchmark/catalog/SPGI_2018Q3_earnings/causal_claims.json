@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:06:31+00:00",
+  "computed_at": "2026-06-16T11:07:45+00:00",
   "accepted": [
     {
-      "cause": "Organic revenue growth of 5% excluding FX",
-      "effect": "Positive earnings surprise signal",
+      "cause": "Organic revenue growth of 5% excluding FX impact",
+      "effect": "fundamental revenue growth validates pricing power",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.75,
       "polarity": 1.0,
       "evidence_span": "On an organic basis and excluding the favorable impact from foreign exchange, revenue increased 5%.",
       "source_id": "SPGI2018Q3_001",
@@ -23,18 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.846,
+      "confidence": 0.831,
       "span_score": 1.0,
-      "severity_align": 0.383,
+      "severity_align": 0.333,
       "mechanism_hint": 1.0,
-      "claim_id": "SPGI2018Q3_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "SPGI2018Q3_C000"
     },
     {
-      "cause": "Non-transaction revenue growth of 7% driven by surveillance and new entity ratings",
-      "effect": "Diversified revenue stream strength",
+      "cause": "Non-transaction revenue increased 7% driven by surveillance and new entity ratings",
+      "effect": "diversified revenue mix strengthens recurring income profile",
       "mechanism": "fundamental",
       "severity": 0.65,
       "polarity": 1.0,
@@ -48,43 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.868,
+      "confidence": 0.862,
       "span_score": 1.0,
       "severity_align": 0.471,
       "mechanism_hint": 1.0,
-      "claim_id": "SPGI2018Q3_C003",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "SPGI2018Q3_C001"
     },
     {
-      "cause": "Net income increase of 23%",
-      "effect": "Strong profitability performance",
-      "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": 1.0,
-      "evidence_span": "net income increased 23% to $",
-      "source_id": "SPGI2018Q3_003",
-      "published_at": 0,
-      "atom_id": "SPGI2018Q3_003",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.81,
-      "span_score": 1.0,
-      "severity_align": 0.239,
-      "mechanism_hint": 1.0,
-      "claim_id": "SPGI2018Q3_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Ratings segment revenue growth of 4%",
-      "effect": "Core business expansion",
+      "cause": "Ratings segment revenue increased 4% to $775 million",
+      "effect": "core segment top-line expansion supports EPS estimates",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": 1.0,
@@ -98,22 +73,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.866,
+      "confidence": 0.86,
       "span_score": 1.0,
       "severity_align": 0.464,
       "mechanism_hint": 1.0,
-      "claim_id": "SPGI2018Q3_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "SPGI2018Q3_C002"
     }
   ],
   "rejected": [],
-  "claim_count": 4,
+  "claim_count": 3,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

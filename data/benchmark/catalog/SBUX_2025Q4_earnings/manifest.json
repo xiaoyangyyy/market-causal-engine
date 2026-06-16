@@ -27,8 +27,8 @@
     "is_major_event": false
   },
   "causal_claims": {
-    "claim_count": 2,
-    "rejected_count": 2,
+    "claim_count": 3,
+    "rejected_count": 0,
     "artifact": "causal_claims.json"
   }
 }

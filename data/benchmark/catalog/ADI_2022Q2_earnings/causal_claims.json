@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:57:29+00:00",
+  "computed_at": "2026-06-15T15:09:31+00:00",
   "accepted": [
     {
-      "cause": "Record Q2 revenue of $2.97 billion",
-      "effect": "estimate upside",
+      "cause": "Record Q2 revenue of $2.97 billion with double digit growth",
+      "effect": "estimate revision upside on revenue growth",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -23,21 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.782,
+      "confidence": 0.785,
       "span_score": 0.912,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "ADI2022Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ADI2022Q2_C000"
     },
     {
-      "cause": "Adjusted EPS guidance of $2.42",
-      "effect": "Anticipation of earnings beat or strong profitability",
+      "cause": "Adjusted EPS guidance of $2.42 +/- $0.10",
+      "effect": "earnings per share estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.75,
       "polarity": -1.0,
       "evidence_span": "adjusted EPS to be $2.42, +/-$0.10",
       "source_id": "ADI2022Q2_004",
@@ -49,20 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.777,
+      "confidence": 0.792,
       "span_score": 0.922,
-      "severity_align": 0.281,
+      "severity_align": 0.331,
       "mechanism_hint": 1.0,
-      "claim_id": "ADI2022Q2_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ADI2022Q2_C002"
     },
     {
-      "cause": "Q3 revenue guidance of $3.05 billion",
-      "effect": "Expectation of continued revenue expansion",
+      "cause": "Q3 revenue guidance of $3.05 billion +/- $100 million",
+      "effect": "forward revenue estimate anchoring",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.7,
       "polarity": -1.0,
       "evidence_span": "forecasting revenue of $3.05 billion, +/- $100 million",
       "source_id": "ADI2022Q2_002",
@@ -74,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.798,
+      "confidence": 0.81,
       "span_score": 0.922,
-      "severity_align": 0.365,
+      "severity_align": 0.415,
       "mechanism_hint": 1.0,
-      "claim_id": "ADI2022Q2_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ADI2022Q2_C001"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

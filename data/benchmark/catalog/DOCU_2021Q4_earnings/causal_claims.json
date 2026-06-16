@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:48:30+00:00",
+  "computed_at": "2026-06-15T14:59:37+00:00",
   "accepted": [
     {
-      "cause": "Revenue growth and operating margin exceeded expectations",
-      "effect": "positive revision momentum",
+      "cause": "Q3 revenue growth of 42% and operating margin of 22% exceeded expectations",
+      "effect": "estimate revision upside driven by revenue and margin beats",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -23,21 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.797,
+      "confidence": 0.799,
       "span_score": 1.0,
       "severity_align": 0.187,
       "mechanism_hint": 1.0,
-      "claim_id": "DOCU2021Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "DOCU2021Q4_C000"
     },
     {
-      "cause": "Gross margin improvement to 82% from 79%",
-      "effect": "Enhanced earnings quality perception",
+      "cause": "Gross margin expansion to 82% compared to 79% prior period",
+      "effect": "valuation uplift from improved gross margin efficiency",
       "mechanism": "fundamental",
-      "severity": 0.6,
+      "severity": 0.7,
       "polarity": -1.0,
       "evidence_span": "gross margin was 82% compared to 79",
       "source_id": "DOCU2021Q4_005",
@@ -49,39 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.861,
+      "confidence": 0.833,
       "span_score": 1.0,
-      "severity_align": 0.443,
+      "severity_align": 0.343,
       "mechanism_hint": 1.0,
-      "claim_id": "DOCU2021Q4_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "DOCU2021Q4_C001"
     },
     {
-      "cause": "Gross margin expansion from 74% to 79%",
-      "effect": "Improved profitability driving stock value",
+      "cause": "Net loss per basic and diluted share reported",
+      "effect": "earnings miss concern despite revenue growth",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.5,
       "polarity": -1.0,
-      "evidence_span": "gross margin was 79% compared to 74",
-      "source_id": "DOCU2021Q4_004",
+      "evidence_span": "net loss per basic and diluted share was $",
+      "source_id": "DOCU2021Q4_006",
       "published_at": 0,
-      "atom_id": "DOCU2021Q4_004",
+      "atom_id": "DOCU2021Q4_006",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.836,
+      "confidence": 0.879,
       "span_score": 1.0,
-      "severity_align": 0.343,
+      "severity_align": 0.548,
       "mechanism_hint": 1.0,
-      "claim_id": "DOCU2021Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "DOCU2021Q4_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

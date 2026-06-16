@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T07:20:16+00:00",
+  "computed_at": "2026-06-16T09:25:13+00:00",
   "accepted": [
     {
-      "cause": "Exclusion of DVA impact from prior year",
-      "effect": "Adjusted net revenues of $7.9 billion and EPS of $0.43",
+      "cause": "Income applicable to Morgan Stanley of $986 million or $0.43 per diluted share",
+      "effect": "EPS realization of $0.43 supports earnings estimate stability",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.5,
       "polarity": -1.0,
-      "evidence_span": "Excluding DVA in the prior year quarter, net revenues were $7.9 billion and income applicable to Morgan Stanley was $986 million, or $0.43 per diluted share",
+      "evidence_span": "income applicable to Morgan Stanley was $986 million, or $0.43 per diluted share",
       "source_id": "MS2017Q1_003",
       "published_at": 0,
       "atom_id": "MS2017Q1_003",
@@ -23,22 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.855,
-      "span_score": 1.0,
-      "severity_align": 0.42,
+      "confidence": 0.912,
+      "span_score": 0.951,
+      "severity_align": 0.62,
       "mechanism_hint": 1.0,
-      "claim_id": "MS2017Q1_C002",
       "polarity_source": "evidence",
       "effect_specificity": 1.0,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "MS2017Q1_C002"
     },
     {
-      "cause": "Strong Sales and Trading results and M&A advisory strength",
-      "effect": "Institutional Securities net revenues of $4.6 billion",
+      "cause": "Institutional Securities net revenues of $4.6 billion",
+      "effect": "revenue beat drives institutional segment valuation upside",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": 1.0,
-      "evidence_span": "Institutional Securities net revenues were $4.6 billion reflecting strong results across our Sales and Trading franchise and continued strength in M&A advisory",
+      "evidence_span": "Institutional Securities net revenues were $4.6 billion reflecting strong results across our Sales and Trading franchise",
       "source_id": "MS2017Q1_004",
       "published_at": 0,
       "atom_id": "MS2017Q1_004",
@@ -48,18 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.836,
-      "span_score": 1.0,
+      "confidence": 0.82,
+      "span_score": 0.972,
       "severity_align": 0.344,
       "mechanism_hint": 1.0,
-      "claim_id": "MS2017Q1_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 0.6,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MS2017Q1_C000"
     },
     {
-      "cause": "Lower commissions and investment-related revenue declines",
-      "effect": "Reduced current period results",
+      "cause": "lower commissions and lower revenues related to investments",
+      "effect": "revenue headwind from deferred compensation plans lowers top-line expectations",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
@@ -73,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.88,
+      "confidence": 0.873,
       "span_score": 1.0,
       "severity_align": 0.521,
       "mechanism_hint": 1.0,
-      "claim_id": "MS2017Q1_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MS2017Q1_C001"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

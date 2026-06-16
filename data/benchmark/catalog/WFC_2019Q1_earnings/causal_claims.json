@@ -5,12 +5,38 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T14:51:05+00:00",
-  "accepted": [],
+  "computed_at": "2026-06-16T11:39:25+00:00",
+  "accepted": [
+    {
+      "cause": "change in methodology for assigning funding charges and credits",
+      "effect": "realignment of operating segments",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "change, adopted in first quarter 2018, in our methodology for assigning funding charges",
+      "source_id": "WFC2019Q1_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "WFC2019Q1_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.819,
+      "span_score": 0.929,
+      "severity_align": 0.659,
+      "mechanism_hint": 1.0,
+      "claim_id": "WFC2019Q1_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    }
+  ],
   "rejected": [],
-  "claim_count": 0,
+  "claim_count": 1,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback_empty"
+  "llm_proposer": "llm_atom_fallback"
 }

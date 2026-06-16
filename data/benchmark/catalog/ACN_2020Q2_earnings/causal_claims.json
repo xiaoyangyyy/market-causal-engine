@@ -5,40 +5,40 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T13:06:51+00:00",
+  "computed_at": "2026-06-15T14:08:13+00:00",
   "accepted": [
     {
-      "cause": "Record new bookings of $14.2 billion",
-      "effect": "Strong future revenue pipeline boosting investor confidence",
+      "cause": "EPS increase of $0.18 driven by higher revenue",
+      "effect": "earnings beat triggers upward estimate revisions",
       "mechanism": "fundamental",
       "severity": 0.9,
-      "polarity": 1.0,
-      "evidence_span": "Record new bookings of $14.2 billion",
-      "source_id": "ACN2020Q2_000",
+      "polarity": -1.0,
+      "evidence_span": "The $0.18 increase in EPS reflects: ▪ a $0.14 increase from higher revenue and operating results",
+      "source_id": "ACN2020Q2_008",
       "published_at": 0,
-      "atom_id": "ACN2020Q2_000",
+      "atom_id": "ACN2020Q2_008",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.75,
-      "span_score": 0.876,
-      "severity_align": 0.271,
+      "confidence": 0.798,
+      "span_score": 1.0,
+      "severity_align": 0.181,
       "mechanism_hint": 1.0,
-      "claim_id": "ACN2020Q2_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ACN2020Q2_C001"
     },
     {
-      "cause": "EPS increased 10% to $1.91",
-      "effect": "Positive earnings surprise driving stock price up",
+      "cause": "Record new bookings of $14.2 billion",
+      "effect": "booking surge strengthens future revenue visibility",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
-      "evidence_span": "EPS are $1.91, a 10% increase",
+      "evidence_span": "Record new bookings of $14.2 billion include consulting bookings of $7",
       "source_id": "ACN2020Q2_000",
       "published_at": 0,
       "atom_id": "ACN2020Q2_000",
@@ -48,20 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.759,
-      "span_score": 0.871,
+      "confidence": 0.779,
+      "span_score": 0.9,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "ACN2020Q2_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ACN2020Q2_C002"
     },
     {
-      "cause": "Operating margin expanded 10 basis points to 13.4%",
-      "effect": "Improved profitability signaling operational efficiency",
+      "cause": "Operating margin expansion of 10 basis points",
+      "effect": "margin expansion drives valuation multiple re-rating",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.8,
       "polarity": -1.0,
       "evidence_span": "operating margin of 13.4%, an expansion of 10 basis points",
       "source_id": "ACN2020Q2_000",
@@ -73,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.795,
+      "confidence": 0.785,
       "span_score": 0.891,
-      "severity_align": 0.421,
+      "severity_align": 0.371,
       "mechanism_hint": 1.0,
-      "claim_id": "ACN2020Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ACN2020Q2_C000"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

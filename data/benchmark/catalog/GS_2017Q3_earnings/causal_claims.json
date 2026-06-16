@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T07:52:26+00:00",
+  "computed_at": "2026-06-16T09:47:41+00:00",
   "accepted": [
     {
-      "cause": "First half net revenues up 12%",
-      "effect": "Pre-tax margin improved 340 basis points",
+      "cause": "First half net revenues up 12% year-over-year",
+      "effect": "pre-tax margin expansion to 31.7%",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -23,20 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.824,
+      "confidence": 0.865,
       "span_score": 1.0,
       "severity_align": 0.294,
       "mechanism_hint": 1.0,
-      "claim_id": "GS2017Q3_C000",
       "polarity_source": "evidence",
       "effect_specificity": 1.0,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "GS2017Q3_C000"
     },
     {
       "cause": "Debt underwriting third highest quarterly performance",
-      "effect": "Net revenues of $721 million",
+      "effect": "Investment Banking revenue beat expectations",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.7,
       "polarity": -1.0,
       "evidence_span": "(3) • Debt underwriting produced its third highest quarterly performance with net revenues of $721 million.",
       "source_id": "GS2017Q3_003",
@@ -48,14 +48,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.835,
+      "confidence": 0.843,
       "span_score": 1.0,
-      "severity_align": 0.338,
+      "severity_align": 0.388,
       "mechanism_hint": 1.0,
-      "claim_id": "GS2017Q3_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.6,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GS2017Q3_C001"
     }
   ],
   "rejected": [],
@@ -63,7 +63,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

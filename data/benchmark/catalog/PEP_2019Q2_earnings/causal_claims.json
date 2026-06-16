@@ -5,38 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:16:41+00:00",
+  "computed_at": "2026-06-16T11:55:17+00:00",
   "accepted": [
     {
-      "cause": "Expected decline in core constant currency EPS",
-      "effect": "Lower core earnings per share for 2019",
+      "cause": "2019 core EPS guidance implies a 3% decrease",
+      "effect": "lowered full-year earnings expectations",
       "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": -1.0,
-      "evidence_span": "A decline in core constant currency EPS of approximately 1 percent, which incorporates lapping a number of 2018 strategic asset-sale and refranchising gains, the expected increased core effective tax rate, and expected 2019 incremental investments to strengthen the business.",
-      "source_id": "PEP2019Q2_003",
-      "published_at": 0,
-      "atom_id": "PEP2019Q2_003",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.843,
-      "span_score": 1.0,
-      "severity_align": 0.371,
-      "mechanism_hint": 1.0,
-      "claim_id": "PEP2019Q2_C000",
-      "polarity_source": "full_text",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Projected 3 percent decrease in core EPS",
-      "effect": "Reduced 2019 core earnings per share compared to 2018",
-      "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.85,
       "polarity": -1.0,
       "evidence_span": "This assumption and the guidance above implies 2019 core earnings per share of $5.50, a 3 percent decrease compared to 2018 core earnings per share of $5.66.",
       "source_id": "PEP2019Q2_004",
@@ -48,14 +23,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.855,
+      "confidence": 0.817,
       "span_score": 1.0,
-      "severity_align": 0.419,
+      "severity_align": 0.269,
       "mechanism_hint": 1.0,
-      "claim_id": "PEP2019Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PEP2019Q2_C000"
+    },
+    {
+      "cause": "Core constant currency EPS decline of approximately 1% due to asset sale lapping and tax rate increases",
+      "effect": "reduced earnings growth narrative driven by one-time gains and tax headwinds",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "A decline in core constant currency EPS of approximately 1 percent, which incorporates lapping a number of 2018 strategic asset-sale and refranchising gains, the expected increased core effective tax rate",
+      "source_id": "PEP2019Q2_003",
+      "published_at": 0,
+      "atom_id": "PEP2019Q2_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.849,
+      "span_score": 0.997,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "polarity_source": "full_text",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PEP2019Q2_C001"
     }
   ],
   "rejected": [],
@@ -63,7 +63,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

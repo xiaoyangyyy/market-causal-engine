@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:32:50+00:00",
+  "computed_at": "2026-06-15T14:18:18+00:00",
   "accepted": [
     {
-      "cause": "organic revenue decline of approximately 17 percent",
-      "effect": "negative impact on stock price",
+      "cause": "Organic revenue decline excluding currency and acquisitions",
+      "effect": "Organic revenue decline of 17 percent",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": -1.0,
       "evidence_span": "first quarter 2021 revenue declined approximately 17 percent organic",
       "source_id": "MDT2020Q3_000",
@@ -23,22 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.792,
+      "confidence": 0.825,
       "span_score": 0.924,
-      "severity_align": 0.336,
+      "severity_align": 0.286,
       "mechanism_hint": 1.0,
-      "claim_id": "MDT2020Q3_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "MDT2020Q3_C001"
     },
     {
-      "cause": "extra week benefit to non-GAAP diluted EPS",
-      "effect": "positive impact on stock price",
+      "cause": "Extra week benefit to revenue and EPS",
+      "effect": "Non-GAAP EPS benefit of $0.06 to $0.10",
       "mechanism": "fundamental",
-      "severity": 0.6,
+      "severity": 0.75,
       "polarity": -1.0,
-      "evidence_span": "benefit of $0.06 to $0.10 to non-GAAP diluted EPS",
+      "evidence_span": "estimates that it resulted in a benefit of approximately $360-$390 million to reported revenue and a benefit of $0.06 to $0.10 to non-GAAP diluted EPS",
       "source_id": "MDT2020Q3_003",
       "published_at": 0,
       "atom_id": "MDT2020Q3_003",
@@ -48,14 +48,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.832,
-      "span_score": 0.892,
-      "severity_align": 0.567,
+      "confidence": 0.881,
+      "span_score": 0.978,
+      "severity_align": 0.417,
       "mechanism_hint": 1.0,
-      "claim_id": "MDT2020Q3_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "MDT2020Q3_C000"
     }
   ],
   "rejected": [],
@@ -63,7 +63,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

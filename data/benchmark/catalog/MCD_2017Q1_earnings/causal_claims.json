@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T02:43:26+00:00",
+  "computed_at": "2026-06-16T09:31:11+00:00",
   "accepted": [
     {
       "cause": "EPS beat expectations",
-      "effect": "positive revision momentum",
+      "effect": "estimate revision upside",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.8,
       "polarity": -1.0,
       "evidence_span": "Earnings per share-diluted $ 1.44 $ 1.31 $",
       "source_id": "MCD2017Q1_000",
@@ -23,23 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.8,
+      "confidence": 0.813,
       "span_score": 1.0,
-      "severity_align": 0.198,
+      "severity_align": 0.248,
       "mechanism_hint": 1.0,
-      "claim_id": "MCD2017Q1_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "MCD2017Q1_C000"
     },
     {
-      "cause": "Revenue decline in U.S. due to refranchising",
-      "effect": "valuation de-rating",
+      "cause": "U.S. revenue decline due to refranchising",
+      "effect": "top-line growth headwind in core market",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
-      "evidence_span": "U.S.: Revenues decreased for the quarter and year due to the impact of refranchising",
+      "evidence_span": "• U.S.: Revenues decreased for the quarter and year due to the impact of refranchising, partly offset by modestly positive comparable sales for the year.",
       "source_id": "MCD2017Q1_004",
       "published_at": 0,
       "atom_id": "MCD2017Q1_004",
@@ -49,23 +48,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.857,
-      "span_score": 0.96,
+      "confidence": 0.872,
+      "span_score": 1.0,
       "severity_align": 0.517,
       "mechanism_hint": 1.0,
-      "claim_id": "MCD2017Q1_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "MCD2017Q1_C001"
     },
     {
-      "cause": "Revenue growth in constant currencies driven by China and Russia",
-      "effect": "fundamental upside",
+      "cause": "International revenue growth driven by China and Russia",
+      "effect": "geographic diversification supports valuation",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.5,
       "polarity": 1.0,
-      "evidence_span": "In constant currencies, revenues increased for both periods due to positive comparable sales growth in China and across most markets, and continued expansion in Russia",
+      "evidence_span": "In constant currencies, revenues increased for both periods due to positive comparable sales growth in China and across most markets, and continued expansion in Russia.",
       "source_id": "MCD2017Q1_007",
       "published_at": 0,
       "atom_id": "MCD2017Q1_007",
@@ -75,15 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.857,
+      "confidence": 0.896,
       "span_score": 1.0,
-      "severity_align": 0.426,
+      "severity_align": 0.626,
       "mechanism_hint": 1.0,
-      "claim_id": "MCD2017Q1_C002",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MCD2017Q1_C002"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

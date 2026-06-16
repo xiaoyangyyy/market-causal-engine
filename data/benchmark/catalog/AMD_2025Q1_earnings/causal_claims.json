@@ -5,38 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T13:20:01+00:00",
+  "computed_at": "2026-06-15T16:38:52+00:00",
   "accepted": [
     {
-      "cause": "Data Center Segment revenue growth to $3.7B",
-      "effect": "Bullish sentiment on AI chip demand",
+      "cause": "Non-GAAP EPS up 55% y/y",
+      "effect": "estimate revision upside driven by earnings surprise",
       "mechanism": "fundamental",
       "severity": 0.9,
-      "polarity": -1.0,
-      "evidence_span": "Data Center Segment Q1 2025 Revenue $2.3B $3.7B Q1 2024 Q1 2025",
-      "source_id": "AMD2025Q1_007",
-      "published_at": 0,
-      "atom_id": "AMD2025Q1_007",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.932,
-      "span_score": 0.895,
-      "severity_align": 0.96,
-      "mechanism_hint": 1.0,
-      "claim_id": "AMD2025Q1_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Non-GAAP EPS up 55% year-over-year",
-      "effect": "estimate revision upside",
-      "mechanism": "fundamental",
-      "severity": 0.85,
       "polarity": -1.0,
       "evidence_span": "Non-GAAP EPS up 55% y/y, primarily driven by higher revenue and gross margin",
       "source_id": "AMD2025Q1_005",
@@ -48,48 +23,78 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.945,
+      "confidence": 0.921,
       "span_score": 0.904,
-      "severity_align": 0.99,
+      "severity_align": 0.96,
       "mechanism_hint": 1.0,
-      "claim_id": "AMD2025Q1_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
+      "polarity_aligned": true,
+      "claim_id": "AMD2025Q1_C000"
+    }
+  ],
+  "rejected": [
     {
-      "cause": "Record first quarter revenue",
-      "effect": "Increased investor confidence",
+      "cause": "Record first quarter revenue of $1.8B",
+      "effect": "revenue beat reinforces growth narrative",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": 1.0,
-      "evidence_span": "Record first quarter revenue of",
+      "evidence_span": "Record first quarter revenue of $1.8B Q1 2025",
       "source_id": "AMD2025Q1_003",
       "published_at": 0,
       "atom_id": "AMD2025Q1_003",
       "validation": {
-        "passed": true,
-        "errors": [],
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
         "warnings": []
       },
-      "proposer": "llm_event",
-      "confidence": 0.985,
-      "span_score": 0.982,
-      "severity_align": 0.98,
-      "mechanism_hint": 1.0,
-      "claim_id": "AMD2025Q1_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "proposer": "llm_event"
+    },
+    {
+      "cause": "Data Center Segment Q1 2025 Revenue $3.7B",
+      "effect": "segment growth drives valuation multiple expansion",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Data Center Segment Q1 2025 Revenue $3.7B Q1 2025 23% 25%",
+      "source_id": "AMD2025Q1_007",
+      "published_at": 0,
+      "atom_id": "AMD2025Q1_007",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    },
+    {
+      "cause": "Gross Margin ~43% including $800 impact",
+      "effect": "margin stability supports earnings quality",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": 0.7,
+      "evidence_span": "Gross Margin2 ~43%, including $800 impact on gross margin",
+      "source_id": "AMD2025Q1_011",
+      "published_at": 0,
+      "atom_id": "AMD2025Q1_011",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
     }
   ],
-  "rejected": [],
-  "claim_count": 3,
-  "rejected_count": 0,
+  "claim_count": 1,
+  "rejected_count": 3,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

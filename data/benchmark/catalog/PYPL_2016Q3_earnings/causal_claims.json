@@ -5,8 +5,58 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T11:40:43+00:00",
+  "computed_at": "2026-06-16T08:56:25+00:00",
   "accepted": [
+    {
+      "cause": "Q3 non-GAAP EPS guidance of $0.33 - $0.35",
+      "effect": "non-GAAP EPS range anchors profitability expectations for Q3",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "PayPal expects GAAP earnings per diluted share in the range of $0.25 - $0.27 and non-GAAP earnings per diluted share in the range of $0.33 - $0.35",
+      "source_id": "PYPL2016Q3_009",
+      "published_at": 0,
+      "atom_id": "PYPL2016Q3_009",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.88,
+      "span_score": 1.0,
+      "severity_align": 0.364,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "PYPL2016Q3_C002"
+    },
+    {
+      "cause": "Q3 revenue guidance range of $2.620 to $2.670 billion",
+      "effect": "forward revenue range sets baseline for Q3 estimate revisions",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "PayPal expects revenue to grow 16% - 18% at current spot rates and 19% - 21% on an FX-neutral basis, to a range of $2.620 to $2.670 billion",
+      "source_id": "PYPL2016Q3_008",
+      "published_at": 0,
+      "atom_id": "PYPL2016Q3_008",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.893,
+      "span_score": 1.0,
+      "severity_align": 0.422,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "PYPL2016Q3_C001"
+    },
     {
       "cause": "Q2 revenue growth of 15% to $2.650 billion",
       "effect": "revenue growth validates top-line expansion expectations",
@@ -31,57 +81,12 @@
       "effect_specificity": 0.65,
       "polarity_aligned": true,
       "claim_id": "PYPL2016Q3_C000"
-    },
-    {
-      "cause": "Q3 revenue guidance set at 16% - 18% growth",
-      "effect": "forward revenue growth range sets analyst estimate baseline",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": -1.0,
-      "evidence_span": "PayPal expects revenue to grow 16% - 18% at current spot rates and 19% - 21% on an FX-neutral basis",
-      "source_id": "PYPL2016Q3_008",
-      "published_at": 0,
-      "atom_id": "PYPL2016Q3_008",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.826,
-      "span_score": 0.973,
-      "severity_align": 0.372,
-      "mechanism_hint": 1.0,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true,
-      "claim_id": "PYPL2016Q3_C002"
-    },
-    {
-      "cause": "Q3 non-GAAP EPS guidance range of $0.33 - $0.35",
-      "effect": "earnings per share outlook adjusts future valuation multiples",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "non-GAAP earnings per diluted share in the range of $0.33 - $0.35",
-      "source_id": "PYPL2016Q3_009",
-      "published_at": 0,
-      "atom_id": "PYPL2016Q3_009",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.818,
-      "span_score": 0.937,
-      "severity_align": 0.414,
-      "mechanism_hint": 1.0,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true,
-      "claim_id": "PYPL2016Q3_C003"
-    },
-    {
-      "cause": "Q2 GAAP operating margin data presented",
-      "effect": "margin performance influences profitability
+    }
+  ],
+  "rejected": [],
+  "claim_count": 3,
+  "rejected_count": 0,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event"
+}

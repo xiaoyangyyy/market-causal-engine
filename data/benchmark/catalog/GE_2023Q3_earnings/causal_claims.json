@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T12:34:46+00:00",
+  "computed_at": "2026-06-15T15:48:46+00:00",
   "accepted": [
     {
       "cause": "Double-digit growth in orders, revenue, operating profit, and cash",
-      "effect": "estimate revision upside",
+      "effect": "revenue growth drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -23,69 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.764,
+      "confidence": 0.769,
       "span_score": 0.903,
       "severity_align": 0.271,
       "mechanism_hint": 1.0,
-      "claim_id": "GE2023Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Organic orders surge of 58% and total revenues up 18%",
-      "effect": "Strong top-line growth signaling robust demand",
-      "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": -1.0,
-      "evidence_span": "organic orders +58% • Total revenues (GAAP) of $16.7B, +18%",
-      "source_id": "GE2023Q3_002",
-      "published_at": 0,
-      "atom_id": "GE2023Q3_002",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.815,
-      "span_score": 1.0,
-      "severity_align": 0.258,
-      "mechanism_hint": 1.0,
-      "claim_id": "GE2023Q3_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Aerospace segment revenue growth of 28% with margin expansion",
-      "effect": "High-margin segment outperformance boosting overall valuation",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": -1.0,
-      "evidence_span": "Aerospace (GAAP) $ 7,860 $ 6,127 28 % $ 1,479 $ 1,148 29 % 18.8 % 18.7 % 10 bps",
-      "source_id": "GE2023Q3_006",
-      "published_at": 0,
-      "atom_id": "GE2023Q3_006",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.804,
-      "span_score": 0.906,
-      "severity_align": 0.421,
-      "mechanism_hint": 1.0,
-      "claim_id": "GE2023Q3_C003",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "GE2023Q3_C000"
     },
     {
       "cause": "Adjusted profit margin expansion of 160 basis points organically",
-      "effect": "Improved profitability driving investor confidence",
+      "effect": "margin expansion supports higher EPS estimates",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -99,14 +48,64 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.786,
+      "confidence": 0.789,
       "span_score": 0.961,
       "severity_align": 0.229,
       "mechanism_hint": 1.0,
-      "claim_id": "GE2023Q3_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GE2023Q3_C001"
+    },
+    {
+      "cause": "Aerospace segment revenue growth of 28% year-over-year",
+      "effect": "segment outperformance reinforces growth narrative",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Aerospace (GAAP) $ 7,860 $ 6,127 28 % $ 1,479 $ 1,148 29 % 18.8 % 18.7 % 10 bps",
+      "source_id": "GE2023Q3_006",
+      "published_at": 0,
+      "atom_id": "GE2023Q3_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.793,
+      "span_score": 0.906,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GE2023Q3_C002"
+    },
+    {
+      "cause": "Organic orders surge of 58% and total GAAP revenue increase of 18%",
+      "effect": "strong order intake signals future revenue visibility",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "organic orders +58% • Total revenues (GAAP) of $16.7B, +18%",
+      "source_id": "GE2023Q3_002",
+      "published_at": 0,
+      "atom_id": "GE2023Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.826,
+      "span_score": 1.0,
+      "severity_align": 0.308,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GE2023Q3_C003"
     }
   ],
   "rejected": [],
@@ -114,7 +113,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

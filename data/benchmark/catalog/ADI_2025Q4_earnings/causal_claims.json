@@ -5,39 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T13:37:12+00:00",
+  "computed_at": "2026-06-15T17:00:49+00:00",
   "accepted": [
     {
-      "cause": "Revenue guidance of $3.5 billion for Q2 FY26",
-      "effect": "estimate revision upside",
+      "cause": "Q1 revenue of $3.16 billion with year-over-year growth across all end markets",
+      "effect": "revenue beat drives fundamental valuation upside",
       "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": -1.0,
-      "evidence_span": "Outlook for the Second Quarter of Fiscal Year 2026 For the second quarter of fiscal 2026, we are forecasting revenue of $3.5 billion, +/- $100 million.",
-      "source_id": "ADI2025Q4_003",
-      "published_at": 0,
-      "atom_id": "ADI2025Q4_003",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.995,
-      "span_score": 1.0,
-      "severity_align": 0.98,
-      "mechanism_hint": 1.0,
-      "claim_id": "ADI2025Q4_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Year-over-year growth across all end markets",
-      "effect": "Broad-based demand strength driving stock price",
-      "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.85,
       "polarity": 1.0,
       "evidence_span": "Revenue of $3.16 billion, with year-over-year growth across all end markets, led by Industrial and Communications",
       "source_id": "ADI2025Q4_000",
@@ -49,18 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.942,
+      "confidence": 0.928,
       "span_score": 0.931,
-      "severity_align": 0.92,
+      "severity_align": 0.93,
       "mechanism_hint": 1.0,
-      "claim_id": "ADI2025Q4_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ADI2025Q4_C000"
     },
     {
-      "cause": "Adjusted EPS guidance of $2.88 for Q2 FY26",
-      "effect": "Increased investor confidence in profitability",
+      "cause": "Planning for reported EPS of $2.19 and adjusted EPS of $2.88",
+      "effect": "EPS guidance anchors earnings estimate revisions",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": -1.0,
@@ -74,14 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.992,
+      "confidence": 0.971,
       "span_score": 1.0,
       "severity_align": 0.97,
       "mechanism_hint": 1.0,
-      "claim_id": "ADI2025Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ADI2025Q4_C002"
+    },
+    {
+      "cause": "Forecasting Q2 revenue of $3.5 billion with a $100 million range",
+      "effect": "revenue guidance sets baseline for estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "Outlook for the Second Quarter of Fiscal Year 2026 For the second quarter of fiscal 2026, we are forecasting revenue of $3.5 billion, +/- $100 million.",
+      "source_id": "ADI2025Q4_003",
+      "published_at": 0,
+      "atom_id": "ADI2025Q4_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.96,
+      "span_score": 1.0,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ADI2025Q4_C001"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T07:44:19+00:00",
+  "computed_at": "2026-06-16T09:36:41+00:00",
   "accepted": [
     {
-      "cause": "Net revenues declined 11%",
-      "effect": "valuation de-rating",
+      "cause": "Net revenues declined 11% due to structural changes and currency",
+      "effect": "organic revenue growth narrative challenged by double-digit decline",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": -1.0,
-      "evidence_span": "Net revenues declined 11%, Reflecting Unfavorable Impacts from Structural Changes of 10% and Foreign Currency of 1%",
+      "evidence_span": "Net Revenues Declined 11%, Reflecting Unfavorable Impacts from Structural Changes of 10% and Foreign Currency of 1%",
       "source_id": "KO2017Q2_000",
       "published_at": 0,
       "atom_id": "KO2017Q2_000",
@@ -23,46 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.805,
+      "confidence": 0.795,
       "span_score": 0.932,
-      "severity_align": 0.371,
+      "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "KO2017Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "KO2017Q2_C000"
     },
     {
-      "cause": "Remain on track to deliver full year targets",
-      "effect": "Positive sentiment regarding future guidance",
-      "mechanism": "sentiment",
-      "severity": 0.6,
-      "polarity": -1.0,
-      "evidence_span": "The first quarter performance was in line with our plan, and we remain on track to deliver our underlying revenue and profit targets for the full year",
-      "source_id": "KO2017Q2_001",
-      "published_at": 0,
-      "atom_id": "KO2017Q2_001",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.88,
-      "span_score": 0.978,
-      "severity_align": 0.567,
-      "mechanism_hint": 1.0,
-      "claim_id": "KO2017Q2_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Core business organic revenues were even",
-      "effect": "Stabilization of core business performance",
+      "cause": "Core business organic revenues were even despite price/mix growth",
+      "effect": "volume stagnation offsets pricing power in core business metrics",
       "mechanism": "fundamental",
-      "severity": 0.5,
+      "severity": 0.6,
       "polarity": 1.0,
       "evidence_span": "Core business organic revenues (non-GAAP) were even, and core business price/mix growth was 3%",
       "source_id": "KO2017Q2_005",
@@ -74,14 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.895,
+      "confidence": 0.864,
       "span_score": 1.0,
-      "severity_align": 0.581,
+      "severity_align": 0.481,
       "mechanism_hint": 1.0,
-      "claim_id": "KO2017Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "KO2017Q2_C001"
+    },
+    {
+      "cause": "Management reaffirmed full year revenue and profit targets despite Q1 decline",
+      "effect": "guidance stability mitigates near-term revenue miss concerns",
+      "mechanism": "sentiment",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "The first quarter performance was in line with our plan, and we remain on track to deliver our underlying revenue and profit targets for the full year",
+      "source_id": "KO2017Q2_001",
+      "published_at": 0,
+      "atom_id": "KO2017Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.894,
+      "span_score": 0.978,
+      "severity_align": 0.667,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "KO2017Q2_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T13:36:17+00:00",
+  "computed_at": "2026-06-15T16:26:56+00:00",
   "accepted": [
     {
-      "cause": "Gross profit expansion",
-      "effect": "Improved profitability outlook",
+      "cause": "Gross profit increase of 30% year over year",
+      "effect": "margin expansion improves profitability outlook",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.9,
       "polarity": -1.0,
       "evidence_span": "Gross profit was $480 million, up 30% YoY",
       "source_id": "ROKU2024Q3_000",
@@ -23,20 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.915,
+      "confidence": 0.917,
       "span_score": 0.896,
-      "severity_align": 0.89,
+      "severity_align": 0.96,
       "mechanism_hint": 1.0,
-      "claim_id": "ROKU2024Q3_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ROKU2024Q3_C001"
     },
     {
-      "cause": "Total net revenue growth",
-      "effect": "fundamental upside",
+      "cause": "Q3 2024 total net revenue growth of 16% year over year",
+      "effect": "revenue estimate revision upside",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": -1.0,
       "evidence_span": "Total net revenue was $1.062 billion, up 16% year over year (YoY)",
       "source_id": "ROKU2024Q3_000",
@@ -48,23 +48,45 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.943,
+      "confidence": 0.937,
       "span_score": 0.923,
-      "severity_align": 0.94,
+      "severity_align": 0.99,
       "mechanism_hint": 1.0,
-      "claim_id": "ROKU2024Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ROKU2024Q3_C000"
+    },
+    {
+      "cause": "Net loss narrowing from $631 million to $94 million in nine months",
+      "effect": "loss reduction strengthens cash flow trajectory",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Net Loss $ (93,838) $ (631,270) Adjustments to reconcile net loss to net cash",
+      "source_id": "ROKU2024Q3_002",
+      "published_at": 0,
+      "atom_id": "ROKU2024Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.924,
+      "span_score": 0.905,
+      "severity_align": 0.97,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ROKU2024Q3_C002"
     }
   ],
   "rejected": [],
-  "claim_count": 2,
+  "claim_count": 3,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,38 +5,38 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T04:28:35+00:00",
+  "computed_at": "2026-06-15T16:29:07+00:00",
   "accepted": [
     {
-      "cause": "Expectation of low-single-digit organic revenue increase",
-      "effect": "Moderate positive revenue outlook",
+      "cause": "2024 core EPS guidance implies 7% increase",
+      "effect": "estimate revision upside on core EPS growth",
       "mechanism": "fundamental",
-      "severity": 0.5,
+      "severity": 0.8,
       "polarity": -1.0,
-      "evidence_span": "expects: • A low-single-digit increase in organic revenue",
-      "source_id": "PEP2024Q4_007",
+      "evidence_span": "This assumption and the guidance above imply 2024 core EPS of at least $8.15, a 7 percent increase compared to 2023 core EPS of $7.62.",
+      "source_id": "PEP2024Q4_008",
       "published_at": 0,
-      "atom_id": "PEP2024Q4_007",
+      "atom_id": "PEP2024Q4_008",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.889,
+      "confidence": 0.825,
       "span_score": 1.0,
-      "severity_align": 0.557,
+      "severity_align": 0.305,
       "mechanism_hint": 1.0,
-      "claim_id": "PEP2024Q4_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "PEP2024Q4_C000"
     },
     {
-      "cause": "EPS growth guidance of at least 8 percent",
-      "effect": "fundamental upside",
+      "cause": "Expect to deliver at least 8% core constant currency EPS growth",
+      "effect": "growth narrative reinforcement on core EPS",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.7,
       "polarity": 1.0,
       "evidence_span": "expect to deliver at least 8 percent core constant currency EPS growth",
       "source_id": "PEP2024Q4_002",
@@ -48,19 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.816,
+      "confidence": 0.838,
       "span_score": 1.0,
-      "severity_align": 0.265,
+      "severity_align": 0.365,
       "mechanism_hint": 1.0,
-      "claim_id": "PEP2024Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PEP2024Q4_C002"
     },
     {
-      "cause": "Net revenue decline due to Quaker Recall",
-      "effect": "Negative impact on financial performance",
+      "cause": "Net revenue decline impacted by Quaker Recall",
+      "effect": "revenue headwind from voluntary product recall",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
@@ -74,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.881,
+      "confidence": 0.874,
       "span_score": 1.0,
       "severity_align": 0.526,
       "mechanism_hint": 1.0,
-      "claim_id": "PEP2024Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PEP2024Q4_C001"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

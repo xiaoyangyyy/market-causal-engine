@@ -5,15 +5,40 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:19:41+00:00",
+  "computed_at": "2026-06-15T14:35:24+00:00",
   "accepted": [
     {
-      "cause": "FY 2021 revenue growth outlook of approximately 10%",
-      "effect": "Confidence in sustained future growth trajectory",
+      "cause": "Q1 revenue growth of 15% with strong non-GAAP operating margin",
+      "effect": "fundamental valuation uplift driven by revenue growth and margin expansion",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.85,
       "polarity": 1.0,
-      "evidence_span": "• FY 2021 outlook projects revenue growth of approximately 10% (adjusting for 53rd week in 2020).",
+      "evidence_span": "revenue growth of 15% plus non-GAAP operating margin of",
+      "source_id": "CDNS2021Q1_000",
+      "published_at": 0,
+      "atom_id": "CDNS2021Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.803,
+      "span_score": 1.0,
+      "severity_align": 0.206,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "CDNS2021Q1_C000"
+    },
+    {
+      "cause": "FY 2021 outlook projects revenue growth of approximately 10%",
+      "effect": "estimate revision upside based on sustained annual revenue growth guidance",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "FY 2021 outlook projects revenue growth of approximately 10% (adjusting for 53rd week in 2020).",
       "source_id": "CDNS2021Q1_001",
       "published_at": 0,
       "atom_id": "CDNS2021Q1_001",
@@ -23,18 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.846,
+      "confidence": 0.831,
       "span_score": 1.0,
-      "severity_align": 0.382,
+      "severity_align": 0.332,
       "mechanism_hint": 1.0,
-      "claim_id": "CDNS2021Q1_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "CDNS2021Q1_C001"
     },
     {
-      "cause": "Q1 2021 Revenue guidance of $710 - $730 million",
-      "effect": "Expectation of meeting or exceeding near-term revenue targets",
+      "cause": "Q1 2021 Revenue guidance set at $710 - $730 million",
+      "effect": "revenue estimate anchoring within high single-digit growth range",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
@@ -48,40 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.863,
+      "confidence": 0.857,
       "span_score": 1.0,
       "severity_align": 0.451,
       "mechanism_hint": 1.0,
-      "claim_id": "CDNS2021Q1_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Revenue growth of 15%",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": 1.0,
-      "evidence_span": "revenue growth of 15% plus non-GAAP operating margin of",
-      "source_id": "CDNS2021Q1_000",
-      "published_at": 0,
-      "atom_id": "CDNS2021Q1_000",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.814,
-      "span_score": 1.0,
-      "severity_align": 0.256,
-      "mechanism_hint": 1.0,
-      "claim_id": "CDNS2021Q1_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "CDNS2021Q1_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

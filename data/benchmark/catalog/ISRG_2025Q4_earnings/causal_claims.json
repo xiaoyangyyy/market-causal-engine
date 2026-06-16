@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T13:44:24+00:00",
+  "computed_at": "2026-06-15T17:08:50+00:00",
   "accepted": [
     {
-      "cause": "20% increase in instruments and accessories revenue",
-      "effect": "Positive revenue surprise driving stock price up",
+      "cause": "Instruments and accessories revenue increased by 20% to $1.52 billion",
+      "effect": "estimate revision upside driven by recurring revenue growth",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
-      "evidence_span": "Third quarter 2025 instruments and accessories revenue increased by 20% to $1.52 billion",
+      "evidence_span": "Third quarter 2025 instruments and accessories revenue increased by 20% to $1.52 billion, compared with $1.26 billion in the third quarter of 2024.",
       "source_id": "ISRG2025Q4_006",
       "published_at": 0,
       "atom_id": "ISRG2025Q4_006",
@@ -23,22 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.799,
-      "span_score": 0.97,
+      "confidence": 0.816,
+      "span_score": 1.0,
       "severity_align": 0.263,
       "mechanism_hint": 1.0,
-      "claim_id": "ISRG2025Q4_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ISRG2025Q4_C000"
     },
     {
-      "cause": "19% growth in da Vinci procedure volume",
-      "effect": "Higher future recurring revenue expectations",
+      "cause": "da Vinci procedure volume grew approximately 19% and Ion procedure volume grew approximately 52%",
+      "effect": "volume growth validates installed base expansion narrative",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": 1.0,
-      "evidence_span": "approximately 19% growth in da Vinci procedure volume and approximately 52% growth in Ion procedure volume",
+      "evidence_span": "The increase in instruments and accessories revenue was primarily driven by approximately 19% growth in da Vinci procedure volume and approximately 52% growth in Ion procedure volume.",
       "source_id": "ISRG2025Q4_007",
       "published_at": 0,
       "atom_id": "ISRG2025Q4_007",
@@ -48,22 +48,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.828,
-      "span_score": 0.966,
+      "confidence": 0.843,
+      "span_score": 1.0,
       "severity_align": 0.386,
       "mechanism_hint": 1.0,
-      "claim_id": "ISRG2025Q4_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ISRG2025Q4_C001"
     },
     {
-      "cause": "32.6% increase in systems revenue year-over-year",
-      "effect": "Strong capital equipment demand signaling market expansion",
+      "cause": "Systems revenue rose to $590 million from $445 million year-over-year",
+      "effect": "capital equipment sales acceleration supports top-line momentum",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.65,
       "polarity": -1.0,
-      "evidence_span": "Third quarter 2025 systems revenue was $590 million, compared with $445 million in the third quarter of 2024",
+      "evidence_span": "Third quarter 2025 systems revenue was $590 million, compared with $445 million in the third quarter of 2024.",
       "source_id": "ISRG2025Q4_008",
       "published_at": 0,
       "atom_id": "ISRG2025Q4_008",
@@ -73,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.847,
+      "confidence": 0.807,
       "span_score": 1.0,
-      "severity_align": 0.389,
+      "severity_align": 0.439,
       "mechanism_hint": 1.0,
-      "claim_id": "ISRG2025Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "effect_specificity": 0.25,
+      "polarity_aligned": true,
+      "claim_id": "ISRG2025Q4_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:31+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

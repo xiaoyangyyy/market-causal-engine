@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:34:48+00:00",
+  "computed_at": "2026-06-15T14:45:35+00:00",
   "accepted": [
     {
       "cause": "Third quarter revenue guidance of approximately $6.75 billion",
-      "effect": "Expectation of continued revenue expansion",
+      "effect": "forward revenue expectations anchored at $6.75B",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": -1.0,
@@ -23,46 +23,45 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.827,
+      "confidence": 0.868,
       "span_score": 1.0,
       "severity_align": 0.309,
       "mechanism_hint": 1.0,
-      "claim_id": "AVGO2021Q3_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "AVGO2021Q3_C002"
     },
     {
       "cause": "Revenue growth of 15% year-over-year",
-      "effect": "fundamental upside",
+      "effect": "estimate revision upside on top-line growth",
       "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": 1.0,
-      "evidence_span": "revenue grew 15% year-over-year and operating profit increased",
-      "source_id": "AVGO2021Q3_004",
+      "severity": 0.85,
+      "polarity": -1.0,
+      "evidence_span": "Revenue of $6,610 million for the second quarter, up 15 percent from the prior year period",
+      "source_id": "AVGO2021Q3_000",
       "published_at": 0,
-      "atom_id": "AVGO2021Q3_004",
+      "atom_id": "AVGO2021Q3_000",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.815,
-      "span_score": 1.0,
-      "severity_align": 0.26,
+      "confidence": 0.791,
+      "span_score": 0.927,
+      "severity_align": 0.318,
       "mechanism_hint": 1.0,
-      "claim_id": "AVGO2021Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "AVGO2021Q3_C000"
     },
     {
       "cause": "GAAP diluted EPS of $3.30",
-      "effect": "Investor confidence in profitability metrics",
+      "effect": "earnings per share beat driving valuation re-rating",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.8,
       "polarity": -1.0,
       "evidence_span": "GAAP diluted EPS of $3.30 for the second quarter",
       "source_id": "AVGO2021Q3_001",
@@ -74,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.814,
+      "confidence": 0.791,
       "span_score": 0.94,
-      "severity_align": 0.388,
+      "severity_align": 0.288,
       "mechanism_hint": 1.0,
-      "claim_id": "AVGO2021Q3_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "AVGO2021Q3_C001"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

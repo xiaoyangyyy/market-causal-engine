@@ -5,12 +5,38 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T09:47:55+00:00",
-  "accepted": [],
+  "computed_at": "2026-06-16T12:09:34+00:00",
+  "accepted": [
+    {
+      "cause": "revenues by Operating Group and type of",
+      "effect": "estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "revenues by Operating Group and type of",
+      "source_id": "ACN2019Q4_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "ACN2019Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.878,
+      "span_score": 1.0,
+      "severity_align": 0.546,
+      "mechanism_hint": 1.0,
+      "claim_id": "ACN2019Q4_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
   "rejected": [],
-  "claim_count": 0,
+  "claim_count": 1,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback_empty"
+  "llm_proposer": "llm_atom_fallback"
 }

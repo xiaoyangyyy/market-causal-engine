@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:45:17+00:00",
+  "computed_at": "2026-06-15T14:56:35+00:00",
   "accepted": [
     {
-      "cause": "Record Investment Banking revenues",
-      "effect": "Institutional Securities net revenues of $7.5 billion",
+      "cause": "Record Investment Banking revenues led by advisory",
+      "effect": "estimate revision upside driven by record advisory fees",
       "mechanism": "fundamental",
-      "severity": 0.9,
+      "severity": 0.85,
       "polarity": 1.0,
-      "evidence_span": "Institutional Securities net revenues of $7.5 billion reflect record Investment Banking revenues",
+      "evidence_span": "Institutional Securities net revenues of $7.5 billion reflect record Investment Banking revenues, led by advisory",
       "source_id": "MS2021Q4_004",
       "published_at": 0,
       "atom_id": "MS2021Q4_004",
@@ -23,20 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.783,
-      "span_score": 0.951,
-      "severity_align": 0.241,
+      "confidence": 0.806,
+      "span_score": 0.968,
+      "severity_align": 0.291,
       "mechanism_hint": 1.0,
-      "claim_id": "MS2021Q4_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 0.6,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MS2021Q4_C000"
     },
     {
-      "cause": "Increase in fee-based asset management revenues",
-      "effect": "Investment Management results improvement",
+      "cause": "Increase in fee-based asset management revenues on $1.5T AUM",
+      "effect": "margin expansion expectation from higher fee-based revenue mix",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.75,
       "polarity": -1.0,
       "evidence_span": "Investment Management results reflect an increase in fee-based asset management revenues on AUM of $1.5 trillion",
       "source_id": "MS2021Q4_005",
@@ -48,20 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.823,
+      "confidence": 0.833,
       "span_score": 1.0,
-      "severity_align": 0.293,
+      "severity_align": 0.343,
       "mechanism_hint": 1.0,
-      "claim_id": "MS2021Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MS2021Q4_C001"
     },
     {
       "cause": "Equity underwriting revenues increased from IPOs and blocks",
-      "effect": "Higher equity underwriting performance",
+      "effect": "top-line growth validation from IPO and block activity",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.65,
       "polarity": 1.0,
       "evidence_span": "Equity underwriting revenues increased from a year ago primarily from IPOs and blocks driven by more issuances",
       "source_id": "MS2021Q4_007",
@@ -73,47 +73,40 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.852,
+      "confidence": 0.859,
       "span_score": 0.996,
-      "severity_align": 0.416,
+      "severity_align": 0.466,
       "mechanism_hint": 1.0,
-      "claim_id": "MS2021Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MS2021Q4_C002"
+    }
+  ],
+  "rejected": [
     {
-      "cause": "Higher non-investment grade loan issuances",
-      "effect": "Fixed income underwriting revenues increased",
+      "cause": "Fixed income underwriting partially offset by lower investment grade bond volumes",
+      "effect": "revenue headwind from lower investment grade bond volumes",
       "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": 1.0,
-      "evidence_span": "Fixed income underwriting revenues increased from a year ago driven by higher non-investment grade loan issuances",
+      "severity": 0.4,
+      "polarity": -0.5,
+      "evidence_span": "Fixed income underwriting revenues increased from a year ago driven by higher non-investment grade loan issuances, partially offset by lower investment grade bond volumes",
       "source_id": "MS2021Q4_008",
       "published_at": 0,
       "atom_id": "MS2021Q4_008",
       "validation": {
-        "passed": true,
-        "errors": [],
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
         "warnings": []
       },
-      "proposer": "llm_event",
-      "confidence": 0.865,
-      "span_score": 0.956,
-      "severity_align": 0.555,
-      "mechanism_hint": 1.0,
-      "claim_id": "MS2021Q4_C003",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "proposer": "llm_event"
     }
   ],
-  "rejected": [],
-  "claim_count": 4,
-  "rejected_count": 0,
+  "claim_count": 3,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

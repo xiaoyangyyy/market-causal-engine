@@ -5,27 +5,27 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:59:55+00:00",
+  "computed_at": "2026-06-16T12:01:32+00:00",
   "accepted": [
     {
-      "cause": "investing in building stronger privacy protections for everyone and on delivering new experiences for the people who use our services",
-      "effect": "improved user engagement and trust leading to potential revenue growth",
+      "cause": "Net income decline",
+      "effect": "earnings estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": 1.0,
-      "evidence_span": "We are investing in building stronger privacy protections for everyone and on delivering new experiences for the people who use our services.",
-      "source_id": "META2019Q3_000",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Net income $ 2,616 $ 5,106 $ 5,045",
+      "source_id": "META2019Q3_003",
       "published_at": 0,
       "proposer": "llm",
-      "atom_id": "META2019Q3_000",
+      "atom_id": "META2019Q3_003",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.866,
-      "span_score": 0.951,
-      "severity_align": 0.571,
+      "confidence": 0.812,
+      "span_score": 1.0,
+      "severity_align": 0.244,
       "mechanism_hint": 1.0,
       "claim_id": "META2019Q3_C001",
       "polarity_source": "evidence",
@@ -48,7 +48,7 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
+      "confidence": 0.9,
       "span_score": 1.0,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
@@ -63,10 +63,10 @@
     {
       "cause": "None",
       "effect": "None",
-      "mechanism": "none",
+      "mechanism": "fundamental",
       "severity": 0.0,
       "polarity": 0.0,
-      "evidence_span": "revenue represented approximately 94% of",
+      "evidence_span": "None",
       "source_id": "META2019Q3_002",
       "published_at": 0,
       "proposer": "llm",
@@ -74,30 +74,27 @@
       "validation": {
         "passed": false,
         "errors": [
-          "invalid_mechanism:none",
-          "mechanism_not_allowed_for_domain:none:earnings"
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text"
         ],
         "warnings": []
       }
     },
     {
-      "cause": "None",
-      "effect": "None",
-      "mechanism": "none",
-      "severity": 0.0,
-      "polarity": 0.0,
-      "evidence_span": "None",
-      "source_id": "META2019Q3_003",
+      "cause": "investing in building stronger privacy protections",
+      "effect": "guidance change",
+      "mechanism": "trust",
+      "severity": 0.6,
+      "polarity": 1.0,
+      "evidence_span": "We are investing in building stronger privacy protections for everyone",
+      "source_id": "META2019Q3_000",
       "published_at": 0,
       "proposer": "llm",
-      "atom_id": "META2019Q3_003",
+      "atom_id": "META2019Q3_000",
       "validation": {
         "passed": false,
         "errors": [
-          "invalid_mechanism:none",
-          "evidence_span_too_short",
-          "evidence_span_not_in_atom_text",
-          "mechanism_not_allowed_for_domain:none:earnings"
+          "mechanism_not_allowed_for_domain:trust:earnings"
         ],
         "warnings": []
       }
@@ -107,7 +104,5 @@
   "rejected_count": 2,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T10:10:53+00:00",
+  "computed_at": "2026-06-16T12:14:13+00:00",
   "accepted": [
     {
-      "cause": "Ryzen client processor sales growth",
-      "effect": "Computing and Graphics segment revenue increase",
+      "cause": "Ryzen client processor sales drove 36% revenue growth",
+      "effect": "revenue growth drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -23,18 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.791,
+      "confidence": 0.793,
       "span_score": 0.928,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "AMD2019Q4_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "AMD2019Q4_C000"
     },
     {
-      "cause": "Year-over-year gross margin expansion",
-      "effect": "Improved profitability and cash generation",
+      "cause": "Gross margin increased by $116 million year-over-year",
+      "effect": "margin expansion supports valuation multiple",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": -1.0,
@@ -48,20 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.825,
+      "confidence": 0.824,
       "span_score": 1.0,
       "severity_align": 0.301,
       "mechanism_hint": 1.0,
-      "claim_id": "AMD2019Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "AMD2019Q4_C001"
     },
     {
-      "cause": "Significant debt reduction",
-      "effect": "Strengthened balance sheet and reduced financial risk",
+      "cause": "Year-to-date debt reduction of $441 million including $206 million in Q3",
+      "effect": "debt reduction improves balance sheet strength",
       "mechanism": "fundamental",
-      "severity": 0.65,
+      "severity": 0.6,
       "polarity": -1.0,
       "evidence_span": "Year-to-date debt reduction of $441 million(3), including $206 million in Q3 2019",
       "source_id": "AMD2019Q4_004",
@@ -73,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.832,
+      "confidence": 0.84,
       "span_score": 0.913,
-      "severity_align": 0.521,
+      "severity_align": 0.571,
       "mechanism_hint": 1.0,
-      "claim_id": "AMD2019Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "AMD2019Q4_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

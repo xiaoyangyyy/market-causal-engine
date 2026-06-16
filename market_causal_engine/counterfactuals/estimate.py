@@ -167,6 +167,7 @@ def estimate_outcome_causal(
             return float(out["effect"])
 
         placebo_out = run_placebo_suite(p_dates, _sc_effect)
+        result["placebo_effects"] = placebo_out["placebo_effects"]
         result["placebo_rank"] = compute_placebo_rank(float(result["effect"]), placebo_out["placebo_effects"])
         result["placebo_n"] = len(placebo_out["placebo_effects"])
     elif run_placebo and chosen == "abnormal_return":
@@ -179,6 +180,7 @@ def estimate_outcome_causal(
             return float(out["effect"])
 
         placebo_out = run_placebo_suite(p_dates, _ar_effect)
+        result["placebo_effects"] = placebo_out["placebo_effects"]
         result["placebo_rank"] = compute_placebo_rank(float(result["effect"]), placebo_out["placebo_effects"])
         result["placebo_n"] = len(placebo_out["placebo_effects"])
     else:

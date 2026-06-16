@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:00:34+00:00",
+  "computed_at": "2026-06-16T10:45:59+00:00",
   "accepted": [
     {
-      "cause": "Gross margin contraction",
-      "effect": "valuation de-rating",
+      "cause": "gross margin contracted 110 basis points",
+      "effect": "margin compression raises cost structure concerns",
       "mechanism": "fundamental",
       "severity": 0.7,
       "polarity": -1.0,
@@ -23,49 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.835,
+      "confidence": 0.832,
       "span_score": 1.0,
       "severity_align": 0.338,
       "mechanism_hint": 1.0,
-      "claim_id": "PEP2018Q2_C002",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "PEP2018Q2_C001"
     },
     {
-      "cause": "EPS growth",
-      "effect": "fundamental upside",
+      "cause": "Q1 net revenue increased 4.3 percent",
+      "effect": "revenue growth supports top-line valuation models",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": 1.0,
-      "evidence_span": "EPS $0.94 EPS growth 3%",
-      "source_id": "PEP2018Q2_000",
-      "published_at": 0,
-      "atom_id": "PEP2018Q2_000",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.819,
-      "span_score": 0.866,
-      "severity_align": 0.571,
-      "mechanism_hint": 1.0,
-      "claim_id": "PEP2018Q2_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Net revenue increase",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.5,
-      "polarity": 1.0,
-      "evidence_span": "Reported net revenue increased 4.3 percent.",
+      "evidence_span": "• Reported net revenue increased 4.3 percent.",
       "source_id": "PEP2018Q2_003",
       "published_at": 0,
       "atom_id": "PEP2018Q2_003",
@@ -75,15 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.887,
+      "confidence": 0.857,
       "span_score": 1.0,
-      "severity_align": 0.549,
+      "severity_align": 0.449,
       "mechanism_hint": 1.0,
-      "claim_id": "PEP2018Q2_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PEP2018Q2_C000"
+    },
+    {
+      "cause": "Reaffirms 2018 Financial Targets",
+      "effect": "guidance stability maintains FY earnings estimates",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": 1.0,
+      "evidence_span": "Reaffirms 2018 Financial Targets Reported (GAAP) First Quarter 2018 Results First Quarter Net revenue growth 4.3%",
+      "source_id": "PEP2018Q2_000",
+      "published_at": 0,
+      "atom_id": "PEP2018Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.871,
+      "span_score": 0.931,
+      "severity_align": 0.671,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PEP2018Q2_C002"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

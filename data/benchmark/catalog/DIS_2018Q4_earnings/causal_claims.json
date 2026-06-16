@@ -5,11 +5,31 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T08:47:58+00:00",
+  "computed_at": "2026-06-16T11:17:36+00:00",
   "accepted": [],
-  "rejected": [],
+  "rejected": [
+    {
+      "cause": "March 20, 2019",
+      "effect": "regulatory filing event",
+      "mechanism": "regulatory",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "Date of Report (Date of earliest event reported): March 20, 2019",
+      "source_id": "DIS2018Q4_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "DIS2018Q4_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "mechanism_not_allowed_for_domain:regulatory:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
   "claim_count": 0,
-  "rejected_count": 0,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
   "llm_proposer": "llm_atom_fallback_empty"

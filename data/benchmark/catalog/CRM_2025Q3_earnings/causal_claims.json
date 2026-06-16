@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T13:41:03+00:00",
+  "computed_at": "2026-06-15T16:49:01+00:00",
   "accepted": [
     {
-      "cause": "Raised full year FY26 revenue guidance to $41.0 billion to $41.3 billion",
-      "effect": "Increased investor confidence in future growth trajectory",
+      "cause": "Raises full year FY26 revenue guidance to $41.0 billion to $41.3 billion",
+      "effect": "full year revenue estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": -1.0,
@@ -23,45 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.775,
+      "confidence": 0.779,
       "span_score": 0.922,
       "severity_align": 0.271,
       "mechanism_hint": 1.0,
-      "claim_id": "CRM2025Q3_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "CRM2025Q3_C000"
     },
     {
-      "cause": "Initiates Q2 FY26 revenue guidance of $10.11 billion to $10.16 billion",
-      "effect": "Reinforces consistent growth expectations for the next quarter",
+      "cause": "First quarter revenue of $9.8 billion, up 8% both year-over-year",
+      "effect": "quarterly revenue growth trajectory confirmation",
       "mechanism": "fundamental",
       "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "Initiates second quarter FY26 revenue guidance of $10.11 billion to $10.16 billion, up 8% - 9% Y/Y and 7% - 8% in CC",
-      "source_id": "CRM2025Q3_001",
-      "published_at": 0,
-      "atom_id": "CRM2025Q3_001",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.831,
-      "span_score": 0.933,
-      "severity_align": 0.471,
-      "mechanism_hint": 1.0,
-      "claim_id": "CRM2025Q3_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Q1 revenue growth of 8% year-over-year",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.75,
       "polarity": -1.0,
       "evidence_span": "First quarter revenue of $9.8 billion, up 8% both year-over-year (\"Y/Y\") and in constant currency (\"CC\")",
       "source_id": "CRM2025Q3_000",
@@ -73,15 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.813,
+      "confidence": 0.824,
       "span_score": 0.924,
-      "severity_align": 0.421,
+      "severity_align": 0.471,
       "mechanism_hint": 1.0,
-      "claim_id": "CRM2025Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "CRM2025Q3_C001"
+    },
+    {
+      "cause": "Current remaining performance obligation of $29.6 billion, up 12% Y/Y",
+      "effect": "future revenue visibility expansion",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Current remaining performance obligation of $29.6 billion, up 12% Y/Y and 11",
+      "source_id": "CRM2025Q3_000",
+      "published_at": 0,
+      "atom_id": "CRM2025Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.836,
+      "span_score": 0.904,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "CRM2025Q3_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

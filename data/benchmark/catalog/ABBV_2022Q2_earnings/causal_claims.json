@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T12:00:02+00:00",
+  "computed_at": "2026-06-15T15:12:57+00:00",
   "accepted": [
     {
-      "cause": "Guidance reduction due to IPR&D expenses",
-      "effect": "Lower expected diluted EPS for 2022",
+      "cause": "2022 Adjusted Diluted EPS Guidance Range lowered from $14.00-$14.20 to $13.92-$14.12",
+      "effect": "lowered FY earnings outlook due to IPR&D expense",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.8,
       "polarity": -1.0,
-      "evidence_span": "Updates 2022 Adjusted Diluted EPS Guidance Range from $14.00 - $14.20 to $13.92 - $14.12, which Includes an Unfavorable Impact of $0.08 Per Share Related to Acquired IPR&D",
+      "evidence_span": "Updates 2022 Adjusted Diluted EPS Guidance Range from $14.00 - $14.20 to $13.92 - $14.12, which Includes an Unfavorable Impact of $0.08 Per Share Related to Acquired IPR&D and Milestones Expense Incurred During the First Quarter 20",
       "source_id": "ABBV2022Q2_008",
       "published_at": 0,
       "atom_id": "ABBV2022Q2_008",
@@ -24,17 +24,17 @@
       },
       "proposer": "llm_event",
       "confidence": 0.84,
-      "span_score": 0.972,
-      "severity_align": 0.421,
+      "span_score": 1.0,
+      "severity_align": 0.371,
       "mechanism_hint": 1.0,
-      "claim_id": "ABBV2022Q2_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ABBV2022Q2_C000"
     },
     {
-      "cause": "Significant increase in quarterly diluted EPS",
-      "effect": "Positive earnings surprise relative to prior periods",
+      "cause": "First-Quarter Diluted EPS of $3.16 reported",
+      "effect": "positive EPS surprise driving estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.7,
       "polarity": 1.0,
@@ -48,20 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.836,
+      "confidence": 0.834,
       "span_score": 1.0,
       "severity_align": 0.344,
       "mechanism_hint": 1.0,
-      "claim_id": "ABBV2022Q2_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ABBV2022Q2_C001"
     },
     {
-      "cause": "Strong revenue growth in Neuroscience portfolio",
-      "effect": "Increased top-line performance driven by Venclexta",
+      "cause": "First-Quarter Global Net Revenues from the Neuroscience Portfolio increased 19.2% on a Reported Basis",
+      "effect": "revenue growth narrative reinforced by portfolio performance",
       "mechanism": "fundamental",
-      "severity": 0.65,
+      "severity": 0.6,
       "polarity": -1.0,
       "evidence_span": "First-Quarter Global Net Revenues from the Neuroscience Portfolio Were $1.488 Billion, an Increase of 19.2 Percent on a Reported Basis, or 20.4 Percent on an Operational Basis",
       "source_id": "ABBV2022Q2_004",
@@ -73,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.878,
+      "confidence": 0.882,
       "span_score": 1.0,
-      "severity_align": 0.512,
+      "severity_align": 0.562,
       "mechanism_hint": 1.0,
-      "claim_id": "ABBV2022Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ABBV2022Q2_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

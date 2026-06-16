@@ -5,38 +5,38 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T02:39:09+00:00",
+  "computed_at": "2026-06-15T14:14:48+00:00",
   "accepted": [
     {
-      "cause": "Earnings per share realization",
-      "effect": "Investor confidence in profitability metrics",
+      "cause": "Guidance raised to $7.57-$7.70 EPS range",
+      "effect": "full-year EPS estimate revision upside",
       "mechanism": "fundamental",
-      "severity": 0.5,
+      "severity": 0.7,
       "polarity": -1.0,
-      "evidence_span": "Diluted earnings per share were $1.90, compared with $",
-      "source_id": "ACN2020Q3_005",
+      "evidence_span": "EPS to $7.57-$7.70 from $7.48-$",
+      "source_id": "ACN2020Q3_002",
       "published_at": 0,
-      "atom_id": "ACN2020Q3_005",
+      "atom_id": "ACN2020Q3_002",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.889,
+      "confidence": 0.833,
       "span_score": 1.0,
-      "severity_align": 0.555,
+      "severity_align": 0.341,
       "mechanism_hint": 1.0,
-      "claim_id": "ACN2020Q3_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ACN2020Q3_C002"
     },
     {
-      "cause": "Revenue decline in US market",
-      "effect": "Negative pressure on stock price due to regional contraction",
+      "cause": "Revenue decrease of 1% in U.S. region",
+      "effect": "regional revenue contraction limits top-line growth narrative",
       "mechanism": "fundamental",
-      "severity": 0.4,
+      "severity": 0.5,
       "polarity": -1.0,
       "evidence_span": "Revenues are $11.0 billion, a 1% decrease in U.S.",
       "source_id": "ACN2020Q3_000",
@@ -48,24 +48,24 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.883,
+      "confidence": 0.852,
       "span_score": 0.92,
-      "severity_align": 0.709,
+      "severity_align": 0.609,
       "mechanism_hint": 1.0,
-      "claim_id": "ACN2020Q3_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ACN2020Q3_C001"
     }
   ],
   "rejected": [
     {
-      "cause": "Revenue guidance range adjustment",
-      "effect": "Positive market reaction to FX-adjusted revenue outlook",
+      "cause": "Adjusted revenue guidance range of $10.65B to $11.05B",
+      "effect": "foreign exchange headwinds factored into revenue outlook",
       "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": 0.4,
-      "evidence_span": "Adjusting for the actual foreign-exchange impact, the company's guided range for quarterly revenues was approximately $10.65 billion to $11.05 billion.",
+      "severity": 0.4,
+      "polarity": -0.2,
+      "evidence_span": "Adjusting for the actual foreign-exchange impact, the company's guided range for quarterly revenues was approximately $10.65 billion to $11.05 billion",
       "source_id": "ACN2020Q3_008",
       "published_at": 0,
       "atom_id": "ACN2020Q3_008",
@@ -83,7 +83,5 @@
   "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

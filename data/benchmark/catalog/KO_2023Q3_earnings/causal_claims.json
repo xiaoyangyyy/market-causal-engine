@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T12:38:56+00:00",
+  "computed_at": "2026-06-15T15:54:07+00:00",
   "accepted": [
     {
-      "cause": "EPS growth of 34% to $0.59",
-      "effect": "fundamental upside",
+      "cause": "EPS grew 34% to $0.59",
+      "effect": "earnings surprise drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -23,19 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.737,
+      "confidence": 0.744,
       "span_score": 0.892,
       "severity_align": 0.184,
       "mechanism_hint": 1.0,
-      "claim_id": "KO2023Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "KO2023Q3_C000"
     },
     {
-      "cause": "Comparable Operating Margin expansion to 31.6%",
-      "effect": "Improved profitability driving stock upside",
+      "cause": "Comparable Operating Margin increased to 31.6% from 30.7%",
+      "effect": "margin expansion improves profitability outlook",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
@@ -49,39 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.821,
+      "confidence": 0.82,
       "span_score": 1.0,
       "severity_align": 0.284,
       "mechanism_hint": 1.0,
-      "claim_id": "KO2023Q3_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "KO2023Q3_C001"
     },
     {
-      "cause": "Non-GAAP Operating Income growth of 15%",
-      "effect": "Strong operational performance boosting investor sentiment",
+      "cause": "Revenues (Non-GAAP) grew 11%",
+      "effect": "top-line growth supports valuation multiple",
       "mechanism": "fundamental",
       "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "Operating Income (Non-GAAP) Grew 15% Operating Margin Was",
-      "source_id": "KO2023Q3_007",
+      "polarity": 1.0,
+      "evidence_span": "Revenues (Non-GAAP) Grew 11% Operating Income Grew",
+      "source_id": "KO2023Q3_006",
       "published_at": 0,
-      "atom_id": "KO2023Q3_007",
+      "atom_id": "KO2023Q3_006",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.839,
+      "confidence": 0.836,
       "span_score": 1.0,
-      "severity_align": 0.357,
+      "severity_align": 0.353,
       "mechanism_hint": 1.0,
-      "claim_id": "KO2023Q3_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "KO2023Q3_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

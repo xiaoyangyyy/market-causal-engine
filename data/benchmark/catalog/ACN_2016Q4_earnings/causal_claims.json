@@ -5,30 +5,29 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T08:48:43+00:00",
+  "computed_at": "2026-06-16T09:08:33+00:00",
   "accepted": [
     {
-      "cause": "negative fundamental signal",
-      "effect": "valuation de-rating",
+      "cause": "revenues that excludes the effect of",
+      "effect": "margin shift",
       "mechanism": "fundamental",
-      "severity": 0.044,
+      "severity": 0.5,
       "polarity": -1.0,
       "evidence_span": "revenues that excludes the effect of",
       "source_id": "ACN2016Q4_000",
       "published_at": 0,
-      "proposer": "heuristic",
+      "proposer": "llm",
       "atom_id": "ACN2016Q4_000",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
+      "confidence": 0.878,
       "span_score": 1.0,
-      "severity_align": 1.0,
+      "severity_align": 0.544,
       "mechanism_hint": 1.0,
       "claim_id": "ACN2016Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true
@@ -39,7 +38,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

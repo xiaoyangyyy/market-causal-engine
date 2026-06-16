@@ -5,37 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T13:34:58+00:00",
+  "computed_at": "2026-06-15T16:21:00+00:00",
   "accepted": [
     {
-      "cause": "Gross margin reported at 86.0%",
-      "effect": "estimate revision upside",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "gross margin was 86.0% in the second quarter 2024",
-      "source_id": "GILD2024Q3_005",
-      "published_at": 0,
-      "atom_id": "GILD2024Q3_005",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.838,
-      "span_score": 1.0,
-      "severity_align": 0.352,
-      "mechanism_hint": 1.0,
-      "claim_id": "GILD2024Q3_C002",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Non-GAAP diluted EPS increased to $2.01",
-      "effect": "fundamental upside",
+      "cause": "Non-GAAP diluted EPS increase to $2.01",
+      "effect": "EPS beat drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -49,23 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.809,
+      "confidence": 0.81,
       "span_score": 1.0,
       "severity_align": 0.237,
       "mechanism_hint": 1.0,
-      "claim_id": "GILD2024Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GILD2024Q3_C000"
     },
     {
-      "cause": "Total revenue increased 5% to $7.0 billion",
-      "effect": "fundamental upside",
+      "cause": "Total revenue increase of 5% to $7.0 billion",
+      "effect": "Revenue growth supports top-line valuation expansion",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": 1.0,
-      "evidence_span": "Total second quarter 2024 revenue increased 5% to $7.0 billion",
+      "evidence_span": "Total second quarter 2024 revenue increased 5% to $7.0 billion, compared to",
       "source_id": "GILD2024Q3_000",
       "published_at": 0,
       "atom_id": "GILD2024Q3_000",
@@ -75,15 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.797,
-      "span_score": 0.894,
+      "confidence": 0.803,
+      "span_score": 0.904,
       "severity_align": 0.421,
       "mechanism_hint": 1.0,
-      "claim_id": "GILD2024Q3_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GILD2024Q3_C001"
+    },
+    {
+      "cause": "Uncertainty regarding Veklury revenue timing",
+      "effect": "Revenue volatility raises full-year forecast risk",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "uncertainty of the amount and timing of Veklury revenues",
+      "source_id": "GILD2024Q3_007",
+      "published_at": 0,
+      "atom_id": "GILD2024Q3_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.831,
+      "span_score": 0.901,
+      "severity_align": 0.559,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GILD2024Q3_C002"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

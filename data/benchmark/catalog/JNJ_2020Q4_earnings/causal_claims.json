@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T10:55:56+00:00",
+  "computed_at": "2026-06-15T14:25:29+00:00",
   "accepted": [
     {
       "cause": "Full Year Reported Sales guidance increased by $1.0 billion",
-      "effect": "estimate revision upside",
+      "effect": "revenue estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
-      "evidence_span": "Company increasing guidance for Full Year Reported Sales by $1.0 billion",
+      "evidence_span": "Company increasing guidance for Full Year Reported Sales by $1.0 billion and Adjusted EPS by $0.15 driven by the strength of the recovery",
       "source_id": "JNJ2020Q4_001",
       "published_at": 0,
       "atom_id": "JNJ2020Q4_001",
@@ -23,23 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.781,
-      "span_score": 0.91,
+      "confidence": 0.811,
+      "span_score": 0.964,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "JNJ2020Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "JNJ2020Q4_C000"
     },
     {
-      "cause": "Adjusted EPS guidance increased by $0.15",
-      "effect": "Higher profitability expectations driving bullish sentiment",
+      "cause": "Adjusted EPS increased 3.8% to $2.20",
+      "effect": "earnings per share beat driving valuation re-rating",
       "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": -1.0,
-      "evidence_span": "Adjusted EPS by $0.15 driven by the strength of the recovery",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "adjusted EPS of $2.20 increased 3.8%* • Company increasing guidance for Full Year Reported Sales by $1.0 billion",
       "source_id": "JNJ2020Q4_001",
       "published_at": 0,
       "atom_id": "JNJ2020Q4_001",
@@ -49,42 +48,45 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.788,
-      "span_score": 0.9,
-      "severity_align": 0.371,
+      "confidence": 0.822,
+      "span_score": 0.943,
+      "severity_align": 0.421,
       "mechanism_hint": 1.0,
-      "claim_id": "JNJ2020Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    }
-  ],
-  "rejected": [
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "JNJ2020Q4_C001"
+    },
     {
-      "cause": "Third-quarter adjusted operational sales increase of 2.0%",
-      "effect": "Resilience against pandemic headwinds supports stock price",
+      "cause": "Sales of $21.1 billion reflecting operational increase of 2.0% despite pandemic impact",
+      "effect": "resilient top-line growth supporting consensus estimates",
       "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": 0.6,
-      "evidence_span": "adjusted operational increase of 2.0% despite the estimated negative impact",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Sales of $21.1 billion reflecting an overall and operational increase of 1.7%*, and adjusted operational increase of 2.0%* despite the estimated negative impact",
       "source_id": "JNJ2020Q4_000",
       "published_at": 0,
       "atom_id": "JNJ2020Q4_000",
       "validation": {
-        "passed": false,
-        "errors": [
-          "evidence_span_not_in_atom_text"
-        ],
+        "passed": true,
+        "errors": [],
         "warnings": []
       },
-      "proposer": "llm_event"
+      "proposer": "llm_event",
+      "confidence": 0.866,
+      "span_score": 0.964,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "JNJ2020Q4_C002"
     }
   ],
-  "claim_count": 2,
-  "rejected_count": 1,
+  "rejected": [],
+  "claim_count": 3,
+  "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

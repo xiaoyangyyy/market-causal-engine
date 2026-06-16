@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T04:24:33+00:00",
+  "computed_at": "2026-06-15T16:17:43+00:00",
   "accepted": [
     {
-      "cause": "Diluted EPS decline from prior year adjusted EPS",
-      "effect": "Negative earnings surprise relative to adjusted expectations",
+      "cause": "Diluted EPS decline from $3.67 to $3.06",
+      "effect": "earnings miss relative to adjusted prior year",
       "mechanism": "fundamental",
-      "severity": 0.65,
+      "severity": 0.75,
       "polarity": -1.0,
       "evidence_span": "Excluding this gain, first quarter 2023 adjusted diluted EPS 1 was $3.67.",
       "source_id": "LOW2024Q2_003",
@@ -23,45 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.854,
+      "confidence": 0.828,
       "span_score": 1.0,
-      "severity_align": 0.417,
+      "severity_align": 0.317,
       "mechanism_hint": 1.0,
-      "claim_id": "LOW2024Q2_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "LOW2024Q2_C000"
     },
     {
-      "cause": "Affirmation of full year outlook despite earnings miss",
-      "effect": "Limited downside risk due to maintained guidance",
-      "mechanism": "sentiment",
-      "severity": 0.3,
-      "polarity": -1.0,
-      "evidence_span": "Affirms Full Year 2024 Outlook",
-      "source_id": "LOW2024Q2_001",
-      "published_at": 0,
-      "atom_id": "LOW2024Q2_001",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.895,
-      "span_score": 0.903,
-      "severity_align": 0.792,
-      "mechanism_hint": 1.0,
-      "claim_id": "LOW2024Q2_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Gross margin contraction",
-      "effect": "Reduced profitability per unit sold",
+      "cause": "Gross margin contraction of 49 basis points",
+      "effect": "margin compression concern affecting profitability",
       "mechanism": "fundamental",
-      "severity": 0.55,
+      "severity": 0.65,
       "polarity": -1.0,
       "evidence_span": "GROSS MARGIN -49 basis points $3.06 DILUTED EPS -19",
       "source_id": "LOW2024Q2_009",
@@ -73,14 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.876,
+      "confidence": 0.847,
       "span_score": 1.0,
-      "severity_align": 0.503,
+      "severity_align": 0.403,
       "mechanism_hint": 1.0,
-      "claim_id": "LOW2024Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "LOW2024Q2_C001"
+    },
+    {
+      "cause": "Affirmation of Full Year 2024 Outlook despite earnings miss",
+      "effect": "guidance stability mitigates downside revision risk",
+      "mechanism": "fundamental",
+      "severity": 0.4,
+      "polarity": -1.0,
+      "evidence_span": "Affirms Full Year 2024 Outlook — MOORESVILLE, N.C., May 21, 2024 – Lowe’s Companies, Inc.",
+      "source_id": "LOW2024Q2_001",
+      "published_at": 0,
+      "atom_id": "LOW2024Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.91,
+      "span_score": 1.0,
+      "severity_align": 0.692,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "LOW2024Q2_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

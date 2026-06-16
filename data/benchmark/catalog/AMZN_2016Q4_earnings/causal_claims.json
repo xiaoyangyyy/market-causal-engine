@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T12:40:17+00:00",
+  "computed_at": "2026-06-16T09:17:19+00:00",
   "accepted": [
     {
-      "cause": "Net income increase to $252 million",
-      "effect": "Higher earnings per share of $0.52",
+      "cause": "Net income increased to $252 million from $79 million",
+      "effect": "EPS beat drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
-      "evidence_span": "Net income was $252 million in the third quarter, or $0.52 per diluted share, compared with $79 million , or $0.17 per diluted share, in third quarter 2015",
+      "evidence_span": "Net income was $252 million in the third quarter, or $0.52 per diluted share, compared with $79 million",
       "source_id": "AMZN2016Q4_001",
       "published_at": 0,
       "atom_id": "AMZN2016Q4_001",
@@ -23,18 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.817,
-      "span_score": 1.0,
+      "confidence": 0.808,
+      "span_score": 0.981,
       "severity_align": 0.269,
       "mechanism_hint": 1.0,
-      "claim_id": "AMZN2016Q4_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "AMZN2016Q4_C000"
     },
     {
-      "cause": "Operating income growth to $575 million",
-      "effect": "Improved profitability compared to prior year",
+      "cause": "Operating income rose to $575 million from $406 million",
+      "effect": "Operating margin expansion supports valuation multiple",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": -1.0,
@@ -48,14 +48,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.834,
+      "confidence": 0.832,
       "span_score": 1.0,
       "severity_align": 0.337,
       "mechanism_hint": 1.0,
-      "claim_id": "AMZN2016Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "AMZN2016Q4_C001"
     }
   ],
   "rejected": [],
@@ -63,7 +63,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

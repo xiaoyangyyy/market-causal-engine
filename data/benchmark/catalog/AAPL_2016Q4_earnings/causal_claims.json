@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T12:37:57+00:00",
+  "computed_at": "2026-06-16T09:09:02+00:00",
   "accepted": [
     {
-      "cause": "Services revenue growth",
-      "effect": "Record all-time revenue performance",
+      "cause": "Services revenue growth of 24 percent",
+      "effect": "Services revenue growth reinforces high-margin segment expansion",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": 1.0,
-      "evidence_span": "Services business, where revenue grew 24 percent to set another all-time record",
+      "evidence_span": "incredible momentum of our Services business, where revenue grew 24 percent to set another all-time record",
       "source_id": "AAPL2016Q4_004",
       "published_at": 0,
       "atom_id": "AAPL2016Q4_004",
@@ -23,18 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.791,
-      "span_score": 0.906,
-      "severity_align": 0.371,
+      "confidence": 0.792,
+      "span_score": 0.926,
+      "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "AAPL2016Q4_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "AAPL2016Q4_C000"
     },
     {
-      "cause": "iPhone 7 customer response",
-      "effect": "Positive momentum in hardware sales",
+      "cause": "iPhone 7 and Watch Series 2 customer response",
+      "effect": "Strong hardware launch validates near-term revenue drivers",
       "mechanism": "sentiment",
       "severity": 0.7,
       "polarity": -1.0,
@@ -48,20 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.819,
+      "confidence": 0.818,
       "span_score": 0.912,
       "severity_align": 0.471,
       "mechanism_hint": 1.0,
-      "claim_id": "AAPL2016Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "AAPL2016Q4_C002"
     },
     {
-      "cause": "Gross margin contraction",
-      "effect": "Reduced profitability compared to prior period",
+      "cause": "Gross margin decline to 38 percent",
+      "effect": "Gross margin compression lowers profitability expectations",
       "mechanism": "fundamental",
-      "severity": 0.6,
+      "severity": 0.65,
       "polarity": -1.0,
       "evidence_span": "Gross margin was 38 percent compared to 39.9",
       "source_id": "AAPL2016Q4_003",
@@ -73,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.862,
+      "confidence": 0.846,
       "span_score": 1.0,
-      "severity_align": 0.449,
+      "severity_align": 0.399,
       "mechanism_hint": 1.0,
-      "claim_id": "AAPL2016Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "AAPL2016Q4_C001"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

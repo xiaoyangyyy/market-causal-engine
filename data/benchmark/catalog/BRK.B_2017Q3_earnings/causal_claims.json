@@ -5,7 +5,7 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T07:57:30+00:00",
+  "computed_at": "2026-06-16T09:58:12+00:00",
   "accepted": [],
   "rejected": [
     {
@@ -14,7 +14,7 @@
       "mechanism": "none",
       "severity": 0.0,
       "polarity": 0.0,
-      "evidence_span": "None",
+      "evidence_span": "Emerging growth company ☐ If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. ☐ I",
       "source_id": "BRK.B2017Q3_000",
       "published_at": 0,
       "proposer": "llm",
@@ -23,8 +23,6 @@
         "passed": false,
         "errors": [
           "invalid_mechanism:none",
-          "evidence_span_too_short",
-          "evidence_span_not_in_atom_text",
           "mechanism_not_allowed_for_domain:none:earnings"
         ],
         "warnings": []

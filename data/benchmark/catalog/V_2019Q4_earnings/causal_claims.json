@@ -5,30 +5,29 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T06:03:51+00:00",
+  "computed_at": "2026-06-16T12:12:41+00:00",
   "accepted": [
     {
-      "cause": "negative fundamental signal",
-      "effect": "valuation de-rating",
+      "cause": "earnings release",
+      "effect": "estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.116,
+      "severity": 0.5,
       "polarity": -1.0,
-      "evidence_span": "(the “Company”) issued an earnings release announcing financial results for the Company’s fiscal fourth quarter and full-year ended September 30, 2019 .",
+      "evidence_span": "issued an earnings release announcing financial results",
       "source_id": "V2019Q4_000",
       "published_at": 0,
-      "proposer": "heuristic",
+      "proposer": "llm",
       "atom_id": "V2019Q4_000",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
-      "span_score": 1.0,
-      "severity_align": 1.0,
+      "confidence": 0.855,
+      "span_score": 0.922,
+      "severity_align": 0.616,
       "mechanism_hint": 1.0,
       "claim_id": "V2019Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true
@@ -39,7 +38,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

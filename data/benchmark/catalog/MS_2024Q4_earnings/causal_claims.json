@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T13:15:18+00:00",
+  "computed_at": "2026-06-15T16:34:22+00:00",
   "accepted": [
     {
-      "cause": "Strong asset management and transactional revenues",
-      "effect": "Record net revenues of $7.3 billion achieved",
+      "cause": "Record net revenues of $7.3 billion in Asset Management",
+      "effect": "valuation uplift from record asset management and transactional revenues",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -23,20 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.796,
+      "confidence": 0.798,
       "span_score": 1.0,
       "severity_align": 0.182,
       "mechanism_hint": 1.0,
-      "claim_id": "MS2024Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.6,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MS2024Q4_C001"
     },
     {
-      "cause": "Strong performance in Equity and Fixed Income driven by higher client activity",
-      "effect": "Institutional Securities net revenues increased to $6.8 billion",
+      "cause": "Institutional Securities net revenues of $6.8 billion reflect strong performance",
+      "effect": "estimate revision upside driven by higher client activity",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": 1.0,
       "evidence_span": "Institutional Securities net revenues of $6.8 billion reflect strong performance in Equity and Fixed Income on higher client activity",
       "source_id": "MS2024Q4_001",
@@ -48,20 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.831,
+      "confidence": 0.818,
       "span_score": 0.995,
-      "severity_align": 0.336,
+      "severity_align": 0.286,
       "mechanism_hint": 1.0,
-      "claim_id": "MS2024Q4_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 0.6,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MS2024Q4_C000"
     },
     {
-      "cause": "Mark-to-market gains on investments associated with DCP versus prior year losses",
-      "effect": "Performance-based income and other revenues increased year-over-year",
+      "cause": "Performance-based income increased on mark-to-market gains",
+      "effect": "earnings surprise driven by investment gains versus prior year losses",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.75,
       "polarity": 1.0,
       "evidence_span": "Performance-based income and other revenues increased from a year ago on mark-to-market gains on investments associated with DCP versus losses in the prior year",
       "source_id": "MS2024Q4_007",
@@ -73,42 +73,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.856,
+      "confidence": 0.84,
       "span_score": 1.0,
-      "severity_align": 0.423,
+      "severity_align": 0.373,
       "mechanism_hint": 1.0,
-      "claim_id": "MS2024Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MS2024Q4_C002"
     }
   ],
-  "rejected": [
-    {
-      "cause": "Net income applicable to Morgan Stanley rising from $1,436 million to $3,188 million",
-      "effect": "Significant year-over-year profitability increase",
-      "mechanism": "fundamental",
-      "severity": 0.85,
-      "polarity": 0.8,
-      "evidence_span": "Net income applicable to Morgan Stanley $ 3,188 $ compared to $ 1,436 $",
-      "source_id": "MS2024Q4_004",
-      "published_at": 0,
-      "atom_id": "MS2024Q4_004",
-      "validation": {
-        "passed": false,
-        "errors": [
-          "evidence_span_not_in_atom_text"
-        ],
-        "warnings": []
-      },
-      "proposer": "llm_event"
-    }
-  ],
+  "rejected": [],
   "claim_count": 3,
-  "rejected_count": 1,
+  "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T09:24:41+00:00",
+  "computed_at": "2026-06-16T11:47:55+00:00",
   "accepted": [
     {
-      "cause": "Raising full-year guidance for organic sales growth",
-      "effect": "Increased investor confidence in future revenue trajectory",
+      "cause": "Raising full-year guidance for organic sales growth to 7 to 8 percent",
+      "effect": "estimate revision upside for organic sales growth",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -23,18 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.775,
+      "confidence": 0.778,
       "span_score": 0.899,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "ABT2019Q2_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ABT2019Q2_C000"
     },
     {
-      "cause": "Accelerated and sustainable growth driven by strong performance",
-      "effect": "Positive market perception of portfolio strength",
+      "cause": "Accelerated and sustainable growth driven by strong performance across portfolio",
+      "effect": "revenue growth narrative reinforcement",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": 1.0,
@@ -52,10 +52,10 @@
       "span_score": 0.907,
       "severity_align": 0.421,
       "mechanism_hint": 1.0,
-      "claim_id": "ABT2019Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ABT2019Q2_C001"
     }
   ],
   "rejected": [],
@@ -63,7 +63,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

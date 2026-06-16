@@ -19,6 +19,7 @@ def test_calibrated_return_near_observed_nflx():
     r = run_case_study("nflx_2022q1_earnings", as_of=120)
     cal = r["calibrated_impact"]
     assert cal.get("estimated_after_hours_return_pct") is not None
+    assert cal.get("magnitude_source") == "case_anchor"
     err = cal.get("after_hours_error_pct", 999)
     assert err <= 10.0, f"calibration error {err}% too large"
     assert cal.get("after_hours_within_band") is True

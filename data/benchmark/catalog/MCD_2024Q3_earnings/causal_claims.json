@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T04:25:37+00:00",
+  "computed_at": "2026-06-15T16:20:04+00:00",
   "accepted": [
     {
-      "cause": "Diluted earnings per share decline",
-      "effect": "valuation de-rating",
+      "cause": "diluted earnings per share decrease",
+      "effect": "EPS miss lowers valuation multiple",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.85,
       "polarity": -1.0,
       "evidence_span": "diluted earnings per share was $2.97, a decrease of",
       "source_id": "MCD2024Q3_003",
@@ -23,46 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.826,
+      "confidence": 0.803,
       "span_score": 1.0,
-      "severity_align": 0.303,
+      "severity_align": 0.203,
       "mechanism_hint": 1.0,
-      "claim_id": "MCD2024Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "MCD2024Q3_C000"
     },
     {
-      "cause": "Net income reduction",
-      "effect": "Bearish sentiment on bottom-line performance",
+      "cause": "operating income decline",
+      "effect": "margin compression concern",
       "mechanism": "fundamental",
       "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "NET INCOME $ 2,022 $ 2,310 $",
-      "source_id": "MCD2024Q3_007",
-      "published_at": 0,
-      "atom_id": "MCD2024Q3_007",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.835,
-      "span_score": 1.0,
-      "severity_align": 0.339,
-      "mechanism_hint": 1.0,
-      "claim_id": "MCD2024Q3_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Operating income decrease",
-      "effect": "Reduced investor confidence in profitability",
-      "mechanism": "fundamental",
-      "severity": 0.65,
       "polarity": -1.0,
       "evidence_span": "operating income decreased 2% (was",
       "source_id": "MCD2024Q3_002",
@@ -74,14 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.848,
+      "confidence": 0.833,
       "span_score": 1.0,
-      "severity_align": 0.392,
+      "severity_align": 0.342,
       "mechanism_hint": 1.0,
-      "claim_id": "MCD2024Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MCD2024Q3_C001"
+    },
+    {
+      "cause": "net income reduction",
+      "effect": "profitability metric deterioration",
+      "mechanism": "fundamental",
+      "severity": 0.65,
+      "polarity": -1.0,
+      "evidence_span": "NET INCOME $ 2,022 $ 2,310 $",
+      "source_id": "MCD2024Q3_007",
+      "published_at": 0,
+      "atom_id": "MCD2024Q3_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.796,
+      "span_score": 1.0,
+      "severity_align": 0.389,
+      "mechanism_hint": 1.0,
       "polarity_source": "evidence",
       "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "MCD2024Q3_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -10,11 +10,26 @@ market-causal = "market_causal_engine.main:main"
 market-causal-platform = "market_causal_engine.platform.cli:main"
 
 [project.optional-dependencies]
-dev = ["pytest>=7.0", "matplotlib>=3.7"]
+dev = ["pytest>=7.0", "matplotlib>=3.7", "ruff>=0.4"]
 platform = ["psycopg[binary]>=3.1"]
 api = ["fastapi>=0.110", "uvicorn[standard]>=0.27", "pydantic>=2.0"]
+demo = ["streamlit>=1.28"]
+worldcup = ["pytest>=7.0", "matplotlib>=3.7"]
 prod = ["market-causal-engine[dev,platform,api]"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+exclude = ["data", "dist", "worldcup_causal_engine", "results", "demo/static"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["F401"]
+"scripts/*.py" = ["E402"]

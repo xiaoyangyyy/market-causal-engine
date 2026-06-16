@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:17:07+00:00",
+  "computed_at": "2026-06-16T11:56:49+00:00",
   "accepted": [
     {
       "cause": "Adjusted net earnings advanced 14.6 percent",
-      "effect": "estimate revision upside",
+      "effect": "EPS beat drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -23,73 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.803,
+      "confidence": 0.804,
       "span_score": 1.0,
       "severity_align": 0.211,
       "mechanism_hint": 1.0,
-      "claim_id": "UNH2019Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UNH2019Q3_C000"
     },
     {
-      "cause": "Net Margin improved to 5.4%",
-      "effect": "estimate revision upside",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "Net Margin 5.4% 5.2% 5.7%",
-      "source_id": "UNH2019Q3_002",
-      "published_at": 0,
-      "atom_id": "UNH2019Q3_002",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.795,
-      "span_score": 0.868,
-      "severity_align": 0.471,
-      "mechanism_hint": 1.0,
-      "claim_id": "UNH2019Q3_C002",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Revenues increased to $60.6 billion",
-      "effect": "fundamental upside",
+      "cause": "UnitedHealthcare Medicare & Retirement revenues grew by 10.6 percent",
+      "effect": "Segment growth reinforces revenue expansion narrative",
       "mechanism": "fundamental",
       "severity": 0.75,
-      "polarity": -1.0,
-      "evidence_span": "Revenues $60.6 billion $56.1 billion $60.3 billion",
-      "source_id": "UNH2019Q3_002",
-      "published_at": 0,
-      "atom_id": "UNH2019Q3_002",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.793,
-      "span_score": 0.886,
-      "severity_align": 0.421,
-      "mechanism_hint": 1.0,
-      "claim_id": "UNH2019Q3_C001",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "UnitedHealthcare Medicare & Retirement revenues grew 10.6 percent",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.65,
       "polarity": 1.0,
       "evidence_span": "UnitedHealthcare Medicare & Retirement second quarter 2019 revenues grew by $2.0 billion or 10.6 percent to $20.9 billion.",
       "source_id": "UNH2019Q3_006",
@@ -101,23 +48,40 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.862,
+      "confidence": 0.835,
       "span_score": 1.0,
-      "severity_align": 0.449,
+      "severity_align": 0.349,
       "mechanism_hint": 1.0,
-      "claim_id": "UNH2019Q3_C003",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "UNH2019Q3_C001"
     }
   ],
-  "rejected": [],
-  "claim_count": 4,
-  "rejected_count": 0,
+  "rejected": [
+    {
+      "cause": "Net Margin increased to 5.4% from 5.2% year-over-year",
+      "effect": "Margin expansion supports valuation multiple support",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 0.8,
+      "evidence_span": "Net Margin 5.4% 5.2% 5.7% • UnitedHealth Group's second qua",
+      "source_id": "UNH2019Q3_002",
+      "published_at": 0,
+      "atom_id": "UNH2019Q3_002",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

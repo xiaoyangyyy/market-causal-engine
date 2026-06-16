@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T04:45:01+00:00",
+  "computed_at": "2026-06-15T17:11:41+00:00",
   "accepted": [
     {
-      "cause": "Diluted EPS beat expectations at $1.95",
-      "effect": "positive revision momentum",
+      "cause": "Diluted EPS surge of 21%",
+      "effect": "earnings surprise drives valuation multiple expansion",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.9,
       "polarity": -1.0,
       "evidence_span": "Organic Sales +2% Diluted EPS $1.95, +21%",
       "source_id": "PG2025Q4_000",
@@ -23,46 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.799,
+      "confidence": 0.79,
       "span_score": 1.0,
-      "severity_align": 0.197,
+      "severity_align": 0.147,
       "mechanism_hint": 1.0,
-      "claim_id": "PG2025Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "PG2025Q4_C001"
     },
     {
-      "cause": "Gross margin contraction",
-      "effect": "Potential downward pressure on valuation",
+      "cause": "Core EPS beat and maintained guidance",
+      "effect": "estimate revision upside on sustained growth outlook",
       "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": -1.0,
-      "evidence_span": "gross margin for the quarter decreased 70",
-      "source_id": "PG2025Q4_007",
-      "published_at": 0,
-      "atom_id": "PG2025Q4_007",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.862,
-      "span_score": 1.0,
-      "severity_align": 0.447,
-      "mechanism_hint": 1.0,
-      "claim_id": "PG2025Q4_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Core EPS growth of 3% and maintained guidance",
-      "effect": "Investor confidence in fiscal year targets",
-      "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.85,
       "polarity": 1.0,
       "evidence_span": "Core EPS $1.99, +3% MAINTAINS FISCAL YEAR SALES, EPS GROWTH AND CASH RETURN GUIDANCE",
       "source_id": "PG2025Q4_001",
@@ -74,14 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.806,
+      "confidence": 0.784,
       "span_score": 0.911,
-      "severity_align": 0.421,
+      "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "PG2025Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PG2025Q4_C000"
+    },
+    {
+      "cause": "Net sales increase of 3% year-over-year",
+      "effect": "revenue beat reinforces top-line growth narrative",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "reported first quarter fiscal year 2026 net sales of $22.4 billion, an increase of three percent versus the prior year",
+      "source_id": "PG2025Q4_001",
+      "published_at": 0,
+      "atom_id": "PG2025Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.852,
+      "span_score": 0.936,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PG2025Q4_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:31+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

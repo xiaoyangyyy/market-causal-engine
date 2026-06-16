@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T13:43:28+00:00",
+  "computed_at": "2026-06-15T17:07:55+00:00",
   "accepted": [
     {
-      "cause": "Revenue growth exceeding expectations",
-      "effect": "positive revision momentum",
+      "cause": "Revenue growth exceeding high end of expectations",
+      "effect": "estimate revision upside on top-line growth",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -23,19 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.8,
+      "confidence": 0.802,
       "span_score": 1.0,
       "severity_align": 0.198,
       "mechanism_hint": 1.0,
-      "claim_id": "ABNB2025Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ABNB2025Q4_C000"
     },
     {
-      "cause": "Strong Q1 2026 revenue guidance with FX tailwind",
-      "effect": "Increased investor confidence in future growth",
+      "cause": "Q1 2026 revenue guidance projecting 14% to 16% growth",
+      "effect": "forward revenue estimate uplift",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": 1.0,
@@ -49,39 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.825,
+      "confidence": 0.823,
       "span_score": 0.948,
       "severity_align": 0.415,
       "mechanism_hint": 1.0,
-      "claim_id": "ABNB2025Q4_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ABNB2025Q4_C001"
     },
     {
-      "cause": "Stable Adjusted EBITDA margin outlook",
-      "effect": "Reinforced profitability expectations",
+      "cause": "Adjusted EBITDA margin guidance expected to be flat year-over-year",
+      "effect": "margin expansion ceiling limits valuation multiple",
       "mechanism": "fundamental",
-      "severity": 0.6,
+      "severity": 0.4,
       "polarity": -1.0,
-      "evidence_span": "expect our Adjusted EBITDA Margin to be stable year-over-year",
-      "source_id": "ABNB2025Q4_009",
+      "evidence_span": "expect Adjusted EBITDA Margin to be approximately flat year-over-year",
+      "source_id": "ABNB2025Q4_007",
       "published_at": 0,
-      "atom_id": "ABNB2025Q4_009",
+      "atom_id": "ABNB2025Q4_007",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.865,
+      "confidence": 0.904,
       "span_score": 1.0,
-      "severity_align": 0.459,
+      "severity_align": 0.664,
       "mechanism_hint": 1.0,
-      "claim_id": "ABNB2025Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ABNB2025Q4_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:31+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:54:35+00:00",
+  "computed_at": "2026-06-16T11:50:47+00:00",
   "accepted": [
     {
       "cause": "Upstream volumes up 7 percent from prior year",
-      "effect": "Chevron Reports First Quarter Net Income of $2.6 Billion",
+      "effect": "estimate revision",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
@@ -23,20 +23,20 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.778,
+      "confidence": 0.781,
       "span_score": 0.882,
       "severity_align": 0.371,
       "mechanism_hint": 1.0,
       "claim_id": "CVX2019Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.6,
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
-      "cause": "Includes interest in affiliates: United States $ 90 $ 108 International 1,442 1,187 Total $ 1,532 $ 1,295",
-      "effect": "Chevron Corporation's cash flow from affiliates increased",
+      "cause": "Interest in affiliates increased from $1,295 billion to $1,532 billion",
+      "effect": "Operating cash flow estimate revision upward",
       "mechanism": "fundamental",
-      "severity": 0.5,
+      "severity": 0.6,
       "polarity": -1.0,
       "evidence_span": "Includes interest in affiliates: United States $ 90 $ 108 International 1,442 1,187 Total $ 1,532 $ 1,295",
       "source_id": "CVX2019Q2_003",
@@ -48,9 +48,9 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.877,
+      "confidence": 0.846,
       "span_score": 0.925,
-      "severity_align": 0.671,
+      "severity_align": 0.571,
       "mechanism_hint": 1.0,
       "claim_id": "CVX2019Q2_C003",
       "polarity_source": "evidence",
@@ -58,12 +58,12 @@
       "polarity_aligned": true
     },
     {
-      "cause": "NET INCOME ATTRIBUTABLE TO CHEVRON CORPORATION",
-      "effect": "stock price increase",
+      "cause": "Net income attributable to Chevron Corporation",
+      "effect": "earnings estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.5,
       "polarity": -1.0,
-      "evidence_span": "NET INCOME ATTRIBUTABLE TO CHEVRON CORPORATION",
+      "evidence_span": "NET INCOME ATTRIBUTABLE TO CHEVRON CORPORATION $",
       "source_id": "CVX2019Q2_002",
       "published_at": 0,
       "proposer": "llm",
@@ -73,13 +73,13 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.813,
+      "confidence": 0.879,
       "span_score": 1.0,
-      "severity_align": 0.251,
+      "severity_align": 0.551,
       "mechanism_hint": 1.0,
       "claim_id": "CVX2019Q2_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
@@ -98,7 +98,7 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
+      "confidence": 0.9,
       "span_score": 1.0,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
@@ -114,7 +114,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

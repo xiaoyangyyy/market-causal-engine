@@ -5,33 +5,63 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T08:28:53+00:00",
-  "accepted": [],
-  "rejected": [
+  "computed_at": "2026-06-16T10:50:44+00:00",
+  "accepted": [
     {
-      "cause": "None",
-      "effect": "None",
-      "mechanism": "none",
+      "cause": "Net earnings attributable to Berkshire shareholders",
+      "effect": "earnings estimate revision",
+      "mechanism": "fundamental",
       "severity": 0.0,
-      "polarity": 0.0,
+      "polarity": -1.0,
+      "evidence_span": "Net earnings attributable to Berkshire shareholders $",
+      "source_id": "BRK.B2018Q3_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "BRK.B2018Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.966,
+      "span_score": 1.0,
+      "severity_align": 0.946,
+      "mechanism_hint": 1.0,
+      "claim_id": "BRK.B2018Q3_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "net earnings exclusive of",
+      "effect": "earnings estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
       "evidence_span": "net earnings exclusive of",
       "source_id": "BRK.B2018Q3_001",
       "published_at": 0,
       "proposer": "llm",
       "atom_id": "BRK.B2018Q3_001",
       "validation": {
-        "passed": false,
-        "errors": [
-          "invalid_mechanism:none",
-          "mechanism_not_allowed_for_domain:none:earnings"
-        ],
+        "passed": true,
+        "errors": [],
         "warnings": []
-      }
+      },
+      "confidence": 0.876,
+      "span_score": 1.0,
+      "severity_align": 0.537,
+      "mechanism_hint": 1.0,
+      "claim_id": "BRK.B2018Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
     }
   ],
-  "claim_count": 0,
-  "rejected_count": 1,
+  "rejected": [],
+  "claim_count": 2,
+  "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback_empty"
+  "llm_proposer": "llm_atom_fallback"
 }

@@ -5,10 +5,10 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T11:39:03+00:00",
+  "computed_at": "2026-06-16T08:55:17+00:00",
   "accepted": [
     {
-      "cause": "Gross margin decline",
+      "cause": "Gross Margin decline",
       "effect": "margin compression concern",
       "mechanism": "fundamental",
       "severity": 0.8,
@@ -58,7 +58,7 @@
       "claim_id": "INTC2016Q3_C001"
     },
     {
-      "cause": "Gross margin contraction",
+      "cause": "Gross Margin contraction",
       "effect": "profitability pressure on valuation",
       "mechanism": "fundamental",
       "severity": 0.5,

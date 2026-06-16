@@ -5,13 +5,38 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T04:31:33+00:00",
+  "computed_at": "2026-06-15T16:35:19+00:00",
   "accepted": [
     {
-      "cause": "Non-GAAP Adjusted Consolidated Operating Margin of 12.3%",
-      "effect": "estimate revision upside",
+      "cause": "Consolidated Revenues of $25.3B compared to $24.9B last year",
+      "effect": "revenue beat drives top-line estimate revision upside",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Consolidated Revenues of $25.3B, Compared to $24.9B Last Year",
+      "source_id": "UPS2025Q1_000",
+      "published_at": 0,
+      "atom_id": "UPS2025Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.776,
+      "span_score": 0.895,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "UPS2025Q1_C000"
+    },
+    {
+      "cause": "Non-GAAP Adjusted Consolidated Operating Margin of 12.3%",
+      "effect": "margin expansion supports profitability multiple re-rating",
+      "mechanism": "fundamental",
+      "severity": 0.75,
       "polarity": -1.0,
       "evidence_span": "Non-GAAP Adjusted * Consolidated Operating Margin of 12.3%",
       "source_id": "UPS2025Q1_001",
@@ -23,21 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.814,
+      "confidence": 0.825,
       "span_score": 0.993,
-      "severity_align": 0.272,
+      "severity_align": 0.322,
       "mechanism_hint": 1.0,
-      "claim_id": "UPS2025Q1_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UPS2025Q1_C001"
     },
     {
       "cause": "Diluted EPS of $2.01",
-      "effect": "estimate revision upside",
+      "effect": "earnings per share beat triggers analyst target price increases",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.7,
       "polarity": -1.0,
       "evidence_span": "Diluted EPS of $2.01",
       "source_id": "UPS2025Q1_001",
@@ -49,41 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.75,
+      "confidence": 0.789,
       "span_score": 0.899,
-      "severity_align": 0.222,
+      "severity_align": 0.372,
       "mechanism_hint": 1.0,
-      "claim_id": "UPS2025Q1_C002",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Consolidated Operating Margin of 11.6%",
-      "effect": "estimate revision upside",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "Consolidated Operating Margin of 11.6%",
-      "source_id": "UPS2025Q1_000",
-      "published_at": 0,
-      "atom_id": "UPS2025Q1_000",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.801,
-      "span_score": 0.878,
-      "severity_align": 0.471,
-      "mechanism_hint": 1.0,
-      "claim_id": "UPS2025Q1_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UPS2025Q1_C002"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

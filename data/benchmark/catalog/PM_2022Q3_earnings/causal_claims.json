@@ -5,40 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T12:10:11+00:00",
+  "computed_at": "2026-06-15T15:20:25+00:00",
   "accepted": [
     {
-      "cause": "Strong net revenue growth and pricing effects",
-      "effect": "Adjusted diluted EPS of $1.48",
-      "mechanism": "fundamental",
-      "severity": 0.85,
-      "polarity": 1.0,
-      "evidence_span": "strong net revenue growth, coupled with the positive effects from higher pricing and operating cost efficiencies, drove adjusted diluted EPS of $1.48",
-      "source_id": "PM2022Q3_006",
-      "published_at": 0,
-      "atom_id": "PM2022Q3_006",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.806,
-      "span_score": 0.956,
-      "severity_align": 0.321,
-      "mechanism_hint": 1.0,
-      "claim_id": "PM2022Q3_C000",
-      "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Excellent IQOS momentum and accelerating user growth",
-      "effect": "Raising full year outlook",
+      "cause": "Raising full year outlook based on strong performance",
+      "effect": "Guidance increase lifts FY earnings estimates",
       "mechanism": "fundamental",
       "severity": 0.9,
-      "polarity": 1.0,
-      "evidence_span": "This reflected excellent IQOS momentum, including accelerating growth in pro forma total IQOS users and heated tobacco unit in-market sales volume",
+      "polarity": -1.0,
+      "evidence_span": "We are raising our outlook for the full year and now expect to deliver pro forma a",
       "source_id": "PM2022Q3_003",
       "published_at": 0,
       "atom_id": "PM2022Q3_003",
@@ -48,20 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.792,
-      "span_score": 0.954,
+      "confidence": 0.772,
+      "span_score": 0.909,
       "severity_align": 0.271,
       "mechanism_hint": 1.0,
-      "claim_id": "PM2022Q3_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "PM2022Q3_C002"
     },
     {
-      "cause": "Currency-neutral EPS growth of 5.6%",
-      "effect": "Positive earnings performance",
+      "cause": "Pro forma adjusted diluted EPS of $1.32 reflecting currency-neutral growth of 5.6%",
+      "effect": "EPS growth drives fundamental valuation upside",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.85,
       "polarity": 1.0,
       "evidence_span": "PRO FORMA (EXCLUDING RUSSIA AND UKRAINE) ADJUSTED DILUTED EPS OF $1.32, REPRESENTING CURRENCY-NEUTRAL GROWTH OF 5.6%",
       "source_id": "PM2022Q3_000",
@@ -73,22 +48,65 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.847,
+      "confidence": 0.81,
       "span_score": 0.979,
-      "severity_align": 0.434,
+      "severity_align": 0.284,
       "mechanism_hint": 1.0,
-      "claim_id": "PM2022Q3_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "PM2022Q3_C000"
+    },
+    {
+      "cause": "Accelerating growth in pro forma total IQOS users and heated tobacco unit in-market sales volume",
+      "effect": "Subscriber and volume growth reinforces long-term revenue narrative",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "excellent IQOS momentum, including accelerating growth in pro forma total IQOS users and heated tobacco unit in-market sales volume",
+      "source_id": "PM2022Q3_003",
+      "published_at": 0,
+      "atom_id": "PM2022Q3_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.823,
+      "span_score": 0.944,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PM2022Q3_C001"
     }
   ],
-  "rejected": [],
+  "rejected": [
+    {
+      "cause": "Specific margin pressures in the quarter despite cost efficiencies",
+      "effect": "Margin pressure creates concern for operating leverage sustainability",
+      "mechanism": "fundamental",
+      "severity": 0.4,
+      "polarity": -0.5,
+      "evidence_span": "Despite the specific margin pressures in the quarter, the company's strong net revenue growth",
+      "source_id": "PM2022Q3_006",
+      "published_at": 0,
+      "atom_id": "PM2022Q3_006",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
   "claim_count": 3,
-  "rejected_count": 0,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

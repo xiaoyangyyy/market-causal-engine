@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T13:41:20+00:00",
+  "computed_at": "2026-06-15T17:04:03+00:00",
   "accepted": [
     {
       "cause": "Consumer transaction revenue decline",
-      "effect": "Lower Q4 total revenue",
+      "effect": "transaction revenue miss lowers Q4 top-line expectations",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.75,
       "polarity": -1.0,
       "evidence_span": "Consumer transaction revenue was $734 million in Q4, down 13% Q/Q driven by a volume mix shift",
       "source_id": "COIN2025Q4_013",
@@ -23,18 +23,43 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.928,
+      "confidence": 0.967,
       "span_score": 0.942,
-      "severity_align": 0.84,
+      "severity_align": 0.89,
       "mechanism_hint": 1.0,
-      "claim_id": "COIN2025Q4_C000",
       "polarity_source": "evidence",
       "effect_specificity": 1.0,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "COIN2025Q4_C000"
     },
     {
-      "cause": "Transaction revenue drop",
-      "effect": "Reduced top-line growth momentum",
+      "cause": "Total revenue sequential contraction",
+      "effect": "revenue miss reduces quarterly earnings per share estimates",
+      "mechanism": "fundamental",
+      "severity": 0.65,
+      "polarity": -1.0,
+      "evidence_span": "Q4 total revenue was $1.8 billion , down 5% Q/Q.",
+      "source_id": "COIN2025Q4_003",
+      "published_at": 0,
+      "atom_id": "COIN2025Q4_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.949,
+      "span_score": 1.0,
+      "severity_align": 0.87,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "COIN2025Q4_C001"
+    },
+    {
+      "cause": "Transaction revenue sequential decline",
+      "effect": "transaction revenue drop signals weakening trading volume momentum",
       "mechanism": "fundamental",
       "severity": 0.5,
       "polarity": -1.0,
@@ -48,39 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.93,
+      "confidence": 0.916,
       "span_score": 1.0,
       "severity_align": 0.72,
       "mechanism_hint": 1.0,
-      "claim_id": "COIN2025Q4_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Q4 total revenue decrease",
-      "effect": "Negative quarterly performance signal",
-      "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": -1.0,
-      "evidence_span": "Q4 total revenue was $1.8 billion , down 5% Q/Q.",
-      "source_id": "COIN2025Q4_003",
-      "published_at": 0,
-      "atom_id": "COIN2025Q4_003",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.955,
-      "span_score": 1.0,
-      "severity_align": 0.82,
-      "mechanism_hint": 1.0,
-      "claim_id": "COIN2025Q4_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "COIN2025Q4_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:31+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:41:48+00:00",
+  "computed_at": "2026-06-15T14:55:07+00:00",
   "accepted": [
     {
-      "cause": "Raised 2021 GAAP Diluted EPS Guidance Range",
-      "effect": "Increased investor confidence in future earnings",
+      "cause": "Raises 2021 GAAP Diluted EPS Guidance Range",
+      "effect": "estimate revision upside for FY2021 earnings",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.9,
       "polarity": -1.0,
       "evidence_span": "Raises 2021 GAAP Diluted EPS Guidance Range from $6.04 to $6.14 to $6.29 to $6.33",
       "source_id": "ABBV2021Q4_012",
@@ -23,45 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.797,
+      "confidence": 0.83,
       "span_score": 0.969,
-      "severity_align": 0.256,
+      "severity_align": 0.206,
       "mechanism_hint": 1.0,
-      "claim_id": "ABBV2021Q4_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Adjusted Net Revenues Increased 11.3 Percent",
-      "effect": "Positive revenue surprise driving stock price up",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": 1.0,
-      "evidence_span": "Adjusted Net Revenues Increased 11.3 Percent on a Reported Basis and 10.8 Percent Operationally",
-      "source_id": "ABBV2021Q4_002",
-      "published_at": 0,
-      "atom_id": "ABBV2021Q4_002",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.811,
-      "span_score": 0.92,
-      "severity_align": 0.421,
-      "mechanism_hint": 1.0,
-      "claim_id": "ABBV2021Q4_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "ABBV2021Q4_C000"
     },
     {
       "cause": "Immunology Portfolio Revenues Increased 15.3 Percent",
-      "effect": "Strong performance in key therapeutic area",
+      "effect": "core segment growth drives valuation multiple support",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.85,
       "polarity": -1.0,
       "evidence_span": "Third-Quarter Global Net Revenues from the Immunology Portfolio Were $6.674 Billion, an Increase of 15.3 Percent",
       "source_id": "ABBV2021Q4_002",
@@ -73,14 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.831,
+      "confidence": 0.795,
       "span_score": 0.933,
-      "severity_align": 0.471,
+      "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "ABBV2021Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ABBV2021Q4_C002"
+    },
+    {
+      "cause": "Adjusted Net Revenues Increased 11.3 Percent",
+      "effect": "top-line growth validates revenue expansion narrative",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Adjusted Net Revenues Increased 11.3 Percent on a Reported Basis and 10.8 Percent Operationally",
+      "source_id": "ABBV2021Q4_002",
+      "published_at": 0,
+      "atom_id": "ABBV2021Q4_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.8,
+      "span_score": 0.92,
+      "severity_align": 0.371,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ABBV2021Q4_C001"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

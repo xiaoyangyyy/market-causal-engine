@@ -9,19 +9,25 @@ from typing import Any
 
 from market_causal_engine.benchmark.metrics import (
     aggregate_scores,
+    build_appendix_summary,
+    build_headline_summary,
     confidence_stability,
     oot_accuracy,
     score_event,
+    select_failed_cases,
     split_by_date,
 )
+from market_causal_engine.benchmark.catalog_eval import eval_catalog_only_metrics
 from market_causal_engine.benchmark.models import BenchmarkEvent, load_all_corpora, load_corpus
 from market_causal_engine.benchmark.replay import replay_event
 from market_causal_engine.benchmark.report import (
+    write_failed_cases_report,
     write_human_review_csv_enriched,
     write_json_report,
     write_markdown_report,
 )
 from market_causal_engine.benchmark.validation import (
+    CASE_STUDY_ABLATION_IDS,
     run_ablation_suite,
     run_sensitivity_on_scenario,
     summarize_ablation,
@@ -93,9 +99,20 @@ class BenchmarkRunner:
                 errors.append({"event_id": event.event_id, "error": str(exc)})
 
         summary = aggregate_scores(scores)
+        headline = build_headline_summary(scores)
+        appendix = build_appendix_summary(scores)
+        failed = select_failed_cases(scores, label_tier="real", n=10)
         train, test = split_by_date(scores, events, cutoff_date=self.config.oot_cutoff_date)
-        oot = oot_accuracy(train, test)
+        oot = oot_accuracy(train, test, label_tier="real")
+        oot_all = oot_accuracy(train, test)
         confidence = confidence_stability(scores)
+
+        catalog_only: dict[str, Any] = {}
+        if not self.config.corpora or "earnings_sp500_2016_2025" in (self.config.corpora or []):
+            try:
+                catalog_only = eval_catalog_only_metrics()
+            except Exception as exc:  # noqa: BLE001
+                catalog_only = {"error": str(exc)}
 
         ablation_summary: dict[str, Any] = {}
         if self.config.run_ablation:
@@ -110,6 +127,17 @@ class BenchmarkRunner:
             ]
             sensitivity_summary = summarize_sensitivity(sens_results)
 
+        from market_causal_engine.platform.pit_hardening import audit_case_study, summarize_pit_compliance
+
+        pit_reports = []
+        for case_id in CASE_STUDY_ABLATION_IDS:
+            try:
+                pit_reports.append(audit_case_study(case_id, as_of_minutes=self.config.until))
+            except FileNotFoundError:
+                continue
+        pit_compliance = summarize_pit_compliance(pit_reports)
+        pit_compliance["cases"] = {r["case_id"]: r for r in pit_reports}
+
         report = {
             "run_id": rid,
             "generated_at": _utc_now_iso(),
@@ -121,10 +149,16 @@ class BenchmarkRunner:
                 "seed": self.config.seed,
             },
             "summary": summary,
+            "headline": headline,
+            "appendix": appendix,
+            "failed_cases": failed,
+            "catalog_only": catalog_only,
             "out_of_time": oot,
+            "out_of_time_all_labels": oot_all,
             "confidence": confidence,
             "ablation": ablation_summary,
             "sensitivity": sensitivity_summary,
+            "pit_compliance": pit_compliance,
             "errors": errors,
             "scores": [s.to_dict() for s in scores],
         }
@@ -133,6 +167,7 @@ class BenchmarkRunner:
         out_dir.mkdir(parents=True, exist_ok=True)
         write_json_report(out_dir / f"{rid}.json", report)
         write_markdown_report(out_dir / f"{rid}_report.md", report)
+        write_failed_cases_report(out_dir / f"{rid}_failed_cases.md", failed)
         events_by_id = {e.event_id: e for e in events}
         write_human_review_csv_enriched(
             out_dir / f"{rid}_human_review.csv",
@@ -144,6 +179,7 @@ class BenchmarkRunner:
         report["artifacts"] = {
             "json": str(out_dir / f"{rid}.json"),
             "markdown": str(out_dir / f"{rid}_report.md"),
+            "failed_cases_md": str(out_dir / f"{rid}_failed_cases.md"),
             "human_review_csv": str(out_dir / f"{rid}_human_review.csv"),
             "human_review_priority50_csv": str(out_dir / f"{rid}_human_review_priority50.csv"),
         }

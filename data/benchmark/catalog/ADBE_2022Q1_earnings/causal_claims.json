@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:48:27+00:00",
+  "computed_at": "2026-06-15T15:04:03+00:00",
   "accepted": [
     {
       "cause": "Digital Media segment revenue growth",
-      "effect": "fundamental upside",
+      "effect": "estimate revision upside on segment growth",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": 1.0,
@@ -23,21 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.821,
+      "confidence": 0.82,
       "span_score": 1.0,
       "severity_align": 0.284,
       "mechanism_hint": 1.0,
-      "claim_id": "ADBE2022Q1_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ADBE2022Q1_C000"
     },
     {
-      "cause": "Document Cloud revenue growth",
-      "effect": "fundamental upside",
+      "cause": "Document Cloud revenue surge",
+      "effect": "revenue multiple expansion on high growth",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.7,
       "polarity": 1.0,
       "evidence_span": "Document Cloud revenue was $532 million, representing 29 percent year-over-year growth.",
       "source_id": "ADBE2022Q1_004",
@@ -49,41 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.832,
+      "confidence": 0.841,
       "span_score": 1.0,
-      "severity_align": 0.326,
+      "severity_align": 0.376,
       "mechanism_hint": 1.0,
-      "claim_id": "ADBE2022Q1_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ADBE2022Q1_C001"
     },
     {
-      "cause": "Digital Experience segment revenue growth",
-      "effect": "fundamental upside",
+      "cause": "Digital Experience subscription growth",
+      "effect": "recurring revenue visibility increase",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.6,
       "polarity": 1.0,
-      "evidence_span": "Digital Experience segment revenue was $1.01 billion, representing 23 percent year-over-year growth.",
-      "source_id": "ADBE2022Q1_006",
+      "evidence_span": "Digital Experience subscription revenue was $886 million, representing 27 percent year-over-year growth.",
+      "source_id": "ADBE2022Q1_007",
       "published_at": 0,
-      "atom_id": "ADBE2022Q1_006",
+      "atom_id": "ADBE2022Q1_007",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.846,
+      "confidence": 0.865,
       "span_score": 1.0,
-      "severity_align": 0.385,
+      "severity_align": 0.486,
       "mechanism_hint": 1.0,
-      "claim_id": "ADBE2022Q1_C002",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ADBE2022Q1_C002"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

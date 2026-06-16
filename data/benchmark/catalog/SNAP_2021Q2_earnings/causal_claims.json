@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:41:47+00:00",
+  "computed_at": "2026-06-15T14:36:40+00:00",
   "accepted": [
     {
-      "cause": "Revenue increased 66% year-over-year to $770 million",
-      "effect": "Strong top-line growth driving bullish sentiment",
+      "cause": "Q1 revenue increased 66% year-over-year to $770 million",
+      "effect": "revenue growth surprise drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -23,20 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.758,
+      "confidence": 0.763,
       "span_score": 0.891,
       "severity_align": 0.271,
       "mechanism_hint": 1.0,
-      "claim_id": "SNAP2021Q2_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "SNAP2021Q2_C000"
     },
     {
       "cause": "Daily Active Users increased 22% year-over-year to 280 million",
-      "effect": "estimate revision upside",
+      "effect": "user growth expansion reinforces valuation multiple support",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.8,
       "polarity": 1.0,
       "evidence_span": "Daily Active Users increased 22% year-over-year to 280 million",
       "source_id": "SNAP2021Q2_000",
@@ -48,23 +48,70 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.775,
+      "confidence": 0.789,
       "span_score": 0.899,
-      "severity_align": 0.321,
+      "severity_align": 0.371,
       "mechanism_hint": 1.0,
-      "claim_id": "SNAP2021Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "SNAP2021Q2_C001"
+    },
+    {
+      "cause": "Q2 2021 revenue guidance set between $820 million and $840 million",
+      "effect": "forward revenue range establishes baseline for next-quarter consensus",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "Revenue is estimated to be between $820 million and $840 million",
+      "source_id": "SNAP2021Q2_006",
+      "published_at": 0,
+      "atom_id": "SNAP2021Q2_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.81,
+      "span_score": 0.896,
+      "severity_align": 0.471,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "SNAP2021Q2_C002"
+    },
+    {
+      "cause": "Operating loss increased 6% compared to prior year",
+      "effect": "widening operating loss raises margin compression concern",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Operating loss $ (303,606 ) $ (286,364 ) 6 %",
+      "source_id": "SNAP2021Q2_004",
+      "published_at": 0,
+      "atom_id": "SNAP2021Q2_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.858,
+      "span_score": 1.0,
+      "severity_align": 0.456,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "SNAP2021Q2_C003"
     }
   ],
   "rejected": [],
-  "claim_count": 2,
+  "claim_count": 4,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

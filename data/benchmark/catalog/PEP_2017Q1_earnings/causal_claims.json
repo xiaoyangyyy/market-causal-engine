@@ -5,67 +5,40 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T02:43:54+00:00",
+  "computed_at": "2026-06-16T09:31:41+00:00",
   "accepted": [
     {
-      "cause": "EPS decline",
-      "effect": "valuation de-rating",
+      "cause": "2017 core EPS guidance set at $5.09",
+      "effect": "estimate revision upside based on 8% core constant currency growth",
       "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": -1.0,
-      "evidence_span": "EPS was $0.97, a 17 percent decline",
-      "source_id": "PEP2017Q1_007",
-      "published_at": 0,
-      "atom_id": "PEP2017Q1_007",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.811,
-      "span_score": 1.0,
-      "severity_align": 0.243,
-      "mechanism_hint": 1.0,
-      "claim_id": "PEP2017Q1_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "gross margin contraction",
-      "effect": "valuation de-rating",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "gross margin contracted 15",
-      "source_id": "PEP2017Q1_005",
-      "published_at": 0,
-      "atom_id": "PEP2017Q1_005",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.835,
-      "span_score": 1.0,
-      "severity_align": 0.338,
-      "mechanism_hint": 1.0,
-      "claim_id": "PEP2017Q1_C001",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "net revenue increase",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.5,
+      "severity": 0.85,
       "polarity": 1.0,
-      "evidence_span": "Reported net revenue increased 5.0 percent",
+      "evidence_span": "The Company expects 2017 core earnings per share of $5.09, driven by the following expectations and factors: 2016 core earnings per share $4.85 Expected core constant currency EPS growth 8%",
+      "source_id": "PEP2017Q1_016",
+      "published_at": 0,
+      "atom_id": "PEP2017Q1_016",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.863,
+      "span_score": 0.985,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "PEP2017Q1_C000"
+    },
+    {
+      "cause": "Reported net revenue increased 5.0 percent",
+      "effect": "top-line growth supports valuation multiple maintenance",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": 1.0,
+      "evidence_span": "• Reported net revenue increased 5.0 percent .",
       "source_id": "PEP2017Q1_003",
       "published_at": 0,
       "atom_id": "PEP2017Q1_003",
@@ -75,23 +48,40 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.887,
+      "confidence": 0.857,
       "span_score": 1.0,
-      "severity_align": 0.55,
+      "severity_align": 0.45,
       "mechanism_hint": 1.0,
-      "claim_id": "PEP2017Q1_C002",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PEP2017Q1_C001"
     }
   ],
-  "rejected": [],
-  "claim_count": 3,
-  "rejected_count": 0,
+  "rejected": [
+    {
+      "cause": "Foreign exchange impact on EPS (3)%",
+      "effect": "currency headwinds reduce reported EPS growth relative to organic performance",
+      "mechanism": "macro",
+      "severity": 0.4,
+      "polarity": -0.25,
+      "evidence_span": "Foreign exchange impact on EPS (3)% Foreign exchange impact on EPS (3)% Organic",
+      "source_id": "PEP2017Q1_000",
+      "published_at": 0,
+      "atom_id": "PEP2017Q1_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

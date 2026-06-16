@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:42:04+00:00",
+  "computed_at": "2026-06-15T14:55:29+00:00",
   "accepted": [
     {
       "cause": "Total revenue grew 72% YoY to $4.8 billion",
-      "effect": "Strong top-line growth exceeding expectations",
+      "effect": "top-line acceleration supports estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -23,22 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.792,
+      "confidence": 0.795,
       "span_score": 1.0,
       "severity_align": 0.169,
       "mechanism_hint": 1.0,
-      "claim_id": "UBER2021Q4_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UBER2021Q4_C001"
     },
     {
-      "cause": "Freight revenue grew 40% YoY",
-      "effect": "Improving EBITDA margins in Freight segment",
+      "cause": "Freight revenue grew 40% YoY with improving EBITDA margins",
+      "effect": "segment margin expansion drives fundamental valuation upside",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": 1.0,
-      "evidence_span": "Freight revenue grew 40% YoY, to $402 million, as shippers and carriers continue to utilize Uber Freight offerings",
+      "evidence_span": "Freight delivered strong growth and improving EBITDA margins: Freight revenue grew 40% YoY, to $402 million",
       "source_id": "UBER2021Q4_009",
       "published_at": 0,
       "atom_id": "UBER2021Q4_009",
@@ -48,18 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.813,
-      "span_score": 0.947,
-      "severity_align": 0.368,
+      "confidence": 0.798,
+      "span_score": 0.941,
+      "severity_align": 0.318,
       "mechanism_hint": 1.0,
-      "claim_id": "UBER2021Q4_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UBER2021Q4_C000"
     },
     {
       "cause": "Advertising annualized revenue run rate reached well over $100 million",
-      "effect": "Expansion of high-margin advertising business",
+      "effect": "new revenue stream growth strengthens long-term margin narrative",
       "mechanism": "fundamental",
       "severity": 0.7,
       "polarity": -1.0,
@@ -73,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.852,
+      "confidence": 0.847,
       "span_score": 1.0,
       "severity_align": 0.406,
       "mechanism_hint": 1.0,
-      "claim_id": "UBER2021Q4_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UBER2021Q4_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

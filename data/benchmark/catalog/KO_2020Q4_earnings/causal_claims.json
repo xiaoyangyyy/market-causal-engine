@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T02:49:00+00:00",
+  "computed_at": "2026-06-15T14:24:22+00:00",
   "accepted": [
     {
       "cause": "EPS decline of 33% to $0.40",
-      "effect": "valuation de-rating",
+      "effect": "earnings miss lowers EPS estimates",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -23,23 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.753,
+      "confidence": 0.759,
       "span_score": 0.898,
       "severity_align": 0.237,
       "mechanism_hint": 1.0,
-      "claim_id": "KO2020Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "KO2020Q4_C000"
     },
     {
       "cause": "Revenue decline of 13% year-over-year",
-      "effect": "Bearish sentiment on top-line growth",
+      "effect": "top-line contraction reduces revenue growth expectations",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": -1.0,
-      "evidence_span": "Revenues $ 24,403 $ 28,198 (13)",
+      "evidence_span": "Revenues $ 24,403 $ 28,198 (13) Cost of",
       "source_id": "KO2020Q4_002",
       "published_at": 0,
       "atom_id": "KO2020Q4_002",
@@ -49,20 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.824,
+      "confidence": 0.823,
       "span_score": 1.0,
       "severity_align": 0.296,
       "mechanism_hint": 1.0,
-      "claim_id": "KO2020Q4_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "KO2020Q4_C001"
     },
     {
-      "cause": "Non-GAAP Operating Margin expansion to 30.4%",
-      "effect": "Positive offset from cost efficiency",
+      "cause": "Non-GAAP Operating Margin expansion to 30.4% from 28.1%",
+      "effect": "margin expansion offsets volume decline in valuation models",
       "mechanism": "fundamental",
-      "severity": 0.4,
+      "severity": 0.6,
       "polarity": -1.0,
       "evidence_span": "Comparable Operating Margin (Non-GAAP) Was 30.4% Versus 28.1% in the Prior Year",
       "source_id": "KO2020Q4_010",
@@ -74,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.922,
+      "confidence": 0.865,
       "span_score": 1.0,
-      "severity_align": 0.687,
+      "severity_align": 0.487,
       "mechanism_hint": 1.0,
-      "claim_id": "KO2020Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "KO2020Q4_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -210,6 +210,73 @@ Trace-first product principle: **every conclusion links to evidence chain** in A
 
 ## Implementation Phases
 
+### Step A — Honest benchmark reporting (current)
+
+Goal: metrics reviewers can trust without reading router code.
+
+- [x] Label tiers: real / proxy / placebo / unknown (`benchmark/label_quality.py`)
+- [x] Headline vs appendix split in benchmark reports
+- [x] Per-corpus real-label accuracy (no mixed overall headline)
+- [x] Catalog-only EDGAR metric in every benchmark run
+- [x] Naive baselines (always-neutral, majority-class)
+- [x] Failed cases appendix (top 10 real-label mismatches)
+- [x] [docs/validation-methodology.md](validation-methodology.md)
+- [x] README headline table (real-label only)
+
+**Next:** Teacher review checklist complete (Steps A–E).
+
+### Step E — CI hardening + reproduce-benchmark ✅ COMPLETE
+
+Goal: strangers can clone, run one command, and get headline metrics + manifest.
+
+- [x] `Makefile` — `test-market`, `lint`, `reproduce-benchmark`, `reproduce-benchmark-smoke`, `docker-build`
+- [x] `scripts/reproduce_benchmark.py` — pytest → PIT audit → benchmark → catalog-only → `results/reproduce/LATEST.json`
+- [x] CI jobs: `lint` (ruff), `reproduce-benchmark-smoke`, `docker-build`, `market-test`, `worldcup-legacy`
+- [x] Ruff config on Step A–E modules (`pyproject.toml`)
+- [x] `tests/test_reproduce_benchmark.py`
+
+```bash
+make reproduce-benchmark-smoke   # CI-sized (~20 events/corpus)
+make reproduce-benchmark         # full headline (200 events/corpus)
+```
+
+### Step D — World Cup split + killer demo ✅ COMPLETE
+
+Goal: financial product stands alone; reviewers get a 5-minute NFLX walkthrough.
+
+- [x] World Cup export script → standalone repo layout (`scripts/export_worldcup_legacy.py`)
+- [x] CI split: `market-test` vs `worldcup-legacy` jobs
+- [x] README leads with Problem → Demo (World Cup demoted to [docs/worldcup-split.md](worldcup-split.md))
+- [x] Killer demo builder (`market_causal_engine/demo/killer_demo.py`)
+- [x] Static HTML export (`demo/static/`) + Streamlit (`demo/streamlit_app.py`)
+- [x] API: `GET /demo/killer/{case_id}`
+
+### Step C — PIT data hardening ✅ COMPLETE
+
+Goal: every evidence atom carries a full temporal envelope; replays are auditable for look-ahead.
+
+- [x] `platform/pit_hardening.py` — `CaseTimeAxis`, atom↔PIT bridge, `PITAuditReport`
+- [x] Temporal envelope on atoms: `observed_time`, `published_time`, `ingested_time`, `revision_id`
+- [x] `pit_audit` on every case-study / catalog-feed replay (alongside `lookahead_audit`)
+- [x] Extraction pipeline enriches atoms with temporal metadata before write
+- [x] Benchmark report includes `pit_compliance` for case-study fixtures
+- [x] `scripts/audit_pit_compliance.py` — batch audit CLI
+- [x] API trace exposes `pit_audit`
+
+Auto-enrichment uses manifest `time_axis.origin_timestamp_et` (catalog: `filing_date` fallback).
+
+### Step B — Causal outcome layer ✅ COMPLETE
+
+Goal: every event outputs testable econometric outcomes, not just paths.
+
+- [x] Mandatory `outcome_causal` on replay: AR, factor-adjusted, SC, placebo CI (`outcome_layer.py` + `replay_event`)
+- [x] Event-study metrics: CAR, AAR, t-stat, bootstrap/placebo CI
+- [x] Ablation tied to marginal CAR contribution per channel (`car_ablation.py` + validation suite)
+- [x] API event card includes counterfactual block (`GET /events/{id}`, `POST /events/replay`)
+
+Code in `counterfactuals/` is wired to the main replay path; corpus cache is used when present.
+CAR ablation auto-runs on case studies / API; bulk earnings replay skips channel ablation for cost.
+
 ### P0 — Platform skeleton (current sprint)
 
 - [x] `platform/pit.py` — PIT record envelope
@@ -300,7 +367,7 @@ Trace-first product principle: **every conclusion links to evidence chain** in A
   - Claim quality: evidence-based polarity refine, generic-effect rewrite, mechanism-specific effects
   - Offline refine: `python scripts/refine_catalog_claims.py` (no API)
   - LLM re-extract refresh: `python scripts/run_catalog_causal_claims.py --all --use-llm --force --quality-refresh`
-  - Strict policy (`llm_event` only): **951** eligible; catalog-only **~59%** (domain+polarity consensus)
+  - Strict policy (`llm_event` only): **840** eligible on full reproduce; catalog-only **58.81%** (domain+polarity consensus)
 
 
 - Model inventory doc + change log

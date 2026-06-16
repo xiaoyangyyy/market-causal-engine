@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T09:01:32+00:00",
+  "computed_at": "2026-06-16T11:27:01+00:00",
   "accepted": [
     {
-      "cause": "Full-year net revenue increased 20%",
-      "effect": "Bullish outlook driven by strong annual revenue performance",
+      "cause": "Net revenue increased 20% as reported and on a currency-neutral basis",
+      "effect": "full-year revenue growth supports valuation expansion",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
-      "evidence_span": "Net revenue increased 20% as reported and on a currency-neutral basis.",
+      "evidence_span": "Net revenue increased 20% as reported and on a currency-neutral basis",
       "source_id": "MA2019Q1_005",
       "published_at": 0,
       "atom_id": "MA2019Q1_005",
@@ -23,47 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.768,
-      "span_score": 0.918,
+      "confidence": 0.772,
+      "span_score": 0.917,
       "severity_align": 0.251,
       "mechanism_hint": 1.0,
-      "claim_id": "MA2019Q1_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "MA2019Q1_C001"
     },
     {
-      "cause": "Operating expenses increased 31% year-over-year",
-      "effect": "Potential margin compression impacting profitability",
+      "cause": "Net revenue increased 15% as reported, or 17% on a currency-neutral basis",
+      "effect": "revenue beat drives estimate revision upside",
       "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": -1.0,
-      "evidence_span": "Operating expenses $7.7 $5.9 31% 30%",
-      "source_id": "MA2019Q1_004",
-      "published_at": 0,
-      "atom_id": "MA2019Q1_004",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.825,
-      "span_score": 0.876,
-      "severity_align": 0.571,
-      "mechanism_hint": 1.0,
-      "claim_id": "MA2019Q1_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Net revenue increased 15% as reported",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": 1.0,
-      "evidence_span": "Net revenue increased 15% as reported, or 17% on a currency-neutral basis.",
+      "evidence_span": "Net revenue increased 15% as reported, or 17% on a currency-neutral basis",
       "source_id": "MA2019Q1_002",
       "published_at": 0,
       "atom_id": "MA2019Q1_002",
@@ -73,23 +48,40 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.792,
-      "span_score": 0.908,
-      "severity_align": 0.371,
+      "confidence": 0.782,
+      "span_score": 0.907,
+      "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "MA2019Q1_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MA2019Q1_C000"
     }
   ],
-  "rejected": [],
-  "claim_count": 3,
-  "rejected_count": 0,
+  "rejected": [
+    {
+      "cause": "Operating expenses increased 31% reported versus 20% revenue growth",
+      "effect": "expense growth outpacing revenue raises margin compression concern",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -0.5,
+      "evidence_span": "Operating expenses $7.7 $5.9 31% 30% Net revenue $15.0 $12.5 20% 20%",
+      "source_id": "MA2019Q1_004",
+      "published_at": 0,
+      "atom_id": "MA2019Q1_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,27 +5,27 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:15:12+00:00",
+  "computed_at": "2026-06-16T09:40:13+00:00",
   "accepted": [
     {
-      "cause": "earnings miss",
-      "effect": "valuation de-rating",
+      "cause": "changes in hospital admiss",
+      "effect": "revenue estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.98,
+      "severity": 0.7,
       "polarity": -1.0,
       "evidence_span": "revenues; changes in hospital admiss",
       "source_id": "ISRG2017Q2_000",
       "published_at": 0,
-      "proposer": "heuristic",
+      "proposer": "llm",
       "atom_id": "ISRG2017Q2_000",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.98,
+      "confidence": 0.934,
       "span_score": 1.0,
-      "severity_align": 0.92,
+      "severity_align": 0.8,
       "mechanism_hint": 1.0,
       "claim_id": "ISRG2017Q2_C000",
       "polarity_source": "evidence",
@@ -38,7 +38,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T14:00:42+00:00",
+  "computed_at": "2026-06-16T09:26:46+00:00",
   "accepted": [
     {
       "cause": "Adjusted EPS of $1.30",
-      "effect": "Positive earnings surprise relative to reported EPS",
+      "effect": "adjusted earnings beat drives estimate revision upside",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": -1.0,
       "evidence_span": "Excluding these items 1 , EPS was $1.30.",
       "source_id": "WMT2017Q1_001",
@@ -23,20 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.812,
+      "confidence": 0.801,
       "span_score": 1.0,
-      "severity_align": 0.246,
+      "severity_align": 0.196,
       "mechanism_hint": 1.0,
-      "claim_id": "WMT2017Q1_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "WMT2017Q1_C000"
     },
     {
       "cause": "Total revenue increase to $130.9 billion",
-      "effect": "Top-line growth driving stock appreciation",
+      "effect": "top-line growth supports valuation multiple expansion",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.75,
       "polarity": -1.0,
       "evidence_span": "Total revenue was $130.9 billion, an increase of",
       "source_id": "WMT2017Q1_002",
@@ -48,18 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.838,
+      "confidence": 0.824,
       "span_score": 1.0,
-      "severity_align": 0.351,
+      "severity_align": 0.301,
       "mechanism_hint": 1.0,
-      "claim_id": "WMT2017Q1_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "WMT2017Q1_C001"
     },
     {
       "cause": "GAAP EPS of $1.22",
-      "effect": "Reported earnings performance baseline",
+      "effect": "reported earnings miss relative to adjusted metrics creates margin compression concern",
       "mechanism": "fundamental",
       "severity": 0.4,
       "polarity": -1.0,
@@ -73,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.911,
+      "confidence": 0.9,
       "span_score": 1.0,
       "severity_align": 0.645,
       "mechanism_hint": 1.0,
-      "claim_id": "WMT2017Q1_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "WMT2017Q1_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

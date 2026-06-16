@@ -5,39 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T10:16:49+00:00",
+  "computed_at": "2026-06-16T12:29:02+00:00",
   "accepted": [
     {
-      "cause": "2019 Fourth-Quarter Sales growth of 1.7%",
-      "effect": "estimate revision upside",
+      "cause": "Company projects continued sales and earnings growth in 2020 guidance",
+      "effect": "forward guidance reinforces revenue growth expectations",
       "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": 1.0,
-      "evidence_span": "2019 Fourth-Quarter Sales of $20.7 Billion reflecting growth of 1.7%",
-      "source_id": "JNJ2020Q1_000",
-      "published_at": 0,
-      "atom_id": "JNJ2020Q1_000",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.837,
-      "span_score": 0.899,
-      "severity_align": 0.571,
-      "mechanism_hint": 1.0,
-      "claim_id": "JNJ2020Q1_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Company projects continued sales and earnings growth in 2020",
-      "effect": "Increased investor confidence in future performance",
-      "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.7,
       "polarity": 1.0,
       "evidence_span": "Company projects continued sales and earnings growth in 2020 guidance",
       "source_id": "JNJ2020Q1_002",
@@ -49,18 +23,43 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.802,
+      "confidence": 0.825,
       "span_score": 0.957,
-      "severity_align": 0.302,
+      "severity_align": 0.402,
       "mechanism_hint": 1.0,
-      "claim_id": "JNJ2020Q1_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "JNJ2020Q1_C001"
+    },
+    {
+      "cause": "2019 Fourth-Quarter Sales of $20.7 Billion reflecting growth of 1.7%",
+      "effect": "quarterly top-line growth validates operational momentum",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": 1.0,
+      "evidence_span": "2019 Fourth-Quarter Sales of $20.7 Billion reflecting growth of 1.7%",
+      "source_id": "JNJ2020Q1_000",
+      "published_at": 0,
+      "atom_id": "JNJ2020Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.855,
+      "span_score": 0.899,
+      "severity_align": 0.671,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "JNJ2020Q1_C002"
     },
     {
       "cause": "2019 Full-Year EPS of $5.63 increased 0.4%",
-      "effect": "Modest positive sentiment from annual earnings growth",
+      "effect": "marginal full-year earnings growth supports valuation stability",
       "mechanism": "fundamental",
       "severity": 0.3,
       "polarity": 1.0,
@@ -74,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.917,
+      "confidence": 0.904,
       "span_score": 0.952,
       "severity_align": 0.772,
       "mechanism_hint": 1.0,
-      "claim_id": "JNJ2020Q1_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "JNJ2020Q1_C000"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

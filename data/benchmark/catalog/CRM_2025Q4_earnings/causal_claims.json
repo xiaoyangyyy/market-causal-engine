@@ -5,14 +5,14 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T13:38:25+00:00",
+  "computed_at": "2026-06-15T17:02:23+00:00",
   "accepted": [
     {
-      "cause": "Exceeded financial targets with tenth consecutive quarter of operating margin expansion",
-      "effect": "estimate revision upside",
+      "cause": "Operating margin expansion for tenth consecutive quarter",
+      "effect": "margin expansion reinforces profitability trajectory",
       "mechanism": "fundamental",
       "severity": 0.85,
-      "polarity": 0.9,
+      "polarity": 1.0,
       "evidence_span": "We exceeded all our financial targets while achieving our tenth consecutive quarter of operating margin expansion",
       "source_id": "CRM2025Q4_001",
       "published_at": 0,
@@ -23,23 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.792,
+      "confidence": 0.794,
       "span_score": 0.931,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "CRM2025Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "llm",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "CRM2025Q4_C000"
     },
     {
-      "cause": "Second quarter revenue of $10.2 billion up 10% year-over-year",
-      "effect": "Revenue growth exceeding expectations supporting bullish price direction",
+      "cause": "Subscription & support revenue up 11% year-over-year",
+      "effect": "revenue growth sustains recurring revenue valuation multiple",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": -1.0,
-      "evidence_span": "Second quarter revenue of $10.2 billion, up 10% year-over-year",
+      "evidence_span": "Second quarter subscription & support revenue of $9.7 billion, up 11% Y/Y and 9% in CC",
       "source_id": "CRM2025Q4_000",
       "published_at": 0,
       "atom_id": "CRM2025Q4_000",
@@ -49,47 +48,40 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.797,
-      "span_score": 0.894,
+      "confidence": 0.806,
+      "span_score": 0.911,
       "severity_align": 0.421,
       "mechanism_hint": 1.0,
-      "claim_id": "CRM2025Q4_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
+      "polarity_aligned": true,
+      "claim_id": "CRM2025Q4_C001"
+    }
+  ],
+  "rejected": [
     {
-      "cause": "Current remaining performance obligation of $29.4 billion up 11% year-over-year",
-      "effect": "Increased future revenue visibility reinforcing positive market outlook",
+      "cause": "Current remaining performance obligation up 11% year-over-year",
+      "effect": "RPO growth signals future revenue visibility and estimate stability",
       "mechanism": "fundamental",
       "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "Current remaining performance obligation of $29.4 billion, up 11% Y/Y",
+      "polarity": 0.8,
+      "evidence_span": "Current remaining performance obligation of $29.4 billion, up 11% Y/Y and 9% in CC",
       "source_id": "CRM2025Q4_000",
       "published_at": 0,
       "atom_id": "CRM2025Q4_000",
       "validation": {
-        "passed": true,
-        "errors": [],
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
         "warnings": []
       },
-      "proposer": "llm_event",
-      "confidence": 0.812,
-      "span_score": 0.899,
-      "severity_align": 0.471,
-      "mechanism_hint": 1.0,
-      "claim_id": "CRM2025Q4_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "proposer": "llm_event"
     }
   ],
-  "rejected": [],
-  "claim_count": 3,
-  "rejected_count": 0,
+  "claim_count": 2,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

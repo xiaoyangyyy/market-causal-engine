@@ -5,11 +5,32 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T10:17:38+00:00",
+  "computed_at": "2026-06-16T12:30:29+00:00",
   "accepted": [],
-  "rejected": [],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 FORM 8-K CURRENT REPORT",
+      "source_id": "XOM2020Q1_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "XOM2020Q1_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
   "claim_count": 0,
-  "rejected_count": 0,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
   "llm_proposer": "llm_atom_fallback_empty"

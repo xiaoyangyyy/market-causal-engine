@@ -5,39 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T12:55:11+00:00",
+  "computed_at": "2026-06-16T11:01:53+00:00",
   "accepted": [
     {
-      "cause": "Operating income growth",
-      "effect": "estimate revision upside",
+      "cause": "Revenue increased 11% year-over-year",
+      "effect": "fundamental revenue growth drives estimate revision upside",
       "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "Operating income $ 1,440 $",
-      "source_id": "BLK2018Q3_002",
-      "published_at": 0,
-      "atom_id": "BLK2018Q3_002",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.835,
-      "span_score": 1.0,
-      "severity_align": 0.338,
-      "mechanism_hint": 1.0,
-      "claim_id": "BLK2018Q3_C001",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Revenue increased 11%",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": 1.0,
       "evidence_span": "revenue increased 11%, operating income increased",
       "source_id": "BLK2018Q3_001",
@@ -49,21 +23,45 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.813,
+      "confidence": 0.802,
       "span_score": 1.0,
-      "severity_align": 0.252,
+      "severity_align": 0.202,
       "mechanism_hint": 1.0,
-      "claim_id": "BLK2018Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "BLK2018Q3_C000"
     },
     {
-      "cause": "Securities lending revenue increase",
-      "effect": "fundamental upside",
+      "cause": "Lower average AUM and foreign exchange headwinds impacted fees",
+      "effect": "AUM decline and FX drag pressure fee revenue growth",
       "mechanism": "fundamental",
       "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "reflecting lower average AUM, including the impact of foreign exchange movements, partially offset by the ef",
+      "source_id": "BLK2018Q3_007",
+      "published_at": 0,
+      "atom_id": "BLK2018Q3_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.847,
+      "span_score": 0.927,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "BLK2018Q3_C002"
+    },
+    {
+      "cause": "Securities lending revenue rose to $183 million from $156 million",
+      "effect": "higher securities lending income boosts top-line performance",
+      "mechanism": "fundamental",
+      "severity": 0.7,
       "polarity": -1.0,
       "evidence_span": "Securities lending revenue of $183 million in the current quarter compared with $156 million in the second quarter of 2017.",
       "source_id": "BLK2018Q3_006",
@@ -75,15 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.875,
+      "confidence": 0.798,
       "span_score": 1.0,
-      "severity_align": 0.498,
+      "severity_align": 0.398,
       "mechanism_hint": 1.0,
-      "claim_id": "BLK2018Q3_C002",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "BLK2018Q3_C001"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

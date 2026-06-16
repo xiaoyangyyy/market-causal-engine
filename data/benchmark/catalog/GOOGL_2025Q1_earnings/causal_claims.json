@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T13:16:37+00:00",
+  "computed_at": "2026-06-15T16:35:35+00:00",
   "accepted": [
     {
-      "cause": "Google Cloud revenue acceleration",
-      "effect": "Increased investor confidence in AI strategy",
+      "cause": "Google Cloud revenues increased 30% to $12.0 billion",
+      "effect": "valuation multiple expansion on AI infrastructure growth narrative",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -23,45 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.807,
+      "confidence": 0.808,
       "span_score": 1.0,
       "severity_align": 0.229,
       "mechanism_hint": 1.0,
-      "claim_id": "GOOGL2025Q1_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GOOGL2025Q1_C001"
     },
     {
-      "cause": "Net income and EPS surge",
-      "effect": "Bullish sentiment on profitability",
+      "cause": "Google Services revenues increased 10% to $84.1 billion",
+      "effect": "estimate revision upside driven by Search and YouTube ad momentum",
       "mechanism": "fundamental",
       "severity": 0.85,
-      "polarity": 1.0,
-      "evidence_span": "Net income increased 28% and EPS increased 31% to $",
-      "source_id": "GOOGL2025Q1_004",
-      "published_at": 0,
-      "atom_id": "GOOGL2025Q1_004",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.801,
-      "span_score": 1.0,
-      "severity_align": 0.203,
-      "mechanism_hint": 1.0,
-      "claim_id": "GOOGL2025Q1_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Google Services revenue growth",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.8,
       "polarity": 1.0,
       "evidence_span": "Google Services revenues increased 10% to $84.1 billion, reflecting the strong momentum across Google Search & other and YouTube ads.",
       "source_id": "GOOGL2025Q1_002",
@@ -73,15 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.827,
+      "confidence": 0.814,
       "span_score": 1.0,
-      "severity_align": 0.306,
+      "severity_align": 0.256,
       "mechanism_hint": 1.0,
-      "claim_id": "GOOGL2025Q1_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GOOGL2025Q1_C000"
+    },
+    {
+      "cause": "Net income increased 28% and EPS increased 31%",
+      "effect": "earnings surprise triggers upward EPS estimate revisions",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Net income increased 28% and EPS increased 31% to $",
+      "source_id": "GOOGL2025Q1_004",
+      "published_at": 0,
+      "atom_id": "GOOGL2025Q1_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.814,
+      "span_score": 1.0,
+      "severity_align": 0.253,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "GOOGL2025Q1_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

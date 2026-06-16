@@ -5,39 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T02:49:11+00:00",
+  "computed_at": "2026-06-16T09:57:14+00:00",
   "accepted": [
     {
-      "cause": "Diluted Net EPS increase of 51%",
-      "effect": "fundamental upside",
+      "cause": "Diluted Net EPS increase of 19% to $0.82",
+      "effect": "earnings surprise lifting valuation multiples",
       "mechanism": "fundamental",
-      "severity": 0.9,
-      "polarity": -1.0,
-      "evidence_span": "Diluted Net EPS $5.59, +51%",
-      "source_id": "PG2017Q3_002",
-      "published_at": 0,
-      "atom_id": "PG2017Q3_002",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.784,
-      "span_score": 1.0,
-      "severity_align": 0.138,
-      "mechanism_hint": 1.0,
-      "claim_id": "PG2017Q3_C002",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Diluted Net EPS increase of 19%",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.7,
       "polarity": -1.0,
       "evidence_span": "Diluted Net EPS $0.82, +19%",
       "source_id": "PG2017Q3_000",
@@ -49,49 +23,47 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.81,
+      "confidence": 0.832,
       "span_score": 1.0,
-      "severity_align": 0.238,
+      "severity_align": 0.338,
       "mechanism_hint": 1.0,
-      "claim_id": "PG2017Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PG2017Q3_C001"
     },
     {
-      "cause": "Core EPS increase of 8%",
-      "effect": "fundamental upside",
+      "cause": "Core gross margin contraction of 10 basis points",
+      "effect": "margin compression concern impacting profitability outlook",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.6,
       "polarity": -1.0,
-      "evidence_span": "Core EPS $0.85, +8%",
-      "source_id": "PG2017Q3_001",
+      "evidence_span": "CHANGE VERSUS YEAR AGO CORE GROSS MARGIN (10 ) BPS CORE SELLING GENERAL & ADMINISTRATIVE EXPENSE AS A % OF NET SALES (220 ) BPS",
+      "source_id": "PG2017Q3_025",
       "published_at": 0,
-      "atom_id": "PG2017Q3_001",
+      "atom_id": "PG2017Q3_025",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.801,
-      "span_score": 0.933,
-      "severity_align": 0.35,
+      "confidence": 0.854,
+      "span_score": 0.941,
+      "severity_align": 0.571,
       "mechanism_hint": 1.0,
-      "claim_id": "PG2017Q3_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PG2017Q3_C000"
     },
     {
-      "cause": "Core EPS increase of 7%",
-      "effect": "fundamental upside",
+      "cause": "Net sales unchanged versus prior year period",
+      "effect": "revenue stagnation limiting top-line growth narrative",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.4,
       "polarity": -1.0,
-      "evidence_span": "Core EPS $3.92, +7%",
+      "evidence_span": "reported April - June 2017 quarter net sales were $16.1 billion, unchanged versus the prior year period including a negative two percentage point impact from foreign exchange",
       "source_id": "PG2017Q3_003",
       "published_at": 0,
       "atom_id": "PG2017Q3_003",
@@ -101,23 +73,40 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.793,
-      "span_score": 0.864,
-      "severity_align": 0.471,
+      "confidence": 0.919,
+      "span_score": 0.982,
+      "severity_align": 0.771,
       "mechanism_hint": 1.0,
-      "claim_id": "PG2017Q3_C003",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PG2017Q3_C002"
     }
   ],
-  "rejected": [],
-  "claim_count": 4,
-  "rejected_count": 0,
+  "rejected": [
+    {
+      "cause": "Core EPS growth of 8% currency-neutral",
+      "effect": "estimate revision upside driven by core earnings beat",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Core EPS $0.85, +8% FY'17: Net Sales Unchanged",
+      "source_id": "PG2017Q3_001",
+      "published_at": 0,
+      "atom_id": "PG2017Q3_001",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

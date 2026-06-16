@@ -38,10 +38,14 @@ Desktop.ini
 results/full_run/
 results/full_run_v2/
 results/full_run_v3/
+results/reproduce/
+results/benchmark/reproduce/
 data/calibration_raw/
 data/market/cache/
 data/platform_store/
 data/benchmark/cache/
+data/benchmark/full_llm*.log
+data/benchmark/catalog_quality_refresh.log
 
 # Local tooling (not part of project)
 .tools/

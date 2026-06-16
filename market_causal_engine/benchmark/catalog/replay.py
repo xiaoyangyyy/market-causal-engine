@@ -135,4 +135,13 @@ def replay_catalog_feed_event(
     result["replay_mode"] = "catalog_feed" if not atom_filter else f"catalog_feed:{atom_filter}"
     result["domain"] = domain
     result["simulated_direction"] = infer_simulated_direction(result, event=event.to_dict())
+    pit_manifest = {
+        "event_date": event.event_date,
+        "filing_date": manifest.get("filing_date") or manifest.get("aligned_filing_date"),
+        "aligned_filing_date": manifest.get("aligned_filing_date"),
+        "time_axis": manifest.get("time_axis"),
+    }
+    from market_causal_engine.platform.pit_hardening import attach_pit_audit
+
+    attach_pit_audit(result, manifest=pit_manifest, atoms=all_atoms, as_of_minutes=until, policy=policy)
     return result

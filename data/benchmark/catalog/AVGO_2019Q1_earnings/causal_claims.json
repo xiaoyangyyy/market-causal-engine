@@ -5,41 +5,59 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:45:39+00:00",
+  "computed_at": "2026-06-16T11:24:06+00:00",
   "accepted": [
     {
-      "cause": "negative fundamental signal",
-      "effect": "valuation de-rating",
-      "mechanism": "fundamental",
-      "severity": 0.171,
+      "cause": "Aggregate commitment of revolving lenders equal to $5.0 billion",
+      "effect": "Liquidity availability for multicurrency letters of credit",
+      "mechanism": "liquidity",
+      "severity": 0.5,
       "polarity": -1.0,
-      "evidence_span": "(Exact Name of Registrant as Specified in Charter) Delaware 001-38449 35-2617337 (State or other jurisdiction of incorporation) (Commission File Number) (IRS Employer Identificatio",
-      "source_id": "AVGO2019Q1_000",
+      "evidence_span": "Initially, the aggregate commitment of all revolving lenders under the Credit Agreement is equal to $5.0 billion",
+      "source_id": "AVGO2019Q1_001",
       "published_at": 0,
-      "proposer": "heuristic",
-      "atom_id": "AVGO2019Q1_000",
+      "proposer": "llm",
+      "atom_id": "AVGO2019Q1_001",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.988,
-      "span_score": 0.979,
-      "severity_align": 1.0,
+      "confidence": 0.832,
+      "span_score": 0.957,
+      "severity_align": 0.652,
       "mechanism_hint": 1.0,
       "claim_id": "AVGO2019Q1_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.65,
+      "effect_specificity": 0.25,
       "polarity_aligned": true
     }
   ],
-  "rejected": [],
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "(Exact Name of Registrant as Specified in Charter) Delaware 001-38449 35-2617337",
+      "source_id": "AVGO2019Q1_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "AVGO2019Q1_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
   "claim_count": 1,
-  "rejected_count": 0,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

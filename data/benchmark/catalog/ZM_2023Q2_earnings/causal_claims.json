@@ -5,38 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T03:51:19+00:00",
+  "computed_at": "2026-06-15T15:38:36+00:00",
   "accepted": [
     {
-      "cause": "Year-end customer count growth exceeding $100k revenue threshold",
-      "effect": "Increased confidence in long-term revenue stability",
+      "cause": "Online revenue decline of 10% year over year",
+      "effect": "consumer segment contraction lowers overall growth outlook",
       "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": -1.0,
-      "evidence_span": "Year-end number of customers contributing more than $100,000 in trailing 12 months revenue up approximately 27% year over year",
-      "source_id": "ZM2023Q2_002",
-      "published_at": 0,
-      "atom_id": "ZM2023Q2_002",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.86,
-      "span_score": 0.94,
-      "severity_align": 0.571,
-      "mechanism_hint": 1.0,
-      "claim_id": "ZM2023Q2_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Decline in Online revenue by 10% year over year",
-      "effect": "Concerns over consumer segment contraction",
-      "mechanism": "fundamental",
-      "severity": 0.5,
+      "severity": 0.8,
       "polarity": -1.0,
       "evidence_span": "Online revenue was $481.7 million, down 10% year over year",
       "source_id": "ZM2023Q2_005",
@@ -48,18 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.868,
+      "confidence": 0.795,
       "span_score": 0.943,
-      "severity_align": 0.599,
+      "severity_align": 0.299,
       "mechanism_hint": 1.0,
-      "claim_id": "ZM2023Q2_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ZM2023Q2_C002"
     },
     {
       "cause": "Enterprise revenue growth of 18% year over year",
-      "effect": "fundamental upside",
+      "effect": "enterprise segment strength offsets online decline",
       "mechanism": "fundamental",
       "severity": 0.7,
       "polarity": -1.0,
@@ -73,15 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.82,
+      "confidence": 0.819,
       "span_score": 0.928,
       "severity_align": 0.439,
       "mechanism_hint": 1.0,
-      "claim_id": "ZM2023Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ZM2023Q2_C001"
+    },
+    {
+      "cause": "Fourth quarter total revenue up 4% year over year",
+      "effect": "revenue growth rate deceleration concern",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Fourth quarter total revenue of $1,117.8 million, up 4% year over year as reported",
+      "source_id": "ZM2023Q2_000",
+      "published_at": 0,
+      "atom_id": "ZM2023Q2_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.84,
+      "span_score": 0.913,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ZM2023Q2_C000"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:52:12+00:00",
+  "computed_at": "2026-06-15T14:58:25+00:00",
   "accepted": [
     {
-      "cause": "Net revenue of $6.18 billion, growing 13% on a spot and FXN basis",
-      "effect": "Revenue growth exceeding expectations",
+      "cause": "GAAP EPS beat and revenue growth",
+      "effect": "estimate revision upside driven by EPS beat and 13% revenue growth",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": -1.0,
-      "evidence_span": "net revenue of $6.18 billion, growing 13% on a spot and FXN basis",
+      "evidence_span": "net revenue of $6.18 billion, growing 13% on a spot and FXN basis • GAAP EPS of $0.92 compared to $0.86 in Q3’20",
       "source_id": "PYPL2021Q4_001",
       "published_at": 0,
       "atom_id": "PYPL2021Q4_001",
@@ -23,47 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.804,
-      "span_score": 0.966,
-      "severity_align": 0.291,
-      "mechanism_hint": 1.0,
-      "claim_id": "PYPL2021Q4_C000",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "EPS expected to grow ~19% to ~$",
-      "effect": "Strong forward earnings guidance",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": -1.0,
-      "evidence_span": "EPS expected to grow ~19% to ~$",
-      "source_id": "PYPL2021Q4_005",
-      "published_at": 0,
-      "atom_id": "PYPL2021Q4_005",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.823,
+      "confidence": 0.853,
       "span_score": 1.0,
-      "severity_align": 0.291,
+      "severity_align": 0.241,
       "mechanism_hint": 1.0,
-      "claim_id": "PYPL2021Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "PYPL2021Q4_C000"
     },
     {
-      "cause": "Venmo on Amazon.com starting in 2022",
-      "effect": "Strategic partnership expanding user base",
-      "mechanism": "fundamental",
+      "cause": "Venmo integration with Amazon announced",
+      "effect": "growth narrative reinforcement via new merchant adoption",
+      "mechanism": "sentiment",
       "severity": 0.7,
       "polarity": -1.0,
-      "evidence_span": "will be able to pay with Venmo on Amazon.com starting in 2022",
+      "evidence_span": "will be able to pay with Venmo on Amazon.com starting in 2022 President and CEO Dan Schulman USD $ USD $ YoY Change YoY Change EPS $0.92 7% $1.11 4% GAAP Non-GAAP Net Revenues $6.18B 13%* $6.18B 13%* Operating Income $1.04B 7% $1.47B (1%) Q3’21 Highlights * On a spot and FXN basi",
       "source_id": "PYPL2021Q4_006",
       "published_at": 0,
       "atom_id": "PYPL2021Q4_006",
@@ -73,42 +48,45 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.809,
-      "span_score": 0.894,
+      "confidence": 0.862,
+      "span_score": 1.0,
       "severity_align": 0.471,
       "mechanism_hint": 1.0,
-      "claim_id": "PYPL2021Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    }
-  ],
-  "rejected": [
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PYPL2021Q4_C001"
+    },
     {
-      "cause": "GAAP EPS of $0.92 compared to $0.86 in Q3'20",
-      "effect": "Positive earnings surprise driving stock price",
+      "cause": "Operating income decline on non-GAAP basis",
+      "effect": "margin compression concern despite revenue growth",
       "mechanism": "fundamental",
-      "severity": 0.85,
-      "polarity": 1.0,
-      "evidence_span": "GAAP EPS of $0.92 compared to $0.86 in Q3'20",
-      "source_id": "PYPL2021Q4_001",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Operating Income $1.04B 7% $1.47B (1%) Q3’21 Highlights * On a spot and FXN basi",
+      "source_id": "PYPL2021Q4_006",
       "published_at": 0,
-      "atom_id": "PYPL2021Q4_001",
+      "atom_id": "PYPL2021Q4_006",
       "validation": {
-        "passed": false,
-        "errors": [
-          "evidence_span_not_in_atom_text"
-        ],
+        "passed": true,
+        "errors": [],
         "warnings": []
       },
-      "proposer": "llm_event"
+      "proposer": "llm_event",
+      "confidence": 0.837,
+      "span_score": 0.907,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PYPL2021Q4_C002"
     }
   ],
+  "rejected": [],
   "claim_count": 3,
-  "rejected_count": 1,
+  "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

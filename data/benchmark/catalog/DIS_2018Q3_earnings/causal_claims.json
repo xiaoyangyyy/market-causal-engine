@@ -5,61 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T14:33:02+00:00",
+  "computed_at": "2026-06-16T10:52:48+00:00",
   "accepted": [
     {
-      "cause": "Lower average viewership reducing impressions",
-      "effect": "Decrease in advertising revenue",
-      "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": -1.0,
-      "evidence_span": "The decrease in advertising revenue was due to lower impressions from a decline in average viewership.",
-      "source_id": "DIS2018Q3_007",
-      "published_at": 0,
-      "atom_id": "DIS2018Q3_007",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.871,
-      "span_score": 1.0,
-      "severity_align": 0.485,
-      "mechanism_hint": 1.0,
-      "claim_id": "DIS2018Q3_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "One less NBA final game",
-      "effect": "Adverse impact on advertising revenue",
-      "mechanism": "fundamental",
-      "severity": 0.5,
-      "polarity": -1.0,
-      "evidence_span": "Advertising revenue was adversely impacted by one less NBA final game.",
-      "source_id": "DIS2018Q3_009",
-      "published_at": 0,
-      "atom_id": "DIS2018Q3_009",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.891,
-      "span_score": 1.0,
-      "severity_align": 0.565,
-      "mechanism_hint": 1.0,
-      "claim_id": "DIS2018Q3_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
       "cause": "EPS increase of 18%",
-      "effect": "fundamental upside",
+      "effect": "earnings surprise drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -73,15 +23,64 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.799,
+      "confidence": 0.801,
       "span_score": 1.0,
       "severity_align": 0.196,
       "mechanism_hint": 1.0,
-      "claim_id": "DIS2018Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "DIS2018Q3_C000"
+    },
+    {
+      "cause": "Advertising revenue decline due to lower viewership",
+      "effect": "revenue headwind from viewership decline lowers top-line outlook",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "The decrease in advertising revenue was due to lower impressions from a decline in average viewership.",
+      "source_id": "DIS2018Q3_007",
+      "published_at": 0,
+      "atom_id": "DIS2018Q3_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.865,
+      "span_score": 1.0,
+      "severity_align": 0.485,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "DIS2018Q3_C001"
+    },
+    {
+      "cause": "Advertising revenue impacted by one less NBA final game",
+      "effect": "event-driven revenue variance creates earnings volatility concern",
+      "mechanism": "fundamental",
+      "severity": 0.4,
+      "polarity": -1.0,
+      "evidence_span": "Advertising revenue was adversely impacted by one less NBA final game.",
+      "source_id": "DIS2018Q3_009",
+      "published_at": 0,
+      "atom_id": "DIS2018Q3_009",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.904,
+      "span_score": 1.0,
+      "severity_align": 0.665,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "DIS2018Q3_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

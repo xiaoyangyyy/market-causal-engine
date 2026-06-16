@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T02:44:18+00:00",
+  "computed_at": "2026-06-16T09:33:13+00:00",
   "accepted": [
     {
-      "cause": "Earnings Per Share Up 15%",
-      "effect": "Q2 Record Earnings",
+      "cause": "Q2 EPS up 15% to record",
+      "effect": "estimate revision upside driven by record earnings per share",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -23,43 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.786,
+      "confidence": 0.79,
       "span_score": 1.0,
       "severity_align": 0.146,
       "mechanism_hint": 1.0,
-      "claim_id": "SBUX2017Q2_C000",
-      "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Consolidated operating income increased 8% to a Q2 record",
-      "effect": "Record Operating Income",
-      "mechanism": "fundamental",
-      "severity": 0.85,
-      "polarity": 1.0,
-      "evidence_span": "Consolidated operating income increased 8% to a Q2 record $935 million",
-      "source_id": "SBUX2017Q2_001",
-      "published_at": 0,
-      "atom_id": "SBUX2017Q2_001",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.775,
-      "span_score": 0.9,
-      "severity_align": 0.321,
-      "mechanism_hint": 1.0,
-      "claim_id": "SBUX2017Q2_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "SBUX2017Q2_C000"
     },
     {
-      "cause": "Consolidated net revenues grew 6% to a Q2 record",
-      "effect": "Record Revenue Performance",
+      "cause": "Consolidated net revenues grew 6% to record $5.3B",
+      "effect": "top-line growth supports revenue estimate upgrades",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -73,47 +48,45 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.772,
+      "confidence": 0.776,
       "span_score": 0.894,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "SBUX2017Q2_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "SBUX2017Q2_C001"
     },
     {
-      "cause": "membership in Starbucks Rewards grew",
-      "effect": "Increased Customer Loyalty",
+      "cause": "EMEA segment revenues down 14% year-over-year",
+      "effect": "regional revenue decline creates segment valuation drag",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.6,
       "polarity": -1.0,
-      "evidence_span": "membership in Starbucks Rewards grew",
-      "source_id": "SBUX2017Q2_002",
+      "evidence_span": "Revenues $231.7 $268.3 (14)% Operating Income $27.7 $27.6 0%",
+      "source_id": "SBUX2017Q2_011",
       "published_at": 0,
-      "atom_id": "SBUX2017Q2_002",
+      "atom_id": "SBUX2017Q2_011",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.836,
-      "span_score": 1.0,
-      "severity_align": 0.344,
+      "confidence": 0.83,
+      "span_score": 0.893,
+      "severity_align": 0.571,
       "mechanism_hint": 1.0,
-      "claim_id": "SBUX2017Q2_C003",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "SBUX2017Q2_C002"
     }
   ],
   "rejected": [],
-  "claim_count": 4,
+  "claim_count": 3,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

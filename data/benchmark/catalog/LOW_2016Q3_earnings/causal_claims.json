@@ -5,7 +5,7 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T11:37:18+00:00",
+  "computed_at": "2026-06-16T08:53:07+00:00",
   "accepted": [
     {
       "cause": "Diluted earnings per share increased 9.2 percent",
@@ -83,31 +83,6 @@
       "polarity_aligned": true
     },
     {
-      "cause": "REPORTS SECOND QUARTER SALES AND EARNINGS",
-      "effect": "estimate revision",
-      "mechanism": "fundamental",
-      "severity": 0.5,
-      "polarity": -1.0,
-      "evidence_span": "REPORTS SECOND QUARTER SALES AND EARNINGS",
-      "source_id": "LOW2016Q3_000",
-      "published_at": 0,
-      "proposer": "llm",
-      "atom_id": "LOW2016Q3_000",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "confidence": 0.878,
-      "span_score": 1.0,
-      "severity_align": 0.547,
-      "mechanism_hint": 1.0,
-      "claim_id": "LOW2016Q3_C000",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
       "cause": "diluted earnings per share",
       "effect": "earnings estimate revision",
       "mechanism": "fundamental",
@@ -128,6 +103,31 @@
       "severity_align": 0.541,
       "mechanism_hint": 1.0,
       "claim_id": "LOW2016Q3_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "diluted earnings per share",
+      "effect": "earnings estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "diluted earnings per share by $",
+      "source_id": "LOW2016Q3_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "LOW2016Q3_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.877,
+      "span_score": 1.0,
+      "severity_align": 0.541,
+      "mechanism_hint": 1.0,
+      "claim_id": "LOW2016Q3_C005",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true

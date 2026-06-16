@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:54:54+00:00",
+  "computed_at": "2026-06-15T15:07:16+00:00",
   "accepted": [
     {
-      "cause": "Consolidated Operating Profit increased 91.0% year-over-year",
-      "effect": "estimate upside",
+      "cause": "Consolidated Operating Profit of $3.9B, Up 91.0% from Last Year",
+      "effect": "operating profit surge drives fundamental valuation upside",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -23,19 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.764,
+      "confidence": 0.769,
       "span_score": 0.917,
       "severity_align": 0.239,
       "mechanism_hint": 1.0,
-      "claim_id": "UPS2022Q1_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UPS2022Q1_C000"
     },
     {
-      "cause": "Diluted EPS of $3.52, up 37.7% on an Adjusted Basis",
-      "effect": "estimate revision upside",
+      "cause": "Diluted EPS of $3.52",
+      "effect": "strong EPS beat triggers estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -49,41 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.801,
+      "confidence": 0.803,
       "span_score": 1.0,
       "severity_align": 0.204,
       "mechanism_hint": 1.0,
-      "claim_id": "UPS2022Q1_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UPS2022Q1_C001"
     },
     {
-      "cause": "Consolidated Revenues increased 11.5% year-over-year",
-      "effect": "estimate upside",
+      "cause": "expects consolidated revenue of about $102 billion, an adjusted operating margin of approximately 13.7%",
+      "effect": "full-year revenue and margin guidance sets FY outlook baseline",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": 1.0,
-      "evidence_span": "Consolidated Revenues of $27.8B, Up 11.5% from Last Year",
-      "source_id": "UPS2022Q1_000",
+      "evidence_span": "For the full year 2022, the company expects consolidated revenue of about $102 billion, an adjusted operating margin of approximately 13.7% and adjusted return on invested capital to be above 30%.",
+      "source_id": "UPS2022Q1_013",
       "published_at": 0,
-      "atom_id": "UPS2022Q1_000",
+      "atom_id": "UPS2022Q1_013",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.797,
-      "span_score": 0.909,
-      "severity_align": 0.389,
+      "confidence": 0.845,
+      "span_score": 1.0,
+      "severity_align": 0.394,
       "mechanism_hint": 1.0,
-      "claim_id": "UPS2022Q1_C002",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "UPS2022Q1_C002"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

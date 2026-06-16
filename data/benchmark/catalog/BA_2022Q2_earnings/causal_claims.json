@@ -5,40 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:59:22+00:00",
+  "computed_at": "2026-06-15T15:11:55+00:00",
   "accepted": [
     {
-      "cause": "Commercial Airplanes delivery surge",
-      "effect": "Revenue growth and reduced operational losses",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "Commercial Airplanes Deliveries 121 79 53% 216 156 38%",
-      "source_id": "BA2022Q2_004",
-      "published_at": 0,
-      "atom_id": "BA2022Q2_004",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.807,
-      "span_score": 0.889,
-      "severity_align": 0.471,
-      "mechanism_hint": 1.0,
-      "claim_id": "BA2022Q2_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Global Services margin expansion",
-      "effect": "Offsetting profit growth in services division",
+      "cause": "Global Services operating margin expansion to 16.9%",
+      "effect": "high-margin segment growth offsets defense weakness in valuation models",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
-      "evidence_span": "Operating Margin 16.9 % 13.1 % 29% 15.8 % 12.4 % 27%",
+      "evidence_span": "Operating Margin 16.9 % 13.1 % 29% 15.8 % 12.4 % 27% Global Services second-quarter",
       "source_id": "BA2022Q2_006",
       "published_at": 0,
       "atom_id": "BA2022Q2_006",
@@ -48,24 +23,49 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.831,
-      "span_score": 0.887,
+      "confidence": 0.838,
+      "span_score": 0.909,
       "severity_align": 0.571,
       "mechanism_hint": 1.0,
-      "claim_id": "BA2022Q2_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "BA2022Q2_C000"
+    },
+    {
+      "cause": "Commercial Airplanes loss narrowing despite low margins",
+      "effect": "operating loss reduction improves core earnings trajectory expectations",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "Loss from Operations ($242) ($472) NM ($1,101) ($1,328) NM Operating Margin (",
+      "source_id": "BA2022Q2_004",
+      "published_at": 0,
+      "atom_id": "BA2022Q2_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.858,
+      "span_score": 0.905,
+      "severity_align": 0.671,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "BA2022Q2_C001"
     }
   ],
   "rejected": [
     {
-      "cause": "Defense segment operating margin collapse",
-      "effect": "Significant decline in overall profitability",
+      "cause": "Defense segment operating margin collapse to 1.1%",
+      "effect": "segment profitability compression lowers blended EPS estimates",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": -0.8,
-      "evidence_span": "Operating Margin 1.1 % 13.9 % (93)% ($858) $1,363 NM",
+      "evidence_span": "Operating Margin 1.1 % 13.9 % (93)% ($858) $1,363 NM Operating Margin 1.1 % 13.9 % (92)% (7.3) % 9.7 % NM Defe",
       "source_id": "BA2022Q2_005",
       "published_at": 0,
       "atom_id": "BA2022Q2_005",
@@ -83,7 +83,5 @@
   "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

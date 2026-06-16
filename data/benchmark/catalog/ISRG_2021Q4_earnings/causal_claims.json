@@ -5,36 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:47:27+00:00",
+  "computed_at": "2026-06-15T14:57:50+00:00",
   "accepted": [
     {
-      "cause": "20% growth in da Vinci procedure volume",
-      "effect": "20% increase in instruments and accessories revenue",
-      "mechanism": "fundamental",
-      "severity": 0.9,
-      "polarity": 1.0,
-      "evidence_span": "Third quarter 2021 instruments and accessories revenue increased by 20% to $755 million, compared with $631 million in the third quarter of 2020, primarily driven by approximately 20% growth in da Vinci procedure volume.",
-      "source_id": "ISRG2021Q4_007",
-      "published_at": 0,
-      "atom_id": "ISRG2021Q4_007",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.815,
-      "span_score": 1.0,
-      "severity_align": 0.259,
-      "mechanism_hint": 1.0,
-      "claim_id": "ISRG2021Q4_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "da Vinci system placements and procedures growth",
-      "effect": "Higher third quarter revenue",
+      "cause": "Revenue growth driven by procedure volume",
+      "effect": "estimate revision upside on procedure volume growth",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -48,20 +23,45 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.808,
+      "confidence": 0.809,
       "span_score": 1.0,
       "severity_align": 0.231,
       "mechanism_hint": 1.0,
-      "claim_id": "ISRG2021Q4_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ISRG2021Q4_C000"
     },
     {
-      "cause": "55% increase in systems revenue",
-      "effect": "Strong overall revenue performance",
+      "cause": "20% increase in instruments and accessories revenue",
+      "effect": "recurring revenue stream expansion",
       "mechanism": "fundamental",
       "severity": 0.8,
+      "polarity": 1.0,
+      "evidence_span": "Third quarter 2021 instruments and accessories revenue increased by 20% to $755 million, compared with $631 million in the third quarter of 2020, primarily driven by approximately 20% growth in da Vinci procedure volume.",
+      "source_id": "ISRG2021Q4_007",
+      "published_at": 0,
+      "atom_id": "ISRG2021Q4_007",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.837,
+      "span_score": 1.0,
+      "severity_align": 0.359,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ISRG2021Q4_C001"
+    },
+    {
+      "cause": "55% surge in systems revenue",
+      "effect": "capital equipment sales acceleration",
+      "mechanism": "fundamental",
+      "severity": 0.75,
       "polarity": 1.0,
       "evidence_span": "Third quarter 2021 systems revenue increased by 55% to $415 million, compared with $268 million in the third quarter of 2020.",
       "source_id": "ISRG2021Q4_008",
@@ -73,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.825,
+      "confidence": 0.787,
       "span_score": 1.0,
-      "severity_align": 0.299,
+      "severity_align": 0.349,
       "mechanism_hint": 1.0,
-      "claim_id": "ISRG2021Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "effect_specificity": 0.25,
+      "polarity_aligned": true,
+      "claim_id": "ISRG2021Q4_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

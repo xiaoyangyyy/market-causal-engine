@@ -5,36 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:20:49+00:00",
+  "computed_at": "2026-06-16T09:58:50+00:00",
   "accepted": [
     {
-      "cause": "EPS outlook to $2.66 (GAAP)",
-      "effect": "stock price increase",
-      "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": -1.0,
-      "evidence_span": "EPS outlook to $2.66 (GAAP)",
-      "source_id": "INTC2017Q3_008",
-      "published_at": 0,
-      "proposer": "llm",
-      "atom_id": "INTC2017Q3_008",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "confidence": 0.81,
-      "span_score": 1.0,
-      "severity_align": 0.242,
-      "mechanism_hint": 1.0,
-      "claim_id": "INTC2017Q3_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "EPS outlook by $0.10",
-      "effect": "stock price increase",
+      "cause": "EPS outlook reduction",
+      "effect": "estimate revision",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
@@ -48,13 +23,38 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.809,
+      "confidence": 0.81,
       "span_score": 1.0,
       "severity_align": 0.237,
       "mechanism_hint": 1.0,
       "claim_id": "INTC2017Q3_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "expected profit margin component recorded under business combination accounting principles",
+      "effect": "margin shift",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": 1.0,
+      "evidence_span": "exclude the expected profit margin component that is recorded under business combination accounting principles",
+      "source_id": "INTC2017Q3_028",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "INTC2017Q3_028",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.873,
+      "span_score": 0.934,
+      "severity_align": 0.671,
+      "mechanism_hint": 1.0,
+      "claim_id": "INTC2017Q3_C005",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
@@ -73,7 +73,7 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
+      "confidence": 0.9,
       "span_score": 1.0,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
@@ -82,14 +82,64 @@
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.042,
+      "polarity": -1.0,
+      "evidence_span": "EPS outlook to $2.66 (GAAP) and $",
+      "source_id": "INTC2017Q3_008",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "INTC2017Q3_008",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.9,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "INTC2017Q3_C002",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.042,
+      "polarity": -1.0,
+      "evidence_span": "revenue and gross margin trends of",
+      "source_id": "INTC2017Q3_026",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "INTC2017Q3_026",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.9,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "INTC2017Q3_C004",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
     }
   ],
   "rejected": [],
-  "claim_count": 3,
+  "claim_count": 5,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

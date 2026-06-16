@@ -5,15 +5,40 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T10:35:29+00:00",
+  "computed_at": "2026-06-15T14:22:54+00:00",
   "accepted": [
     {
-      "cause": "Fourth quarter revenue outlook of $3.41B to $3.69B",
-      "effect": "Investor confidence in near-term revenue stability",
+      "cause": "Revenue increased 18% sequentially with notable strength from the rebound of automotive demand",
+      "effect": "sequential revenue growth drives estimate revision upside",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Revenue increased 18% sequentially with notable strength from the rebound of automotive demand and growing demand from personal elect",
+      "source_id": "TXN2020Q4_001",
+      "published_at": 0,
+      "atom_id": "TXN2020Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.801,
+      "span_score": 0.945,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TXN2020Q4_C000"
+    },
+    {
+      "cause": "Q4 revenue outlook range of $3.41 billion to $3.69 billion",
+      "effect": "forward guidance sets baseline for FY valuation models",
+      "mechanism": "fundamental",
+      "severity": 0.7,
       "polarity": -1.0,
-      "evidence_span": "TI’s fourth quarter outlook is for revenue in the range of $3.41 billion to $3.69 billion",
+      "evidence_span": "TI’s fourth quarter outlook is for revenue in the range of $3.41 billion to $3.69 billion, and earnings per share between $1.20 and $1.40",
       "source_id": "TXN2020Q4_005",
       "published_at": 0,
       "atom_id": "TXN2020Q4_005",
@@ -23,18 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.812,
-      "span_score": 0.922,
-      "severity_align": 0.421,
+      "confidence": 0.842,
+      "span_score": 0.961,
+      "severity_align": 0.471,
       "mechanism_hint": 1.0,
-      "claim_id": "TXN2020Q4_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "TXN2020Q4_C001"
     },
     {
-      "cause": "Revenue grew 1% year-over-year",
-      "effect": "Modest positive sentiment on annual growth",
+      "cause": "Revenue grew 1% from the same quarter a year ago",
+      "effect": "low year-over-year growth limits upside surprise potential",
       "mechanism": "fundamental",
       "severity": 0.4,
       "polarity": 1.0,
@@ -48,40 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.914,
+      "confidence": 0.902,
       "span_score": 1.0,
       "severity_align": 0.655,
       "mechanism_hint": 1.0,
-      "claim_id": "TXN2020Q4_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Revenue increased 18% sequentially",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.85,
-      "polarity": 1.0,
-      "evidence_span": "Revenue increased 18% sequentially with notable strength from the rebound of automotive demand",
-      "source_id": "TXN2020Q4_001",
-      "published_at": 0,
-      "atom_id": "TXN2020Q4_001",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.785,
-      "span_score": 0.917,
-      "severity_align": 0.321,
-      "mechanism_hint": 1.0,
-      "claim_id": "TXN2020Q4_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "TXN2020Q4_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

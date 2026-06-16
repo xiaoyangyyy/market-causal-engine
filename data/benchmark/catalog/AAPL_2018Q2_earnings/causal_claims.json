@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T08:25:44+00:00",
+  "computed_at": "2026-06-16T10:47:17+00:00",
   "accepted": [
     {
-      "cause": "Earnings per share growth of 30 percent",
-      "effect": "estimate revision upside",
+      "cause": "EPS growth of 30 percent",
+      "effect": "estimate revision upside driven by earnings beat",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": -1.0,
@@ -23,46 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.772,
+      "confidence": 0.776,
       "span_score": 0.917,
       "severity_align": 0.271,
       "mechanism_hint": 1.0,
-      "claim_id": "AAPL2018Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "AAPL2018Q2_C000"
     },
     {
-      "cause": "Revenue growth in Greater China and Japan exceeding 20%",
-      "effect": "Increased investor confidence in geographic expansion",
+      "cause": "Revenue increase of $61.1 billion",
+      "effect": "top-line growth validates revenue estimate revisions",
       "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": 1.0,
-      "evidence_span": "over 20% growth in Greater China and Japan",
-      "source_id": "AAPL2018Q2_002",
-      "published_at": 0,
-      "atom_id": "AAPL2018Q2_002",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.777,
-      "span_score": 0.88,
-      "severity_align": 0.371,
-      "mechanism_hint": 1.0,
-      "claim_id": "AAPL2018Q2_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Total revenue increase to $61.1 billion",
-      "effect": "Bullish sentiment driven by top-line expansion",
-      "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.85,
       "polarity": -1.0,
       "evidence_span": "revenue of $61.1 billion, an increase of",
       "source_id": "AAPL2018Q2_001",
@@ -74,14 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.837,
+      "confidence": 0.801,
       "span_score": 1.0,
-      "severity_align": 0.346,
+      "severity_align": 0.196,
       "mechanism_hint": 1.0,
-      "claim_id": "AAPL2018Q2_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "AAPL2018Q2_C001"
+    },
+    {
+      "cause": "Gross margin guidance between 38% and 38.5%",
+      "effect": "margin stability supports valuation multiple maintenance",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "gross margin between 38 percent and 38.5",
+      "source_id": "AAPL2018Q2_003",
+      "published_at": 0,
+      "atom_id": "AAPL2018Q2_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.856,
+      "span_score": 1.0,
+      "severity_align": 0.446,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "AAPL2018Q2_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

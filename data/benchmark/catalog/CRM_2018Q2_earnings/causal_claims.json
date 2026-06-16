@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T08:15:50+00:00",
+  "computed_at": "2026-06-16T10:35:59+00:00",
   "accepted": [
     {
       "cause": "FY19 Non-GAAP EPS guidance raised to $2.25-$2.27",
-      "effect": "estimate revision upside",
+      "effect": "estimate revision upside on adjusted earnings",
       "mechanism": "fundamental",
       "severity": 0.85,
-      "polarity": -1.0,
-      "evidence_span": "Non-GAAP EPS $2.02 $2.04 $2.25 $2.27",
+      "polarity": 1.0,
+      "evidence_span": "Non-GAAP EPS $2.02 $2.04 $2.25 $2.27 Operating Cash Flow Growth 20% 21% No change No change",
       "source_id": "CRM2018Q2_008",
       "published_at": 0,
       "atom_id": "CRM2018Q2_008",
@@ -23,21 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.762,
-      "span_score": 0.876,
+      "confidence": 0.786,
+      "span_score": 0.915,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "CRM2018Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "CRM2018Q2_C000"
     },
     {
-      "cause": "Unearned revenue growth projected at 23%-24% YoY",
-      "effect": "Strong future revenue visibility drives investor confidence",
+      "cause": "Unearned revenue growth projected consistent with prior deferred revenue guidance",
+      "effect": "revenue recognition stability maintains growth narrative",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.6,
       "polarity": 1.0,
       "evidence_span": "Unearned revenue growth is projected to be consistent with previously guided deferred revenue growth of 23% to 24% year-over-year.",
       "source_id": "CRM2018Q2_004",
@@ -49,47 +48,40 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.851,
+      "confidence": 0.868,
       "span_score": 1.0,
-      "severity_align": 0.402,
+      "severity_align": 0.502,
       "mechanism_hint": 1.0,
-      "claim_id": "CRM2018Q2_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "FY19 Revenue guidance maintained at $12.66B-$12.71B",
-      "effect": "Stable revenue outlook supports bullish sentiment",
-      "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": -1.0,
-      "evidence_span": "Revenue $12.60B $12.65B $12.66B $12.71B",
-      "source_id": "CRM2018Q2_008",
-      "published_at": 0,
-      "atom_id": "CRM2018Q2_008",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.826,
-      "span_score": 0.878,
-      "severity_align": 0.571,
-      "mechanism_hint": 1.0,
-      "claim_id": "CRM2018Q2_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "CRM2018Q2_C001"
     }
   ],
-  "rejected": [],
-  "claim_count": 3,
-  "rejected_count": 0,
+  "rejected": [
+    {
+      "cause": "ASC 606 adoption anticipated with immaterial revenue benefit",
+      "effect": "accounting change neutralizes revenue variance expectations",
+      "mechanism": "fundamental",
+      "severity": 0.3,
+      "polarity": 0.0,
+      "evidence_span": "expected to have an immaterial benefit to the company's revenue",
+      "source_id": "CRM2018Q2_000",
+      "published_at": 0,
+      "atom_id": "CRM2018Q2_000",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 2,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

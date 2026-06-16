@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T02:59:55+00:00",
+  "computed_at": "2026-06-16T10:40:30+00:00",
   "accepted": [
     {
-      "cause": "Raised 2018 Full-Year Revenue Range",
-      "effect": "estimate revision upside",
+      "cause": "Company Narrows and Raises 2018 Full-Year Revenue Range",
+      "effect": "revenue guidance expansion increases FY top-line outlook",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -23,47 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.787,
+      "confidence": 0.79,
       "span_score": 0.922,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "MRK2018Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "MRK2018Q2_C000"
     },
     {
-      "cause": "First-Quarter Non-GAAP EPS of $1.05",
-      "effect": "estimate revision upside",
+      "cause": "Company Lowers 2018 GAAP EPS Range",
+      "effect": "GAAP earnings guidance cut lowers bottom-line expectations",
       "mechanism": "fundamental",
       "severity": 0.75,
-      "polarity": -1.0,
-      "evidence_span": "First-Quarter Non-GAAP EPS was $1.05",
-      "source_id": "MRK2018Q2_001",
-      "published_at": 0,
-      "atom_id": "MRK2018Q2_001",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.787,
-      "span_score": 0.876,
-      "severity_align": 0.421,
-      "mechanism_hint": 1.0,
-      "claim_id": "MRK2018Q2_C001",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Lowered 2018 GAAP EPS Range",
-      "effect": "valuation de-rating",
-      "mechanism": "fundamental",
-      "severity": 0.6,
       "polarity": -1.0,
       "evidence_span": "Company Lowers 2018 GAAP EPS Range to be Between $2.45 and $2",
       "source_id": "MRK2018Q2_001",
@@ -75,15 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.834,
+      "confidence": 0.798,
       "span_score": 0.894,
-      "severity_align": 0.571,
+      "severity_align": 0.421,
       "mechanism_hint": 1.0,
-      "claim_id": "MRK2018Q2_C002",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "MRK2018Q2_C001"
+    },
+    {
+      "cause": "First-Quarter Non-GAAP EPS was $1.05",
+      "effect": "Non-GAAP earnings beat drives immediate valuation re-rating",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "First-Quarter Non-GAAP EPS was $1.05",
+      "source_id": "MRK2018Q2_001",
+      "published_at": 0,
+      "atom_id": "MRK2018Q2_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.822,
+      "span_score": 0.876,
+      "severity_align": 0.571,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "MRK2018Q2_C002"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

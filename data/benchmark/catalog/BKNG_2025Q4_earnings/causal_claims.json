@@ -5,38 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T13:41:33+00:00",
+  "computed_at": "2026-06-15T17:04:39+00:00",
   "accepted": [
     {
-      "cause": "Alternative accommodation room nights increased by about 10%",
-      "effect": "Growth in key business segment",
+      "cause": "Revenue increased 13% (8% on a CC basis)",
+      "effect": "estimate revision upside driven by top-line growth",
       "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": 1.0,
-      "evidence_span": "Alternative accommodation room nights at Booking.com increased by about 10%",
-      "source_id": "BKNG2025Q4_004",
-      "published_at": 0,
-      "atom_id": "BKNG2025Q4_004",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.84,
-      "span_score": 0.904,
-      "severity_align": 0.571,
-      "mechanism_hint": 1.0,
-      "claim_id": "BKNG2025Q4_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Revenue increased 13% on a currency-neutral basis",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": 1.0,
       "evidence_span": "Gross bookings increased 14% (10% on a CC basis) and revenue increased 13% (8% on a CC basis)",
       "source_id": "BKNG2025Q4_004",
@@ -48,21 +23,45 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.797,
+      "confidence": 0.787,
       "span_score": 0.916,
-      "severity_align": 0.371,
+      "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "BKNG2025Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "BKNG2025Q4_C000"
     },
     {
-      "cause": "Net Income margin of 30.5% reported",
-      "effect": "Investor confidence in profitability",
+      "cause": "Alternative accommodation room nights increased by about 10%",
+      "effect": "growth narrative reinforcement in key segment",
       "mechanism": "fundamental",
       "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "Alternative accommodation room nights at Booking.com increased by about 10%",
+      "source_id": "BKNG2025Q4_004",
+      "published_at": 0,
+      "atom_id": "BKNG2025Q4_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.814,
+      "span_score": 0.904,
+      "severity_align": 0.471,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "BKNG2025Q4_C002"
+    },
+    {
+      "cause": "Net Income margin of 30.5% compared to 31.5% in Q3",
+      "effect": "margin compression concern reducing profitability outlook",
+      "mechanism": "fundamental",
+      "severity": 0.6,
       "polarity": -1.0,
       "evidence_span": "Net Income margin of 30.5% (31.5% in Q3",
       "source_id": "BKNG2025Q4_004",
@@ -74,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.801,
+      "confidence": 0.823,
       "span_score": 0.878,
-      "severity_align": 0.471,
+      "severity_align": 0.571,
       "mechanism_hint": 1.0,
-      "claim_id": "BKNG2025Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "BKNG2025Q4_C001"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:31+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,38 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:53:22+00:00",
+  "computed_at": "2026-06-15T15:00:12+00:00",
   "accepted": [
     {
-      "cause": "Expect to close the year between $4.079 to $4.081 billion in total revenue, representing approximately 54% year-over-year growth",
-      "effect": "Bullish outlook driven by high growth guidance",
+      "cause": "Q3 revenue growth of 35% year over year",
+      "effect": "revenue growth validates top-line expansion narrative",
       "mechanism": "fundamental",
-      "severity": 0.9,
-      "polarity": 1.0,
-      "evidence_span": "Looking forward, we expect to close the year between $4.079 to $4.081 billion in total revenue, representing approximately 54% year-over-year growth, alongside strong profitability and operating cash flow growth.",
-      "source_id": "ZM2021Q4_001",
-      "published_at": 0,
-      "atom_id": "ZM2021Q4_001",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.814,
-      "span_score": 1.0,
-      "severity_align": 0.254,
-      "mechanism_hint": 1.0,
-      "claim_id": "ZM2021Q4_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Third quarter total revenue of $1,050.8 million, up 35% year over year",
-      "effect": "estimate revision upside",
-      "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.8,
       "polarity": -1.0,
       "evidence_span": "Third quarter total revenue of $1,050.8 million, up 35% year over year",
       "source_id": "ZM2021Q4_000",
@@ -48,21 +23,45 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.775,
+      "confidence": 0.79,
       "span_score": 0.9,
-      "severity_align": 0.321,
+      "severity_align": 0.371,
       "mechanism_hint": 1.0,
-      "claim_id": "ZM2021Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ZM2021Q4_C000"
     },
     {
-      "cause": "Number of customers contributing more than $100,000 in TTM revenue up 94% year over year",
-      "effect": "Increased investor confidence in enterprise adoption",
+      "cause": "Full year revenue guidance of $4.079 to $4.081 billion",
+      "effect": "guidance sets high bar for FY revenue expectations",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "Looking forward, we expect to close the year between $4.079 to $4.081 billion in total revenue",
+      "source_id": "ZM2021Q4_001",
+      "published_at": 0,
+      "atom_id": "ZM2021Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.827,
+      "span_score": 0.939,
+      "severity_align": 0.454,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ZM2021Q4_C001"
+    },
+    {
+      "cause": "Customer count contributing over $100k up 94% year over year",
+      "effect": "enterprise adoption metric strengthens growth sustainability view",
+      "mechanism": "fundamental",
+      "severity": 0.6,
       "polarity": -1.0,
       "evidence_span": "Number of customers contributing more than $100,000 in TTM revenue up 94% year over year",
       "source_id": "ZM2021Q4_000",
@@ -74,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.795,
+      "confidence": 0.84,
       "span_score": 0.913,
-      "severity_align": 0.371,
+      "severity_align": 0.571,
       "mechanism_hint": 1.0,
-      "claim_id": "ZM2021Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ZM2021Q4_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

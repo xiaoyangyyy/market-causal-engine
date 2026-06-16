@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T06:01:22+00:00",
+  "computed_at": "2026-06-16T12:03:44+00:00",
   "accepted": [
     {
       "cause": "Net income from continuing operations",
-      "effect": "stock price increase",
+      "effect": "earnings estimate revision",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
-      "evidence_span": "Net income from continuing operations $ 9,999",
+      "evidence_span": "Net income from continuing operations $ 9,999 $",
       "source_id": "DIS2019Q3_000",
       "published_at": 0,
       "proposer": "llm",
@@ -29,12 +29,12 @@
       "mechanism_hint": 1.0,
       "claim_id": "DIS2019Q3_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
       "cause": "Media Networks operating income",
-      "effect": "stock price",
+      "effect": "margin shift",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
@@ -54,7 +54,32 @@
       "mechanism_hint": 1.0,
       "claim_id": "DIS2019Q3_C003",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "EPS excluding certain items affecting comparability",
+      "effect": "estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "reconciles reported EPS from continuing operations to EPS excluding certain items affecting comparability",
+      "source_id": "DIS2019Q3_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "DIS2019Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.871,
+      "span_score": 0.931,
+      "severity_align": 0.671,
+      "mechanism_hint": 1.0,
+      "claim_id": "DIS2019Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
@@ -73,7 +98,7 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.988,
+      "confidence": 0.889,
       "span_score": 0.979,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
@@ -85,11 +110,9 @@
     }
   ],
   "rejected": [],
-  "claim_count": 3,
+  "claim_count": 4,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

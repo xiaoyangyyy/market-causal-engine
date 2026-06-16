@@ -1,1 +1,342 @@
 [catalog-claims] 10/951 events, claims=35
+[catalog-claims] 20/951 events, claims=67
+[catalog-claims] 30/951 events, claims=97
+[catalog-claims] 40/951 events, claims=133
+[catalog-claims] 50/951 events, claims=168
+[catalog-claims] 60/951 events, claims=200
+[catalog-claims] 70/951 events, claims=229
+[catalog-claims] 80/951 events, claims=265
+[catalog-claims] 90/951 events, claims=299
+[catalog-claims] 100/951 events, claims=336
+[catalog-claims] 110/951 events, claims=365
+[catalog-claims] 120/951 events, claims=397
+[catalog-claims] 130/951 events, claims=428
+[catalog-claims] 140/951 events, claims=463
+[catalog-claims] 150/951 events, claims=493
+[catalog-claims] 160/951 events, claims=522
+[catalog-claims] 170/951 events, claims=552
+[catalog-claims] 180/951 events, claims=583
+[catalog-claims] 190/951 events, claims=618
+[catalog-claims] 200/951 ok=198 err=2
+[catalog-claims] 210/951 ok=198 err=12
+[catalog-claims] 220/951 ok=198 err=22
+[catalog-claims] 230/951 ok=199 err=31
+[catalog-claims] 240/951 ok=199 err=41
+[catalog-claims] 250/951 events, claims=671
+[catalog-claims] 260/951 events, claims=703
+[catalog-claims] 270/951 events, claims=733
+[catalog-claims] 280/951 events, claims=765
+[catalog-claims] 290/951 events, claims=795
+[catalog-claims] 300/951 events, claims=825
+[catalog-claims] 310/951 events, claims=857
+[catalog-claims] 320/951 events, claims=889
+[catalog-claims] 330/951 events, claims=921
+[catalog-claims] 340/951 events, claims=950
+[catalog-claims] 350/951 events, claims=984
+[catalog-claims] 360/951 events, claims=1015
+[catalog-claims] 370/951 events, claims=1046
+[catalog-claims] 380/951 events, claims=1077
+[catalog-claims] 390/951 events, claims=1106
+[catalog-claims] 400/951 events, claims=1143
+[catalog-claims] 410/951 events, claims=1177
+[catalog-claims] 420/951 events, claims=1202
+[catalog-claims] 430/951 events, claims=1234
+[catalog-claims] 440/951 events, claims=1263
+[catalog-claims] 450/951 events, claims=1292
+[catalog-claims] 460/951 events, claims=1320
+[catalog-claims] 470/951 events, claims=1352
+[catalog-claims] 480/951 events, claims=1387
+[catalog-claims] 490/951 events, claims=1419
+[catalog-claims] 500/951 events, claims=1454
+[catalog-claims] 510/951 events, claims=1485
+[catalog-claims] 520/951 events, claims=1516
+[catalog-claims] 530/951 events, claims=1553
+[catalog-claims] 540/951 events, claims=1586
+[catalog-claims] 550/951 events, claims=1619
+[catalog-claims] 560/951 events, claims=1652
+[catalog-claims] 570/951 events, claims=1680
+[catalog-claims] 580/951 events, claims=1714
+[catalog-claims] 590/951 events, claims=1745
+[catalog-claims] 600/951 events, claims=1775
+[catalog-claims] 610/951 events, claims=1807
+[catalog-claims] 620/951 events, claims=1841
+[catalog-claims] 630/951 events, claims=1871
+[catalog-claims] 640/951 events, claims=1904
+[catalog-claims] 650/951 events, claims=1939
+[catalog-claims] 660/951 events, claims=1973
+[catalog-claims] 670/951 events, claims=2001
+[catalog-claims] 680/951 events, claims=2034
+[catalog-claims] 690/951 events, claims=2069
+[catalog-claims] 700/951 events, claims=2101
+[catalog-claims] 710/951 events, claims=2138
+[catalog-claims] 720/951 events, claims=2174
+[catalog-claims] 730/951 events, claims=2205
+[catalog-claims] 740/951 events, claims=2238
+[catalog-claims] 750/951 events, claims=2268
+[catalog-claims] 760/951 ok=706 err=54
+[catalog-claims] 770/951 events, claims=2288
+[catalog-claims] 780/951 events, claims=2317
+[catalog-claims] 790/951 events, claims=2350
+[catalog-claims] 800/951 events, claims=2379
+[catalog-claims] 810/951 events, claims=2411
+[catalog-claims] 820/951 events, claims=2444
+[catalog-claims] 830/951 events, claims=2477
+[catalog-claims] 840/951 events, claims=2511
+[catalog-claims] 850/951 events, claims=2545
+[catalog-claims] 860/951 events, claims=2576
+[catalog-claims] 870/951 events, claims=2607
+[catalog-claims] 880/951 events, claims=2643
+[catalog-claims] 890/951 events, claims=2674
+[catalog-claims] 900/951 events, claims=2707
+[catalog-claims] 910/951 events, claims=2738
+[catalog-claims] 920/951 events, claims=2771
+[catalog-claims] 930/951 events, claims=2799
+[catalog-claims] 940/951 events, claims=2834
+[catalog-claims] 950/951 events, claims=2869
+{
+  "attempted": 951,
+  "ok": 893,
+  "errors": [
+    {
+      "event_id": "BKNG_2018Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "CMCSA_2018Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "KO_2018Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "SNAP_2018Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "TXN_2018Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "BA_2018Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "JNJ_2018Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "INTC_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "KO_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "ROKU_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "TXN_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "WMT_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "ADI_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "PM_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "ABBV_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "CRM_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "IBM_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "VRTX_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "ADBE_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "PG_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "SNAP_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "SPGI_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "AXP_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "ISRG_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "MRK_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "AMZN_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "BLK_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "JPM_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "CMCSA_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "LOW_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "GS_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "MA_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "AAPL_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "ACN_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "NKE_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "PYPL_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "GE_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "LRCX_2018Q2_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "TMO_2018Q3_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "CSCO_2018Q3_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "DIS_2018Q3_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "PG_2018Q3_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "SNPS_2018Q3_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "ADBE_2018Q3_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "V_2024Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "PYPL_2024Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "AVGO_2024Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "GILD_2024Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "ACN_2024Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "MS_2024Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "MDT_2024Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "AAPL_2024Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "DHR_2024Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "RTX_2024Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "MCD_2024Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "NKE_2024Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "PANW_2024Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "event_id": "PG_2024Q1_earnings",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    }
+  ],
+  "total_claims": 2872,
+  "use_llm": true,
+  "heuristic_only": false,
+  "atom_fallback_only": false,
+  "quality_refresh_only": true,
+  "llm_events": 893,
+  "llm_model": "qwen3.5",
+  "llm_base_url": "https://ai.azya.top/v1",
+  "computed_at": "2026-06-15T17:11:41+00:00"
+}

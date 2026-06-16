@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T10:15:35+00:00",
+  "computed_at": "2026-06-16T12:25:30+00:00",
   "accepted": [
     {
-      "cause": "EPS beat high end of guidance",
-      "effect": "estimate revision upside",
+      "cause": "EPS beat above high end of guidance",
+      "effect": "estimate revision upside driven by earnings surprise",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -23,44 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.799,
+      "confidence": 0.801,
       "span_score": 1.0,
       "severity_align": 0.196,
       "mechanism_hint": 1.0,
-      "claim_id": "QCOM2019Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Licensing revenues of $4.7 billion recognized",
-      "effect": "Revenue surge from settlement",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "In the third quarter of fiscal 2019 , we recognized licensing revenues of $4.7 billion resulting from the settlement",
-      "source_id": "QCOM2019Q4_005",
-      "published_at": 0,
-      "atom_id": "QCOM2019Q4_005",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.85,
-      "span_score": 0.987,
-      "severity_align": 0.427,
-      "mechanism_hint": 1.0,
-      "claim_id": "QCOM2019Q4_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "QCOM2019Q4_C000"
     },
     {
       "cause": "Non-GAAP EPS reported at $3.59",
-      "effect": "Strong profitability signal",
+      "effect": "valuation uplift from strong non-GAAP profitability",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": -1.0,
@@ -74,14 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.822,
+      "confidence": 0.821,
       "span_score": 1.0,
       "severity_align": 0.288,
       "mechanism_hint": 1.0,
-      "claim_id": "QCOM2019Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "QCOM2019Q4_C001"
+    },
+    {
+      "cause": "Licensing revenues of $4.7 billion excluded from Non-GAAP",
+      "effect": "core operational margin analysis adjusted for one-time settlement",
+      "mechanism": "fundamental",
+      "severity": 0.4,
+      "polarity": -1.0,
+      "evidence_span": "In the third quarter of fiscal 2019 , we recognized licensing revenues of $4.7 billion resulting from the settlement, which have been excluded from our Non-GAAP results.",
+      "source_id": "QCOM2019Q4_005",
+      "published_at": 0,
+      "atom_id": "QCOM2019Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.918,
+      "span_score": 1.0,
+      "severity_align": 0.727,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "QCOM2019Q4_C002"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

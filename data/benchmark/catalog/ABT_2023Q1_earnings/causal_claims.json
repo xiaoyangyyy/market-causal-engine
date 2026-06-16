@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T13:25:31+00:00",
+  "computed_at": "2026-06-15T15:32:28+00:00",
   "accepted": [
     {
-      "cause": "anticipated decline in COVID-19 testing-related sales",
-      "effect": "lower revenue growth",
+      "cause": "Anticipated decline in COVID-19 testing-related sales",
+      "effect": "Revenue headwind from testing normalization",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.6,
       "polarity": -1.0,
       "evidence_span": "anticipated decline in COVID-19 testing-related sales versus prior year",
       "source_id": "ABT2023Q1_000",
@@ -23,20 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.842,
+      "confidence": 0.861,
       "span_score": 1.0,
-      "severity_align": 0.366,
+      "severity_align": 0.466,
       "mechanism_hint": 1.0,
-      "claim_id": "ABT2023Q1_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ABT2023Q1_C000"
     },
     {
-      "cause": "unchanged full-year 2023 diluted EPS guidance",
-      "effect": "stable earnings expectations",
+      "cause": "Full-year 2023 diluted EPS guidance remains unchanged",
+      "effect": "Guidance stability maintains current valuation baseline",
       "mechanism": "fundamental",
-      "severity": 0.4,
+      "severity": 0.3,
       "polarity": -1.0,
       "evidence_span": "Projected full-year 2023 diluted EPS from continuing operations on a GAAP basis of $3.05 to $3.25 remains unchanged",
       "source_id": "ABT2023Q1_002",
@@ -48,14 +48,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.924,
+      "confidence": 0.933,
       "span_score": 1.0,
-      "severity_align": 0.695,
+      "severity_align": 0.795,
       "mechanism_hint": 1.0,
-      "claim_id": "ABT2023Q1_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ABT2023Q1_C001"
     }
   ],
   "rejected": [],
@@ -63,7 +63,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

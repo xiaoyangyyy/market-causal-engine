@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T08:56:49+00:00",
+  "computed_at": "2026-06-16T11:20:13+00:00",
   "accepted": [
     {
-      "cause": "GAAP net income of $2.8B or $1.23 per share",
-      "effect": "Strong profitability supporting stock valuation",
+      "cause": "GAAP net income of $1.23 per share reported for Q4",
+      "effect": "EPS beat drives earnings estimate upside",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": -1.0,
-      "evidence_span": "GAAP net income of $2.8B or $1.23 per share and adjusted net income of $2.8B or $1.21 per share",
+      "evidence_span": "GAAP net income of $2.8B or $1.23 per share",
       "source_id": "V2018Q4_001",
       "published_at": 0,
       "atom_id": "V2018Q4_001",
@@ -23,18 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.773,
-      "span_score": 0.918,
+      "confidence": 0.758,
+      "span_score": 0.881,
       "severity_align": 0.271,
       "mechanism_hint": 1.0,
-      "claim_id": "V2018Q4_C003",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "V2018Q4_C001"
     },
     {
-      "cause": "Net operating revenues increased 12% to $5.4B",
-      "effect": "Positive business trends and revenue growth signal",
+      "cause": "Q4 net operating revenues increased 12% year-over-year",
+      "effect": "top-line growth supports revenue estimate revisions",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -48,20 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.768,
+      "confidence": 0.772,
       "span_score": 0.886,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "V2018Q4_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "V2018Q4_C000"
     },
     {
       "cause": "Data processing revenues rose 16% to $2.4 billion",
-      "effect": "Strong core business performance driving earnings",
+      "effect": "segment growth reinforces core business valuation",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.75,
       "polarity": 1.0,
       "evidence_span": "Data processing revenues rose 16% over the prior year to $2.4 billion.",
       "source_id": "V2018Q4_007",
@@ -73,47 +73,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.816,
+      "confidence": 0.827,
       "span_score": 1.0,
-      "severity_align": 0.265,
+      "severity_align": 0.315,
       "mechanism_hint": 1.0,
-      "claim_id": "V2018Q4_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "International transaction revenues grew 10% to $2.0 billion",
-      "effect": "Global expansion contributing to top-line growth",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": 1.0,
-      "evidence_span": "International transaction revenues grew 10% over the prior year to $2.0 billion.",
-      "source_id": "V2018Q4_008",
-      "published_at": 0,
-      "atom_id": "V2018Q4_008",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.83,
-      "span_score": 1.0,
-      "severity_align": 0.321,
-      "mechanism_hint": 1.0,
-      "claim_id": "V2018Q4_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "V2018Q4_C002"
     }
   ],
   "rejected": [],
-  "claim_count": 4,
+  "claim_count": 3,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,61 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T12:02:19+00:00",
+  "computed_at": "2026-06-15T15:14:22+00:00",
   "accepted": [
     {
-      "cause": "19% growth in da Vinci procedure volume",
-      "effect": "15% increase in instruments and accessories revenue",
-      "mechanism": "fundamental",
-      "severity": 0.9,
-      "polarity": 1.0,
-      "evidence_span": "The increase in instruments and accessories revenue was primarily driven by approximately 19% growth in da Vinci procedure volume",
-      "source_id": "ISRG2022Q2_007",
-      "published_at": 0,
-      "atom_id": "ISRG2022Q2_007",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.789,
-      "span_score": 0.948,
-      "severity_align": 0.271,
-      "mechanism_hint": 1.0,
-      "claim_id": "ISRG2022Q2_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "16% increase in systems revenue",
-      "effect": "Overall revenue growth to $1.49 billion",
-      "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": 1.0,
-      "evidence_span": "First quarter 2022 systems revenue increased by 16% to $428 million, compared with $369 million in the first quarter of 2021.",
-      "source_id": "ISRG2022Q2_008",
-      "published_at": 0,
-      "atom_id": "ISRG2022Q2_008",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.825,
-      "span_score": 1.0,
-      "severity_align": 0.299,
-      "mechanism_hint": 1.0,
-      "claim_id": "ISRG2022Q2_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "da Vinci procedure volume growth",
-      "effect": "Higher first quarter revenue",
+      "cause": "Q1 revenue growth driven by procedure volume",
+      "effect": "estimate revision upside on procedure volume growth",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -73,14 +23,64 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.808,
+      "confidence": 0.809,
       "span_score": 1.0,
       "severity_align": 0.234,
       "mechanism_hint": 1.0,
-      "claim_id": "ISRG2022Q2_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ISRG2022Q2_C000"
+    },
+    {
+      "cause": "Instruments and accessories revenue up 15%",
+      "effect": "recurring revenue stream expansion",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 1.0,
+      "evidence_span": "First quarter 2022 instruments and accessories revenue increased by 15% to $810 million, compared with $706 million in the first quarter of 2021.",
+      "source_id": "ISRG2022Q2_006",
+      "published_at": 0,
+      "atom_id": "ISRG2022Q2_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.838,
+      "span_score": 1.0,
+      "severity_align": 0.362,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ISRG2022Q2_C001"
+    },
+    {
+      "cause": "Systems revenue increased by 16%",
+      "effect": "capital equipment sales momentum",
+      "mechanism": "fundamental",
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "First quarter 2022 systems revenue increased by 16% to $428 million, compared with $369 million in the first quarter of 2021.",
+      "source_id": "ISRG2022Q2_008",
+      "published_at": 0,
+      "atom_id": "ISRG2022Q2_008",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.798,
+      "span_score": 1.0,
+      "severity_align": 0.399,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true,
+      "claim_id": "ISRG2022Q2_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

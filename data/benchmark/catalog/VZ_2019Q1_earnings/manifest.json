@@ -28,7 +28,7 @@
   },
   "causal_claims": {
     "claim_count": 4,
-    "rejected_count": 1,
+    "rejected_count": 2,
     "artifact": "causal_claims.json"
   }
 }

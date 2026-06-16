@@ -5,67 +5,153 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T02:44:26+00:00",
+  "computed_at": "2026-06-16T09:35:18+00:00",
   "accepted": [
     {
-      "cause": "Q4 GAAP Diluted EPS of $0.84",
-      "effect": "estimate revision upside",
+      "cause": "Diluted EPS of $1.33",
+      "effect": "estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.8,
       "polarity": -1.0,
-      "evidence_span": "5% at Constant Currency ▪ Q4 GAAP Diluted EPS of $0.84",
-      "source_id": "MDT2017Q2_001",
+      "evidence_span": "Diluted EPS of $1.33 ▪ FY17 Revenue of $",
+      "source_id": "MDT2017Q2_002",
       "published_at": 0,
-      "atom_id": "MDT2017Q2_001",
+      "proposer": "llm",
+      "atom_id": "MDT2017Q2_002",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "proposer": "llm_event",
-      "confidence": 0.839,
+      "confidence": 0.812,
       "span_score": 1.0,
-      "severity_align": 0.355,
+      "severity_align": 0.246,
       "mechanism_hint": 1.0,
-      "claim_id": "MDT2017Q2_C001",
-      "effect_rewritten": true,
+      "claim_id": "MDT2017Q2_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
-      "cause": "Revenue growth of 5% to $7.916 billion",
-      "effect": "fundamental upside",
+      "cause": "net income and diluted earnings per share (EPS) were",
+      "effect": "estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.5,
       "polarity": -1.0,
-      "evidence_span": "The company reported fourth quarter worldwide revenue of $7.916 billion, compared to the $7.567 billion reported in the fourth quarter of fiscal year 2016, an increase of 5 percent on both a reported and constant currency basis.",
-      "source_id": "MDT2017Q2_005",
+      "evidence_span": "net income and diluted earnings per share (EPS) were",
+      "source_id": "MDT2017Q2_006",
       "published_at": 0,
-      "atom_id": "MDT2017Q2_005",
+      "proposer": "llm",
+      "atom_id": "MDT2017Q2_006",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "proposer": "llm_event",
-      "confidence": 0.841,
+      "confidence": 0.88,
       "span_score": 1.0,
-      "severity_align": 0.364,
+      "severity_align": 0.554,
       "mechanism_hint": 1.0,
-      "claim_id": "MDT2017Q2_C000",
-      "effect_rewritten": true,
+      "claim_id": "MDT2017Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "revenue growth and EPS projections exclude the impact of",
+      "effect": "guidance change",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": 1.0,
+      "evidence_span": "revenue growth and EPS projections exclude the impact of",
+      "source_id": "MDT2017Q2_035",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MDT2017Q2_035",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.88,
+      "span_score": 1.0,
+      "severity_align": 0.556,
+      "mechanism_hint": 1.0,
+      "claim_id": "MDT2017Q2_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     }
   ],
-  "rejected": [],
-  "claim_count": 2,
-  "rejected_count": 0,
+  "rejected": [
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "MDT2017Q2_007",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MDT2017Q2_007",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "fundamental",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "MDT2017Q2_012",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MDT2017Q2_012",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "cause": "None",
+      "effect": "None",
+      "mechanism": "none",
+      "severity": 0.0,
+      "polarity": 0.0,
+      "evidence_span": "None",
+      "source_id": "MDT2017Q2_040",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "MDT2017Q2_040",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
+          "mechanism_not_allowed_for_domain:none:earnings"
+        ],
+        "warnings": []
+      }
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 3,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

@@ -193,6 +193,10 @@ def build_atoms_for_case(
     policy = LookAheadPolicy.from_dict(case_manifest.get("lookahead_policy"))
 
     atoms, extraction_report = extract_from_case(case_id)
+    from market_causal_engine.platform.pit_hardening import CaseTimeAxis, enrich_atoms_temporal
+
+    axis = CaseTimeAxis.from_manifest(case_manifest)
+    atoms = enrich_atoms_temporal(atoms, axis)
     lookahead = validate_feed(atoms, as_of=horizon, policy=policy) if validate_lookahead else None
 
     out_path = root / case_manifest.get("atoms_path", "atoms.jsonl")

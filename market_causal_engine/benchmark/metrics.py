@@ -5,6 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any
 
+from market_causal_engine.benchmark.label_quality import label_tier as event_label_tier
 from market_causal_engine.benchmark.models import BenchmarkEvent
 from market_causal_engine.benchmark.replay import infer_simulated_direction
 
@@ -24,6 +25,9 @@ class EventScore:
     false_positive: bool = False
     is_major_event: bool = True
     synthetic_labels: bool = False
+    label_tier: str = "unknown"
+    router_preferred: str | None = None
+    used_catalog_path: bool = False
     dominant_path: list[str] = field(default_factory=list)
     replay_mode: str = ""
 
@@ -42,6 +46,9 @@ class EventScore:
             "false_positive": self.false_positive,
             "is_major_event": self.is_major_event,
             "synthetic_labels": self.synthetic_labels,
+            "label_tier": self.label_tier,
+            "router_preferred": self.router_preferred,
+            "used_catalog_path": self.used_catalog_path,
             "dominant_path": self.dominant_path,
             "replay_mode": self.replay_mode,
         }
@@ -98,6 +105,11 @@ def score_event(
         false_positive = dd >= placebo_drawdown_threshold or abs(pressure) >= placebo_pressure_threshold
 
     path = result.get("dominant_causal_path") or result.get("dominant_path") or []
+    replay_mode = str(result.get("replay_mode", event.replay_mode))
+    used_catalog = replay_mode.startswith("catalog_feed") and not bool(result.get("catalog_fallback"))
+    router_pref = result.get("router_preferred")
+    if router_pref is None:
+        router_pref = "catalog" if used_catalog else "scenario"
 
     return EventScore(
         event_id=event.event_id,
@@ -113,9 +125,122 @@ def score_event(
         false_positive=false_positive,
         is_major_event=is_major,
         synthetic_labels=event.uses_synthetic_labels,
+        label_tier=event_label_tier(event),
+        router_preferred=str(router_pref) if router_pref else None,
+        used_catalog_path=used_catalog,
         dominant_path=list(path),
-        replay_mode=str(result.get("replay_mode", event.replay_mode)),
+        replay_mode=replay_mode,
     )
+
+
+def _direction_accuracy(scores: list[EventScore]) -> float | None:
+    scored = [s for s in scores if s.direction_match is not None]
+    if not scored:
+        return None
+    return sum(1 for s in scored if s.direction_match) / len(scored)
+
+
+def naive_baselines(scores: list[EventScore], *, label_tier: str = "real") -> dict[str, Any]:
+    """Naive baselines on a label tier subset."""
+    from collections import Counter
+
+    subset = [s for s in scores if s.label_tier == label_tier and s.direction_match is not None]
+    if not subset:
+        return {}
+    obs = [str(s.observed_direction) for s in subset]
+    counts = Counter(obs)
+    majority = counts.most_common(1)[0][0]
+    n = len(subset)
+    return {
+        "n": n,
+        "always_neutral_accuracy": round(sum(1 for o in obs if o == "neutral") / n, 4),
+        "always_majority_class_accuracy": round(counts[majority] / n, 4),
+        "majority_class": majority,
+        "class_distribution": dict(counts),
+    }
+
+
+def select_failed_cases(
+    scores: list[EventScore],
+    *,
+    label_tier: str = "real",
+    n: int = 10,
+) -> list[dict[str, Any]]:
+    """Top direction mismatches for public failure appendix."""
+    mismatches = [
+        s
+        for s in scores
+        if s.label_tier == label_tier and s.direction_match is False and not s.is_placebo
+    ]
+    mismatches.sort(key=lambda s: (s.drawdown_risk, abs(s.directional_pressure)), reverse=True)
+    out: list[dict[str, Any]] = []
+    for s in mismatches[:n]:
+        out.append(
+            {
+                "event_id": s.event_id,
+                "corpus": s.corpus,
+                "observed_direction": s.observed_direction,
+                "simulated_direction": s.simulated_direction,
+                "replay_mode": s.replay_mode,
+                "router_preferred": s.router_preferred,
+                "used_catalog_path": s.used_catalog_path,
+                "drawdown_risk": round(s.drawdown_risk, 4),
+                "dominant_path": " → ".join(s.dominant_path[:5]),
+            }
+        )
+    return out
+
+
+def build_headline_summary(scores: list[EventScore]) -> dict[str, Any]:
+    """Real-label headline metrics — never mix proxy labels into primary table."""
+    real = [s for s in scores if s.label_tier == "real"]
+    placebo = [s for s in scores if s.label_tier == "placebo"]
+    proxy = [s for s in scores if s.label_tier == "proxy"]
+
+    by_corpus: dict[str, dict[str, Any]] = {}
+    for s in real:
+        bucket = by_corpus.setdefault(s.corpus, [])
+        bucket.append(s)
+    by_corpus_stats = {
+        corpus: {
+            "n": len(sub),
+            "direction_accuracy": _direction_accuracy(sub),
+        }
+        for corpus, sub in by_corpus.items()
+    }
+
+    catalog_path = [s for s in real if s.used_catalog_path]
+    scenario_path = [s for s in real if not s.used_catalog_path and not s.is_placebo]
+
+    return {
+        "real_label_n": len(real),
+        "real_label_direction_accuracy": _direction_accuracy(real),
+        "placebo_n": len(placebo),
+        "placebo_false_positive_rate": (
+            sum(1 for s in placebo if s.false_positive) / len(placebo) if placebo else None
+        ),
+        "proxy_label_n": len(proxy),
+        "by_corpus_real_label": by_corpus_stats,
+        "real_label_catalog_path_n": len(catalog_path),
+        "real_label_catalog_path_direction_accuracy": _direction_accuracy(catalog_path),
+        "real_label_scenario_router_path_n": len(scenario_path),
+        "real_label_scenario_router_path_direction_accuracy": _direction_accuracy(scenario_path),
+        "naive_baselines_real_label": naive_baselines(scores, label_tier="real"),
+        "warning": "Do not use mixed-corpus overall accuracy as headline; see appendix.",
+    }
+
+
+def build_appendix_summary(scores: list[EventScore]) -> dict[str, Any]:
+    """Mixed metrics kept for regression tracking — not for external headline."""
+    return {
+        "mixed_overall_direction_accuracy": _direction_accuracy(scores),
+        "mixed_n": len([s for s in scores if s.direction_match is not None]),
+        "note": (
+            "Inflated when earnings router defaults to scenario templates (E1/E2). "
+            "Use headline.real_label_* and catalog_only instead."
+        ),
+        "by_corpus_all_labels": aggregate_scores(scores).get("by_corpus"),
+    }
 
 
 def aggregate_scores(scores: list[EventScore]) -> dict[str, Any]:
@@ -180,19 +305,23 @@ def split_by_date(
     return train, test
 
 
-def oot_accuracy(train: list[EventScore], test: list[EventScore]) -> dict[str, Any]:
-    def acc(sub: list[EventScore]) -> float | None:
-        scored = [s for s in sub if s.direction_match is not None]
-        if not scored:
-            return None
-        return sum(1 for s in scored if s.direction_match) / len(scored)
+def oot_accuracy(
+    train: list[EventScore],
+    test: list[EventScore],
+    *,
+    label_tier: str | None = None,
+) -> dict[str, Any]:
+    if label_tier:
+        train = [s for s in train if s.label_tier == label_tier]
+        test = [s for s in test if s.label_tier == label_tier]
 
     return {
         "cutoff_used": True,
+        "label_tier_filter": label_tier,
         "train_n": len(train),
         "test_n": len(test),
-        "train_direction_accuracy": acc(train),
-        "test_direction_accuracy": acc(test),
+        "train_direction_accuracy": _direction_accuracy(train),
+        "test_direction_accuracy": _direction_accuracy(test),
     }
 
 

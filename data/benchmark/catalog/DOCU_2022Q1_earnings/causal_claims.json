@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:51:53+00:00",
+  "computed_at": "2026-06-15T15:04:31+00:00",
   "accepted": [
     {
-      "cause": "Revenue growth of 42% year-over-year",
-      "effect": "Exceeded revenue expectations",
+      "cause": "Q3 revenue growth of 42% and operating margin of 22% exceeded expectations",
+      "effect": "estimate revision upside driven by revenue and margin beat",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -23,50 +23,25 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.797,
+      "confidence": 0.799,
       "span_score": 1.0,
       "severity_align": 0.187,
       "mechanism_hint": 1.0,
-      "claim_id": "DOCU2022Q1_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "DOCU2022Q1_C000"
     },
     {
-      "cause": "Operating margin of 22%",
-      "effect": "Exceeded operating margin expectations",
-      "mechanism": "fundamental",
-      "severity": 0.85,
-      "polarity": 1.0,
-      "evidence_span": "Third quarter revenue growth of 42% year-over-year and operating margin of 22% exceeded our expectations.",
-      "source_id": "DOCU2022Q1_000",
-      "published_at": 0,
-      "atom_id": "DOCU2022Q1_000",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.809,
-      "span_score": 1.0,
-      "severity_align": 0.237,
-      "mechanism_hint": 1.0,
-      "claim_id": "DOCU2022Q1_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Gross margin increased to 79% from 74%",
-      "effect": "Improved profitability metrics",
+      "cause": "Gross margin expansion to 81-82% compared to prior periods",
+      "effect": "margin expansion supports valuation multiple re-rating",
       "mechanism": "fundamental",
       "severity": 0.7,
       "polarity": -1.0,
-      "evidence_span": "gross margin was 79% compared to 74",
-      "source_id": "DOCU2022Q1_004",
+      "evidence_span": "gross margin 81% to 82% Non-GAAP operating margin 17",
+      "source_id": "DOCU2022Q1_008",
       "published_at": 0,
-      "atom_id": "DOCU2022Q1_004",
+      "atom_id": "DOCU2022Q1_008",
       "validation": {
         "passed": true,
         "errors": [],
@@ -75,20 +50,18 @@
       "proposer": "llm_event",
       "confidence": 0.836,
       "span_score": 1.0,
-      "severity_align": 0.343,
+      "severity_align": 0.354,
       "mechanism_hint": 1.0,
-      "claim_id": "DOCU2022Q1_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "DOCU2022Q1_C001"
     }
   ],
   "rejected": [],
-  "claim_count": 3,
+  "claim_count": 2,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

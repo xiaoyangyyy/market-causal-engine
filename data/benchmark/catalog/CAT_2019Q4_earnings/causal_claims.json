@@ -5,36 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T06:09:09+00:00",
+  "computed_at": "2026-06-16T12:25:08+00:00",
   "accepted": [
     {
-      "cause": "third-quarter 2019 sales and revenues of $12.8 billion, a 6% decrease compared with $13.5 billion in the third quarter of 2018",
-      "effect": "likely decline in stock price",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "third-quarter 2019 sales and revenues of $12.8 billion, a 6% decrease compared with $13.5 billion in the third quarter of 2018",
-      "source_id": "CAT2019Q4_005",
-      "published_at": 0,
-      "proposer": "llm",
-      "atom_id": "CAT2019Q4_005",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "confidence": 0.855,
-      "span_score": 1.0,
-      "severity_align": 0.418,
-      "mechanism_hint": 1.0,
-      "claim_id": "CAT2019Q4_C003",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
       "cause": "Sales of Machinery, Energy & Transportation",
-      "effect": "Sales and revenues",
+      "effect": "margin shift",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
@@ -48,89 +23,120 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.834,
+      "confidence": 0.831,
       "span_score": 0.894,
       "severity_align": 0.571,
       "mechanism_hint": 1.0,
       "claim_id": "CAT2019Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "negative fundamental signal",
-      "effect": "valuation de-rating",
-      "mechanism": "fundamental",
-      "severity": 0.041,
-      "polarity": -1.0,
-      "evidence_span": "Revenues by Segment (Millions of",
-      "source_id": "CAT2019Q4_000",
-      "published_at": 0,
-      "proposer": "heuristic",
-      "atom_id": "CAT2019Q4_000",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "confidence": 1.0,
-      "span_score": 1.0,
-      "severity_align": 1.0,
-      "mechanism_hint": 1.0,
-      "claim_id": "CAT2019Q4_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true
-    }
-  ],
-  "rejected": [
-    {
-      "cause": "None",
-      "effect": "None",
-      "mechanism": "none",
-      "severity": 0.0,
-      "polarity": 0.0,
-      "evidence_span": "Supplemental Data for Results of Operations For the Three Months Ended September 30, 2019 (Unaudited) (Millions of dollars) Supplemental Consolidating Data Consolidated Machinery, Energy & Transportation 1 Financial Products Consolidating Adjustments Sales and revenues: Sales of",
-      "source_id": "CAT2019Q4_002",
-      "published_at": 0,
-      "proposer": "llm",
-      "atom_id": "CAT2019Q4_002",
-      "validation": {
-        "passed": false,
-        "errors": [
-          "invalid_mechanism:none",
-          "mechanism_not_allowed_for_domain:none:earnings"
-        ],
-        "warnings": []
-      }
     },
     {
-      "cause": "None",
-      "effect": "None",
-      "mechanism": "none",
-      "severity": 0.0,
-      "polarity": 0.0,
-      "evidence_span": "Supplemental Data for Results of Operations For the Three Months Ended September 30, 2018 (Unaudited) (Millions of dollars) Supplemental Consolidating Data Consolidated Machinery, Energy & Transportation 1 Financial Products Consolidating Adjustments Sales and revenues: Sales of",
+      "cause": "Supplemental Data for Results of Operations",
+      "effect": "estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "Supplemental Data for Results of Operations For the Three Months Ended September 30, 2018",
       "source_id": "CAT2019Q4_003",
       "published_at": 0,
       "proposer": "llm",
       "atom_id": "CAT2019Q4_003",
       "validation": {
-        "passed": false,
-        "errors": [
-          "invalid_mechanism:none",
-          "mechanism_not_allowed_for_domain:none:earnings"
-        ],
+        "passed": true,
+        "errors": [],
         "warnings": []
-      }
+      },
+      "confidence": 0.863,
+      "span_score": 0.914,
+      "severity_align": 0.671,
+      "mechanism_hint": 1.0,
+      "claim_id": "CAT2019Q4_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Sales of M",
+      "effect": "margin shift",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "Supplemental Data for Results of Operations For the Nine Months Ended September 30, 2019",
+      "source_id": "CAT2019Q4_004",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "CAT2019Q4_004",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.862,
+      "span_score": 0.913,
+      "severity_align": 0.671,
+      "mechanism_hint": 1.0,
+      "claim_id": "CAT2019Q4_C004",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Sales of Machinery, Energy & Transportation",
+      "effect": "consolidated sales and revenues",
+      "mechanism": "fundamental",
+      "severity": 0.0,
+      "polarity": -1.0,
+      "evidence_span": "Supplemental Consolidating Data Consolidated Machinery, Energy & Transportation 1 Financial Products Consolidating Adjustments Sales and revenues: Sales of",
+      "source_id": "CAT2019Q4_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "CAT2019Q4_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.873,
+      "span_score": 0.961,
+      "severity_align": 0.829,
+      "mechanism_hint": 1.0,
+      "claim_id": "CAT2019Q4_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "earnings miss",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.198,
+      "polarity": -1.0,
+      "evidence_span": "(NYSE: CAT) today announced third-quarter 2019 sales and revenues of $12.8 billion, a 6% decrease compared with $13.5 billion in the third quarter of 2018.",
+      "source_id": "CAT2019Q4_005",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "CAT2019Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.96,
+      "span_score": 1.0,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "CAT2019Q4_C005",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
     }
   ],
-  "claim_count": 3,
-  "rejected_count": 2,
+  "rejected": [],
+  "claim_count": 5,
+  "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

@@ -109,6 +109,9 @@ def _replay_case_with_atom_filter(
     result["benchmark_event_id"] = case_id
     result["replay_mode"] = f"case_study:{atom_filter}"
     result["ablation"] = atom_filter
+    from market_causal_engine.platform.pit_hardening import attach_pit_audit
+
+    attach_pit_audit(result, manifest=manifest, atoms=all_atoms, as_of_minutes=until, policy=policy)
     return result
 
 
@@ -237,12 +240,14 @@ def replay_event(
     kernel_config: KernelConfig | None = None,
     priors_override: dict[str, dict[str, float]] | None = None,
     prefer_catalog_feed: bool = True,
+    attach_outcome: bool = True,
+    car_ablation: bool | None = None,
 ) -> dict[str, Any]:
     if event.replay_mode == "case_study" or (event.case_id and event.replay_mode != "scenario"):
-        return replay_case_study_event(event, until=until, atom_filter=atom_filter)
-    if event.replay_mode == "placebo":
-        return replay_placebo_event(event, until=min(until, 30))
-    if prefer_catalog_feed and event.corpus == "earnings_sp500_2016_2025":
+        result = replay_case_study_event(event, until=until, atom_filter=atom_filter)
+    elif event.replay_mode == "placebo":
+        result = replay_placebo_event(event, until=min(until, 30))
+    elif prefer_catalog_feed and event.corpus == "earnings_sp500_2016_2025":
         from market_causal_engine.benchmark.catalog.claims import has_effective_catalog_claims
         from market_causal_engine.benchmark.catalog.replay import (
             has_catalog_atoms,
@@ -272,23 +277,45 @@ def replay_event(
                     attach_predicted_effect(scenario_result, ev_dict, catalog_model)
                 feats = build_router_features(catalog_result, scenario_result, event=ev_dict)
                 if router.prefer_catalog(feats):
-                    return catalog_result
+                    result = catalog_result
+                else:
+                    scenario_result["catalog_fallback"] = True
+                    scenario_result["router_preferred"] = "scenario"
+                    result = scenario_result
+            else:
+                scenario_result = replay_scenario_event(
+                    event,
+                    until=until,
+                    kernel_config=kernel_config,
+                    priors_override=priors_override,
+                )
                 scenario_result["catalog_fallback"] = True
                 scenario_result["router_preferred"] = "scenario"
-                return scenario_result
-            # No fitted router: scenario remains the calibrated default for earnings.
-            scenario_result = replay_scenario_event(
+                result = scenario_result
+        else:
+            result = replay_scenario_event(
                 event,
                 until=until,
                 kernel_config=kernel_config,
                 priors_override=priors_override,
             )
-            scenario_result["catalog_fallback"] = True
-            scenario_result["router_preferred"] = "scenario"
-            return scenario_result
-    return replay_scenario_event(
-        event,
-        until=until,
-        kernel_config=kernel_config,
-        priors_override=priors_override,
-    )
+    else:
+        result = replay_scenario_event(
+            event,
+            until=until,
+            kernel_config=kernel_config,
+            priors_override=priors_override,
+        )
+
+    result["_benchmark_event"] = event.to_dict()
+    if attach_outcome:
+        from market_causal_engine.counterfactuals.outcome_layer import attach_outcome_causal
+
+        attach_outcome_causal(
+            result,
+            event,
+            run_placebo=False,
+            car_ablation=car_ablation,
+            until=until,
+        )
+    return result

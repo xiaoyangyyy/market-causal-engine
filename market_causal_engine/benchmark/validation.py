@@ -8,9 +8,13 @@ from typing import Any
 from market_causal_engine.benchmark.metrics import EventScore, score_event
 from market_causal_engine.benchmark.models import BenchmarkEvent
 from market_causal_engine.benchmark.replay import infer_simulated_direction, replay_case_study_event, replay_event
+from market_causal_engine.counterfactuals.car_ablation import (
+    ABLATION_CHANNELS,
+    channel_contribution_row,
+    observed_car_pct,
+    predicted_return_pct,
+)
 
-
-ABLATION_CHANNELS = ("no_news", "no_sec", "no_price")
 CASE_STUDY_ABLATION_IDS = [
     "nflx_2022q1_earnings",
     "snap_2022q3_earnings",
@@ -30,6 +34,11 @@ class AblationResult:
     baseline_path: list[str]
     ablated_path: list[str]
     path_changed: bool
+    baseline_predicted_return_pct: float | None = None
+    ablated_predicted_return_pct: float | None = None
+    marginal_return_pct: float | None = None
+    share_of_observed_car: float | None = None
+    observed_car_pct: float | None = None
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -41,6 +50,11 @@ class AblationResult:
             "baseline_path": self.baseline_path,
             "ablated_path": self.ablated_path,
             "path_changed": self.path_changed,
+            "baseline_predicted_return_pct": self.baseline_predicted_return_pct,
+            "ablated_predicted_return_pct": self.ablated_predicted_return_pct,
+            "marginal_return_pct": self.marginal_return_pct,
+            "share_of_observed_car": self.share_of_observed_car,
+            "observed_car_pct": self.observed_car_pct,
         }
 
 
@@ -82,10 +96,15 @@ def run_ablation_suite(
         )
         try:
             baseline = replay_case_study_event(base_event, until=until)
+            from market_causal_engine.counterfactuals.outcome_layer import attach_outcome_causal
+
+            attach_outcome_causal(baseline, base_event, run_placebo=False, car_ablation=False)
         except FileNotFoundError:
             continue
         base_dir = infer_simulated_direction(baseline)
         base_path = list(baseline.get("dominant_causal_path") or [])
+        baseline_pred = predicted_return_pct(baseline)
+        observed_car = observed_car_pct(baseline.get("outcome_causal"))
 
         for channel in channels:
             try:
@@ -94,6 +113,15 @@ def run_ablation_suite(
                 continue
             ab_dir = infer_simulated_direction(ablated)
             ab_path = list(ablated.get("dominant_causal_path") or [])
+            car_row: dict[str, Any] = {}
+            if baseline_pred is not None and observed_car is not None:
+                car_row = channel_contribution_row(
+                    channel=channel,
+                    baseline_result=baseline,
+                    ablated_result=ablated,
+                    baseline_pred=baseline_pred,
+                    observed_car=observed_car,
+                )
             results.append(
                 AblationResult(
                     channel=channel,
@@ -104,6 +132,11 @@ def run_ablation_suite(
                     baseline_path=base_path,
                     ablated_path=ab_path,
                     path_changed=base_path != ab_path,
+                    baseline_predicted_return_pct=baseline_pred,
+                    ablated_predicted_return_pct=car_row.get("ablated_predicted_return_pct"),
+                    marginal_return_pct=car_row.get("marginal_return_pct"),
+                    share_of_observed_car=car_row.get("share_of_observed_car"),
+                    observed_car_pct=observed_car,
                 )
             )
     return results
@@ -111,6 +144,7 @@ def run_ablation_suite(
 
 def summarize_ablation(results: list[AblationResult]) -> dict[str, Any]:
     by_channel: dict[str, dict[str, Any]] = {}
+    car_by_channel: dict[str, dict[str, Any]] = {}
     for r in results:
         bucket = by_channel.setdefault(
             r.channel,
@@ -121,11 +155,70 @@ def summarize_ablation(results: list[AblationResult]) -> dict[str, Any]:
             bucket["direction_flips"] += 1
         if r.path_changed:
             bucket["path_changes"] += 1
+
+        if r.share_of_observed_car is not None:
+            car_bucket = car_by_channel.setdefault(
+                r.channel,
+                {"n": 0, "shares": [], "marginals": []},
+            )
+            car_bucket["n"] += 1
+            car_bucket["shares"].append(r.share_of_observed_car)
+            if r.marginal_return_pct is not None:
+                car_bucket["marginals"].append(r.marginal_return_pct)
+
     for bucket in by_channel.values():
         n = bucket["n"] or 1
         bucket["flip_rate"] = bucket["direction_flips"] / n
         bucket["path_change_rate"] = bucket["path_changes"] / n
-    return {"by_channel": by_channel, "total_runs": len(results)}
+
+    for channel, bucket in car_by_channel.items():
+        shares = bucket.pop("shares")
+        marginals = bucket.pop("marginals")
+        n = len(shares) or 1
+        bucket["mean_share_of_observed_car"] = round(sum(shares) / n, 4)
+        bucket["mean_abs_share_of_observed_car"] = round(sum(abs(s) for s in shares) / n, 4)
+        if marginals:
+            bucket["mean_marginal_return_pct"] = round(sum(marginals) / len(marginals), 2)
+
+    car_by_case: dict[str, Any] = {}
+    case_channels: dict[str, dict[str, dict[str, Any]]] = {}
+    case_meta: dict[str, AblationResult] = {}
+    for r in results:
+        if r.share_of_observed_car is None:
+            continue
+        case_meta.setdefault(r.case_id, r)
+        case_channels.setdefault(r.case_id, {})[r.channel] = {
+            "ablated_predicted_return_pct": r.ablated_predicted_return_pct,
+            "marginal_return_pct": r.marginal_return_pct,
+            "share_of_observed_car": r.share_of_observed_car,
+            "direction_flipped": r.direction_flipped,
+            "path_changed": r.path_changed,
+        }
+    for case_id, channels in case_channels.items():
+        meta = case_meta[case_id]
+        dominant_channel, dominant_row = max(
+            channels.items(),
+            key=lambda kv: abs(kv[1].get("share_of_observed_car") or 0.0),
+        )
+        car_by_case[case_id] = {
+            "observed_car_pct": meta.observed_car_pct,
+            "baseline_predicted_return_pct": meta.baseline_predicted_return_pct,
+            "channels": channels,
+            "dominant_channel": dominant_channel,
+            "dominant_share_of_observed_car": dominant_row.get("share_of_observed_car"),
+            "total_abs_share_of_observed_car": round(
+                sum(abs(c.get("share_of_observed_car") or 0.0) for c in channels.values()),
+                4,
+            ),
+            "n_channels": len(channels),
+        }
+
+    return {
+        "by_channel": by_channel,
+        "car_by_channel": car_by_channel,
+        "car_by_case": car_by_case,
+        "total_runs": len(results),
+    }
 
 
 def run_sensitivity_suite(

@@ -5,8 +5,58 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:21:01+00:00",
+  "computed_at": "2026-06-16T09:59:03+00:00",
   "accepted": [
+    {
+      "cause": "net earnings for the current quarter were $",
+      "effect": "estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.0,
+      "polarity": -1.0,
+      "evidence_span": "net earnings for the current quarter were $",
+      "source_id": "JNJ2017Q3_002",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "JNJ2017Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.967,
+      "span_score": 1.0,
+      "severity_align": 0.952,
+      "mechanism_hint": 1.0,
+      "claim_id": "JNJ2017Q3_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "diluted earnings per share for the second quarter of 2017",
+      "effect": "estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "diluted earnings per share for the second quarter of 2017 were",
+      "source_id": "JNJ2017Q3_001",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "JNJ2017Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.881,
+      "span_score": 1.0,
+      "severity_align": 0.56,
+      "mechanism_hint": 1.0,
+      "claim_id": "JNJ2017Q3_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
     {
       "cause": "positive fundamental signal",
       "effect": "estimate revision upside",
@@ -23,7 +73,7 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.988,
+      "confidence": 0.889,
       "span_score": 0.979,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
@@ -35,11 +85,9 @@
     }
   ],
   "rejected": [],
-  "claim_count": 1,
+  "claim_count": 3,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

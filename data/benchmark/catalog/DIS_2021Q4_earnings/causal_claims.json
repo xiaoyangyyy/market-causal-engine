@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:40:32+00:00",
+  "computed_at": "2026-06-15T14:53:36+00:00",
   "accepted": [
     {
-      "cause": "Operating income surge",
-      "effect": "Positive earnings surprise",
+      "cause": "Operating income surge over 100%",
+      "effect": "fundamental valuation uplift driven by operating leverage",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -23,18 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.8,
+      "confidence": 0.802,
       "span_score": 1.0,
       "severity_align": 0.201,
       "mechanism_hint": 1.0,
-      "claim_id": "DIS2021Q4_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "DIS2021Q4_C000"
     },
     {
-      "cause": "Diluted EPS growth",
-      "effect": "Improved profitability metrics",
+      "cause": "Diluted EPS annual growth of 13%",
+      "effect": "estimate revision upside on earnings per share trajectory",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": 1.0,
@@ -48,18 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.825,
+      "confidence": 0.824,
       "span_score": 1.0,
       "severity_align": 0.298,
       "mechanism_hint": 1.0,
-      "claim_id": "DIS2021Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "DIS2021Q4_C001"
     },
     {
       "cause": "Quarterly revenue increase",
-      "effect": "Top-line expansion signal",
+      "effect": "top-line growth narrative reinforcement",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": 1.0,
@@ -73,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.861,
+      "confidence": 0.855,
       "span_score": 1.0,
       "severity_align": 0.442,
       "mechanism_hint": 1.0,
-      "claim_id": "DIS2021Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "DIS2021Q4_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

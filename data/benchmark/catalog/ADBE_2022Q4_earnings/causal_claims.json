@@ -5,36 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T12:13:41+00:00",
+  "computed_at": "2026-06-15T15:24:45+00:00",
   "accepted": [
     {
-      "cause": "Net New Digital Media ARR of $449 million",
-      "effect": "Strong future revenue visibility",
-      "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": -1.0,
-      "evidence_span": "Net New Digital Media Annualized Recurring Revenue (“ARR”) was $449 million, exiting the quarter with Digital Media ARR of $13.40 billion.",
-      "source_id": "ADBE2022Q4_008",
-      "published_at": 0,
-      "atom_id": "ADBE2022Q4_008",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.827,
-      "span_score": 1.0,
-      "severity_align": 0.309,
-      "mechanism_hint": 1.0,
-      "claim_id": "ADBE2022Q4_C003",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Digital Media segment 13% year-over-year growth",
-      "effect": "Increased market valuation expectations",
+      "cause": "Digital Media segment revenue grew 13% year-over-year",
+      "effect": "estimate revision upside driven by 13% Digital Media segment growth",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": 1.0,
@@ -48,20 +23,45 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.841,
+      "confidence": 0.88,
       "span_score": 0.987,
       "severity_align": 0.393,
       "mechanism_hint": 1.0,
-      "claim_id": "ADBE2022Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "ADBE2022Q4_C001"
     },
     {
-      "cause": "Document Cloud revenue 23% year-over-year growth",
-      "effect": "Accelerated segment performance",
+      "cause": "Net New Digital Media ARR of $449 million",
+      "effect": "growth narrative reinforcement via $449 million net new ARR",
       "mechanism": "fundamental",
       "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "Net New Digital Media Annualized Recurring Revenue (“ARR”) was $449 million, exiting the quarter with Digital Media ARR of $13.40 billion.",
+      "source_id": "ADBE2022Q4_008",
+      "published_at": 0,
+      "atom_id": "ADBE2022Q4_008",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.89,
+      "span_score": 1.0,
+      "severity_align": 0.409,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "ADBE2022Q4_C002"
+    },
+    {
+      "cause": "Document Cloud revenue grew 23% year-over-year",
+      "effect": "segment momentum boost from 23% Document Cloud revenue growth",
+      "mechanism": "fundamental",
+      "severity": 0.65,
       "polarity": 1.0,
       "evidence_span": "Document Cloud revenue was $607 million, representing 23 percent year-over-year growth or 25 percent in constant currency.",
       "source_id": "ADBE2022Q4_007",
@@ -73,18 +73,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.85,
+      "confidence": 0.899,
       "span_score": 1.0,
-      "severity_align": 0.398,
+      "severity_align": 0.448,
       "mechanism_hint": 1.0,
-      "claim_id": "ADBE2022Q4_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "effect_specificity": 1.0,
+      "polarity_aligned": true,
+      "claim_id": "ADBE2022Q4_C003"
     },
     {
-      "cause": "Record revenue and strong profitability",
-      "effect": "Products perceived as mission-critical",
+      "cause": "Record revenue and strong profitability in the quarter",
+      "effect": "fundamental valuation uplift based on record revenue and profitability",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -98,14 +98,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.799,
+      "confidence": 0.801,
       "span_score": 0.944,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "ADBE2022Q4_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ADBE2022Q4_C000"
     }
   ],
   "rejected": [],
@@ -113,7 +113,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

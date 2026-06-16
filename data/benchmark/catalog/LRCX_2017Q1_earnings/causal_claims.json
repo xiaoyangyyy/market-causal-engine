@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T07:22:34+00:00",
+  "computed_at": "2026-06-16T09:27:05+00:00",
   "accepted": [
     {
-      "cause": "Gross margin expansion to 45.0%",
-      "effect": "Positive earnings surprise driving stock price up",
+      "cause": "Gross margin expansion to 45.0% from 43.9%",
+      "effect": "fundamental valuation uplift via margin expansion",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.8,
       "polarity": -1.0,
       "evidence_span": "Gross margin as percentage of revenue 45.0 % 43.9",
       "source_id": "LRCX2017Q1_004",
@@ -23,20 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.8,
+      "confidence": 0.813,
       "span_score": 1.0,
-      "severity_align": 0.202,
+      "severity_align": 0.252,
       "mechanism_hint": 1.0,
-      "claim_id": "LRCX2017Q1_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "LRCX2017Q1_C000"
     },
     {
-      "cause": "Revenue of $1.88 billion reported",
-      "effect": "Strong top-line performance supporting bullish sentiment",
+      "cause": "Revenue reported at $1.88 billion for the quarter",
+      "effect": "estimate revision upside driven by top-line delivery",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.7,
       "polarity": -1.0,
       "evidence_span": "Highlights for the December 2016 quarter were as follows: • Shipments of $1.92 billion and revenue of $1.88 billion",
       "source_id": "LRCX2017Q1_001",
@@ -48,20 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.836,
+      "confidence": 0.845,
       "span_score": 1.0,
-      "severity_align": 0.344,
+      "severity_align": 0.394,
       "mechanism_hint": 1.0,
-      "claim_id": "LRCX2017Q1_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "LRCX2017Q1_C001"
     },
     {
-      "cause": "GAAP operating margin of 23.4%",
-      "effect": "Improved profitability metrics boosting investor confidence",
+      "cause": "GAAP operating margin of 23.4% reported",
+      "effect": "profitability metric improvement supports earnings multiple",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.6,
       "polarity": -1.0,
       "evidence_span": "gross margin of 45.0% , GAAP operating margin of 23.4",
       "source_id": "LRCX2017Q1_002",
@@ -73,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.839,
+      "confidence": 0.858,
       "span_score": 1.0,
-      "severity_align": 0.354,
+      "severity_align": 0.454,
       "mechanism_hint": 1.0,
-      "claim_id": "LRCX2017Q1_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "LRCX2017Q1_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

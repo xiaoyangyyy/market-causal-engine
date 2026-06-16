@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T10:49:17+00:00",
+  "computed_at": "2026-06-15T14:22:37+00:00",
   "accepted": [
     {
-      "cause": "Diluted EPS increased 157%",
-      "effect": "fundamental upside",
+      "cause": "diluted earnings per share (EPS) increased 157%",
+      "effect": "EPS surge signals strong earnings beat potential",
       "mechanism": "fundamental",
-      "severity": 0.9,
+      "severity": 0.95,
       "polarity": 1.0,
       "evidence_span": "diluted earnings per share (EPS) increased 157% to $",
       "source_id": "TMO2020Q4_003",
@@ -23,21 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.788,
+      "confidence": 0.781,
       "span_score": 1.0,
-      "severity_align": 0.154,
+      "severity_align": 0.104,
       "mechanism_hint": 1.0,
-      "claim_id": "TMO2020Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TMO2020Q4_C001"
     },
     {
       "cause": "Third quarter revenue increased 36% to $8.52 billion",
-      "effect": "fundamental upside",
+      "effect": "revenue growth drives estimate revision upside",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.9,
       "polarity": 1.0,
       "evidence_span": "Third quarter revenue increased 36% to $8.52 billion.",
       "source_id": "TMO2020Q4_002",
@@ -49,21 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.792,
+      "confidence": 0.784,
       "span_score": 0.975,
-      "severity_align": 0.224,
+      "severity_align": 0.174,
       "mechanism_hint": 1.0,
-      "claim_id": "TMO2020Q4_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TMO2020Q4_C000"
     },
     {
-      "cause": "Adjusted EPS increased 91% to $5.63",
-      "effect": "fundamental upside",
+      "cause": "Third quarter adjusted EPS increased 91% to $5.63",
+      "effect": "adjusted EPS growth reinforces valuation expansion",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.85,
       "polarity": 1.0,
       "evidence_span": "Third quarter adjusted EPS increased 91% to $5.63.",
       "source_id": "TMO2020Q4_004",
@@ -75,15 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.814,
+      "confidence": 0.803,
       "span_score": 1.0,
-      "severity_align": 0.254,
+      "severity_align": 0.204,
       "mechanism_hint": 1.0,
-      "claim_id": "TMO2020Q4_C002",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TMO2020Q4_C002"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

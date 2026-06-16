@@ -5,30 +5,29 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T08:51:13+00:00",
+  "computed_at": "2026-06-16T09:14:53+00:00",
   "accepted": [
     {
-      "cause": "negative fundamental signal",
-      "effect": "valuation de-rating",
+      "cause": "financial and operating results for the quarter ended September 30, 2016",
+      "effect": "estimate revision",
       "mechanism": "fundamental",
-      "severity": 0.124,
+      "severity": 0.5,
       "polarity": -1.0,
-      "evidence_span": "On November 4, 2016, Regeneron Pharmaceuticals, Inc. issued a press release announcing its financial and operating results for the quarter ended September 30, 2016.",
+      "evidence_span": "announcing its financial and operating results for the quarter ended September 30, 2016",
       "source_id": "REGN2016Q4_000",
       "published_at": 0,
-      "proposer": "heuristic",
+      "proposer": "llm",
       "atom_id": "REGN2016Q4_000",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
-      "span_score": 1.0,
-      "severity_align": 1.0,
+      "confidence": 0.873,
+      "span_score": 0.956,
+      "severity_align": 0.624,
       "mechanism_hint": 1.0,
       "claim_id": "REGN2016Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true
@@ -39,7 +38,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

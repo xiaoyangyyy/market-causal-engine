@@ -5,7 +5,7 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T11:38:49+00:00",
+  "computed_at": "2026-06-16T08:55:03+00:00",
   "accepted": [
     {
       "cause": "Full-year GAAP diluted EPS guidance raised",
@@ -34,23 +34,23 @@
     },
     {
       "cause": "Diluted EPS of $1.21 reflecting growth ahead of expectations",
-      "effect": "earnings beat drives upward estimate revisions",
+      "effect": "earnings beat triggers upward estimate revisions",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
-      "evidence_span": "“We delivered another strong quarter, with EPS growth ahead of our expectations.",
-      "source_id": "ABBV2016Q3_005",
+      "evidence_span": "Diluted EPS of $1.21, Reflecting Growth of",
+      "source_id": "ABBV2016Q3_001",
       "published_at": 0,
-      "atom_id": "ABBV2016Q3_005",
+      "atom_id": "ABBV2016Q3_001",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.807,
+      "confidence": 0.802,
       "span_score": 1.0,
-      "severity_align": 0.221,
+      "severity_align": 0.198,
       "mechanism_hint": 1.0,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
@@ -58,8 +58,8 @@
       "claim_id": "ABBV2016Q3_C002"
     },
     {
-      "cause": "Adjusted Net Revenues grew 8.0% with Humira sales up 11.3%",
-      "effect": "revenue growth validates top-line expansion narrative",
+      "cause": "Adjusted Net Revenues grew 8.0% operationally driven by Humira sales",
+      "effect": "revenue growth narrative reinforced by top-line expansion",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": 1.0,

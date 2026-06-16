@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T12:42:47+00:00",
+  "computed_at": "2026-06-16T09:25:47+00:00",
   "accepted": [
     {
       "cause": "Diluted EPS of $19.04",
-      "effect": "Positive earnings surprise",
+      "effect": "EPS beat drives estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": -1.0,
-      "evidence_span": "Diluted EPS of $19.04",
+      "evidence_span": "Diluted EPS of $19.04, or $",
       "source_id": "BLK2017Q1_000",
       "published_at": 0,
       "atom_id": "BLK2017Q1_000",
@@ -23,22 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.784,
+      "confidence": 0.788,
       "span_score": 1.0,
       "severity_align": 0.138,
       "mechanism_hint": 1.0,
-      "claim_id": "BLK2017Q1_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "BLK2017Q1_C000"
     },
     {
       "cause": "Aladdin revenue increased 13% in 2016",
-      "effect": "Continued momentum in key revenue stream",
+      "effect": "Platform growth strengthens long-term valuation narrative",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": 1.0,
-      "evidence_span": "Aladdin revenue increased 13% in 2016, and is well positioned for continued momentum",
+      "evidence_span": "Aladdin revenue increased 13% in 2016, and is well positioned for continued momentum with a broader set of clients than ever before.",
       "source_id": "BLK2017Q1_001",
       "published_at": 0,
       "atom_id": "BLK2017Q1_001",
@@ -48,39 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.813,
-      "span_score": 0.977,
+      "confidence": 0.825,
+      "span_score": 1.0,
       "severity_align": 0.304,
       "mechanism_hint": 1.0,
-      "claim_id": "BLK2017Q1_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "BLK2017Q1_C001"
     },
     {
-      "cause": "Operating income increased to $1,232 million",
-      "effect": "Improved profitability",
+      "cause": "Securities lending revenue decreased to $138 million",
+      "effect": "Revenue decline in lending segment lowers quarterly outlook",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.6,
       "polarity": -1.0,
-      "evidence_span": "Operating income (1) $ 1,232 $ 1,143",
-      "source_id": "BLK2017Q1_002",
+      "evidence_span": "Securities lending revenue of $138 million in the current quarter compared with $142 million in the third quarter of 2016.",
+      "source_id": "BLK2017Q1_007",
       "published_at": 0,
-      "atom_id": "BLK2017Q1_002",
+      "atom_id": "BLK2017Q1_007",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.833,
-      "span_score": 0.991,
-      "severity_align": 0.353,
+      "confidence": 0.868,
+      "span_score": 1.0,
+      "severity_align": 0.498,
       "mechanism_hint": 1.0,
-      "claim_id": "BLK2017Q1_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "BLK2017Q1_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

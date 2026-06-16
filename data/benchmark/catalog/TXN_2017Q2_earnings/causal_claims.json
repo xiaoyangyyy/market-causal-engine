@@ -5,65 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T07:43:10+00:00",
+  "computed_at": "2026-06-16T09:34:43+00:00",
   "accepted": [
     {
-      "cause": "Second-quarter revenue outlook of $3.40 billion to $3.70 billion",
-      "effect": "Confidence in future earnings trajectory",
-      "mechanism": "fundamental",
-      "severity": 0.75,
-      "polarity": -1.0,
-      "evidence_span": "TI’s second-quarter outlook is for revenue in the range of $3.40 billion to $3.70 billion",
-      "source_id": "TXN2017Q2_004",
-      "published_at": 0,
-      "atom_id": "TXN2017Q2_004",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.812,
-      "span_score": 0.921,
-      "severity_align": 0.421,
-      "mechanism_hint": 1.0,
-      "claim_id": "TXN2017Q2_C003",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Embedded Processing revenue grew 20 percent",
-      "effect": "Strong segment performance boosting overall outlook",
-      "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": 1.0,
-      "evidence_span": "revenue grew 20 percent and Embedded Processing revenue grew",
-      "source_id": "TXN2017Q2_002",
-      "published_at": 0,
-      "atom_id": "TXN2017Q2_002",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.865,
-      "span_score": 1.0,
-      "severity_align": 0.459,
-      "mechanism_hint": 1.0,
-      "claim_id": "TXN2017Q2_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Revenue growth of 13 percent year-over-year",
-      "effect": "fundamental upside",
+      "cause": "Revenue increased 13 percent from the same quarter a year ago",
+      "effect": "revenue growth drives top-line estimate revision upside",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": 1.0,
-      "evidence_span": "Revenue increased 13 percent from the same quarter a year ago.",
+      "evidence_span": "Revenue increased 13 percent from the same quarter a year ago",
       "source_id": "TXN2017Q2_001",
       "published_at": 0,
       "atom_id": "TXN2017Q2_001",
@@ -73,19 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.788,
-      "span_score": 0.909,
+      "confidence": 0.789,
+      "span_score": 0.908,
       "severity_align": 0.352,
       "mechanism_hint": 1.0,
-      "claim_id": "TXN2017Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TXN2017Q2_C000"
     },
     {
-      "cause": "Gross margin of 63.0 percent",
-      "effect": "Improved profitability expectations",
+      "cause": "Gross margin of 63.0 percent reflected the quality of",
+      "effect": "high gross margin supports profitability and valuation multiples",
       "mechanism": "fundamental",
       "severity": 0.7,
       "polarity": -1.0,
@@ -99,22 +48,65 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.839,
+      "confidence": 0.836,
       "span_score": 1.0,
       "severity_align": 0.354,
       "mechanism_hint": 1.0,
-      "claim_id": "TXN2017Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TXN2017Q2_C001"
+    },
+    {
+      "cause": "Embedded Processing revenue grew 20 percent",
+      "effect": "segment growth strengthens high-margin product mix outlook",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": 1.0,
+      "evidence_span": "revenue grew 20 percent and Embedded Processing revenue grew",
+      "source_id": "TXN2017Q2_002",
+      "published_at": 0,
+      "atom_id": "TXN2017Q2_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.859,
+      "span_score": 1.0,
+      "severity_align": 0.459,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TXN2017Q2_C002"
     }
   ],
-  "rejected": [],
-  "claim_count": 4,
-  "rejected_count": 0,
+  "rejected": [
+    {
+      "cause": "TI's second-quarter outlook is for revenue in the range of $3.40 billion to $3.70 billion",
+      "effect": "forward revenue guidance sets baseline for Q2 consensus estimates",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": 0.5,
+      "evidence_span": "TI's second-quarter outlook is for revenue in the range of $3.40 billion to $3.70 billion",
+      "source_id": "TXN2017Q2_004",
+      "published_at": 0,
+      "atom_id": "TXN2017Q2_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
+  "claim_count": 3,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

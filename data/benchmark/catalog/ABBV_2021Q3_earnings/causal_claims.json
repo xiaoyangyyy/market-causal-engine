@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:39:00+00:00",
+  "computed_at": "2026-06-15T14:50:00+00:00",
   "accepted": [
     {
       "cause": "Guidance cut for 2021 GAAP Diluted EPS",
-      "effect": "forward earnings revision",
+      "effect": "lowered full-year earnings expectations",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.9,
       "polarity": -1.0,
       "evidence_span": "Updates 2021 GAAP Diluted EPS Guidance Range from $7.27 to $7.47 to $6.04 to $6.14",
       "source_id": "ABBV2021Q3_011",
@@ -23,21 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.798,
+      "confidence": 0.789,
       "span_score": 0.97,
-      "severity_align": 0.257,
+      "severity_align": 0.207,
       "mechanism_hint": 1.0,
-      "claim_id": "ABBV2021Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ABBV2021Q3_C000"
     },
     {
-      "cause": "Strong Q2 Net Revenues growth of 33.9%",
-      "effect": "estimate upside",
+      "cause": "Second-quarter net revenues increase of 33.9 percent",
+      "effect": "revenue beat driving top-line estimate revisions",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.8,
       "polarity": -1.0,
       "evidence_span": "Delivers Second-Quarter Net Revenues of $13.959 Billion, an Increase of 33.9 Percent on a Reported Basis",
       "source_id": "ABBV2021Q3_001",
@@ -49,23 +48,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.813,
+      "confidence": 0.802,
       "span_score": 0.924,
-      "severity_align": 0.421,
+      "severity_align": 0.371,
       "mechanism_hint": 1.0,
-      "claim_id": "ABBV2021Q3_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ABBV2021Q3_C001"
     },
     {
-      "cause": "Significant growth in Immunology Portfolio revenues",
-      "effect": "Positive sentiment regarding core therapeutic segment performance",
+      "cause": "Immunology portfolio revenue growth of 15.1 percent",
+      "effect": "core segment growth supporting valuation multiples",
       "mechanism": "fundamental",
-      "severity": 0.65,
+      "severity": 0.6,
       "polarity": -1.0,
-      "evidence_span": "Second-Quarter Global Net Revenues from the Immunology Portfolio Were $6.120 Billion, an Increase of 15.1 Percent",
+      "evidence_span": "Second-Quarter Global Net Revenues from the Immunology Portfolio Were $6.120 Billion, an Increase of 15.1 Percent on a Reported Basis",
       "source_id": "ABBV2021Q3_001",
       "published_at": 0,
       "atom_id": "ABBV2021Q3_001",
@@ -75,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.842,
-      "span_score": 0.931,
-      "severity_align": 0.521,
+      "confidence": 0.856,
+      "span_score": 0.945,
+      "severity_align": 0.571,
       "mechanism_hint": 1.0,
-      "claim_id": "ABBV2021Q3_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ABBV2021Q3_C002"
     }
   ],
   "rejected": [],
@@ -90,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

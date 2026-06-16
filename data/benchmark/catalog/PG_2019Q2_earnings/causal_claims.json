@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T03:15:42+00:00",
+  "computed_at": "2026-06-16T11:53:16+00:00",
   "accepted": [
     {
-      "cause": "Increased annual outlook",
-      "effect": "estimate upside",
+      "cause": "CEO confirms strong organic sales growth and increased outlook",
+      "effect": "guidance increase raises FY revenue expectations",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
@@ -23,19 +23,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.795,
+      "confidence": 0.798,
       "span_score": 0.974,
       "severity_align": 0.239,
       "mechanism_hint": 1.0,
-      "claim_id": "PG2019Q2_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "PG2019Q2_C001"
     },
     {
-      "cause": "Diluted Net EPS beat expectations",
-      "effect": "positive revision momentum",
+      "cause": "Diluted Net EPS beat expectations with 9% growth",
+      "effect": "estimate revision upside driven by EPS growth",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -49,41 +48,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.798,
+      "confidence": 0.8,
       "span_score": 1.0,
       "severity_align": 0.19,
       "mechanism_hint": 1.0,
-      "claim_id": "PG2019Q2_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "PG2019Q2_C000"
     },
     {
-      "cause": "Gross margin expansion",
-      "effect": "estimate revision upside",
+      "cause": "Core EPS projected to increase 3-8% year-over-year",
+      "effect": "earnings growth narrative supports valuation multiple",
       "mechanism": "fundamental",
       "severity": 0.7,
-      "polarity": 1.0,
-      "evidence_span": "gross margin increased 30 basis points",
-      "source_id": "PG2019Q2_006",
+      "polarity": -1.0,
+      "evidence_span": "Core earnings per share are expected to increase three to eight percent versus fiscal 2018 Core EPS of $4.22",
+      "source_id": "PG2019Q2_009",
       "published_at": 0,
-      "atom_id": "PG2019Q2_006",
+      "atom_id": "PG2019Q2_009",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.836,
-      "span_score": 0.996,
-      "severity_align": 0.354,
+      "confidence": 0.844,
+      "span_score": 1.0,
+      "severity_align": 0.389,
       "mechanism_hint": 1.0,
-      "claim_id": "PG2019Q2_C002",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "PG2019Q2_C002"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T11:41:00+00:00",
+  "computed_at": "2026-06-16T08:58:38+00:00",
   "accepted": [
     {
-      "cause": "Non-GAAP EPS of $0.63 and GAAP net income of $2.8 billion reported",
-      "effect": "EPS beat drives fundamental valuation re-rating",
+      "cause": "Non-GAAP EPS of $0.63 and FY revenue growth of 3%",
+      "effect": "fundamental earnings beat supports valuation floor",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.6,
       "polarity": -1.0,
       "evidence_span": "Cisco reported fourth quarter revenue of $12.6 billion, net income on a generally accepted accounting principles (GAAP) basis of $2.8 billion or $0.56 per share, and non-GAAP net income of $3.2 billion or $0.63 per share.",
       "source_id": "CSCO2016Q3_003",
@@ -23,9 +23,9 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.826,
+      "confidence": 0.881,
       "span_score": 1.0,
-      "severity_align": 0.309,
+      "severity_align": 0.559,
       "mechanism_hint": 1.0,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
@@ -34,9 +34,9 @@
     },
     {
       "cause": "Revenue from software and subscriptions grew",
-      "effect": "Software mix shift improves long-term margin expectations",
+      "effect": "recurring revenue mix shift improves long-term margin outlook",
       "mechanism": "fundamental",
-      "severity": 0.6,
+      "severity": 0.5,
       "polarity": -1.0,
       "evidence_span": "revenue from software and subscriptions grew",
       "source_id": "CSCO2016Q3_004",
@@ -48,22 +48,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.857,
+      "confidence": 0.879,
       "span_score": 1.0,
-      "severity_align": 0.449,
+      "severity_align": 0.549,
       "mechanism_hint": 1.0,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true,
-      "claim_id": "CSCO2016Q3_C002"
+      "claim_id": "CSCO2016Q3_C001"
     },
     {
-      "cause": "FY 2016 Revenue growth of 3% year over year",
-      "effect": "Modest revenue growth supports baseline fundamental estimates",
+      "cause": "FY 2016 Revenue normalized to exclude SP Video CPE Business at $48.7 billion",
+      "effect": "normalized revenue growth clarifies core business trajectory",
       "mechanism": "fundamental",
       "severity": 0.4,
       "polarity": 1.0,
-      "evidence_span": "$48.7 billion, growth of 3% year over year • FY 2016 Earnings per Share: $2.11 GAAP",
+      "evidence_span": "$0.63 non-GAAP • FY 2016 Revenue (normalized to exclude the SP Video CPE Business): • $48.7 billion, growth of 3% year over year • FY 2016 Earnings per Share: $2.11 GAAP",
       "source_id": "CSCO2016Q3_001",
       "published_at": 0,
       "atom_id": "CSCO2016Q3_001",
@@ -73,18 +73,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.892,
-      "span_score": 0.948,
+      "confidence": 0.918,
+      "span_score": 1.0,
       "severity_align": 0.727,
       "mechanism_hint": 1.0,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true,
-      "claim_id": "CSCO2016Q3_C001"
+      "claim_id": "CSCO2016Q3_C002"
     }
   ],
   "rejected": [],
   "claim_count": 3,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
-  "llm_base_
+  "llm_base_url": "https://ai.azya.top/v1",
+  "llm_proposer": "llm_event"
+}

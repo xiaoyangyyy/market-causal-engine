@@ -5,41 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T12:27:27+00:00",
+  "computed_at": "2026-06-15T15:37:23+00:00",
   "accepted": [
     {
-      "cause": "Q2 revenue beat internal forecast despite YoY decline",
-      "effect": "positive revision momentum",
+      "cause": "Adjusted EBITDA beat expectations due to better revenues and lower costs",
+      "effect": "margin expansion expectation drives valuation re-rating",
       "mechanism": "fundamental",
       "severity": 0.7,
       "polarity": -1.0,
-      "evidence_span": "Financials Q2 revenue was $1,068 million, down 4% year-over-year, which is favorable to the internal forecast",
-      "source_id": "SNAP2023Q2_006",
-      "published_at": 0,
-      "atom_id": "SNAP2023Q2_006",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.968,
-      "span_score": 0.979,
-      "severity_align": 0.92,
-      "mechanism_hint": 1.0,
-      "claim_id": "SNAP2023Q2_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Adjusted EBITDA beat expectations due to cost control",
-      "effect": "Improved investor sentiment on profitability path",
-      "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": -1.0,
-      "evidence_span": "Adjusted EBITDA was negative $38 million in Q2, which decreased from positive $7 million in Q2 of the prior year, but above our expectations",
+      "evidence_span": "Adjusted EBITDA was negative $38 million in Q2, which decreased from positive $7 million in Q2 of the prior year, but above our expectations entering the quarter, reflecting better-than- forecasted revenues and lower-than-forecasted costs.",
       "source_id": "SNAP2023Q2_010",
       "published_at": 0,
       "atom_id": "SNAP2023Q2_010",
@@ -49,14 +23,39 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.977,
-      "span_score": 0.967,
-      "severity_align": 0.98,
+      "confidence": 0.952,
+      "span_score": 1.0,
+      "severity_align": 0.88,
       "mechanism_hint": 1.0,
-      "claim_id": "SNAP2023Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "SNAP2023Q2_C001"
+    },
+    {
+      "cause": "Q2 revenue favorable to internal forecast despite YoY decline",
+      "effect": "estimate revision upside relative to internal guidance",
+      "mechanism": "fundamental",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "Q2 revenue was $1,068 million, down 4% year-over-year, which is favorable to the internal forecast for Q2 that we shared when reporting prior quarter results.",
+      "source_id": "SNAP2023Q2_006",
+      "published_at": 0,
+      "atom_id": "SNAP2023Q2_006",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.938,
+      "span_score": 1.0,
+      "severity_align": 0.82,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "SNAP2023Q2_C000"
     }
   ],
   "rejected": [],
@@ -64,7 +63,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

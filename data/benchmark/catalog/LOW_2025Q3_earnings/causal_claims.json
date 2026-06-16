@@ -5,40 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T04:37:57+00:00",
+  "computed_at": "2026-06-15T16:52:12+00:00",
   "accepted": [
     {
-      "cause": "Updates Full Year 2025 Outlook",
-      "effect": "Guidance revision impact on valuation",
-      "mechanism": "fundamental",
-      "severity": 0.9,
-      "polarity": -1.0,
-      "evidence_span": "Updates Full Year 2025 Outlook",
-      "source_id": "LOW2025Q3_001",
-      "published_at": 0,
-      "atom_id": "LOW2025Q3_001",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.744,
-      "span_score": 0.897,
-      "severity_align": 0.201,
-      "mechanism_hint": 1.0,
-      "claim_id": "LOW2025Q3_C003",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
       "cause": "Adjusted Diluted EPS of $4.33",
-      "effect": "estimate revision upside",
+      "effect": "EPS beat drives fundamental valuation upside",
       "mechanism": "fundamental",
       "severity": 0.85,
-      "polarity": -1.0,
-      "evidence_span": "Adjusted Diluted EPS 1 of $4.33",
+      "polarity": 1.0,
+      "evidence_span": "Adjusted Diluted EPS 1 of $4.33 — — Comparable Sales increased 1.1%",
       "source_id": "LOW2025Q3_001",
       "published_at": 0,
       "atom_id": "LOW2025Q3_001",
@@ -48,23 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.757,
-      "span_score": 0.898,
+      "confidence": 0.791,
+      "span_score": 0.955,
       "severity_align": 0.251,
       "mechanism_hint": 1.0,
-      "claim_id": "LOW2025Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "LOW2025Q3_C000"
     },
     {
       "cause": "Comparable Sales increased 1.1%",
-      "effect": "Revenue growth signal",
+      "effect": "Sales growth supports revenue estimate revision",
       "mechanism": "fundamental",
       "severity": 0.7,
       "polarity": 1.0,
-      "evidence_span": "Comparable Sales increased 1.1%",
+      "evidence_span": "Comparable Sales increased 1.1% — — Updates Full Year 2025 Outlook",
       "source_id": "LOW2025Q3_001",
       "published_at": 0,
       "atom_id": "LOW2025Q3_001",
@@ -74,18 +48,18 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.794,
-      "span_score": 0.898,
+      "confidence": 0.823,
+      "span_score": 0.953,
       "severity_align": 0.401,
       "mechanism_hint": 1.0,
-      "claim_id": "LOW2025Q3_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "LOW2025Q3_C002"
     },
     {
-      "cause": "Negative impact on diluted EPS by $0.06",
-      "effect": "Downward pressure on earnings per share",
+      "cause": "Specific headwind reduced EPS by $0.06",
+      "effect": "EPS headwind creates margin compression concern",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
@@ -99,22 +73,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.865,
+      "confidence": 0.859,
       "span_score": 1.0,
       "severity_align": 0.459,
       "mechanism_hint": 1.0,
-      "claim_id": "LOW2025Q3_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "LOW2025Q3_C001"
     }
   ],
   "rejected": [],
-  "claim_count": 4,
+  "claim_count": 3,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

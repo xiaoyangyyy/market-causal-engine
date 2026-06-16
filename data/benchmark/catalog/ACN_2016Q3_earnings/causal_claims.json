@@ -5,41 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T12:34:29+00:00",
+  "computed_at": "2026-06-16T08:59:25+00:00",
   "accepted": [
     {
-      "cause": "EPS beat",
-      "effect": "estimate revision upside",
-      "mechanism": "fundamental",
-      "severity": 0.85,
-      "polarity": -1.0,
-      "evidence_span": "up 8% from adjusted EPS of $1.30 in the third quarter last year",
-      "source_id": "ACN2016Q3_001",
-      "published_at": 0,
-      "atom_id": "ACN2016Q3_001",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.773,
-      "span_score": 0.895,
-      "severity_align": 0.321,
-      "mechanism_hint": 1.0,
-      "claim_id": "ACN2016Q3_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Operating margin expansion",
-      "effect": "estimate revision upside",
+      "cause": "Operating margin expansion of 10 basis points",
+      "effect": "margin expansion drives fundamental valuation uplift",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": -1.0,
-      "evidence_span": "operating margin of 15.5%, an expansion of 10 basis points from adjusted operating margin in the third quarter last year",
+      "evidence_span": "Operating income is $1.31 billion, with operating margin of 15.5%, an expansion of 10 basis points from adjusted operating margin in the third quarter last year",
       "source_id": "ACN2016Q3_001",
       "published_at": 0,
       "atom_id": "ACN2016Q3_001",
@@ -49,23 +23,65 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.82,
-      "span_score": 0.936,
+      "confidence": 0.833,
+      "span_score": 0.964,
       "severity_align": 0.421,
       "mechanism_hint": 1.0,
-      "claim_id": "ACN2016Q3_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ACN2016Q3_C000"
+    },
+    {
+      "cause": "New bookings of $9.1 billion",
+      "effect": "strong bookings support future revenue growth narrative",
+      "mechanism": "fundamental",
+      "severity": 0.65,
+      "polarity": -1.0,
+      "evidence_span": "New bookings are $9.1 billion, with consult",
+      "source_id": "ACN2016Q3_001",
+      "published_at": 0,
+      "atom_id": "ACN2016Q3_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.813,
+      "span_score": 0.881,
+      "severity_align": 0.521,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ACN2016Q3_C001"
     }
   ],
-  "rejected": [],
+  "rejected": [
+    {
+      "cause": "Diluted EPS of $1.41 versus prior year $1.30",
+      "effect": "EPS beat triggers estimate revision upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 0.9,
+      "evidence_span": "Diluted earnings per share were $1.41, compared with $1.30 in the third quarter last year",
+      "source_id": "ACN2016Q3_003",
+      "published_at": 0,
+      "atom_id": "ACN2016Q3_003",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
+    }
+  ],
   "claim_count": 2,
-  "rejected_count": 0,
+  "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,12 +5,39 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T14:40:32+00:00",
-  "accepted": [],
+  "computed_at": "2026-06-16T11:12:41+00:00",
+  "accepted": [
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.77,
+      "polarity": -1.0,
+      "evidence_span": "(Exact name of registrant as specified in its charter) Delaware (State or other jurisdiction of incorporation) 1-768 (Commission File Number) 37-0602744 (IRS Employer Identificatio",
+      "source_id": "CAT2018Q4_001",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "CAT2018Q4_001",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.889,
+      "span_score": 0.979,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "CAT2018Q4_C001",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    }
+  ],
   "rejected": [],
-  "claim_count": 0,
+  "claim_count": 1,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback_empty"
+  "llm_proposer": "llm_atom_fallback"
 }

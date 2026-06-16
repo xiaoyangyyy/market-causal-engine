@@ -5,36 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T04:39:46+00:00",
+  "computed_at": "2026-06-15T16:55:25+00:00",
   "accepted": [
     {
-      "cause": "Year-over-year revenue increase from 2,045 to 2,680 million",
-      "effect": "Strong top-line performance driving valuation",
-      "mechanism": "fundamental",
-      "severity": 0.9,
-      "polarity": -1.0,
-      "evidence_span": "Revenues Subscription solutions 656 563 Merchant solutions 2,024 1,482 2,680 2,045",
-      "source_id": "SHOP2025Q3_002",
-      "published_at": 0,
-      "atom_id": "SHOP2025Q3_002",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.768,
-      "span_score": 0.909,
-      "severity_align": 0.271,
-      "mechanism_hint": 1.0,
-      "claim_id": "SHOP2025Q3_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Revenue growth guidance of mid-to-high twenties percentage rate",
-      "effect": "fundamental upside",
+      "cause": "Revenue growth guidance set at mid-to-high twenties percentage rate",
+      "effect": "revenue growth rate expectation drives valuation multiple expansion",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -52,11 +27,35 @@
       "span_score": 1.0,
       "severity_align": 0.251,
       "mechanism_hint": 1.0,
-      "claim_id": "SHOP2025Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "SHOP2025Q3_C000"
+    },
+    {
+      "cause": "Merchant solutions revenue increased from 1,482 to 2,024 million",
+      "effect": "top-line expansion in merchant solutions supports fundamental revenue beat",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": -1.0,
+      "evidence_span": "Merchant solutions 2,024 1,482 2,680 2,045 Cost of revenues Subscription solutions 121 97 Merchant solutions 1,257 903 1,378 1,",
+      "source_id": "SHOP2025Q3_002",
+      "published_at": 0,
+      "atom_id": "SHOP2025Q3_002",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.821,
+      "span_score": 0.941,
+      "severity_align": 0.421,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "SHOP2025Q3_C001"
     }
   ],
   "rejected": [],
@@ -64,7 +63,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

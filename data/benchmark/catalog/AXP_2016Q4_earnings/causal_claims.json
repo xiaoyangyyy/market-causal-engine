@@ -5,8 +5,58 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T08:49:09+00:00",
+  "computed_at": "2026-06-16T09:09:23+00:00",
   "accepted": [
+    {
+      "cause": "total revenues net of interest expense",
+      "effect": "margin shift",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "total revenues net of interest expense were",
+      "source_id": "AXP2016Q4_005",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "AXP2016Q4_005",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.879,
+      "span_score": 1.0,
+      "severity_align": 0.548,
+      "mechanism_hint": 1.0,
+      "claim_id": "AXP2016Q4_C003",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "exclusion of a $1 charge",
+      "effect": "non-GAAP EPS estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.5,
+      "polarity": -1.0,
+      "evidence_span": "EPS), a non-GAAP measure, excludes a $",
+      "source_id": "AXP2016Q4_003",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "AXP2016Q4_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.878,
+      "span_score": 1.0,
+      "severity_align": 0.545,
+      "mechanism_hint": 1.0,
+      "claim_id": "AXP2016Q4_C002",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
     {
       "cause": "negative fundamental signal",
       "effect": "valuation de-rating",
@@ -14,16 +64,16 @@
       "severity": 0.051,
       "polarity": -1.0,
       "evidence_span": "outlook provided in the company’s Q4’15 earnings",
-      "source_id": "AXP2016Q4_004",
+      "source_id": "AXP2016Q4_017",
       "published_at": 0,
       "proposer": "heuristic",
-      "atom_id": "AXP2016Q4_004",
+      "atom_id": "AXP2016Q4_017",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
+      "confidence": 0.9,
       "span_score": 1.0,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
@@ -32,20 +82,45 @@
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true
+    },
+    {
+      "cause": "earnings disclosure",
+      "effect": "fundamental repricing",
+      "mechanism": "fundamental",
+      "severity": 0.037,
+      "polarity": -1.0,
+      "evidence_span": "REPORTS THIRD QUARTER EPS",
+      "source_id": "AXP2016Q4_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "AXP2016Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.93,
+      "span_score": 1.0,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "AXP2016Q4_C001",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
     }
   ],
   "rejected": [
     {
       "cause": "outlook provided in the company's Q4'15 earnings",
-      "effect": "stock price movement",
+      "effect": "guidance change",
       "mechanism": "fundamental",
       "severity": 0.5,
       "polarity": 0.0,
       "evidence_span": "outlook provided in the company's Q4'15 earnings",
-      "source_id": "AXP2016Q4_017",
+      "source_id": "AXP2016Q4_004",
       "published_at": 0,
       "proposer": "llm",
-      "atom_id": "AXP2016Q4_017",
+      "atom_id": "AXP2016Q4_004",
       "validation": {
         "passed": false,
         "errors": [
@@ -60,26 +135,26 @@
       "mechanism": "none",
       "severity": 0.0,
       "polarity": 0.0,
-      "evidence_span": "EPS), a non-GAAP measure, excludes a $",
-      "source_id": "AXP2016Q4_003",
+      "evidence_span": "None",
+      "source_id": "AXP2016Q4_001",
       "published_at": 0,
       "proposer": "llm",
-      "atom_id": "AXP2016Q4_003",
+      "atom_id": "AXP2016Q4_001",
       "validation": {
         "passed": false,
         "errors": [
           "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
           "mechanism_not_allowed_for_domain:none:earnings"
         ],
         "warnings": []
       }
     }
   ],
-  "claim_count": 1,
+  "claim_count": 4,
   "rejected_count": 2,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

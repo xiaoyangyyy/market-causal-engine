@@ -5,11 +5,36 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T06:04:44+00:00",
+  "computed_at": "2026-06-16T12:15:54+00:00",
   "accepted": [
     {
-      "cause": "Net income $ 2,882",
-      "effect": "Stock price increase",
+      "cause": "Net income attributable to Raytheon Company",
+      "effect": "earnings estimate revision",
+      "mechanism": "fundamental",
+      "severity": 0.8,
+      "polarity": -1.0,
+      "evidence_span": "Net income attributable to Raytheon Company $",
+      "source_id": "RTX2019Q4_000",
+      "published_at": 0,
+      "proposer": "llm",
+      "atom_id": "RTX2019Q4_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.813,
+      "span_score": 1.0,
+      "severity_align": 0.249,
+      "mechanism_hint": 1.0,
+      "claim_id": "RTX2019Q4_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "Net income increase",
+      "effect": "earnings estimate revision",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
@@ -23,18 +48,18 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.81,
+      "confidence": 0.811,
       "span_score": 1.0,
       "severity_align": 0.239,
       "mechanism_hint": 1.0,
       "claim_id": "RTX2019Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
-      "cause": "Net income $ 2,882",
-      "effect": "Stock price increase",
+      "cause": "Net income increase",
+      "effect": "earnings estimate revision",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
@@ -48,37 +73,11 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.81,
+      "confidence": 0.811,
       "span_score": 1.0,
       "severity_align": 0.239,
       "mechanism_hint": 1.0,
       "claim_id": "RTX2019Q4_C002",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "negative fundamental signal",
-      "effect": "valuation de-rating",
-      "mechanism": "fundamental",
-      "severity": 0.049,
-      "polarity": -1.0,
-      "evidence_span": "Net income attributable to Raytheon Company $",
-      "source_id": "RTX2019Q4_000",
-      "published_at": 0,
-      "proposer": "heuristic",
-      "atom_id": "RTX2019Q4_000",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "confidence": 1.0,
-      "span_score": 1.0,
-      "severity_align": 1.0,
-      "mechanism_hint": 1.0,
-      "claim_id": "RTX2019Q4_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
       "polarity_aligned": true
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

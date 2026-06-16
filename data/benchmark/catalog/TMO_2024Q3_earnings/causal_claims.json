@@ -5,37 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T04:27:53+00:00",
+  "computed_at": "2026-06-15T16:23:08+00:00",
   "accepted": [
     {
-      "cause": "Operating income margin expansion to 17.3%",
-      "effect": "estimate revision upside",
-      "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": -1.0,
-      "evidence_span": "operating income $ 1,820 17.3 % $ 1,578 14.8 % Cost of",
-      "source_id": "TMO2024Q3_000",
-      "published_at": 0,
-      "atom_id": "TMO2024Q3_000",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.839,
-      "span_score": 1.0,
-      "severity_align": 0.355,
-      "mechanism_hint": 1.0,
-      "claim_id": "TMO2024Q3_C002",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Diluted EPS increased 15%",
-      "effect": "fundamental upside",
+      "cause": "diluted earnings per share (EPS) increased 15%",
+      "effect": "estimate revision upside driven by double-digit EPS growth",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -49,23 +23,47 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.801,
+      "confidence": 0.803,
       "span_score": 1.0,
       "severity_align": 0.203,
       "mechanism_hint": 1.0,
-      "claim_id": "TMO2024Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TMO2024Q3_C000"
     },
     {
-      "cause": "Adjusted EPS increased 4% to $5.37",
-      "effect": "fundamental upside",
+      "cause": "operating income margin expanded to 17.3% from 14.8%",
+      "effect": "margin expansion signals improved operational efficiency",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.7,
+      "polarity": -1.0,
+      "evidence_span": "operating income $ 1,820 17.3 % $ 1,578 14.8 % Cost of",
+      "source_id": "TMO2024Q3_000",
+      "published_at": 0,
+      "atom_id": "TMO2024Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.836,
+      "span_score": 1.0,
+      "severity_align": 0.355,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TMO2024Q3_C002"
+    },
+    {
+      "cause": "Second quarter adjusted EPS increased 4% to $5.37",
+      "effect": "non-GAAP earnings beat reinforces valuation support",
+      "mechanism": "fundamental",
+      "severity": 0.6,
       "polarity": 1.0,
-      "evidence_span": "Second quarter adjusted EPS increased 4% to $5.37.",
+      "evidence_span": "• Second quarter adjusted EPS increased 4% to $5.37.",
       "source_id": "TMO2024Q3_008",
       "published_at": 0,
       "atom_id": "TMO2024Q3_008",
@@ -75,15 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.826,
+      "confidence": 0.858,
       "span_score": 1.0,
-      "severity_align": 0.304,
+      "severity_align": 0.454,
       "mechanism_hint": 1.0,
-      "claim_id": "TMO2024Q3_C001",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TMO2024Q3_C001"
     }
   ],
   "rejected": [],
@@ -91,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

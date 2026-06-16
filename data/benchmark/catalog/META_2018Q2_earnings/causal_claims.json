@@ -5,36 +5,36 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:29:01+00:00",
+  "computed_at": "2026-06-16T10:36:36+00:00",
   "accepted": [
     {
-      "cause": "Net income",
-      "effect": "Net cash provided by operating activities",
+      "cause": "Revenue increase",
+      "effect": "margin shift",
       "mechanism": "fundamental",
       "severity": 0.8,
       "polarity": -1.0,
-      "evidence_span": "Net income $ 4,988 $ 3,064 Adjustments to reconcile net income to net cash provided by operating activities",
-      "source_id": "META2018Q2_003",
+      "evidence_span": "Revenue $ 11,966 $ 8,032 Costs and expenses: Cost of",
+      "source_id": "META2018Q2_002",
       "published_at": 0,
       "proposer": "llm",
-      "atom_id": "META2018Q2_003",
+      "atom_id": "META2018Q2_002",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.802,
-      "span_score": 0.926,
-      "severity_align": 0.371,
+      "confidence": 0.814,
+      "span_score": 1.0,
+      "severity_align": 0.254,
       "mechanism_hint": 1.0,
-      "claim_id": "META2018Q2_C003",
+      "claim_id": "META2018Q2_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
       "cause": "building new tools to help people connect, strengthen our communities, and bring the world closer together",
-      "effect": "improved financial performance",
+      "effect": "fundamental growth in user engagement driving future revenue",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
@@ -48,13 +48,39 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.862,
+      "confidence": 0.856,
       "span_score": 0.944,
       "severity_align": 0.571,
       "mechanism_hint": 1.0,
       "claim_id": "META2018Q2_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
+      "effect_specificity": 0.65,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "negative fundamental signal",
+      "effect": "valuation de-rating",
+      "mechanism": "fundamental",
+      "severity": 0.171,
+      "polarity": -1.0,
+      "evidence_span": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (In millions) (Unaudited) Three Months Ended March 31, 2018 2017* Cash flows from operating activities Net income $ 4,988 $ 3,064 Ad",
+      "source_id": "META2018Q2_003",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "META2018Q2_003",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.889,
+      "span_score": 0.979,
+      "severity_align": 1.0,
+      "mechanism_hint": 1.0,
+      "claim_id": "META2018Q2_C003",
+      "effect_rewritten": true,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
       "polarity_aligned": true
     },
     {
@@ -73,7 +99,7 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 1.0,
+      "confidence": 0.9,
       "span_score": 1.0,
       "severity_align": 1.0,
       "mechanism_hint": 1.0,
@@ -85,11 +111,9 @@
     }
   ],
   "rejected": [],
-  "claim_count": 3,
+  "claim_count": 4,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

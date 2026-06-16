@@ -5,11 +5,36 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T12:56:30+00:00",
+  "computed_at": "2026-06-16T11:19:58+00:00",
   "accepted": [
     {
-      "cause": "Diluted Net EPS $1.22, +15%",
-      "effect": "Positive earnings surprise driving stock price up",
+      "cause": "Core EPS guidance raised to 11-16% growth on currency-neutral basis",
+      "effect": "guidance lift expands FY earnings outlook",
+      "mechanism": "fundamental",
+      "severity": 0.9,
+      "polarity": 1.0,
+      "evidence_span": "On a currency-neutral basis, this guidance translates to Core EPS growth of eleven to sixteen percent.",
+      "source_id": "PG2018Q4_009",
+      "published_at": 0,
+      "atom_id": "PG2018Q4_009",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.799,
+      "span_score": 1.0,
+      "severity_align": 0.185,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PG2018Q4_C001"
+    },
+    {
+      "cause": "Diluted Net EPS beat expectations with a 15% increase",
+      "effect": "estimate revision upside driven by EPS growth",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": -1.0,
@@ -23,47 +48,45 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.797,
+      "confidence": 0.799,
       "span_score": 1.0,
       "severity_align": 0.188,
       "mechanism_hint": 1.0,
-      "claim_id": "PG2018Q4_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "PG2018Q4_C000"
     },
     {
-      "cause": "gross margin decreased 150 basis points",
-      "effect": "Profitability pressure weighing on stock price",
+      "cause": "Core gross margin declined by 150 basis points year-over-year",
+      "effect": "margin compression concern offsets earnings beat",
       "mechanism": "fundamental",
       "severity": 0.6,
       "polarity": -1.0,
-      "evidence_span": "gross margin decreased 150 basis points, including 60",
-      "source_id": "PG2018Q4_006",
+      "evidence_span": "CHANGE VERSUS YEAR AGO CORE GROSS MARGIN (150 ) BPS CORE SELLING GENERAL & ADMINISTRATIVE EXPENSE AS A % OF NET SALES (80 ) BPS",
+      "source_id": "PG2018Q4_017",
       "published_at": 0,
-      "atom_id": "PG2018Q4_006",
+      "atom_id": "PG2018Q4_017",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.864,
-      "span_score": 1.0,
-      "severity_align": 0.454,
+      "confidence": 0.854,
+      "span_score": 0.941,
+      "severity_align": 0.571,
       "mechanism_hint": 1.0,
-      "claim_id": "PG2018Q4_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "PG2018Q4_C002"
     }
   ],
   "rejected": [],
-  "claim_count": 2,
+  "claim_count": 3,
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:27+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

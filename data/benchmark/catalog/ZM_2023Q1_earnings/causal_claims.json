@@ -5,13 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T12:25:05+00:00",
+  "computed_at": "2026-06-15T15:35:38+00:00",
   "accepted": [
     {
-      "cause": "Online revenue decline",
-      "effect": "Mixed revenue performance",
+      "cause": "Online revenue declined 8% year over year",
+      "effect": "consumer segment contraction breaks growth narrative",
       "mechanism": "fundamental",
-      "severity": 0.5,
+      "severity": 0.85,
       "polarity": -1.0,
       "evidence_span": "Online revenue was $473.4 million, down 8% year over year",
       "source_id": "ZM2023Q1_003",
@@ -23,22 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.878,
+      "confidence": 0.947,
       "span_score": 0.942,
-      "severity_align": 0.64,
+      "severity_align": 0.99,
       "mechanism_hint": 1.0,
-      "claim_id": "ZM2023Q1_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "ZM2023Q1_C001"
     },
     {
-      "cause": "Total revenue growth rate",
-      "effect": "Modest top-line expansion",
+      "cause": "Total revenue growth slowed to 3% year over year",
+      "effect": "revenue growth deceleration lowers top-line valuation multiples",
       "mechanism": "fundamental",
-      "severity": 0.4,
+      "severity": 0.75,
       "polarity": -1.0,
-      "evidence_span": "First quarter total revenue of $1,105.4 million, up 3% year over year",
+      "evidence_span": "First quarter total revenue of $1,105.4 million, up 3% year over year as reported",
       "source_id": "ZM2023Q1_000",
       "published_at": 0,
       "atom_id": "ZM2023Q1_000",
@@ -48,42 +48,45 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.829,
-      "span_score": 0.899,
-      "severity_align": 0.54,
+      "confidence": 0.908,
+      "span_score": 0.908,
+      "severity_align": 0.89,
       "mechanism_hint": 1.0,
-      "claim_id": "ZM2023Q1_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    }
-  ],
-  "rejected": [
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ZM2023Q1_C000"
+    },
     {
-      "cause": "Enterprise revenue growth",
-      "effect": "Positive revenue surprise",
+      "cause": "Enterprise revenue grew 13% year over year",
+      "effect": "enterprise segment strength supports core valuation floor",
       "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": 0.6,
-      "evidence_span": "Enterprise revenue of $632.0 million, up 13% year over year",
+      "severity": 0.6,
+      "polarity": -1.0,
+      "evidence_span": "First quarter Enterprise revenue of $632.0 million, up 13%",
       "source_id": "ZM2023Q1_000",
       "published_at": 0,
       "atom_id": "ZM2023Q1_000",
       "validation": {
-        "passed": false,
-        "errors": [
-          "evidence_span_not_in_atom_text"
-        ],
+        "passed": true,
+        "errors": [],
         "warnings": []
       },
-      "proposer": "llm_event"
+      "proposer": "llm_event",
+      "confidence": 0.866,
+      "span_score": 0.891,
+      "severity_align": 0.74,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ZM2023Q1_C002"
     }
   ],
-  "claim_count": 2,
-  "rejected_count": 1,
+  "rejected": [],
+  "claim_count": 3,
+  "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:29+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

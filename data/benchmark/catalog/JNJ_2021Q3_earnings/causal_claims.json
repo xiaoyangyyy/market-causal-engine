@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:39:38+00:00",
+  "computed_at": "2026-06-15T14:52:25+00:00",
   "accepted": [
     {
-      "cause": "EPS of $2.35 increased 72.8%",
-      "effect": "Bullish sentiment on earnings beat",
+      "cause": "Q2 EPS increased 72.8% to $2.35",
+      "effect": "estimate revision upside driven by earnings beat",
       "mechanism": "fundamental",
       "severity": 0.9,
       "polarity": 1.0,
-      "evidence_span": "EPS of $2.35 increased 72.8% in Second Quarter 2021",
+      "evidence_span": "EPS of $2.35 increased 72.8% in Second Quarter 2021 and adjuste",
       "source_id": "JNJ2021Q3_000",
       "published_at": 0,
       "atom_id": "JNJ2021Q3_000",
@@ -23,22 +23,22 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.755,
-      "span_score": 0.886,
+      "confidence": 0.765,
+      "span_score": 0.895,
       "severity_align": 0.271,
       "mechanism_hint": 1.0,
-      "claim_id": "JNJ2021Q3_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "JNJ2021Q3_C000"
     },
     {
       "cause": "Strong sales growth of 27.1% to $23.3 Billion",
-      "effect": "estimate upside",
+      "effect": "revenue growth narrative strengthens valuation multiples",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
-      "evidence_span": "Strong sales growth of 27.1% to $23.3 Billion in Second Quarter 2021",
+      "evidence_span": "Strong sales growth of 27.1% to $23.3 Billion in Second Quarter 2021 with operational",
       "source_id": "JNJ2021Q3_000",
       "published_at": 0,
       "atom_id": "JNJ2021Q3_000",
@@ -48,15 +48,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.775,
-      "span_score": 0.899,
+      "confidence": 0.784,
+      "span_score": 0.911,
       "severity_align": 0.321,
       "mechanism_hint": 1.0,
-      "claim_id": "JNJ2021Q3_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "JNJ2021Q3_C001"
     }
   ],
   "rejected": [],
@@ -64,7 +63,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

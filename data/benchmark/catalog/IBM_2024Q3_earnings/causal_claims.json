@@ -5,66 +5,41 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T04:27:05+00:00",
+  "computed_at": "2026-06-15T16:22:00+00:00",
   "accepted": [
     {
-      "cause": "Software revenue growth of 7.1 percent in the second quarter",
-      "effect": "Positive momentum in high-margin business segment",
-      "mechanism": "fundamental",
-      "severity": 0.75,
+      "cause": "Foreign exchange headwind of one to two points on revenue",
+      "effect": "top-line growth constraint limiting upside",
+      "mechanism": "macro",
+      "severity": 0.4,
       "polarity": 1.0,
-      "evidence_span": "\"Our strong cash generation enables us to continue investing in innovation and expertise across the portfolio, while returning value to shareholders through dividends.” Segment Results for Second Quarter • Software — revenues of $6.7 billion, up 7.1 percent",
-      "source_id": "IBM2024Q3_004",
+      "evidence_span": "expected to be about a one to two-point headwind to revenue growth",
+      "source_id": "IBM2024Q3_006",
       "published_at": 0,
-      "atom_id": "IBM2024Q3_004",
+      "atom_id": "IBM2024Q3_006",
       "validation": {
         "passed": true,
         "errors": [],
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.855,
+      "confidence": 0.904,
       "span_score": 1.0,
-      "severity_align": 0.421,
+      "severity_align": 0.662,
       "mechanism_hint": 1.0,
-      "claim_id": "IBM2024Q3_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Constant currency revenue growth expected to remain in mid-single digits",
-      "effect": "Stable top-line performance outlook for the full year",
-      "mechanism": "fundamental",
-      "severity": 0.6,
-      "polarity": 1.0,
-      "evidence_span": "Full-Year 2024 Expectations • Revenue: The company continues to expect constant currency revenue growth consistent with its mid-single digit model.",
-      "source_id": "IBM2024Q3_005",
-      "published_at": 0,
-      "atom_id": "IBM2024Q3_005",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.878,
-      "span_score": 1.0,
-      "severity_align": 0.513,
-      "mechanism_hint": 1.0,
-      "claim_id": "IBM2024Q3_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "IBM2024Q3_C000"
     }
   ],
   "rejected": [
     {
       "cause": "Full-year free cash flow guidance raised to over $12 billion",
-      "effect": "Increased investor confidence in capital allocation and shareholder returns",
+      "effect": "estimate revision upside on cash generation metrics",
       "mechanism": "fundamental",
       "severity": 0.85,
-      "polarity": 0.7,
+      "polarity": 1.0,
       "evidence_span": "\"Given our first-half results, we are raising our full-year view of free cash flow, which we now expect to be more than $12 billion.\"",
       "source_id": "IBM2024Q3_002",
       "published_at": 0,
@@ -77,13 +52,30 @@
         "warnings": []
       },
       "proposer": "llm_event"
+    },
+    {
+      "cause": "Software revenue growth of 7.1 percent in Q2",
+      "effect": "margin expansion and growth narrative reinforcement",
+      "mechanism": "fundamental",
+      "severity": 0.75,
+      "polarity": 0.9,
+      "evidence_span": "\"Software — revenues of $6.7 billion, up 7.1 percent, up 8.4 percent at con\"",
+      "source_id": "IBM2024Q3_004",
+      "published_at": 0,
+      "atom_id": "IBM2024Q3_004",
+      "validation": {
+        "passed": false,
+        "errors": [
+          "evidence_span_not_in_atom_text"
+        ],
+        "warnings": []
+      },
+      "proposer": "llm_event"
     }
   ],
-  "claim_count": 2,
-  "rejected_count": 1,
+  "claim_count": 1,
+  "rejected_count": 2,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:30+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,38 +5,13 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T11:15:40+00:00",
+  "computed_at": "2026-06-15T14:31:47+00:00",
   "accepted": [
     {
-      "cause": "2020 Fourth-Quarter operational sales growth of 7.1%",
-      "effect": "revenue strength driving bullish sentiment",
+      "cause": "2021 guidance of adjusted operational EPS growth of 16.4%",
+      "effect": "strong guidance drives estimate revision upside",
       "mechanism": "fundamental",
-      "severity": 0.7,
-      "polarity": 1.0,
-      "evidence_span": "2020 Fourth-Quarter Sales of $22.5 Billion reflecting growth of 8.3%, operational growth of 7.1%*",
-      "source_id": "JNJ2021Q1_000",
-      "published_at": 0,
-      "atom_id": "JNJ2021Q1_000",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.823,
-      "span_score": 0.919,
-      "severity_align": 0.471,
-      "mechanism_hint": 1.0,
-      "claim_id": "JNJ2021Q1_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "2021 adjusted operational EPS growth guidance of 16.4%",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.8,
       "polarity": 1.0,
       "evidence_span": "Company provides 2021 guidance of adjusted operational sales growth of 8.8%* and adjusted operational EPS growth of 16.4%*",
       "source_id": "JNJ2021Q1_002",
@@ -48,21 +23,45 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.812,
+      "confidence": 0.824,
       "span_score": 0.984,
-      "severity_align": 0.285,
+      "severity_align": 0.335,
       "mechanism_hint": 1.0,
-      "claim_id": "JNJ2021Q1_C000",
-      "effect_rewritten": true,
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "JNJ2021Q1_C002"
     },
     {
-      "cause": "2020 Full-Year EPS decrease of 2.1%",
-      "effect": "negative earnings performance causing bearish pressure",
+      "cause": "2020 Fourth-Quarter Sales growth of 8.3%",
+      "effect": "revenue growth supports valuation multiple",
       "mechanism": "fundamental",
-      "severity": 0.4,
+      "severity": 0.7,
+      "polarity": 1.0,
+      "evidence_span": "2020 Fourth-Quarter Sales of $22.5 Billion reflecting growth of 8.3%",
+      "source_id": "JNJ2021Q1_000",
+      "published_at": 0,
+      "atom_id": "JNJ2021Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.811,
+      "span_score": 0.899,
+      "severity_align": 0.471,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "JNJ2021Q1_C000"
+    },
+    {
+      "cause": "2020 Full-Year EPS of $5.51 decreased 2.1%",
+      "effect": "earnings decline pressures EPS estimates",
+      "mechanism": "fundamental",
+      "severity": 0.6,
       "polarity": -1.0,
       "evidence_span": "2020 Full-Year EPS of $5.51 decreased 2.1%",
       "source_id": "JNJ2021Q1_001",
@@ -74,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.892,
+      "confidence": 0.838,
       "span_score": 0.952,
-      "severity_align": 0.672,
+      "severity_align": 0.472,
       "mechanism_hint": 1.0,
-      "claim_id": "JNJ2021Q1_C002",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "JNJ2021Q1_C001"
     }
   ],
   "rejected": [],
@@ -89,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:28+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

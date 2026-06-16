@@ -5,15 +5,15 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T01:34:24+00:00",
+  "computed_at": "2026-06-16T09:22:01+00:00",
   "accepted": [
     {
-      "cause": "Negative vehicle service gross margin during service capability ramp-up",
-      "effect": "Overall gross margin decline and reduced profitability",
+      "cause": "Gross margin decline due to negative vehicle service gross margin",
+      "effect": "margin compression concern affecting profitability outlook",
       "mechanism": "fundamental",
-      "severity": 0.75,
+      "severity": 0.85,
       "polarity": -1.0,
-      "evidence_span": "Service and other gross margin was affected by negative vehicle service gross margin in the quarter, as we ramp up our service capability ahead of the launch of Model 3.",
+      "evidence_span": "Service and other gross margin was affected by negative vehicle service gross margin in the quarter",
       "source_id": "TSLA2017Q1_011",
       "published_at": 0,
       "atom_id": "TSLA2017Q1_011",
@@ -23,20 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.845,
-      "span_score": 1.0,
-      "severity_align": 0.378,
+      "confidence": 0.802,
+      "span_score": 0.966,
+      "severity_align": 0.278,
       "mechanism_hint": 1.0,
-      "claim_id": "TSLA2017Q1_C000",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "TSLA2017Q1_C000"
     },
     {
-      "cause": "Significant year-over-year gross margin contraction",
-      "effect": "Deterioration in core automotive profitability metrics",
+      "cause": "GAAP gross margin dropped 680 basis points to 19.7%",
+      "effect": "earnings quality deterioration reducing valuation multiples",
       "mechanism": "fundamental",
-      "severity": 0.85,
+      "severity": 0.7,
       "polarity": -1.0,
       "evidence_span": "gross margin - GAAP 22.6 % 29.4 % 19.7 % -680 bp 290",
       "source_id": "TSLA2017Q1_007",
@@ -48,14 +48,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.801,
+      "confidence": 0.836,
       "span_score": 1.0,
-      "severity_align": 0.204,
+      "severity_align": 0.354,
       "mechanism_hint": 1.0,
-      "claim_id": "TSLA2017Q1_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "TSLA2017Q1_C001"
     }
   ],
   "rejected": [],
@@ -63,7 +63,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

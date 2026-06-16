@@ -5,11 +5,11 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-12T08:10:27+00:00",
+  "computed_at": "2026-06-16T10:23:06+00:00",
   "accepted": [
     {
-      "cause": "da Vinci procedure volume growth",
-      "effect": "18% increase in instrument and accessory revenue",
+      "cause": "Q4 2017 revenue growth driven by procedure volume",
+      "effect": "estimate revision upside on procedure volume growth",
       "mechanism": "fundamental",
       "severity": 0.85,
       "polarity": 1.0,
@@ -23,20 +23,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.83,
+      "confidence": 0.828,
       "span_score": 1.0,
       "severity_align": 0.318,
       "mechanism_hint": 1.0,
-      "claim_id": "ISRG2018Q1_C000",
       "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ISRG2018Q1_C000"
     },
     {
-      "cause": "systems revenue growth",
-      "effect": "20% increase in systems revenue",
+      "cause": "Systems revenue increased by 20% year-over-year",
+      "effect": "estimate revision upside on systems revenue",
       "mechanism": "fundamental",
-      "severity": 0.8,
+      "severity": 0.75,
       "polarity": 1.0,
       "evidence_span": "Fourth quarter 2017 systems revenue increased by approximately 20% to $283 million , compared with $236 million for the fourth quarter of 2016.",
       "source_id": "ISRG2018Q1_008",
@@ -48,20 +48,20 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.828,
+      "confidence": 0.837,
       "span_score": 1.0,
-      "severity_align": 0.311,
+      "severity_align": 0.361,
       "mechanism_hint": 1.0,
-      "claim_id": "ISRG2018Q1_C001",
       "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ISRG2018Q1_C001"
     },
     {
-      "cause": "service revenue growth",
-      "effect": "13% increase in service revenue",
+      "cause": "Service revenue increased by 13% year-over-year",
+      "effect": "estimate revision upside on service revenue",
       "mechanism": "fundamental",
-      "severity": 0.7,
+      "severity": 0.65,
       "polarity": 1.0,
       "evidence_span": "Fourth quarter 2017 service revenue increased by approximately 13% to $153 million , compared with $135 million for the fourth quarter of 2016.",
       "source_id": "ISRG2018Q1_009",
@@ -73,14 +73,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.853,
+      "confidence": 0.859,
       "span_score": 1.0,
-      "severity_align": 0.411,
+      "severity_align": 0.461,
       "mechanism_hint": 1.0,
-      "claim_id": "ISRG2018Q1_C002",
       "polarity_source": "evidence",
-      "effect_specificity": 1.0,
-      "polarity_aligned": true
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "ISRG2018Q1_C002"
     }
   ],
   "rejected": [],
@@ -88,7 +88,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }

@@ -5,33 +5,8 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-15T05:11:05+00:00",
+  "computed_at": "2026-06-16T09:23:49+00:00",
   "accepted": [
-    {
-      "cause": "net income and diluted EPS growth",
-      "effect": "stock price increase",
-      "mechanism": "fundamental",
-      "severity": 0.8,
-      "polarity": 1.0,
-      "evidence_span": "net income and diluted EPS growth of",
-      "source_id": "V2017Q1_000",
-      "published_at": 0,
-      "proposer": "llm",
-      "atom_id": "V2017Q1_000",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "confidence": 0.811,
-      "span_score": 1.0,
-      "severity_align": 0.244,
-      "mechanism_hint": 1.0,
-      "claim_id": "V2017Q1_C001",
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
-    },
     {
       "cause": "revenue growth",
       "effect": "fundamental upside",
@@ -48,11 +23,36 @@
         "errors": [],
         "warnings": []
       },
-      "confidence": 0.98,
+      "confidence": 0.912,
       "span_score": 1.0,
       "severity_align": 0.92,
       "mechanism_hint": 1.0,
       "claim_id": "V2017Q1_C000",
+      "polarity_source": "evidence",
+      "effect_specificity": 0.25,
+      "polarity_aligned": true
+    },
+    {
+      "cause": "revenue growth",
+      "effect": "fundamental upside",
+      "mechanism": "fundamental",
+      "severity": 0.124,
+      "polarity": 1.0,
+      "evidence_span": "net income and diluted EPS growth of",
+      "source_id": "V2017Q1_000",
+      "published_at": 0,
+      "proposer": "heuristic",
+      "atom_id": "V2017Q1_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "confidence": 0.912,
+      "span_score": 1.0,
+      "severity_align": 0.92,
+      "mechanism_hint": 1.0,
+      "claim_id": "V2017Q1_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.25,
       "polarity_aligned": true
@@ -65,7 +65,7 @@
       "mechanism": "none",
       "severity": 0.0,
       "polarity": 0.0,
-      "evidence_span": "earnings per share results of $",
+      "evidence_span": "None",
       "source_id": "V2017Q1_002",
       "published_at": 0,
       "proposer": "llm",
@@ -74,6 +74,8 @@
         "passed": false,
         "errors": [
           "invalid_mechanism:none",
+          "evidence_span_too_short",
+          "evidence_span_not_in_atom_text",
           "mechanism_not_allowed_for_domain:none:earnings"
         ],
         "warnings": []
@@ -84,7 +86,5 @@
   "rejected_count": 1,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_atom_fallback",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_atom_fallback"
 }

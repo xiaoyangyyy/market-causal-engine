@@ -5,11 +5,36 @@
   "domain": "earnings",
   "as_of": 120,
   "use_llm": true,
-  "computed_at": "2026-06-09T12:36:09+00:00",
+  "computed_at": "2026-06-16T09:02:53+00:00",
   "accepted": [
     {
-      "cause": "Sales increase of 3.9%",
-      "effect": "Revenue growth driving stock price",
+      "cause": "Adjusted Q2 2016 EPS of $1.74 increased 1.8%",
+      "effect": "earnings beat drives EPS estimate upside",
+      "mechanism": "fundamental",
+      "severity": 0.85,
+      "polarity": 1.0,
+      "evidence_span": "Adjusted 2016 Second-Quarter EPS of $1.74 Increased 1.8%",
+      "source_id": "JNJ2016Q3_000",
+      "published_at": 0,
+      "atom_id": "JNJ2016Q3_000",
+      "validation": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "proposer": "llm_event",
+      "confidence": 0.774,
+      "span_score": 0.89,
+      "severity_align": 0.321,
+      "mechanism_hint": 1.0,
+      "polarity_source": "evidence",
+      "effect_specificity": 0.65,
+      "polarity_aligned": true,
+      "claim_id": "JNJ2016Q3_C001"
+    },
+    {
+      "cause": "Q2 2016 sales increased 3.9% versus 2015",
+      "effect": "revenue growth supports top-line estimate revisions",
       "mechanism": "fundamental",
       "severity": 0.75,
       "polarity": 1.0,
@@ -23,40 +48,14 @@
         "warnings": []
       },
       "proposer": "llm_event",
-      "confidence": 0.798,
+      "confidence": 0.799,
       "span_score": 0.896,
       "severity_align": 0.421,
       "mechanism_hint": 1.0,
-      "claim_id": "JNJ2016Q3_C001",
       "polarity_source": "evidence",
       "effect_specificity": 0.65,
-      "polarity_aligned": true
-    },
-    {
-      "cause": "Adjusted EPS of $1.74",
-      "effect": "fundamental upside",
-      "mechanism": "fundamental",
-      "severity": 0.85,
-      "polarity": 1.0,
-      "evidence_span": "Adjusted 2016 Second-Quarter EPS of $1.74 Increased 1.8%*",
-      "source_id": "JNJ2016Q3_000",
-      "published_at": 0,
-      "atom_id": "JNJ2016Q3_000",
-      "validation": {
-        "passed": true,
-        "errors": [],
-        "warnings": []
-      },
-      "proposer": "llm_event",
-      "confidence": 0.77,
-      "span_score": 0.891,
-      "severity_align": 0.321,
-      "mechanism_hint": 1.0,
-      "claim_id": "JNJ2016Q3_C000",
-      "effect_rewritten": true,
-      "polarity_source": "evidence",
-      "effect_specificity": 0.25,
-      "polarity_aligned": true
+      "polarity_aligned": true,
+      "claim_id": "JNJ2016Q3_C000"
     }
   ],
   "rejected": [],
@@ -64,7 +63,5 @@
   "rejected_count": 0,
   "llm_model": "qwen3.5",
   "llm_base_url": "https://ai.azya.top/v1",
-  "llm_proposer": "llm_event",
-  "refined_at": "2026-06-15T11:29:26+00:00",
-  "claims_refined": true
+  "llm_proposer": "llm_event"
 }
